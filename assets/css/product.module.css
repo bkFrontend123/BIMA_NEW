@@ -167,8 +167,8 @@
 }
 .productStartupIcon {
     position: absolute;
-    right: -100px;
-    bottom: -100px;
+    right: -74px;
+    bottom: -90px;
     width: 200px;
 }
 
@@ -350,8 +350,8 @@
     }
     .productStartupIcon {
         right: 30px;
-        bottom: -120px;
-        width: 160px;
+        bottom: -70px;
+        width: 150px;
     }
 }
 
@@ -361,8 +361,8 @@
     }
     .productStartupIcon {
         right: 40px;
-        bottom: -135px;
-        width: 150px;
+        bottom: -75px;
+        width: 140px;
     }
     .ProductList li {
         margin-right: 6px;

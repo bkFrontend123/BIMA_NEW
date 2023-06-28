@@ -260,6 +260,51 @@ body .mainMenu.navbar .navbar-brand img{
  .homeBannerProduct-card:hover a{
    color: var(--vt-c-yellow) !important
  }  
+
+/****Badge****/
+.badgeIconCol {
+   position: relative;
+   transition: all .4s ease 0s;
+   width: 252px;
+   height: 252px;
+   padding: 30px;
+ }
+ .badgeIconCol::before {
+   background-image: url(/icons/badgeBg.svg);
+   position: absolute;
+   content: "";
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center center;
+   transition: all 5s ease 0s;
+ }
+ .badgeIcon,
+ .badgeActiveIcon {
+   position: absolute;
+   left: 52px;
+   top: 40px;
+   right: 0;
+   bottom: 0;
+   transition: all 0.8s ease 0s;
+ }
+ .badgeActiveIcon {
+   opacity: 0;
+ }
+ .badgeIconCol:hover::before {
+   transform: rotate(180deg);
+ }
+ .badgeIconCol:hover .badgeIcon {
+   opacity: 0;
+ }
+ .badgeIconCol:hover .badgeActiveIcon {
+   opacity: 1;
+ }
+
+
 /* ======== Trusted slider Start===== */
 .trusted-business {
    margin-top: 90px;
@@ -416,7 +461,7 @@ body .mainMenu.navbar .navbar-brand img{
     width: 100% !important;
  }
  .howDoDesktopSlider{
-   width: 70%;
+   width: 1140px;
    padding: 0 15px;
  }
  .howDo{

@@ -23,7 +23,7 @@ export default function HeroBanner(props) {
                 </div>
               </div>
               <div className='row align-items-center'>
-                <div className='col-7'>
+                <div className='col-6'>
                   <div className='homeBannerText-bottom'>
                     <div className='homeBannerText-bottomCard'>
                       <h2 className='homeBannerText-bottomCard-title title-24 text-primary font-weight-600 mb-0'>Simplified</h2>
@@ -39,10 +39,11 @@ export default function HeroBanner(props) {
                     </div>
                   </div>
                 </div>
-                <div className='col-5'>
-                  <div className='homeBannerText-bottomCard homeBannerText-bottomCard-last ms-md-auto align-items-end'>
+                <div className='col-6'>
+                  <div className='homeBannerText-bottomCard@ homeBannerText-bottomCard-last@ homeBadge badgeIconCol ms-md-auto align-items-end'>
                     {/*<h2 className='title-24 text-primary font-secondary font-weight-600 mb-0'>Sample Digital &amp; Transparent</h2>*/}
-                    <img src="/SDT_icon.svg" alt="Simple Digital & Transparent" />
+                    <img className='badgeIcon' src="/icons/badgeIcon.svg" alt="Simple Digital & Transparent" />
+                    <img className='badgeActiveIcon' src="/icons/badgeActiveIcon.svg" alt="Simple Digital & Transparent" />
                   </div>
                 </div>
               </div>
@@ -110,7 +111,9 @@ export default function HeroBanner(props) {
             .homeBannerText-bottomCard-last  .title-24 {
               line-height: 28px;
             }
-            
+            .homeBadge {
+              margin-top: -230px;
+            }
             .homeBannerProduct{
               margin-top: 85px;
               padding: 85px;
@@ -223,16 +226,19 @@ export default function HeroBanner(props) {
                 text-align: center;
               }
               .HomeBannerStyle{
-                
                   max-width: 100%;
                   display: block;
                   margin-top: 0;
+                  padding-top: 40px;
               }
               .homeBannerText{
                 padding-left: 0;
               }
               .homeBannerText-bottom{
                 flex-wrap: wrap;
+              }
+              .homeBadge {
+                margin-top: -50px;
               }
               .homeBannerProduct{
                 padding: 24px;
@@ -271,7 +277,11 @@ export default function HeroBanner(props) {
                 }
                 
             }
-
+            @media only screen and (max-width: 767px) {
+              .homeBadge {
+                margin-top: -80px;
+              }
+            }
             @media only screen and (max-width: 575px) {
               .HomeBannerStyle{
                 padding: 40px 0 0;

@@ -34,6 +34,14 @@
   :root {
     --section-gap: 50px;
   }
+  .badgeIconCol {
+    width: 212px;
+    height: 212px;
+  }
+  .badgeIcon,
+  .badgeActiveIcon {
+    width: 114px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -49,5 +57,16 @@
   }
   .order2 {
     order: 2;
+  }
+  .badgeIconCol {
+    width: 150px;
+    height: 150px;
+    padding: 16px;
+  }
+  .badgeIcon,
+  .badgeActiveIcon {
+    left: 42px;
+    top: 35px;
+    width: 70px;
   }
 }

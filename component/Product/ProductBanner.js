@@ -431,9 +431,6 @@ export default function ProductBanner(props) {
                             .ProductBanner-form .title20{
                                 font-size: 14px;
                             }
-                            .ProductBannerText{
-                                padding: 0;
-                            }
                         }
                      
                      

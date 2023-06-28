@@ -139,14 +139,14 @@
     padding-left: 100px;
   }
   .howDoDesktopSlider {
-    width: 88%;
+    width: 1140px;
   }
 
 }
 
 @media only screen and (max-width: 1399px) {
   .howDoDesktopSlider {
-    width: 96%;
+    width: 1140px;
   }
   .footer-listMenu-listALign ul {
     padding-left: 70px;
@@ -794,6 +794,9 @@
 }
 
 @media only screen and (max-width: 575px) {
+  body.homePageBody .navbar-main .nabbarStrip {
+    padding: 27.5px 20px;
+  }
   .IndustryList-card-seeMore a:before{
     position: absolute;
     content: '';
