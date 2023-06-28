@@ -157,7 +157,7 @@ function Navbar() {
                                 <div className='col-md-4'>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary fst-italic'>Liability Insurance</div>
-                                    <hr className='bg-gray mb-md-3 mt-2'/>
+                                    <hr className='bg-gray mb-md-3 my-2'/>
                                   </div>
                                   <div className='startupColsList'>
                                     {LiabiltyInsurance.map((item) =>
@@ -172,7 +172,7 @@ function Navbar() {
                                               height={48}
                                               className='d-none d-md-block '
                                             />
-                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary @mt-md-3 font-weight-600 ms-2'>{item.title}</Link>
+                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary @mt-md-3 font-weight-600 ms-md-2'>{item.title}</Link>
                                           </div>
                                         </div>
                                       </div>
@@ -183,7 +183,7 @@ function Navbar() {
                                 <div className='col-md-4'>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary fst-italic'>Asset Insurance</div>
-                                    <hr className='bg-gray mb-md-3 mt-2' />
+                                    <hr className='bg-gray mb-md-3 my-2' />
                                   </div>
                                   <div className='startupColsList'>
                                     {AssetInsurance.map((item) =>
@@ -198,7 +198,7 @@ function Navbar() {
                                               height={48}
                                               className='d-none d-md-block '
                                             />
-                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-2'>{item.title}</Link>
+                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-md-2'>{item.title}</Link>
                                           </div>
                                         </div>
                                       </div>
@@ -208,7 +208,7 @@ function Navbar() {
                                 <div className='col-md-4'>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary fst-italic'>Engineering</div>
-                                    <hr className='bg-gray mb-md-3 mt-2' />
+                                    <hr className='bg-gray mb-md-3 my-2' />
                                   </div>
                                   <div className='startupColsList'>
                                     {EngineeringInsurance.map((item) =>
@@ -223,7 +223,7 @@ function Navbar() {
                                               height={48}
                                               className='d-none d-md-block '
                                             />
-                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-2'>{item.title}</Link>
+                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-md-2'>{item.title}</Link>
                                           </div>
                                         </div>
                                       </div>
@@ -231,7 +231,7 @@ function Navbar() {
                                   </div>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary fst-italic'>Employee</div>
-                                    <hr className='bg-gray mb-md-3 mt-2' />
+                                    <hr className='bg-gray mb-md-3 my-2' />
                                   </div>
                                   <div className='startupColsList'>
                                     {EmployeeInsurance.map((item) =>
@@ -246,7 +246,7 @@ function Navbar() {
                                               height={48}
                                               className='d-none d-md-block '
                                             />
-                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-2'>{item.title}</Link>
+                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-md-2'>{item.title}</Link>
                                           </div>
                                         </div>
                                       </div>
@@ -254,7 +254,7 @@ function Navbar() {
                                   </div>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary fst-italic'>Marine</div>
-                                    <hr className='bg-gray mb-md-3 mt-2' />
+                                    <hr className='bg-gray mb-md-3 my-2' />
                                   </div>
                                   <div className='startupColsList'>
                                     {MarineInsurance.map((item) =>
@@ -269,7 +269,7 @@ function Navbar() {
                                               height={48}
                                               className='d-none d-md-block '
                                             />
-                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-2'>{item.title}</Link>
+                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-md-2'>{item.title}</Link>
                                           </div>
                                         </div>
                                       </div>
@@ -314,7 +314,7 @@ function Navbar() {
                                 <div className='col-md-4'>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary'>Technology</div>
-                                    <hr className='bg-gray mb-4 mt-2' />
+                                    <hr className='bg-gray mb-md-4 my-2' />
                                   </div>
                                   <div className='row'>
                                     {industryTechnology.map((item) =>
@@ -332,7 +332,7 @@ function Navbar() {
                                 <div className='col-md-4'>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary'>Technology</div>
-                                    <hr className='bg-gray mb-4 mt-2' />
+                                    <hr className='bg-gray mb-md-4 my-2' />
                                   </div>
                                   <div className='row'>
                                     {industryTraditional.map((item) =>
@@ -350,7 +350,7 @@ function Navbar() {
                                 <div className='col-md-4'>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary'>Emerging</div>
-                                    <hr className='bg-gray mb-4 mt-2' />
+                                    <hr className='bg-gray mb-md-4 my-2' />
                                   </div>
                                   <div className='row'>
                                     {industryEmerging.map((item) =>
@@ -371,7 +371,7 @@ function Navbar() {
                                 <div className='col-md-4'>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary'>Emerging</div>
-                                    <hr className='bg-gray mb-4 mt-2' />
+                                    <hr className='bg-gray mb-md-4 my-2' />
                                   </div>
                                   <div className='row'>
                                     {industryEmerging.map((item) =>
@@ -389,7 +389,7 @@ function Navbar() {
                                 <div className='col-md-4'>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary'>Technology</div>
-                                    <hr className='bg-gray mb-4 mt-2' />
+                                    <hr className='bg-gray mb-md-4 my-2' />
                                   </div>
                                   <div className='row'>
                                     {industryTechnology.map((item) =>
@@ -407,7 +407,7 @@ function Navbar() {
                                 <div className='col-md-4'>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary'>Technology</div>
-                                    <hr className='bg-gray mb-4 mt-2' />
+                                    <hr className='bg-gray mb-md-4 my-2' />
                                   </div>
                                   <div className='row'>
                                     {industryTraditional.map((item) =>
@@ -457,15 +457,15 @@ function Navbar() {
                                 <div className='col-md-12'>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary'>Insights</div>
-                                    <hr className='bg-gray mb-4 mt-2 w-25' />
+                                    <hr className='bg-gray mb-md-4 my-2 w-25 d-none d-md-block' />
                                   </div>
-                                  <div className='row'>
+                                  <div className='row d-none d-md-flex'>
                                     <div className='col-md-3'>
                                       <div className='row'>
                                         {Resources.map((item) =>
                                           <div key={item.id} className='col-md-12 startupCols-cardCol'>
                                             <div className='startupCols-cardBox pe-md-3 mb-md-2'>
-                                              <div className='d-none d-md-block '>
+                                              <div className='d-none d-md-block'>
                                                 <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none title24 text-primary mt-md-3 font-weight-600'>{item.title}</Link>
                                               </div>
                                             </div>
@@ -619,7 +619,10 @@ function Navbar() {
               text-align: left;
               color: #000;
             }
-            
+            .title-24 {
+              font-size: 20px;
+              line-height: 26px;
+            }
           }
         `}
       </style>
