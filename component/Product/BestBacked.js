@@ -88,7 +88,7 @@ export default function BestBacked(props) {
                         </Col>
                     </Row>
                     <div className="d-none d-md-block" style={{height: "90px"}}></div>
-                    <div className="d-blok d-md-none" style={{height: "50px"}}></div>
+                    <div className="d-blok d-md-none" style={{height: "20px"}}></div>
                 </Container>
             </div>
             <style jsx scope>

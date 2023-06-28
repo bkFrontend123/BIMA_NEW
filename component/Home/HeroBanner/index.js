@@ -23,7 +23,7 @@ export default function HeroBanner(props) {
                 </div>
               </div>
               <div className='row align-items-center'>
-                <div className='col-8'>
+                <div className='col-7'>
                   <div className='homeBannerText-bottom'>
                     <div className='homeBannerText-bottomCard'>
                       <h2 className='homeBannerText-bottomCard-title title-24 text-primary font-weight-600 mb-0'>Simplified</h2>
@@ -39,7 +39,7 @@ export default function HeroBanner(props) {
                     </div>
                   </div>
                 </div>
-                <div className='col-4'>
+                <div className='col-5'>
                   <div className='homeBannerText-bottomCard homeBannerText-bottomCard-last ms-md-auto align-items-end'>
                     {/*<h2 className='title-24 text-primary font-secondary font-weight-600 mb-0'>Sample Digital &amp; Transparent</h2>*/}
                     <img src="/SDT_icon.svg" alt="Simple Digital & Transparent" />
@@ -292,6 +292,7 @@ export default function HeroBanner(props) {
               }
               .homeBannerText-bottomCard-last {
                 margin-top: 0;
+                padding-right: 0;
               }
               .homeBannerProduct {
                 width: calc(100% - 40px);

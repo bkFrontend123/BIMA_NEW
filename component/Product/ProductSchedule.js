@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import WhatsApp from '../Icons/WhatsApp'
 
 import CalendyModal from '../Modal/CalendyModal'
@@ -13,11 +13,11 @@ export default function ProductSchedule() {
         <>
             <div className='text-center'>
                 <div className="d-flex justify-content-center flex-column flex-sm-row" >
-                    <a className="btnCommon btnBorder border-primary border2 text-primary me-lg-4 text-decoration-none" onClick={handleShowCalendy}>
-                        <img className='me-2' src='/icons/calender.svg' width="22px" />
+                    <a className={`btnCommon btnBorder border-primary border2 text-primary me-lg-4 text-decoration-none ${productStyle.btnCommon}`} onClick={handleShowCalendy}>
+                        <img src='/icons/calender.svg' width="22px" />
                         <span className='ms-2'>Schedule a call</span>
                     </a>
-                    <a target="_blank" href="https://wa.me/9876543210" className={`btnCommon yellowBtn text-primary text-decoration-none mt-4 mt-sm-0 ${productStyle.yellowBtn}`}>
+                    <a target="_blank" href="https://wa.me/9876543210" className={`btnCommon yellowBtn text-primary text-decoration-none mt-4 mt-sm-0 ${productStyle.btnCommon} ${productStyle.yellowBtn}`}>
                         <WhatsApp iconColor="primary" height="23" width="23" />
                         <span className='ms-2'>WhatsApp us</span>
                     </a>

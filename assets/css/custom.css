@@ -147,11 +147,19 @@ body .mainMenu.navbar .navbar-brand img{
    font-weight: 500;
    padding: 0 4px;
    color: #0E2E7D;
+   transition: all 0.3s ease 0s;
+}
+.mainMenu.navbar .navbar-nav li a span {
+   position: relative;
+   top: -2px;
+}
+.mainMenu.navbar .navbar-nav li a svg path {
+   transition: all 0.3s ease 0s;
 }
 
 .mainMenu.navbar  li.active > a,
 .mainMenu.navbar  li  a:hover,
-.mainMenu.navbar  li a:hover  svg path{
+.mainMenu.navbar  li a:hover  svg path {
    color : var(--vt-c-yellow);
    stroke : var(--vt-c-yellow)
 }

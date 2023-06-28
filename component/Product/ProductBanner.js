@@ -51,7 +51,7 @@ export default function ProductBanner(props) {
                             <div className='col-lg-6'>
                                 <div className='ProductBanner-form'>
                                     <div className='bg-white ProductBanner-formBg p-4 p-xl-5'>
-                                        <p className='ProductBanner-formTopHeading title22 font-primaryNormal font-weight-500'>Analyse your Business Risk. <span className='d-inlline d-md-none'><br></br></span>Buy the right Policy within 10 Minutes</p>
+                                        <p className='ProductBanner-formTopHeading title-20 font-primaryNormal font-weight-500'>Analyse your Business Risk. <span className='d-inlline d-md-none'><br></br></span>Buy the right Policy within 10 Minutes</p>
                                         {/*<div className='row'>
                                             <div className='col-lg-12 mx-auto'>
                                                 <div className='ProductBanner-formTop  d-flex flex-md-row flex-column '>
@@ -256,7 +256,7 @@ export default function ProductBanner(props) {
                     }
                      @media only screen and (max-width: 767px) {
                         .ProductBanner{
-                            padding: 48px 0 300px 48px;
+                            padding: 48px 0 300px 0;
                         }
                         .dAndoBnr {
                             background-position: -832px;
@@ -320,7 +320,7 @@ export default function ProductBanner(props) {
                         }
                         .erctnBnr {
                             background-position: -340px 80px;
-                            padding-bottom: 400px !important;
+                            padding-bottom: 320px !important;
                         }
                         .cntrctrBnr {
                             background-position: -880px;
@@ -344,7 +344,7 @@ export default function ProductBanner(props) {
                             line-height: 42px;
                         }
                         .ProductBannerText{
-                            padding: 50px 0;
+                            padding: 50px 0 0 0;
                         }
                         .ProductBannerTextDescrip{
                             margin-bottom: 34px;

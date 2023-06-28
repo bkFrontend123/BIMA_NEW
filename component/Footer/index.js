@@ -75,7 +75,7 @@ export default function Footer() {
                 <div className="col-md-3">
                   <div className="footer-listMenu-list border-0">
                       <ul className="list-group list-group-borderless bg-transparent ">
-                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">Company</li>
+                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">Get in Touch</li>
                         <li className="list-group-item">
                           <Link href="mailto:info@bimakavach.co" className='title18 font-weight-400'>info@bimakavach.com</Link>
                         </li>

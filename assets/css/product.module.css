@@ -88,8 +88,8 @@
     padding-bottom: 0;
     height: 100%;
 }
-.whyGet .lightYellowSecCardCol {
-    padding-bottom: 0;
+.lightYellowSecCardCol {
+    padding-bottom: 0 !important;
 }
 .lightYellowSecCardBox {
     padding-right: 24px;
@@ -296,16 +296,15 @@
     .whyGet {
         margin-top: 40px;
     }
-    .whyGet .lightYellowSecCardCol {
+    .lightYellowSecCardCol {
         border: 0;
-        padding-top: 0;
     }
-    .whyGet .lightYellowSecCardBox {
+    .lightYellowSecCardBox {
         padding-top: 0 !important;
         padding-bottom: 16px;
         border-bottom: 1px solid var(--vt-c-blueGray);
     }
-    .whyGet .lightYellowSecCardBox:first-child {
+    .lightYellowSecCardBox:first-child {
         padding-top: 0;
     }
     .coverage {
@@ -344,6 +343,7 @@
     }
     .productStartupBottom .btnCommon {
         padding: 14px 18px;
+        justify-content: center;
     }
     .productStartupListSec {
         margin-bottom:  120px;

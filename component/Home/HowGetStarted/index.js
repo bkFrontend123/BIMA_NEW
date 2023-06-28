@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
+
+import CalendyModal from '../../Modal/CalendyModal'
 
 import Calender from '../../Icons/Calender'
 import WhatsApp from '../../Icons/WhatsApp'
 
 export default function HowGetStarted(props) {
     const {customClass} = props;
+    const [showCalendy, setShowCalendy] = useState(false);
+    const handleCloseCalendy = () => setShowCalendy(false);
+    const handleShowCalendy = () => setShowCalendy(true);
     return (
         <>
             <div className={`HowGetStarted ${customClass}`}>
@@ -32,17 +37,21 @@ export default function HowGetStarted(props) {
                                 </div>
                                 <div className="getStarted-rightBottom">
                                     <div className="d-flex justify-content-center flex-column flex-md-row pb-2" >
-                                        <a className="btnCommon  border-white btnBorder text-white font-weight-400 text-decoration-none">
+                                        <a className="btnCommon  border-white btnBorder text-white font-weight-400 text-decoration-none"  onClick={handleShowCalendy}>
                                             <Calender iconColor="white" width="18" height="18" />
                                             <span className="ms-2"> Schedule a call</span>
                                         </a>
-                                        <a className="btnCommon bg-white d-none d-md-flex align-items-cet text-primary text-decoration-none  bordre2 mt-3 mt-md-0">
+                                        <a href="tel:+91 9876543210" className="btnCommon bg-white d-none d-md-flex align-items-cet text-primary text-decoration-none  bordre2 mt-3 mt-md-0">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                             <WhatsApp iconColor="primary" width="18" height="18" />
-                                            <span className="ms-2"> Talk to Us</span>
+                                            <span className="ms-2">Talk to Us</span>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         </a>
-                                        <a className="btnCommon bg-yellow d-flex d-md-none align-items-cet text-primary text-decoration-none ms-md-4 mt-3 mt-md-0">
+                                        <a href="tel:+91 9876543210" className="btnCommon bg-yellow d-flex d-md-none align-items-cet text-primary text-decoration-none ms-md-4 mt-3 mt-md-0">
+                                            &nbsp;&nbsp;
                                             <WhatsApp iconColor="primary" width="18" height="18" />
-                                            <span className="ms-2"> Talk to Us</span>
+                                            <span className="ms-2">Talk to Us</span>
+                                            &nbsp;&nbsp;
                                         </a>
                                     </div>
                                     <p className="title-15 getStarted-rightBottomDescrip mb-0">Say hello to a spam-free zone! We respect your privacy, and we won't bombard you with unwanted calls.</p>
@@ -52,7 +61,10 @@ export default function HowGetStarted(props) {
                     </div>
                 </div>
             </div>
-
+            <CalendyModal
+                show={showCalendy}
+                handleClose={handleCloseCalendy}
+            />
             <style jsx scope>
                 {`
                 .getStarted-rightSubTitle{
@@ -64,6 +76,24 @@ export default function HowGetStarted(props) {
 
                 .getStarted-left {
                     position: relative;
+                    z-index: 1;
+                }
+                .getStarted-left::before,
+                .getStarted-left::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    display: block;
+                    z-index: -1;
+                }
+                .getStarted-left:before {
+                    background-image: url(/cta_patt.png);
+                }
+                .getStarted-left:after {
+                    background-image: url(/cta_grid.png);
                 }
                 .getStarted-left img {
                     // object-fit: cover;
