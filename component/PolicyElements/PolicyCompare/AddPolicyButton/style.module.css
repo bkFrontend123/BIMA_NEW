@@ -1,0 +1,71 @@
+.addPlcyBtn {
+    position: relative;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.addPlcyBtn::before {
+    position: absolute;
+    content: "+";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--vt-c-blue);
+    left: 49%;
+    top: -10px;
+}
+.addPlcyBtn:first-child {
+    padding-top: 0;
+    margin-top: 0;
+}
+.addPlcyBtn:first-child::before {
+    display: none;
+}
+.addPlcyBtn a {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+    display: block;
+    border: 1px dashed var(--vt-c-blue);
+    line-height: 52px;
+    text-align: center;
+}
+.addPlcyBtn a i {
+    font-style: normal;
+}
+
+@media (max-width: 1699px) {
+    .addPlcyBtn a {
+        line-height: 50px;
+    }
+}
+
+@media (max-width:1399px) {
+    .addPlcyBtn a {
+        line-height: 48px;
+    }
+}
+
+@media (max-width:1199px) {
+
+}
+
+@media (max-width:991px) {
+
+}
+
+@media (max-width:767px) {
+    .addPlcyBtn {
+        padding-top: 0;
+        margin-top: 0;
+        padding-left: 16px;
+        margin-left: 16px;
+    }
+    .addPlcyBtn::before {
+        left: -5px;
+        top: 8px;
+    }
+    .addPlcyBtn a {
+        line-height: 38px;
+        width: 40px;
+    }
+}

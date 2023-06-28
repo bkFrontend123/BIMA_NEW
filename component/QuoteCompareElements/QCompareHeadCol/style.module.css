@@ -1,0 +1,58 @@
+.quoteCompareHdr i {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quoteCompareHdr h4 {
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black);
+    font-weight: 500;
+    margin: 8px auto 24px auto;
+    width: 70%;
+}
+.quoteCompareBtn {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 50px;
+}
+.quoteCompareBtn span,
+.quoteCompareBtn a {
+    background-color: var(--vt-c-blue);
+    display: inline-block;
+    min-width: 150px;
+    color: var(--whiteText);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media (max-width: 1699px) {
+    .quoteCompareHdr h4 {
+        font-size: 17px;
+        line-height: 24px;
+        margin: 8px auto 18px auto;
+    }
+    .quoteCompareBtn,
+    .quoteCompareBtn span,
+    .quoteCompareBtn a {
+        font-size: 17px;
+        min-width: 140px
+    }
+}
+
+@media (max-width: 767px) {
+    .quoteCompareHdr h4 {
+        font-size: 16px;
+    }
+    .quoteCompareBtn {
+        line-height: 36px;
+    }
+    .quoteCompareBtn,
+    .quoteCompareBtn span,
+    .quoteCompareBtn a {
+        font-size: 16px;
+        min-width: 130px;
+    }
+}

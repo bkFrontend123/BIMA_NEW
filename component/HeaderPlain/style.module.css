@@ -1,0 +1,156 @@
+.hdrBlock {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--vt-c-grayLight);
+}
+.logo a {
+    display: inline-block;
+}
+.hdrBtn a {
+    justify-content: center;
+}
+.btnSmall {
+    font-size: 15px;
+    line-height: 15px;
+    padding: 16px;
+    text-align: center;
+}
+button.btnSmall {
+    padding: 16px 30px;
+}
+.hdrDrpdwn button::after {
+    display: none;
+}
+.hdrDrpdwn button i {
+    transition: all 0.3s ease 0s;
+}
+.hdrDrpdwn button:focus + button,
+.hdrDrpdwn button:focus {
+    box-shadow: none;
+}
+.hdrDrpMenu {
+    padding: 0;
+    min-width: 100%;
+    border: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.hdrDrpMenu > a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vt-c-blue);
+    padding: 0.65rem 1rem;
+}
+.hdrDrpMenu > a + a {
+    border-top: 1px solid var(--vt-c-grayLight);
+}
+.hdrDwnldDrpdwn .hdrDrpMenu > a {
+    font-size: 18px;
+}
+
+.hdrTalkDrpdwn .hdrDrpMenu {
+    padding: 24px;
+    right: 0 !important;
+    left: inherit !important;
+}
+.hdrDrpMenu p {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    line-height: 22px;
+    font-weight: 500;
+    white-space: nowrap;
+    margin-bottom: 24px;
+}
+.hdrDrpMenu p:last-child {
+    margin: 0;
+}
+.hdrDrpMenu p a {
+    color: var(--vt-c-blue);
+}
+
+
+.offcanvasBtn {
+    display: inline-block;
+}
+.offcanvasBtn .btnMenuBar {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 25px;
+    height: 18px;
+    transition: all 0.4s ease 0s;
+    background: transparent;
+    border: 0;
+}
+.offcanvasBtn .btnMenuBar:focus {
+    box-shadow: none;
+}
+.offcanvasBtn .btnMenuBar span {
+    background: var(--vt-c-blue);
+    width: 25px;
+    height: 2px;
+    display: block;
+    transition: all 0.4s ease 0s;
+}
+.offcanvasBtn .btnMenuBar span.bar2 {
+    width: 18px;
+    margin: 6px 0 6px 7px;
+}
+.offcanvasBtn .btnMenuBar:hover span.bar2 {
+    margin: 6px 7px 6px 0;
+}
+.offcanvas-backdrop {
+    background-color: var(--secondary);
+}
+.offcanvas-backdrop.show {
+    opacity: .85;
+}
+.offcanvasOuter {
+    width: 320px;
+    border-right: 0;
+}
+.offcanvasHeader {
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    display: block;
+    text-align: center;
+}
+.offcanvasHeader .btn-close {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230B0033'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    opacity: 1;
+    width: 30px;
+    line-height: 30px;
+    height: 30px;
+    padding: 0;
+    display: inline-block;
+    border-radius: 40px;
+    background-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.offcanvasOuter .btn-close:focus {
+    box-shadow: none;
+}
+.offcanvasLogo img {
+    max-width: 100%;
+}
+.offcanvasBody {
+    padding: 30px;
+}
+
+@media (max-width:1699px) {
+    .hdrBlock {
+        padding: 26px 0;
+    }
+}
+
+@media (max-width:767px) {
+    .hdrBlock {
+        padding: 24px 0;
+    }
+    .btnSmall {
+        padding: 10px;
+    }
+    button.btnSmall {
+        padding: 10px;
+    }
+}

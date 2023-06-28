@@ -1,0 +1,249 @@
+.policyCol {
+    background-color: var(--white);
+    position: relative;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    padding: 55px 40px 40px;
+    height: 100%;
+}
+.policyInstant {
+    background-color: var(--vt-c-blue);
+    font-size: 20px;
+    color: var(--whiteText);
+    line-height: 27px;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.policyInstant i {
+    display: flex;
+}
+.policyCardHdr i {
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+.policyCardHdr h4 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--vt-c-blue);
+    margin: 12px 0;
+}
+.policyCardHdr p {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--vt-c-yellow);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.policyFeaBtn {
+    margin-top: 16px;
+}
+.policyFeaBtn a {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--vt-c-blueSky);
+    font-weight: 500;
+    text-decoration: underline;
+}
+.policyPrice {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+.policyPrice span {
+    font-size: 32px;
+    line-height: 43px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+}
+.policyPrice small {
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+    margin-left: 9px;
+}
+.policyCardFtr {
+    margin-top: 16px;
+}
+.policyCompareCheck input {
+    background-color: var(--vt-c-gray);
+    border-radius: 16px !important;
+    cursor: pointer;
+    border: 0;
+}
+.policyCompareCheck input:checked {
+    background-color: var(--vt-c-blueSky);
+    border-color: var(--vt-c-blueSky);
+}
+.policyCompareCheck label {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--vt-c-blueSky);
+    cursor: pointer;
+}
+
+.policyOffcanvasHdrTop {
+    margin: 36px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.policyOffcanvasHdrTop i {
+    display: inline-block;
+    background: var(--whiteBg);
+    padding: 12px 20px;
+}
+.policyOffcanvasHdrBtm {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.policyOffcanvasHdrBtm > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 40%;
+}
+.policyOffcanvasHeader p {
+    font-size: 15px;
+    color: var(--whiteText);
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0;
+}
+.policyOffcanvasHeader p span {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+@media (max-width:1699px) {
+    .policyCol {
+        padding: 60px 32px 32px 32px;
+    }
+    .policyInstant {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .policyCardHdr i {
+        height: 70px;
+    }
+    .policyCardHdr h4 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .policyPrice span {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .policyFeaBtn a {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width:1399px) {
+    .policyCol {
+        padding: 60px 24px 24px 24px;
+    }
+    .policyInstant {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .policyCardHdr h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .policyPrice span {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .policyPrice small {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width:1199px) {
+    .policyCol {
+        padding: 50px 24px 24px 24px;
+    }
+    .policyCardHdr h4 {
+        font-size: 19px;
+    }
+    .policyPrice span {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+@media (max-width:991px) {
+    .policyOffcanvasDiv {
+        width: 90%;
+    }
+    .policyOffcanvasHdrTop {
+        margin: 24px 0;
+    }
+}
+
+@media (max-width:767px) {
+    .policyCol {
+        padding: 40px 20px 20px 20px;
+    }
+    .policyInstant {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .policyCardHdr i {
+        height: 60px;
+    }
+    .policyCardHdr i img {
+        width: auto;
+        height: 30px;
+    }
+    .policyCardHdr h4 {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 10px 0;
+    }
+    .policyPrice span {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .policyFeaBtn {
+        margin-top: 12px;
+    }
+    .policyFeaBtn a {
+        font-size: 14px;
+    }
+    .policyCompareCheck label {
+        font-size: 15px;
+    }
+    .policyOffcanvasHdrTop {
+        margin: 20px 0;
+        display: block;
+    }
+    .policyOffcanvasHdrTop i {
+        padding: 12px 16px;
+        margin-bottom: 16px;
+    }
+    .policyOffcanvasHdrBtm {
+        display: block;
+    }
+    .policyOffcanvasHdrBtm > div:first-child {
+        width: 100%;
+    }
+    .policyOffcanvasHdrBtm > div:nth-child(2) {
+        margin: 16px 0 0 0;
+    }
+}

@@ -1,0 +1,315 @@
+.quoteCompareTable {
+    margin-left: 0;
+    /* height: calc(100vh - 292px); */
+    margin-left: 3%;
+    padding-top: 140px;
+    position: relative;
+}
+.quoteCompareLeftCol {
+    float: left;
+}
+.quoteCompareRightCol {
+    float: left;
+    width: calc(100% - 430px);
+    margin-top: -164px;
+    position: relative;
+    z-index: 2;
+}
+.quoteCompareHeader {
+    display: flex;
+    width: 100%;
+}
+.quoteCompareLeftCol .quoteCompareHeader {
+    width: calc(100% - 30px);
+    margin-left: 30px;
+}
+.quoteCompareRightCol .quoteCompareHeader {
+    position: sticky;
+    top: 0;
+}
+.quoteCompareHeader > div {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 324px;
+}
+.quoteCompareLeftCol .quoteCompareHeader > div:first-child {
+    width: 400px;
+    min-width: 400px;
+    align-items: start;
+    justify-content: end;
+    z-index: 1;
+}
+.accordianHeader {
+    padding-left: 30px;
+}
+
+.quoteCompareTtl {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--vt-c-grayText);
+}
+
+.quoteCompareRightCol .accordianItem {
+    padding-top: 73px;
+}
+.quoteCompareListCol {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+.quoteCompareLeftCol .quoteCompareListCol {
+    width: calc(100% - 30px);
+    margin-left: 30px;
+}
+.quoteCompareListCol > div {
+    background-color: var(--mute);
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--black);
+    font-weight: 500;
+    padding: 20px;
+    border-top: 1px solid var(--vt-c-gray);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 324px;
+    text-align: center;
+    position: relative;
+    box-shadow: 15.64811px 10.09265px 10.5372px -1.22227px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.quoteCompareListCol > div.cursor {
+    cursor: pointer;
+}
+.quoteCompareListCol > div.cursor span {
+    display: inline-block;
+    position: relative;
+    padding-right: 30px;
+}
+.quoteCompareListCol > div.cursor span::after {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(-180deg);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform 0.2s ease-in-out;
+}
+.quoteCompareListCol > div.cursor.inactive span::after {
+    top: 0;
+    transform: rotate(0);
+}
+.quoteCompareListCol > div h2 {
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--black);
+    font-weight: 500;
+}
+.quoteCompareListCol > div h2 button {
+    font-weight: 500;
+}
+.quoteCompareListCol > div::before {
+    background-color: var(--mute);
+    position: absolute;
+    content: "";
+    left: -24px;
+    top: 0;
+    bottom: 0;
+    width: 24px;
+    z-index: -1;
+}
+.quoteCompareLeftCol .quoteCompareListCol > div:first-child::before,
+.quoteCompareLeftCol .quoteCompareListCol > div:nth-child(2)::before {
+    display: none;
+}
+.quoteCompareListCol:nth-child(2n) div,
+.quoteCompareListCol:nth-child(2n) > div::before {
+    background-color: var(--whiteBg);
+}
+.quoteCompareBodyList > .quoteCompareListCol:first-child > div {
+    border-top: 0;
+}
+.quoteCompareLeftCol .quoteCompareListCol > div:first-child {
+    background-color: transparent;
+    width: auto;
+    min-width: 30px;
+    padding: 0;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    border: 0;
+    justify-content: start;
+    box-shadow: none;
+}
+.quoteCompareLeftCol .quoteCompareListCol > div:nth-child(2) {
+    width: 400px;
+    min-width: 400px;
+    text-align: left;
+    justify-content: start;
+}
+.quoteCompareListCol > div > span {
+    display: block;
+    text-align: center;
+}
+.quoteCompareRightCol .quoteCompareListCol > div > span  {
+    color: var(--vt-c-blueGray);
+}
+
+@media (min-width: 768px) {
+    .quoteCompareTable {
+        margin-left: calc(((100% - 720px)/2) + 3%);
+    }
+}
+
+
+@media (min-width: 992px) {
+    .quoteCompareTable {
+        margin-left: calc(((100% - 960px)/2) + 3%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .quoteCompareTable {
+        margin-left: calc(((100% - 1140px)/2) + 3%);
+    }
+}
+
+@media (min-width: 1300px) {
+    .quoteCompareTable {
+        margin-left: calc(((100% - 1280px)/2) + 5%);
+    }
+}
+
+@media (min-width: 1400px) {
+    .quoteCompareTable {
+        margin-left: calc(((100% - 1400px)/2) + 6%);
+    }
+}
+
+@media (min-width: 1600px) {
+    .quoteCompareTable {
+        margin-left: calc(((100% - 1400px)/2) + 0%);
+    }
+}
+
+@media (min-width: 1700px) {
+    .quoteCompareTable {
+        margin-left: calc(((100% - 1560px)/2) + 2.5%);
+    }   
+}
+
+
+@media (max-width: 1699px) {
+    .quoteCompareRightCol {
+        margin-top: -154px;
+    }
+    .quoteCompareRightCol .accordianItem {
+        padding-top: 67px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .quoteCompareRightCol {
+        width: calc(100% - 370px);
+    }
+    .quoteCompareLeftCol .quoteCompareHeader > div:first-child {
+        width: 340px;
+        min-width: 340px;
+    }
+    .quoteCompareHeader > div {
+        padding: 16px;
+        min-width: 280px;
+    }
+    .quoteCompareListCol > div {
+        font-size: 17px;
+        line-height: 26px;
+        padding: 16px;
+        height: 70px;
+        min-width: 280px;
+    }
+    .quoteCompareLeftCol .quoteCompareListCol > div:nth-child(2) {
+        width: 340px;
+        min-width: 340px;
+    }
+    .quoteCompareRightCol .accordianItem {
+        padding-top: 63px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .quoteCompareRightCol {
+        width: calc(100% - 330px);
+    }
+    .quoteCompareLeftCol .quoteCompareHeader > div:first-child {
+        width: 300px;
+        min-width: 300px;
+    }
+    .quoteCompareTtl {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .quoteCompareHeader > div {
+        padding: 16px;
+        min-width: 240px;
+    }
+    .quoteCompareListCol > div {
+        font-size: 15px;
+        line-height: 18px;
+        padding: 15px;
+        height: 60px;
+        min-width: 240px;
+    }
+    .quoteCompareLeftCol .quoteCompareListCol > div:nth-child(2) {
+        width: 300px;
+        min-width: 300px;
+    }
+    .quoteCompareRightCol .accordianItem {
+        padding-top: 63px;
+    }
+    .quoteCompareListCol > div.cursor span::after {
+        top: 0;
+        width: 1rem;
+        height: 1rem;
+        background-size: 1rem;
+    }
+    .quoteCompareListCol > div.cursor.inactive span::after {
+        top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .quoteCompareHeader > div {
+        padding: 16px;
+        min-width: 240px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .quoteCompareHeader > div:first-child {
+        width: 300px;
+        min-width: 300px;
+    }
+    .quoteCompareListCol > div:nth-child(2) {
+        width: 300px;
+        min-width: 300px;
+    }
+    .quoteCompareListCol > div {
+        padding: 16px;
+        min-width: 240px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+

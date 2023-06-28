@@ -1,0 +1,59 @@
+.alertMdlOuter > div > div {
+    border-radius: 0;
+    border: 0;
+}
+.alertMdlBody {
+    padding: 40px;
+}
+.alertMdlHdr {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.alertMdlHdr h5 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 36px;
+    margin: 0;
+}
+.alertMdlInfo {
+    margin: 32px 0;
+}
+.alertMdlInfo p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    line-height: 28px;
+    margin: 0;
+}
+.alertMdlCloseBtn {
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--black);
+    line-height: 55px;
+    min-width: 180px;
+    border: 2px solid var(--black);
+    border-radius: 0;
+    padding: 0 16px;
+    transition: all 0.3s ease 0s;
+}
+.alertMdlCloseBtn:hover {
+    background-color: transparent;
+    color: var(--black);
+    border-color: var(--black);
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.2);
+}
+.alertMdlCloseBtn:focus + .alertMdlCloseBtn,
+.alertMdlCloseBtn:focus {
+    color: var(--black);
+    background-color: transparent;
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.2);
+}
+.alertMdlCloseBtn:checked + .alertMdlCloseBtn:focus,
+.alertMdlCloseBtn:active + .alertMdlCloseBtn:focus,
+.alertMdlCloseBtn:active:focus, .alertMdlCloseBtn.active:focus,
+.alertMdlCloseBtn.dropdown-toggle:focus {
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.2);
+}

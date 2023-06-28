@@ -1,0 +1,72 @@
+.quoteCompMblBlock {
+
+}
+.quoteCompMblHdr {
+    background: var(--whiteBg);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.quoteCompMblHdrCol {
+    width: 50%;
+}
+.quoteCompMblHdrCol i {
+    background: var(--vt-c-gray);
+    position: relative;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.quoteCompMblHdrCol i img {
+    height: auto;
+    width: auto;
+}
+.quoteCompMblHdrBtn a {
+    justify-content: center;
+}
+.quoteCompMblHdrPlus {
+    min-width: 36px;
+    text-align: center;
+}
+.quoteCompMblHdrPlus span {
+    font-size: 24px;
+    line-height: 35px;
+}
+.quoteCompMblList {
+
+}
+.quoteCompMblListCol {
+
+}
+.quoteCompMblListCol h4 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 0;
+}
+.quoteCompMblListCol ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.quoteCompMblListCol li {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black);
+    line-height: 20px;
+    width: 200px;
+    text-align: center;
+    padding: 12px 20px;
+}
+.quoteCompMblListCol li:first-child {
+    border-right: 1px solid var(--vt-c-blueGray);
+}
+.quoteCompMblListCol li span {
+    color: var(--vt-c-blueGray);
+}

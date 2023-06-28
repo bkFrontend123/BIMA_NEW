@@ -1,0 +1,13 @@
+.supportMobileCol a {
+    font-size: 14px;
+    color: var(--vt-c-blue);
+    line-height: 20px;
+    padding: 10px;
+    border: 1px solid var(--vt-c-blue);
+    display: block;
+    text-align: center;
+}
+.supportMobileCol a span {
+    display: block;
+    margin-top: 2px;
+}

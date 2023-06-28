@@ -1,0 +1,19 @@
+.ftrBlock {
+    position: relative;
+    background-color: var(--vt-c-blue);
+}
+.ftrCntnt {
+    text-align: center;
+}
+.ftrCntnt p {
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--whiteText);
+    opacity: 0.8;
+}
+.ftrCntnt p:last-child {
+    margin: 0;
+}
+.ftrCntnt p a {
+    color: var(--whiteText);
+}

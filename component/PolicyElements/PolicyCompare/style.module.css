@@ -1,0 +1,110 @@
+.plcyCompCol {
+    background-color: var(--yellowBg);
+    padding: 32px 72px 32px 32px;
+    border-top: 6px solid var(--vt-c-yellow);
+    position: fixed;
+    width: 360px;
+    top: 50%;
+    right: -360px;
+    transition: all 0.4s ease 0s;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+.plcyCompCol.show {
+    right: -40px;
+}
+.plcyCompCol.hide {
+    right: -360px;
+}
+.plcyCompClose {
+    margin-top: 32px;
+}
+.plcyCompClose a {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    line-height: 46px;
+    font-weight: 500;
+    border: 1px solid var(--vt-c-blue);
+    display: block;
+    text-align: center;
+    width: 112px;
+    box-shadow: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.05));
+    transition: all 0.3s ease 0s;
+}
+.plcyCompClose a:hover {
+    background-color: var(--vt-c-blue);
+    color: var(--whiteText);
+}
+
+@media (max-width: 1699px) {
+    .plcyCompCol {
+        padding: 32px 72px 32px 32px;
+        right: -360px;
+    }
+}
+
+@media (max-width:1399px) {
+
+}
+
+@media (max-width:1199px) {
+    .plcyCompCol {
+        padding: 24px 60px 24px 24px;
+        right: -360px;
+    }
+    .plcyCompCol.show {
+        right: -35px;
+    }
+    .plcyCompCol.hide {
+        right: -360px;
+    }
+    .plcyCompClose {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width:991px) {
+
+}
+
+@media (max-width:767px) {
+    .plcyCompCol {
+        background: var(--whiteBg);
+        left: 0;
+        right: 0;
+        top: inherit;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(0);
+        padding: 20px;
+        box-shadow: 0px -10px 50px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 0;
+    }
+    .plcyCompCol.show {
+        right: 0;
+        bottom: 0;
+    }
+    .plcyCompCol.hide {
+        right: 0;
+        bottom: -100px;
+    }
+    .plcyCompClose {
+        margin-top: 20px;
+    }
+    .plcyCompClose a {
+        line-height: 20px;
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: 0;
+    }
+    .plcyCompClose a:hover {
+        background-color: transparent;
+        color: var(--black);
+    }
+}

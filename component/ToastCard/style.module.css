@@ -1,0 +1,130 @@
+.toastCol {
+    width: 100%;
+    max-width: 554px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.toastSuccess {
+    background-color: var(--successMute) !important;
+}
+.toastWarning {
+    background-color: var(--warningMute) !important;
+}
+.toastDanger {
+    background-color: var(--errorMute) !important;
+}
+.toastHdr {
+    background-color: transparent;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: var(--vt-c-blue);
+    padding: 0;
+}
+.toastSuccess .toastHdr,
+.toastSuccess .toastHdr button {
+    border-color: var(--success);
+}
+.toastWarning .toastHdr,
+.toastWarning .toastHdr button {
+    border-color: var(--warning);
+}
+.toastDanger .toastHdr,
+.toastDanger .toastHdr button {
+    border-color: var(--error);
+}
+.toastHdr button {
+    width: 24px;
+    height: 24px;
+    margin-right: 0 !important;
+    border-radius: 0;
+    border-width: 0 0 0 2px;
+    border-style: solid;
+    border-color: var(--vt-c-blue);
+    opacity: 1;
+}
+.toastHdr button:focus {
+    box-shadow: none;
+}
+.toastBody {
+    padding: 20px;
+}
+.toastInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.toastInfo p {
+    font-size: 20px;
+    color: var(--vt-c-blue);
+    line-height: 26px;
+    font-weight: 500;
+    margin: 0;
+}
+.toastSuccess .toastInfo p {
+    color: var(--success);
+}
+.toastWarning .toastInfo p {
+    color: var(--warning);
+}
+.toastDanger .toastInfo p {
+    color: var(--error);
+}
+.toastUndoBtn {
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    line-height: 42px;
+    min-width: 124px;
+    border: 1px solid var(--vt-c-blue);
+    border-radius: 0;
+    padding: 0 16px;
+    transition: all 0.3s ease 0s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.toastUndoBtn:hover {
+    background-color: var(--vt-c-blue);
+    color: var(--whiteText);
+}
+.toastSuccess .toastUndoBtn {
+    border-color: var(--success);
+    color: var(--success);
+}
+.toastWarning .toastUndoBtn {
+    border-color: var(--warning);
+    color: var(--warning);
+}
+.toastDanger .toastUndoBtn {
+    border-color: var(--error);
+    color: var(--error);
+}
+.toastSuccess .toastUndoBtn:hover,
+.toastSuccess .toastUndoBtn:focus {
+    background-color: var(--success);
+    color: var(--whiteText);
+}
+.toastWarning .toastUndoBtn:hover,
+.toastWarning .toastUndoBtn:focus {
+    background-color: var(--warning);
+    color: var(--whiteText);
+}
+.toastDanger .toastUndoBtn:hover,
+.toastDanger .toastUndoBtn:focus {
+    background-color: var(--error);
+    color: var(--whiteText);
+}
+
+
+@media (max-width:767px) {
+    .toastBody {
+        padding: 16px;
+    }
+    .toastInfo p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}

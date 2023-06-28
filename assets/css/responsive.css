@@ -1,0 +1,862 @@
+
+
+@media only screen and (min-width: 768px) {
+  .abcFilterBox:hover span,
+  .abcFilterBox.active span,
+  .abcFilterBox:focus span{
+      font-size: 24px;
+      line-height: 24px;
+      color:  var(--vt-c-yellow);
+  }
+}
+
+@media only screen and (max-width: 1650px) {
+  .bloglistCategory .polyBox.title16 {
+    font-size: 14px;
+  }
+  .mainMenu.navbar .navbar-brand{
+    margin-right: 45px;
+  }
+  .mainMenu.navbar .navbar-nav li {
+    margin: 0 18px;
+  }
+  body .mainMenu.navbar .navbar-brand img {
+    max-width: 235px;
+  }
+  .btnCommon{
+    padding: 18px 34px;
+  }
+}
+
+
+@media only screen and (max-width: 1450px) {
+  .mega-menu .mega-menuBox{
+    padding: 10px 20px;
+  }
+  .mainMenu.navbar .navbar-nav li .mega-menu.productMega-menu .mega-menuBox img{
+    width: 40px;
+    height: 40px;
+  }
+  .mainMenu.navbar .navbar-nav li .mega-menu.productMega-menu .mega-menuBox a {
+      font-size: 16px;
+      line-height: 26px;
+  }
+  .startupCols-cardBox{
+    margin-bottom: 10px !important;
+   }
+  body .mainMenu.navbar .navbar-brand img {
+    max-width: 240px;
+  }
+
+  body .mainMenu.navbar a.btnCommon {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  .btnCommon{
+    font-size: 17px;
+    padding: 16px 20px;
+  }
+  .btnCommon.btnSmall{
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+  .btnCommon.btnEmail {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .mainMenu.navbar .navbar-brand{
+    margin-right: 40px;
+  }
+  .mainMenu.navbar .navbar-nav li {
+    margin: 0 18px;
+  }
+  .mainMenu.navbar .navbar-nav li a {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .mega-menu .mega-menuBox {
+    max-height: 75vh;
+  }
+  .mainMenu.navbar .navbar-nav li .mega-menu.productMega-menu a {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .polyBox {
+    padding: 7px 18px;
+  }
+
+  .companyReview-img {
+    min-height: 110px;
+  }
+
+  .ProductList li a{
+    font-size: 20px !important;
+    padding: 10px 38px;
+  }
+
+  /****** font Style ********/
+  .title64 {
+    font-size: 52px;
+    line-height: 64px;
+  }
+
+  .title60 {
+    font-size: 54px;
+    line-height: 70px;
+  }
+
+  .title48 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  .title32 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .title30 {
+    font-size: 26px;
+    line-height: 38px;
+  }
+ 
+  /*****/
+  .RecentActivity-card img {
+    min-height: 320px;
+  }
+
+  .blogDetail .blogImg2-text {
+    position: absolute;
+    width: 70%;
+   
+    left: 5%;
+    color: #fff;
+  }
+
+  .footer-listMenu-listALign ul {
+    padding-left: 100px;
+  }
+  .howDoDesktopSlider {
+    width: 88%;
+  }
+
+}
+
+@media only screen and (max-width: 1399px) {
+  .howDoDesktopSlider {
+    width: 96%;
+  }
+  .footer-listMenu-listALign ul {
+    padding-left: 70px;
+  }
+  .mainMenu.navbar .navbar-brand{
+    margin-right: 30px;
+  }
+  .mainMenu.navbar .navbar-nav li {
+    margin: 0 14px;
+  }
+  body .mainMenu.navbar .navbar-brand img {
+    max-width: 200px;
+  }
+  .howDo {
+    padding-bottom: 80px;
+  }
+  .howDo .jnOFAk{
+    height: 600px;
+    width: 100%;
+  }
+  .howDo-sliderBox {
+    height: 600px;
+  }
+  .howDoswiper-button-next {
+      bottom: 15%;
+      left: 80px;
+  }
+  .howDo-sliderBox .howDo-sliderBoxText {
+    padding: 80px 80px 0 70px;
+  }
+  .howDo-sliderBoxImg {
+    width: 45%;
+  }
+  .howDo-sliderBox .title24 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .btnCommon {
+    padding: 16px 22px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+
+  body .mainMenu.navbar ul.navbar-nav li a {
+    padding: 15px;
+  }
+
+  .mainMenu.navbar .navbar-collapse {
+    height: 0;
+  }
+
+  .mainMenu.navbar .navbar-collapse.menuActive {
+    display: block !important;
+    height: auto;
+    transition: 2s ease-in-out;
+  }
+
+  .footer-listMenu-listALign ul {
+    padding-left: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .tabLink{
+    margin-right: 0;
+  }
+  .tabLink {
+    font-size: 17px !important;
+    padding: 10px 12px;
+  }
+  .title-32.tabLink {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .w-xs-100 {
+    width: 100% !important;
+  }
+
+  .ProdFAQ-accordionBox {
+    padding: 16px 0;
+  }
+
+  .navbar-main.bg-yellowLight {
+    background-color: transparent;
+    padding-top: 0;
+  }
+
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .homeBannerContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  body .mainMenu.navbar {
+    text-align: center;
+  }
+
+  body .mainMenu.navbar a.btnCommon {
+    justify-content: center;
+  }
+
+  body .mainMenu.navbar .navbar-brand {
+    line-height: 0;
+  }
+
+  body .mainMenu.navbar .navbar-toggler body .mainMenu.navbar .navbar-brand img {
+    max-width: 192px;
+  }
+
+  /****** font Style ********/
+  .title64,
+  .title60 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  /* .title60{
+        font-size: 54px;
+        line-height: 70px;
+      } */
+  .title48 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .title32 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .title30 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .title24 {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .title20 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .title16 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .btnCommon {
+    font-size: 16px;
+    padding: 14px 18px;
+  }
+
+  .btnCommon.btnSmall{
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+
+  .heroPlay img{
+    height: 64px;
+    width: 64px;
+  }
+  .trusted-business .swiper-button-next,
+  .trusted-business .swiper-button-prev {
+    display: none;
+  }
+
+  .startup .btnCommon {
+    justify-content: center;
+  }
+
+  .startup .startupCols .startupCols-cardCol .startupCols-cardBox img {
+    width: 52px;
+  }
+
+  .startup .startupCols .startupCols-cardCol {
+    padding: 0 9px;
+    text-align: center;
+  }
+
+  .startup .startupCols .startupCols-cardCol .startupCols-cardBox .title16 {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  /* 
+    .startupTitle-card img {
+        width: 50px;
+    } */
+  .business-risk {
+    /* padding: 0; */
+  }
+
+  .getStarted-right {
+    padding: 24px;
+  }
+
+  .getStarted-right .btnCommon {
+    justify-content: center;
+  }
+
+  .homeBannerContainer img.homeBannerImg {
+    top: auto;
+    height: auto;
+    bottom: 0;
+  }
+
+  .mainMenu.navbar {
+    padding-top: 50px;
+  }
+
+  /*****/
+  .IndustryList .swiper-slide {
+    height: 100%;
+  }
+
+  .IndustryList .IndustryList-card {
+    padding: 30px;
+    /* background-color: var(--vt-c-blue); */
+    height: 100%;
+  }
+/* 
+  .IndustryList .IndustryList-card .industryList-cardTitle {
+    color: #fff !important;
+    font-weight: 400;
+  }
+
+  .IndustryList .IndustryList-card li a {
+    color: #fff !important;
+  } */
+
+  .IndustryList-card-seeMore a {
+    text-decoration: underline;
+  }
+
+  .businessInsurance .commnHeading .title24 {
+    font-size: 15px;
+  }
+
+  .howDo .howDo-swiper {
+    height: 590px;
+
+  }
+
+  .howDo-sliderBox {
+    min-height: 670px !important;
+    overflow: hidden;
+  }
+
+  .howDo-sliderBox-btn {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    left: auto;
+  }
+  .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxText{
+    padding: 50px 40px 0 40px;
+  }
+  .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxText .title64{
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxText .title24{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxText .title20{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+  .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxText .howDo-sliderBox-index {
+    width: 40px;
+    height: 40px;
+  }
+  .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxImg{
+    width: 100%;
+    transform: scale(1.5);
+    left: 40%;
+    bottom: -36%;
+  }
+  .howDo-sliderBox-mob.howDo-sliderBox .howDoswiper-button-next a{
+    display: inline !important;
+    border: 0;
+    line-height: 0;
+    min-width: auto;
+  }
+
+  .IndustryList-card {
+    /* background: red; */
+    min-height: 460px;
+  }
+
+  .companyReview .swiper-button-next,
+  .companyReview .swiper-button-prev {
+    top: auto;
+    bottom: 8%;
+    position: relative;
+  }
+
+  body .companyReview .swiper-button-next {
+    left: 76%;
+    /* left: auto; */
+  }
+
+  body .companyReview .swiper-button-prev {
+    left: 20%;
+    /* right: auto; */
+    bottom: -21px;
+  }
+
+ 
+
+  .popularQue {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .popularQue .swiper-pagination {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .backedBest .backedBest-card {
+    min-height: 100px;
+  }
+
+  .footer {
+    padding: 50px 0 24px 00;
+  }
+
+  .footer-listMenu-list {
+    padding: 10px 0;
+    border: 0;
+  }
+
+  .footerLogo img {
+    width: 250px;
+  }
+
+  .RecentActivity-card .RecentActivity-cardTitle {
+    font-size: 24px;
+    font-size: 20px;
+  }
+
+  /***** blog page ============*/
+  .blogListCard-container {
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    margin-top: 0;
+  }
+ 
+  .blogListHero h2{
+    color: var(--vt-c-blue);
+ }
+  .blogList .bg-yellowLight.blogListBg {
+    background-color: transparent;
+  }
+
+  .blogList .bg-yellowLight .container {
+    padding: 0;
+  }
+  .bloglistCategorySearch{
+    padding-right: 40px;
+}
+  .blogList .blogListBg{
+    background-color: transparent;
+}
+  .bloglistCategory .blog-swiper-button-prev,
+  .bloglistCategory .blog-swiper-button-next {
+    display: none;
+  }
+
+  .BlogList-card .BlogList-cardTitle {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+  }
+
+  .BlogList-card .BlogList-cardDate {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .blogListHero {
+    height: 370px;
+    padding: 0 20px;
+  }
+
+  .blogListHero .title64 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .blogDetail .blogDetailHero .title64 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .BlogDetailPageBody {
+    padding: 40px 0;
+  }
+
+  .blogDetailSubcribe input.text-white {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .blogQuote img {
+    top: -20px;
+    left: 20px;
+  }
+
+  .blogHelpful .title25 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .blogHelpful .btnCommon {
+    font-size: 20px;
+  }
+
+  body .BlogDetail-card .BlogList-card .BlogList-cardBox {
+    flex-direction: column !important;
+  }
+
+  body .BlogDetail-card .BlogList-card .BlogList-cardBox .BlogListCardBox {
+    height: 185px;
+  }
+
+  /* body .BlogDetail-card .BlogList-card .BlogList-cardTitle {
+    font-size: 24px;
+    line-height: 26px;
+  } */
+
+  body .BlogDetail-card .BlogList-card .BlogList-cardDate {
+    font-size: 14px;
+  }
+
+  body .BlogDetail-card .BlogList-card .blogBy {
+    display: flex !important;
+    bottom: 10px;
+  }
+
+  body .BlogDetail-card .BlogList-card .blogBy.blogByBottom {
+    display: none !important;
+  }
+
+  .blogDetail-swiper-button-next,
+  .blogDetail-swiper-button-prev {
+    display: none;
+  }
+
+  .blogDetailSubcribe .blogDetailSubcribe-title {
+    line-height: 28px;
+  }
+
+  .blogDetailSubcribe .blogDetailSubcribe-descrp {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  .blogDetailSubcribe-bottom .input-group {
+    flex-direction: column;
+  }
+
+  .blogDetailSubcribe-bottom .input-group input {
+    border: 0;
+    width: 100%;
+    border: 1px solid #fff !important;
+  }
+
+  .blogDetailSubcribe-bottom .input-group button {
+    border: 0;
+    background-color: var(--vt-c-blue) !important;
+    justify-content: center;
+    margin-top: 16px;
+    width: 80%;
+    margin-left: 10% !important;
+  }
+
+  .blogDetailSubcribe-bottom {
+    margin-bottom: 80px;
+  }
+
+  .RecentActivity-yellow {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .whoNeedRight img {
+    height: 300px;
+  }
+
+  .ProductNavbar{
+    padding: 0;
+  }
+  .ProductList {
+    overflow: hidden;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+  .ProductList::-webkit-scrollbar {
+    display: none;
+  }
+  /* Track */
+  .ProductList::-webkit-scrollbar-track {
+     display: none;
+  }
+   
+  .ProductList li a{
+    padding: 0 16px !important;
+    font-size: 16px !important;
+  }
+  .ProductList li:last-child a{
+    width: auto;
+  }
+  body .ProductList li a.active::after{
+    height: 2px;
+    bottom: -7px;
+  }
+
+  .ProductBanner-formBox input.form-control {
+    height: 50px;
+  }
+
+  .ProductBanner-formBox input.form-control::placeholder {
+    font-size: 13px;
+  }
+
+  /** footer**/
+
+  .ftrNwsltr form {
+    display: block;
+  }
+  .ftrNwsltr .form-control {
+    height: 54px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  .ftrNwsltr .btn {
+    font-size: 16px;
+    padding: 0;
+    line-height: 52px;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .footer-listMenu-list ul {
+    text-align: right;
+  }
+
+  .footer-listMenu-listALign ul {
+    padding-left: 0;
+  }
+
+  .footer-note p.title14 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+
+  .copyright p.title15 {
+    font-size: 12px;
+    line-height: 18px;
+
+  }
+
+
+  /*** product ***/
+  .companyReview .companyReview-sliderBox {
+    padding-bottom: 110px;
+  }
+
+  .mainMenu.navbar .navbar-brand {
+    margin-right: 0;
+  }
+
+  .whyInsuranceCardBox-ico{
+    height: 30px;
+    width: 30px;
+  }
+  .policyList-cardBoxTop-ico{
+    height: 30px;
+    height: 30px;
+  }
+  .policyList-cardBox a{
+    margin-left: auto;
+    margin-top: 15px;
+  }
+  .aboutProductSec-yellowList .list-group-item{
+    font-size: 12px;
+    line-height: 18px;
+ }
+ .aboutCompany-bottom .title20 {
+  font-size: 12px;
+}
+  .howDo-sliderBox .howDo-sliderBoxText{
+    
+  }
+  .howDoSliderBox{
+    padding-right: 0;
+  }
+  .howDoSliderBox-row{
+    margin-right: 0;
+  }
+  .howDo-slider {
+    padding: 0;
+  }
+  .businessInsurance table td .businessInsurance-colBox{
+    min-height: 50px;
+  }
+  .businessInsurance table td .businessInsurance-colBox img{
+    width: 24px;
+  }
+  .abcFilterBox::after{
+    display: none;
+  }
+  .abcFilterBox {
+    padding: 0 !important;
+  }
+  .abcFilterBox span{
+    font-size: 12px !important;
+    line-height: 12px !important;
+  }
+  .mega-menu{
+    position: relative;
+  }
+  .mainMenu.navbar .navbar-nav li .mega-menu.productMega-menu a {
+      font-size: 14px;
+      line-height: 20px;
+      color: #000 !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .IndustryList-card-seeMore a:before{
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    background: var(--vt-c-blue);
+    width: 121px;
+    height: 2px;
+  }
+  .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxImg{
+    bottom: -20%;
+  }
+  .errorForm-result .title-24 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .errorForm-resultCard .errorForm-resultCardTitle{
+    font-weight: 600; 
+  }
+  .errorForm-resultCard .errorForm-resultCardSVG{
+    width: 16px;
+  }
+  .homeBannerText-bottomCard-last img {
+    height: auto;
+  }
+  .homeBannerProduct-card div  br {
+    display: none;
+  }
+  .howDo {
+    padding-bottom: 60px;
+  }
+  .howDoTitle {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .howDoSubTitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .copyright {
+    padding-top: 24px;
+    text-align: center;
+  }
+  .footerSocial {
+    justify-content: center;
+  }
+  .ProductList li a {
+    font-size: 14px !important;
+    padding: 0 8px !important;
+  }
+  .ProductList li:last-child a {
+    width: auto;
+    white-space: nowrap;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxImg{
+    bottom: -10%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .mainMenu.navbar .nabbarStrip {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,370 @@
+.ProdMain {
+    margin-top: 80px;
+}
+.ProductNavbar {
+    position: sticky;
+    top: 0;
+    z-index: 222;
+}
+.ProductNavbar .navbar {
+    border-bottom: 1px solid var(--vt-c-yellow);
+    padding: 0;
+}
+.ProductList {
+    justify-content: space-between;
+    width: 100%;
+}
+.ProductList li {
+    margin-right: 16px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.ProductList li:last-child {
+    margin-right: 0;
+}
+.ProductList li a {
+    display: flex;
+    align-items: center;
+}
+.ProductList li a img.svgActive {
+    display: none;
+}
+.ProductList li a.active img.svgActive {
+    display: inline;
+}
+.ProductList li a.active img.svg {
+    display: none;
+}
+
+.ProductNavbarContent {
+    margin-top: 60px;           
+}
+
+.tabChecklistCard {
+    margin-top: 32px;
+}
+.tabChecklistCard img {
+    width: 26px;
+}
+.tabChecklistCardTitle {
+    font-size: 20px;
+    line-height: 26px;
+    width: 80%;
+}
+
+.productInfoCard {
+    margin-top: 32px;
+    border: 1px solid #E7EAF1;
+    padding: 32px;
+    box-shadow: -1px 2px 10px 0px rgba(180, 189, 211, 0.10);
+}
+.productInfoCard img {
+    width: 100px;
+}
+.productInfoCardTitle {
+    font-size: 20px;
+    line-height: 26px;
+    width: 80%;
+}
+
+.lightYellowSec {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+.lightYellowSecImg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 450px;
+}
+
+.lightYellowSecCards {
+    margin-top: 50px;
+}
+.lightYellowSecCardCol {
+    border-right: 1px solid var(--vt-c-blueGray);
+    padding-bottom: 0;
+    height: 100%;
+}
+.whyGet .lightYellowSecCardCol {
+    padding-bottom: 0;
+}
+.lightYellowSecCardBox {
+    padding-right: 24px;
+}
+
+.listData li {
+    position: relative;
+    padding-left: 20px; 
+}
+.listData li + li {
+    margin-top: 12px;
+}
+.listData li::before {
+    background-color: var(--black);
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+}
+
+.whoNeed {
+    margin-top: 80px;
+}
+
+.whyGet {
+    margin-top: 80px;
+}
+.whyGetImg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 450px;
+}
+.coverage {
+    margin-top: 80px;
+}
+
+.claimSec {
+    margin-top: 80px;
+}
+
+.ProductSecLeft {
+    padding-right: 10px;
+}
+
+.inciTabPanelBoxLeft {
+    max-width: 80%;
+}
+
+.ProdFAQ {
+    margin-top: 80px;
+}
+
+.productStartup {
+    margin-top: 80px;
+}
+
+.productStartupCard {
+    margin-bottom: 30px;
+    padding: 0;
+}
+.productStartupCard img {
+    width: 80px;
+    display: block;
+}
+.productStartupCard p {
+    font-weight: 500;
+}
+
+.productStartupListSec {
+    position: relative;
+}
+.productStartupIcon {
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+    width: 200px;
+}
+
+.productStartupBottom {
+    margin-bottom: 80px;
+}
+.productStartupBottom .yellowBtn {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+@media (max-width: 1699px) {
+    .lightYellowSecCardBox {
+        padding-right: 16px;
+    }
+    .lightYellowSecCardBox h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .productStartupBottom .yellowBtn {
+        padding: 18px 34px;
+    }
+}
+@media (max-width:1450px) {
+    .productStartupBottom .yellowBtn {
+        font-size: 17px;
+        padding: 16px 40px;
+    }
+}
+@media (max-width:1399px) {
+    .productStartupBottom .yellowBtn {
+        padding: 16px 35px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ProdMain {
+        margin-top: 40px;
+    }
+    .ProductList {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .ProductList li:last-child {
+        margin-right: 0;
+    }
+    .ProductList li {
+        padding: 0 5px;
+        font-size: 50px;
+        margin-right: 10px;
+        margin-top: 4px;
+        margin-bottom: 6px;
+    }
+    .ProductList li a.active::after {
+        bottom: -8px;
+    }
+    .ProductNavbarContent {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .prodContainer {
+        padding: 0;
+    }
+    .tabChecklistCard {
+        margin-top: 15px;
+    }
+    .tabChecklistCard img {
+        width: 16px;
+    }
+    .tabChecklistCardTitle {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        width: 100%;
+    }
+    .productInfoCard {
+        margin-top: 15px;
+        padding: 24px;
+    }
+    .productInfoCard img {
+        width: 80px;
+        height: auto;
+    }
+    .productInfoCardTitle {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        width: 100%;
+    }
+    .lightYellowSec {
+        margin-top: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .lightYellowSecImg {
+        left: auto;
+        right: 0;
+    }
+    .lightYellowSecCards {
+        margin-top: 25px;
+    }
+    .lightYellowSecCardCol {
+        border-right: 0;
+        border-bottom: 1px solid var(--vt-c-blueGray);
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .lightYellowSecCardBox {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .lightYellowSecCardBox img {
+        width: 30px;
+    }
+    .lightYellowSecCardBox h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .lightYellowSecCardBox p {
+        margin-bottom: 0;
+    }
+    .whoNeed {
+        margin-top: 40px;
+    }
+    .whyGet {
+        margin-top: 40px;
+    }
+    .whyGet .lightYellowSecCardCol {
+        border: 0;
+        padding-top: 0;
+    }
+    .whyGet .lightYellowSecCardBox {
+        padding-top: 0 !important;
+        padding-bottom: 16px;
+        border-bottom: 1px solid var(--vt-c-blueGray);
+    }
+    .whyGet .lightYellowSecCardBox:first-child {
+        padding-top: 0;
+    }
+    .coverage {
+        margin-top: 40px;
+    }
+    .claimSec {
+        margin-top: 40px;
+    }
+    .inciTabPanelBoxLeft {
+        max-width: 100%;
+    }
+    .ProdFAQ {
+        margin-top: 40px;
+    }
+    .productStartup {
+        margin-top: 40px;
+    }
+    .productStartup .prodContainer > .row {
+        text-align: left !important;
+    }
+    .productStartupCard {
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+    .productStartupCard:last-child {
+        margin-bottom: 0;
+    }
+    .productStartupCard img {
+        width: 60px;
+    }
+    .productStartupCard h4 {
+        font-weight: 600
+    }
+    .productStartupBottom {
+        margin-bottom: 40px;
+    }
+    .productStartupBottom .btnCommon {
+        padding: 14px 18px;
+    }
+    .productStartupListSec {
+        margin-bottom:  120px;
+    }
+    .productStartupIcon {
+        right: 30px;
+        bottom: -120px;
+        width: 160px;
+    }
+}
+
+@media (max-width: 575px) {
+    .productStartupListSec {
+        margin: 0 -20px 120px -20px;
+    }
+    .productStartupIcon {
+        right: 40px;
+        bottom: -135px;
+        width: 150px;
+    }
+    .ProductList li {
+        margin-right: 6px;
+    }
+}

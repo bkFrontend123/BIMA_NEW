@@ -1,0 +1,274 @@
+.whiteFormBox {
+    background-color: var(--whiteBg);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    position: relative;
+}
+.frmBack {
+    margin-bottom: 30px;
+}
+.frmBackLink {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.frmTtl {
+    margin-bottom: 24px;
+}
+.frmTtl h3 {
+    font-size: 24px;
+    color: var(--vt-c-blue);
+    line-height: 32px;
+    font-weight: 500;
+    margin: 0;
+}
+.commonForm .formInput {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    height: 63px;
+    border-radius: 0;
+    padding: 12px 20px;
+    font-weight: 500;
+    border-color: var(--formBorderColor);
+}
+.commonForm textarea.formInput {
+    height: 110px;
+}
+.commonForm .formSelect {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    height: 63px;
+    border-radius: 0;
+    padding: 12px 20px;
+    font-weight: 500;
+    background-size: 20px 16px;
+    border-color: var(--formBorderColor);
+}
+.commonForm .formInput::placeholder {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+}
+.formFileGroup {
+    position: relative;
+}
+.formFileInput {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    opacity: 0;
+}
+.formFileGroup label {
+    cursor: pointer;
+}
+.formFileGroup label,
+.formFileSucess label {
+    position: relative;
+    background: #E7EAF1;
+    border: 1px solid var(--vt-c-blue);
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 18px;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+}
+.formFileSucess label {
+    background-color: #E6F7F3;
+    border-color: #00AB82;
+    color: #00AB82;
+}
+.formFileSucess label > div {
+    margin-top: -5px;
+}
+.formFileInfo p {
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 500;
+    margin: 5px 0 0 0;
+}
+.formLabel,
+.formCheckLabel {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    line-height: 22px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+.formCheckRadio {
+    margin-bottom: 0;
+}
+.formCheckRadio input {
+    width: 1.25em;
+    height: 1.25em;
+    margin-top: 0.15em;
+    background-color: var(--vt-c-gray);
+    border: 0;
+    cursor: pointer;
+}
+.formCheckRadio input:checked {
+    background-color: var(--vt-c-blue);
+    border-color: var(--vt-c-blue);
+}
+.formCheckRadio input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+.formCheckRadio label {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: var(--vt-c-blue);
+    margin-left: 4px;
+    cursor: pointer;
+}
+.commonForm .formSwitch input {
+    width: 35px;
+    margin-left: -2.5em;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
+    background-position: left center;
+    border-radius: 35px;
+    transition: background-position 0.15s ease-in-out;
+    background-color: var(--vt-c-gray);
+    border: 0;
+    height: 18px;
+}
+.commonForm .formSwitch input :focus {
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e);
+}
+.btnLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--vt-c-blue) !important;
+    font-weight: 500;
+}
+.frmftr {
+    margin-top: 30px;
+}
+.frmftr p {
+    font-size: 14px;
+    color: var(--vt-c-blue);
+    line-height: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+.frmftr p a {
+    color: var(--vt-c-blue);
+    text-decoration: underline;
+}
+
+@media (max-width:1699px) {
+    .whiteFormBox {
+        padding: 32px;
+    }
+    .frmTtl h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .commonForm .formInput,
+    .commonForm .formSelect {
+        height: 60px;
+        padding: 10px 20px;
+    }
+    .formFileGroup label,
+    .formFileSucess label {
+        height: 60px;
+        font-size: 17px;
+    }
+    .frmBackLink {
+        font-size: 18px;
+        gap: 0.5rem;
+    }
+    .btnLink {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1399px) {
+    .whiteFormBox {
+        padding: 26px;
+    }
+    .commonForm .formInput,
+    .commonForm .formSelect {
+        height: 56px;
+        padding: 10px 18px;
+    }
+    .formFileGroup label,
+    .formFileSucess label {
+        height: 56px;
+        font-size: 16px;
+    }
+    .btnLink {
+        font-size: 13.5px;
+    }
+}
+
+@media (max-width:1199px) {
+    .whiteFormBox {
+        padding: 24px;
+    }
+    .commonForm .formInput,
+    .commonForm .formSelect {
+        font-size: 15px;
+    }
+    .formCheckRadio label {
+        font-size: 15px;
+    }
+    .frmftr {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width:767px) {
+    .whiteFormBox {
+        padding: 20px;
+    }
+    .frmTtl {
+        margin-bottom: 20px;
+    }
+    .frmTtl h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .frmBackLink {
+        font-size: 17px;
+        gap: 0;
+    }
+    .frmBackLink img {
+        margin-right: 12px;
+    }
+    .frmBackLink span {
+        margin-left: 8px;
+    }
+    .commonForm .formInput,
+    .commonForm .formSelect {
+        font-size: 14px;
+        height: 54px;
+        padding: 8px 16px;
+    }
+    .formFileGroup label,
+    .formFileSucess label {
+        height: 54px;
+    }
+    .formCheckRadio label {
+        font-size: 14px;
+    }
+    .fromButtonDiv button {
+        width: 100%;
+        justify-content: center;
+    }
+    .frmftr {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,83 @@
+.quoteCompareInfo a {
+    background-color: var(--vt-c-yellow);
+    height: 32px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 0 10px;
+    transition: all 0.4s ease 0s;
+}
+.quoteCompareInfo a:hover {
+    margin-left: -88px;
+}
+.quoteCompareInfo a img {
+    margin-right: 6px;
+}
+.quoteCompareInfo a span {
+    font-size: 15px;
+    color: var(--vt-c-blue);
+    line-height: 22px;
+}
+
+.qCmprOffcanvasDiv {
+    
+}
+
+.knowOffcanvasHdrInfo {
+    margin-top: 36px;
+}
+.knowOffcanvasHdrInfo h4 {
+    font-size: 30px;
+    color: var(--whiteText);
+    line-height: 44px;
+}
+.knowOffcanvasHdrInfo h5 {
+    font-size: 22px;
+    color: var(--whiteText);
+    line-height: 32px;
+    margin: 0;
+}
+
+@media (max-width:1699px) {
+    .knowOffcanvasHdrInfo {
+        margin-top: 32px;
+    }
+    .knowOffcanvasHdrInfo h4 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .knowOffcanvasHdrInfo h5 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width:1199px) {
+    .knowOffcanvasHdrInfo {
+        margin-top: 24px;
+    }
+    .knowOffcanvasHdrInfo h4 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .knowOffcanvasHdrInfo h5 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width:767px) {
+    .knowOffcanvasHdrInfo {
+        margin-top: 20px;
+    }
+    .knowOffcanvasHdrInfo h4 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .knowOffcanvasHdrInfo h5 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,42 @@
+.primary{
+    fill: var(--vt-c-blue);
+}
+.sky{
+    fill: var(--vt-c-blueSky);
+}
+.green{
+    fill: var(--vt-c-green);
+}
+.yellow{
+    fill: var(--vt-c-yellow);
+}
+.white{
+    fill: white;
+}
+.black{
+    fill: black;
+}
+.stroke.white{
+    stroke: var(--vt-c-white);
+    fill: none;
+}
+.stroke.black{
+    stroke: var(--vt-c-black);
+    fill: none;
+}
+.stroke.primary{
+    stroke: var(--vt-c-blue);
+    fill: none;
+}
+.stroke.green{
+    stroke: var(--vt-c-green);
+    fill: none;
+}
+.stroke.blueGray{
+    stroke: var(--vt-c-blueGray);
+    fill: none;
+}
+/* .stroke{
+    stroke: var(--vt-c-blue);
+    fill: none;
+} */

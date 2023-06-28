@@ -1,0 +1,86 @@
+.paymentCard {
+    position: relative;
+    background-color: var(--whiteBg);
+    padding: 50px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    max-width: 382px;
+}
+.paymentIcon i {
+    display: inline-block;
+}
+.paymentIcon h3 {
+    font-size: 24px;
+    color: var(--black);
+    line-height: 30px;
+    margin: 16px 0 0;
+}
+.paymentInfo h4 {
+    font-size: 24px;
+    color: var(--black);
+    line-height: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+.paymentInfo p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.paymentInfo p span {
+    font-size: 20px;
+    color: var(--vt-c-blue);
+    line-height: 30px;
+    font-weight: 500;
+    display: block;
+    text-transform: initial;
+}
+
+@media (max-width: 1699px) {
+    .paymentCard {
+        padding: 40px;
+    }
+    .paymentIcon h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .paymentCard {
+        padding: 32px;
+    }
+}
+
+@media (max-width:1199px) {
+    .paymentCard {
+        padding: 24px;
+    }
+}
+
+@media (max-width:991px) {
+
+}
+
+@media (max-width:767px) {
+    .paymentCard {
+        padding: 20px;
+        min-width: 100%;
+    }
+    .paymentIcon {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    .paymentIcon h3 {
+        font-size: 20px;
+        line-height: 26px;
+        margin: 0;
+    }
+    .paymentInfo h4 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,55 @@
+.commonTabs {
+    border: 0;
+    margin-bottom: 40px;
+}
+.commonTabs li {
+    border: 0;
+}
+.commonTabs li + li {
+    margin-left: 40px;
+}
+.commonTabs li button {
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+    border-width: 0 0 2px 0 !important;
+    border-style: solid !important;
+    border-color: transparent !important;
+    padding: 0;
+}
+@media (max-width:1699px) {
+    .commonTabs li + li {
+        margin-left: 32px;
+    }
+}
+
+@media (max-width:1399px) {
+    .commonTabs li + li {
+        margin-left: 24px;
+    }
+    .commonTabs li button {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width:1199px) {
+    .commonTabs li + li {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:991px) {
+    
+}
+
+@media (max-width:767px) {
+    .commonTabs li + li {
+        margin-left: 16px;
+    }
+    .commonTabs li button {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}

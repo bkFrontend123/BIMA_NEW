@@ -1,0 +1,16 @@
+.calendyMdlOuter > div > div {
+    border-radius: 0;
+    border: 0;
+}
+.calendyForm {
+    text-align: center;
+}
+.calendyForm iframe {
+    width: 100%;
+    height: 640px;
+}
+@media (max-width:991px) {
+    .calendyForm iframe {
+      height: 520px;
+    }
+}

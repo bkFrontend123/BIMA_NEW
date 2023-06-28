@@ -1,0 +1,91 @@
+.progressDiv {
+    min-width: 180px;
+}
+.progressDiv > div {
+    position: relative;
+    margin-top: 40px;
+    overflow: visible;
+    height: 10px;
+    border-radius: 10px;
+}
+.noLabel.progressDiv > div {
+    margin-top: 0;
+}
+.progressDiv > div > div {
+    overflow: visible;
+    border-radius: 10px;
+    height: 10px;
+}
+.smallProgress.progressDiv > div > div {
+    border-radius: 8px;
+    height: 8px;
+}
+.noRadiusProgress.progressDiv > div > div {
+    border-radius: 0;
+}
+.progressDiv.warning > div {
+    background-color: rgba(255, 180, 0, 0.2);
+}
+.progressDiv.warning > div > div {
+    background-color: var(--vt-c-yellow);
+}
+.progressDiv > div > div span {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--vt-c-blue);
+    position: absolute;
+    top: -45px;
+    left: 0;
+    z-index: 2;
+}
+.progressDiv.warning > div > div span {
+    color: var(--vt-c-yellow);
+}
+.progressDiv p {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    line-height: 22px;
+    font-weight: 500;
+    margin: 16px 0 0 0;
+}
+
+.pymntPrgrsDiv {
+    padding: 20px;
+    background-color: var(--mute1);
+    border: 2px solid var(--mute2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.pymntPrgrsDiv span {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--vt-c-yellow);
+    line-height: 43px;
+    white-space: nowrap;
+}
+.pymntPrgrsDiv p {
+    font-size: 15px;
+    color: var(--black);
+    line-height: 20px;
+    margin: 0;
+}
+
+@media (max-width:767px) {
+    .progressDiv > div > div span {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .pymntPrgrsDiv {
+        display: block;
+        padding: 16px;
+    }
+    .pymntPrgrsDiv span {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+}

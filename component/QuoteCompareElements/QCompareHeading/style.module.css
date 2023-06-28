@@ -1,0 +1,61 @@
+.quoteCompareHdngRow {
+    margin-bottom: 12px;
+    margin-top: 15px;
+}
+.quoteCompareHdng {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.quoteCompareHdng h3 {
+    background-color: var(--whiteBg);
+    font-size: 30px;
+    line-height: 46px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+    padding-right: 16px;
+    z-index: 1;
+}
+.quoteCompareHdngBrdr {
+    background-color: var(--vt-c-gray);
+    height: 1px;
+    position: absolute;
+    left: 100px;
+    right: 0;
+}
+
+@media (max-width: 1699px) {
+    .quoteCompareHdng h3 {
+        font-size: 26px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .quoteCompareHdng h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .quoteCompareHdng h3 {
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 767px) {
+    .quoteCompareHdngRow {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .quoteCompareHdng h3 {
+        font-size: 22px;
+    }
+    .quoteCompareHdngBrdr {
+        left: 10%;
+    }
+}

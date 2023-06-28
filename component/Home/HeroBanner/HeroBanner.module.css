@@ -1,0 +1,57 @@
+/* .HomeBanner{
+    padding: 0;
+    padding-top: 140px;
+    max-width: 628px;
+}
+.heroPlay {
+    padding-top: 118px;
+}
+.homeBannerBtn a{
+    padding: 18px 30px;
+    box-shadow: 0 5px 25px 0 rgb(227 165 0 / 50%);
+}
+
+@media only screen and (max-width: 1399px) {   
+    .HomeBanner{
+        padding: 160px 0 70px;        
+    }
+    .heroPlay {
+        padding-top: 60px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .HomeBanner{
+        padding: 140px 0 70px;
+        max-width: 100%;
+    }
+    .heroPlay {
+        padding-top: 50px;
+    }
+    
+}
+@media only screen and (max-width: 575px) {
+    .HomeBanner{
+        padding: 100px 0 50px;
+        max-width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .BannerDescription{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .homeBannerBtn{
+        width: 92%;
+        justify-content: center;
+    }
+    .heroPlay {
+        padding-top: 30px;
+    }
+    .homeBannerBtn a{
+        padding: 14px 18px;
+    }
+    
+} */
