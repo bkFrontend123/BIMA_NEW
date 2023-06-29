@@ -25,19 +25,19 @@ function Navbar() {
     { id: "l1", link: "/directors-and-officers-insurance", img: "/productIcons/liability/dAndO_icon.png", title: "Directors & Officers Insurance" },
     { id: "l2", link: "/errors-and-omissions-insurance", img: "/productIcons/liability/eAndO_icon.png", title: "Errors & Omissions Insurance" },
     { id: "l3", link: "/general-liability-insurance", img: "/productIcons/liability/generalLiability_icon.png", title: "General Liability Insurance" },
-    { id: "l4", link: "/", img: "/productIcons/liability/fidelity_icon.png", title: "Fidelity Insurance" },
+    //{ id: "l4", link: "/", img: "/productIcons/liability/fidelity_icon.png", title: "Fidelity Insurance" },
     { id: "l5", link: "/", img: "/productIcons/liability/productLiability_icon.png", title: "Product Liability Insurance" },
-    { id: "l6", link: "/", img: "/productIcons/liability/workman_icon.png", title: "Workman’s Compensation" },
+    //{ id: "l6", link: "/", img: "/productIcons/liability/workman_icon.png", title: "Workman’s Compensation" },
     { id: "l7", link: "/", img: "/productIcons/liability/crime_icon.png", title: "Crime Insurance" },
     { id: "l8", link: "/", img: "/productIcons/liability/cyber_icon.png", title: "Cyber Insurance" },
   ]
   const AssetInsurance = [
     { id: "a1", link: "/", img: "/productIcons/asset/fire_icon.png", title: "Fire Insurance" },
-    { id: "a2", link: "/", img: "/productIcons/asset/officePackage_icon.png", title: "Office Package" },
-    { id: "a3", link: "/", img: "/productIcons/asset/shopOwner_icon.png", title: "Shop Owner’s" },
-    { id: "a4", link: "/", img: "/productIcons/asset/restaurant_icon.png", title: "Restaurant, Hotels & Cafes" },
-    { id: "a5", link: "/", img: "/productIcons/asset/educational_icon.png", title: "Educational Institutes" },
-    { id: "a6", link: "/", img: "/productIcons/asset/hospitals_icon.png", title: "Hospitals & Clinics" },
+    //{ id: "a2", link: "/", img: "/productIcons/asset/officePackage_icon.png", title: "Office Package" },
+    //{ id: "a3", link: "/", img: "/productIcons/asset/shopOwner_icon.png", title: "Shop Owner’s" },
+    //{ id: "a4", link: "/", img: "/productIcons/asset/restaurant_icon.png", title: "Restaurant, Hotels & Cafes" },
+    //{ id: "a5", link: "/", img: "/productIcons/asset/educational_icon.png", title: "Educational Institutes" },
+    //{ id: "a6", link: "/", img: "/productIcons/asset/hospitals_icon.png", title: "Hospitals & Clinics" },
   ]
   const EngineeringInsurance = [
     { id: "e1", link: "/contractor-all-risk-policy", img: "/productIcons/engineering/contractorsAllRisk_icon.png", title: "Contractors All Risk" },
@@ -76,10 +76,10 @@ function Navbar() {
     { id: "ie7", link: "/industry", title: "Robotics" },
   ]
   const Resources = [
-    { id: "r1", link: "/", title: "More Blogs" },
-    { id: "r2", link: "/", title: "Webinars" },
-    { id: "r3", link: "/", title: "Resource Hub" },
-    { id: "r4", link: "/", title: "White Papers" },
+    { id: "r1", link: "https://www.bimakavach.com/blog/", title: "More Blogs" },
+    //{ id: "r2", link: "/", title: "Webinars" },
+    //{ id: "r3", link: "/", title: "Resource Hub" },
+    //{ id: "r4", link: "/", title: "White Papers" },
   ]
   const handleMouseEnter = () => {
     document.body.classList.add('DropdownOverlay');
@@ -206,7 +206,7 @@ function Navbar() {
                                   </div>
                                 </div>
                                 <div className='col-md-4'>
-                                  <div className='mega-menuBox-title'>
+                                  {/*<div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary fst-italic'>Engineering</div>
                                     <hr className='bg-gray mb-md-3 my-2' />
                                   </div>
@@ -216,7 +216,6 @@ function Navbar() {
                                         <div className='startupCols-cardBox pe-md-3 '>
                                           <div className='d-flex align-items-center'>
                                             <Image
-                                              // loader={myLoader}
                                               src={item.img}
                                               alt="Bimakavach"
                                               width={48}
@@ -239,7 +238,6 @@ function Navbar() {
                                         <div className='startupCols-cardBox pe-md-3 '>
                                           <div className='d-flex align-items-center'>
                                             <Image
-                                              // loader={myLoader}
                                               src={item.img}
                                               alt="Bimakavach"
                                               width={48}
@@ -251,7 +249,7 @@ function Navbar() {
                                         </div>
                                       </div>
                                     )}
-                                  </div>
+                                  </div>*/}
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary fst-italic'>Marine</div>
                                     <hr className='bg-gray mb-md-3 my-2' />
@@ -537,9 +535,9 @@ function Navbar() {
                 <li className="nav-item">
                   <a className="nav-link" href="/about">About Us</a>
                 </li>
-                <li className="nav-item">
+                {/*<li className="nav-item">
                   <a className="nav-link" href="">Sign In</a>
-                </li>
+                </li>*/}
               </ul>
               <div className="nabbarStrip-btns d-flex flex-sm-row flex-column ms-auto " >
                 <a className="btnCommon scheduleCallBtn me-md-4 btnBorder border-primary text-primary mb-2 mb-md-0 text-decoration-none" onClick={handleShowCalendy}> <img className='me-2' src='/icons/calender.svg' width="16px" /> <span> Schedule a call </span></a>

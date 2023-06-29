@@ -60,7 +60,7 @@ export default function Footer() {
                         <li className="list-group-item">
                           <Link href="/blogs" className='title18 font-weight-400'>Blogs</Link>
                         </li>
-                        <li className="list-group-item">
+                        {/*<li className="list-group-item">
                           <Link href="/" className='title18 font-weight-400'>Resource Hub</Link>
                         </li>
                         <li className="list-group-item">
@@ -68,7 +68,7 @@ export default function Footer() {
                         </li>
                         <li className="list-group-item">
                           <Link href="/career" className='title18 font-weight-400'>Careers at BimaKavach</Link>
-                        </li>
+                        </li>*/}
                       </ul>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ export default function Footer() {
                           <Link href="mailto:info@bimakavach.co" className='title18 font-weight-400'>info@bimakavach.com</Link>
                         </li>
                         <li className="list-group-item">
-                          <Link href="tel:+91 9876543210" className='title18 font-weight-400'>+91 9876543210</Link>
+                          <Link href="tel:+91 9036554785" className='title18 font-weight-400'>+91 9036554785</Link>
                         </li>
                       </ul>
                     </div>
@@ -95,28 +95,28 @@ export default function Footer() {
                     <ul className="list-group list-group-borderless bg-transparent ">
                       <li className="list-group-item text-yellow title20 font-weight-600">Liability</li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>Directors & Officers Insurance</Link>
+                        <a className='title18 font-weight-400'>Directors & Officers Insurance</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>Errors & Omissions Insurance</Link>
+                        <a className='title18 font-weight-400'>Errors & Omissions Insurance</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>General Liability Insurance</Link>
+                        <a className='title18 font-weight-400'>General Liability Insurance</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>Fidelity Insurance</Link>
+                        <a className='title18 font-weight-400'>Fidelity Insurance</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>Product Liability Insurance</Link>
+                        <a className='title18 font-weight-400'>Product Liability Insurance</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>Workman's Compensation</Link>
+                        <a className='title18 font-weight-400'>Workman's Compensation</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>Crime Insurance</Link>
+                        <a className='title18 font-weight-400'>Crime Insurance</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>Cyber Insurance</Link>
+                        <a className='title18 font-weight-400'>Cyber Insurance</a>
                       </li>
                     </ul>
                   </div>
@@ -126,22 +126,22 @@ export default function Footer() {
                     <ul className="list-group list-group-borderless bg-transparent ">
                       <li className="list-group-item text-yellow title20 font-weight-600">Asset</li>
                       <li className="list-group-item">
-                        <Link href="/blogs" className='title18 font-weight-400'>Fire Insurance</Link>
+                        <a className='title18 font-weight-400'>Fire Insurance</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/career" className='title18 font-weight-400'>Office Package</Link>
+                        <a className='title18 font-weight-400'>Office Package</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="glossary" className='title18 font-weight-400'>Shop Owner’s</Link>
+                        <a className='title18 font-weight-400'>Shop Owner’s</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="" className='title18 font-weight-400'>Restaurant Hotels & Cafes</Link>
+                        <a className='title18 font-weight-400'>Restaurant Hotels & Cafes</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="" className='title18 font-weight-400'>Educational Institutes</Link>
+                        <a className='title18 font-weight-400'>Educational Institutes</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="" className='title18 font-weight-400'>Hospitals & Clinics</Link>
+                        <a className='title18 font-weight-400'>Hospitals & Clinics</a>
                       </li>
                     </ul>
                   </div>
@@ -151,13 +151,13 @@ export default function Footer() {
                     <ul className="list-group list-group-borderless bg-transparent ">
                       <li className="list-group-item text-yellow title20 font-weight-600">Engineering</li>
                       <li className="list-group-item">
-                        <Link href="/about" className='title18 font-weight-400'>Contractors All Risk</Link>
+                        <a className='title18 font-weight-400'>Contractors All Risk</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>Erection All Risk</Link>
+                        <a className='title18 font-weight-400'>Erection All Risk</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>Contractors Plant & Machinery</Link>
+                        <a className='title18 font-weight-400'>Contractors Plant & Machinery</a>
                       </li>
                     </ul>
                   </div>
@@ -167,14 +167,14 @@ export default function Footer() {
                     <ul className="list-group list-group-borderless bg-transparent ">
                       <li className="list-group-item text-yellow title20 font-weight-600">For Employees</li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>Group Health Insurance</Link>
+                        <a className='title18 font-weight-400'>Group Health Insurance</a>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>Group Personal Accident</Link>
+                        <a className='title18 font-weight-400'>Group Personal Accident</a>
                       </li>
                       <li className="list-group-item text-yellow title20 font-weight-600 mt-4">Marine</li>
                       <li className="list-group-item">
-                        <Link href="/" className='title18 font-weight-400'>Marine Transit</Link>
+                        <a className='title18 font-weight-400'>Marine Transit</a>
                       </li>
                     </ul>
                   </div>
@@ -211,19 +211,23 @@ export default function Footer() {
                 </div>
                 <div className='col-md-auto'>
                   <div className='footerSocial d-flex align-items-center mt-3'>
-                      <div className='footerSocialIco'>
+                      {/*<div className='footerSocialIco'>
                         <Link href="/">
                           <Insta iconColor="white" width="20" height="20" />
                         </Link>
                       </div>
                       <div className='footerSocialIco'>
-                        <Linkdin iconColor="white" width="20" height="20" />
-                      </div>
-                      <div className='footerSocialIco'>
                         <Twitter iconColor="white" width="20" height="20" />
+                      </div>*/}
+                      <div className='footerSocialIco'>
+                        <Link target='_blank' href="https://www.linkedin.com/company/bimakavach/">
+                          <Linkdin iconColor="white" width="20" height="20" />
+                        </Link>
                       </div>
                       <div className='footerSocialIco'>
-                        <Youtube iconColor="white" width="20" height="20" />
+                        <Link target='_blank' href="https://www.youtube.com/@bimakavach">
+                          <Youtube iconColor="white" width="20" height="20" />
+                        </Link>
                       </div>
                     </div>
                 </div>
