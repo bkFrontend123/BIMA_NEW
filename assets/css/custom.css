@@ -142,7 +142,7 @@ body .mainMenu.navbar .navbar-brand img{
    margin: 0 20px;
 }
 .mainMenu.navbar .navbar-nav li a {
-   font-size: 15px; 
+   font-size: 16px; 
    line-height: 16px;
    font-weight: 500;
    padding: 0 4px;
@@ -165,8 +165,8 @@ body .mainMenu.navbar .navbar-brand img{
 }
 
 .mainMenu.navbar a.btnCommon {
-   font-size: 15px;
-   line-height: 15px;
+   font-size: 16px;
+   line-height: 18px;
    padding: 12px 34px;
    text-align: center;
 }
@@ -996,6 +996,8 @@ body .swiper-scrollbar {
 
 .blogDetailSubcribe-bottom {
    margin-bottom: -50px;
+   position: relative;
+   z-index: 2;
 }
 
 .blogDetail-swiper-button-next,

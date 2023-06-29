@@ -23,12 +23,12 @@ export default function TeamCard(props) {
                 {`
                         
                     .teamCard{
-                        margin-bottom: 40px;   
+                        margin-bottom: 0;   
                     }
 
                     @media only screen and (max-width: 575px) {
                         .teamCard{
-                            margin-bottom: 60px;  
+                            margin-bottom: 0;  
                             text-align: center; 
                         }
     

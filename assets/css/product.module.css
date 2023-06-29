@@ -88,6 +88,9 @@
     padding-bottom: 0;
     height: 100%;
 }
+.lightYellowSecCardCol.lightYellowSecCardColNew {
+    border-right: 1px dashed var(--vt-c-blueGray);
+}
 .lightYellowSecCardCol {
     padding-bottom: 0 !important;
 }
@@ -111,6 +114,46 @@
     width: 8px;
     height: 8px;
     border-radius: 8px;
+}
+
+.listOrderData {
+    position: relative;
+    z-index: 1;
+}
+.listOrderData::before {
+    position: absolute;
+    content: "";
+    left: 14px;
+    top: 0;
+    bottom: 0;
+    border: 1px dashed var(--vt-c-yellow);
+    z-index: -1;
+}
+.listOrderData li {
+    position: relative;
+    padding-left: 45px;
+    counter-increment: item;
+    min-height: 30px;
+}
+.listOrderData li + li {
+    margin-top: 16px;
+}
+.listOrderData li::before {
+    background-color: var(--black);
+    position: absolute;
+    content: counter(item);
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    color: var(--whiteText);
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+}
+.listOrderData li:last-child::before {
+    background-color: var(--vt-c-yellow);
 }
 
 .whoNeed {
@@ -274,7 +317,7 @@
         border-right: 0;
         border-bottom: 1px solid var(--vt-c-blueGray);
         padding-bottom: 20px;
-        padding-top: 20px;
+        padding-top: 0;
     }
     .lightYellowSecCardBox {
         padding-right: 0;
@@ -282,6 +325,15 @@
     }
     .lightYellowSecCardBox img {
         width: 30px;
+    }
+    .lightYellowSecCardColNew .lightYellowSecCardBox {
+        background-color: var(--mute1);
+        box-shadow: -1px 1px 10px 0px rgba(255, 165, 0, 0.10), 0px 0px 10px 0px #E7EAF1 inset;
+        border: 2px solid var(--vt-c-yellow);
+        padding: 16px;
+    }
+    .lightYellowSecCardColNew .lightYellowSecCardBox img {
+        width: 100px;
     }
     .lightYellowSecCardBox h3 {
         font-size: 20px;
@@ -297,7 +349,7 @@
         margin-top: 40px;
     }
     .lightYellowSecCardCol {
-        border: 0;
+        border: 0 !important;
     }
     .lightYellowSecCardBox {
         padding-top: 0 !important;
