@@ -7,10 +7,10 @@ export default function IndustryBlock() {
     { id: "l1", titleLink: "/directors-and-officers-insurance", img: "/productIcons/liability/dAndO_icon.png", title: "Directors &", subtitle: "Officers Insurance" },
     { id: "l2", titleLink: "/errors-and-omissions-insurance", img: "/productIcons/liability/eAndO_icon.png", title: "Errors & Omissions", subtitle: "Insurance" },
     { id: "l3", titleLink: "/general-liability-insurance", img: "/productIcons/liability/generalLiability_icon.png", title: "General Liability", subtitle: "Insurance" },
-    { id: "l4", titleLink: "/fidelity-insurance", img: "/productIcons/liability/fidelity_icon.png", title: "Fidelity", subtitle: "Insurance" },
+    //{ id: "l4", titleLink: "/fidelity-insurance", img: "/productIcons/liability/fidelity_icon.png", title: "Fidelity", subtitle: "Insurance" },
     { id: "l5", titleLink: "/product-liability-insurance", img: "/productIcons/liability/productLiability_icon.png", title: "Product Liability", subtitle: "Insurance" },
     //{ id: "l6", titleLink: "/workmens-compensation-insurance", img: "/productIcons/liability/workman_icon.png", title: "Workman’s", subtitle: "Compensation" },
-    //{ id: "l7", titleLink: "/crime-insurance", img: "/productIcons/liability/crime_icon.png", title: "Crime", subtitle: "Insurance" },
+    { id: "l7", titleLink: "/crime-insurance", img: "/productIcons/liability/crime_icon.png", title: "Crime", subtitle: "Insurance" },
     { id: "l8", titleLink: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.png", title: "Cyber", subtitle: "Insurance" },
   ]
   const assetInsurance = [

@@ -34,7 +34,7 @@ const Accordion = ({ title, content }) => {
                 .accordion-header{
                     cursor: pointer;
                     text-align: left;
-                    gap: 1rem !important;
+                    gap: 2rem !important;
                 }
                 .accordion-content{
                     transition: 0.5s;

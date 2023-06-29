@@ -852,6 +852,10 @@
     width: auto;
     white-space: nowrap;
   }
+  .tabLink {
+    font-size: 16px !important;
+    padding: 10px 10px;
+  }
 }
 @media only screen and (max-width: 420px) {
   .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxImg{

@@ -15,8 +15,8 @@ export default function ProductBanner(props) {
             <div className={`ProductBanner ${customClass}`}>
                 <div className='ProductBannerBox'>
                     <div className='container'>
-                        <div className='row g-4'>
-                            <div className='col-lg-6'>
+                        <div className='row justify-content-between g-4'>
+                            <div className='col-lg-7 col-xl-6'>
                                 <div className='ProductBannerText'>
                                     <h1 className='title-60 ProductBannerTextTitle text-black font-weight-700 font-secondary'>{title}</h1>
                                     <p className='ProductBannerTextDescrip title20  text-primaryDark font-primaryNormal font-weight-500 pe-md-4'>
@@ -48,7 +48,7 @@ export default function ProductBanner(props) {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-lg-6'>
+                            <div className='col-lg-5 col-xl-5'>
                                 <div className='ProductBanner-form'>
                                     <div className='bg-white ProductBanner-formBg p-4 p-xl-5'>
                                         <p className='ProductBanner-formTopHeading title-20 font-primaryNormal font-weight-500'>Analyse your Business Risk. <span className='d-inlline d-md-none'><br></br></span>Buy the right Policy within 10 Minutes</p>
@@ -80,7 +80,7 @@ export default function ProductBanner(props) {
             <style jsx scope>
                 {`
                     .ProductBanner{
-                        padding: 125px 0 260px 0;
+                        padding: 125px 0 240px 0;
                         background-repeat: no-repeat;
                         background-position: center left;
                         background-size: cover;
@@ -232,6 +232,12 @@ export default function ProductBanner(props) {
                           max-width: 1548px !important;
                         }
                       }
+                      @media only screen and (max-width: 1450px) {
+                        .title-60 {
+                            font-size: 54px;
+                            line-height: 70px;
+                        }
+                    }
                      @media only screen and (max-width: 1650px) {
                         .ProductBanner-formTop p{
                             font-size: 18px; 
@@ -252,6 +258,21 @@ export default function ProductBanner(props) {
                         }
                         .ProductBanner-formBox{
                             padding: 0;
+                        }
+                    }
+                    @media only screen and (max-width: 1199px) {
+                        .title-64, .title-60 {
+                            font-size: 42px;
+                            line-height: 48px;
+                        }
+                        .ProductBannerTextTitle{
+                            margin-bottom: 30px;
+                        }
+                    }
+                    @media only screen and (max-width: 991px) {
+                        .title-64, .title-60 {
+                            font-size: 34px;
+                            line-height: 42px;
                         }
                     }
                      @media only screen and (max-width: 767px) {

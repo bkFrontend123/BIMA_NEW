@@ -464,7 +464,7 @@ function Navbar() {
                                           <div key={item.id} className='col-md-12 startupCols-cardCol'>
                                             <div className='startupCols-cardBox pe-md-3 mb-md-2'>
                                               <div className='d-none d-md-block'>
-                                                <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none title24 text-primary mt-md-3 font-weight-600'>{item.title}</Link>
+                                                <Link target='_blank' href={item.link} className='startupCols-cardBoxTitle text-decoration-none title24 text-primary mt-md-3 font-weight-600'>{item.title}</Link>
                                               </div>
                                             </div>
                                           </div>

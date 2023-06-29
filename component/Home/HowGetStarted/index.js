@@ -25,6 +25,11 @@ export default function HowGetStarted(props) {
                                     <div className='title-32 getStarted-rightTitle font-secondary mb-5 text-black font-weight-700 fst-italic'>Indore-based BimaKavach caters to the Business Insurance needs of Small & Medium Enterprises</div>
                                 </div>
                                 <div className="getStarted-rightBottom">
+                                    <div className="d-flex flex-column flex-md-row pb-2" >
+                                        <a target="_blank" href="https://yourstory.com/smbstory/indore-bimakavach-helping-small-business-msme-insurance" className="btnCommon btn-primary d-none d-md-flex align-items-cet text-white text-decoration-none bordre2 mt-3 mt-md-0">
+                                            <span>View Article</span>
+                                        </a>
+                                    </div>
                                     <p className="title-15 getStarted-rightBottomDescrip mb-0">This is an article by YouStory written by Palak Agarwal and published on October, 2022</p>
                                 </div>
                             </div>
@@ -76,7 +81,16 @@ export default function HowGetStarted(props) {
 
                 .getStarted-left {
                     position: relative;
+                    transition: all 0.4s ease 0s;
+                    border: 2px solid var(--mute1);
+                    overflow: hidden;
+                    padding: 70px 125px 70px 95px !important;
                     z-index: 1;
+                }
+                .getStarted-left:hover {
+                    background-color: var(--vt-c-yellow);
+                    border-color: var(--black);
+                    padding: 70px 110px !important;
                 }
                 .getStarted-left::before,
                 .getStarted-left::after {
@@ -95,8 +109,23 @@ export default function HowGetStarted(props) {
                 .getStarted-left:after {
                     background-image: url(/cta_grid.png);
                 }
+                .getStarted-left:hover::after {
+                    filter: sepia(1);
+                }
                 .getStarted-left img {
                     // object-fit: cover;
+                }
+                .getStarted-left:hover .getStarted-rightBottom p {
+                    color: var(--black);
+                }
+                .getStarted-left .getStarted-rightBottom .btnCommon {
+                    margin-left: -180px;
+                    opacity: 0;
+                    transition: all 0.5s ease 0s;
+                }
+                .getStarted-left:hover .getStarted-rightBottom .btnCommon {
+                    margin-left: 0;
+                    opacity: 1;
                 }
                 .getStarted-right {
                     padding: 70px 125px;
@@ -104,9 +133,13 @@ export default function HowGetStarted(props) {
                 .getStarted-rightBottomDescrip{
                     color: #A3A3A3;
                 }
-                .getStarted-rightBottom .btnCommon.bg-white{
-                    margin-left: 48px;
+                .getStarted-rightBottom .btnCommon:hover{
+                    color: var(--whiteText) !important;
                 }
+                .getStarted-rightBottom .btnCommon.bg-white{
+                    margin-left: 20px;
+                }
+                
                 
                  .title-32 {
                     font-size: 32px;
@@ -125,6 +158,11 @@ export default function HowGetStarted(props) {
                     .container {
                         max-width: 1230px;
                     }
+                    .getStarted-left .getStarted-rightBottom .btnCommon {
+                        padding: 22px 42px;
+                        margin-left: -180px;
+                        opacity: 0;
+                    }
                 }
                 @media only screen and (min-width: 1399px) {
                     .container {
@@ -137,10 +175,15 @@ export default function HowGetStarted(props) {
                     }
                     .getStarted-left {
                         margin-right: 0;
+                        padding: 60px !important;
+                    }
+                    .getStarted-left:hover {
+                        margin-right: 0;
+                        padding: 60px 70px !important;
                     }
                     .getStarted-right {
                         padding: 60px 70px;
-                      }
+                    }
                 }
                 @media only screen and (max-width: 1450px) {
                     .getStarted{
@@ -152,7 +195,7 @@ export default function HowGetStarted(props) {
                 }
                 @media only screen and (max-width: 1399px){
                     .getStarted{
-                        height: 600px;
+                        height: auto;
                     }
                     .getStarted-right {
                         padding: 40px 35px;

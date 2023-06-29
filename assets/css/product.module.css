@@ -210,7 +210,7 @@
 }
 .productStartupIcon {
     position: absolute;
-    right: -74px;
+    right: -84px;
     bottom: -90px;
     width: 200px;
 }
@@ -244,6 +244,11 @@
 @media (max-width:1399px) {
     .productStartupBottom .yellowBtn {
         padding: 16px 35px;
+    }
+}
+@media (max-width:1299px) {
+    .productStartupIcon {
+        right: 0;
     }
 }
 

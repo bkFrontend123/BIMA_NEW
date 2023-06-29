@@ -265,8 +265,8 @@ body .mainMenu.navbar .navbar-brand img{
 .badgeIconCol {
    position: relative;
    transition: all .4s ease 0s;
-   width: 252px;
-   height: 252px;
+   width: 232px;
+   height: 232px;
    padding: 30px;
  }
  .badgeIconCol::before {
@@ -289,6 +289,7 @@ body .mainMenu.navbar .navbar-brand img{
    top: 40px;
    right: 0;
    bottom: 0;
+   width: 130px;
    transition: all 0.8s ease 0s;
  }
  .badgeActiveIcon {
@@ -619,6 +620,7 @@ body .swiper-scrollbar {
 
 .getStarted-right .getStarted-rightBottom p {
    margin-top: 40px;
+   transition: all 0.4s ease 0s;
 }
 
 /**** RecentActivity ***/
@@ -733,7 +735,10 @@ body .swiper-scrollbar {
 .footer .list-group li a {
    color: #fff;
    text-decoration: none;
-
+}
+.footer .list-group li span {
+   color: #fff;
+   opacity: 0.6;
 }
 
 .footer-listMenu-list {
@@ -1032,8 +1037,13 @@ body .blogDetailSubcribe a.btnCommon:hover {
    /* box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2); */
 }
 
+.onhoverAnimation {
+   transition: 0.2s;
+   position: relative;
+   top: 0;
+}
 .onhoverAnimation:hover {
-   margin-top: -5px;
+   top: -5px;
    transition: 0.2s;
 }
 
