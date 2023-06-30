@@ -199,7 +199,7 @@ export default function GeneralLiability_Insurance() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Directors & Officers Liability Insurance"
+                        title="General Liability Insurance"
                         description="Good insurance decisions for C-Suite Executives begin with an understanding of D&O insurance and what it covers."
                         customClass="gnrlBnr"
                     >
