@@ -1,0 +1,57 @@
+.listData li {
+    position: relative;
+    padding-left: 20px; 
+}
+.listData li + li {
+    margin-top: 12px;
+}
+.listData li::before {
+    background-color: var(--black);
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+}
+
+.listOrderData {
+    position: relative;
+    z-index: 1;
+}
+.listOrderData::before {
+    position: absolute;
+    content: "";
+    left: 14px;
+    top: 0;
+    bottom: 0;
+    border: 1px dashed var(--vt-c-yellow);
+    z-index: -1;
+}
+.listOrderData li {
+    position: relative;
+    padding-left: 45px;
+    counter-increment: item;
+    min-height: 30px;
+}
+.listOrderData li + li {
+    margin-top: 16px;
+}
+.listOrderData li::before {
+    background-color: var(--black);
+    position: absolute;
+    content: counter(item);
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    color: var(--whiteText);
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+}
+.listOrderData li:last-child::before {
+    background-color: var(--vt-c-yellow);
+}

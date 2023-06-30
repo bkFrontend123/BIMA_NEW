@@ -275,97 +275,130 @@ export default function GeneralLiability_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Fire & Burglary Insurance provides coverage for physical damage to your property. This damage can occur in a variety of situations like:</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>General Liability insurance is necessary for various kinds of businesses:</div>
                                         <Row>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Fire" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Fire</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="Lightning" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Lightning</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Explosions or Implosions" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Explosions or Implosions</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Riot, Strike and Malicious Damage" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Riot, Strike and Malicious Damage</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/techIcon.svg' width="100" height="100" alt="Subsidence and Landslide including Rock slide" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Subsidence and Landslide including Rock slide</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/manufacturersIcon.svg' width="100" height="100" alt="Bursting and/or overflowing of Water Tanks, Apparatus and Pipes" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Bursting and/or overflowing of Water Tanks, Apparatus and Pipes</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/plannersIcon.svg' width="100" height="100" alt="Bursting and/or overflowing of Water Tanks, Apparatus and Pipes" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Bursting and/or overflowing of Water Tanks, Apparatus and Pipes</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/serviceIcon.svg' width="100" height="100" alt="Professional service providers" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Professional service providers (consultants, lawyers, accountants)</p>
-                                                </div>
+                                            <Col xl={10} className='mx-auto'>
+                                                <Row>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Fire" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Fire</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="Lightning" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Lightning</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Explosions or Implosions" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Explosions or Implosions</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Riot, Strike and Malicious Damage" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Riot, Strike and Malicious Damage</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/techIcon.svg' width="100" height="100" alt="Subsidence and Landslide including Rock slide" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Subsidence and Landslide including Rock slide</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/manufacturersIcon.svg' width="100" height="100" alt="Bursting and/or overflowing of Water Tanks, Apparatus and Pipes" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Bursting and/or overflowing of Water Tanks, Apparatus and Pipes</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/plannersIcon.svg' width="100" height="100" alt="Bursting and/or overflowing of Water Tanks, Apparatus and Pipes" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Bursting and/or overflowing of Water Tanks, Apparatus and Pipes</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/serviceIcon.svg' width="100" height="100" alt="Professional service providers" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Professional service providers (consultants, lawyers, accountants)</p>
+                                                        </div>
+                                                    </Col>
+                                                </Row>
                                             </Col>
                                         </Row>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>This insurance is designed to meet the needs of businesses of various sizes, with three coverage options available:</p>
+                                        <p className='title-20 text-black font-weight-500 my-4 my-xl-5'>This insurance is designed to meet the needs of businesses of various sizes, with three coverage options available:</p>
                                         <Row>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productRateCard}`}>
-                                                    <div className={`d-flex align-items-center ${productStyle.productRateCard}`}>
-                                                    
-                                                    </div>
-                                                </div>
+                                            <Col xl={10} className='mx-auto'>
+                                                <Row className='g-4'>
+                                                    <Col lg={4}>
+                                                        <div className={`${productStyle.productRateCard}`}>
+                                                            <div className={`${productStyle.productRateHdr}`}>
+                                                                <p>Sookshma Udyam Suraksha</p>
+                                                            </div>
+                                                            <div className={`${productStyle.productRateBody}`}>
+                                                                <p>Asset Coverage</p>
+                                                                <h3>Under ₹ 5Cr</h3>
+                                                            </div>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`${productStyle.productRateCard}`}>
+                                                            <div className={`${productStyle.productRateHdr}`}>
+                                                                <p>Laghu Udyam Suraksha</p>
+                                                            </div>
+                                                            <div className={`${productStyle.productRateBody}`}>
+                                                                <p>Asset Coverage</p>
+                                                                <h3>₹ 5-50Cr</h3>
+                                                            </div>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`${productStyle.productRateCard}`}>
+                                                            <div className={`${productStyle.productRateHdr}`}>
+                                                                <p>Standard Fire Special Perils - SFSP</p>
+                                                            </div>
+                                                            <div className={`${productStyle.productRateBody}`}>
+                                                                <p>Asset Coverage</p>
+                                                                <h3>Over ₹ 50Cr</h3>
+                                                            </div>
+                                                        </div>
+                                                    </Col>
+                                                </Row>
                                             </Col>
                                         </Row>
                                     </div>
@@ -437,7 +470,7 @@ export default function GeneralLiability_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A few common businesses that purchase fire insurance are:</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <Row className='gx-lg-5'>
+                                        <Row className='g-4 g-lg-5'>
                                             <Col lg={4}>
                                                 <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
@@ -466,7 +499,7 @@ export default function GeneralLiability_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                         <img src='/icons/prodUser.svg' />
                                                         <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Medical Clinics</h3>
@@ -475,7 +508,7 @@ export default function GeneralLiability_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`pb-0 mt-lg-5 border-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                         <img src='/icons/prodUser.svg' />
                                                         <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Banks and Other Institutions</h3>

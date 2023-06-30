@@ -223,6 +223,45 @@
     padding-right: 48px;
 }
 
+
+.productRateCard {
+    position: relative;
+    z-index: 1;
+}
+.productRateHdr {
+    background-color: var(--vt-c-blue);
+    padding: 16px 20px;
+}
+.productRateHdr p {
+    font-size: 20px;
+    color: var(--whiteText);
+    line-height: 26px;
+    font-weight: 500;
+    margin: 0;
+    max-width: 220px;
+}
+.productRateBody {
+    border: 2px dashed var(--vt-c-blue);
+    padding: 20px;
+    position: relative;
+    top: -2px;
+}
+.productRateBody p {
+    font-size: 16px;
+    color: var(--vt-c-blueGray);
+    font-weight: 500;
+    border-bottom: 1px solid var(--vt-c-gray);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+.productRateBody h3 {
+    font-size: 28px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+    line-height: 34px;
+    margin: 0;
+}
+
 @media (max-width: 1699px) {
     .lightYellowSecCardBox {
         padding-right: 16px;
