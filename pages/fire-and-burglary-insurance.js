@@ -359,6 +359,15 @@ export default function GeneralLiability_Insurance() {
                                             </Col>
                                         </Row>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>This insurance is designed to meet the needs of businesses of various sizes, with three coverage options available:</p>
+                                        <Row>
+                                            <Col lg={4}>
+                                                <div className={`d-flex align-items-center ${productStyle.productRateCard}`}>
+                                                    <div className={`d-flex align-items-center ${productStyle.productRateCard}`}>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </Col>
+                                        </Row>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>

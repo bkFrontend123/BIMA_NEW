@@ -484,57 +484,6 @@ export default function product() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Such statistics push cyber security and insurance to the forefront of every business’s priorities. <span className='d-none d-lg-block'></span>Mitigating financial losses caused by cyber threats such as data breaches, system intrusions, and ransomware attacks is crucial for corporations to safeguard their operations and reputation. <span className='d-none d-lg-block'></span>Cyber Risk provides covers for a range of costs associated with cybercrimes, including investigative charges, data restoration costs, and crisis management fees. By purchasing Cyber Risk Insurance, corporations can ensure continued success in the face of ever-evolving cyber threats.</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
-                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
-                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The Cost of not Having Cyber Fraud Insurance:</h3>
-                                        <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='g-4 g-lg-5'>
-                                                <Col lg={4}>
-                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/bLossIcon.svg' width="80" height="80" alt="Business loss compensation to clients" />
-                                                            <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>Business loss compensation to clients</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/feesIcon.svg' width="80" height="80" alt="Ransom fees for restoring stolen data" />
-                                                            <p className='title-18 font-weight-500 text-black mt-2 m-0'>Ransom fees for restoring stolen data</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/forensicIcon.svg' width="80" height="80" alt="Cyber forensic investigation costs" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Cyber forensic investigation costs</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/legalIcon.svg' width="80" height="80" alt="Legal attorney fees" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Legal attorney fees</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/monitoringIcon.svg' width="80" height="80" alt="Credit monitoring expenses" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Credit monitoring expenses</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                    </Container>
-                                </div>
                             </div>
                             <div id="scrollspyHeading4" className={`pt-0 ${productStyle.coverage}`}>
                                 <Container>
@@ -692,7 +641,60 @@ export default function product() {
                     </div>
                 </div>
                 {/* product main end */}
-
+                {/* --------cost start---------- */}
+                <div className={`${productStyle.claimSec}`}>
+                    <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                        <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
+                        <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
+                        <Container className='position-relative'>
+                            <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The Cost of not Having Cyber Fraud Insurance:</h3>
+                            <div className={`${productStyle.lightYellowSecCards}`}>
+                                <Row className='g-4 g-lg-5'>
+                                    <Col lg={4}>
+                                        <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                            <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                <Image src='/icons/bLossIcon.svg' width="80" height="80" alt="Business loss compensation to clients" />
+                                                <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>Business loss compensation to clients</h3>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4}>
+                                        <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                            <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                <Image src='/icons/feesIcon.svg' width="80" height="80" alt="Ransom fees for restoring stolen data" />
+                                                <p className='title-18 font-weight-500 text-black mt-2 m-0'>Ransom fees for restoring stolen data</p>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4}>
+                                        <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                            <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                <Image src='/icons/forensicIcon.svg' width="80" height="80" alt="Cyber forensic investigation costs" />
+                                                <p className='title-18 font-weight-500 text-black m-0 mt-2'>Cyber forensic investigation costs</p>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4}>
+                                        <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                            <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                <Image src='/icons/legalIcon.svg' width="80" height="80" alt="Legal attorney fees" />
+                                                <p className='title-18 font-weight-500 text-black m-0 mt-2'>Legal attorney fees</p>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4}>
+                                        <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                            <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                <Image src='/icons/monitoringIcon.svg' width="80" height="80" alt="Credit monitoring expenses" />
+                                                <p className='title-18 font-weight-500 text-black m-0 mt-2'>Credit monitoring expenses</p>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </Container>
+                    </div>
+                </div>
                 {/* --------claim example start---------- */}
                 <div className={`${productStyle.claimSec}`}>
                     <Container>
