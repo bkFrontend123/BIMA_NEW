@@ -28,8 +28,8 @@ function Navbar() {
     //{ id: "l4", link: "/", img: "/productIcons/liability/fidelity_icon.png", title: "Fidelity Insurance" },
     { id: "l5", link: "/", img: "/productIcons/liability/productLiability_icon.png", title: "Product Liability Insurance" },
     //{ id: "l6", link: "/", img: "/productIcons/liability/workman_icon.png", title: "Workman’s Compensation" },
-    { id: "l7", link: "/", img: "/productIcons/liability/crime_icon.png", title: "Crime Insurance" },
-    { id: "l8", link: "/", img: "/productIcons/liability/cyber_icon.png", title: "Cyber Insurance" },
+    { id: "l7", link: "/commercial-crime-insurance", img: "/productIcons/liability/crime_icon.png", title: "Crime Insurance" },
+    { id: "l8", link: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.png", title: "Cyber Insurance" },
   ]
   const AssetInsurance = [
     { id: "a1", link: "/", img: "/productIcons/asset/fire_icon.png", title: "Fire Insurance" },
@@ -49,7 +49,7 @@ function Navbar() {
     { id: "eb2", link: "/group-health-insurance", img: "/productIcons/employeeBenefits/groupHealth_icon.png", title: "Group Health Insurance" },
   ]
   const MarineInsurance = [
-    { id: "m1", link: "/marine-insurance", img: "/productIcons/marine/marine_icon.png", title: "Marine Transit Policy" },
+    { id: "m1", link: "/marine-cargo-insurance", img: "/productIcons/marine/marine_icon.png", title: "Marine Transit Policy" },
   ]
   const industryTechnology = [
     { id: "it1", link: "/industry", title: "E-Commerce" },

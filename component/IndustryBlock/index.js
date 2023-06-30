@@ -10,7 +10,7 @@ export default function IndustryBlock() {
     //{ id: "l4", titleLink: "/fidelity-insurance", img: "/productIcons/liability/fidelity_icon.png", title: "Fidelity", subtitle: "Insurance" },
     { id: "l5", titleLink: "/product-liability-insurance", img: "/productIcons/liability/productLiability_icon.png", title: "Product Liability", subtitle: "Insurance" },
     //{ id: "l6", titleLink: "/workmens-compensation-insurance", img: "/productIcons/liability/workman_icon.png", title: "Workman’s", subtitle: "Compensation" },
-    { id: "l7", titleLink: "/crime-insurance", img: "/productIcons/liability/crime_icon.png", title: "Crime", subtitle: "Insurance" },
+    { id: "l7", titleLink: "/commercial-crime-insurance", img: "/productIcons/liability/crime_icon.png", title: "Crime", subtitle: "Insurance" },
     { id: "l8", titleLink: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.png", title: "Cyber", subtitle: "Insurance" },
   ]
   const assetInsurance = [
@@ -32,7 +32,7 @@ export default function IndustryBlock() {
   ]
   
   const marineInsurance = [
-    { id: "m1", titleLink: "/marine-insurance", img: "/productIcons/marine/marine_icon.png", title: "Marine Transit", subtitle: "Policy" },
+    { id: "m1", titleLink: "/marine-cargo-insurance", img: "/productIcons/marine/marine_icon.png", title: "Marine Transit", subtitle: "Policy" },
   ]
   return (
     <>
