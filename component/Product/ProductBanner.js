@@ -16,6 +16,30 @@ export default function ProductBanner(props) {
                 <div className='ProductBannerBox'>
                     <div className='container'>
                         <div className='row justify-content-between g-4'>
+                            <div className='col-lg-5 col-xl-5'>
+                                {/*<div className='ProductBanner-form'>
+                                    <div className='bg-white ProductBanner-formBg p-4 p-xl-5'>
+                                        <p className='ProductBanner-formTopHeading title-20 font-primaryNormal font-weight-500'>Analyse your Business Risk. <span className='d-inlline d-md-none'><br></br></span>Buy the right Policy within 10 Minutes</p>
+                                        {*<div className='row'>
+                                            <div className='col-lg-12 mx-auto'>
+                                                <div className='ProductBanner-formTop  d-flex flex-md-row flex-column '>
+                                                    <p className=' title20 font-weight-500 me-4 mb-0 d-flex  align-items-center'>
+                                                        <Building iconColor="green " width="20" height="21" />
+                                                        <span className='ms-2 font-primaryNormal'>Trusted by 340 businesses</span>
+                                                    </p>
+                                                    <p className='title20 font-weight-500 me-4 mb-0 d-flex  align-items-center'>
+                                                        <Clock iconColor="green stroke" width="20" height="21" />
+                                                        <span className='ms-2 font-primaryNormal'>Policy in Minutes</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>*}
+                                        <div className='ProductBanner-formBox'>
+                                            {children}
+                                        </div>
+                                    </div>
+                                </div>*/}
+                            </div>
                             <div className='col-lg-7 col-xl-6'>
                                 <div className='ProductBannerText'>
                                     <h1 className='title-60 ProductBannerTextTitle text-black font-weight-700 font-secondary'>{title}</h1>
@@ -45,30 +69,6 @@ export default function ProductBanner(props) {
                                             stars="4.5"
                                             background="true"
                                         />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='col-lg-5 col-xl-5'>
-                                <div className='ProductBanner-form'>
-                                    <div className='bg-white ProductBanner-formBg p-4 p-xl-5'>
-                                        <p className='ProductBanner-formTopHeading title-20 font-primaryNormal font-weight-500'>Analyse your Business Risk. <span className='d-inlline d-md-none'><br></br></span>Buy the right Policy within 10 Minutes</p>
-                                        {/*<div className='row'>
-                                            <div className='col-lg-12 mx-auto'>
-                                                <div className='ProductBanner-formTop  d-flex flex-md-row flex-column '>
-                                                    <p className=' title20 font-weight-500 me-4 mb-0 d-flex  align-items-center'>
-                                                        <Building iconColor="green " width="20" height="21" />
-                                                        <span className='ms-2 font-primaryNormal'>Trusted by 340 businesses</span>
-                                                    </p>
-                                                    <p className='title20 font-weight-500 me-4 mb-0 d-flex  align-items-center'>
-                                                        <Clock iconColor="green stroke" width="20" height="21" />
-                                                        <span className='ms-2 font-primaryNormal'>Policy in Minutes</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>*/}
-                                        <div className='ProductBanner-formBox'>
-                                            {children}
-                                        </div>
                                     </div>
                                 </div>
                             </div>
