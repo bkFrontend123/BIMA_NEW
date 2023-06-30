@@ -287,27 +287,27 @@ export default function DAndO_Insurance() {
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-3 g-lg-5'>
                                                 <Col lg={4}>
-                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/worksIcon.svg' width="80" height="80" alt="Works on Claims-Made Basis" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Works on Claims-Made Basis</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Claims need to be initiated within the policy period. The incident triggering the claim must also happen within the policy’s coverage duration.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodGlobe.svg' />
+                                                            <Image src='/icons/dateIcon.svg' width="80" height="80" alt="Retroactive Date" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Retroactive Date</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Your first policy’s start date is carried forward to subsequent policy renewals. Hence, you can initiate claims for incidents that occur post your first policy’s start date assuming that continuous coverage is maintained</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
-                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
+                                                            <Image src='/icons/periodIcon.svg' width="80" height="80" alt="Insurance Period:" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Insurance Period:</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>The insurance period spans from the retroactive date to the policy's termination date, providing coverage during this entire timeframe.</p>
                                                         </div>
