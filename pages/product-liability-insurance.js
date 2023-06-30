@@ -199,7 +199,7 @@ export default function DAndO_Insurance() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Product Liability Liability Insurance"
+                        title="Product Liability Insurance"
                         description="Product Liability insurance is specifically designed to protect your business from the financial impact of claims arising out of damage, injury, or harm caused by the products you manufacture, sell, or distribute. It's a specialized policy that understands the unique risks associated with products."
                         customClass="prdctLlbtyBnr"
                     >
