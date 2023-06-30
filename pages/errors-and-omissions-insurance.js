@@ -337,7 +337,7 @@ export default function EAndO_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>As clients challenge any deficiency in service delivery mechanisms, the risk of facing financial loss claims is on the rise. Regardless of the quality of your offering, mistakes and dissatisfied customers are a part of doing business.</p>
 
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Errors & Omissions (E&O) insurance provides financial security, preserves your reputation, and instills confidence in clients. With E&O insurance, you can focus on delivering exceptional service without worrying about potential legal repercussions.</p>
-                                        <div className={`${productStyle.lightYellowSecCards}`}>
+                                        {/*<div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='gx-lg-5'>
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
@@ -376,7 +376,7 @@ export default function EAndO_Insurance() {
                                                     </div>
                                                 </Col>
                                             </Row>
-                                        </div>
+                                        </div>*/}
                                     </Container>
                                 </div>
                             </div>
