@@ -189,7 +189,7 @@ export default function product() {
     return (
         <>
             <Head>
-                <title>Marine Cargo Insurance | BimaKavach Insurance for Marine Cargo</title>
+                <title>Cyber Insurance | BimaKavach Insurance for Cyber</title>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
@@ -199,9 +199,9 @@ export default function product() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Marine Cargo Insurance"
-                        description="Damage to valuable cargo while in transit can lead to significant losses for any business. Marine Cargo Insurance safeguards your goods during transit, whether by sea, road, rail, or air. With customizable coverage based on the nature of goods and their travel routes, this policy ensures peace of mind during transportation."
-                        customClass="marineBnr"
+                        title="Cyber Insurance"
+                        description="Cyber Insurance is a specialized product designed to protect your business from the unique threats posed by operating in the digital world. In a time of widespread cyber attacks, it is a crucial part of any business's risk management strategy."
+                        customClass="cybrBnr"
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
@@ -271,97 +271,72 @@ export default function product() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Marine Cargo Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Marine Cargo Insurance is designed to safeguard your business against losses incurred during the transportation of goods. It's not limited to sea transport — it encompasses all modes, including air, land (road and rail), and inland waterways. It offers coverage for a wide array of risks, including container damage, cargo loss, liability for third-party property damage or personal injury.</p>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Companies that regularly transport valuable or fragile goods need this insurance policy for their shipments.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Cyber Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A cyber insurance policy covers a broad range of risks such as credit card data leaks, data breaches, cyber-attacks, and other digital threats. Whether it's a data breach where sensitive customer information is exposed, a ransomware attack that holds your systems hostage, or a business email compromise that tricks your employees into wiring money to criminals, Cyber Insurance has you covered.</p>
+
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Also referred to as 'cyber risk insurance' or 'cyber liability insurance', this policy can help cover the costs of responding, including legal fees, public relations efforts, and notifying affected customers. It not only covers damages caused by cyber assaults on bank accounts, credit and debit cards linked to your website, but also unintentional payments made using digital wallets.</p>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Types of Marine Cargo Insurance</h3>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>There are various kinds of marine insurance policies. Our insurance experts can help you secure the most appropriate type of policy for your business.</p>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>How to Spot a Cyber Attack:</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-4 g-lg-5'>
-                                                <Col lg={4}>
+                                                <Col lg={3}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/importIcon.svg' width="100" height="100" alt="Import Marine Insurance" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Import Marine Insurance</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>This policy provides comprehensive coverage for any kind of import, from any global location to any destination in India. The primary modes of transit covered under this policy typically include air and sea transport.</p>
+                                                            <Image src='/icons/fileIcon.svg' width="100" height="100" alt="File or program malfunctions" />
+                                                            <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>File or program malfunctions</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
-                                                <Col lg={4}>
+                                                <Col lg={3}>
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/exportIcon.svg' width="100" height="100" alt="Export Marine Insurance" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Export Marine Insurance</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Specifically designed for exporters, this policy offers protection for any form of export, emanating from any part of India to destinations worldwide. The key transit methods incorporated in this policy are air and sea transport.</p>
+                                                            <Image src='/icons/passwordIcon.svg' width="100" height="100" alt="Unauthorized password changes" />
+                                                            <p className='title-18 font-weight-500 text-black mt-2 m-0'>Unauthorized password changes</p>
                                                         </div>
                                                     </div>
                                                 </Col>
-                                                <Col lg={4}>
+                                                <Col lg={3}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/inlandIcon.svg' width="100" height="100" alt="Inland Marine Insurance" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Inland Marine Insurance</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Catering to domestic transportation needs, this policy ensures coverage for the transfer of goods across India, predominantly by road and rail. This insurance type is ideal for mitigating risks associated with inland goods transportation.</p>
+                                                            <Image src='/icons/appearanceIcon.svg' width="100" height="100" alt="Appearance of unwanted software or spyware" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Appearance of unwanted software or spyware</p>
                                                         </div>
                                                     </div>
                                                 </Col>
-                                                <Col lg={4}>
+                                                <Col lg={3}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/alopIcon.svg' width="100" height="100" alt="ALOP Insurance" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>ALOP Insurance</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It stands for Advanced Loss of Profit and is a particular type of business interruption insurance. It relates to the financial consequences of a project delay due to the occurrence of material damage to critical equipment during shipment. It is also known by the various names like Delay in Start-up, and Project-Cargo Marine/Consequential loss</p>
+                                                            <Image src='/icons/pluginIcon.svg' width="100" height="100" alt="Difficulty installing plugins" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Difficulty installing plugins</p>
                                                         </div>
                                                     </div>
                                                 </Col>
-                                                <Col lg={4}>
+                                                <Col lg={3}>
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/eProductIcon.svg' width="100" height="100" alt="E-product Specific Voyage" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>E-product Specific Voyage</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>This insurance covers any manufactured e-product or device or any component of the same, and other interests from various losses and damages, such as fire, collisions, earthquakes, and lightning during a specific voyage.</p>
+                                                            <Image src='/icons/scanningIcon.svg' width="100" height="100" alt="Random file scanning" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Random file scanning</p>
                                                         </div>
                                                     </div>
                                                 </Col>
-                                                <Col lg={4}>
+                                                <Col lg={3}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/coverIcon.svg' width="100" height="100" alt="Open Cover Agreement" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Open Cover Agreement</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It is an agreement (not a policy) in which the insurer will accept responsibility for the insurance of all shipments for a fixed period, usually 12 months, within the terms of the cover. Here, the insured party does not need to arrange separate insurance for each individual shipment.</p>
+                                                            <Image src='/icons/browserIcon.svg' width="100" height="100" alt="Unusual toolbars on your internet browser" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Unusual toolbars on your internet browser</p>
                                                         </div>
                                                     </div>
                                                 </Col>
-                                                <Col lg={4}>
+                                                <Col lg={3}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/lossIcon.svg' width="100" height="100" alt="Direct Loss" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Direct Loss</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Unlike other marine policies that cover the value of items, this policy covers the sales turnover of a company. In this case, the insured receives coverage for all transits required to achieve sales. In this policy, imports & customs duties, raw materials, consumables, inter-factory, inter-depot, and job worker movement are covered. Along with that, export transit and temporary storage at intermediary locations such as ports and C&F facilities are covered also. Therefore, an annual turnover policy can satisfy all the requirements of a marine cargo insurance policy.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/voyageIcon.svg' width="100" height="100" alt="Specific Voyage Policy" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Specific Voyage Policy</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It provides coverage for a specific single transit, from one location to another. It typically includes protection against various perils and risks that may occur during the transportation of goods. This policy concludes upon the journey's completion.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/policyIcon.svg' width="100" height="100" alt="nnual Policy" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Annual Policy</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>This policy is issued to cover marine cargo shipments from all potential perils for a period of 12 months.</p>
+                                                            <Image src='/icons/internetIcon.svg' width="100" height="100" alt="Persistent pop-ups while accessing the internet" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Persistent pop-ups while accessing the internet</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -374,85 +349,190 @@ export default function product() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Marine Cargo Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Obtaining a marine cargo insurance policy is highly recommended for any company involved in the transportation of goods, whether it's by sea, air, land, or inland waterways. It is highly sought after by shippers, cargo owners, logistic service providers, operators, freight forwarders, importers and exporters, etc. It protects shipping companies and couriers from potential losses stemming from natural disasters, cross-border conflicts, water transportation issues, inland & air transportation issues or cargo mishandling. It is an indemnity contract in which the insurer agrees to compensate the insured, within the policy's limits, for any loss or damage to property caused by specified perils.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Cyber Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>According to a report by Nordlocker, small businesses with an employee base of 500 are at the highest risk of ransomware attacks, accounting for around 54 percent of total attacks between Jan ‘20 to Jul ‘22. The top five sectors prone to cyber attacks in India are:</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Which factors are considered when determining the premium for Marine Cargo Insurance?</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>The top five sectors prone to cyber attacks in India are: </div>
                                         <Row>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Nature of the goods being transported" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Nature of the goods being transported</p>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Information Technology</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="The modes of transportation" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>The modes of transportation</p>
+                                            <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Manufacturing</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Type of packaging" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Type of packaging</p>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Consumer services</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Geographical trading restrictions" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Geographical trading restrictions</p>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Finance</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Type of Chosen insurance coverage" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Type of Chosen insurance coverage</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Ownership and contractual terms" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Ownership and contractual terms</p>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Energy</p>
                                                 </div>
                                             </Col>
                                         </Row>
                                     </div>
                                 </Container>
+                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
+                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
+                                    <Container className='position-relative'>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The top five sectors prone to cyber attacks in India are:</h3>
+                                        <div className={`${productStyle.lightYellowSecCards}`}>
+                                            <Row className='g-4 g-lg-5'>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/technologyIcon.svg' width="100" height="100" alt="Information Technology" />
+                                                            <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>Information Technology</h3>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/manufacturingIcon.svg' width="100" height="100" alt="Manufacturing" />
+                                                            <p className='title-18 font-weight-500 text-black mt-2 m-0'>Manufacturing</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/financeIcon.svg' width="100" height="100" alt="Finance" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Finance</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/energyIcon.svg' width="100" height="100" alt="Energy" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Energy</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/consumerIcon.svg' width="100" height="100" alt="Consumer service" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Consumer services</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                            <p className='title-20 mb-0 text-black font-weight-500 my-4 my-lg-5'>Almost every organization in today's digital age relies on technology in their everyday operations. Customers' names, addresses, and financial information are handled by a wide range of businesses, including IT services, product corporations, e-commerce companies, finance firms, real estate brokers, online marketplaces, restaurants, and many more. All such organizations must carry Cyber Liability Insurance to safeguard themselves against the risk of internet fraud.</p>
+                                            <Row className='g-4 g-lg-5'>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/damageIcon.svg' width="100" height="100" alt="Reputation damage" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Reputation damage</h3>
+                                                            <p className='title-18 font-weight-500 text-black mt-2 mb-0'>A breach can harm your company's reputation, potentially leading to lost customers and decreased trust</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/finesIcon.svg' width="100" height="100" alt="Heavy fines" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Heavy fines</h3>
+                                                            <p className='title-18 font-weight-500 text-black mt-2 mb-0'>If sensitive financial information is compromised, you may face substantial fines from credit and debit card companies.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/transferIcon.svg' width="100" height="100" alt="False wire transfers" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>False wire transfers</h3>
+                                                            <p className='title-18 font-weight-500 text-black mt-2 mb-0'>Cybercriminals may attempt to make false wire transfers using your clients' online banking credentials if your computer system is hacked.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    </Container>
+                                </div>
                             </div>
                             <div id="scrollspyHeading3" className={`${productStyle.whyGet}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Marine Cargo Insurance ?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Business shipments often hold significant value, and any damage can directly affect a company's bottom line. Marine cargo insurance policies can provide coverage for theft, malicious damage, shortages, non-delivery of goods, damages during loading and unloading, and cargo mishandling. You can tailor marine cargo insurance coverage to meet your specific business requirements, and it is available for a broad range of cargo and goods.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Commercial Crime Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>There are some shocking statistics related to cyber attacks in India reported by Cisco’s report titled ‘Cybersecurity for SMBs: Asia Pacific Businesses Prepare for Digital Defense’.</p>
+                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
+                                            <li>74% of SMEs suffered a cyber attack in 2021.</li>
+                                            <li>62% of those attacked suffered a cost more than 3.5 crore.</li>
+                                            <li>60% of small enterprises that face a cyberattack go out of business within six months.</li>
+                                        </ul>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Such statistics push cyber security and insurance to the forefront of every business’s priorities. <span className='d-none d-lg-block'></span>Mitigating financial losses caused by cyber threats such as data breaches, system intrusions, and ransomware attacks is crucial for corporations to safeguard their operations and reputation. <span className='d-none d-lg-block'></span>Cyber Risk provides covers for a range of costs associated with cybercrimes, including investigative charges, data restoration costs, and crisis management fees. By purchasing Cyber Risk Insurance, corporations can ensure continued success in the face of ever-evolving cyber threats.</p>
                                     </div>
                                 </Container>
-
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
-                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
+                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
+                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-black mb-0'>How to File a Claim Under Marine Cargo Insurance?</h3>
-                                        <ol className={`text-black title-20 mt-4 mt-xl-5 ${productStyle.listOrderData}`}>
-                                            <li>Provide a copy of the insurance policy as proof of coverage.</li>
-                                            <li>Submit the surveyor's report detailing the extent of damage or loss.</li>
-                                            <li>Produce a copy of the bill of lading as proof of the shipping contract.</li>
-                                            <li>Present a claim bill, specifying the incurred losses or damages.</li>
-                                            <li>Share the original invoice list to provide details of shipped items and their values.</li>
-                                            <li>Any correspondence with carriers demonstrating efforts to resolve the issue.</li>
-                                        </ol>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The Cost of not Having Cyber Fraud Insurance:</h3>
+                                        <div className={`${productStyle.lightYellowSecCards}`}>
+                                            <Row className='g-4 g-lg-5'>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/bLossIcon.svg' width="100" height="100" alt="Business loss compensation to clients" />
+                                                            <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>Business loss compensation to clients</h3>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/feesIcon.svg' width="100" height="100" alt="Ransom fees for restoring stolen data" />
+                                                            <p className='title-18 font-weight-500 text-black mt-2 m-0'>Ransom fees for restoring stolen data</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/forensicIcon.svg' width="100" height="100" alt="Cyber forensic investigation costs" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Cyber forensic investigation costs</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/legalIcon.svg' width="100" height="100" alt="Legal attorney fees" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Legal attorney fees</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/monitoringIcon.svg' width="100" height="100" alt="Credit monitoring expenses" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Credit monitoring expenses</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </div>
                                     </Container>
                                 </div>
                             </div>
@@ -472,7 +552,7 @@ export default function product() {
                                             </span>
                                             Coverages & Exceptions in
                                         </h3>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Marine Cargo Insurance</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Cyber Insurance</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
                                         <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
@@ -482,80 +562,80 @@ export default function product() {
                                         <div data-tab className="place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>Whether the cargo is being transported by sea, air, land, or inland waterways, marine insurance protects it against various risks and perils that may occur throughout the journey. Major accidents covered under marine insurance include:</div>
+                                                    <div className='title-20 text-black mb-4'>Cyber insurance covers a wide range of cost that may occur in cyber-attack. Here are some of the key coverages offered by cyber insurance policies:</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Collision</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This cover refers to the protection provided for physical damage or loss to cargo resulting from a collision or accident during transit. For example, If the vessel carrying the insured goods collides with another vessel, resulting in damage or loss to the cargo, the policy will provide coverage for the resulting expenses. It may also be extended to include collisions or accidents that may occur during the inland transportation of goods or cargo, by truck, train, or other forms of inland transport.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Legal Representation Costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Provides policyholders with the resources necessary to hire a lawyer to represent their business in court, negotiations with regulators, and to cover the cost of any settlements or judgments.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Fire accident</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects against damages to any cargo or property on board that may be affected by a fire accident. It also covers additional expenses related to the fire, such as firefighting efforts or damages caused by smoke or water used to extinguish the fire.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Malware Attack</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>A malware attack can cause significant harm to a business's computer systems, in such case this coverage provides the resources necessary to restore the affected systems and defend any legal claims made by victims.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Sinking</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Sinking coverage includes damages to any cargo or property on board resulting from the sinking or capsizing of the carrier. It also covers additional expenses incurred due to the sinking, such as salvage and recovery efforts, and liability for damages caused to other vessels or properties.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Identity Theft</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Provides financial protection in the event of identity theft, and covers the cost of legal representation and settlements, as well as the cost of prosecuting third-party claims and other expenses related to the theft.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Natural calamities</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects against damages or losses to the cargo caused by natural disasters like storms, hurricanes, earthquakes, or tsunamis. It covers losses to cargo or property on board and includes costs associated with salvage and recovery efforts, as well as liability for damages caused to other carriers or properties.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Cyber Intrusion Losses</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Offers protection against financial losses due to cyber intrusions that result in unauthorized payments to third parties.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Reconditioning cost</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Reconditioning cost coverage provides reimbursement for expenses incurred to repair or restore a carrier to its original condition following a covered loss or damage. This may include repairs to the machinery, equipment as well as replacement of damaged or lost items. It also covers labor and materials costs for reconditioning, along with related expenses like shipping and storage</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Phishing</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Protects businesses against the unauthorized access of sensitive information and covers financial losses due to the loss of such information.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Overturning</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects against damages or losses to cargo or property on board, as well as additional expenses related to the overturning, such as salvage and recovery efforts.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Cyberstalking</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Provides protection for businesses that are stalked or harassed using electronic means, and covers the cost of legal representation in the event of a lawsuit.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Explosion</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Explosion coverage protects against damages to the shipment and any cargo or property on board resulting from an explosion or similar event. It also covers additional expenses incurred due to the explosion, such as salvage and recovery efforts, and liability for damages caused to other carrier or property.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Cyber Extortion</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Protects businesses that are the victims of an extortion attempt that involves the use of electronic means, such as email or the internet.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Stranding</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Stranding coverage protects against damages or losses to a shipment caused by it becoming stranded on a shoal, reef, or other obstruction. This coverage also includes damages to any cargo or property on board affected by the stranding.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Data Breach or Privacy</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Provides legal expense coverage in the event of a data breach or invasion of privacy.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crisis Communication Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers the reasonable costs, charges, fees, and expenses incurred by an organization, in attaining the services of any public relations firm or crisis management firm to advise the organization for managing public communication.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Computer Forensics</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>In the event of a data breach, the policy provides the resources necessary to hire computer forensics experts to identify the breach, control and prevent future damage, and investigate its cause and extent.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Dedicated additional limit for Non-Executive Directors and Officers</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>With this add-on cover, you get an extra layer of protection that is added to the overall coverage limit for non-executive directors and officers of a company.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Reputational Damage</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Offers resources to help mitigate the public relations consequences of a data breach and covers the cost of brand aversion for a set period following the cyber incident.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bribes and Commission</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Directors & Officers policy excludes claims and losses arising from bribes and commissions.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Fines and Penalties</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Protects businesses from the financial penalties and fines imposed by government or regulatory bodies as a result of a cyber incident or data breach.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Money Laundering</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Money laundering is a process that criminals use to hide the illegal source of their income. If a claim is made against a director or officer for something related to money laundering, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Extended Reporting Period</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If a policy is terminated or not renewed, this coverage provides an extended period for the insured to discover and report any claims by paying an additional premium.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -563,62 +643,44 @@ export default function product() {
                                         <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>There are specific scenarios that a standard Marine Cargo insurance policy does not cover, including but not limited to:</div>
+                                                    <div className='title-20 text-black mb-4'>Cyber insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Willful acts by the insured</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It excludes losses or damages arising from intentional or willful acts by the insured or its representatives, such as causing intentional damage to their own cargo and filing a fraudulent insurance claim.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Email Spoofing and Phishing</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Some cyber insurance policies may not provide coverage for certain types of social engineering attacks. Instead, these attacks are typically included under Commercial Crime Insurance Policies. Examples of such attacks include email spoofing and phishing.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Weight loss, volume loss, liquid leakage, or normal wear and tear:</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Coverage is excluded for losses or damages resulting from weight loss, volume loss, liquid leakage, or normal wear and tear of the insured item.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Physical Injury, Disease, Disability, Sickness, or Death</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Claims related to physical injury, disease, disability, sickness, or death are not covered under a cyber insurance policy. However, claims related to mental injury or anguish resulting from a breach of Data Protection Law by the company are included.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Inadequate packaging</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It excludes losses arising from the insured's negligence or failure to take reasonable precautions in packaging or preparing the insured item for transport.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Incidents/Litigations Prior to Policy Commencement</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Claims arising from incidents or acts committed before the policy's start date, such as cyberstalking, IT theft loss, malware damage to computer systems, phishing and email spoofing, cyber extortion, privacy breaches, and data breaches by third parties, are not covered.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Inherent vice or nature</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Losses or damages arising from inherent defects or characteristics of the insured item are excluded.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Losses or Damages Caused by War or Government Actions</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This policy does not cover claims arising from war or warlike scenarios, including invasion, acts of foreign enemies, armed conflict, rebellion, revolution, civil war, government confiscation, or damage to property by authorities.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Inadequate packaging</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It excludes losses arising from the insured's negligence or failure to take reasonable precautions in packaging or preparing the insured item for transport.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Dishonest or Improper Conduct</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Claims resulting from intentional non-compliance with a ruling, fraudulent acts by the policyholder, or criminal breaches of law or regulation committed by employees, outsourcers, or partners are excluded from coverage.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Inherent vice or nature</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Losses or damages arising from inherent defects or characteristics of the insured item are excluded.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Damages arising from riots, strikes, or war</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>There is exclusion for losses or damages resulting from insured party's cargo being damaged or lost during events like riots, civil commotions, or war. However, some of these perils can be covered under certain conditions with an additional premium.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Delay in the delivery of goods</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It excludes losses or damages resulting from a delay in the delivery of the insured goods, which doesn't result in any physical damage or loss to the goods themselves.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Default on financial obligation</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It excludes coverage for losses or damages caused by the financial failure or default (such as failure of loan payments) of a party involved in the transportation or delivery of the insured goods. For example, this exclusion typically applies when the loss or damage to the cargo results from the financial inability of a party (such as a Freight Forwarder) to fulfill his contractual obligations related to the transportation or delivery of the goods.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Contractual Liability</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Claims related to contractual and non-contractual incentives offered by the policyholder to customers or clients, such as service rebates, price reductions, credits, promotions, awards, or other incentives, are not covered under this policy.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -638,7 +700,7 @@ export default function product() {
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Marine Cargo Examples</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Cyber Claims Examples</h3>
                                 </div>
                             </Col>
                         </Row>
@@ -647,20 +709,26 @@ export default function product() {
                                 <div className={`tabContainer my-4 my-lg-5 ${productStyle.inciTab}`}>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all active">Incident 1</span>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 2</span>
+                                    <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 3</span>
                                 </div>
                                 <div className={`pt-1 overflow-hidden ${productStyle.inciTabPanel}`}>
                                     <div data-incitab className={`${productStyle.inciTabPanelBox}`}>
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Lorem Ipsum</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Ransomware Attack on Insured's Server</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>A company manufacturing electronics ships a cargo worth Rs 5 crore from India to Myanmar. During the voyage, a severe storm damages the shipment, causing the electronic goods to become inoperable and leading to a total loss. If the company had obtained marine cargo insurance before shipping the goods, they could have filed a claim with their insurer and received compensation for the damages incurred.</div>
+                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>The insured experienced a ransomware attack on their server, resulting in encrypted files and a ransom note from the attackers. The insured claimed compensation for the costs of forensic investigation, credit monitoring, and business interruption.</div>
+                                                    </div>
+                                                    <div className='mb-4'>
+                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer proactively assisted the insured in evaluating the severity of the data compromise and appointed a forensic investigator to assess and contain the threat.</div>
                                                     </div>
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/cyber_incident1.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -668,14 +736,39 @@ export default function product() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Lorem Ipsum</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Breach of Insured Customers’ Backup</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>A 35 yr old young entrepreneur runs an e-commerce store exporting wallets to customers worldwide, using a third-party courier for shipping. Regrettably, the entrepreneur didn't secure marine insurance, resulting in lost goods during transit. This loss led to financial difficulties and dissatisfied customers. With an appropriate insurance policy in place, the entrepreneur might have been able to recover the losses from the misplaced shipments.</div>
+                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>The insured's customers experienced blocked accounts, altered credentials, and encrypted files due to a Maze Ransomware attack on their server. The attackers demanded a ransom of USD 1 Million to provide the decryption keys. The insured's backup was also compromised and encrypted.</div>
+                                                    </div>
+                                                    <div className='mb-4'>
+                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer appointed ransomware experts to manage the incident and effectively negotiated the ransom amount paid.</div>
                                                     </div>
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='incident/cyber_incident2.png' />
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                    <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
+                                        <Row className='g-4'>
+                                            <Col lg={7}>
+                                                <div className={`${productStyle.inciTabPanelBoxLeft}`}>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Data Held Hostage By Ryuk Ransomware</div>
+                                                    <div className='mb-4'>
+                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>An insured fell victim to the Ryuk ransomware, a highly destructive form of malware known for its high ransom demands. Before the attack, the insured was infected with a banking Trojan, allowing the attacker to access internal financial information. The ransom demanded exceeded $1.5 million, but the company chose not to pay. As a result, the attack made the company's data inaccessible..</div>
+                                                    </div>
+                                                    <div className='mb-4'>
+                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer hired professionals specialized in handling ransomware incidents and successfully facilitated productive negotiations regarding the amount of ransom to be paid.</div>
+                                                    </div>
+                                                </div>
+                                            </Col>
+                                            <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
+                                                <img src='/incident/cyber_incident2.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -693,63 +786,54 @@ export default function product() {
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Marine Cargo Insurance</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Cyber Insurance</h3>
                                 </div>
                             </Col>
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What are the most common types of marine cargo insurance?"
-                                content={[<>
-                                    <span>The most common types of marine insurance are:</span>
-                                    <ul className={`mt-3 ${productStyle.listData}`}>
-                                        <li>Marine Cargo Insurance - Cargo owners incur the risk of cargo mishandling both at the terminal and on the ship's voyage. Their shipment could possibly be damaged, misplaced or lost as well.  Marine cargo insurance is provided to protect the cargo owner from financial losses caused by such accidents. It also includes third-party liability cover, which compensates for any damage to the port, ship, railway track, other cargo, or individuals caused by your cargo.</li>
-                                        <li>Machinery Insurance - All essential machinery is covered under this marine insurance policy, as well as any operational damages (subject to post-survey approval by the surveyor).</li>
-                                        <li>Liability Insurance - In cases of collisions, crashings, or other persuaded attacks, compensation is required.</li>
-                                        <li>Freight Insurance - The purpose of freight insurance is to provide companies with financial security in case they lose money due to an unforeseeable event or accident.</li>
-                                    </ul>
-                                </>]}
+                                title="What is the jurisdiction/territory limit of the coverage/claim?"
+                                content="The jurisdiction limit of a claim refers to the countries where the policy will cover claims filed in the courts. The territorial limit pertains to the location where the cyber attack took place."
                             />
                             <Accordion
-                                title="What is inland marine insurance?"
-                                content="Inland marine insurance is a type of insurance policy that covers property and goods while they are being transported over land. Inland marine insurance is actually designed to protect goods that are transported over land, including those that are shipped by truck, train, or airplane."
+                                title="How much cyber insurance coverage do I need?"
+                                content="The amount of cyber insurance coverage a business requires will depend on its risk and exposure. Factors to consider include the size of the organization, type of business, amount of sensitive data, and potential costs of a cyber incident."
                             />
                             <Accordion
-                                title="What is the general average in marine insurance?"
-                                content="General average is a principle of maritime law that applies in situations where a shipowner intentionally sacrifices part of the vessel or its cargo to prevent a larger loss or damage to the vessel or other cargo on board. In such situations, the loss or damage is shared proportionally among all parties with an interest in the vessel or the cargo, including the owners of the cargo and the vessel itself."
+                                title="Is email spoofing/phishing covered under cyber insurance?"
+                                content="No, email spoofing and phishing are covered under Crime/Fidelity Insurance."
                             />
                             <Accordion
-                                title="What is an insurable interest in marine cargo insurance?"
-                                content="Insurable interest is a fundamental principle of insurance that requires the insured to have a financial or other kind of interest in the subject matter of the insurance policy. In the context of marine insurance, insurable interest refers to the legal or financial interest that a person or entity has in cargo. In order to purchase marine insurance, the insured must have an insurable interest in the cargo being insured."
+                                title="What would be the out-of-pocket cost for a cyberattack without cyber insurance?"
+                                content="In the event of a cyberattack, policyholders may face several costs, including forensic investigation, notification to affected parties, credit monitoring services, and lost income or business interruption."
                             />
                             <Accordion
-                                title="What is marine cargo insurance?"
-                                content="Cargo owners face the danger of cargo mishandling at the terminal as well as during the ship's voyage. It is also possible that your cargo has been misplaced, damaged, or lost.  Marine cargo insurance is offered to safeguard the cargo owner from financial damages resulting from such incidents. It includes third-party liability insurance, which covers any damage caused by your cargo to the port, ship, railway track, other cargo, or individuals."
+                                title="Is cyber insurance worth it for small businesses?"
+                                content="Small businesses can still face cyberattacks and losses but with proper cyber insurance, they can compensate for these risks. As technology is becoming increasingly integrated into all types of businesses, even small companies can safeguard their financial losses from cyberattacks."
                             />
                             <Accordion
-                                title="What is a constructive total loss in marine insurance?"
-                                content="In marine insurance, a constructive total loss is a term used to describe a situation where the insured cargo is damaged to the extent that the cost of repair is more than the actual value of the cargo itself. Usually, when the cost of repairing the damaged cargo exceeds a certain percentage of its value, typically around 75% to 90%, the cargo is considered a constructive total loss. In this case, the insurer will usually pay the insured the full value of the cargo/shipment, less any deductible, instead of paying for the repairs."
+                                title="Are cyber insurance premiums tax deductible?"
+                                content="Yes, cyber insurance premiums are tax-deductible as business expenses."
                             />
                             <Accordion
-                                title="What is jettison in marine insurance?"
-                                content="Jettison refers to the deliberate throwing overboard of cargo or other items from a vessel in distress in order to lighten the load and save the vessel, crew, and remaining cargo. In marine insurance, jettison is important because it can affect the claims settlement process. If the jettisoned cargo was insured, the insurer may be responsible for reimbursing the owner or consignee for the value of the lost cargo."
+                                title="Does cyber insurance cover property damage?"
+                                content="Yes, if a cyberattack causes damage to a policyholder's physical property, such as computer systems, the policy may provide coverage for the cost of repairing or replacing the damaged property."
                             />
                             <Accordion
-                                title="What is a marine survey for insurance?"
-                                content="A marine survey for insurance may include the evaluation of the cargo's condition, quality, packaging, storage, and overall suitability for transportation. The surveyor examines the cargo to identify any pre-existing damage, signs of improper handling, or packaging. Then, the surveyor verifies that the cargo conforms to any relevant regulations, standards, or industry-specific requirements."
+                                title="Is it difficult to get cyber insurance?"
+                                content="No, answering a few basic questions on the BimaKavach platform can provide you with customized quotes for cyber insurance policies within 10 minutes."
                             />
                             <Accordion
-                                title="What are the 5 principles of Marine Insurance?"
-                                ccontent={[<>
-                                    <ul className={`${productStyle.listData}`}>
-                                        <li>Utmost good faith -  Under this principle, the insured is required to disclose all material facts that could affect the insurer's decision to accept or reject the risk, while the insurer is required to provide all relevant information about the policy terms and conditions.</li>
-                                        <li>Insurable interest - A policy cannot be issued unless you have an insurable interest in buying it.</li>
-                                        <li>Indemnity -The principle of indemnity requires an insured to be compensated for the actual amount of loss suffered as a result of an insured event, but not more than that.</li>
-                                        <li>Subrogation - The principle of subrogation is based on the idea that the insurer should be able to recover the amount of the claim from any third party that is responsible for the loss or damage.</li>
-                                        <li>Contribution - The principle of contribution requires that each insurer contributes to the cost of the claim in proportion to the amount of coverage they provide.</li>
-                                        <li>Loss minimization - This principle is based on the idea that the insured has a duty to mitigate their losses and to take reasonable steps to prevent further damage or loss from occurring.</li>
-                                    </ul>
-                                </>]}
+                                title="How do I file a cyber insurance claim?"
+                                ccontent="It's recommended to seek expert advice for both cyber insurance quotes and claim settlements. BimaKavach's executives can assist in the claim settlement process."
+                            />
+                            <Accordion
+                                title="Is cyber insurance the same as professional liability insurance?"
+                                ccontent="Cyber insurance helps companies recover from cyberattacks, while professional liability insurance protects against claims arising from alleged errors, omissions, or negligence in providing professional services."
+                            />
+                            <Accordion
+                                title="What is cyber security?"
+                                ccontent="Cyber security involves protecting a business's assets and employees from cyberattacks. To get a cyber security quote, provide a few details about your company and a team member will contact you to discuss your needs. With BimaKavach, you can receive the best product recommendations for cyber insurance quotes from top insurers in just 5 minutes."
                             />
                         </div>
                     </Container>

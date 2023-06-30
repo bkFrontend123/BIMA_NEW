@@ -26,7 +26,7 @@ function Navbar() {
     { id: "l2", link: "/errors-and-omissions-insurance", img: "/productIcons/liability/eAndO_icon.png", title: "Errors & Omissions Insurance" },
     { id: "l3", link: "/general-liability-insurance", img: "/productIcons/liability/generalLiability_icon.png", title: "General Liability Insurance" },
     //{ id: "l4", link: "/", img: "/productIcons/liability/fidelity_icon.png", title: "Fidelity Insurance" },
-    { id: "l5", link: "/", img: "/productIcons/liability/productLiability_icon.png", title: "Product Liability Insurance" },
+    { id: "l5", link: "/product-liability-insurance", img: "/productIcons/liability/productLiability_icon.png", title: "Product Liability Insurance" },
     //{ id: "l6", link: "/", img: "/productIcons/liability/workman_icon.png", title: "Workman’s Compensation" },
     { id: "l7", link: "/commercial-crime-insurance", img: "/productIcons/liability/crime_icon.png", title: "Crime Insurance" },
     { id: "l8", link: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.png", title: "Cyber Insurance" },
