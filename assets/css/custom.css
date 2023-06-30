@@ -747,6 +747,32 @@ body .swiper-scrollbar {
 }
 
 
+.ftrLinks a {
+   font-size: 16px;
+   color: var(--vt-c-blueSkyLight2);
+   position: relative;
+   display: inline-block;
+   margin-right: 1rem;
+   transition: all 0.3s ease 0s;
+}
+
+.ftrLinks a::before {
+   background: var(--vt-c-blueSkyLight2);
+   position: absolute;
+   content: "";
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 2px;
+}
+
+.ftrLinks a:hover {
+   color: var(--whiteText);
+}
+.ftrLinks a:hover::before {
+   background: var(--whiteBg);
+}
+
 .copyright {
    padding-top: 32px;
 }
