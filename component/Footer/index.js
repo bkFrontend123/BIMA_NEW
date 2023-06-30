@@ -126,7 +126,7 @@ export default function Footer() {
                     <ul className="list-group list-group-borderless bg-transparent ">
                       <li className="list-group-item text-yellow title20 font-weight-600">Asset</li>
                       <li className="list-group-item">
-                        <Link href="/fire-insurance" className='title18 font-weight-400'>Fire Insurance</Link>
+                        <Link href="/fire-and-burglary-insurance" className='title18 font-weight-400'>Fire Insurance</Link>
                       </li>
                       <li className="list-group-item">
                         <span className='title18 font-weight-400'>Office Package</span>
@@ -211,7 +211,7 @@ export default function Footer() {
                 </div>
                 <div className='col-md-auto'>
                   <div className='d-md-flex align-items-center gap-3 mt-3'>
-                    <div class="ftrLinks">
+                    <div className="ftrLinks">
                       <Link href="/privacy-policy">Privacy Policy</Link>
                       <Link href="/terms-and-conditions">Terms & Conditions</Link>
                     </div>

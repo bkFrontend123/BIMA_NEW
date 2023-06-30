@@ -32,7 +32,7 @@ function Navbar() {
     { id: "l8", link: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.png", title: "Cyber Insurance" },
   ]
   const AssetInsurance = [
-    { id: "a1", link: "/", img: "/productIcons/asset/fire_icon.png", title: "Fire Insurance" },
+    { id: "a1", link: "/fire-and-burglary-insurance", img: "/productIcons/asset/fire_icon.png", title: "Fire Insurance" },
     //{ id: "a2", link: "/", img: "/productIcons/asset/officePackage_icon.png", title: "Office Package" },
     //{ id: "a3", link: "/", img: "/productIcons/asset/shopOwner_icon.png", title: "Shop Owner’s" },
     //{ id: "a4", link: "/", img: "/productIcons/asset/restaurant_icon.png", title: "Restaurant, Hotels & Cafes" },

@@ -14,7 +14,7 @@ export default function IndustryBlock() {
     { id: "l8", titleLink: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.png", title: "Cyber", subtitle: "Insurance" },
   ]
   const assetInsurance = [
-    { id: "a1", titleLink: "/", img: "/productIcons/asset/fire_icon.png", title: "Fire", subtitle: "Machinery" },
+    { id: "a1", titleLink: "/fire-and-burglary-insurance", img: "/productIcons/asset/fire_icon.png", title: "Fire", subtitle: "Machinery" },
     //{ id: "a2", titleLink: "/", img: "/productIcons/asset/officePackage_icon.png", title: "Office", subtitle: "Package" },
     //{ id: "a3", titleLink: "/", img: "/productIcons/asset/shopOwner_icon.png", title: "Shop", subtitle: "Owner’s" },
     //{ id: "a4", titleLink: "/", img: "/productIcons/asset/restaurant_icon.png", title: "Restaurant", subtitle: "Hotels & Cafes" },

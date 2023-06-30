@@ -189,7 +189,7 @@ export default function GeneralLiability_Insurance() {
     return (
         <>
             <Head>
-                <title>General Liability Insurance | BimaKavach Insurance for General Liability</title>
+                <title>Fire Insurance | BimaKavach Insurance for Fire</title>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
@@ -199,9 +199,9 @@ export default function GeneralLiability_Insurance() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Directors & Officers Liability Insurance"
-                        description="Good insurance decisions for C-Suite Executives begin with an understanding of D&O insurance and what it covers."
-                        customClass="gnrlBnr"
+                        title="Fire Insurance"
+                        description="Fire & Burglary insurance is one of the most common types of asset insurances. It provides coverage not only against fire and theft, but can also include riots, strikes, storms, floods, earthquakes, and other such situations. It provides a comprehensive cover for your building structure, office equipment, inventory, cash assets and valuable documents. Various types of costs like repairs, replacement, and reconstruction are included in this policy."
+                        customClass="fireBnr"
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
@@ -271,46 +271,8 @@ export default function GeneralLiability_Insurance() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>General Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Imagine you own a store, and a customer slips and falls, or your product somehow causes harm to a user - the costs of legal defense and potential settlements could be financially devastating. But with a CGL policy, you are protected against these risks. It can pay for immediate medical expenses in such cases, providing quick relief and potentially mitigating a larger claim. <span className='d-none d-lg-block'></span>It also covers personal and advertising injuries. This means if your business unintentionally infringes on someone else's copyright or is accused of libel or slander during advertising, your CGL policy has got you covered. <span className='d-none d-lg-block'></span>Because of its comprehensive nature, General Liability Insurance has your back. Without insurance, a single claim can be financially devastating to your business. But with the right CGL policy, you can focus on running your business and serving your customers, secure in the knowledge that you're protected against many of the risks you face every day.</p>
-                                    </div>
-                                    <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary mb-4'>Features of General Liability Insurance</div>
-                                        <Row className='g-3 g-lg-5'>
-                                            <Col lg={4}>
-                                                <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                    <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Works on Occurence Basis</h3>
-                                                        <p className='title-18 font-weight-500 text-black m-0'>Claims can be made even after a policy expires given that the incident happened within the policy’s active period.</p>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                    <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Start Date</h3>
-                                                        <p className='title-18 font-weight-500 text-black m-0'>Claims cannot be filed for any incidents that occured prior to the date when the coverage of the policy begins.</p>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                    <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Insurance Period</h3>
-                                                        <p className='title-18 font-weight-500 text-black m-0'>Any incident that happens between the policy's effective date to the policy's expiration date are covered. Renewal before expiration date is essential to maintain coverage.</p>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                </Container>
-                            </div>
-                            <div id="scrollspyHeading2" className={`${productStyle.whoNeed}`}>
-                                <Container>
-                                    <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>General Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>No matter what industry you're in or the size of business, having General Liability Insurance is a smart move. Because of its comprehensive nature, this insurance policy fits most businesses that have interactions with customers. From retail shops and tech startups to large manufacturers, this policy protects against legal and financial issues from third-party claims.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Fire & Burglary Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Fire & Burglary Insurance provides coverage for physical damage to your property. This damage can occur in a variety of situations like:</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>General Liability insurance is necessary for various kinds of businesses:</div>
@@ -318,73 +280,73 @@ export default function GeneralLiability_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                     <span>
-                                                        <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Restaurants and cafes" />
+                                                        <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Fire" />
                                                     </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Restaurants and cafes</p>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Fire</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                     <span>
-                                                        <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="Retail store owners" />
+                                                        <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="Lightning" />
                                                     </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Retail store owners</p>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Lightning</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                     <span>
-                                                        <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Contractors and construction companies" />
+                                                        <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Explosions or Implosions" />
                                                     </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Contractors and construction companies</p>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Explosions or Implosions</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                     <span>
-                                                        <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Fitness centers like gyms, yoga studios" />
+                                                        <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Riot, Strike and Malicious Damage" />
                                                     </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Fitness centers like gyms, yoga studios</p>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Riot, Strike and Malicious Damage</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                     <span>
-                                                        <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Cleaning services" />
+                                                        <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation" />
                                                     </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Cleaning services</p>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                     <span>
-                                                        <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Event planning companies" />
+                                                        <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation" />
                                                     </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Event planning companies</p>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                     <span>
-                                                        <Image src='/icons/techIcon.svg' width="100" height="100" alt="Tech startups" />
+                                                        <Image src='/icons/techIcon.svg' width="100" height="100" alt="Subsidence and Landslide including Rock slide" />
                                                     </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Tech startups</p>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Subsidence and Landslide including Rock slide</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                     <span>
-                                                        <Image src='/icons/manufacturersIcon.svg' width="100" height="100" alt="Manufacturers and distributors" />
+                                                        <Image src='/icons/manufacturersIcon.svg' width="100" height="100" alt="Bursting and/or overflowing of Water Tanks, Apparatus and Pipes" />
                                                     </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Manufacturers and distributors</p>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Bursting and/or overflowing of Water Tanks, Apparatus and Pipes</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                     <span>
-                                                        <Image src='/icons/plannersIcon.svg' width="100" height="100" alt="Event planners" />
+                                                        <Image src='/icons/plannersIcon.svg' width="100" height="100" alt="Bursting and/or overflowing of Water Tanks, Apparatus and Pipes" />
                                                     </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Event planners</p>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Bursting and/or overflowing of Water Tanks, Apparatus and Pipes</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
@@ -396,6 +358,123 @@ export default function GeneralLiability_Insurance() {
                                                 </div>
                                             </Col>
                                         </Row>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>This insurance is designed to meet the needs of businesses of various sizes, with three coverage options available:</p>
+                                    </div>
+                                </Container>
+                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
+                                    <Container className='position-relative'>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Fire & Burglary Insurance</h3>
+                                        <div className={`${productStyle.lightYellowSecCards}`}>
+                                            <Row className='gx-lg-5'>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <img src='/icons/prodUShield.svg' />
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Coverage</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Protects against physical damage to a building or structure from fire or theft.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <img src='/icons/prodUShield.svg' />
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Eligibility</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Requires you to provide a detailed description of the property you want to insure and show proof that you have a legitimate interest in insuring it.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <img src='/icons/prodUShield.svg' />
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Direct Loss</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Covers immediate damage caused by the fire including destruction of buildings, equipment, furniture, inventory, and other physical assets within the property.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <img src='/icons/prodUShield.svg' />
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Policy Duration</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>The policy term is typically one year, with annual renewal required.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pb-0 mt-lg-5 border-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <img src='/icons/prodUShield.svg' />
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Customizable</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Coverage options may be customized to meet the specific needs of a business.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    </Container>
+                                </div>
+                            </div>
+                            <div id="scrollspyHeading2" className={`${productStyle.whoNeed}`}>
+                                <Container>
+                                    <div className={`${productStyle.tabWhatHeading}`}>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Fire & Burglary Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Companies that own or rent assets in the form of office premises, stock, machinery, cash, or other forms need comprehensive fire and burglary insurance policies.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>In addition to covering the office, retail, or factory premises, this policy also protects the contents inside the premises including electronic equipment like laptops, computers, and phones.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Fire & burglary insurance offers valuable coverage for businesses of all sizes and industries.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A few common businesses that purchase fire insurance are:</p>
+                                    </div>
+                                    <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
+                                        <Row className='gx-lg-5'>
+                                            <Col lg={4}>
+                                                <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                        <img src='/icons/prodUser.svg' />
+                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Hotel Owners and Service Providers</h3>
+                                                        <p className='title-18 font-weight-500 text-black m-0'>Guard against the financial consequences of fire damage  to your hospitality or service-based business.</p>
+                                                    </div>
+                                                </div>
+                                            </Col>
+                                            <Col lg={4}>
+                                                <div className={`${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                        <img src='/icons/prodUser.svg' />
+                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Shop-keepers and Godown Owners</h3>
+                                                        <p className='title-18 font-weight-500 text-black m-0 mt-2'>Protect your retail or storage space from the potential financial impact of a fire.</p>
+                                                    </div>
+                                                </div>
+                                            </Col>
+                                            <Col lg={4}>
+                                                <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                        <img src='/icons/prodUser.svg' />
+                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Manufacturing and Industrial Units</h3>
+                                                        <p className='title-18 font-weight-500 text-black m-0 mt-2'>Safeguard your operations, vehicles, and equipment with fire insurance.</p>
+                                                    </div>
+                                                </div>
+                                            </Col>
+                                            <Col lg={4}>
+                                                <div className={`mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                        <img src='/icons/prodUser.svg' />
+                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Medical Clinics</h3>
+                                                        <p className='title-18 font-weight-500 text-black m-0 mt-2'>Protect your medical facility, equipment, and patient records from fire damage</p>
+                                                    </div>
+                                                </div>
+                                            </Col>
+                                            <Col lg={4}>
+                                                <div className={`pb-0 mt-lg-5 border-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                        <img src='/icons/prodUser.svg' />
+                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Banks and Other Institutions</h3>
+                                                        <p className='title-18 font-weight-500 text-black m-0 mt-2'>Ensure the protection of your financial assets and operations with fire insurance.</p>
+                                                    </div>
+                                                </div>
+                                            </Col>
+                                        </Row>
                                     </div>
                                 </Container>
                             </div>
@@ -403,23 +482,26 @@ export default function GeneralLiability_Insurance() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>General Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>We all know that accidents can happen, even when you're doing everything right. In fact, 43% of small business owners have reported being threatened with or involved in a civil lawsuit. That's when General Liability Insurance becomes your go-to solution.It takes care of legal defense costs, settlements, and judgments that might come up from third-party claims, helping to keep your business secure. And it doesn't stop there; it also covers personal and advertising injury claims, ensuring your reputation stays intact. With General Liability Insurance, you can breathe easier knowing your business has a strong safety net in place for unexpected situations.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Fire & Burglary Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Fire incidents are common causes of accidents in both residential and commercial sectors in India. In 2021, India recorded 1.6 million fire accidents.</p>
+
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Securing your assets is critical to your company's growth and stability. Fire & Burglary Insurance protects your property and its contents from a variety of occurrences, including fire, theft, natural disasters, and man-made events such as riots and terrorism.</p>
+
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The Insurance offers tailored protection options to suit your business requirements. You can select from specialized coverage choices such as Sookshma Udyam Suraksha, Laghu Udyam Suraksha, and Standard Fire Special Peril (SFSP)</p>
                                     </div>
                                 </Container>
 
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>A General Liability Insurance policy addresses claims related to</h3>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Benefits of a Fire Insurance Policy</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='gx-lg-5'>
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Operational accidents</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It covers legal fees, settlements, or judgment costs for accidents, injuries, and damages arising from your business operations, products, or services.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Offers protection against any harm or destruction from fire, fermentation, natural heating, or spontaneous combustion.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -427,8 +509,7 @@ export default function GeneralLiability_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodGlobe.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Third-party property damage</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It safeguards your business in instances where your company or employees cause damage to a third party's property, whether through direct actions or negligence.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Covers the costs of repair or replacement, if a machine is damaged by fire</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -437,16 +518,7 @@ export default function GeneralLiability_Insurance() {
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUShield.svg' />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Bodily injury</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It protects your business from claims related to bodily injuries resulting from accidents on your premises or due to your business operations</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`pb-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Personal and advertising injury</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It covers claims involving defamation, libel, slander, copyright infringement, or invasion of privacy associated with your business activities, including advertising efforts that may cause harm to others.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>The cost of reconstruction of the property as per the sum insured in the policy.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -471,7 +543,7 @@ export default function GeneralLiability_Insurance() {
                                             </span>
                                             Coverages & Exceptions in
                                         </h3>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>General Liability Insurance</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Fire Insurance</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
                                         <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
@@ -481,65 +553,147 @@ export default function GeneralLiability_Insurance() {
                                         <div data-tab className="place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>CGL insurance offers many benefits. Some of the major coverages in the insurance policy are given below -</div>
+                                                    <div className='title-20 text-black mb-4'>Fire insurance protects your business and its assets, shielding them from potential losses caused by fires or thefts. It covers a range of incidents related to fire and break-ins.</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Legal Representation Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>These include defense expenses for providing documentation or information to investigators concerning incidents, property damage, bodily injury, or personal and advertising injury claims.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Loss to an adjacent property</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This insurance provides coverage in the case of a fire or burglary that damages or destroys the insured property while also causing damage to neighbouring property. It covers the costs of repairing or replacing the neighbouring property.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Public Relations Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It reimburses expenses for managing and mitigating any negative impact on your company's reputation due to covered claims.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Fire-related loss</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Fire-related property losses to office buildings, machinery, furniture, and other items inside the premises, can result in severe financial damage. Fire and burglary insurance covers damage caused by fire, including the cost of repairing or replacing the damaged property.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Court Attendance Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It offers protection for reasonable costs and expenses incurred by attending court proceedings, hearings, trials, and depositions related to the defense of covered claims.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bush Fire</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Setting up a fire in the bush-grown area may damage the property. This incident is covered under the fire policy. Please note the forest fire incident is not covered directly. Additional payment is required to have coverage for forest fire incidents.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crisis Communication Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers costs for hiring public relations or crisis management firms to advise on public communication strategies related to incidents, lawsuits, or allegations covered under the General Liability Insurance policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Natural Calamity</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This policy provides coverage for any harm or destruction that may occur to the insured property as a result of natural disasters like landslides, typhoons, thunder, lightning and other similar calamities.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Damage due to aircraft</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This policy provides coverage for any damage to property resulting from aircraft-related incidents such as dropped articles, airborne devices, or any other causes.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Explosion/Implosion</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Damage caused due to any explosion/implosion is covered under this policy.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Armed robbery</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The loss of items like money, jewellery, gadgets, and other stolen personal property may be covered by the policyholder's Fire & Burglary insurance in the event of an armed robbery. It may also cover any property damage incurred as a result of the heist, including broken or damaged windows, doors, or other sections of the building.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Violent and forceful entry</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>In the event of a covered risk, such as burglary or theft with evidence of violent and forced entrance, a fire and burglary insurance policy may cover both property damage and the value of stolen objects. If the break-in renders the property unusable, the insurance may pay for interim housing.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Business Interruption</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The Fire Loss of Profit policy (FLOP), also known as a Business Interruption (BI) policy, provides coverage for businesses that experience disruptions in their operations. This coverage includes compensation for the loss of income and the expenses incurred due to a fire or other perils that cause interruptions to the business. By paying a specified amount, the policy extends coverage for an extended period of time.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Damage to personal property</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Fire and burglary insurance offers coverage for expenses resulting from property damage due to fire or theft  including temporary renting costs. The policy may also cover the expense of storing personal belongings elsewhere temporarily.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
+                                            <div className='title-32 font-secondary font-weight-600 text-yellow mb-4 mt-4 mt-xl-5'>Add-on Coverage</div>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The policy provides extensive protection for the business and its assets. However, there are certain things that are not automatically included in the coverage.But depending on the relevance to the business the insured can obtain add-on coverage. Here are some:</p>
+                                            <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
+                                                <li>Debris</li>
+                                                <li>Forest fire</li>
+                                                <li>Earthquake</li>
+                                                <li>Architects, Surveyors and Consulting Engineer Free</li>
+                                                <li>Detoration of stocks in cold store due to temperature change</li>
+                                                <li>Impact damage due to insured’s own rail/road vehicles, fork lifts, cranes, stackers and the like and articles dropped therefrom.</li>
+                                                <li>Spontaneous combustion</li>
+                                                <li>Leakage and contamination cover</li>
+                                                <li>Temporary removal of stocks clause</li>
+                                                <li>Loss of rent clause</li>
+                                                <li>Insurance of additional expenses of rent for an alternative accommodation</li>
+                                                <li>Start up Expenses</li>
+                                            </ul>
                                         </div>
                                         <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>CGL insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
+                                                    <div className='title-20 text-black mb-4'>While fire insurance policy offers a broad coverage for businesses, it's important to note that there are certain incidents that may not be included. Here are some:</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Injuries to Employees</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If an employee is injured on the job, General Liability Insurance doesn't cover it. Instead, Workers' Compensation Insurance provides the necessary protection in these cases.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Deliberate or purposeful harm</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Any damage caused with intent or willful action is not covered under the policy. This includes situations where someone intentionally causes harm to the insured property.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Professional Mistakes or Negligence</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>General Liability Insurance doesn't cover errors or omissions made by professionals in their line of work. For that, you'll need Professional Liability Insurance, also known as Errors and Omissions Insurance.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Cold storage stock damage due to temperature fluctuations</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If damage occurs to stocks stored in cold storage facilities as a result of temperature changes, such as spoilage or deterioration, it may not be covered directly by the insurance policy. However, upon some additional payment you can avail the coverage.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Damages to Business Property</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If your own business property gets damaged, General Liability Insurance won't provide coverage. You'll need Commercial Property Insurance to protect your assets in this situation.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>War, invasion, or war-like scenarios</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Damages arising from acts of war, invasion, or war-like situations are typically excluded from insurance coverage. This includes any losses caused directly or indirectly by such events.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Intentional or Fraudulent Acts</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Claims arising from deliberate or dishonest actions by you or your employees are not covered by General Liability Insurance. These types of situations are not protected under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Pollution or contamination</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Damages caused by pollution or contamination, such as environmental pollution or toxic substances, may not be directly covered by the insurance policy. However, upon some additional payment you can avail the coverage.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Lost or misplaced property</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If the insured property goes missing or is misplaced, it may not be covered under the policy. This applies to situations where the property cannot be located or accounted for.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Claim preparation expenses</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Any fees or expenses incurred while preparing or processing the insurance claim, such as documentation or legal costs, are generally not covered by the policy.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Consequential or indirect losses</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Indirect or consequential losses, which occur as a result of the insured event but are not directly caused by it, may not be covered by the insurance policy. This can include financial losses or damages that arise as a consequence of the initial incident.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Unoccupied building for more than 30 days</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If the insured building remains unoccupied for a period exceeding 30 days, certain types of damages or losses may not be covered by the policy. This typically applies to risks associated with unoccupied premises, such as increased vulnerability to theft or vandalism.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Electrical machinery damage or electricity leakage</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Damages resulting from electrical machinery malfunctions or leakage of electricity may not be covered under the insurance policy. This includes situations where the insured property or equipment suffers electrical-related damages or losses.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -559,7 +713,7 @@ export default function GeneralLiability_Insurance() {
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>General Liability Claims Examples</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Insurance Claim for Small Business</h3>
                                 </div>
                             </Col>
                         </Row>
@@ -574,14 +728,14 @@ export default function GeneralLiability_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Slip and Fall at Retail Store</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Insurance Claim for Small Business</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>A customer slipped on a wet floor in a store and got injured, needing medical treatment. This has caused bodily injury from an accident on the business premises.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Arvind, the owner of a small business that sells handmade wallets, has invested ₹40 lakhs into his venture, including buying a commercial space and stocking up on inventory. To safeguard his investment, he decides to get fire insurance. One day, a fire breaks out in the building where his business is located, causing damage to the building and destroying much of his inventory.</div>
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer covered medical expenses and legal defense costs, saving the store owner from a big financial hit.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Thanks to his fire insurance policy, Arvind can file a claim and receive financial compensation for the losses caused by the fire, including lost inventory. Without the fire insurance, Arvind would have had to bear these costs himself, which could have been devastating for his business.</div>
                                                     </div>
                                                 </div>
                                             </Col>
@@ -594,14 +748,14 @@ export default function GeneralLiability_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Copyright Infringement in Advertising</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Insurance Claim for Manufacturing Business</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>A marketing agency used copyrighted images in a client's ad campaign without permission, leading to a lawsuit from the copyright holder.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Mr. Ravikant's cable manufacturing business in Noida suffered a devastating setback when a fire broke out in his godown. The blaze resulted in the destruction of 60% of his inventory and damage to the building.</div>
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer covered the legal defense costs and settlement, keeping the agency from going under financially.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Thanks to his foresight in securing fire insurance, Mr. Ravikant was able to file a claim and receive compensation from the insurance company. The compensation covered the costs of repairing or rebuilding the godown and replacing the lost inventory, up to the policy limits. Without fire insurance, Mr. Ravikant would have been solely responsible for these expenses, which could have been crippling for his business.</div>
                                                     </div>
                                                 </div>
                                             </Col>

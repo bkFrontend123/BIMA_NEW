@@ -541,18 +541,6 @@ export default function DAndO_Insurance() {
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>With this add-on cover, you get an extra layer of protection that is added to the overall coverage limit for non-executive directors and officers of a company.</div>
                                                     </div>
                                                 </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bribes and Commission</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Directors & Officers policy excludes claims and losses arising from bribes and commissions.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Money Laundering</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Money laundering is a process that criminals use to hide the illegal source of their income. If a claim is made against a director or officer for something related to money laundering, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
                                             </Row>
                                         </div>
                                         <div data-tab className="hidden place-content-center">

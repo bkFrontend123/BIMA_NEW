@@ -287,7 +287,7 @@ export default function product() {
                                                 <Col lg={3}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/fileIcon.svg' width="100" height="100" alt="File or program malfunctions" />
+                                                            <Image src='/icons/fileIcon.svg' width="80" height="80" alt="File or program malfunctions" />
                                                             <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>File or program malfunctions</h3>
                                                         </div>
                                                     </div>
@@ -295,7 +295,7 @@ export default function product() {
                                                 <Col lg={3}>
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/passwordIcon.svg' width="100" height="100" alt="Unauthorized password changes" />
+                                                            <Image src='/icons/passwordIcon.svg' width="80" height="80" alt="Unauthorized password changes" />
                                                             <p className='title-18 font-weight-500 text-black mt-2 m-0'>Unauthorized password changes</p>
                                                         </div>
                                                     </div>
@@ -303,7 +303,7 @@ export default function product() {
                                                 <Col lg={3}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/appearanceIcon.svg' width="100" height="100" alt="Appearance of unwanted software or spyware" />
+                                                            <Image src='/icons/appearanceIcon.svg' width="80" height="80" alt="Appearance of unwanted software or spyware" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Appearance of unwanted software or spyware</p>
                                                         </div>
                                                     </div>
@@ -311,7 +311,7 @@ export default function product() {
                                                 <Col lg={3}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/pluginIcon.svg' width="100" height="100" alt="Difficulty installing plugins" />
+                                                            <Image src='/icons/pluginIcon.svg' width="80" height="80" alt="Difficulty installing plugins" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Difficulty installing plugins</p>
                                                         </div>
                                                     </div>
@@ -319,7 +319,7 @@ export default function product() {
                                                 <Col lg={3}>
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/scanningIcon.svg' width="100" height="100" alt="Random file scanning" />
+                                                            <Image src='/icons/scanningIcon.svg' width="80" height="80" alt="Random file scanning" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Random file scanning</p>
                                                         </div>
                                                     </div>
@@ -327,7 +327,7 @@ export default function product() {
                                                 <Col lg={3}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/browserIcon.svg' width="100" height="100" alt="Unusual toolbars on your internet browser" />
+                                                            <Image src='/icons/browserIcon.svg' width="80" height="80" alt="Unusual toolbars on your internet browser" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Unusual toolbars on your internet browser</p>
                                                         </div>
                                                     </div>
@@ -335,7 +335,7 @@ export default function product() {
                                                 <Col lg={3}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/internetIcon.svg' width="100" height="100" alt="Persistent pop-ups while accessing the internet" />
+                                                            <Image src='/icons/internetIcon.svg' width="80" height="80" alt="Persistent pop-ups while accessing the internet" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Persistent pop-ups while accessing the internet</p>
                                                         </div>
                                                     </div>
@@ -398,7 +398,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/technologyIcon.svg' width="100" height="100" alt="Information Technology" />
+                                                            <Image src='/icons/technologyIcon.svg' width="80" height="80" alt="Information Technology" />
                                                             <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>Information Technology</h3>
                                                         </div>
                                                     </div>
@@ -406,7 +406,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/manufacturingIcon.svg' width="100" height="100" alt="Manufacturing" />
+                                                            <Image src='/icons/manufacturingIcon.svg' width="80" height="80" alt="Manufacturing" />
                                                             <p className='title-18 font-weight-500 text-black mt-2 m-0'>Manufacturing</p>
                                                         </div>
                                                     </div>
@@ -414,7 +414,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/financeIcon.svg' width="100" height="100" alt="Finance" />
+                                                            <Image src='/icons/financeIcon.svg' width="80" height="80" alt="Finance" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Finance</p>
                                                         </div>
                                                     </div>
@@ -422,7 +422,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/energyIcon.svg' width="100" height="100" alt="Energy" />
+                                                            <Image src='/icons/energyIcon.svg' width="80" height="80" alt="Energy" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Energy</p>
                                                         </div>
                                                     </div>
@@ -430,7 +430,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/consumerIcon.svg' width="100" height="100" alt="Consumer service" />
+                                                            <Image src='/icons/consumerIcon.svg' width="80" height="80" alt="Consumer service" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Consumer services</p>
                                                         </div>
                                                     </div>
@@ -441,7 +441,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/damageIcon.svg' width="100" height="100" alt="Reputation damage" />
+                                                            <Image src='/icons/damageIcon.svg' width="80" height="80" alt="Reputation damage" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Reputation damage</h3>
                                                             <p className='title-18 font-weight-500 text-black mt-2 mb-0'>A breach can harm your company's reputation, potentially leading to lost customers and decreased trust</p>
                                                         </div>
@@ -450,7 +450,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/finesIcon.svg' width="100" height="100" alt="Heavy fines" />
+                                                            <Image src='/icons/finesIcon.svg' width="80" height="80" alt="Heavy fines" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Heavy fines</h3>
                                                             <p className='title-18 font-weight-500 text-black mt-2 mb-0'>If sensitive financial information is compromised, you may face substantial fines from credit and debit card companies.</p>
                                                         </div>
@@ -459,7 +459,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/transferIcon.svg' width="100" height="100" alt="False wire transfers" />
+                                                            <Image src='/icons/transferIcon.svg' width="80" height="80" alt="False wire transfers" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>False wire transfers</h3>
                                                             <p className='title-18 font-weight-500 text-black mt-2 mb-0'>Cybercriminals may attempt to make false wire transfers using your clients' online banking credentials if your computer system is hacked.</p>
                                                         </div>
@@ -494,7 +494,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/bLossIcon.svg' width="100" height="100" alt="Business loss compensation to clients" />
+                                                            <Image src='/icons/bLossIcon.svg' width="80" height="80" alt="Business loss compensation to clients" />
                                                             <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>Business loss compensation to clients</h3>
                                                         </div>
                                                     </div>
@@ -502,7 +502,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/feesIcon.svg' width="100" height="100" alt="Ransom fees for restoring stolen data" />
+                                                            <Image src='/icons/feesIcon.svg' width="80" height="80" alt="Ransom fees for restoring stolen data" />
                                                             <p className='title-18 font-weight-500 text-black mt-2 m-0'>Ransom fees for restoring stolen data</p>
                                                         </div>
                                                     </div>
@@ -510,7 +510,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/forensicIcon.svg' width="100" height="100" alt="Cyber forensic investigation costs" />
+                                                            <Image src='/icons/forensicIcon.svg' width="80" height="80" alt="Cyber forensic investigation costs" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Cyber forensic investigation costs</p>
                                                         </div>
                                                     </div>
@@ -518,7 +518,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/legalIcon.svg' width="100" height="100" alt="Legal attorney fees" />
+                                                            <Image src='/icons/legalIcon.svg' width="80" height="80" alt="Legal attorney fees" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Legal attorney fees</p>
                                                         </div>
                                                     </div>
@@ -526,7 +526,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/monitoringIcon.svg' width="100" height="100" alt="Credit monitoring expenses" />
+                                                            <Image src='/icons/monitoringIcon.svg' width="80" height="80" alt="Credit monitoring expenses" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Credit monitoring expenses</p>
                                                         </div>
                                                     </div>

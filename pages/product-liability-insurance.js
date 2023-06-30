@@ -27,7 +27,7 @@ import Accordion from '../component/Accordion'
 import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
 
-export default function GeneralLiability_Insurance() {
+export default function DAndO_Insurance() {
     const navbarExample2Ref = useRef(null);
     const [activeC, setActiveC] = useState(1);
     useEffect(() => {
@@ -189,7 +189,7 @@ export default function GeneralLiability_Insurance() {
     return (
         <>
             <Head>
-                <title>General Liability Insurance | BimaKavach Insurance for General Liability</title>
+                <title>Product Liability Insurance | BimaKavach Insurance for Product Liability</title>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
@@ -199,9 +199,9 @@ export default function GeneralLiability_Insurance() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Directors & Officers Liability Insurance"
-                        description="Good insurance decisions for C-Suite Executives begin with an understanding of D&O insurance and what it covers."
-                        customClass="gnrlBnr"
+                        title="Product Liability Liability Insurance"
+                        description="Product Liability insurance is specifically designed to protect your business from the financial impact of claims arising out of damage, injury, or harm caused by the products you manufacture, sell, or distribute. It's a specialized policy that understands the unique risks associated with products."
+                        customClass="prdctLlbtyBnr"
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
@@ -271,128 +271,103 @@ export default function GeneralLiability_Insurance() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>General Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Imagine you own a store, and a customer slips and falls, or your product somehow causes harm to a user - the costs of legal defense and potential settlements could be financially devastating. But with a CGL policy, you are protected against these risks. It can pay for immediate medical expenses in such cases, providing quick relief and potentially mitigating a larger claim. <span className='d-none d-lg-block'></span>It also covers personal and advertising injuries. This means if your business unintentionally infringes on someone else's copyright or is accused of libel or slander during advertising, your CGL policy has got you covered. <span className='d-none d-lg-block'></span>Because of its comprehensive nature, General Liability Insurance has your back. Without insurance, a single claim can be financially devastating to your business. But with the right CGL policy, you can focus on running your business and serving your customers, secure in the knowledge that you're protected against many of the risks you face every day.</p>
-                                    </div>
-                                    <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary mb-4'>Features of General Liability Insurance</div>
-                                        <Row className='g-3 g-lg-5'>
-                                            <Col lg={4}>
-                                                <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                    <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Works on Occurence Basis</h3>
-                                                        <p className='title-18 font-weight-500 text-black m-0'>Claims can be made even after a policy expires given that the incident happened within the policy’s active period.</p>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                    <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Start Date</h3>
-                                                        <p className='title-18 font-weight-500 text-black m-0'>Claims cannot be filed for any incidents that occured prior to the date when the coverage of the policy begins.</p>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                    <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Insurance Period</h3>
-                                                        <p className='title-18 font-weight-500 text-black m-0'>Any incident that happens between the policy's effective date to the policy's expiration date are covered. Renewal before expiration date is essential to maintain coverage.</p>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                        </Row>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Product Liability Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Product liability insurance covers a spectrum of risks that your products might encounter. These could range from manufacturing defects, design flaws, or inadequate warning labels to misuse by consumers. If someone files a claim against your business because of an issue with your product then this policy can cover legal defense costs, settlements, and court judgments.</p>
+
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Product Liability insurance provides a shield of protection for your business reputation as well. In a time when news travels fast and a single negative incident can severely harm your business image, having a policy that promptly addresses issues and compensates those affected can be a major asset.</p>
+
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Without Product Liability insurance, one significant claim could mean the end of the business you've worked so hard to build. With this policy, you can continue your operations, innovate and expand your product line with the confidence that you're safeguarded against unforeseen liabilities.</p>
                                     </div>
                                 </Container>
+                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
+                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
+                                    <Container className='position-relative'>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Product Liability Insurance:</h3>
+                                        <div className={`${productStyle.lightYellowSecCards}`}>
+                                            <Row className='g-3 g-lg-5'>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <img src='/icons/prodUser.svg' />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Works on Claims-Made Basis</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Claims need to be initiated within the policy period. The incident triggering the claim must also happen within the policy’s coverage duration.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <img src='/icons/prodGlobe.svg' />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Retroactive Date</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Your first policy’s start date is carried forward to subsequent policy renewals. Hence, you can initiate claims for incidents that occur post your first policy’s start date assuming that continuous coverage is maintained</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <img src='/icons/prodUShield.svg' />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Insurance Period:</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>The insurance period spans from the retroactive date to the policy's termination date, providing coverage during this entire timeframe.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    </Container>
+                                </div>
                             </div>
                             <div id="scrollspyHeading2" className={`${productStyle.whoNeed}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>General Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>No matter what industry you're in or the size of business, having General Liability Insurance is a smart move. Because of its comprehensive nature, this insurance policy fits most businesses that have interactions with customers. From retail shops and tech startups to large manufacturers, this policy protects against legal and financial issues from third-party claims.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Product Liability Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Businesses involved in manufacturing or selling goods, as well as distributors, importers, retailers, and others interacting with products, require product liability insurance. <span className='d-none d-lg-block'></span>Clients may also need this policy to safeguard against design flaws and other risks associated to the product. This insurance protects your business from claims or lawsuits resulting from bodily harm or property damage caused to any third party by defective items that your business has manufactured, distributed, or sold.</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>General Liability insurance is necessary for various kinds of businesses:</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Product Liability insurance is necessary for various kinds of businesses:</div>
                                         <Row>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Restaurants and cafes" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Restaurants and cafes</p>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Manufacturers</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="Retail store owners" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Retail store owners</p>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Distributors</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Contractors and construction companies" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Contractors and construction companies</p>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Retailers</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Fitness centers like gyms, yoga studios" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Fitness centers like gyms, yoga studios</p>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Online sellers</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Cleaning services" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Cleaning services</p>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Pet supply shops</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Event planning companies" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Event planning companies</p>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Restaurants, Cloud Kitchens</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/techIcon.svg' width="100" height="100" alt="Tech startups" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Tech startups</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/manufacturersIcon.svg' width="100" height="100" alt="Manufacturers and distributors" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Manufacturers and distributors</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/plannersIcon.svg' width="100" height="100" alt="Event planners" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Event planners</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/serviceIcon.svg' width="100" height="100" alt="Professional service providers" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Professional service providers (consultants, lawyers, accountants)</p>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Print Shopss</p>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -403,55 +378,22 @@ export default function GeneralLiability_Insurance() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>General Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>We all know that accidents can happen, even when you're doing everything right. In fact, 43% of small business owners have reported being threatened with or involved in a civil lawsuit. That's when General Liability Insurance becomes your go-to solution.It takes care of legal defense costs, settlements, and judgments that might come up from third-party claims, helping to keep your business secure. And it doesn't stop there; it also covers personal and advertising injury claims, ensuring your reputation stays intact. With General Liability Insurance, you can breathe easier knowing your business has a strong safety net in place for unexpected situations.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Product Liability Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Introduction of Consumer Protection Act 2019 has brought significant changes to the product liability landscape in India. It includes a dedicated chapter dealing with product liability, expanding the scope of liability across the supply chain to include manufacturers, product sellers, and product service providers​. This means businesses at various points in the supply chain could face liability claims, making product liability insurance all the more critical.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Even with the utmost dedication and care put into crafting your products, they may still fall short of customer expectations. You need Product Liability Insurance because, in case of a lawsuit, it covers legal defense costs and potential damages. Plus, it aids in covering repair or replacement expenses for defective products—even if you aren't sued. There can be design flaws, product defects, poor instructions, labels, or warnings that cause physical harm or damage to the user.</p>
                                     </div>
                                 </Container>
 
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>A General Liability Insurance policy addresses claims related to</h3>
-                                        <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='gx-lg-5'>
-                                                <Col lg={4}>
-                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Operational accidents</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It covers legal fees, settlements, or judgment costs for accidents, injuries, and damages arising from your business operations, products, or services.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodGlobe.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Third-party property damage</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It safeguards your business in instances where your company or employees cause damage to a third party's property, whether through direct actions or negligence.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Bodily injury</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It protects your business from claims related to bodily injuries resulting from accidents on your premises or due to your business operations</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`pb-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Personal and advertising injury</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It covers claims involving defamation, libel, slander, copyright infringement, or invasion of privacy associated with your business activities, including advertising efforts that may cause harm to others.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Scope of coverage under Public Liability Insurance</h3>
+                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
+                                            <li>Cybercrime can strIncidents Covered: The policy provides coverage for accidents, injuries, and damages resulting from the use of the product.</li>
+                                            <li>Potential Product Issues: Coverage may include manufacturing defects, improper packaging, usage instructions, and delivery specifications.</li>
+                                            <li>Domestic and Export Sales: Certain policies offer protection for both domestic sales and exports by the insured company.</li>
+                                            <li>Claim Notification: To initiate the claim process, claims must be submitted to the insurer as soon as possible.ike at any time, leaving you with a hefty bill if you're not properly protected. Without Cyber Insurance, you may be responsible for paying:</li>
+                                        </ul>
                                     </Container>
                                 </div>
                             </div>
@@ -471,7 +413,7 @@ export default function GeneralLiability_Insurance() {
                                             </span>
                                             Coverages & Exceptions in
                                         </h3>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>General Liability Insurance</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Product Liability Insurance</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
                                         <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
@@ -481,65 +423,99 @@ export default function GeneralLiability_Insurance() {
                                         <div data-tab className="place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>CGL insurance offers many benefits. Some of the major coverages in the insurance policy are given below -</div>
+                                                    <div className='title-20 text-black mb-4'>This insurance protects your business from claims or lawsuits resulting from bodily harm or property damage caused by defective items that your business has manufactured, distributed, or sold. <span className='d-block'></span>A product liability insurance policy addresses claims due to:</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Legal Representation Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>These include defense expenses for providing documentation or information to investigators concerning incidents, property damage, bodily injury, or personal and advertising injury claims.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Product injury</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers attorney fees and court-ordered settlements or judgment costs. This includes design flaws, manufacturing flaws, warning or use flaws, and damages and injuries stemming from proper product use.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Public Relations Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It reimburses expenses for managing and mitigating any negative impact on your company's reputation due to covered claims.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Product-related property damage</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It protects your business in case a product you sell or manufactures damages a customer's property, whether due to product defects or instruction manual errors.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Product-related illness</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers illnesses caused by products sold or manufactured by your business, such as expired food or allergy-inducing beauty products.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Products causing wrongful death</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It addresses lawsuits, burial expenses, and other costs associated with customer death resulting from your product.</div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Product liability insurance covers the following costs related to the aforementioned claims:</p>
+                                            <Row className='justify-content-between g-4'>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Legal Representation Costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>These include defense costs for providing documentation or information to investigators concerning product-related faults.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Public Relations Costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It reimburses expenses for managing and mitigating negative company reputation due to product-related allegations.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Court Attendance Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It offers protection for reasonable costs and expenses incurred by attending court proceedings, hearings, trials, and depositions related to the defense of covered claims.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It offers protection for reasonable costs and expenses incurred by attending court proceedings, hearings, trials, and depositions related to product-related claim defense.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crisis Communication Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers costs for hiring public relations or crisis management firms to advise on public communication strategies related to incidents, lawsuits, or allegations covered under the General Liability Insurance policy.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers costs for hiring public relations or crisis management firms to advise on public communication strategies related to product claims, lawsuits, or allegations.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
                                         </div>
                                         <div data-tab className="hidden place-content-center">
-                                            <Row>
-                                                <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>CGL insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
-                                                </Col>
-                                            </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Injuries to Employees</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If an employee is injured on the job, General Liability Insurance doesn't cover it. Instead, Workers' Compensation Insurance provides the necessary protection in these cases.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Product guarantees</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Insurance coverage would not apply if an insured provides a warranty or guarantee to their customers regarding the products they are selling. And then the product fails to perform as promised, resulting in a claim for damages.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Professional Mistakes or Negligence</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>General Liability Insurance doesn't cover errors or omissions made by professionals in their line of work. For that, you'll need Professional Liability Insurance, also known as Errors and Omissions Insurance.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Repairing/Refurbishing costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>In the event that the insured's product causes harm or damages someone's property as a result of its defect, the insurance policy may cover the costs of compensating the affected party. However, the policy typically will not cover the cost of repairing or refurbishing the defective product itself.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Damages to Business Property</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If your own business property gets damaged, General Liability Insurance won't provide coverage. You'll need Commercial Property Insurance to protect your assets in this situation.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Financial losses from loss of market share/goodwill</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This exclusion applies to losses that may arise from a decrease in the insured's market share or loss of goodwill due to the harm caused by their product. These types of losses are typically not covered because they are considered to be indirect or consequential damages, rather than direct damages caused by the defective product itself.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Intentional or Fraudulent Acts</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Claims arising from deliberate or dishonest actions by you or your employees are not covered by General Liability Insurance. These types of situations are not protected under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Willful manufacturing/distributing of defective/dangerous products</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If an insured engages in any willful or intentional misconduct, the insurance policy will not provide coverage for any resulting losses, including those that arise from claims of bodily injury, property damage, or other harm caused by the defective or dangerous product.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Employee injuries sustained while manufacturing the product</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Employees of the insured are not covered under this policy for injuries sustained while manufacturing the product. The rationale behind this exclusion is that employees injured while manufacturing a product are typically covered by a separate policy named the workers' compensation insurance policy.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Technology product claims</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This policy excludes coverage for certain types of losses that may arise from technology products. It may apply to losses resulting from claims of intellectual property infringement, failure of technology products to meet performance specifications, or failure to perform as intended. The rationale behind this exclusion is that in general, technology products are more complex than other types of products and are subject to a higher degree of risk due to their reliance on software, hardware, and other advanced technologies.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -559,7 +535,7 @@ export default function GeneralLiability_Insurance() {
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>General Liability Claims Examples</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Product Liability Insurance Claims Example</h3>
                                 </div>
                             </Col>
                         </Row>
@@ -574,19 +550,19 @@ export default function GeneralLiability_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Slip and Fall at Retail Store</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Bodily Injury Caused by Defective Healthcare Product</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>A customer slipped on a wet floor in a store and got injured, needing medical treatment. This has caused bodily injury from an accident on the business premises.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>An Indian pharmaceutical company supplied products overseas, which were found to have impurities above the acceptable level, causing bodily injury. <span className='d-block'></span>Primary Concern: A design defect in the insured's product led to bodily injury.</div>
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer covered medical expenses and legal defense costs, saving the store owner from a big financial hit.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer managed defense proceedings in the USA, appointing lawyers and experts through its global network to build a strong defense, resulting in a significant reduction of claimed damages.</div>
                                                     </div>
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/sample.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -594,19 +570,19 @@ export default function GeneralLiability_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Copyright Infringement in Advertising</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Manufacturing Company Faces Product Liability Action Due to Failure to Warn</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>A marketing agency used copyrighted images in a client's ad campaign without permission, leading to a lawsuit from the copyright holder.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Industrial cables supplied by the policyholder were used in a project. The cables broke during use, causing the entire structure to collapse and leading to property damage of 2 Crore and loss of use for the end customer.</div>
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer covered the legal defense costs and settlement, keeping the agency from going under financially.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer managed defense proceedings in the USA, appointing lawyers and experts through its global network to build a robust defense strategy, resulting in a significant reduction of claimed damages.</div>
                                                     </div>
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='incident/sample.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -624,50 +600,70 @@ export default function GeneralLiability_Insurance() {
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About General Liability Insurance</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Product Liability Insurance</h3>
                                 </div>
                             </Col>
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What is the difference between Commercial General Liability and Commercial Umbrella?"
-                                content="Commercial General Liability (CGL) insurance covers liability claims related to bodily injury, property damage, and personal and advertising injury. On the other hand, Commercial Umbrella Insurance provides excess liability coverage beyond the limits of primary insurance policies, such as CGL or professional liability insurance. For instance, if a business faces a liability claim that exceeds its CGL policy limits, an umbrella policy can offer additional coverage to help cover the costs of the claim."
+                                title="What is the jurisdiction and territory of coverage in product liability insurance?"
+                                content="Jurisdiction refers to the countries where the policy will cover claims filed in courts, while territory refers to the location where the incident causing the claim occurred."
                             />
                             <Accordion
-                                title="What is General Liability Insurance for contractors?"
-                                content="General Liability Insurance for contractors protects contractors and their businesses from financial losses due to liability claims. This insurance typically covers claims for bodily injury, property damage, and personal and advertising injury. It can also cover legal defense costs and any damages awarded to the claimant."
+                                title="Are product recall costs covered under product liability insurance?"
+                                content="Some policies may provide full coverage for product recall costs, while others may have specific limits or exclusions. Coverage typically includes reasonable costs incurred for recall, recovery, disposal, or withdrawal, as well as customer notification costs."
                             />
                             <Accordion
-                                title="Does General Liability Insurance protect my store, office, or physical location?"
-                                content="Yes. General Liability Insurance covers claims arising from third-party bodily injury or property damage occurring on your business premises. For example, if a customer slips and falls in your store, your General Liability Insurance may cover their medical expenses and any damages they may seek as a result of the injury."
+                                title="What are the most common types of product liability cases?"
+                                content="Design defects, manufacturing defects, failure to warn consumers of potential dangers, marketing defects, and improper installation or assembly are the most common types of product liability cases."
                             />
                             <Accordion
-                                title="What protection does General Liability Insurance provide against social media risks?"
-                                content="General Liability Insurance can cover advertising injury claims, including certain types of claims related to social media use. For instance, if your business faces a libel or slander claim due to a social media post, your General Liability Insurance may cover legal defense costs and any damages awarded. Some policies may also offer additional coverage for claims related to hacked social media accounts or leaked personal information through social media channels."
+                                title="How can a business reduce the risk of product liability claims?"
+                                content="To minimize risk, businesses should implement effective quality control programs, conduct thorough product testing, ensure proper labeling, comply with regulations and safety standards, obtain product liability insurance, and engage in post-sale monitoring."
                             />
                             <Accordion
-                                title="How much General Liability Insurance do I need?"
-                                content="The amount of General Liability Insurance you need depends on various factors, such as your business size, type, location, and the level of risk you're willing to assume. Consider these factors when calculating the insurance coverage you need."
+                                title="Can a retailer be sued for product liability?"
+                                content="Yes, retailers can be held liable for selling defective products or products posing unreasonable dangers, even if they did not manufacture or design the product."
                             />
                             <Accordion
-                                title="Can I customize my Commercial General Liability Insurance policy?"
-                                content="Yes, you can tailor your Commercial General Liability (CGL) Insurance policy to suit your specific business needs and risk profile. Common customizations include increasing policy limits, adding endorsements, removing exclusions, and adding additional insureds."
+                                title="Can you be sued for reselling products?"
+                                content="Resellers can be held liable for product defects if they knew or should have known of the defect or danger associated with the product, yet still sold it. This is known as 'strict liability.'"
                             />
                             <Accordion
-                                title="What happens if I have a claim that exceeds my Commercial General Liability Insurance coverage?"
-                                content="If a claim exceeds your Commercial General Liability (CGL) Insurance coverage, you may need to pay the remaining amount out of pocket. This amount, called the 'coverage gap,' is not covered by your policy."
+                                title="What are the essential elements of a product liability lawsuit?"
+                                content="A product liability case generally requires proving the existence of a defect, causation and damages (the defect caused injury or harm), and intended use (the consumer used the product as intended by the manufacturer)."
                             />
                             <Accordion
-                                title="Does Commercial General Liability Insurance cover damages to my property?"
-                                content="No, Commercial General Liability (CGL) Insurance doesn't cover damages to your property. CGL insurance protects your business from liability claims for bodily injury or property damage caused by you or your employees to others."
+                                title="What are five common product defects covered by product liability insurance?"
+                                content="Design defects, manufacturing defects, failure to warn consumers of potential dangers, marketing defects, and packaging defects are common product defects covered by product liability insurance."
                             />
                             <Accordion
-                                title="Does Commercial General Liability Insurance cover customer or client injuries?"
-                                content="Yes, Commercial General Liability (CGL) Insurance covers bodily injury to customers or clients occurring on your business premises or as a result of your business operations. It also covers bodily injury caused by your products or services."
+                                title="What are typical software product liability claims?"
+                                content="Common software product liability claims involve design defects (flawed design causing harm), manufacturing defects (improper development leading to a nonconforming product), and failure to warn (inadequate warning of known or foreseeable risks)."
                             />
                             <Accordion
-                                title="Does Commercial General Liability Insurance cover damages from my advertising?"
-                                content="Yes, Commercial General Liability (CGL) Insurance covers damages resulting from your advertising. It includes coverage for personal and advertising injury, which refers to harm caused by offenses such as libel, slander, or copyright infringement in your advertising."
+                                title="Who can be held liable in a product liability case?"
+                                content="Manufacturers, retailers, distributors, suppliers, contractors, subcontractors, advertisers, and marketers can all potentially be held liable in a product liability case."
+                            />
+                            <Accordion
+                                title="What is a breach of warranty in product liability?"
+                                content="A breach of warranty occurs when a manufacturer or seller fails to meet the terms of a warranty or guarantee they made about a product."
+                            />
+                            <Accordion
+                                title="How do you calculate the liability for a product warranty?"
+                                content="Calculating warranty liability depends on warranty terms, product cost, and the number of claims filed. Methods used include the expense warranty method, accrual warranty method, and warranty reserve method."
+                            />
+                            <Accordion
+                                title="Are there any limits to product liability?"
+                                content="Limits on product liability include statutes of limitations, statutes of repose, contributory negligence, assumption of risk, and limitations on damages."
+                            />
+                            <Accordion
+                                title="What are the four elements required to prove negligence in a product liability action?"
+                                content="To establish negligence, a plaintiff must prove duty (the defendant's responsibility to provide a safe product), breach (failure to provide a safe product), causation (the breach caused the plaintiff's injuries), and damages (the plaintiff suffered harm due to the breach)."
+                            />
+                            <Accordion
+                                title="In a product liability claim, who is held liable - the manufacturer or the seller?"
+                                content="Manufacturers are typically held to a higher standard of care, as they design, test, and produce products. However, distributors and sellers also have a responsibility to ensure the products they sell are safe and free from defects. The specific liability depends on case facts."
                             />
                         </div>
                     </Container>
