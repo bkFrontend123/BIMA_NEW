@@ -562,7 +562,7 @@ export default function DAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/sample.png' />
+                                                <img src='/sample.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -582,7 +582,7 @@ export default function DAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='incident/sample.png' />
+                                                <img src='/sample.png' />
                                             </Col>
                                         </Row>
                                     </div>
