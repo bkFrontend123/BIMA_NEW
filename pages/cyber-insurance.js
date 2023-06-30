@@ -437,6 +437,7 @@ export default function product() {
                                                 </Col>
                                             </Row>
                                             <p className='title-20 mb-0 text-black font-weight-500 my-4 my-lg-5'>Almost every organization in today's digital age relies on technology in their everyday operations. Customers' names, addresses, and financial information are handled by a wide range of businesses, including IT services, product corporations, e-commerce companies, finance firms, real estate brokers, online marketplaces, restaurants, and many more. All such organizations must carry Cyber Liability Insurance to safeguard themselves against the risk of internet fraud.</p>
+                                            <h3 className='title-36 font-secondary font-weight-700 text-primary my-4 my-xl-5'>What happens after a cyber security breach?</h3>
                                             <Row className='g-4 g-lg-5'>
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
