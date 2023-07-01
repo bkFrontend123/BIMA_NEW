@@ -1,0 +1,517 @@
+/* Galano Grotesque Fonts */
+@font-face {
+  font-family: 'galano_grotesque_altblack';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtblack-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtblack-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altBlkIt';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtblackitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtblackitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altbold';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtbold-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtbold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altBdIt';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtbolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtbolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altextrabold';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtextrabold-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtextrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altXBdIt';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtextrabolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtextrabolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altXLt';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtextralight-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtextralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altXLtIt';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtextralightitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtextralightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+@font-face {
+  font-family: 'galano_grotesque_altheavy';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtheavy-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtheavy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altHvIt';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtheavyitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtheavyitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altitalic';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altlight';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtlight-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtlight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altLtIt';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtlightitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtlightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altmedium';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtmedium-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtmedium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altMdIt';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtmediumitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtmediumitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altregular';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtregular-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altsemibold';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtsemibold-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtsemibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altSBdIt';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtsemibolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtsemibolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altthin';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtthin-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtthin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesque_altThIt';
+  src: url('../fonts/galanoGrotesque/galanogrotesquealtthinitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquealtthinitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesqueblack';
+  src: url('../fonts/galanoGrotesque/galanogrotesqueblack-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesqueblack-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesqueblack_italic';
+  src: url('../fonts/galanoGrotesque/galanogrotesqueblackitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesqueblackitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesquebold';
+  src: url('../fonts/galanoGrotesque/galanogrotesquebold-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquebold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesquebold_italic';
+  src: url('../fonts/galanoGrotesque/galanogrotesquebolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquebolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesqueextrabold';
+  src: url('../fonts/galanoGrotesque/galanogrotesqueextrabold-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesqueextrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesqueXBdIt';
+  src: url('../fonts/galanoGrotesque/galanogrotesqueextrabolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesqueextrabolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesqueextralight';
+  src: url('../fonts/galanoGrotesque/galanogrotesqueextralight-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesqueextralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesqueXLtIt';
+  src: url('../fonts/galanoGrotesque/galanogrotesqueextralightitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesqueextralightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'galano_grotesqueheavy';
+  src: url('../fonts/galanoGrotesque/galanogrotesqueheavy-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesqueheavy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesqueheavy_italic';
+  src: url('../fonts/galanoGrotesque/galanogrotesqueheavyitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesqueheavyitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesqueitalic';
+  src: url('../fonts/galanoGrotesque/galanogrotesqueitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesqueitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesquelight';
+  src: url('../fonts/galanoGrotesque/galanogrotesquelight-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquelight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesquelight_italic';
+  src: url('../fonts/galanoGrotesque/galanogrotesquelightitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquelightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesquemedium';
+  src: url('../fonts/galanoGrotesque/galanogrotesquemedium-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquemedium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesquemedium_italic';
+  src: url('../fonts/galanoGrotesque/galanogrotesquemediumitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquemediumitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesqueregular';
+  src: url('../fonts/galanoGrotesque/galanogrotesqueregular-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesqueregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesquesemibold';
+  src: url('../fonts/galanoGrotesque/galanogrotesquesemibold-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquesemibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesqueSBdIt';
+  src: url('../fonts/galanoGrotesque/galanogrotesquesemibolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquesemibolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesquethin';
+  src: url('../fonts/galanoGrotesque/galanogrotesquethin-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquethin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'galano_grotesquethin_italic';
+  src: url('../fonts/galanoGrotesque/galanogrotesquethinitalic-webfont.woff2') format('woff2'),
+       url('../fonts/galanoGrotesque/galanogrotesquethinitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Designed by Deepak Taneja */
+
+/* IvyMode Fonts */
+@font-face {
+  font-family: 'IvyMode_Regular';
+  src: url('../fonts/IvyMode/IvyMode-Regular.eot');
+  src: local('Ivy Mode Regular'), local('IvyMode-Regular'),
+      url('../fonts/IvyMode/IvyMode-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IvyMode/IvyMode-Regular.woff2') format('woff2'),
+      url('../fonts/IvyMode/IvyMode-Regular.woff') format('woff'),
+      url('../fonts/IvyMode/IvyMode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode_LightItalic';
+  src: url('../fonts/IvyMode/IvyMode-LightItalic.eot');
+  src: local('Ivy Mode Light Italic'), local('IvyMode-LightItalic'),
+      url('../fonts/IvyMode/IvyMode-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IvyMode/IvyMode-LightItalic.woff2') format('woff2'),
+      url('../fonts/IvyMode/IvyMode-LightItalic.woff') format('woff'),
+      url('../fonts/IvyMode/IvyMode-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode_SemiBoldItalic';
+  src: url('../fonts/IvyMode/IvyMode-SemiBoldItalic.eot');
+  src: local('Ivy Mode SemiBold Italic'), local('IvyMode-SemiBoldItalic'),
+      url('../fonts/IvyMode/IvyMode-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IvyMode/IvyMode-SemiBoldItalic.woff2') format('woff2'),
+      url('../fonts/IvyMode/IvyMode-SemiBoldItalic.woff') format('woff'),
+      url('../fonts/IvyMode/IvyMode-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode_ThinItalic';
+  src: url('../fonts/IvyMode/IvyMode-ThinItalic.eot');
+  src: local('Ivy Mode Thin Italic'), local('IvyMode-ThinItalic'),
+      url('../fonts/IvyMode/IvyMode-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IvyMode/IvyMode-ThinItalic.woff2') format('woff2'),
+      url('../fonts/IvyMode/IvyMode-ThinItalic.woff') format('woff'),
+      url('../fonts/IvyMode/IvyMode-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode_Italic';
+  src: url('../fonts/IvyMode/IvyMode-Italic.eot');
+  src: local('Ivy Mode Italic'), local('IvyMode-Italic'),
+      url('../fonts/IvyMode/IvyMode-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IvyMode/IvyMode-Italic.woff2') format('woff2'),
+      url('../fonts/IvyMode/IvyMode-Italic.woff') format('woff'),
+      url('../fonts/IvyMode/IvyMode-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode_BoldItalic';
+  src: url('../fonts/IvyMode/IvyMode-BoldItalic.eot');
+  src: local('Ivy Mode Bold Italic'), local('IvyMode-BoldItalic'),
+      url('../fonts/IvyMode/IvyMode-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IvyMode/IvyMode-BoldItalic.woff2') format('woff2'),
+      url('../fonts/IvyMode/IvyMode-BoldItalic.woff') format('woff'),
+      url('../fonts/IvyMode/IvyMode-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode_Bold';
+  src: url('../fonts/IvyMode/IvyMode-Bold.eot');
+  src: local('Ivy Mode Bold'), local('IvyMode-Bold'),
+      url('../fonts/IvyMode/IvyMode-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IvyMode/IvyMode-Bold.woff2') format('woff2'),
+      url('../fonts/IvyMode/IvyMode-Bold.woff') format('woff'),
+      url('../fonts/IvyMode/IvyMode-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode_Light';
+  src: url('../fonts/IvyMode/IvyMode-Light.eot');
+  src: local('Ivy Mode Light'), local('IvyMode-Light'),
+      url('../fonts/IvyMode/IvyMode-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IvyMode/IvyMode-Light.woff2') format('woff2'),
+      url('../fonts/IvyMode/IvyMode-Light.woff') format('woff'),
+      url('../fonts/IvyMode/IvyMode-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode_Thin';
+  src: url('../fonts/IvyMode/IvyMode-Thin.eot');
+  src: local('Ivy Mode Thin'), local('IvyMode-Thin'),
+      url('../fonts/IvyMode/IvyMode-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IvyMode/IvyMode-Thin.woff2') format('woff2'),
+      url('../fonts/IvyMode/IvyMode-Thin.woff') format('woff'),
+      url('../fonts/IvyMode/IvyMode-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode_SemiBold';
+  src: url('../fonts/IvyMode/IvyMode-SemiBold.eot');
+  src: local('Ivy Mode SemiBold'), local('IvyMode-SemiBold'),
+      url('../fonts/IvyMode/IvyMode-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IvyMode/IvyMode-SemiBold.woff2') format('woff2'),
+      url('../fonts/IvyMode/IvyMode-SemiBold.woff') format('woff'),
+      url('../fonts/IvyMode/IvyMode-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Archivo Fonts */
+
+@font-face {
+	font-family: 'Archivo Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Archivo Regular'), url('../fonts/archivo/Archivo-Regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Archivo Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Archivo Italic'), url('../fonts/archivo/Archivo-Italic.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Archivo Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Archivo Medium'), url('../fonts/archivo/Archivo-Medium.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Archivo Medium Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Archivo Medium Italic'), url('../fonts/archivo/Archivo-MediumItalic.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Archivo SemiBold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Archivo SemiBold'), url('../fonts/archivo/Archivo-SemiBold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Archivo SemiBold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Archivo SemiBold Italic'), url('../fonts/archivo/Archivo-SemiBoldItalic.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Archivo Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Archivo Bold'), url('../fonts/archivo/Archivo-Bold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Archivo Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Archivo Bold Italic'), url('../fonts/archivo/Archivo-BoldItalic.woff') format('woff');
+  font-display: swap;
+} 
