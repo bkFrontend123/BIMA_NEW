@@ -353,9 +353,25 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/serviceIcon.svg' width="100" height="100" alt="Professional service providers" />
+                                                                <Image src='/icons/serviceIcon.svg' width="100" height="100" alt="Missile Testing Operations" />
                                                             </span>
-                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Professional service providers (consultants, lawyers, accountants)</p>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Missile Testing Operations</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/leakageIcon.svg' width="100" height="100" alt="Leakage from Automatic Sprinkler Installations" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Leakage from Automatic Sprinkler Installations</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/bushFireIcon.svg' width="100" height="100" alt="Bush Fire" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Bush Fire</p>
                                                         </div>
                                                     </Col>
                                                 </Row>
@@ -543,7 +559,7 @@ export default function GeneralLiability_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUser.svg' />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Offers protection against any harm or destruction from fire, fermentation, natural heating, or spontaneous combustion.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Fire insurance offers protection against any harm or destruction from fire, fermentation, natural heating, or spontaneous combustion.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -551,7 +567,7 @@ export default function GeneralLiability_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodGlobe.svg' />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Covers the costs of repair or replacement, if a machine is damaged by fire</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>If a machine is damaged by fire, fire insurance covers the costs of repair or replacement.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -559,8 +575,7 @@ export default function GeneralLiability_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUShield.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Bodily injury</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>The cost of reconstruction of the property as per the sum insured in the policy.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Fire insurance also covers the cost of reconstruction of the property as per the sum insured in the policy.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -660,22 +675,6 @@ export default function GeneralLiability_Insurance() {
                                                     </div>
                                                 </Col>
                                             </Row>
-                                            <div className='title-32 font-secondary font-weight-600 text-yellow mb-4 mt-4 mt-xl-5'>Add-on Coverage</div>
-                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The policy provides extensive protection for the business and its assets. However, there are certain things that are not automatically included in the coverage.But depending on the relevance to the business the insured can obtain add-on coverage. Here are some:</p>
-                                            <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                                <li>Debris</li>
-                                                <li>Forest fire</li>
-                                                <li>Earthquake</li>
-                                                <li>Architects, Surveyors and Consulting Engineer Free</li>
-                                                <li>Detoration of stocks in cold store due to temperature change</li>
-                                                <li>Impact damage due to insured’s own rail/road vehicles, fork lifts, cranes, stackers and the like and articles dropped therefrom.</li>
-                                                <li>Spontaneous combustion</li>
-                                                <li>Leakage and contamination cover</li>
-                                                <li>Temporary removal of stocks clause</li>
-                                                <li>Loss of rent clause</li>
-                                                <li>Insurance of additional expenses of rent for an alternative accommodation</li>
-                                                <li>Start up Expenses</li>
-                                            </ul>
                                         </div>
                                         <div data-tab className="hidden place-content-center">
                                             <Row>
@@ -739,6 +738,22 @@ export default function GeneralLiability_Insurance() {
                                                     </div>
                                                 </Col>
                                             </Row>
+                                            <div className='title-32 font-secondary font-weight-600 text-yellow mb-4 mt-4 mt-xl-5'>Add-on Coverage</div>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The policy provides extensive protection for the business and its assets. However, there are certain things that are not automatically included in the coverage.But depending on the relevance to the business the insured can obtain add-on coverage. Here are some:</p>
+                                            <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
+                                                <li>Debris</li>
+                                                <li>Forest fire</li>
+                                                <li>Earthquake</li>
+                                                <li>Architects, Surveyors and Consulting Engineer Free</li>
+                                                <li>Detoration of stocks in cold store due to temperature change</li>
+                                                <li>Impact damage due to insured’s own rail/road vehicles, fork lifts, cranes, stackers and the like and articles dropped therefrom.</li>
+                                                <li>Spontaneous combustion</li>
+                                                <li>Leakage and contamination cover</li>
+                                                <li>Temporary removal of stocks clause</li>
+                                                <li>Loss of rent clause</li>
+                                                <li>Insurance of additional expenses of rent for an alternative accommodation</li>
+                                                <li>Start up Expenses</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </Container>
@@ -826,44 +841,82 @@ export default function GeneralLiability_Insurance() {
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What is the difference between Commercial General Liability and Commercial Umbrella?"
-                                content="Commercial General Liability (CGL) insurance covers liability claims related to bodily injury, property damage, and personal and advertising injury. On the other hand, Commercial Umbrella Insurance provides excess liability coverage beyond the limits of primary insurance policies, such as CGL or professional liability insurance. For instance, if a business faces a liability claim that exceeds its CGL policy limits, an umbrella policy can offer additional coverage to help cover the costs of the claim."
+                                title="What type of property is covered by fire insurance?"
+                                content="Fire insurance typically covers damage or loss to property caused by fire, lightning, explosions, and other similar perils. This can include a wide range of properties such as homes, businesses, vehicles, and personal belongings. However, the exact coverage and exclusions will depend on the specific policy and the insurance provider."
                             />
                             <Accordion
-                                title="What is General Liability Insurance for contractors?"
-                                content="General Liability Insurance for contractors protects contractors and their businesses from financial losses due to liability claims. This insurance typically covers claims for bodily injury, property damage, and personal and advertising injury. It can also cover legal defense costs and any damages awarded to the claimant."
+                                title="What are the major elements of fire insurance?"
+                                content={[<>
+                                    <span>The major elements of fire insurance include:</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>Coverage</li>
+                                        <li>Premium</li>
+                                        <li>Deductible</li>
+                                        <li>Limits</li>
+                                        <li>Conditions</li>
+                                        <li>Exclusions</li>
+                                    </ul>
+                                </>]}
                             />
                             <Accordion
-                                title="Does General Liability Insurance protect my store, office, or physical location?"
-                                content="Yes. General Liability Insurance covers claims arising from third-party bodily injury or property damage occurring on your business premises. For example, if a customer slips and falls in your store, your General Liability Insurance may cover their medical expenses and any damages they may seek as a result of the injury."
+                                title="Who is eligible for fire insurance?"
+                                content="In general, anyone who owns or has a financial interest in property that is at risk of fire damage can be eligible for fire insurance. This includes homeowners, renters, and businesses that own or lease property. However, eligibility requirements and coverage options can vary depending on the insurance provider and the type of property being insured. Some insurance providers may have restrictions or limitations on coverage for properties that are deemed to be at a higher risk of fire damage, such as properties located in areas prone to wildfires."
                             />
                             <Accordion
-                                title="What protection does General Liability Insurance provide against social media risks?"
-                                content="General Liability Insurance can cover advertising injury claims, including certain types of claims related to social media use. For instance, if your business faces a libel or slander claim due to a social media post, your General Liability Insurance may cover legal defense costs and any damages awarded. Some policies may also offer additional coverage for claims related to hacked social media accounts or leaked personal information through social media channels."
+                                title="What are the rules of fire insurance?"
+                                content={[<>
+                                    <span>The rules of fire insurance can vary depending on the specific policy and the insurance provider, but there are several common principles that apply to most fire insurance policies. Some of these include:</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>Disclosure of Information</li>
+                                        <li>Insurable Interest</li>
+                                        <li>Limits of Coverage</li>
+                                        <li>Deductibles</li>
+                                        <li>Duty to Mitigate Loss</li>
+                                        <li>Premium Payments</li>
+                                        <li>Exclusions</li>
+                                    </ul>
+
+                                </>]}
                             />
                             <Accordion
-                                title="How much General Liability Insurance do I need?"
-                                content="The amount of General Liability Insurance you need depends on various factors, such as your business size, type, location, and the level of risk you're willing to assume. Consider these factors when calculating the insurance coverage you need."
+                                title="How is the claim calculated in case of a fire or burglary incident?"
+                                content="In case of a fire or burglary, it is important for the insured to promptly inform their insurance company in order to initiate the claims process. They should provide a clear explanation of the damaged or stolen items and their corresponding value. The insurance company will assess the damage and determine the appropriate amount to be paid for the claim. They may send an inspector to evaluate the property and review the insurance policy to determine the coverage of items. Once they finish looking into everything and approve the claim, the insurance company will pay out the money, but they will also consider any deductibles or limits stated in the policy."
                             />
                             <Accordion
-                                title="Can I customize my Commercial General Liability Insurance policy?"
-                                content="Yes, you can tailor your Commercial General Liability (CGL) Insurance policy to suit your specific business needs and risk profile. Common customizations include increasing policy limits, adding endorsements, removing exclusions, and adding additional insureds."
+                                title="What is the first loss in fire & burglary insurance?"
+                                content="First loss in fire and burglary insurance refers to a type of insurance policy that provides coverage for a specific amount, rather than for the full value of the insured property. Under a first loss policy, the policyholder selects a specific amount of coverage, known as the 'first loss limit.' This amount represents the maximum amount that the insurance company will pay out in the event of a covered loss, regardless of the actual value of the property. This type of policy is typically used for properties that are at lower risk of damage or theft, or for properties where it would be too expensive to insure for the full value."
                             />
                             <Accordion
-                                title="What happens if I have a claim that exceeds my Commercial General Liability Insurance coverage?"
-                                content="If a claim exceeds your Commercial General Liability (CGL) Insurance coverage, you may need to pay the remaining amount out of pocket. This amount, called the 'coverage gap,' is not covered by your policy."
+                                title="What is the usual period of fire insurance?"
+                                content="The period of fire insurance refers to the duration of time for which the insurance policy is in effect and provides coverage for the insured property. In most cases, fire insurance policies are issued for a fixed term, such as one year, and the policyholder is required to renew the policy at the end of the term in order to maintain coverage."
                             />
                             <Accordion
-                                title="Does Commercial General Liability Insurance cover damages to my property?"
-                                content="No, Commercial General Liability (CGL) Insurance doesn't cover damages to your property. CGL insurance protects your business from liability claims for bodily injury or property damage caused by you or your employees to others."
+                                title="What is the total loss in the fire insurance policy?"
+                                content="In a fire insurance policy, a total loss refers to a situation where the insured property is completely destroyed or damaged beyond repair due to fire. In this case, the insurance company is required to pay the policyholder the full amount of coverage specified in the policy, up to the policy limits. The amount of the total loss is typically determined by the insurance company through an assessment of the damage and an evaluation of the value of the insured property. If the total loss is confirmed, the insurance company will pay out the full amount of coverage specified in the policy, minus any applicable deductibles."
                             />
                             <Accordion
-                                title="Does Commercial General Liability Insurance cover customer or client injuries?"
-                                content="Yes, Commercial General Liability (CGL) Insurance covers bodily injury to customers or clients occurring on your business premises or as a result of your business operations. It also covers bodily injury caused by your products or services."
+                                title="What are the biggest risks in fire safety?"
+                                content={[<>
+                                    <span>There are several key risks that can impact fire safety and insurance coverage related to fire damage. These include:</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li><span>Property hazards:</span> Certain types of property hazards, such as the presence of flammable materials, outdated electrical systems, or improper storage of combustible materials, can increase the risk of fire damage</li>
+                                        <li><span>Fire prevention measures:</span> Failure to implement adequate fire prevention measures, such as installing smoke detectors, maintaining fire extinguishers, or having a fire evacuation plan in place, can increase the risk of fire damage</li>
+                                        <li>Natural disasters: Natural disasters, such as wildfires, earthquakes, and floods, can also pose a significant risk to property</li>
+                                        <li><span>Arson and other intentional acts:</span> Arson and other intentional acts of fire damage can be difficult to prevent and may not be covered under standard fire insurance policies.</li>
+                                    </ul>
+                                </>]}
                             />
                             <Accordion
-                                title="Does Commercial General Liability Insurance cover damages from my advertising?"
-                                content="Yes, Commercial General Liability (CGL) Insurance covers damages resulting from your advertising. It includes coverage for personal and advertising injury, which refers to harm caused by offenses such as libel, slander, or copyright infringement in your advertising."
+                                title="What is the key clause in burglary insurance?"
+                                content={[<>
+                                    <span>The key clause in burglary insurance is the burglary clause, which outlines the coverage provided by the policy in the event of theft or burglary. It typically specifies the terms and conditions of coverage, includingDefinition of burglary</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>Coverage limits</li>
+                                        <li>Deductibles</li>
+                                        <li>Requirements for reporting</li>
+                                        <li>Exclusions</li>
+                                    </ul>
+                                </>]}
                             />
                         </div>
                     </Container>
