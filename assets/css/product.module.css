@@ -374,7 +374,7 @@
         background-color: var(--mute1);
         box-shadow: -1px 1px 10px 0px rgba(255, 165, 0, 0.10), 0px 0px 10px 0px #E7EAF1 inset;
         border: 2px solid var(--vt-c-yellow);
-        padding: 16px;
+        padding: 16px !important;
     }
     .lightYellowSecCardColNew .lightYellowSecCardBox img {
         width: 100px;
