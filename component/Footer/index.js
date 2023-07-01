@@ -90,7 +90,7 @@ export default function Footer() {
               <div className='d-block d-md-none' style={{ height: "0" }}></div>
               <div className="text-white title-30 font-weight-600 mb-2 mb-md-4 text-end text-md-start">Our Products</div>
               <div className="row footer-listMenu">
-                <div className="col-md-3">
+                <div className="col-md-4">
                   <div className="footer-listMenu-list border-0">
                     <ul className="list-group list-group-borderless bg-transparent">
                       <li className="list-group-item text-yellow title20 font-weight-600">Liability</li>
@@ -112,23 +112,23 @@ export default function Footer() {
                       <li className="list-group-item">
                         <Link href="/product-liability-insurance" className='title18 font-weight-400'>Product Liability Insurance</Link>
                       </li>
-                      <li className="list-group-item">
+                      {/*<li className="list-group-item">
                         <span className='title18 font-weight-400'>Fidelity Insurance</span>
                       </li>
                       <li className="list-group-item">
                         <span className='title18 font-weight-400'>Workman's Compensation</span>
-                      </li>
+                      </li>*/}
                     </ul>
                   </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-4">
                   <div className="footer-listMenu-list footer-listMenu-listALign">
                     <ul className="list-group list-group-borderless bg-transparent ">
                       <li className="list-group-item text-yellow title20 font-weight-600">Asset</li>
                       <li className="list-group-item">
                         <Link href="/fire-and-burglary-insurance" className='title18 font-weight-400'>Fire Insurance</Link>
                       </li>
-                      <li className="list-group-item">
+                      {/*<li className="list-group-item">
                         <span className='title18 font-weight-400'>Office Package</span>
                       </li>
                       <li className="list-group-item">
@@ -142,11 +142,11 @@ export default function Footer() {
                       </li>
                       <li className="list-group-item">
                         <span className='title18 font-weight-400'>Hospitals & Clinics</span>
-                      </li>
+                      </li>*/}
                     </ul>
                   </div>
                 </div>
-                <div className="col-md-3">
+                {/*<div className="col-md-4">
                   <div className="footer-listMenu-list footer-listMenu-listALign">
                     <ul className="list-group list-group-borderless bg-transparent ">
                       <li className="list-group-item text-yellow title20 font-weight-600">Engineering</li>
@@ -161,17 +161,17 @@ export default function Footer() {
                       </li>
                     </ul>
                   </div>
-                </div>
-                <div className="col-md-3">
+                </div>*/}
+                <div className="col-md-4">
                   <div className="footer-listMenu-list footer-listMenu-listALign">
                     <ul className="list-group list-group-borderless bg-transparent ">
-                      <li className="list-group-item text-yellow title20 font-weight-600">For Employees</li>
+                      {/*<li className="list-group-item text-yellow title20 font-weight-600">For Employees</li>
                       <li className="list-group-item">
                         <span className='title18 font-weight-400'>Group Health Insurance</span>
                       </li>
                       <li className="list-group-item">
                         <span className='title18 font-weight-400'>Group Personal Accident</span>
-                      </li>
+                      </li>*/}
                       <li className="list-group-item text-yellow title20 font-weight-600 mt-4">Marine</li>
                       <li className="list-group-item">
                         <Link href="/marine-cargo-insurance" className='title18 font-weight-400'>Marine Transit</Link>

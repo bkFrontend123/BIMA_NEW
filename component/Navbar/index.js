@@ -427,7 +427,7 @@ function Navbar() {
                     </div>
                     : ""}
                 </li>*/}
-                <li className={`nav-item menu-containerList ${ResourceToggle ? "active" : ""}`} onClick={ResourceMenuToggle}>
+                {/*<li className={`nav-item menu-containerList ${ResourceToggle ? "active" : ""}`} onClick={ResourceMenuToggle}>
                   <a className="nav-link menu-trigger arrowHide" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Resources
                     <span className='ms-1'>
@@ -451,7 +451,7 @@ function Navbar() {
                           <div className='row'>
                             <div className='col-md-10 offset-md-1'>
                               <div className='row'>
-                                {/* -------Technology------- */}
+                                {* -------Technology------- *}
                                 <div className='col-md-12'>
                                   <div className='mega-menuBox-title'>
                                     <div className='title-24 font-weight-600 text-primary'>Insights</div>
@@ -520,7 +520,7 @@ function Navbar() {
                       </div>
                     </div>
                     : ""}
-                </li>
+                </li>*/}
 
                 {/* <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle menu-trigger arrowHide" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
