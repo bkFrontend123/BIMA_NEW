@@ -389,10 +389,10 @@ export default function DAndO_Insurance() {
                                     <Container className='position-relative'>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Scope of coverage under Public Liability Insurance</h3>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>Cybercrime can strIncidents Covered: The policy provides coverage for accidents, injuries, and damages resulting from the use of the product.</li>
+                                            <li>Incidents Covered: The policy provides coverage for accidents, injuries, and damages resulting from the use of the product.</li>
                                             <li>Potential Product Issues: Coverage may include manufacturing defects, improper packaging, usage instructions, and delivery specifications.</li>
                                             <li>Domestic and Export Sales: Certain policies offer protection for both domestic sales and exports by the insured company.</li>
-                                            <li>Claim Notification: To initiate the claim process, claims must be submitted to the insurer as soon as possible.ike at any time, leaving you with a hefty bill if you're not properly protected. Without Cyber Insurance, you may be responsible for paying:</li>
+                                            <li>Claim Notification: To initiate the claim process, claims must be submitted to the insurer as soon as possible.</li>
                                         </ul>
                                     </Container>
                                 </div>
@@ -452,7 +452,7 @@ export default function DAndO_Insurance() {
                                                     </div>
                                                 </Col>
                                             </Row>
-                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Product liability insurance covers the following costs related to the aforementioned claims:</p>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4 mb-4'>Product liability insurance covers the following costs related to the aforementioned claims:</p>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>

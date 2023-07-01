@@ -316,85 +316,89 @@ export default function GeneralLiability_Insurance() {
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>General Liability insurance is necessary for various kinds of businesses:</div>
                                         <Row>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Retail store owners" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Restaurants and cafes</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="Retail store owners" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Retail store owners</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Contractors and construction companies" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Contractors and construction companies</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Fitness centers like gyms, yoga studios" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Fitness centers like gyms, yoga studios</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Cleaning services" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Cleaning services</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Event planning companies" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Event planning companies</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/techIcon.svg' width="100" height="100" alt="Tech startups" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Tech startups</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/manufacturersIcon.svg' width="100" height="100" alt="Manufacturers and distributors" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Manufacturers and distributors</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/plannersIcon.svg' width="100" height="100" alt="Event planners" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Event planners</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/serviceIcon.svg' width="100" height="100" alt="Professional service providers" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Professional service providers (consultants, lawyers, accountants)</p>
-                                                </div>
+                                            <Col xl={10} className='mx-auto'>
+                                                <Row>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Retail store owners" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Restaurants and cafes</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="Retail store owners" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Retail store owners</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Contractors and construction companies" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Contractors and construction companies</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Fitness centers like gyms, yoga studios" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Fitness centers like gyms, yoga studios</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Cleaning services" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Cleaning services</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Event planning companies" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Event planning companies</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/techIcon.svg' width="100" height="100" alt="Tech startups" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Tech startups</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/manufacturersIcon.svg' width="100" height="100" alt="Manufacturers and distributors" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Manufacturers and distributors</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/plannersIcon.svg' width="100" height="100" alt="Event planners" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Event planners</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/serviceIcon.svg' width="100" height="100" alt="Professional service providers" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Professional service providers (consultants, lawyers, accountants)</p>
+                                                        </div>
+                                                    </Col>
+                                                </Row>
                                             </Col>
                                         </Row>
                                     </div>

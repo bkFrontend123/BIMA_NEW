@@ -350,42 +350,7 @@ export default function product() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Cyber Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>According to a report by Nordlocker, small businesses with an employee base of 500 are at the highest risk of ransomware attacks, accounting for around 54 percent of total attacks between Jan ‘20 to Jul ‘22. The top five sectors prone to cyber attacks in India are:</p>
-                                    </div>
-                                    <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>The top five sectors prone to cyber attacks in India are: </div>
-                                        <Row>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Information Technology</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                            <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Manufacturing</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Consumer services</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Finance</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Energy</p>
-                                                </div>
-                                            </Col>
-                                        </Row>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>According to a report by Nordlocker, small businesses with an employee base of 500 are at the highest risk of ransomware attacks, accounting for around 54 percent of total attacks between Jan ‘20 to Jul ‘22.</p>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
@@ -485,6 +450,57 @@ export default function product() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Such statistics push cyber security and insurance to the forefront of every business’s priorities. <span className='d-none d-lg-block'></span>Mitigating financial losses caused by cyber threats such as data breaches, system intrusions, and ransomware attacks is crucial for corporations to safeguard their operations and reputation. <span className='d-none d-lg-block'></span>Cyber Risk provides covers for a range of costs associated with cybercrimes, including investigative charges, data restoration costs, and crisis management fees. By purchasing Cyber Risk Insurance, corporations can ensure continued success in the face of ever-evolving cyber threats.</p>
                                     </div>
                                 </Container>
+                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
+                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
+                                    <Container className='position-relative'>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The Cost of not Having Cyber Fraud Insurance:</h3>
+                                        <div className={`${productStyle.lightYellowSecCards}`}>
+                                            <Row className='g-4 g-lg-5'>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/bLossIcon.svg' width="80" height="80" alt="Business loss compensation to clients" />
+                                                            <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>Business loss compensation to clients</h3>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/feesIcon.svg' width="80" height="80" alt="Ransom fees for restoring stolen data" />
+                                                            <p className='title-18 font-weight-500 text-black mt-2 m-0'>Ransom fees for restoring stolen data</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/forensicIcon.svg' width="80" height="80" alt="Cyber forensic investigation costs" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Cyber forensic investigation costs</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/legalIcon.svg' width="80" height="80" alt="Legal attorney fees" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Legal attorney fees</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/monitoringIcon.svg' width="80" height="80" alt="Credit monitoring expenses" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Credit monitoring expenses</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    </Container>
+                                </div>
                             </div>
                             <div id="scrollspyHeading4" className={`pt-0 ${productStyle.coverage}`}>
                                 <Container>
@@ -642,60 +658,6 @@ export default function product() {
                     </div>
                 </div>
                 {/* product main end */}
-                {/* --------cost start---------- */}
-                <div className={`${productStyle.claimSec}`}>
-                    <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
-                        <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
-                        <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                        <Container className='position-relative'>
-                            <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The Cost of not Having Cyber Fraud Insurance:</h3>
-                            <div className={`${productStyle.lightYellowSecCards}`}>
-                                <Row className='g-4 g-lg-5'>
-                                    <Col lg={4}>
-                                        <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
-                                            <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                <Image src='/icons/bLossIcon.svg' width="80" height="80" alt="Business loss compensation to clients" />
-                                                <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>Business loss compensation to clients</h3>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col lg={4}>
-                                        <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
-                                            <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                <Image src='/icons/feesIcon.svg' width="80" height="80" alt="Ransom fees for restoring stolen data" />
-                                                <p className='title-18 font-weight-500 text-black mt-2 m-0'>Ransom fees for restoring stolen data</p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col lg={4}>
-                                        <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
-                                            <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                <Image src='/icons/forensicIcon.svg' width="80" height="80" alt="Cyber forensic investigation costs" />
-                                                <p className='title-18 font-weight-500 text-black m-0 mt-2'>Cyber forensic investigation costs</p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col lg={4}>
-                                        <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
-                                            <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                <Image src='/icons/legalIcon.svg' width="80" height="80" alt="Legal attorney fees" />
-                                                <p className='title-18 font-weight-500 text-black m-0 mt-2'>Legal attorney fees</p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col lg={4}>
-                                        <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
-                                            <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                <Image src='/icons/monitoringIcon.svg' width="80" height="80" alt="Credit monitoring expenses" />
-                                                <p className='title-18 font-weight-500 text-black m-0 mt-2'>Credit monitoring expenses</p>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                </Row>
-                            </div>
-                        </Container>
-                    </div>
-                </div>
                 {/* --------claim example start---------- */}
                 <div className={`${productStyle.claimSec}`}>
                     <Container>
@@ -828,15 +790,15 @@ export default function product() {
                             />
                             <Accordion
                                 title="How do I file a cyber insurance claim?"
-                                ccontent="It's recommended to seek expert advice for both cyber insurance quotes and claim settlements. BimaKavach's executives can assist in the claim settlement process."
+                                content="It's recommended to seek expert advice for both cyber insurance quotes and claim settlements. BimaKavach's executives can assist in the claim settlement process."
                             />
                             <Accordion
                                 title="Is cyber insurance the same as professional liability insurance?"
-                                ccontent="Cyber insurance helps companies recover from cyberattacks, while professional liability insurance protects against claims arising from alleged errors, omissions, or negligence in providing professional services."
+                                content="Cyber insurance helps companies recover from cyberattacks, while professional liability insurance protects against claims arising from alleged errors, omissions, or negligence in providing professional services."
                             />
                             <Accordion
                                 title="What is cyber security?"
-                                ccontent="Cyber security involves protecting a business's assets and employees from cyberattacks. To get a cyber security quote, provide a few details about your company and a team member will contact you to discuss your needs. With BimaKavach, you can receive the best product recommendations for cyber insurance quotes from top insurers in just 5 minutes."
+                                content="Cyber security involves protecting a business's assets and employees from cyberattacks. To get a cyber security quote, provide a few details about your company and a team member will contact you to discuss your needs. With BimaKavach, you can receive the best product recommendations for cyber insurance quotes from top insurers in just 5 minutes."
                             />
                         </div>
                     </Container>

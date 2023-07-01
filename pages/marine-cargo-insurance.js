@@ -380,53 +380,57 @@ export default function product() {
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>Which factors are considered when determining the premium for Marine Cargo Insurance?</div>
                                         <Row>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Nature of the goods being transported" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Nature of the goods being transported</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="The modes of transportation" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>The modes of transportation</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Type of packaging" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Type of packaging</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Geographical trading restrictions" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Geographical trading restrictions</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Type of Chosen insurance coverage" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Type of Chosen insurance coverage</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                    <span>
-                                                        <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Ownership and contractual terms" />
-                                                    </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Ownership and contractual terms</p>
-                                                </div>
+                                            <Col xl={10} className='mx-auto'>
+                                                <Row>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Nature of the goods being transported" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Nature of the goods being transported</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="The modes of transportation" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>The modes of transportation</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Type of packaging" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Type of packaging</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Geographical trading restrictions" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Geographical trading restrictions</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Type of Chosen insurance coverage" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Type of Chosen insurance coverage</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Ownership and contractual terms" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Ownership and contractual terms</p>
+                                                        </div>
+                                                    </Col>
+                                                </Row>
                                             </Col>
                                         </Row>
                                     </div>

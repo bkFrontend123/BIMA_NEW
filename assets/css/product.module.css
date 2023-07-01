@@ -146,7 +146,7 @@
     top: 0;
     width: 30px;
     height: 30px;
-    border-radius: 30px;
+    border-radius: 0;
     color: var(--whiteText);
     text-align: center;
     line-height: 30px;

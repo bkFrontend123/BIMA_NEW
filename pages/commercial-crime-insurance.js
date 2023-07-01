@@ -412,7 +412,7 @@ export default function EAndO_Insurance() {
                                                 </Col>
                                             </Row>
                                             <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Losses caused by employees or third-party hackers committing fraud or theft via computers are frequently covered by commercial crime insurance. However, data breaches are often not covered by crime insurance. This is separately covered by the cyber liability insurance policy. <span className='d-none d-lg-block'></span>The policy also includes losses outside the business premises brought upon by a third-party criminal act.</p>
-                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>In all such situations, the following costs can be claimed under the crime insurance policy:</p>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4 mb-4'>In all such situations, the following costs can be claimed under the crime insurance policy:</p>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
