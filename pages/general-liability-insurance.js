@@ -202,6 +202,8 @@ export default function GeneralLiability_Insurance() {
                         title="General Liability Insurance"
                         description="General Liability Insurance offers the most comprehensive liability coverage for your business. It protects against various liability claims for bodily injury, property damage, personal and advertising injuries. These claims could arise from your operations, your premises, your products, or your services.
                         It is also commonly referred to as Commercial General Liability (CGL) policy."
+                        insuranceWorth="50 Lakhs"
+                        insuranceAmount="5,000"
                         customClass="gnrlBnr"
                     >
                         <div className={`${form.commonForm}`}>

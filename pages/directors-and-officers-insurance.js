@@ -201,6 +201,8 @@ export default function DAndO_Insurance() {
                     <ProductBanner
                         title="Directors & Officers Liability Insurance"
                         description="Good insurance decisions for C-Suite Executives begin with an understanding of D&O insurance and what it covers."
+                        insuranceWorth="50 Lakhs"
+                        insuranceAmount="7,000"
                         customClass="dAndoBnr"
                     >
                         <div className={`${form.commonForm}`}>

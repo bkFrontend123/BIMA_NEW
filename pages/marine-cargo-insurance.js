@@ -201,6 +201,8 @@ export default function product() {
                     <ProductBanner
                         title="Marine Cargo Insurance"
                         description="Damage to valuable cargo while in transit can lead to significant losses for any business. Marine Cargo Insurance safeguards your goods during transit, whether by sea, road, rail, or air. With customizable coverage based on the nature of goods and their travel routes, this policy ensures peace of mind during transportation."
+                        insuranceWorth="10 Lakhs"
+                        insuranceAmount="350"
                         customClass="marineBnr"
                     >
                         <div className={`${form.commonForm}`}>

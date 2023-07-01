@@ -201,6 +201,8 @@ export default function GeneralLiability_Insurance() {
                     <ProductBanner
                         title="Fire Insurance"
                         description="Fire & Burglary insurance is one of the most common types of asset insurances. It provides coverage not only against fire and theft, but can also include riots, strikes, storms, floods, earthquakes, and other such situations. It provides a comprehensive cover for your building structure, office equipment, inventory, cash assets and valuable documents. Various types of costs like repairs, replacement, and reconstruction are included in this policy."
+                        insuranceWorth="50 Lakhs"
+                        insuranceAmount="1,450"
                         customClass="fireBnr"
                     >
                         <div className={`${form.commonForm}`}>

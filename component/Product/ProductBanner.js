@@ -9,7 +9,7 @@ import Clock from '../Icons/Clock';
 
 
 export default function ProductBanner(props) {
-    const { title, description, customClass, children } = props;
+    const { title, description, customClass, insuranceWorth, insuranceAmount, noInsurer, children } = props;
     return (
         <>
             <div className={`ProductBanner ${customClass}`}>
@@ -47,22 +47,31 @@ export default function ProductBanner(props) {
                                         {description}
                                         {/*<Link className="d-block text-primary" href="/">Read More...</Link>*/}
                                     </p>
-                                    <div className='ProductBannerRibbon d-flex align-items-center position-relative'>
-                                        <div className='ProductBannerRibbon-left ProductBannerRibbonCol bg-white border-primary'>
-                                            <div className='ProductBannerRibbonBox'>
-                                                <img className='ribbonProduct' src='/ribbonProduct.svg' />
-                                                <div className='title-20 text-primary font-weight-500'>Insurance worth</div>
-                                                <div className='title-32 text-primary font-weight-600 mt-n2'> ₹ 3 Crore</div>
+                                    {noInsurer == true ? (
+                                        <>
+                                        </>
+
+                                    ):(
+                                        <div className='ProductBannerRibbon d-flex align-items-center position-relative'>
+                                            <div className='ProductBannerRibbon-left ProductBannerRibbonCol bg-white border-primary'>
+                                                <div className='ProductBannerRibbonBox'>
+                                                    <img className='ribbonProduct' src='/ribbonProduct.svg' />
+                                                    <div className='title-20 text-primary font-weight-500'>Insurance worth</div>
+                                                    <div className='title-32 text-primary font-weight-600 mt-n2'>₹ 3 {insuranceWorth}</div>
+                                                </div>
                                             </div>
+                                            <div className='ProductBannerRibbon-right ProductBannerRibbonCol bg-primary'>
+                                                <div className='ProductBannerRibbonBox'>
+                                                    <div className='title-20 text-yellow font-weight-500'> at just</div>
+                                                    <div className='title-48 text-yellow font-weight-600 mt-n2'>₹ {insuranceAmount}</div>
+                                                    <div className='bg-yellow h-3 mt-1'></div>
+                                                </div>
+                                            </div> 
                                         </div>
-                                        <div className='ProductBannerRibbon-right ProductBannerRibbonCol bg-primary'>
-                                            <div className='ProductBannerRibbonBox'>
-                                                <div className='title-20 text-yellow font-weight-500'> at just</div>
-                                                <div className='title-48 text-yellow font-weight-600 mt-n2'> ₹ 15,000</div>
-                                                <div className='bg-yellow h-3 mt-1'></div>
-                                            </div>
-                                        </div> 
-                                    </div>
+                                    )
+
+                                    }
+                                    
                                     <div className='mt-4'>
                                         <RatingCard
                                             reviews="450"

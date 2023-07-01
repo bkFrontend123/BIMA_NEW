@@ -201,6 +201,8 @@ export default function DAndO_Insurance() {
                     <ProductBanner
                         title="Product Liability Insurance"
                         description="Product Liability insurance is specifically designed to protect your business from the financial impact of claims arising out of damage, injury, or harm caused by the products you manufacture, sell, or distribute. It's a specialized policy that understands the unique risks associated with products."
+                        insuranceWorth="50 Lakhs"
+                        insuranceAmount="7,500"
                         customClass="prdctLlbtyBnr"
                     >
                         <div className={`${form.commonForm}`}>

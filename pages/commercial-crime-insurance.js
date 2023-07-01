@@ -202,6 +202,7 @@ export default function EAndO_Insurance() {
                         title="Commercial Crime Insurance"
                         description="Crime Insurance is designed to protect your business from losses resulting from criminal activities. It acknowledges the unfortunate reality that not all risks come from outside your business - some come from within.
                         An innovative ‘white-collar crime’ policy, it offers compensation for financial losses due to dishonest activities originating from an employee, a third party, or a vendor. These activities could be related to accounting, cash fraud, theft, vandalism, or digital crimes like email spoofing."
+                        noInsurer="true"
                         customClass="crimeBnr"
                     >
                         <div className={`${form.commonForm}`}>

@@ -201,6 +201,8 @@ export default function EAndO_Insurance() {
                     <ProductBanner
                         title="Errors & Omissions Insurance"
                         description="Errors and Omissions Insurance is specifically designed to protect businesses that provide professional services or advice to clients. Despite your best efforts, there's always a possibility of human error, a miscommunication, or an unmet expectation. If these situations lead to disputes and legal claims, Errors and Omissions Insurance steps in. Also called Professional Indemnity Insurance, it is your shield against your clients."
+                        insuranceWorth="50 Lakhs"
+                        insuranceAmount="18,000"
                         customClass="eAndoBnr"
                     >
                         <div className={`${form.commonForm}`}>
