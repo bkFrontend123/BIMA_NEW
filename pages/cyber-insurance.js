@@ -202,7 +202,7 @@ export default function product() {
                         title="Cyber Insurance"
                         description="Cyber Insurance is a specialized product designed to protect your business from the unique threats posed by operating in the digital world. In a time of widespread cyber attacks, it is a crucial part of any business's risk management strategy."
                         insuranceWorth="50 Lakhs"
-                        insuranceAmount="50,000"
+                        insuranceAmount="38,000"
                         customClass="cybrBnr"
                     >
                         <div className={`${form.commonForm}`}>

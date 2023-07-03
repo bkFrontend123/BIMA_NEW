@@ -51,18 +51,20 @@ export default function ProductBanner(props) {
                                         null
                                     ):(
                                         <div className='ProductBannerRibbon d-flex align-items-center position-relative'>
-                                            <div className='ProductBannerRibbon-left ProductBannerRibbonCol bg-white border-primary'>
+                                            <div className='ProductBannerRibbon-left ProductBannerRibbonCol bg-white'>
                                                 <div className='ProductBannerRibbonBox'>
-                                                    <img className='ribbonProduct' src='/ribbonProduct.svg' />
-                                                    <div className='title-20 text-primary font-weight-500'>Insurance worth</div>
-                                                    <div className='title-32 text-primary font-weight-600 mt-n2'>₹ {insuranceWorth}</div>
+                                                    <img src='/icons/barcode.svg' />
+                                                    <div className='title-18 font-weight-500'>Coverage worth</div>
+                                                    <div className='title-32 font-weight-600 mt-n2'>₹ {insuranceWorth}</div>
                                                 </div>
                                             </div>
-                                            <div className='ProductBannerRibbon-right ProductBannerRibbonCol bg-primary'>
+                                            <div className='ProductBannerRibbon-right ProductBannerRibbonCol'>
                                                 <div className='ProductBannerRibbonBox'>
-                                                    <div className='title-20 text-yellow font-weight-500'> at just</div>
+                                                    <img className='ribbonProduct' src='/icons/bimaTick.svg' />
+                                                    <div className='title-18 text-yellow fst-italic font-weight-400'>at just</div>
                                                     <div className='title-48 text-yellow font-weight-600 mt-n2'>₹ {insuranceAmount}</div>
                                                     <div className='bg-yellow h-3 mt-1'></div>
+                                                    <div className='title-18 text-yellow fst-italic font-weight-400'>annually</div>
                                                 </div>
                                             </div> 
                                         </div>
@@ -176,8 +178,9 @@ export default function ProductBanner(props) {
                         margin-bottom: 20px
                     }
                     .ProductBannerRibbon{
-                        height: 98px;
-
+                        height: 110px;
+                        transform: skew(-12deg);
+                        margin-left: 15px;
                     }
                     .ProductBannerRibbonCol{
                         padding: 0 25px;
@@ -185,31 +188,54 @@ export default function ProductBanner(props) {
                         display: flex;
                         align-items: center;
                     }
-                    .ProductBannerRibbonCol .title-20{
+                    .ProductBannerRibbon-left{
+                        border: 2px dashed var(--vt-c-blueDark1);
+                        margin-right: -2px;
+                    }
+                    .ProductBannerRibbon-right{
+                        padding-right: 60px;
+                        /* -webkit-clip-path: polygon(100%0%,89%49%,100%100%,0 100%,0%50%,0 0); */
+                        /* clip-path: polygon(100%0%,89%49%,100%100%,0 100%,0%50%,0 0); */
+                        background-color: var(--vt-c-blueDark1);
+                        position: relative;
+                        border-radius: 0 5px 5px 0;
+                        z-index: 1;
+                    }
+                    .ProductBannerRibbon-right::before {
+                        background: var(--vt-c-blueDark1);
+                        position: absolute;
+                        content: "";
+                        left: -11px;
+                        top: 0;
+                        bottom: 0;
+                        width: 24px;
+                        transform: skew(12deg);
+                        z-index: -1;
+                    }
+                    .ProductBannerRibbonBox {
+                        transform: skew(12deg);
+                    }
+                    .ProductBannerRibbonCol .title-18 {
                         line-height: 25px;
                     }
-                    .ProductBannerRibbonCol.ProductBannerRibbon-right .title-20{
-                        line-height: 20px;
+                    .ProductBannerRibbonCol .title-20 {
+                        line-height: 25px;
+                    }
+                    .ProductBannerRibbonCol.ProductBannerRibbon-right .title-18 {
+                        line-height: 22px;
                     }
 
                     .ProductBannerRibbonCol .title-32{
                         line-height: 32px;
+                        color: var(--vt-c-blueDark1);
                     }
                     .ProductBannerRibbonCol .title-48{
                         line-height: 44px;
                     }
-                    .ProductBannerRibbon-left{
-                        padding-left: 50px;
-                        border: 2px dashed ;
-                    }
                     .ribbonProduct{
                         position: absolute;
-                        left: 0;
-                        top: 0;
-                    }
-                    .ProductBannerRibbon-right{
-                        padding-right: 60px;
-                        clip-path: polygon(100% 0%, 89% 49%, 100% 100%, 0 100%, 0% 50%, 0 0);
+                        right: -56px;
+                        bottom: -7px;
                     }
                     
                     @media (min-width: 1300px){
@@ -376,25 +402,32 @@ export default function ProductBanner(props) {
                             margin-bottom: 34px;
                         }
                         .ProductBannerRibbon {
-                            height: 80px;
+                            height: 90px;
                         }
                         .ProductBannerRibbonCol {
                             padding: 0 16px;
                         }
                         .ProductBannerRibbon-right {
-                            padding-right: 30px;
+                            padding-right: 40px;
                         }
-                        .ProductBannerRibbon-left {
-                            padding-left: 30px;
+                        .ProductBannerRibbon-right::before {
+                            left: -8px;
+                            width: 20px;
                         }
                         .ribbonProduct {
                             width: 24px;
+                            right: -36px;
+                            bottom: -4px;
                         }
                         .ProductBannerRibbonCol .title-20 {
                             font-size: 16px;
+                            line-height: 20px;
+                        }
+                        .ProductBannerRibbonCol .title-18 {
+                            font-size: 16px;
                         }
                         .ProductBannerRibbonCol .title-48 {
-                            font-size: 20px;
+                            font-size: 27px;
                             line-height: 30px;
                         }
                         .ProductBannerRibbonCol .title-32 {
