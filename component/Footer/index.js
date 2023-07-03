@@ -187,7 +187,7 @@ export default function Footer() {
                 <div className="col-md-12">
                   <div className='d-block d-none' style={{ height: "40px" }}></div>
                   <p className='title12 text-primarySkyLight1 font-weight-600 text-uppercase mb-1'>Disclaimer:</p>
-                  <p className='title12 text-primarySkyLight2 text-uppercase font-weight-500 mb-1'>BimaKavach Insurance Broker Pvt. Ltd. |CIN- U66010MP2022PTC059393 | Registered  Office- Flat No 201, Classic Avenue,184 Shrinagar Main, Indore Madhya Pradesh India- 452018 | Phone No.- 9036554785 | Email- support@bimakavach.com </p>
+                  <p className='title12 text-primarySkyLight2 text-uppercase font-weight-500 mb-1'>BimaKavach Insurance Broking Pvt. Ltd. |CIN- U66010MP2022PTC059393 | Registered  Office- Flat No 201, Classic Avenue,184 Shrinagar Main, Indore Madhya Pradesh India- 452018 | Phone No.- 9036554785 | Email- support@bimakavach.com </p>
 
                   <p className='title12 text-primarySkyLight2 text-uppercase font-weight-500 mb-1'>BimaKavach is registered as a Direct Broker | Registration No. 901, Registration Code No.  IRDAI / DB 985/ 2022, Valid till 25/06/2026, License category- Direct Broker (General).</p>
 
