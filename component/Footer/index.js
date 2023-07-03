@@ -207,7 +207,7 @@ export default function Footer() {
             <div className="col-xl-11 mx-auto copyright">
               <div className='row align-items-center justify-content-between'>
                 <div className='col-md'>
-                  <p className='title-15 text-primarySkyLight2 font-weight-500 m-0'>© 2023 BimaKavach Technologies Pvt. Ltd. All Rights Reserved</p>
+                  <p className='title-15 text-primarySkyLight2 font-weight-500 m-0'>© 2023 BimaKavach Insurance Broking Pvt. Ltd. All Rights Reserved</p>
                 </div>
                 <div className='col-md-auto'>
                   <div className='d-md-flex align-items-center gap-3 mt-3'>
