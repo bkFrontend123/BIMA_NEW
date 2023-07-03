@@ -339,46 +339,84 @@ export default function EAndO_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>As clients challenge any deficiency in service delivery mechanisms, the risk of facing financial loss claims is on the rise. Regardless of the quality of your offering, mistakes and dissatisfied customers are a part of doing business.</p>
 
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Errors & Omissions (E&O) insurance provides financial security, preserves your reputation, and instills confidence in clients. With E&O insurance, you can focus on delivering exceptional service without worrying about potential legal repercussions.</p>
-                                        {/*<div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='gx-lg-5'>
+
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mt-4 mt-xl-5 mb-0'>Key Factors to Consider When Purchasing E&O Insurance:</h3>
+                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
+                                            <li>Business size and risk exposure: Larger businesses typically face greater risks and should prioritize acquiring E&O insurance.</li>
+                                            <li>Litigation-prone industries: If you operate in an industry with a high likelihood of legal disputes, securing E&O coverage is particularly essential.</li>
+                                            <li>High-value clients and shipments: When dealing with clients who require a superior level of service or handling high-value shipments, having E&O insurance may be expected.</li>
+                                            <li>Geographic location: If your business operates in an area with a high incidence of lawsuits, it is advisable to obtain E&O insurance coverage as soon as possible.</li>
+                                        </ul>
+
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mt-4 mt-xl-5 mb-0'>Discover the advantages of Errors & Omissions (E&O) insurance coverage:</h3>
+                                        <div className={`${productStyle.lightYellowSecCards}`}>
+                                            <Row className='g-4 g-lg-5'>
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Operational accidents</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It covers legal fees, settlements, or judgment costs for accidents, injuries, and damages arising from your business operations, products, or services.</p>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Legal Representation Costs</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>E&O insurance safeguards you from the financial burden of legal representation expenses when facing lawsuits. Whether in court or negotiating with regulators, this coverage ensures you have the support you need,including the cost of settlements.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodGlobe.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Third-party property damage</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It safeguards your business in instances where your company or employees cause damage to a third party's property, whether through direct actions or negligence.</p>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Employee Dishonesty</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Protect your business from third-party claims resulting from frauds or dishonest acts conducted by your employees. E&O insurance covers investigation costs, legal fees, and damages caused by their actions.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Bodily injury</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It protects your business from claims related to bodily injuries resulting from accidents on your premises or due to your business operations</p>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Automatic Subsidiary Coverage</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Newly created or acquired subsidiaries will be seamlessly incorporated into the policy, requiring only a minimal amount of additional paperwork. However, this inclusion is contingent upon the acquired company being not more than one-fourth the size of the company implementing the policy.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
-                                                    <div className={`pb-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Personal and advertising injury</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It covers claims involving defamation, libel, slander, copyright infringement, or invasion of privacy associated with your business activities, including advertising efforts that may cause harm to others.</p>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Error in Service</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>If an employee makes an error while providing a service then E&O insurance covers resulting claims.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Mitigation Costs</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>In case of errors and omissions, you might need to take steps to reduce or prevent further damage or loss. The policy can help cover the cost of repairs, replacements, and other expenses incurred in such cases</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Court Attendance Fees</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Cover losses for attending court due to an E&O lawsuit, including lawyer's fees, travel expenses, and lost wages.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Loss of Document</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>In case of a lawsuit alleging loss or destruction of important documents, this policy will cover the legal and claim charges</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Professional Inquiry Investigation</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'> If an investigation or inquiry is conducted by a professional regulatory body, such as an industry association or government agency, this coverage indemnifies the loss incurred by the insured. It covers the costs of legal fees, settlements, fines, or judgments that may arise from such an investigation.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                             </Row>
-                                        </div>*/}
+                                        </div>
                                     </Container>
                                 </div>
                             </div>
@@ -446,6 +484,18 @@ export default function EAndO_Insurance() {
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Error in Service</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If an employee makes an error while providing a service then E&O insurance covers resulting claims.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Employee Dishonesty</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Protect your business from third-party claims resulting from frauds or dishonest acts conducted by your employees. E&O insurance covers investigation costs, legal fees, and damages caused by their actions.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Legal Representation Costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>E&O insurance safeguards you from the financial burden of legal representation expenses when facing lawsuits. Whether in court or negotiating with regulators, this coverage ensures you have the support you need,including the cost of settlements.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -608,10 +658,6 @@ export default function EAndO_Insurance() {
                             />
                             <Accordion
                                 title="What limits do you need?"
-                                content="Lorem ipsum dolor sit amet,"
-                            />
-                            <Accordion
-                                title="Do I need E&O if I already have D&O, general liability, and product liability insurance?"
                                 content="An insured business can opt for any limit of E&O coverage depending on its needs, business model, and financial position. Some factors that can influence the limit include the size of the business, financial background, time spent in the business, risk appetite, and so on."
                             />
                             <Accordion

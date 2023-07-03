@@ -276,29 +276,6 @@ export default function DAndO_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A Director and Officers (D&O) policy protects directors, board members, and other individuals in management and supervisory positions from possible legal liability if they are indicted for decisions made to run a business. <span className='d-none d-lg-block'></span>This type of insurance protects the personal assets of the directors and officers along with their spouses and compensates them for any settlements or legal fees they incur as a result of lawsuits.</p>
                                     </div>
-                                    <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Advantages of D&O Insurance</div>
-                                        <Row className='g-lg-5'>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Offers protection to Directors & Officers</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                            <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Saves personal assets from lawsuits</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Helps attract & retain the best talent</p>
-                                                </div>
-                                            </Col>
-                                        </Row>
-                                    </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
@@ -323,7 +300,7 @@ export default function DAndO_Insurance() {
                                                             <img src='/icons/prodGlobe.svg' />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>2. Side B</h3>
                                                             <div className='title-22 font-weight-600 text-black mb-3'>Company Reimbursement</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>When a company indemnifies (provides financial protection) its directors or officers for a covered claim under the policy, Side B Coverage ensures that the company is reimbursed for the expenses they've incurred during the process.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>When a company indemnifies (provides financial protection) its directors or officers for a covered claim under the policy, Side B Coverage ensures that the company is reimbursed for the expenses they've incurred during the process. In essence, it's an insurance policy that protects the company's financial interests by reimbursing them after they've supported their insured individuals in a legal matter.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -341,6 +318,37 @@ export default function DAndO_Insurance() {
                                         </div>
                                     </Container>
                                 </div>
+                                <Container>
+                                    <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Advantages of D&O Insurance</div>
+                                        <Row className='g-lg-5'>
+                                            <Col lg={6}>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Offers protection to Directors & Officers</p>
+                                                </div>
+                                            </Col>
+                                            <Col lg={6}>
+                                            <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Saves personal assets from lawsuits</p>
+                                                </div>
+                                            </Col>
+                                            <Col lg={6}>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Important for both large and small-scale businesses.</p>
+                                                </div>
+                                            </Col>
+                                            <Col lg={6}>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Helps attract & retain the best talent</p>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                </Container>
                             </div>
                             <div id="scrollspyHeading2" className={`${productStyle.whoNeed}`}>
                                 <Container>
@@ -548,7 +556,7 @@ export default function DAndO_Insurance() {
                                         <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>D&O insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
+                                                    <div className='title-20 text-black mb-4'>Some of the major exclusions in the insurance policy are given below -</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
@@ -597,7 +605,7 @@ export default function DAndO_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>War</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>War exclusions in Directors' & Officers' Insurance is a type of coverage that excludes any claims or losses that are related to war. This means that if a claim is made against a director or officer for something that happened as a result of war, they will not be covered under this policy.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If a claim is made against a director or officer for something that happened as a result of war, they will not be covered under this policy.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
@@ -648,12 +656,12 @@ export default function DAndO_Insurance() {
                         <Row>
                             <Col>
                                 <div className={`tabContainer my-4 my-lg-5 ${productStyle.inciTab}`}>
+                                    {/*<span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 1</span>*/}
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all active">Incident 1</span>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 2</span>
-                                    <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 3</span>
                                 </div>
                                 <div className={`pt-1 overflow-hidden ${productStyle.inciTabPanel}`}>
-                                    <div data-incitab className={`${productStyle.inciTabPanelBox}`}>
+                                    {/*<div data-incitab className={`${productStyle.inciTabPanelBox}`}>
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
@@ -672,8 +680,8 @@ export default function DAndO_Insurance() {
                                                 <img src='/incident/dAndO_incident1.png' />
                                             </Col>
                                         </Row>
-                                    </div>
-                                    <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
+                                    </div>*/}
+                                    <div data-incitab className={`${productStyle.inciTabPanelBox}`}>
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
@@ -800,7 +808,7 @@ export default function DAndO_Insurance() {
                                 </>]}
                             />
                             <Accordion
-                                title="What are directors personally liable for?"
+                                title="What is the difference between D&O and management liability?"
                                 content={[<>
                                     <span>Certain differences between the two are as follows-</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>

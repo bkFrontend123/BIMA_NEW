@@ -201,8 +201,8 @@ export default function product() {
                     <ProductBanner
                         title="Marine Cargo Insurance"
                         description="Damage to valuable cargo while in transit can lead to significant losses for any business. Marine Cargo Insurance safeguards your goods during transit, whether by sea, road, rail, or air. With customizable coverage based on the nature of goods and their travel routes, this policy ensures peace of mind during transportation."
-                        insuranceWorth="10 Lakhs"
-                        insuranceAmount="350"
+                        insuranceWorth="20 Lakhs"
+                        insuranceAmount="700"
                         customClass="marineBnr"
                     >
                         <div className={`${form.commonForm}`}>
@@ -383,7 +383,7 @@ export default function product() {
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>Which factors are considered when determining the premium for Marine Cargo Insurance?</div>
                                         <Row>
                                             <Col xl={10} className='mx-auto'>
-                                                <Row>
+                                                <Row className="g-4">
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
@@ -540,36 +540,12 @@ export default function product() {
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Stranding coverage protects against damages or losses to a shipment caused by it becoming stranded on a shoal, reef, or other obstruction. This coverage also includes damages to any cargo or property on board affected by the stranding.</div>
                                                     </div>
                                                 </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crisis Communication Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers the reasonable costs, charges, fees, and expenses incurred by an organization, in attaining the services of any public relations firm or crisis management firm to advise the organization for managing public communication.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Dedicated additional limit for Non-Executive Directors and Officers</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>With this add-on cover, you get an extra layer of protection that is added to the overall coverage limit for non-executive directors and officers of a company.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bribes and Commission</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Directors & Officers policy excludes claims and losses arising from bribes and commissions.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Money Laundering</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Money laundering is a process that criminals use to hide the illegal source of their income. If a claim is made against a director or officer for something related to money laundering, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
                                             </Row>
                                         </div>
                                         <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>There are specific scenarios that a standard Marine Cargo insurance policy does not cover, including but not limited to:</div>
+                                                    <div className='title-20 text-black mb-4'>Inadequatre Packaging & Inherent Vice or nature was duplicated. please remove the duplicated points.</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
@@ -659,7 +635,6 @@ export default function product() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Lorem Ipsum</div>
                                                     <div className='mb-4'>
                                                         <div className='title-18 font-weight-500 text-black m-0'>A company manufacturing electronics ships a cargo worth Rs 5 crore from India to Myanmar. During the voyage, a severe storm damages the shipment, causing the electronic goods to become inoperable and leading to a total loss. If the company had obtained marine cargo insurance before shipping the goods, they could have filed a claim with their insurer and received compensation for the damages incurred.</div>
                                                     </div>
@@ -674,7 +649,6 @@ export default function product() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Lorem Ipsum</div>
                                                     <div className='mb-4'>
                                                         <div className='title-18 font-weight-500 text-black m-0'>A 35 yr old young entrepreneur runs an e-commerce store exporting wallets to customers worldwide, using a third-party courier for shipping. Regrettably, the entrepreneur didn't secure marine insurance, resulting in lost goods during transit. This loss led to financial difficulties and dissatisfied customers. With an appropriate insurance policy in place, the entrepreneur might have been able to recover the losses from the misplaced shipments.</div>
                                                     </div>
@@ -745,8 +719,8 @@ export default function product() {
                                 content="A marine survey for insurance may include the evaluation of the cargo's condition, quality, packaging, storage, and overall suitability for transportation. The surveyor examines the cargo to identify any pre-existing damage, signs of improper handling, or packaging. Then, the surveyor verifies that the cargo conforms to any relevant regulations, standards, or industry-specific requirements."
                             />
                             <Accordion
-                                title="What are the 5 principles of Marine Insurance?"
-                                ccontent={[<>
+                                title="What are the 6 principles of Marine Insurance?"
+                                content={[<>
                                     <ul className={`${productStyle.listData}`}>
                                         <li>Utmost good faith -  Under this principle, the insured is required to disclose all material facts that could affect the insurer's decision to accept or reject the risk, while the insurer is required to provide all relevant information about the policy terms and conditions.</li>
                                         <li>Insurable interest - A policy cannot be issued unless you have an insurable interest in buying it.</li>

@@ -369,7 +369,7 @@ export default function DAndO_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
                                                     <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Print Shopss</p>
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Print Shops</p>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -389,7 +389,7 @@ export default function DAndO_Insurance() {
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Scope of coverage under Public Liability Insurance</h3>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Scope of coverage under Product Liability Insurance</h3>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                             <li>Incidents Covered: The policy provides coverage for accidents, injuries, and damages resulting from the use of the product.</li>
                                             <li>Potential Product Issues: Coverage may include manufacturing defects, improper packaging, usage instructions, and delivery specifications.</li>

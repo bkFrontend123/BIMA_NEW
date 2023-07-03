@@ -278,8 +278,8 @@ export default function GeneralLiability_Insurance() {
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
                                         <Row>
-                                            <Col xl={10} className='mx-auto'>
-                                                <Row>
+                                            <Col xl={11} className='mx-auto'>
+                                                <Row className="g-4">
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
@@ -307,7 +307,23 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Riot, Strike and Malicious Damage" />
+                                                                <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Aircraft Damage" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Aircraft Damage</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/stormIcon.svg' width="100" height="100" alt="Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Riot, Strike and Malicious Damage" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Riot, Strike and Malicious Damage</p>
                                                         </div>
@@ -315,33 +331,17 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation" />
+                                                                <Image src='/icons/techIcon.svg' width="100" height="100" alt="Impact Damage" />
                                                             </span>
-                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation</p>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Impact Damage</p>
                                                         </div>
                                                     </Col>
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation" />
-                                                            </span>
-                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation</p>
-                                                        </div>
-                                                    </Col>
-                                                    <Col lg={4}>
-                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                            <span>
-                                                                <Image src='/icons/techIcon.svg' width="100" height="100" alt="Subsidence and Landslide including Rock slide" />
+                                                                <Image src='/icons/manufacturersIcon.svg' width="100" height="100" alt="Subsidence and Landslide including Rock slide" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Subsidence and Landslide including Rock slide</p>
-                                                        </div>
-                                                    </Col>
-                                                    <Col lg={4}>
-                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                            <span>
-                                                                <Image src='/icons/manufacturersIcon.svg' width="100" height="100" alt="Bursting and/or overflowing of Water Tanks, Apparatus and Pipes" />
-                                                            </span>
-                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Bursting and/or overflowing of Water Tanks, Apparatus and Pipes</p>
                                                         </div>
                                                     </Col>
                                                     <Col lg={4}>
@@ -837,7 +837,7 @@ export default function GeneralLiability_Insurance() {
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About General Liability Insurance</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Fire Insurance</h3>
                                 </div>
                             </Col>
                         </Row>

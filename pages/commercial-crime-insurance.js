@@ -412,8 +412,9 @@ export default function EAndO_Insurance() {
                                                     </div>
                                                 </Col>
                                             </Row>
-                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Losses caused by employees or third-party hackers committing fraud or theft via computers are frequently covered by commercial crime insurance. However, data breaches are often not covered by crime insurance. This is separately covered by the cyber liability insurance policy. <span className='d-none d-lg-block'></span>The policy also includes losses outside the business premises brought upon by a third-party criminal act.</p>
-                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4 mb-4'>In all such situations, the following costs can be claimed under the crime insurance policy:</p>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4 mt-xl-5'>Losses caused by employees or third-party hackers committing fraud or theft via computers are frequently covered by commercial crime insurance. However, data breaches are often not covered by crime insurance. This is separately covered by the cyber liability insurance policy.</p>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The policy also includes losses outside the business premises brought upon by a third-party criminal act.</p>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4 mb-4 mb-xl-5'>In all such situations, the following costs can be claimed under the crime insurance policy:</p>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
@@ -575,7 +576,7 @@ export default function EAndO_Insurance() {
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About General Liability Insurance</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Comercial Crime Insurance</h3>
                                 </div>
                             </Col>
                         </Row>

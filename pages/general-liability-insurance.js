@@ -319,7 +319,7 @@ export default function GeneralLiability_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>General Liability insurance is necessary for various kinds of businesses:</div>
                                         <Row>
                                             <Col xl={10} className='mx-auto'>
-                                                <Row>
+                                                <Row className="g-4">
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
@@ -637,7 +637,7 @@ export default function GeneralLiability_Insurance() {
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What is the difference between Commercial General Liability and Commercial Umbrella?"
+                                title="What is the difference between Commercial General Liability and Commercial Inusance?"
                                 content="Commercial General Liability (CGL) insurance covers liability claims related to bodily injury, property damage, and personal and advertising injury. On the other hand, Commercial Umbrella Insurance provides excess liability coverage beyond the limits of primary insurance policies, such as CGL or professional liability insurance. For instance, if a business faces a liability claim that exceeds its CGL policy limits, an umbrella policy can offer additional coverage to help cover the costs of the claim."
                             />
                             <Accordion

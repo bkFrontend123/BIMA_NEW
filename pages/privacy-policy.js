@@ -19,7 +19,7 @@ export default function About() {
                         <div className={`col-md-6 offset-md-1`}>
                             <div className='commnHeading text-start'>
                                 <div className='polyBox border-primary bg-blueLight mb-md-4 mb-2 text-primary title-12 text-uppercase font-weight-700'>PRIVACY POLICY</div>
-                                <div className='title-60 font-secondary mb-md-3 mb-2 text-primary font-weight-700'>BimaKavach Technologies Privacy Policy</div>
+                                <div className='title-60 font-secondary mb-md-3 mb-2 text-primary font-weight-700'>BimaKavach Insurance Broking Pvt. Ltd. Privacy Policy</div>
                                 <p className='title-22 font-weight-500 text-muted mb-0'>
                                     <span className='me-2'>
                                         <svg width="24" height="24" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
