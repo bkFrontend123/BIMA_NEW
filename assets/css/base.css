@@ -1,6 +1,7 @@
 :root {
   --vt-c-blue: #0E2B72;
   --vt-c-blueDark: #071639;
+  --vt-c-blueDark1: #050F28;
   --vt-c-blueSky: #1869f6;
   --vt-c-blueSkyLight: #5177D4;
   --vt-c-blueSkyLight1: #DBDFEA;
@@ -643,7 +644,7 @@ p {
 /***Frontend Bootstrap Css End***/
 
 /***Frontend Custom Css Start***/
-.hdrDrpdwn .show.dropdown button i {
+.hdrDrpdwn .show.dropdown button i:last-child {
   transform: rotate(180deg);
 }
 .commonTabs.nav-tabs .nav-link.active,

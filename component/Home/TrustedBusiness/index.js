@@ -15,7 +15,7 @@ function TrustedBusiness() {
     <div className='container'>
       <div className='row'>
         <div className={`col-lg-9 mx-auto text-center trusted-business ${styles.trustedBusiness}`}>
-          <h2 className='title24 mb-3 font-weight-500 text-primary px-sm-0 px-5'>Trusted by the 400+  businesses across India</h2>
+          <h2 className='title24 mb-3 font-weight-500 text-primary px-sm-0 px-5'>Trusted by 450+ businesses across India</h2>
           <div className='pt-2'>
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, Autoplay]}

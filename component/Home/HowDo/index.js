@@ -116,8 +116,8 @@ export default function HowDo() {
             <div className={`@col-md-10 howDoDesktopSlider mx-auto position-relative`}>
               {/* <button onClick={(e) => onSwipeDown(e)}>Swipe Down</button> */}
 
-              <div className='d-flex text-white howDo-sliderBox-btn howDoswiper-button-next ' >
-                <a className=' text-white d-flex align-items-center title20 font-weight-400 ps-0 text-decoration-none  ' onClick={(e) => onSwipeDown(e)} >
+              <div className='d-flex text-white howDo-sliderBox-btn howDoswiper-button-next'>
+                <a className=' text-white d-flex align-items-center title20 font-weight-400 ps-0 text-decoration-none' onClick={(e) => onSwipeDown(e)} >
                   <span className="me-2  d-md-inline me-3">Next</span>
                   <img src="/icons/arrowRight-white.svg" />
                 </a>

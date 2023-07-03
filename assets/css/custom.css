@@ -158,22 +158,24 @@ body .mainMenu.navbar .navbar-brand img{
 }
 
 .mainMenu.navbar  li.active > a,
-.mainMenu.navbar  li  a:hover,
-.mainMenu.navbar  li a:hover  svg path {
+.mainMenu.navbar  li >  a:hover,
+.mainMenu.navbar  li > a:hover  svg path {
    color : var(--vt-c-yellow);
    stroke : var(--vt-c-yellow)
 }
 
-.mainMenu.navbar a.btnCommon {
-   font-size: 16px;
-   line-height: 18px;
-   padding: 12px 34px;
+.mainMenu.navbar .btnCommon {
+   font-size: 16px !important;
+   line-height: 49px;
+   padding: 0 20px;
    text-align: center;
+   width: 100%;
+   justify-content: center;
 }
 
 .mainMenu.navbar a.btnCommon.btnBorder {
-   padding: 14.5px 12px;
-
+   padding: 0 12px;
+   line-height: 47px;
 }
 
 .arrowHide.dropdown-toggle::after {

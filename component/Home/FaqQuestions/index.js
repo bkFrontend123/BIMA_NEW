@@ -15,7 +15,7 @@ export default function FaqQuestions() {
                     </div>
                     <div className='mt-4'>
                         <Accordion
-                            title="How does business insurance Work?"
+                            title="How does business insurance work?"
                             content="Business insurance shields you against unanticipated situations. It protects your company from legal battles, accidents, natural disasters, and other unforeseeable events. While buying business insurance might seem like a complex process, our experts at BimaKavach simplify the entire process, making it hassle-free for you. We'll walk you through every step, freeing you up to focus on what you do best: operating your business!"
                         />
                         <Accordion

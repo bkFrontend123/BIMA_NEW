@@ -137,12 +137,12 @@ function BusinessRisk() {
             <div className={` container`}>
                 <div className={`row text-center`}>
                     <div className={`col-md-8 mx-auto`}>
-                        <div className='polyBox border-primary bg-blueLight text-primary title12 text-uppercase font-weight-600 mb-3'>The Problems</div>
+                        {/*<div className='polyBox border-primary bg-blueLight text-primary title12 text-uppercase font-weight-600 mb-3'>The Problems</div>*/}
                         <h2 className='title-36 font-secondary mb-3 text-primary font-secondary font-weight-700'>Simple Solutions to <span className='text-yellow fst-italic'> Complex Risks</span></h2>
                         <p className='title-22 font-weight-500 text-primary px-0 px-lg-5 mb-0'>
-                            Running a business without insurance is like driving a
-                            <span className="d-none d-xl-block">car without seat belts: Accidents happen.</span>
-                            <span className="d-inline d-xl-none">car without seat belts: Accidents happen.</span>
+                            No matter the industry or size of your business, 
+                            <span className="d-none d-xl-block">we have got you covered.</span>
+                            <span className="d-inline d-xl-none">we have got you covered..</span>
                         </p>
                     </div>
                 </div>

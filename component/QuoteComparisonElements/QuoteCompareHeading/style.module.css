@@ -1,0 +1,48 @@
+.policyHdrInfo {
+    display: flex;
+}
+.policyCovName {
+    font-size: 15px;
+    color: var(--vt-c-blue);
+    line-height: 20px;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--vt-c-blue);
+}
+.policyCovName span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-left: 16px;
+}
+.policyCovInfo {
+    margin-top: 20px;
+}
+.policyCovInfo ul {
+    display: flex;
+    align-items: center;
+}
+.policyCovInfo li {
+    text-align: left;
+    padding: 4px 0;
+    border-right: 1px solid var(--vt-c-blue);
+    margin-right: 25px;
+    padding-right: 25px;
+}
+.policyCovInfo li:last-child {
+    margin-right: 0;
+}
+.policyCovInfo li span {
+    font-size: 15px;
+    color: var(--vt-c-blue);
+    line-height: 20px;
+    font-weight: 500;
+}
+.policyCovInfo li p {
+    font-size: 20px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+}

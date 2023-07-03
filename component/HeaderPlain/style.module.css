@@ -47,7 +47,7 @@ button.btnSmall {
 }
 
 .hdrTalkDrpdwn .hdrDrpMenu {
-    padding: 24px;
+    padding: 20px;
     right: 0 !important;
     left: inherit !important;
 }
@@ -65,6 +65,29 @@ button.btnSmall {
 .hdrDrpMenu p a {
     color: var(--vt-c-blue);
 }
+
+.hdrTalkDrpdwn ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+.hdrTalkDrpdwn ul li:last-child {
+    margin-top: 16px;
+}
+.hdrTalkDrpdwn ul li i {
+    min-width: 18px
+}
+.hdrTalkDrpdwn ul li span {
+    font-size: 15px;
+    color: #4B5979;
+    font-family: var(--GalanoGrotesqueMedium);
+    display: block
+}
+.hdrTalkDrpdwn ul li a {
+    font-size: 16px;
+    color: var(--primaryDark)
+}
+
 
 
 .offcanvasBtn {

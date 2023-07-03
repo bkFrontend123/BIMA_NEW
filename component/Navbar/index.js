@@ -2,10 +2,16 @@ import React, { useState, useEffect } from 'react'
 import Toggle from '../Icons/Toggle'
 import Link from 'next/link'
 import Image from 'next/image'
-import WhatsApp from '../Icons/WhatsApp'
+import {Dropdown} from 'react-bootstrap';
 import AOS from 'aos';
 
+
 import CalendyModal from '../Modal/CalendyModal'
+
+import WhatsApp from '../Icons/WhatsApp'
+import DropdownArrow from '../Icons/DropdownArrow'
+
+import headerStyle from '../HeaderPlain/style.module.css'
 
 function Navbar() {
   const [menuToggle, setMenuToggle] = useState(false)
@@ -541,12 +547,47 @@ function Navbar() {
               </ul>
               <div className="nabbarStrip-btns d-flex flex-sm-row flex-column ms-auto " >
                 <a className="btnCommon scheduleCallBtn me-md-4 btnBorder border-primary text-primary mb-2 mb-md-0 text-decoration-none" onClick={handleShowCalendy}> <img className='me-2' src='/icons/calender.svg' width="16px" /> <span> Schedule a call </span></a>
-                <a href="tel:+91 9876543210" className="btnCommon yellowBtn text-primary text-decoration-none"> 
-                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M6.40923 4.75927L5.24962 6.23368C5.65317 6.80974 6.11223 7.35881 6.62676 7.87341C7.14136 8.38794 7.69043 8.84701 8.26649 9.25054L9.74089 8.09094L13.6668 9.30248V12.2954C13.6643 12.8467 13.4221 13.3695 13.0033 13.728C12.6571 14.0243 12.2155 14.1919 11.7608 14.1635C8.8947 13.9845 6.07996 12.8001 3.89002 10.6101C1.70011 8.42021 0.515669 5.6055 0.336609 2.7394C0.308202 2.28466 0.475875 1.84305 0.772142 1.49689C1.1306 1.07808 1.6535 0.835884 2.20476 0.833344H5.19772L6.40923 4.75927ZM10.0157 9.57114L12.3335 10.2863V12.2915C12.3321 12.4545 12.2602 12.609 12.1363 12.7151C12.0218 12.813 11.9132 12.8371 11.8439 12.8328C9.2895 12.6732 6.7843 11.6188 4.83283 9.66734C2.88137 7.71588 1.82694 5.21065 1.66735 2.65626C1.66302 2.587 1.68714 2.47835 1.78512 2.36388C1.89118 2.23995 2.0457 2.16805 2.20874 2.16668H4.2138L4.92906 4.48446L3.5895 6.18761L4.15754 6.99861C4.60538 7.63794 5.11434 8.24654 5.68396 8.81621C6.25363 9.38581 6.86223 9.89481 7.50156 10.3426L8.31256 10.9107L10.0157 9.57114Z" fill="#0E2E7D"/>
-                </svg>
-                <span className='ms-2'>Talk to us</span></a>
+                <div className={`hdrDrpdwn ${headerStyle.hdrDrpdwn} ${headerStyle.hdrTalkDrpdwn}`}>
+                  <Dropdown>
+                    <Dropdown.Toggle variant="" id="talk-expert" className={`btnCommon yellowBtn ${headerStyle.btnSmall}`}>
+                      <i className="me-2">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fillRule="evenodd" clipRule="evenodd" d="M7.40898 5.75924L6.24938 7.23365C6.65292 7.80971 7.11198 8.35878 7.62652 8.87338C8.14112 9.38791 8.69018 9.84698 9.26625 10.2505L10.7407 9.09091L14.6666 10.3024V13.2954C14.6641 13.8466 14.4219 14.3695 14.0031 14.728C13.6569 15.0242 13.2153 15.1919 12.7605 15.1635C9.89445 14.9844 7.07972 13.8 4.88978 11.6101C2.69986 9.42018 1.51542 6.60547 1.33636 3.73937C1.30796 3.28463 1.47563 2.84302 1.7719 2.49686C2.13035 2.07805 2.65325 1.83585 3.20452 1.83331H6.19748L7.40898 5.75924ZM11.0155 10.5711L13.3333 11.2863V13.2914C13.3319 13.4544 13.26 13.609 13.1361 13.715C13.0216 13.813 12.9129 13.8371 12.8437 13.8328C10.2893 13.6732 7.78405 12.6188 5.83258 10.6673C3.88112 8.71585 2.82669 6.21062 2.6671 3.65623C2.66278 3.58697 2.68689 3.47832 2.78487 3.36385C2.89094 3.23992 3.04545 3.16802 3.2085 3.16665H5.21356L5.92881 5.48443L4.58926 7.18758L5.1573 7.99858C5.60513 8.63791 6.11409 9.24651 6.68372 9.81618C7.25338 10.3858 7.86198 10.8948 8.50132 11.3426L9.31232 11.9106L11.0155 10.5711Z" fill="currentColor"></path>
+                        </svg>															
+                      </i>
+                      <span>Talk to an expert</span>
+                      <i className='ms-2'>
+                        <DropdownArrow width="11" height="7" />
+                      </i>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu className={headerStyle.hdrDrpMenu}>
+                      <div>
+                        <ul>
+                          <li>
+                            <i>
+                              <Image src="/icons/whatsapp_icon.svg" width="18" height="19" alt="Whatsapp" />
+                            </i>
+                            <div>
+                              <span>WhatApp us:</span>
+                              <a href="https://wa.me/9036554785" target="_blank">+91 9036554785</a>
+                            </div>
+                          </li>
+                          <li>
+                            <i>
+                              <Image src="/icons/call_fill_icon.svg" width="13" height="13" alt="Call" />
+                            </i>
+                            <div>
+                              <span>Call us:</span>
+                              <a href="tel:9036554785">+91 9036554785</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </div>
               </div>
+              
             </div>
           </div>
         </nav >

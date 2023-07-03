@@ -53,7 +53,7 @@ export default function ProductBanner(props) {
                                         <div className='ProductBannerRibbon d-flex align-items-center position-relative'>
                                             <div className='ProductBannerRibbon-left ProductBannerRibbonCol bg-white'>
                                                 <div className='ProductBannerRibbonBox'>
-                                                    <img src='/icons/barcode.svg' />
+                                                    {/*<img src='/icons/barcode.svg' />*/}
                                                     <div className='title-18 font-weight-500'>Coverage worth</div>
                                                     <div className='title-32 font-weight-600 mt-n2'>₹ {insuranceWorth}</div>
                                                 </div>
