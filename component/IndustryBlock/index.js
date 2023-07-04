@@ -248,6 +248,10 @@ export default function IndustryBlock() {
                 padding: 20px 41px;
                 box-shadow: 5px 10px 10px rgba(14, 43, 114, 0.1);
             }
+            .title-20 {
+              font-size: 18px;
+              line-height: 26px;
+            }
             @media (min-width: 1300px){
               .container {
                 max-width: 1170px !important;
@@ -288,7 +292,10 @@ export default function IndustryBlock() {
                 .heroPlay {
                     padding-top: 40px;
                 }
-
+                .title-20 {
+                  font-size: 18px;
+                  line-height: 26px;
+                }
                 .title-18 {
                     font-size: 16px;
                     line-height: 24px;
@@ -297,10 +304,6 @@ export default function IndustryBlock() {
             @media only screen and (max-width: 1398px) {
               .homeBannerProduct {
                 padding: 50px;
-              }
-              .title-20 {
-                font-size: 18px;
-                line-height: 26px;
               }
               .homeBannerProduct-card > div  br {
                 display: none;

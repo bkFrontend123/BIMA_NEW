@@ -44,7 +44,7 @@ export default function FaqQuestions() {
                         />
                         <Accordion
                             title="How do I raise a claim?"
-                            content="BimaKavach provides you with immediate quotes based on a few simple questions about your company that you may answer online. Our expert underwriting team will assist you in understanding the quote so that you can make an informed selection. After that, you can finish your payment online and have your policy copy emailed to you."
+                            content="BimaKavach provides 24x7 claims support. Notify your account manager as soon as possible about the occurrence, and our team will get involved right away to ensure that you receive the claim as per your policy."
                         />
                         <Accordion
                             title="How does BimaKavach work?"

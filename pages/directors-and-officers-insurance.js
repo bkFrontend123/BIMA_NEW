@@ -656,12 +656,12 @@ export default function DAndO_Insurance() {
                         <Row>
                             <Col>
                                 <div className={`tabContainer my-4 my-lg-5 ${productStyle.inciTab}`}>
-                                    {/*<span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 1</span>*/}
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all active">Incident 1</span>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 2</span>
+                                    {/*<span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 3</span>*/}
                                 </div>
                                 <div className={`pt-1 overflow-hidden ${productStyle.inciTabPanel}`}>
-                                    {/*<div data-incitab className={`${productStyle.inciTabPanelBox}`}>
+                                    <div data-incitab className={`${productStyle.inciTabPanelBox}`}>
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
@@ -680,8 +680,8 @@ export default function DAndO_Insurance() {
                                                 <img src='/incident/dAndO_incident1.png' />
                                             </Col>
                                         </Row>
-                                    </div>*/}
-                                    <div data-incitab className={`${productStyle.inciTabPanelBox}`}>
+                                    </div>
+                                    <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
@@ -701,7 +701,7 @@ export default function DAndO_Insurance() {
                                             </Col>
                                         </Row>
                                     </div>
-                                    <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
+                                    {/*<div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
@@ -720,7 +720,7 @@ export default function DAndO_Insurance() {
                                                 <img src='/incident/dAndO_incident3.png' />
                                             </Col>
                                         </Row>
-                                    </div>
+                                    </div>*/}
                                 </div>
                             </Col>
                         </Row>
