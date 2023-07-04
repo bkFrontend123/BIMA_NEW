@@ -150,7 +150,7 @@ export default function EAndO_Insurance() {
         { id: "2", list: "Who" },
         { id: "3", list: "Why" },
         {
-            id: "4", list: "Coverages & Exceptions",
+            id: "4", list: "Coverages & Exclusions",
             svg: "/icons/start.svg",
             svgActive: "/icons/starYellow.svg",
             uId: 'sep4'
@@ -434,13 +434,13 @@ export default function EAndO_Insurance() {
                                                     <path d="M8.53333 1.03333C8.53333 0.738781 8.29455 0.5 8 0.5C7.70545 0.5 7.46667 0.738781 7.46667 1.03333V7.2124L4.22877 3.97451C4.02049 3.76623 3.68281 3.76623 3.47453 3.97451C3.26625 4.18279 3.26625 4.52047 3.47453 4.72875L6.71244 7.96667H0.533333C0.238782 7.96667 0 8.20545 0 8.5C0 8.79455 0.238782 9.03333 0.533333 9.03333H6.71244L3.47453 12.2712C3.26625 12.4795 3.26625 12.8172 3.47453 13.0255C3.68281 13.2338 4.0205 13.2338 4.22878 13.0255L7.46667 9.7876V15.9667C7.46667 16.2612 7.70545 16.5 8 16.5C8.29455 16.5 8.53333 16.2612 8.53333 15.9667V9.78756L11.7712 13.0255C11.9795 13.2338 12.3172 13.2338 12.5255 13.0255C12.7338 12.8172 12.7338 12.4795 12.5255 12.2712L9.2876 9.03333H15.4667C15.7612 9.03333 16 8.79455 16 8.5C16 8.20545 15.7612 7.96667 15.4667 7.96667H9.2876L12.5255 4.72877C12.7338 4.52049 12.7338 4.1828 12.5255 3.97452C12.3172 3.76624 11.9795 3.76624 11.7712 3.97452L8.53333 7.21244V1.03333Z" fill="#ffb400" />
                                                 </svg>
                                             </span>
-                                            Coverages & Exceptions in
+                                            Coverages & Exclusions in
                                         </h3>
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>Errors & Omissions Insurance</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
                                         <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all">Exceptions</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all">Exclusions</span>
                                     </div>
                                     <div className={`overflow-hidden ${productStyle.coverageTabPanel}`}>
                                         <div data-tab className="place-content-center">
