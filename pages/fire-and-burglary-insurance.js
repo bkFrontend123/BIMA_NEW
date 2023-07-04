@@ -560,7 +560,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/fireNewIcon.svg' width="80" height="80" alt="Fire Icon" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Fire insurance offers protection against any harm or destruction from fire, fermentation, natural heating, or spontaneous combustion.</p>
                                                         </div>
                                                     </div>
@@ -568,7 +568,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodGlobe.svg' />
+                                                            <Image src='/icons/machineIcon.svg' width="80" height="80" alt="Machine Icon" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>If a machine is damaged by fire, fire insurance covers the costs of repair or replacement.</p>
                                                         </div>
                                                     </div>
@@ -576,7 +576,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
+                                                            <Image src='/icons/fireCoversIcon.svg' width="80" height="80" alt="Covers Icon" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Fire insurance also covers the cost of reconstruction of the property as per the sum insured in the policy.</p>
                                                         </div>
                                                     </div>
