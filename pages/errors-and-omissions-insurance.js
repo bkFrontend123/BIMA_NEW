@@ -570,7 +570,6 @@ export default function EAndO_Insurance() {
                                 <div className={`tabContainer my-4 my-lg-5 ${productStyle.inciTab}`}>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all active">Incident 1</span>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 2</span>
-                                    <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 3</span>
                                 </div>
                                 <div className={`pt-1 overflow-hidden ${productStyle.inciTabPanel}`}>
                                     <div data-incitab className={`${productStyle.inciTabPanelBox}`}>
@@ -605,26 +604,6 @@ export default function EAndO_Insurance() {
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>The insurer actively assumed control of the litigation, appointing attorneys to defend the doctor and covering all defense costs under the policy and the compensation was paid by the insurer</div>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                            <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
-                                    <Row className='g-4'>
-                                            <Col lg={7}>
-                                                <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Data Held Hostage By Ryuk Ransomware</div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>An insured fell victim to the Ryuk ransomware, a highly destructive form of malware known for its high ransom demands. Before the attack, the insured was infected with a banking Trojan, allowing the attacker to access internal financial information. The ransom demanded exceeded $1.5 million, but the company chose not to pay. As a result, the attack made the company's data inaccessible.</div>
-                                                    </div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer hired professionals specialized in handling ransomware incidents and successfully facilitated productive negotiations regarding the amount of ransom to be paid.</div>
                                                     </div>
                                                 </div>
                                             </Col>

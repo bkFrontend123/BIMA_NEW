@@ -77,7 +77,7 @@ export default function Footer() {
                       <ul className="list-group list-group-borderless bg-transparent ">
                         <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">Get in Touch</li>
                         <li className="list-group-item">
-                          <Link href="mailto:info@bimakavach.co" className='title18 font-weight-400'>info@bimakavach.com</Link>
+                          <Link href="mailto:support@bimakavach.co" className='title18 font-weight-400'>support@bimakavach.com</Link>
                         </li>
                         <li className="list-group-item">
                           <Link href="tel:+91 9036554785" className='title18 font-weight-400'>+91 9036554785</Link>

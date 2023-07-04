@@ -17,7 +17,6 @@ function Partner() {
         { id: "p10", img: "/partner4.svg" },
         { id: "p11", img: "/partner3.svg" },
         { id: "p12", img: "/partner2.svg" },
-        { id: "p13", img: "/partner1.svg" },
     ]
 
     return (
