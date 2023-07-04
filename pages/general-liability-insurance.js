@@ -637,7 +637,7 @@ export default function GeneralLiability_Insurance() {
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What is the difference between Commercial General Liability and Commercial Inusance?"
+                                title="What is the difference between Commercial General Liability and Commercial Umbrella Inusance?"
                                 content="Commercial General Liability (CGL) insurance covers liability claims related to bodily injury, property damage, and personal and advertising injury. On the other hand, Commercial Umbrella Insurance provides excess liability coverage beyond the limits of primary insurance policies, such as CGL or professional liability insurance. For instance, if a business faces a liability claim that exceeds its CGL policy limits, an umbrella policy can offer additional coverage to help cover the costs of the claim."
                             />
                             <Accordion
