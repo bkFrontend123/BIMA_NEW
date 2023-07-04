@@ -323,7 +323,7 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Riot, Strike and Malicious Damage" />
+                                                                <Image src='/icons/strikeIcon.svg' width="100" height="100" alt="Riot, Strike and Malicious Damage" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Riot, Strike and Malicious Damage</p>
                                                         </div>
@@ -430,7 +430,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
+                                                            <Image src='/icons/coverageIcon.svg' width="80" height="80" alt="Protects against physical damage to a building or structure from fire or theft." />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Coverage</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Protects against physical damage to a building or structure from fire or theft.</p>
                                                         </div>
@@ -439,7 +439,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
+                                                            <Image src='/icons/eligibilityIcon.svg' width="80" height="80" alt="Eligibility" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Eligibility</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Requires you to provide a detailed description of the property you want to insure and show proof that you have a legitimate interest in insuring it.</p>
                                                         </div>
@@ -448,7 +448,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
+                                                            <Image src='/icons/directLossIcon.svg' width="80" height="80" alt="Direct Loss" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Direct Loss</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Covers immediate damage caused by the fire including destruction of buildings, equipment, furniture, inventory, and other physical assets within the property.</p>
                                                         </div>
@@ -457,7 +457,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
+                                                            <Image src='/icons/durationIcon.svg' width="80" height="80" alt="Policy Duration" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Policy Duration</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>The policy term is typically one year, with annual renewal required.</p>
                                                         </div>
@@ -466,7 +466,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 mt-lg-5 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
+                                                            <Image src='/icons/customizableIcon.svg' width="80" height="80" alt="Customizable" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Customizable</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Coverage options may be customized to meet the specific needs of a business.</p>
                                                         </div>
@@ -492,7 +492,7 @@ export default function GeneralLiability_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <img src='/icons/prodUser.svg' />
+                                                        <Image src='/icons/hotelIcon.svg' width="80" height="80" alt="Hotel Owners and Service Providers" />
                                                         <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Hotel Owners and Service Providers</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0'>Guard against the financial consequences of fire damage  to your hospitality or service-based business.</p>
                                                     </div>
@@ -501,7 +501,7 @@ export default function GeneralLiability_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <img src='/icons/prodUser.svg' />
+                                                        <Image src='/icons/shopIcon.svg' width="80" height="80" alt="Shop-keepers and Godown Owners" />
                                                         <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Shop-keepers and Godown Owners</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0 mt-2'>Protect your retail or storage space from the potential financial impact of a fire.</p>
                                                     </div>
@@ -510,7 +510,7 @@ export default function GeneralLiability_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <img src='/icons/prodUser.svg' />
+                                                        <Image src='/icons/manufacturingIcon.svg' width="80" height="80" alt="Manufacturing and Industrial Units" />
                                                         <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Manufacturing and Industrial Units</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0 mt-2'>Safeguard your operations, vehicles, and equipment with fire insurance.</p>
                                                     </div>
@@ -519,7 +519,7 @@ export default function GeneralLiability_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <img src='/icons/prodUser.svg' />
+                                                        <Image src='/icons/medicalIcon.svg' width="80" height="80" alt="Medical Clinics" />
                                                         <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Medical Clinics</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0 mt-2'>Protect your medical facility, equipment, and patient records from fire damage</p>
                                                     </div>
@@ -528,7 +528,7 @@ export default function GeneralLiability_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <img src='/icons/prodUser.svg' />
+                                                        <Image src='/icons/bankIcon.svg' width="80" height="80" alt="Banks and Other Institutions" />
                                                         <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Banks and Other Institutions</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0 mt-2'>Ensure the protection of your financial assets and operations with fire insurance.</p>
                                                     </div>
