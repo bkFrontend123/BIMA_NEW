@@ -287,7 +287,6 @@ export default function DAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
                                                             <Image src='/icons/sideA.svg' width="80" height="80" alt="Side A" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>1. Side A</h3>
                                                             <div className='title-22 font-weight-600 text-black mb-3'>Direct Indemnification</div>
@@ -298,7 +297,6 @@ export default function DAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodGlobe.svg' />
                                                             <Image src='/icons/sideB.svg' width="80" height="80" alt="Side B" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>2. Side B</h3>
                                                             <div className='title-22 font-weight-600 text-black mb-3'>Company Reimbursement</div>
@@ -309,7 +307,6 @@ export default function DAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
                                                             <Image src='/icons/sideC.svg' width="80" height="80" alt="Side C" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>3. Side C</h3>
                                                             <div className='title-22 font-weight-600 text-black mb-3'>Coverage for Entity</div>
