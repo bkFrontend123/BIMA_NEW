@@ -289,7 +289,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/importIcon.svg' width="100" height="100" alt="Import Marine Insurance" />
+                                                            <Image src='/icons/importMarineIcon.svg' width="80" height="80" alt="Import Marine Insurance" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Import Marine Insurance</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>This policy provides comprehensive coverage for any kind of import, from any global location to any destination in India. The primary modes of transit covered under this policy typically include air and sea transport.</p>
                                                         </div>
@@ -298,7 +298,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/exportIcon.svg' width="100" height="100" alt="Export Marine Insurance" />
+                                                            <Image src='/icons/exportMarineIcon.svg' width="80" height="80" alt="Export Marine Insurance" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Export Marine Insurance</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Specifically designed for exporters, this policy offers protection for any form of export, emanating from any part of India to destinations worldwide. The key transit methods incorporated in this policy are air and sea transport.</p>
                                                         </div>
@@ -307,7 +307,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/inlandIcon.svg' width="100" height="100" alt="Inland Marine Insurance" />
+                                                            <Image src='/icons/inlandMarineIcon.svg' width="80" height="80" alt="Inland Marine Insurance" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Inland Marine Insurance</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Catering to domestic transportation needs, this policy ensures coverage for the transfer of goods across India, predominantly by road and rail. This insurance type is ideal for mitigating risks associated with inland goods transportation.</p>
                                                         </div>
@@ -316,7 +316,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/alopIcon.svg' width="100" height="100" alt="ALOP Insurance" />
+                                                            <Image src='/icons/alopMarineIcon.svg' width="80" height="80" alt="ALOP Insurance" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>ALOP Insurance</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>It stands for Advanced Loss of Profit and is a particular type of business interruption insurance. It relates to the financial consequences of a project delay due to the occurrence of material damage to critical equipment during shipment. It is also known by the various names like Delay in Start-up, and Project-Cargo Marine/Consequential loss</p>
                                                         </div>
@@ -325,7 +325,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/eProductIcon.svg' width="100" height="100" alt="E-product Specific Voyage" />
+                                                            <Image src='/icons/eProductVoyageIcon.svg' width="80" height="80" alt="E-product Specific Voyage" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>E-product Specific Voyage</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>This insurance covers any manufactured e-product or device or any component of the same, and other interests from various losses and damages, such as fire, collisions, earthquakes, and lightning during a specific voyage.</p>
                                                         </div>
@@ -334,7 +334,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/coverIcon.svg' width="100" height="100" alt="Open Cover Agreement" />
+                                                            <Image src='/icons/agreementIcon.svg' width="80" height="80" alt="Open Cover Agreement" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Open Cover Agreement</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>It is an agreement (not a policy) in which the insurer will accept responsibility for the insurance of all shipments for a fixed period, usually 12 months, within the terms of the cover. Here, the insured party does not need to arrange separate insurance for each individual shipment.</p>
                                                         </div>
@@ -343,7 +343,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/lossIcon.svg' width="100" height="100" alt="Direct Loss" />
+                                                            <Image src='/icons/marineLossIcon.svg' width="80" height="80" alt="Direct Loss" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Direct Loss</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Unlike other marine policies that cover the value of items, this policy covers the sales turnover of a company. In this case, the insured receives coverage for all transits required to achieve sales. In this policy, imports & customs duties, raw materials, consumables, inter-factory, inter-depot, and job worker movement are covered. Along with that, export transit and temporary storage at intermediary locations such as ports and C&F facilities are covered also. Therefore, an annual turnover policy can satisfy all the requirements of a marine cargo insurance policy.</p>
                                                         </div>
@@ -352,7 +352,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/voyageIcon.svg' width="100" height="100" alt="Specific Voyage Policy" />
+                                                            <Image src='/icons/specificVoyageIcon.svg' width="80" height="80" alt="Specific Voyage Policy" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Specific Voyage Policy</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>It provides coverage for a specific single transit, from one location to another. It typically includes protection against various perils and risks that may occur during the transportation of goods. This policy concludes upon the journey's completion.</p>
                                                         </div>
@@ -361,7 +361,7 @@ export default function product() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/policyIcon.svg' width="100" height="100" alt="nnual Policy" />
+                                                            <Image src='/icons/annualPolicyIcon.svg' width="80" height="80" alt="Annual Policy" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Annual Policy</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>This policy is issued to cover marine cargo shipments from all potential perils for a period of 12 months.</p>
                                                         </div>
@@ -380,14 +380,14 @@ export default function product() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Obtaining a marine cargo insurance policy is highly recommended for any company involved in the transportation of goods, whether it's by sea, air, land, or inland waterways. It is highly sought after by shippers, cargo owners, logistic service providers, operators, freight forwarders, importers and exporters, etc. It protects shipping companies and couriers from potential losses stemming from natural disasters, cross-border conflicts, water transportation issues, inland & air transportation issues or cargo mishandling. It is an indemnity contract in which the insurer agrees to compensate the insured, within the policy's limits, for any loss or damage to property caused by specified perils.</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Which factors are considered when determining the premium for Marine Cargo Insurance?</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary mb-4 mb-xl-5'>Which factors are considered when determining the premium for Marine Cargo Insurance?</div>
                                         <Row>
                                             <Col xl={10} className='mx-auto'>
                                                 <Row className="g-4">
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Nature of the goods being transported" />
+                                                                <Image src='/icons/natureIcon.svg' width="80" height="80" alt="Nature of the goods being transported" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Nature of the goods being transported</p>
                                                         </div>
@@ -395,7 +395,7 @@ export default function product() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="The modes of transportation" />
+                                                                <Image src='/icons/transportationIcon.svg' width="80" height="80" alt="The modes of transportation" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>The modes of transportation</p>
                                                         </div>
@@ -403,7 +403,7 @@ export default function product() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Type of packaging" />
+                                                                <Image src='/icons/packagingIcon.svg' width="80" height="80" alt="Type of packaging" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Type of packaging</p>
                                                         </div>
@@ -411,7 +411,7 @@ export default function product() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Geographical trading restrictions" />
+                                                                <Image src='/icons/geographicalIcon.svg' width="80" height="80" alt="Geographical trading restrictions" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Geographical trading restrictions</p>
                                                         </div>
@@ -419,7 +419,7 @@ export default function product() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Type of Chosen insurance coverage" />
+                                                                <Image src='/icons/choosenCoverageIcon.svg' width="80" height="80" alt="Type of Chosen insurance coverage" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Type of Chosen insurance coverage</p>
                                                         </div>
@@ -427,7 +427,7 @@ export default function product() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Ownership and contractual terms" />
+                                                                <Image src='/icons/ownershipIcon.svg' width="80" height="80" alt="Ownership and contractual terms" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Ownership and contractual terms</p>
                                                         </div>

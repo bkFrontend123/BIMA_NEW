@@ -316,7 +316,7 @@ export default function GeneralLiability_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>No matter what industry you're in or the size of business, having General Liability Insurance is a smart move. Because of its comprehensive nature, this insurance policy fits most businesses that have interactions with customers. From retail shops and tech startups to large manufacturers, this policy protects against legal and financial issues from third-party claims.</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>General Liability insurance is necessary for various kinds of businesses:</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary mb-4 mb-xl-5'>General Liability insurance is necessary for various kinds of businesses:</div>
                                         <Row>
                                             <Col xl={10} className='mx-auto'>
                                                 <Row className="g-4">
