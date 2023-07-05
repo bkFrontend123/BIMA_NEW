@@ -331,7 +331,7 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/cafesIcon1.svg' width="100" height="100" alt="Restaurants and cafes" />
+                                                                <Image src='/icons/cafesIcon.svg' width="100" height="100" alt="Restaurants and cafes" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Restaurants and cafes</p>
                                                         </div>
