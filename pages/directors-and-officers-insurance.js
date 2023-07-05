@@ -288,6 +288,7 @@ export default function DAndO_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/sideA.svg' width="80" height="80" alt="Side A" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>1. Side A</h3>
                                                             <div className='title-22 font-weight-600 text-black mb-3'>Direct Indemnification</div>
                                                             <p className='title-18 font-weight-500 text-black m-0'>The D&O policy offers liability cover for company managers, officials, and directors to protect them from claims which may arise from the decisions and actions taken within the scope of their regular managerial duties.</p>
@@ -298,6 +299,7 @@ export default function DAndO_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodGlobe.svg' />
+                                                            <Image src='/icons/sideB.svg' width="80" height="80" alt="Side B" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>2. Side B</h3>
                                                             <div className='title-22 font-weight-600 text-black mb-3'>Company Reimbursement</div>
                                                             <p className='title-18 font-weight-500 text-black m-0'>When a company indemnifies (provides financial protection) its directors or officers for a covered claim under the policy, Side B Coverage ensures that the company is reimbursed for the expenses they've incurred during the process. In essence, it's an insurance policy that protects the company's financial interests by reimbursing them after they've supported their insured individuals in a legal matter.</p>
@@ -308,6 +310,7 @@ export default function DAndO_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUShield.svg' />
+                                                            <Image src='/icons/sideC.svg' width="80" height="80" alt="Side C" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>3. Side C</h3>
                                                             <div className='title-22 font-weight-600 text-black mb-3'>Coverage for Entity</div>
                                                             <p className='title-18 font-weight-500 text-black m-0'>It is designed to protect the company as a whole from certain legal claims, regardless of whether the directors or officers are directly involved in the underlying dispute. This coverage typically addresses two main areas: Employment Disputes & Security Related Issues.</p>
@@ -419,15 +422,15 @@ export default function DAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/suppliersIcon.svg' width="80" height="80" alt="" />
+                                                            <Image src='/icons/suppliersIcon.svg' width="80" height="80" alt="Suppliers" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Suppliers</h3>
                                                         </div>
                                                         <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/employeesIcon.svg' width="80" height="80" alt="" />
+                                                            <Image src='/icons/employeesIcon.svg' width="80" height="80" alt="Employees" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Employees</h3>
                                                         </div>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/competitorsIcon.svg' width="80" height="80" alt="" />
+                                                            <Image src='/icons/competitorsIcon.svg' width="80" height="80" alt="Competitors" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Competitors</h3>
                                                         </div>
                                                     </div>
@@ -435,15 +438,15 @@ export default function DAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/regulatoryBodiesIcon.svg' width="80" height="80" alt="" />
+                                                            <Image src='/icons/regulatoryBodiesIcon.svg' width="80" height="80" alt="Regulatory Bodie" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Regulatory Bodies</h3>
                                                         </div>
                                                         <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/clientsIcon.svg' width="80" height="80" alt="" />
+                                                            <Image src='/icons/clientsIcon.svg' width="80" height="80" alt="Clients" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Clients</h3>
                                                         </div>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/shareholdersIcon.svg' width="80" height="80" alt="" />
+                                                            <Image src='/icons/shareholdersIcon.svg' width="80" height="80" alt="Shareholders" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Shareholders</h3>
                                                         </div>
                                                     </div>
@@ -451,7 +454,7 @@ export default function DAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`border-0 pb-0 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/stakeholdersIcon.svg' width="80" height="80" alt="" />
+                                                            <Image src='/icons/stakeholdersIcon.svg' width="80" height="80" alt="Other Stakeholder" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Other Stakeholders</h3>
                                                         </div>
                                                     </div>
