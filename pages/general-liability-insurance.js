@@ -323,15 +323,7 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Retail store owners" />
-                                                            </span>
-                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Restaurants and cafes</p>
-                                                        </div>
-                                                    </Col>
-                                                    <Col lg={4}>
-                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
-                                                            <span>
-                                                                <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="Retail store owners" />
+                                                                <Image src='/icons/storeIcon.svg' width="100" height="100" alt="Retail store owners" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Retail store owners</p>
                                                         </div>
@@ -339,7 +331,15 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Contractors and construction companies" />
+                                                                <Image src='/icons/cafesIcon1.svg' width="100" height="100" alt="Restaurants and cafes" />
+                                                            </span>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Restaurants and cafes</p>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={4}>
+                                                        <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                            <span>
+                                                                <Image src='/icons/constructionIcon.svg' width="100" height="100" alt="Contractors and construction companies" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Contractors and construction companies</p>
                                                         </div>
@@ -347,7 +347,7 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Fitness centers like gyms, yoga studios" />
+                                                                <Image src='/icons/yogaIcon.svg' width="100" height="100" alt="Fitness centers like gyms, yoga studios" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Fitness centers like gyms, yoga studios</p>
                                                         </div>
@@ -355,7 +355,7 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Cleaning services" />
+                                                                <Image src='/icons/cleanIcon.svg' width="100" height="100" alt="Cleaning services" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Cleaning services</p>
                                                         </div>
@@ -363,7 +363,7 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Event planning companies" />
+                                                                <Image src='/icons/planningIcon.svg' width="100" height="100" alt="Event planning companies" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Event planning companies</p>
                                                         </div>
@@ -371,7 +371,7 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/techIcon.svg' width="100" height="100" alt="Tech startups" />
+                                                                <Image src='/icons/techStartupsIcon.svg' width="100" height="100" alt="Tech startups" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Tech startups</p>
                                                         </div>
@@ -379,7 +379,7 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/manufacturersIcon.svg' width="100" height="100" alt="Manufacturers and distributors" />
+                                                                <Image src='/icons/distributorsIcon.svg' width="100" height="100" alt="Manufacturers and distributors" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Manufacturers and distributors</p>
                                                         </div>
@@ -387,7 +387,7 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/plannersIcon.svg' width="100" height="100" alt="Event planners" />
+                                                                <Image src='/icons/eventPlannersIcon.svg' width="100" height="100" alt="Event planners" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Event planners</p>
                                                         </div>
@@ -395,7 +395,7 @@ export default function GeneralLiability_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/serviceIcon.svg' width="100" height="100" alt="Professional service providers" />
+                                                                <Image src='/icons/providersIcon.svg' width="100" height="100" alt="Professional service providers" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Professional service providers (consultants, lawyers, accountants)</p>
                                                         </div>
