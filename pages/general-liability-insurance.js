@@ -424,7 +424,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/operationalAccidentsIcon.svg' width="80" height="80" alt="perational accidents" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Operational accidents</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>It covers legal fees, settlements, or judgment costs for accidents, injuries, and damages arising from your business operations, products, or services.</p>
                                                         </div>
@@ -433,7 +433,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodGlobe.svg' />
+                                                            <Image src='/icons/propertyDamageIcon.svg' width="80" height="80" alt="Third-party property damage" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Third-party property damage</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>It safeguards your business in instances where your company or employees cause damage to a third party's property, whether through direct actions or negligence.</p>
                                                         </div>
@@ -442,7 +442,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
+                                                            <Image src='/icons/bodilyInjuryIcon.svg' width="80" height="80" alt="Bodily injury" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Bodily injury</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>It protects your business from claims related to bodily injuries resulting from accidents on your premises or due to your business operations</p>
                                                         </div>
@@ -451,7 +451,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/injuryIcon.svg' width="80" height="80" alt="Personal and advertising injury" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Personal and advertising injury</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>It covers claims involving defamation, libel, slander, copyright infringement, or invasion of privacy associated with your business activities, including advertising efforts that may cause harm to others.</p>
                                                         </div>
