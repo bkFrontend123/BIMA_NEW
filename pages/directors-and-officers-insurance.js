@@ -419,15 +419,15 @@ export default function DAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/suppliersIcon.svg' width="80" height="80" alt="" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Suppliers</h3>
                                                         </div>
                                                         <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/employeesIcon.svg' width="80" height="80" alt="" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Employees</h3>
                                                         </div>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/competitorsIcon.svg' width="80" height="80" alt="" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Competitors</h3>
                                                         </div>
                                                     </div>
@@ -435,15 +435,15 @@ export default function DAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/regulatoryBodiesIcon.svg' width="80" height="80" alt="" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Regulatory Bodies</h3>
                                                         </div>
                                                         <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/clientsIcon.svg' width="80" height="80" alt="" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Clients</h3>
                                                         </div>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/shareholdersIcon.svg' width="80" height="80" alt="" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Shareholders</h3>
                                                         </div>
                                                     </div>
@@ -451,7 +451,7 @@ export default function DAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`border-0 pb-0 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/stakeholdersIcon.svg' width="80" height="80" alt="" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Other Stakeholders</h3>
                                                         </div>
                                                     </div>
