@@ -354,7 +354,8 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Legal Representation Costs</h3>
+                                                            <Image src='/icons/legalCostsIcon.svg' width="80" height="80" alt="Legal Representation Costs" />
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Legal Representation Costs</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>E&O insurance safeguards you from the financial burden of legal representation expenses when facing lawsuits. Whether in court or negotiating with regulators, this coverage ensures you have the support you need,including the cost of settlements.</p>
                                                         </div>
                                                     </div>
@@ -362,6 +363,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/employeeDishonestyIcon.svg' width="80" height="80" alt="Employee Dishonesty" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Employee Dishonesty</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Protect your business from third-party claims resulting from frauds or dishonest acts conducted by your employees. E&O insurance covers investigation costs, legal fees, and damages caused by their actions.</p>
                                                         </div>
@@ -370,6 +372,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/subsidiaryCoverageIcon.svg' width="80" height="80" alt="Automatic Subsidiary Coverage" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Automatic Subsidiary Coverage</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Newly created or acquired subsidiaries will be seamlessly incorporated into the policy, requiring only a minimal amount of additional paperwork. However, this inclusion is contingent upon the acquired company being not more than one-fourth the size of the company implementing the policy.</p>
                                                         </div>
@@ -378,6 +381,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/errorServiceIcon.svg' width="80" height="80" alt="Error in Service" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Error in Service</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>If an employee makes an error while providing a service then E&O insurance covers resulting claims.</p>
                                                         </div>
@@ -386,6 +390,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/mitigationCostsIcon.svg' width="80" height="80" alt="Mitigation Costs" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Mitigation Costs</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>In case of errors and omissions, you might need to take steps to reduce or prevent further damage or loss. The policy can help cover the cost of repairs, replacements, and other expenses incurred in such cases</p>
                                                         </div>
@@ -394,6 +399,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/courtFeesIcon.svg' width="80" height="80" alt="Court Attendance Fees" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Court Attendance Fees</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Cover losses for attending court due to an E&O lawsuit, including lawyer's fees, travel expenses, and lost wages.</p>
                                                         </div>
@@ -402,6 +408,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/lossDocumentIcon.svg' width="80" height="80" alt="Loss of Document" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Loss of Document</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>In case of a lawsuit alleging loss or destruction of important documents, this policy will cover the legal and claim charges</p>
                                                         </div>
@@ -410,6 +417,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/professionalEnquiryIcon.svg' width="80" height="80" alt="Professional Inquiry Investigation" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Professional Inquiry Investigation</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'> If an investigation or inquiry is conducted by a professional regulatory body, such as an industry association or government agency, this coverage indemnifies the loss incurred by the insured. It covers the costs of legal fees, settlements, fines, or judgments that may arise from such an investigation.</p>
                                                         </div>
