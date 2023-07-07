@@ -29,8 +29,8 @@ export default function Custom404() {
                 <p className='errorPage-commnHeadingDescrip title-22 font-weight-500 text-black mt-2 '>But fret not! Feel free to browse our Home page, visit our Blog, or message us about your specific needs.<span className='d-block'></span>We are all ears and eager to help you!</p>
               </div>
 
-              <form className='errorForm'>
-                <div className="form-group errorForm-search">
+              {/*<form className='errorForm'>
+			  <div className="form-group errorForm-search">
                   <div className="input-group border-primary border2" style={{ height: "50px" }}>
                     <div className="input-group-prepend">
                       <div className="input-group-text pe-0 ps-4 h-100 bg-transparent border-0">
@@ -43,9 +43,9 @@ export default function Custom404() {
                       placeholder="Search our site"
                     />
                   </div>
-                </div>
-
-                {/*<div className='errorForm-result'>
+			  </div>
+			  
+			  <div className='errorForm-result'>
                   <div className='errorForm-resultCard mb-md-5 mb-3'>
                     <div>
                       <Link className='errorForm-resultCardTitle title-24 font-weight-500 text-yellow text-decoration-none d-inline-block' href="">
@@ -83,8 +83,8 @@ export default function Custom404() {
                     <div className=' title-18 font-weight-500 mt-3'>Contact Our Experts about anything related to our Products</div>
                   </div>
 
-                </div>*/}
-              </form>
+                </div>
+              </form>*/}
             </div>
           </div>
         </div>
