@@ -263,11 +263,56 @@ body .mainMenu.navbar .navbar-brand img{
    color: var(--vt-c-yellow) !important
  }  
 
-.homeBannerProduct::before {
+ .homeBannerProduct {
+   border: 0 !important;
+   position: relative;
+ }
+ .homeBannerProduct::before {
    position: absolute;
    content: "";
+   background-image: url(/icons/border.png);
+   background-repeat: repeat-y;
+   width: 3px;
+   left: 0;
+   top: 0;
+   bottom: 0;
 }
-
+.homeBannerProduct::after {
+   position: absolute;
+   content: "";
+   background-image: url(/icons/border.png);
+   background-repeat: repeat-y;
+   width: 3px;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   transform: rotate(180deg);
+}
+.homeBannerProductOuter {
+   position: relative;
+}
+.homeBannerProductOuter::before {
+   position: absolute;
+   content: "";
+   background-image: url(/icons/border1.png);
+   background-repeat: repeat-x;
+   height: 3px;
+   left: 0;
+   right: 0;
+   top: 0;
+   z-index: 1;
+}
+.homeBannerProductOuter::after {
+   position: absolute;
+   content: "";
+   background-image: url(/icons/border2.png);
+   background-repeat: repeat-x;
+   height: 3px;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+}
 /****Badge****/
 .badgeIconCol {
    position: relative;
