@@ -36,150 +36,152 @@ export default function IndustryBlock() {
   ]
   return (
     <>
-      <div className='homeBannerProduct container bg-white'>
-        <div className='row'>
-          <div className={`col-12`} >
-            <div className='homeBannerProduct-heading d-md-flex align-items-center'>
-              <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Liability Insurance</div>
-              <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
+      <div className='homeBannerProductOuter container p-0'>
+        <div className='homeBannerProduct container bg-white'>
+          <div className='row'>
+            <div className={`col-12`} >
+              <div className='homeBannerProduct-heading d-md-flex align-items-center'>
+                <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Liability Insurance</div>
+                <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className='row g-4 g-lg-5 liabilityInsurance'>
-          {liabilityInsurance.map((item) =>
-            <div key={item.id} className="col-lg-3 col-6">
-              <div className='onhoverAnimation'>
-                <div className={`homeBannerProduct-card d-lg-flex w-100 align-items-center ${item.class}`}>
-                  <Image
-                    // loader={myLoader}
-                    src={item.img}
-                    alt="Bimakavach"
-                    width={52}
-                    height={52}
-                  />
-                  <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
+          <div className='row g-4 g-lg-5 liabilityInsurance'>
+            {liabilityInsurance.map((item) =>
+              <div key={item.id} className="col-lg-3 col-6">
+                <div className='onhoverAnimation'>
+                  <div className={`homeBannerProduct-card d-lg-flex w-100 align-items-center ${item.class}`}>
+                    <Image
+                      // loader={myLoader}
+                      src={item.img}
+                      alt="Bimakavach"
+                      width={52}
+                      height={52}
+                    />
+                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
+                      <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
 
-        <div className='row'>
-          <div className={`col-12`} >
-            <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
-              <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Asset Insurance</div>
-              <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
+          <div className='row'>
+            <div className={`col-12`} >
+              <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
+                <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Asset Insurance</div>
+                <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className='row g-4 g-lg-5 assetInsurance'>
-          {assetInsurance.map((item) =>
-            <div key={item.id} className="col-lg-3 col-6">
-              <div className='onhoverAnimation'>
-                <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
-                  <Image
-                    // loader={myLoader}
-                    src={item.img}
-                    alt="Bimakavach"
-                    width={52}
-                    height={52}
-                  />
-                  <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
+          <div className='row g-4 g-lg-5 assetInsurance'>
+            {assetInsurance.map((item) =>
+              <div key={item.id} className="col-lg-3 col-6">
+                <div className='onhoverAnimation'>
+                  <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
+                    <Image
+                      // loader={myLoader}
+                      src={item.img}
+                      alt="Bimakavach"
+                      width={52}
+                      height={52}
+                    />
+                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
+                      <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
 
-        {/*<div className='row'>
-          <div className={`col-12`} >
-            <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
-              <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Engineering Insurance</div>
-              <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
+          {/*<div className='row'>
+            <div className={`col-12`} >
+              <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
+                <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Engineering Insurance</div>
+                <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className='row g-4 g-lg-5 engineeringInsurance'>
-          {engineeringInsurance.map((item) =>
-            <div key={item.id} className="col-lg-3 col-6">
-              <div className='onhoverAnimation'>
-                <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
-                  <Image
-                    src={item.img}
-                    alt="Bimakavach"
-                    width={52}
-                    height={52}
-                  />
-                  <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
+          <div className='row g-4 g-lg-5 engineeringInsurance'>
+            {engineeringInsurance.map((item) =>
+              <div key={item.id} className="col-lg-3 col-6">
+                <div className='onhoverAnimation'>
+                  <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
+                    <Image
+                      src={item.img}
+                      alt="Bimakavach"
+                      width={52}
+                      height={52}
+                    />
+                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
+                      <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
 
-        <div className='row'>
-          <div className={`col-12`} >
-            <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
-              <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Employee Benefits</div>
-              <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
+          <div className='row'>
+            <div className={`col-12`} >
+              <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
+                <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Employee Benefits</div>
+                <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className='row g-4 g-lg-5 employeeBenefits'>
-          {employeeBenefits.map((item) =>
-            <div key={item.id} className="col-lg-3 col-6">
-              <div className='onhoverAnimation'>
-                <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
-                  <Image
-                    src={item.img}
-                    alt="Bimakavach"
-                    width={52}
-                    height={52}
-                  />
-                  <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
+          <div className='row g-4 g-lg-5 employeeBenefits'>
+            {employeeBenefits.map((item) =>
+              <div key={item.id} className="col-lg-3 col-6">
+                <div className='onhoverAnimation'>
+                  <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
+                    <Image
+                      src={item.img}
+                      alt="Bimakavach"
+                      width={52}
+                      height={52}
+                    />
+                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
+                      <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          )}
-        </div>*/}
+            )}
+          </div>*/}
 
-        <div className='row'>
-          <div className={`col-12`} >
-            <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
-              <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Marine Insurance</div>
-              <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
+          <div className='row'>
+            <div className={`col-12`} >
+              <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
+                <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Marine Insurance</div>
+                <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className='row g-4 g-lg-5 marineInsurance'>
-          {marineInsurance.map((item) =>
-            <div key={item.id} className="col-lg-3 col-6">
-              <div className='onhoverAnimation'>
-                <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
-                  <Image
-                    // loader={myLoader}
-                    src={item.img}
-                    alt="Bimakavach"
-                    width={52}
-                    height={52}
-                  />
-                  <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
+          <div className='row g-4 g-lg-5 marineInsurance'>
+            {marineInsurance.map((item) =>
+              <div key={item.id} className="col-lg-3 col-6">
+                <div className='onhoverAnimation'>
+                  <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
+                    <Image
+                      // loader={myLoader}
+                      src={item.img}
+                      alt="Bimakavach"
+                      width={52}
+                      height={52}
+                    />
+                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
+                      <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
 
+        </div>
       </div>
       <style jsx scope>
           {`
