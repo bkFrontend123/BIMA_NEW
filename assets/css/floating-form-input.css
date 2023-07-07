@@ -1,0 +1,35 @@
+.floatFormGroup .form-floating > label {
+    background: var(--whiteBg);
+    left: 10px;
+    top: 19px;
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    padding: 0 10px;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
+}
+.floatFormGroup .form-floating > .form-control:focus ~ label,
+.floatFormGroup .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.floatFormGroup .form-floating > .form-select ~ label {
+    opacity: 1;
+    transform: scale(1) translateY(-30px) translateX(0);
+}
+.floatFormGroup .form-floating > .form-control:focus,
+.floatFormGroup .form-floating > .form-control:not(:placeholder-shown) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+@media (max-width:767px) {
+    .floatFormGroup .form-floating > label {
+        left: 6px;
+        top: 16px;
+        font-size: 15px;
+    }
+    .floatFormGroup .form-floating > .form-control:focus ~ label,
+    .floatFormGroup .form-floating > .form-control:not(:placeholder-shown) ~ label,
+    .floatFormGroup .form-floating > .form-select ~ label {
+        transform: scale(1) translateY(-27px) translateX(0);
+    }
+}

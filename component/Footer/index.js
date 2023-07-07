@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="col-xl-11 mx-auto pe-xl-5">
             <div className=''>
               <div className="row">
-                <div className="col-md-5 footerLogo">
+                <div className="col-md footerLogo">
                   <Link href="/">
                     <Image
                       // loader={myLoader}
@@ -36,7 +36,9 @@ export default function Footer() {
                       height={68}
                     />
                   </Link>
-                  <p className='title18 text-primarySkyLight2 font-weight-400 mt-4 mt-lg-5 mb-3'>Subscribe to our Newsletter</p>
+                </div>
+                <div className="col-md-auto">
+                  <p className='title18 text-primarySkyLight2 font-weight-400 mb-3'>Subscribe to our Newsletter</p>
                   <div className='ftrNwsltr'>
                     <Form>
                       <Form.Control
@@ -50,45 +52,10 @@ export default function Footer() {
                     </Form>
                   </div>
                 </div>
-                <div className="col-md-4">
-                  <div className="footer-listMenu-list border-0 mt-3 mt-md-0">
-                      <ul className="list-group list-group-borderless bg-transparent ">
-                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">Company</li>
-                        <li className="list-group-item">
-                          <Link href="/about" className='title18 font-weight-400'>About</Link>
-                        </li>
-                        <li className="list-group-item">
-                          <Link target='_blank' href="https://www.bimakavach.com/blog/" className='title18 font-weight-400'>Blogs</Link>
-                        </li>
-                        {/*<li className="list-group-item">
-                          <Link href="/" className='title18 font-weight-400'>Resource Hub</Link>
-                        </li>
-                        <li className="list-group-item">
-                          <Link href="/" className='title18 font-weight-400'>White Papers</Link>
-                        </li>
-                        <li className="list-group-item">
-                          <Link href="/career" className='title18 font-weight-400'>Careers at BimaKavach</Link>
-                        </li>*/}
-                      </ul>
-                    </div>
-                </div>
-                <div className="col-md-3">
-                  <div className="footer-listMenu-list border-0">
-                      <ul className="list-group list-group-borderless bg-transparent ">
-                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">Get in Touch</li>
-                        <li className="list-group-item">
-                          <Link href="mailto:support@bimakavach.co" className='title18 font-weight-400'>support@bimakavach.com</Link>
-                        </li>
-                        <li className="list-group-item">
-                          <Link href="tel:+91 9036554785" className='title18 font-weight-400'>+91 9036554785</Link>
-                        </li>
-                      </ul>
-                    </div>
-                </div>
               </div>
               <div className='d-none d-md-block' style={{ height: "90px" }}></div>
               <div className='d-block d-md-none' style={{ height: "0" }}></div>
-              <div className="text-white title-30 font-weight-600 mb-2 mb-md-4 text-end text-md-start">Our Products</div>
+              <div className="text-white title-30 font-weight-600 mt-4 mt-md-0 mb-2 mb-md-4 text-end text-md-start">Our Products</div>
               <div className="row footer-listMenu">
                 <div className="col-md-4">
                   <div className="footer-listMenu-list border-0">
@@ -123,7 +90,7 @@ export default function Footer() {
                 </div>
                 <div className="col-md-4">
                   <div className="footer-listMenu-list footer-listMenu-listALign">
-                    <ul className="list-group list-group-borderless bg-transparent ">
+                    <ul className="list-group list-group-borderless bg-transparent">
                       <li className="list-group-item text-yellow title20 font-weight-600">Asset</li>
                       <li className="list-group-item">
                         <Link href="/fire-and-burglary-insurance" className='title18 font-weight-400'>Fire Insurance</Link>
@@ -144,6 +111,19 @@ export default function Footer() {
                         <span className='title18 font-weight-400'>Hospitals & Clinics</span>
                       </li>*/}
                     </ul>
+                    <ul className="list-group list-group-borderless bg-transparent">
+                      {/*<li className="list-group-item text-yellow title20 font-weight-600">For Employees</li>
+                      <li className="list-group-item">
+                        <span className='title18 font-weight-400'>Group Health Insurance</span>
+                      </li>
+                      <li className="list-group-item">
+                        <span className='title18 font-weight-400'>Group Personal Accident</span>
+                      </li>*/}
+                      <li className="list-group-item text-yellow title20 font-weight-600 mt-4">Marine</li>
+                      <li className="list-group-item">
+                        <Link href="/marine-cargo-insurance" className='title18 font-weight-400'>Marine Transit</Link>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 {/*<div className="col-md-4">
@@ -163,21 +143,35 @@ export default function Footer() {
                   </div>
                 </div>*/}
                 <div className="col-md-4">
-                  <div className="footer-listMenu-list footer-listMenu-listALign">
-                    <ul className="list-group list-group-borderless bg-transparent ">
-                      {/*<li className="list-group-item text-yellow title20 font-weight-600">For Employees</li>
-                      <li className="list-group-item">
-                        <span className='title18 font-weight-400'>Group Health Insurance</span>
-                      </li>
-                      <li className="list-group-item">
-                        <span className='title18 font-weight-400'>Group Personal Accident</span>
-                      </li>*/}
-                      <li className="list-group-item text-yellow title20 font-weight-600 mt-4">Marine</li>
-                      <li className="list-group-item">
-                        <Link href="/marine-cargo-insurance" className='title18 font-weight-400'>Marine Transit</Link>
-                      </li>
-                    </ul>
-                  </div>
+                  <div className="footer-listMenu-list border-0">
+                      <ul className="list-group list-group-borderless bg-transparent ">
+                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">Company</li>
+                        <li className="list-group-item">
+                          <Link href="/about" className='title18 font-weight-400'>About Us</Link>
+                        </li>
+                        <li className="list-group-item">
+                          <Link target='_blank' href="https://www.bimakavach.com/blog/" className='title18 font-weight-400'>Blog</Link>
+                        </li>
+                        {/*<li className="list-group-item">
+                          <Link href="/" className='title18 font-weight-400'>Resource Hub</Link>
+                        </li>
+                        <li className="list-group-item">
+                          <Link href="/" className='title18 font-weight-400'>White Papers</Link>
+                        </li>
+                        <li className="list-group-item">
+                          <Link href="/career" className='title18 font-weight-400'>Careers at BimaKavach</Link>
+                        </li>*/}
+                      </ul>
+                      <ul className="list-group list-group-borderless bg-transparent ">
+                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">Get in Touch</li>
+                        <li className="list-group-item">
+                          <Link href="mailto:support@bimakavach.co" className='title18 font-weight-400'>support@bimakavach.com</Link>
+                        </li>
+                        <li className="list-group-item">
+                          <Link href="tel:+91 9036554785" className='title18 font-weight-400'>+91 9036554785</Link>
+                        </li>
+                      </ul>
+                    </div>
                 </div>
               </div>
               <div className='d-none d-md-block' style={{ height: "90px" }}></div>
@@ -185,7 +179,12 @@ export default function Footer() {
 
               <div className="row footer-note text-md-start text-center">
                 <div className="col-md-12">
-                  <div className='d-block d-none' style={{ height: "40px" }}></div>
+                  <p className='title12 text-yellow text-uppercase font-weight-500 mb-1'>*The estimated premium mentioned above is calculated under ideal conditions.</p>
+                  <p className='title12 text-yellow text-uppercase font-weight-500 mb-1'>The actual pricing will vary based on the specific information provided by the insured.</p>
+                </div>
+              </div>
+              <div className="row footer-note text-md-start text-center mt-4">
+                <div className="col-md-12">
                   <p className='title12 text-primarySkyLight1 font-weight-600 text-uppercase mb-1'>Disclaimer:</p>
                   <p className='title12 text-primarySkyLight2 text-uppercase font-weight-500 mb-1'>BimaKavach Insurance Broking Pvt. Ltd. |CIN- U66010MP2022PTC059393 | Registered  Office- Flat No 201, Classic Avenue,184 Shrinagar Main, Indore Madhya Pradesh India- 452018 | Phone No.- 9036554785 | Email- support@bimakavach.com </p>
 

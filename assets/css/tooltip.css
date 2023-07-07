@@ -1,0 +1,44 @@
+.tooltipIcon {
+    cursor: pointer;
+}
+.tooltipDiv .tooltipIcon {
+    position: absolute;
+    right: 40px;
+    top: 16px;
+    z-index: 1;
+}
+.tooltip {
+    opacity: 1;
+}
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow:before,.bs-tooltip-top .tooltip-arrow:before {
+    border-top-color: var(--vt-c-blueExtraLight1);
+}
+.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow:before,.bs-tooltip-end .tooltip-arrow:before {
+    border-right-color: var(--vt-c-blueExtraLight1);
+}
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow:before,.bs-tooltip-bottom .tooltip-arrow:before {
+    border-bottom-color: var(--vt-c-blueExtraLight1);
+}
+.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow:before,.bs-tooltip-start .tooltip-arrow:before {
+    border-left-color: var(--vt-c-blueExtraLight1);
+}
+
+.tooltip-inner {
+    background-color: var(--vt-c-blueExtraLight1);
+    max-width: 300px !important;
+    font-size: 14px;
+    font-family: 'Galano Grotesque', sans-serif;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+}
+
+@media (max-width:767px) {
+    .tooltipDiv .tooltipIcon {
+        right: 34px;
+        top: 12px;
+    }
+    .tooltipIcon img {
+        width: 20px;
+        height: 20px;
+    }
+}

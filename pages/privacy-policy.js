@@ -20,9 +20,9 @@ export default function About() {
                             <div className='commnHeading text-start'>
                                 <div className='polyBox border-primary bg-blueLight mb-md-4 mb-2 text-primary title-12 text-uppercase font-weight-700'>PRIVACY POLICY</div>
                                 <div className='title-60 font-secondary mb-md-3 mb-2 text-primary font-weight-700'>BimaKavach Insurance Broking Pvt. Ltd. Privacy Policy</div>
-                                <p className='title-22 font-weight-500 text-muted mb-0'>
-                                    <span className='me-2'>
-                                        <svg width="24" height="24" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <p className='title-16 font-weight-500 text-muted mb-0'>
+                                    <span className='me-1'>
+                                        <svg width="18" height="18" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M8.53333 1.03333C8.53333 0.738781 8.29455 0.5 8 0.5C7.70545 0.5 7.46667 0.738781 7.46667 1.03333V7.2124L4.22877 3.97451C4.02049 3.76623 3.68281 3.76623 3.47453 3.97451C3.26625 4.18279 3.26625 4.52047 3.47453 4.72875L6.71244 7.96667H0.533333C0.238782 7.96667 0 8.20545 0 8.5C0 8.79455 0.238782 9.03333 0.533333 9.03333H6.71244L3.47453 12.2712C3.26625 12.4795 3.26625 12.8172 3.47453 13.0255C3.68281 13.2338 4.0205 13.2338 4.22878 13.0255L7.46667 9.7876V15.9667C7.46667 16.2612 7.70545 16.5 8 16.5C8.29455 16.5 8.53333 16.2612 8.53333 15.9667V9.78756L11.7712 13.0255C11.9795 13.2338 12.3172 13.2338 12.5255 13.0255C12.7338 12.8172 12.7338 12.4795 12.5255 12.2712L9.2876 9.03333H15.4667C15.7612 9.03333 16 8.79455 16 8.5C16 8.20545 15.7612 7.96667 15.4667 7.96667H9.2876L12.5255 4.72877C12.7338 4.52049 12.7338 4.1828 12.5255 3.97452C12.3172 3.76624 11.9795 3.76624 11.7712 3.97452L8.53333 7.21244V1.03333Z" fill="#575757" />
                                         </svg>
                                     </span> Last updated: 2022-06-26 viz. June 26, 2023
@@ -113,6 +113,10 @@ export default function About() {
                     .title-20 {
                         font-size: 18px;
                         line-height: 30px;
+                    }
+                    .title-16 span {
+                        position: relative;
+                        top: -3px;
                     }
                     @media only screen and (max-width: 1450px) {
                         .infrmtnPage {

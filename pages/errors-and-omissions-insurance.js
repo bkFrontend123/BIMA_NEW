@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import {Container, Row, Col, Form, FloatingLabel, Button} from 'react-bootstrap';
 // import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // import the styles
@@ -184,7 +184,7 @@ export default function EAndO_Insurance() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        router.push('/directors_and_officers_form');
+        router.push('/errors-and-omissions-flow');
     };
     return (
         <>
@@ -200,27 +200,35 @@ export default function EAndO_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Errors & Omissions Insurance"
-                        description="Errors and Omissions Insurance is specifically designed to protect businesses that provide professional services or advice to clients. Despite your best efforts, there's always a possibility of human error, a miscommunication, or an unmet expectation. If these situations lead to disputes and legal claims, Errors and Omissions Insurance steps in. Also called Professional Indemnity Insurance, it is your shield against your clients."
+                        description="Errors and Omissions Insurance is specifically designed to protect businesses that provide professional services or advice to clients. Despite your best efforts, there's always a possibility of human error, a miscommunication, or an unmet expectation. If these situations lead to disputes and legal claims, errors and omissions insurance steps in. Also called Professional Indemnity Insurance, it is your shield against your clients."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="20,000"
                         customClass="eAndoBnr"
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="companyName" label="Your Company Name">
+                                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="name" label="Your Name">
+                                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="phoneNumber" label="Your Phone Number">
+                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="workEmail" label="Your Work Email Address">
+                                        <Form.Control className={`${form.formInput}`} type="email" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
+                                    <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
                                         <span className='me-2'>Buy Now</span>
                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                     </Button>
@@ -272,7 +280,7 @@ export default function EAndO_Insurance() {
                             <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Errors & Omissions Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Errors & Omissions Insurance acknowledges the inherent risk in offering expert services: the risk of making a mistake or failing to meet a client's expectations.</p>
 
@@ -306,13 +314,13 @@ export default function EAndO_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The types of businesses that need professional liability coverage to mitigate their risk include:</p>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                             <li>SaaS, PaaS, IaaS</li>
-                                            <li>Banks, NBFCs, FinTech</li>
-                                            <li>EdTech</li>
-                                            <li>E-Commerce</li>
-                                            <li>IT Services</li>
-                                            <li>B2B Consulting</li>
-                                            <li>Media & Advertising</li>
-                                            <li>Doctors, Lawyers, Architects, etc</li>
+                                            <li>Banks, NBFCs, Fintech</li>
+                                            <li>Edtech</li>
+                                            <li>E-commerce</li>
+                                            <li>IT services</li>
+                                            <li>B2B consulting</li>
+                                            <li>Media & advertising</li>
+                                            <li>Doctors, lawyers, architects, etc</li>
                                         </ul>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The highest number of E&O claims in India are filed against architects, engineers, and lawyers.</p>
                                     </div>
@@ -364,7 +372,7 @@ export default function EAndO_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/employeeDishonestyIcon.svg' width="80" height="80" alt="Employee Dishonesty" />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Employee Dishonesty</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Employee Dishonesty</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Protect your business from third-party claims resulting from frauds or dishonest acts conducted by your employees. E&O insurance covers investigation costs, legal fees, and damages caused by their actions.</p>
                                                         </div>
                                                     </div>
@@ -373,7 +381,7 @@ export default function EAndO_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/subsidiaryCoverageIcon.svg' width="80" height="80" alt="Automatic Subsidiary Coverage" />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Automatic Subsidiary Coverage</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Automatic Subsidiary Coverage</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Newly created or acquired subsidiaries will be seamlessly incorporated into the policy, requiring only a minimal amount of additional paperwork. However, this inclusion is contingent upon the acquired company being not more than one-fourth the size of the company implementing the policy.</p>
                                                         </div>
                                                     </div>
@@ -382,7 +390,7 @@ export default function EAndO_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/errorServiceIcon.svg' width="80" height="80" alt="Error in Service" />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Error in Service</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Error in Service</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>If an employee makes an error while providing a service then E&O insurance covers resulting claims.</p>
                                                         </div>
                                                     </div>
@@ -391,7 +399,7 @@ export default function EAndO_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/mitigationCostsIcon.svg' width="80" height="80" alt="Mitigation Costs" />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Mitigation Costs</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Mitigation Costs</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>In case of errors and omissions, you might need to take steps to reduce or prevent further damage or loss. The policy can help cover the cost of repairs, replacements, and other expenses incurred in such cases</p>
                                                         </div>
                                                     </div>
@@ -400,7 +408,7 @@ export default function EAndO_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/courtFeesIcon.svg' width="80" height="80" alt="Court Attendance Fees" />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Court Attendance Fees</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Court Attendance Fees</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Cover losses for attending court due to an E&O lawsuit, including lawyer's fees, travel expenses, and lost wages.</p>
                                                         </div>
                                                     </div>
@@ -409,7 +417,7 @@ export default function EAndO_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/lossDocumentIcon.svg' width="80" height="80" alt="Loss of Document" />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Loss of Document</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Loss of Document</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>In case of a lawsuit alleging loss or destruction of important documents, this policy will cover the legal and claim charges</p>
                                                         </div>
                                                     </div>
@@ -584,7 +592,7 @@ export default function EAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Design Drawings Errors by Insured Result in Flawed Fabrication & Erection of Structure</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Design Drawings Errors by Insured Result in Flawed Fabrication due to Drawings Errors</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>The insured provided multiple inaccurate design drawings, leading to improper fabrication and consequently necessitating re-fabrication. The principal incurred additional expenses and was required to employ extra manpower to address these issues.</div>
@@ -727,8 +735,7 @@ export default function EAndO_Insurance() {
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
                                 <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>

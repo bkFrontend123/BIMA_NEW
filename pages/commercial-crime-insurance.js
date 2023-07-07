@@ -272,11 +272,11 @@ export default function EAndO_Insurance() {
                             <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Commercial Crime Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>There is a persistent issue of employee fraud across all industries. Whether it's an employee who has succumbed to temptation, a fraudulent scheme from a supplier, or even cybercriminals looking to exploit your trust, these threats can cause significant financial harm to your business. That's where Crime Insurance comes in.</p>
 
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Also known as Commercial Crime Insurance, this policy provides a comprehensive coverage for criminal acts like employee dishonesty, computer fraud, identity theft, wire transfer fraud, or crimes committed by third-party.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Also known as commercial crime insurance, this policy provides a comprehensive coverage for criminal acts like employee dishonesty, computer fraud, identity theft, wire transfer fraud, or crimes committed by third-party.</p>
 
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Apart from financial compensation, a Crime Insurance policy provides you the ability to respond promptly to crimial incidents, ensuring that your business's reputation remains intact.</p>
                                     </div>
@@ -287,7 +287,8 @@ export default function EAndO_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Commercial Crime Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Simply put every business. <span className='d-none d-lg-block'></span>Whether you are a private company, a public company, or an NGO, an employee can steal from your cash reserves, or fall victim to an email phishing attack. They could obey fraudulent instructions to transfer your company funds to another bank account. Worse, they could collaborate with a third party to steal your company’s stock gradually over a period of time. <span className='d-none d-lg-block'></span>E-mail spoofing, phishing, theft, employee dishonesty, third-party fraud, forgery, and embezzlement impacts businesses of all types and sizes</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Whether you are a private company, a public company, or an NGO, an employee can steal from your cash reserves, or fall victim to an email phishing attack. They could obey fraudulent instructions to transfer your company funds to another bank account. Worse, they could collaborate with a third party to steal your company’s stock gradually over a period of time.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>E-mail spoofing, phishing, theft, employee dishonesty, third-party fraud, forgery, and embezzlement impacts businesses of all types and sizes</p>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
@@ -323,7 +324,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={3}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/employeesNewIcon.svg' width="80" height="80" alt="Basic security" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Number of employees in your business have an effect on your crime insurance premium</p>
                                                         </div>
                                                     </div>
@@ -331,7 +332,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={3}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodGlobe.svg' />
+                                                            <Image src='/icons/highRevenueIcon.svg' width="80" height="80" alt="Basic security" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>A higher revenue flow means higher insurance premium</p>
                                                         </div>
                                                     </div>
@@ -339,7 +340,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={3}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
+                                                            <Image src='/icons/premiumsIcon.svg' width="80" height="80" alt="Basic security" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>If your premiums are lower, your deductible will be higher, and vice versa</p>
                                                         </div>
                                                     </div>
@@ -347,7 +348,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={3}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
+                                                            <Image src='/icons/securityIcon.svg' width="80" height="80" alt="Basic security" />
                                                             <p className='title-18 font-weight-500 text-black m-0 mt-2'>Basic security measures like strategically placed and unobtrusive cameras help underwriters assess risk better</p>
                                                         </div>
                                                     </div>
@@ -506,7 +507,7 @@ export default function EAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Accountant of an overseas subsidiary of the policyholder commits fraud</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Claim due to Accountant’s Fraud</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>A member of senior management shared his credentials with the accountant for undertaking transactions in his absence. These credentials were misused to divert funds into his personal account and these transactions were also disguised in the book of accounts which went undetected.</div>
@@ -526,7 +527,7 @@ export default function EAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Fraud committed by an employee leading to loss of policyholder’s customer.</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Claim due to Employee’s Fraud</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>An overseas subsidiary was performing outsourced operational services like vendor payments for a Middle East client. The perpetrator modified the vendor master data with incorrect bank details used for remittance and diverted funds to his personal account.</div>
@@ -546,7 +547,7 @@ export default function EAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Fraud orchestrated by vendors and employees</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Fraud Orchestrated by Vendors and Employees</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>A raw material supplier raised various invoices to the company. They were supposed to be verified by the company’s F&A vendor. The invoices were actually fake and were still processed by the F&A vendor without verification. The employees of the company used to provide information for these invoices to the supplier.</div>
@@ -632,8 +633,7 @@ export default function EAndO_Insurance() {
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
                                 <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import {Container, Row, Col, Form, FloatingLabel, Button} from 'react-bootstrap';
 // import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // import the styles
@@ -184,7 +184,7 @@ export default function product() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        router.push('/directors_and_officers_form');
+        router.push('/cyber-flow');
     };
     return (
         <>
@@ -201,26 +201,34 @@ export default function product() {
                     <ProductBanner
                         title="Cyber Insurance"
                         description="Cyber Insurance is a specialized product designed to protect your business from the unique threats posed by operating in the digital world. In a time of widespread cyber attacks, it is a crucial part of any business's risk management strategy."
-                        insuranceWorth="50 Lakhs"
+                        insuranceWorth="1 Crore"
                         insuranceAmount="38,000"
                         customClass="cybrBnr"
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="companyName" label="Your Company Name">
+                                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="name" label="Your Name">
+                                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="phoneNumber" label="Your Phone Number">
+                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="workEmail" label="Your Work Email Address">
+                                        <Form.Control className={`${form.formInput}`} type="email" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
+                                    <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
                                         <span className='me-2'>Buy Now</span>
                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                     </Button>
@@ -272,9 +280,9 @@ export default function product() {
                             <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Cyber Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A cyber insurance policy covers a broad range of risks such as credit card data leaks, data breaches, cyber-attacks, and other digital threats. Whether it's a data breach where sensitive customer information is exposed, a ransomware attack that holds your systems hostage, or a business email compromise that tricks your employees into wiring money to criminals, Cyber Insurance has you covered.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A cyber insurance policy covers a broad range of risks such as credit card data leaks, data breaches, cyber-attacks, and other digital threats. Whether it's a data breach where sensitive customer information is exposed, a ransomware attack that holds your systems hostage, or a business email compromise that tricks your employees into wiring money to criminals, cyber insurance has you covered.</p>
 
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Also referred to as 'cyber risk insurance' or 'cyber liability insurance', this policy can help cover the costs of responding, including legal fees, public relations efforts, and notifying affected customers. It not only covers damages caused by cyber assaults on bank accounts, credit and debit cards linked to your website, but also unintentional payments made using digital wallets.</p>
                                     </div>
@@ -442,14 +450,16 @@ export default function product() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Commercial Crime Insurance?</div>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Cyber Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>There are some shocking statistics related to cyber attacks in India reported by Cisco’s report titled ‘Cybersecurity for SMBs: Asia Pacific Businesses Prepare for Digital Defense’.</p>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                             <li>74% of SMEs suffered a cyber attack in 2021.</li>
                                             <li>62% of those attacked suffered a cost more than 3.5 crore.</li>
                                             <li>60% of small enterprises that face a cyberattack go out of business within six months.</li>
                                         </ul>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Such statistics push cyber security and insurance to the forefront of every business’s priorities. <span className='d-none d-lg-block'></span>Mitigating financial losses caused by cyber threats such as data breaches, system intrusions, and ransomware attacks is crucial for corporations to safeguard their operations and reputation. <span className='d-none d-lg-block'></span>Cyber Risk provides covers for a range of costs associated with cybercrimes, including investigative charges, data restoration costs, and crisis management fees. By purchasing Cyber Risk Insurance, corporations can ensure continued success in the face of ever-evolving cyber threats.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Such statistics push cyber security and insurance to the forefront of every business’s priorities.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Mitigating financial losses caused by cyber threats such as data breaches, system intrusions, and ransomware attacks is crucial for corporations to safeguard their operations and reputation.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Cyber risk provides covers for a range of costs associated with cybercrimes, including investigative charges, data restoration costs, and crisis management fees. By purchasing cyber risk insurance, corporations can ensure continued success in the face of ever-evolving cyber threats.</p>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
@@ -813,8 +823,7 @@ export default function product() {
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
                                 <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>

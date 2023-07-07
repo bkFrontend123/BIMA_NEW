@@ -43,7 +43,7 @@ export default function BestBacked(props) {
                                 modules={[Navigation, Pagination, Autoplay, Grid]}
                                 arrows="true"
                                 // navigation="true"
-                                className={``}
+                                className={`smoothSwiper`}
                                 loop="true"
                                 speed={1000}
                                 autoplay={{

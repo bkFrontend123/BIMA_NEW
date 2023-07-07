@@ -202,7 +202,7 @@ export default function GeneralLiability_Insurance() {
                         title="Fire Insurance"
                         description="Fire & Burglary insurance is one of the most common types of asset insurances. It provides coverage not only against fire and theft, but can also include riots, strikes, storms, floods, earthquakes, and other such situations. It provides a comprehensive cover for your building structure, office equipment, inventory, cash assets and valuable documents. Various types of costs like repairs, replacement, and reconstruction are included in this policy."
                         insuranceWorth="50 Lakhs"
-                        insuranceAmount="1,453"
+                        insuranceAmount="2,100"
                         customClass="fireBnr"
                     >
                         <div className={`${form.commonForm}`}>
@@ -272,7 +272,7 @@ export default function GeneralLiability_Insurance() {
                             <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Fire & Burglary Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Fire & Burglary Insurance provides coverage for physical damage to your property. This damage can occur in a variety of situations like:</p>
                                     </div>
@@ -931,8 +931,7 @@ export default function GeneralLiability_Insurance() {
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
                                 <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>

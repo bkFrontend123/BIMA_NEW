@@ -110,9 +110,9 @@ function Business() {
                                 <thead>
                                     <tr>
                                         <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col"></th>
+                                        <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col"><img width="195px" src='/logo-white.svg' /></th>
                                         <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Offline Brokers</th>
                                         <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital brokers</th>
-                                        <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col"><img width="195px" src='/logo-white.svg' /></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -144,11 +144,11 @@ function Business() {
                             <thead className='py-5'>
                                 <tr>
                                     <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col"></th>
-                                    <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Offline Brokers</th>
-                                    <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital brokers</th>
                                     <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">
                                         <img width="195px" src='/logo-white.svg' />
                                     </th>
+                                    <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Offline Brokers</th>
+                                    <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital brokers</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -160,15 +160,15 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
-                                        </div>
-                                    </td>
-                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
-                                        </div>
-                                    </td>
-                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
                                         <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                 </tr>
@@ -179,15 +179,15 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
-                                        </div>
-                                    </td>
-                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
-                                        </div>
-                                    </td>
-                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
                                         <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                 </tr>
@@ -198,15 +198,15 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
-                                        </div>
-                                    </td>
-                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
-                                        </div>
-                                    </td>
-                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
                                         <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                 </tr>
@@ -217,15 +217,15 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
                                         <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
                                         <div className='businessInsurance-colBox'><img src='/tickTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
-                                        </div>
-                                    </td>
-                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                 </tr>
@@ -236,20 +236,18 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
-                                        </div>
-                                    </td>
-                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
-                                        </div>
-                                    </td>
-                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
                                         <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
                                         </div>
                                     </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
                                 </tr>
-
-
                             </tbody>
                         </table>
 
@@ -286,17 +284,15 @@ function Business() {
 
                 <style jsx scope>
                     {`
-                    
                     .businessInsurance .businessInsurance-box{
-                        padding: 75px 100px 50px 140px;
-                        
+                        padding: 75px 100px 50px 100px;    
+                    }
+                     .title24 {
+                        font-size: 22px;
                      }
-                     
-                    
-                    
                      @media (max-width:1650px) {
                          .businessInsurance .businessInsurance-box{
-                             padding: 65px 60px 40px 100px;
+                             padding: 65px 60px 40px 60px;
                             }
                             .businessInsurance table td.businessInsurance-col:last-child::after{
                                 height: 400px;

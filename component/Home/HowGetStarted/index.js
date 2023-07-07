@@ -49,13 +49,13 @@ export default function HowGetStarted(props) {
                                         <a href="tel:+91 9876543210" className="btnCommon bg-white d-none d-md-flex align-items-cet text-primary text-decoration-none  bordre2 mt-3 mt-md-0">
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                             <WhatsApp iconColor="primary" width="18" height="18" />
-                                            <span className="ms-2">Talk to Us</span>
+                                            <span className="ms-2">Talk to us</span>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         </a>
                                         <a href="tel:+91 9876543210" className="btnCommon bg-yellow d-flex d-md-none align-items-cet text-primary text-decoration-none ms-md-4 mt-3 mt-md-0">
                                             &nbsp;&nbsp;
                                             <WhatsApp iconColor="primary" width="18" height="18" />
-                                            <span className="ms-2">Talk to Us</span>
+                                            <span className="ms-2">Talk to us</span>
                                             &nbsp;&nbsp;
                                         </a>
                                     </div>

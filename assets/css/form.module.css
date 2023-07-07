@@ -13,7 +13,8 @@
     font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
+    cursor: pointer;
 }
 .frmTtl {
     margin-bottom: 24px;
@@ -22,8 +23,21 @@
     font-size: 24px;
     color: var(--vt-c-blue);
     line-height: 32px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
+}
+.commonForm .formLabel {
+    font-size: 18px;
+    color: var(--vt-c-blue);
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    display: block;
+}
+.commonForm .formLabel i {
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: text-bottom;
 }
 .commonForm .formInput {
     font-size: 16px;
@@ -36,6 +50,9 @@
 }
 .commonForm textarea.formInput {
     height: 110px;
+}
+.commonForm .formInput:hover {
+    border-color: var(--vt-c-blue);
 }
 .commonForm .formSelect {
     font-size: 16px;
@@ -50,6 +67,17 @@
 .commonForm .formInput::placeholder {
     font-size: 16px;
     color: var(--vt-c-blue);
+}
+/* Chrome, Safari, Edge, Opera */
+.commonForm input::-webkit-outer-spin-button,
+.commonForm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.commonForm input[type=number] {
+  -moz-appearance: textfield;
 }
 .formFileGroup {
     position: relative;
@@ -106,6 +134,10 @@
 }
 .formCheckRadio {
     margin-bottom: 0;
+    padding: 0;
+}
+.formCheckRadio:last-child {
+    margin-right: 0;
 }
 .formCheckRadio input {
     width: 1.25em;
@@ -114,6 +146,7 @@
     background-color: var(--vt-c-gray);
     border: 0;
     cursor: pointer;
+    display: none;
 }
 .formCheckRadio input:checked {
     background-color: var(--vt-c-blue);
@@ -122,13 +155,56 @@
 .formCheckRadio input:checked[type=radio] {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
-.formCheckRadio label {
+/*.formCheckRadio label {
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
     color: var(--vt-c-blue);
     margin-left: 4px;
     cursor: pointer;
+}*/
+.formCheckRadio label {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    color: var(--vt-c-blue);
+    margin: 0 !important;
+    cursor: pointer;
+    padding: 12px 20px 12px 50px;
+    position: relative;
+    border: 1px solid var(--vt-c-grayLight3);
+    transition: all 0.3s ease 0s;
+}
+.formCheckRadio label::before {
+    position: absolute;
+    content: "";
+    border: 1px solid var(--vt-c-grayLight3);
+    width: 24px;
+    height: 24px;
+    left: 16px;
+    top: 12px;
+    transition: all 0.3s ease 0s;
+}
+.formCheckRadio label::after {
+    background: var(--vt-c-blue);
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    left: 21px;
+    top: 17px;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+.formCheckRadio input:checked[type=radio] ~ label {
+    border-color: var(--vt-c-blue);
+    color: var(--vt-c-blue);
+}
+.formCheckRadio input:checked[type=radio] ~ label::before {
+    border-color: var(--vt-c-blue);
+}
+.formCheckRadio input:checked[type=radio] ~ label::after {
+    opacity: 1;
 }
 .commonForm .formSwitch input {
     width: 35px;
@@ -144,6 +220,9 @@
 .commonForm .formSwitch input :focus {
     background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e);
 }
+.formBtn {
+    padding: 22px 40px;
+}
 .btnLink {
     display: flex;
     align-items: center;
@@ -154,18 +233,22 @@
     font-weight: 500;
 }
 .frmftr {
-    margin-top: 30px;
+    margin-top: 24px;
 }
 .frmftr p {
     font-size: 14px;
-    color: var(--vt-c-blue);
-    line-height: 16px;
+    color: var(--vt-c-blueSkyLight2);
+    line-height: 18px;
     font-weight: 500;
     margin: 0;
+}
+.brownText p {
+    color: var(--brown);
 }
 .frmftr p a {
     color: var(--vt-c-blue);
     text-decoration: underline;
+    font-weight: 600;
 }
 
 @media (max-width:1699px) {
@@ -195,35 +278,9 @@
     }
 }
 
-@media (max-width:1399px) {
-    .whiteFormBox {
-        padding: 26px;
-    }
-    .commonForm .formInput,
-    .commonForm .formSelect {
-        height: 56px;
-        padding: 10px 18px;
-    }
-    .formFileGroup label,
-    .formFileSucess label {
-        height: 56px;
-        font-size: 16px;
-    }
-    .btnLink {
-        font-size: 13.5px;
-    }
-}
-
 @media (max-width:1199px) {
     .whiteFormBox {
         padding: 24px;
-    }
-    .commonForm .formInput,
-    .commonForm .formSelect {
-        font-size: 15px;
-    }
-    .formCheckRadio label {
-        font-size: 15px;
     }
     .frmftr {
         margin-top: 24px;
@@ -251,9 +308,13 @@
     .frmBackLink span {
         margin-left: 8px;
     }
+    .commonForm .formLabel {
+        font-size: 17px;
+        line-height: 22px;
+    }
     .commonForm .formInput,
     .commonForm .formSelect {
-        font-size: 14px;
+        font-size: 15px;
         height: 54px;
         padding: 8px 16px;
     }
@@ -262,11 +323,27 @@
         height: 54px;
     }
     .formCheckRadio label {
-        font-size: 14px;
+        font-size: 15px;
+        padding: 8px 16px 8px 46px;
+    }
+    .formCheckRadio label::before {
+        width: 20px;
+        height: 20px;
+        left: 14px;
+        top: 10px;
+    }
+    .formCheckRadio label::after {
+        width: 10px;
+        height: 10px;
+        left: 19px;
+        top: 15px;
     }
     .fromButtonDiv button {
         width: 100%;
         justify-content: center;
+    }
+    .formBtn {
+        padding: 18px 24px;
     }
     .frmftr {
         margin-top: 20px;

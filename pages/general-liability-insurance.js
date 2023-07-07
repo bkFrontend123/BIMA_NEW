@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import {Container, Row, Col, Form, FloatingLabel, Button} from 'react-bootstrap';
 // import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // import the styles
@@ -184,7 +184,7 @@ export default function GeneralLiability_Insurance() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        router.push('/directors_and_officers_form');
+        router.push('/general-liability-flow');
     };
     return (
         <>
@@ -208,20 +208,28 @@ export default function GeneralLiability_Insurance() {
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="companyName" label="Your Company Name">
+                                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="name" label="Your Name">
+                                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="phoneNumber" label="Your Phone Number">
+                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="workEmail" label="Your Work Email Address">
+                                        <Form.Control className={`${form.formInput}`} type="email" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
+                                    <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
                                         <span className='me-2'>Buy Now</span>
                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                     </Button>
@@ -273,9 +281,11 @@ export default function GeneralLiability_Insurance() {
                             <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>General Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Imagine you own a store, and a customer slips and falls, or your product somehow causes harm to a user - the costs of legal defense and potential settlements could be financially devastating. But with a CGL policy, you are protected against these risks. It can pay for immediate medical expenses in such cases, providing quick relief and potentially mitigating a larger claim. <span className='d-none d-lg-block'></span>It also covers personal and advertising injuries. This means if your business unintentionally infringes on someone else's copyright or is accused of libel or slander during advertising, your CGL policy has got you covered. <span className='d-none d-lg-block'></span>Because of its comprehensive nature, General Liability Insurance has your back. Without insurance, a single claim can be financially devastating to your business. But with the right CGL policy, you can focus on running your business and serving your customers, secure in the knowledge that you're protected against many of the risks you face every day.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Imagine you own a store, and a customer slips and falls, or your product somehow causes harm to a user - the costs of legal defense and potential settlements could be financially devastating. But with a CGL policy, you are protected against these risks. It can pay for immediate medical expenses in such cases, providing quick relief and potentially mitigating a larger claim.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>It also covers personal and advertising injuries. This means if your business unintentionally infringes on someone else's copyright or is accused of libel or slander during advertising, your CGL policy has got you covered.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Because of its comprehensive nature, General Liability Insurance has your back. Without insurance, a single claim can be financially devastating to your business. But with the right CGL policy, you can focus on running your business and serving your customers, secure in the knowledge that you're protected against many of the risks you face every day.</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary mb-4'>Features of General Liability Insurance</div>
@@ -313,10 +323,10 @@ export default function GeneralLiability_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>General Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>No matter what industry you're in or the size of business, having General Liability Insurance is a smart move. Because of its comprehensive nature, this insurance policy fits most businesses that have interactions with customers. From retail shops and tech startups to large manufacturers, this policy protects against legal and financial issues from third-party claims.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>No matter what industry you're in or the size of the business, having general liability insurance is a smart move. Because of its comprehensive nature, this insurance policy fits most businesses that have interactions with customers. From retail shops and tech startups to large manufacturers, this policy protects against legal and financial issues from third-party claims.</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary mb-4 mb-xl-5'>General Liability insurance is necessary for various kinds of businesses:</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary mb-4 mb-xl-5'>General Liability Insurance is necessary for various kinds of businesses:</div>
                                         <Row>
                                             <Col xl={10} className='mx-auto'>
                                                 <Row className="g-4">
@@ -411,7 +421,7 @@ export default function GeneralLiability_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>General Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>We all know that accidents can happen, even when you're doing everything right. In fact, 43% of small business owners have reported being threatened with or involved in a civil lawsuit. That's when General Liability Insurance becomes your go-to solution.It takes care of legal defense costs, settlements, and judgments that might come up from third-party claims, helping to keep your business secure. And it doesn't stop there; it also covers personal and advertising injury claims, ensuring your reputation stays intact. With General Liability Insurance, you can breathe easier knowing your business has a strong safety net in place for unexpected situations.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>We all know that accidents can happen, even when you're doing everything right. In fact, 43% of small business owners have reported being threatened with or involved in a civil lawsuit. That's when general liability insurance becomes your go-to solution.It takes care of legal defense costs, settlements, and judgments that might come up from third-party claims, helping to keep your business secure. And it doesn't stop there; it also covers personal and advertising injury claims, ensuring your reputation stays intact. With general liability insurance, you can breathe easier knowing your business has a strong safety net in place for unexpected situations.</p>
                                     </div>
                                 </Container>
 
@@ -637,43 +647,43 @@ export default function GeneralLiability_Insurance() {
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What is the difference between Commercial General Liability and Commercial Umbrella Inusance?"
+                                title="What is the difference between commercial general liability and commercial umbrella inusance?"
                                 content="Commercial General Liability (CGL) insurance covers liability claims related to bodily injury, property damage, and personal and advertising injury. On the other hand, Commercial Umbrella Insurance provides excess liability coverage beyond the limits of primary insurance policies, such as CGL or professional liability insurance. For instance, if a business faces a liability claim that exceeds its CGL policy limits, an umbrella policy can offer additional coverage to help cover the costs of the claim."
                             />
                             <Accordion
-                                title="What is General Liability Insurance for contractors?"
+                                title="What is general liability insurance for contractors?"
                                 content="General Liability Insurance for contractors protects contractors and their businesses from financial losses due to liability claims. This insurance typically covers claims for bodily injury, property damage, and personal and advertising injury. It can also cover legal defense costs and any damages awarded to the claimant."
                             />
                             <Accordion
-                                title="Does General Liability Insurance protect my store, office, or physical location?"
+                                title="Does general liability insurance protect my store, office, or physical location?"
                                 content="Yes. General Liability Insurance covers claims arising from third-party bodily injury or property damage occurring on your business premises. For example, if a customer slips and falls in your store, your General Liability Insurance may cover their medical expenses and any damages they may seek as a result of the injury."
                             />
                             <Accordion
-                                title="What protection does General Liability Insurance provide against social media risks?"
+                                title="What protection does general liability insurance provide against social media risks?"
                                 content="General Liability Insurance can cover advertising injury claims, including certain types of claims related to social media use. For instance, if your business faces a libel or slander claim due to a social media post, your General Liability Insurance may cover legal defense costs and any damages awarded. Some policies may also offer additional coverage for claims related to hacked social media accounts or leaked personal information through social media channels."
                             />
                             <Accordion
-                                title="How much General Liability Insurance do I need?"
+                                title="How much general liability insurance do i need?"
                                 content="The amount of General Liability Insurance you need depends on various factors, such as your business size, type, location, and the level of risk you're willing to assume. Consider these factors when calculating the insurance coverage you need."
                             />
                             <Accordion
-                                title="Can I customize my Commercial General Liability Insurance policy?"
+                                title="Can I customize my commercial general liability insurance policy?"
                                 content="Yes, you can tailor your Commercial General Liability (CGL) Insurance policy to suit your specific business needs and risk profile. Common customizations include increasing policy limits, adding endorsements, removing exclusions, and adding additional insureds."
                             />
                             <Accordion
-                                title="What happens if I have a claim that exceeds my Commercial General Liability Insurance coverage?"
+                                title="What happens if I have a claim that exceeds my commercial general liability insurance coverage?"
                                 content="If a claim exceeds your Commercial General Liability (CGL) Insurance coverage, you may need to pay the remaining amount out of pocket. This amount, called the 'coverage gap,' is not covered by your policy."
                             />
                             <Accordion
-                                title="Does Commercial General Liability Insurance cover damages to my property?"
+                                title="Does commercial general liability insurance cover damages to my property?"
                                 content="No, Commercial General Liability (CGL) Insurance doesn't cover damages to your property. CGL insurance protects your business from liability claims for bodily injury or property damage caused by you or your employees to others."
                             />
                             <Accordion
-                                title="Does Commercial General Liability Insurance cover customer or client injuries?"
+                                title="Does commercial general liability insurance cover customer or client injuries?"
                                 content="Yes, Commercial General Liability (CGL) Insurance covers bodily injury to customers or clients occurring on your business premises or as a result of your business operations. It also covers bodily injury caused by your products or services."
                             />
                             <Accordion
-                                title="Does Commercial General Liability Insurance cover damages from my advertising?"
+                                title="Does commercial general liability insurance cover damages from my advertising?"
                                 content="Yes, Commercial General Liability (CGL) Insurance covers damages resulting from your advertising. It includes coverage for personal and advertising injury, which refers to harm caused by offenses such as libel, slander, or copyright infringement in your advertising."
                             />
                         </div>
@@ -687,8 +697,7 @@ export default function GeneralLiability_Insurance() {
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
                                 <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>

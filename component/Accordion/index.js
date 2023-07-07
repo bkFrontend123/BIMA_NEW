@@ -25,7 +25,6 @@ const Accordion = ({ title, content }) => {
         <style jsx scope>
             {`
                  img.plusCross{
-                    transition: 0.5s;
                     width: 24px;
                  }
                 .accordionActive img.plusCross{

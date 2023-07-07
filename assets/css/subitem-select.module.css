@@ -1,0 +1,166 @@
+.subGroupInr {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.subSelectBtn {
+    position: relative;
+    width: 100%;
+}
+.subSelectBtn .subCheckBtn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease 0s;
+    border: 1px solid var(--vt-c-grayLight3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 20px;
+    top: 21px;
+    pointer-events: none;
+}
+.subSelectBtn .subCheckBtn svg {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+.subSelectBtn.active .subCheckBtn svg {
+    opacity: 1;
+}
+.formSubCheck {
+    padding-left: 0;
+    display: block;
+    margin: 0;
+}
+.formSubCheck input {
+    display: none;
+}
+.formSubCheck label {
+    background: var(--whiteBg);
+    width: 100%;
+    border: 1px solid var(--vt-c-grayLight3);
+    padding: 8px 20px 8px 50px;
+    color: var(--vt-c-grayLight3);
+    font-size: 18px;
+    line-height: 20px;
+    height: 63px;
+    display: grid;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.subSelectBtn.active .formSubCheck label {
+    border-color: var(--vt-c-blue);
+    color: var(--vt-c-blue);
+}
+.tooltipDiv i {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    cursor: pointer;
+    z-index: 1;
+}
+.tooltipDiv .formSubCheck label {
+    padding-right: 60px;
+}
+.qtyGroup {
+    background-color: var(--whiteBg);
+    display: flex;
+    border: 1px solid var(--vt-c-grayLight3);
+    justify-content: space-evenly;
+    align-items: center;
+}
+.qtyGroup.active {
+    border-color: var(--vt-c-blue)
+}
+.qtyInput {
+    background-color: #EEEEEE !important;
+    padding: 0;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+    height: 61px;
+    width: 50px;
+    padding-left: 0;
+    border-radius: 0;
+    color: var(--vt-c-grayLight3);
+}
+.qtyGroup.active .qtyInput {
+    background-color: transparent !important;
+    color: var(--vt-c-blue)
+}
+.qtyDcrsBtn,
+.qtyIncrsBtn {
+    font-size: 25px;
+    color: var(--vt-c-grayLight3);
+    padding: 0 12px;
+    line-height: 61px;
+    border: none;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.4s ease 0s;
+}
+.qtyGroup.active .qtyDcrsBtn,
+.qtyGroup.active .qtyIncrsBtn {
+    color: var(--vt-c-blue)
+}
+.qtyDcrsBtn:hover,
+.qtyIncrsBtn:hover,
+.qtyDcrsBtn:focus,
+.qtyIncrsBtn:focus,
+.qtyDcrsBtn:active:focus,
+.qtyIncrsBtn:active:focus {
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--vt-c-grayLight3);
+}
+
+@media (max-width:767px) {
+    .subGroupIn {
+        margin-bottom: 1rem;
+    }
+    .subSelectBtn .subCheckBtn {
+        width: 18px;
+        height: 18px;
+        left: 16px;
+        top: 18px;
+    }
+    .formSubCheck label {
+        padding: 8px 16px 8px 44px;
+        font-size: 16px;
+        height: 54px;
+    }
+    .stooltipDiv .formSubCheck label {
+        padding-right: 40px;
+    }
+    .tooltipDiv i {
+        right: 14px;
+        top: 12px;
+    }
+    .tooltipDiv i img {
+        width: 20px;
+        height: 20px;
+    }
+    .qtyDcrsBtn,
+    .qtyIncrsBtn {
+        font-size: 23px;
+        color: var(--vt-c-grayLight3);
+        padding: 0 10px;
+        line-height: 54px;
+    }
+    .qtyInput {
+        font-size: 18px;
+        height: 54px;
+        width: 46px;
+        padding-left: 0;
+    }
+}

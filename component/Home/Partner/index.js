@@ -5,18 +5,24 @@ import 'swiper/css';
 function Partner() {
 
     const partner = [
-        { id: "p1", img: "/partner1.svg" },
-        { id: "p2", img: "/partner2.svg" },
-        { id: "p3", img: "/partner3.svg" },
-        { id: "p4", img: "/partner4.svg" },
-        { id: "p5", img: "/partner3.svg" },
-        { id: "p6", img: "/partner2.svg" },
-        { id: "p7", img: "/partner1.svg" },
-        { id: "p8", img: "/partner2.svg" },
-        { id: "p9", img: "/partner3.svg" },
-        { id: "p10", img: "/partner4.svg" },
-        { id: "p11", img: "/partner3.svg" },
-        { id: "p12", img: "/partner2.svg" },
+        { id: "p1", img: "/partners/bajaj.svg" },
+        { id: "p2", img: "/partners/cholaMs.svg" },
+        { id: "p3", img: "/partners/digit.svg" },
+        { id: "p4", img: "/partners/futureGenerali.svg" },
+        { id: "p5", img: "/partners/digit.svg" },
+        { id: "p6", img: "/partners/hdfcErgo.svg" },
+        { id: "p7", img: "/partners/iciciLombard.svg" },
+        { id: "p8", img: "/partners/iffcoTokio.svg" },
+        { id: "p9", img: "/partners/magmaHDI.svg" },
+        { id: "p10", img: "/partners/nationalInsurance.svg" },
+        { id: "p11", img: "/partners/rahejaQBE.svg" },
+        { id: "p12", img: "/partners/reliance.svg" },
+        { id: "p13", img: "/partners/royalSundaram.svg" },
+        { id: "p14", img: "/partners/sbiGeneral.svg" },
+        { id: "p15", img: "/partners/tataAIG.svg" },
+        { id: "p16", img: "/partners/indiaInsurance.svg" },
+        { id: "p17", img: "/partners/orientalInsurance.svg" },
+        { id: "p18", img: "/partners/unitedIndia.svg" },
     ]
 
     return (
@@ -28,7 +34,7 @@ function Partner() {
                         modules={[Navigation, Pagination, Scrollbar, Autoplay]}
                         arrows="true"
                        
-                        className={``}
+                        className={`smoothSwiper`}
                         spaceBetween={40}
                         infinite="true"
                         loop="true"
@@ -58,10 +64,12 @@ function Partner() {
                     >
                         {partner.map((item) =>
                             <SwiperSlide key={item.id}>
-                                <img
-                                    src={item.img}
-                                    alt="Bimakavach"
-                                />
+                                <div className="prtnrSlideCol">
+                                    <img
+                                        src={item.img}
+                                        alt="Bimakavach"
+                                    />
+                                </div>
                             </SwiperSlide>
                         )}
                     </Swiper>
@@ -74,10 +82,40 @@ function Partner() {
                     .partnerTitle{
                         margin-bottom: 8px;
                     }
+                    .prtnrSlideCol {
+                        position: relative;
+                        height: 85px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.4s ease 0s;
+                    }
+                    .prtnrSlideCol img {
+                        position: absolute;
+                        width: auto !important;
+                        height: auto !important;
+                        max-width: 90% !important;
+                        max-height: 90% !important;
+                        margin: auto;
+                        filter: grayscale(1);
+                        opacity: 0.5;
+                        transition: all 0.4s ease 0s;
+                    }
+                    .prtnrSlideCol:hover img {
+                        filter: grayscale(0);
+                        opacity: 1;
+                    }
                     @media only screen and (max-width: 575px) {
                         .title-36.partnerTitle{
                             font-size: 24px;
                             line-height: 32px;
+                        }
+                        .prtnrSlideCol {
+                            height: 50px;
+                        }
+                        .prtnrSlideCol img {
+                            max-width: 100% !important;
+                            max-height: 30px !important;
                         }
                     } 
                 `}

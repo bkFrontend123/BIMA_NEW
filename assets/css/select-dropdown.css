@@ -1,0 +1,166 @@
+.selectDropDiv {
+    position: relative;
+}
+.selectDropDiv label {
+    background: var(--whiteBg);
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    padding: 0 10px;
+    pointer-events: none;
+    transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+    z-index: 1;
+}
+.selectDropDiv .select-search-has-focus ~ label,
+.selectDropDiv.selectedDropDiv label {
+    transform: translateY(-30px);
+}
+.selectDropDiv .select-search-container {
+    width: 100%;
+}
+.selectDropDiv .select-search-value {
+    position: relative;
+    z-index: 1;
+}
+.searchDropDiv .select-search-value::before {
+    background-image: url('/icons/searchIcon.svg');
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: 25px;
+    left: 20px;
+    pointer-events: none;
+    z-index: 2;
+}
+.searchDropDiv.selectedDropDiv .select-search-value::before {
+    display: none;
+}
+.searchDropDiv .select-search-has-focus .select-search-value::before,
+.searchDropDiv.selectedDropDiv .select-search-has-focus .select-search-value::before {
+    display: inline-block;
+}
+
+.selectDropDiv .select-search-value::after {
+    background-image: url('/icons/selectArrowIcon.svg');
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 18px;
+    top: 22px;
+    right: 15px;
+    z-index: 2;
+}
+.selectDropDiv .select-search-has-focus .select-search-value::after {
+    background-image: url('/icons/selectArrowDownIcon.svg');
+    top: 20px;
+    right: 12px;
+}
+.selectDropDiv .select-search-input {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    height: 63px;
+    border-radius: 0;
+    padding: 12px 35px 12px 20px;
+    font-weight: 500;
+    font-family: 'Galano Grotesque', sans-serif;
+    border-color: var(--formBorderColor);
+    border-width: 1px;
+    cursor: pointer;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input {
+    padding-left: 20px;
+}
+.searchDropDiv.selectDropDiv .select-search-input,
+.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus .select-search-input  {
+    padding-left: 40px;
+}
+.tooltipDiv.selectDropDiv .select-search-input {
+    padding-right: 80px
+}
+.selectDropDiv .select-search-input::placeholder {
+    color: var(--whiteText);
+}
+.selectDropDiv.selectedDropDiv .select-search-input::placeholder,
+.selectDropDiv .select-search-has-focus .select-search-input::placeholder {
+    color: var(--vt-c-grayLight3);
+}
+.selectDropDiv .select-search-input:hover,
+.selectDropDiv .select-search-has-focus .select-search-input,
+.selectDropDiv .select-search-has-focus .select-search-input:hover,
+.selectDropDiv.selectedDropDiv .select-search-input {
+    border-color: var(--vt-c-blue) !important;
+}
+
+.selectDropDiv .select-search-select {
+    box-shadow: none;
+    border: 1px solid var(--formBorderColor);
+    max-height: 230px;
+}
+.selectDropDiv .select-search-has-focus .select-search-select {
+    border-color: var(--vt-c-blue);
+}
+.selectDropDiv .select-search-container:not(.select-search-is-multiple) .select-search-select {
+    top: 62px;
+    border-radius: 0;
+}
+.selectDropDiv .select-search-option,
+.selectDropDiv .select-search-not-found {
+    height: auto;
+    padding: 10.8px 20px;
+    font-family: 'Galano Grotesque', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 500;
+    color: var(--gray);
+}
+.selectDropDiv .select-search-is-selected {
+    color: var(--vt-c-blue) !important;
+    font-weight: 600;
+}
+
+@media (max-width:767px) {
+    .selectDropDiv label {
+        left: 6px;
+        top: 16px;
+        font-size: 15px;
+    }
+    .searchDropDiv .select-search-value::before {
+        top: 21px;
+        left: 16px;
+    }
+    .selectDropDiv .select-search-value::after {
+        top: 18px;
+        right: 12px;
+    }
+    .selectDropDiv .select-search-has-focus .select-search-value::after {
+        top: 14px;
+        right: 8px;
+    }
+    .selectDropDiv .select-search-input {
+        font-size: 15px;
+        height: 54px;
+        padding: 8px 30px 8px 16px;
+    }
+    .searchDropDiv.selectDropDiv .select-search-input,
+    .searchDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus .select-search-input {
+        padding-left: 36px;
+    }
+    .tooltipDiv.selectDropDiv .select-search-input {
+        padding-right: 60px;
+    }
+    .selectDropDiv .select-search-container:not(.select-search-is-multiple) .select-search-select {
+        top: 53px;
+    }
+    .selectDropDiv .select-search-select {
+        max-height: 180px;
+    }
+    .selectDropDiv .select-search-option,
+    .selectDropDiv .select-search-not-found {
+        padding: 8px 16px;
+        font-size: 15px;
+    }
+}

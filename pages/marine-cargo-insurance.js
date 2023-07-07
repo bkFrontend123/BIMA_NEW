@@ -272,7 +272,7 @@ export default function product() {
                             <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Marine Cargo Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Marine Cargo Insurance is designed to safeguard your business against losses incurred during the transportation of goods. It's not limited to sea transport — it encompasses all modes, including air, land (road and rail), and inland waterways. It offers coverage for a wide array of risks, including container damage, cargo loss, liability for third-party property damage or personal injury.</p>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Companies that regularly transport valuable or fragile goods need this insurance policy for their shipments.</p>
@@ -742,8 +742,7 @@ export default function product() {
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
                                 <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>

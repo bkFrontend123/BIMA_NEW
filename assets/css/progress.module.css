@@ -6,19 +6,19 @@
     margin-top: 40px;
     overflow: visible;
     height: 10px;
-    border-radius: 10px;
+    border-radius: 0;
 }
 .noLabel.progressDiv > div {
     margin-top: 0;
 }
 .progressDiv > div > div {
     overflow: visible;
-    border-radius: 10px;
+    border-radius: 0;
     height: 10px;
 }
 .smallProgress.progressDiv > div > div {
-    border-radius: 8px;
-    height: 8px;
+    border-radius: 0;
+    height: 10px;
 }
 .noRadiusProgress.progressDiv > div > div {
     border-radius: 0;
@@ -57,7 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 3rem;
 }
 .pymntPrgrsDiv span {
     font-size: 36px;
@@ -66,10 +66,13 @@
     color: var(--vt-c-yellow);
     line-height: 43px;
     white-space: nowrap;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 .pymntPrgrsDiv p {
     font-size: 15px;
-    color: var(--black);
+    color: var(--brown);
+    font-weight: 500;
     line-height: 20px;
     margin: 0;
 }

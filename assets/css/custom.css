@@ -263,6 +263,11 @@ body .mainMenu.navbar .navbar-brand img{
    color: var(--vt-c-yellow) !important
  }  
 
+.homeBannerProduct::before {
+   position: absolute;
+   content: "";
+}
+
 /****Badge****/
 .badgeIconCol {
    position: relative;
@@ -283,6 +288,15 @@ body .mainMenu.navbar .navbar-brand img{
    background-size: contain;
    background-position: center center;
    transition: all 5s ease 0s;
+   animation: rotate infinite 15s linear;
+ }
+ @keyframes rotate {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
  }
  .badgeIcon,
  .badgeActiveIcon {
@@ -298,7 +312,7 @@ body .mainMenu.navbar .navbar-brand img{
    opacity: 0;
  }
  .badgeIconCol:hover::before {
-   transform: rotate(180deg);
+   //transform: rotate(180deg);
  }
  .badgeIconCol:hover .badgeIcon {
    opacity: 0;
@@ -418,14 +432,15 @@ body .mainMenu.navbar .navbar-brand img{
 
 .businessInsurance table td:first-child {
    padding-left: 0;
+   padding-right: 40px;
 }
 
-.businessInsurance table td.businessInsurance-col:last-child {
+.businessInsurance table td.businessInsurance-col:nth-child(2) {
    position: relative;
    border: 0;
 }
 
-.businessInsurance table td.businessInsurance-col:last-child::after {
+.businessInsurance table td.businessInsurance-col:nth-child(2)::after {
    background-color: #0e2b72;
    content: "";
    position: absolute;
@@ -485,6 +500,11 @@ body .mainMenu.navbar .navbar-brand img{
    margin-bottom: 32px;
  }
  
+
+.smoothSwiper .swiper-wrapper {
+   transition-timing-function: linear !important;
+}
+
 /* .sc-bxivhb.bCuRNq:nth-child(even) .howDo-sliderBox{
    background-color: blue;
  }*/

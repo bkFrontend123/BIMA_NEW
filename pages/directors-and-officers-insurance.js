@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import {Container, Row, Col, Form, FloatingLabel, Button} from 'react-bootstrap';
 // import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // import the styles
@@ -184,7 +184,7 @@ export default function DAndO_Insurance() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        router.push('/directors_and_officers_form');
+        router.push('/directors-and-officers-flow');
     };
     return (
         <>
@@ -207,20 +207,28 @@ export default function DAndO_Insurance() {
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="companyName" label="Your Company Name">
+                                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="name" label="Your Name">
+                                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="phoneNumber" label="Your Phone Number">
+                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="workEmail" label="Your Work Email Address">
+                                        <Form.Control className={`${form.formInput}`} type="email" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
+                                    <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
                                         <span className='me-2'>Buy Now</span>
                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                     </Button>
@@ -272,7 +280,7 @@ export default function DAndO_Insurance() {
                             <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A Director and Officers (D&O) policy protects directors, board members, and other individuals in management and supervisory positions from possible legal liability if they are indicted for decisions made to run a business. <span className='d-none d-lg-block'></span>This type of insurance protects the personal assets of the directors and officers along with their spouses and compensates them for any settlements or legal fees they incur as a result of lawsuits.</p>
                                     </div>
@@ -310,7 +318,7 @@ export default function DAndO_Insurance() {
                                                             <Image src='/icons/sideC.svg' width="80" height="80" alt="Side C" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>3. Side C</h3>
                                                             <div className='title-22 font-weight-600 text-black mb-3'>Coverage for Entity</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It is designed to protect the company as a whole from certain legal claims, regardless of whether the directors or officers are directly involved in the underlying dispute. This coverage typically addresses two main areas: Employment Disputes & Security Related Issues.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>It is designed to protect the company as a whole from certain legal claims, regardless of whether the directors or officers are directly involved in the underlying dispute. This coverage typically addresses two main areas: employment disputes & security related issues.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -355,7 +363,7 @@ export default function DAndO_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Any private or public company with corporate boards or advisory committees should have a D&O policy to protect their C-Suite executives. Today, company owners are vulnerable to lawsuits from regulators, shareholders, vendors, customers, competitors, employees, and government bodies. <span className='d-none d-lg-block'></span>It's one of those "must-have" policies for every company because it protects them in the event of an expensive lawsuit.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Any private or public company with corporate boards or advisory committees should have a D&O policy to protect their C-suite executives. Today, company owners are vulnerable to lawsuits from regulators, shareholders, vendors, customers, competitors, employees, and government bodies. <span className='d-none d-lg-block'></span>It's one of those "must-have" policies for every company because it protects them in the event of an expensive lawsuit.</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>What can influence the reasonable level of D&O coverage?</div>
@@ -387,7 +395,7 @@ export default function DAndO_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
                                                     <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Business Age</p>
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Business age</p>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -413,7 +421,7 @@ export default function DAndO_Insurance() {
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Who can Sue the Directors or Officers of the organisation?</h3>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Who can Sue the Directors or Officers of the Organisation?</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-3 g-lg-5'>
                                                 <Col lg={4}>
@@ -505,13 +513,13 @@ export default function DAndO_Insurance() {
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Public Relations cover</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Public Relations Cover</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This cover reimburses the costs associated with managing and mitigating the negative impact on the company's reputation, arising out of duties performed by the directors and officers on behalf of the company.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Extradition cover</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Extradition Cover</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects a company if a director or officer is arrested or detained in a foreign country and the company needs to pay for the costs associated with his extradition back to the home country.</div>
                                                     </div>
                                                 </Col>
@@ -547,7 +555,7 @@ export default function DAndO_Insurance() {
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Dedicated additional limit for Non-Executive Directors and Officers</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Dedicated Additional Limit for Non-Executive Directors and Officers</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>With this add-on cover, you get an extra layer of protection that is added to the overall coverage limit for non-executive directors and officers of a company.</div>
                                                     </div>
                                                 </Col>
@@ -665,7 +673,7 @@ export default function DAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees claim unpaid contract</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees’ claim for outstanding contract</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>Multiple employees initiated legal proceedings against the subsidiary of a policyholder in China claiming unpaid contractual benefits and economic compensation.</div>
@@ -685,7 +693,7 @@ export default function DAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>FIR Filed for Alleged Unfair Practices</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>FIR Filed for alleged unfair practices</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>FIR filed by ex-employee against 7 directors for cheating and unfair trade practices. The matter is in litigation before the Trial Court.</div>
@@ -841,8 +849,7 @@ export default function DAndO_Insurance() {
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
                                 <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>

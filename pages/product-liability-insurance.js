@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import {Container, Row, Col, Form, FloatingLabel, Button} from 'react-bootstrap';
 // import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // import the styles
@@ -184,7 +184,7 @@ export default function DAndO_Insurance() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        router.push('/directors_and_officers_form');
+        router.push('/product-liability-flow');
     };
     return (
         <>
@@ -207,20 +207,28 @@ export default function DAndO_Insurance() {
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="companyName" label="Your Company Name">
+                                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="name" label="Your Name">
+                                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="phoneNumber" label="Your Phone Number">
+                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                <Form.Group className="floatFormGroup mb-4">
+                                    <FloatingLabel controlId="workEmail" label="Your Work Email Address">
+                                        <Form.Control className={`${form.formInput}`} type="email" placeholder="&nbsp;" />
+                                    </FloatingLabel>
                                 </Form.Group>
                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
+                                    <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
                                         <span className='me-2'>Buy Now</span>
                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                     </Button>
@@ -272,7 +280,7 @@ export default function DAndO_Insurance() {
                             <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Product Liability Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Product liability insurance covers a spectrum of risks that your products might encounter. These could range from manufacturing defects, design flaws, or inadequate warning labels to misuse by consumers. If someone files a claim against your business because of an issue with your product then this policy can cover legal defense costs, settlements, and court judgments.</p>
 
@@ -328,7 +336,7 @@ export default function DAndO_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Businesses involved in manufacturing or selling goods, as well as distributors, importers, retailers, and others interacting with products, require product liability insurance. <span className='d-none d-lg-block'></span>Clients may also need this policy to safeguard against design flaws and other risks associated to the product. This insurance protects your business from claims or lawsuits resulting from bodily harm or property damage caused to any third party by defective items that your business has manufactured, distributed, or sold.</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Product Liability insurance is necessary for various kinds of businesses:</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Product Liability Insurance is necessary for various kinds of businesses:</div>
                                         <Row>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
@@ -363,13 +371,13 @@ export default function DAndO_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
                                                     <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Restaurants, Cloud Kitchens</p>
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Restaurants, cloud kitchens</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
                                                     <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Print Shops</p>
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Print shops</p>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -389,12 +397,12 @@ export default function DAndO_Insurance() {
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Scope of coverage under Product Liability Insurance</h3>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Scope of coverage under product liability insurance</h3>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>Incidents Covered: The policy provides coverage for accidents, injuries, and damages resulting from the use of the product.</li>
-                                            <li>Potential Product Issues: Coverage may include manufacturing defects, improper packaging, usage instructions, and delivery specifications.</li>
-                                            <li>Domestic and Export Sales: Certain policies offer protection for both domestic sales and exports by the insured company.</li>
-                                            <li>Claim Notification: To initiate the claim process, claims must be submitted to the insurer as soon as possible.</li>
+                                            <li>Incidents covered: The policy provides coverage for accidents, injuries, and damages resulting from the use of the product.</li>
+                                            <li>Potential product issues: Coverage may include manufacturing defects, improper packaging, usage instructions, and delivery specifications.</li>
+                                            <li>Domestic and export sales: Certain policies offer protection for both domestic sales and exports by the insured company.</li>
+                                            <li>Claim notification: To initiate the claim process, claims must be submitted to the insurer as soon as possible.</li>
                                         </ul>
                                     </Container>
                                 </div>
@@ -458,25 +466,25 @@ export default function DAndO_Insurance() {
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Legal Representation Costs</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Legal representation costs</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>These include defense costs for providing documentation or information to investigators concerning product-related faults.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Public Relations Costs</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Public relations costs</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It reimburses expenses for managing and mitigating negative company reputation due to product-related allegations.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Court Attendance Costs</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Court attendance costs</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It offers protection for reasonable costs and expenses incurred by attending court proceedings, hearings, trials, and depositions related to product-related claim defense.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crisis Communication Costs</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crisis communication costs</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers costs for hiring public relations or crisis management firms to advise on public communication strategies related to product claims, lawsuits, or allegations.</div>
                                                     </div>
                                                 </Col>
@@ -572,7 +580,7 @@ export default function DAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Manufacturing Company Faces Product Liability Action Due to Failure to Warn</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Claim due to Product Failure</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>Industrial cables supplied by the policyholder were used in a project. The cables broke during use, causing the entire structure to collapse and leading to property damage of 2 Crore and loss of use for the end customer.</div>
@@ -678,8 +686,7 @@ export default function DAndO_Insurance() {
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
                                 <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>

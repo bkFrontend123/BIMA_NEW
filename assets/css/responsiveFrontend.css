@@ -6,7 +6,7 @@
 
 @media (max-width: 1699px) {
   :root {
-    --section-gap: 70px;
+    --section-gap: 60px;
   }
   .quoteCompareAccordian .accordion-button::before {
     width: 1.6rem;

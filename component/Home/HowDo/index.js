@@ -17,9 +17,11 @@ export default function HowDo() {
 
   const tinderRef = useRef(null);
   const data = [
-    { title: "Choose your policy", direction: "Call or message us if you need help", btnText: 'Next: Digital' },
-    { title: "Choose your policy", direction: "Call or message us if you need help", btnText: 'Next: Digital'},
-    { title: "Choose your policy", direction: "Call or message us if you need help", btnText: 'Next: Digital' },
+    { title: "Choose your policy", direction: "call or message us if you need help", btnText: 'Next: Digital' },
+    { title: "Brief your business", direction: "Answer a few simple questions about your business", btnText: 'Next: Digital'},
+    { title: "Receive suggestions", direction: "Get instant quotes from top insurance companies", btnText: 'Next: Digital' },
+    { title: "Talk to an expert", direction: "Consult with our experts and make payment", btnText: 'Next: Digital' },
+    { title: "Get your quote", direction: "Receive policy copy via email and in your BimaKavach dashboard", btnText: 'Next: Digital' },
   ]
   const onSwipeDown = (e) => {
     console.log("e  eeeeee",e)
@@ -179,7 +181,7 @@ export default function HowDo() {
                           <div className="howDo-sliderBoxText text-white">
                             <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">01</div>
                             <div className="title60 font-secondary font-weight-600">Choose your policy</div>
-                            <div className="title20 font-weight-500 mt-2 mt-md-0">Call or message us if you need help</div>
+                            <div className="title20 font-weight-500 mt-2 mt-md-0">call or message us if you need help</div>
                           </div>
                         </div>
                       </div>
@@ -202,8 +204,8 @@ export default function HowDo() {
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
                             <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">02</div>
-                            <div className="title60 font-secondary font-weight-600">Choose your policy</div>
-                            <div className="title20 font-weight-500 mt-2 mt-md-0">Call or message us if you need help</div>
+                            <div className="title60 font-secondary font-weight-600">Brief your business</div>
+                            <div className="title20 font-weight-500 mt-2 mt-md-0">Answer a few simple questions about your business</div>
                           </div>
                         </div>
                       </div>
@@ -226,8 +228,8 @@ export default function HowDo() {
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
                             <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">03</div>
-                            <div className="title60 font-secondary font-weight-600">Choose your policy</div>
-                            <div className="title20 font-weight-500 mt-2 mt-md-0">Call or message us if you need help</div>
+                            <div className="title60 font-secondary font-weight-600">Receive suggestions</div>
+                            <div className="title20 font-weight-500 mt-2 mt-md-0">Get instant quotes from top insurance companies</div>
                           </div>
                         </div>
                       </div>
@@ -250,9 +252,9 @@ export default function HowDo() {
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
-                            <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">03</div>
-                            <div className="title60 font-secondary font-weight-600">Choose your policy</div>
-                            <div className="title20 font-weight-500 mt-2 mt-md-0">Call or message us if you need help</div>
+                            <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">04</div>
+                            <div className="title60 font-secondary font-weight-600">Talk to an expert</div>
+                            <div className="title20 font-weight-500 mt-2 mt-md-0">Consult with our experts and make payment</div>
                           </div>
                         </div>
                       </div>
@@ -275,34 +277,9 @@ export default function HowDo() {
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
-                            <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">03</div>
-                            <div className="title60 font-secondary font-weight-600">Choose your policy</div>
-                            <div className="title20 font-weight-500 mt-2 mt-md-0">Call or message us if you need help</div>
-                          </div>
-                        </div>
-                      </div>
-                      {/* <button onClick={(e) => onSwipeDown(e)}>Swipe Down</button> */}
-                      
-                      <div className='d-flex text-white howDo-sliderBox-btn howDoswiper-button-next' >
-                        <a className='btnCommon ps-0 text-decoration-none ' >
-                          <span className="me-2 font-weight-500 d-none d-md-inline ">  Next: Digital  </span>
-                          <img src="/icons/arrowRight-white.svg" />
-                        </a>
-                      </div>
-                    </div>
-
-                  </>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <>
-                    <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howdo.png" />
-                      <div className="row mb-5">
-                        <div className="col-md-4">
-                          <div className="howDo-sliderBoxText text-white">
-                            <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">03</div>
-                            <div className="title60 font-secondary font-weight-600">Choose your policy</div>
-                            <div className="title20 font-weight-500 mt-2 mt-md-0">Call or message us if you need help</div>
+                            <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">05</div>
+                            <div className="title60 font-secondary font-weight-600">Get your quote</div>
+                            <div className="title20 font-weight-500 mt-2 mt-md-0">Receive policy copy via email and in your BimaKavach dashboard</div>
                           </div>
                         </div>
                       </div>

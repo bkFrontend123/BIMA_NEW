@@ -39,8 +39,10 @@ function handleFormSubmission(dataLayer) {
   console.log(requestData)
 
   // Make a POST request to the API endpoint
-  fetch('http://3.109.201.114:12001/rest/leadsquare/getquote', {
+  fetch('https://api.bimakavach.com/rest/leadsquare/getquote', {
     method: 'POST',
+    mode: "cors",
+    Accept : "*/*",
     body: JSON.stringify(requestData),
     headers: {
       'Content-Type': 'application/json'
