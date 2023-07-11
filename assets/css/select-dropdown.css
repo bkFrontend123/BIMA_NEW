@@ -59,6 +59,7 @@
     right: 12px;
 }
 .selectDropDiv .select-search-input {
+    background-color: var(--whiteBg);
     font-size: 16px;
     color: var(--vt-c-blue);
     height: 63px;
@@ -109,6 +110,7 @@
 }
 .selectDropDiv .select-search-option,
 .selectDropDiv .select-search-not-found {
+    background-color: var(--whiteBg);
     height: auto;
     padding: 10.8px 20px;
     font-family: 'Galano Grotesque', sans-serif;
@@ -116,6 +118,10 @@
     letter-spacing: 0;
     font-weight: 500;
     color: var(--gray);
+}
+.selectDropDiv .select-search-is-highlighted,
+.selectDropDiv .select-search-option:not(.select-search-is-selected):hover {
+    background-color: var(--vt-c-grayLight2);
 }
 .selectDropDiv .select-search-is-selected {
     color: var(--vt-c-blue) !important;
