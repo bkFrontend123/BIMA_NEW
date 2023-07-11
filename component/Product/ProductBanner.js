@@ -16,7 +16,7 @@ export default function ProductBanner(props) {
                 <div className='ProductBannerBox'>
                     <div className='container'>
                         <div className='row justify-content-between g-4'>
-                            <div className='col-lg-7 col-xl-6'>
+                            <div className='col-lg-7 col-xl-6 depak'>
                                 <div className='ProductBannerText'>
                                     <h1 className='title-60 ProductBannerTextTitle text-black font-weight-700 font-secondary'>{title}</h1>
                                     <p className='ProductBannerTextDescrip title20  text-primaryDark font-primaryNormal font-weight-500 pe-md-4'>
