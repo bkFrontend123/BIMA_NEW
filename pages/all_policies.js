@@ -156,7 +156,8 @@ export default function all_policies() {
                                     </Col>
                                     <Col sm="auto" className='d-none d-lg-block'>
                                         <TalkExpert
-                                            customClass={`${talkExpert.gray} ${talkExpert.small}`}
+                                            background={`${talkExpert.gray}`}
+                                            size={`${talkExpert.small}`}
                                         />
                                     </Col>
                                 </Row>

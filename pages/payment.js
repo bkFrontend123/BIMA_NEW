@@ -95,7 +95,7 @@ export default function payment() {
 
         setErrorGSTMsg("")
         setErrorPANMsg("")
-        router.push('/thank_you');
+        router.push('/thank-you');
     };
 
     return (
