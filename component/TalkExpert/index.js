@@ -10,10 +10,10 @@ export default function TalkExpert(props) {
     useEffect(() => {
         document.body.classList.add("homePageBody")
     }, []);
-    const {customClass, children } = props;
+    const {customClass, size, background, children } = props;
     return (
         <>
-            <div className={`d-flex align-items-center ${style.tlkExprtCol} ${customClass}`}>
+            <div className={`d-flex align-items-center ${style.tlkExprtCol} ${customClass} ${size} ${background}`}>
                 <div className={`${style.tlkExprtImg}`}>
                     <Image
                         src={expertImg}
