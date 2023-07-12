@@ -176,7 +176,7 @@ export default function directors_and_officers_flow() {
                                         <ProductFormContent
                                             icon={productIcon}
                                             title="Cyber Insurance"
-                                            description="Get ₹50 Lakhs Coverage at ₹38,000 per year!"
+                                            description="Get ₹50 Lakhs Coverage at ₹38,000* per year!"
                                             listText1="Answer a few Simple Questions"
                                             listText2="Get curated quotes in minutes"
                                             listText3="Secure your business compehensively"
@@ -190,10 +190,7 @@ export default function directors_and_officers_flow() {
                                                     <span className='ms-2'>Talk to an expert</span>
                                                 </Link>
                                             </div>*/}
-                                            <RatingCard
-                                                reviews="450"
-                                                stars="4.5"
-                                            />
+                                            <RatingCard />
                                             <TalkExpert
                                                 background={`${talkExpert.yellow}`}
                                                 size={`${talkExpert.small}`}
@@ -579,7 +576,9 @@ export default function directors_and_officers_flow() {
                     </Row>
                 </Container>
             </section>
-            <FooterPlain />
+            <FooterPlain
+                starContent="true"
+            />
         </>
     )
 }

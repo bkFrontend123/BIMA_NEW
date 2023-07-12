@@ -18,12 +18,27 @@ export default function RatingCard(props) {
         <>
             <div className={`${style.rateCol} ${customClass} ${background === 'true' ? style.rateBgCol : null}`}>
                 <div className={`${style.rateTextDiv}`}>
-                    <span>{reviews}+</span>
+                    <span>{reviews}500+</span>
                     <p>Companies trust us</p>
                 </div>
                 <div className={`${style.rateStarsDiv}`}>
                     <p>Our customers rate us</p>
                     <div className={`${style.rateStars}`}>
+                        <i>
+                            <Image src={starFull} width="32" height="32" alt="star icon" /> 
+                        </i>
+                        <i>
+                            <Image src={starFull} width="32" height="32" alt="star icon" />
+                        </i>
+                        <i>
+                            <Image src={starFull} width="32" height="32" alt="star icon" />
+                        </i>
+                        <i>
+                            <Image src={starFull} width="32" height="32" alt="star icon" />
+                        </i>
+                        <i>
+                            <Image src={starHalf} width="32" height="32" alt="star icon" />
+                        </i>
                         {stars === '0.5' ? (
                             <>
                                 <i>

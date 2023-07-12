@@ -8,9 +8,11 @@
 .ftrCntnt p {
     font-size: 14px;
     line-height: 22px;
-    color: var(--whiteText);
-    opacity: 0.8;
+    color: var(--vt-c-blueSkyLight2);
     margin-bottom: 6px;
+}
+.ftrCntnt .yellow {
+    color: var(--vt-c-yellow);
 }
 .ftrCntnt p:last-child {
     margin: 0;

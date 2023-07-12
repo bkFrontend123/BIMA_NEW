@@ -168,7 +168,7 @@ export default function errors_and_omissions_flow() {
                                         <ProductFormContent
                                             icon={productIcon}
                                             title="Errors & Omissions Insurance"
-                                            description="Get ₹50 Lakhs Coverage at ₹7,000 per year!"
+                                            description="Get ₹50 Lakhs Coverage at ₹7,000* per year!"
                                             listText1="Answer a few Simple Questions"
                                             listText2="Get curated quotes in minutes"
                                             listText3="Secure your business compehensively"
@@ -517,7 +517,9 @@ export default function errors_and_omissions_flow() {
                     </Row>
                 </Container>
             </section>
-            <FooterPlain />
+            <FooterPlain
+                starContent="true"
+            />
         </>
     )
 }

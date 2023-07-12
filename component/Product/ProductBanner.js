@@ -48,8 +48,6 @@ export default function ProductBanner(props) {
                                     
                                     <div className='mt-4'>
                                         <RatingCard
-                                            reviews="450"
-                                            stars="4.5"
                                             background="true"
                                         />
                                     </div>

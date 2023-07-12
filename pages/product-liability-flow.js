@@ -209,7 +209,7 @@ export default function general_liability_flow() {
                                         <ProductFormContent
                                             icon={productIcon}
                                             title="Product Liability"
-                                            description="Get ₹50 Lakhs Coverage at ₹7,500 per year!"
+                                            description="Get ₹50 Lakhs Coverage at ₹7,500* per year!"
                                             listText1="Answer a few Simple Questions"
                                             listText2="Get curated quotes in minutes"
                                             listText3="Secure your business compehensively"
@@ -689,7 +689,9 @@ export default function general_liability_flow() {
                     </Row>
                 </Container>
             </section>
-            <FooterPlain />
+            <FooterPlain
+                starContent="true"
+            />
         </>
     )
 }
