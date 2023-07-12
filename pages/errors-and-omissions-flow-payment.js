@@ -156,6 +156,7 @@ export default function payment() {
                                                         onChange={setIndValue}
                                                         search
                                                         value={indValue}
+                                                        multiple
                                                     />
                                                     <label>Serving any of the Industries</label>
                                                 </Form.Group>
