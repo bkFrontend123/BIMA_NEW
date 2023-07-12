@@ -561,9 +561,7 @@ export default function directors_and_officers_flow() {
                                         <span className='ms-2'>Talk to an expert</span>
                                     </Link>
                                 </div>*/}
-                                <RatingCard
-                                    reviews="400"
-                                    stars="4.5"
+                                <RatingCard 
                                     customClass="justify-content-center"
                                 />
                                 <TalkExpert

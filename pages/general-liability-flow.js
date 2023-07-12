@@ -225,10 +225,7 @@ export default function general_liability_flow() {
                                                     <span className='ms-2'>Talk to an expert</span>
                                                 </Link>
                                             </div>*/}
-                                            <RatingCard
-                                                reviews="450"
-                                                stars="4.5"
-                                            />
+                                            <RatingCard />
                                             <TalkExpert
                                                 background={`${talkExpert.yellow}`}
                                                 size={`${talkExpert.small}`}
@@ -690,8 +687,6 @@ export default function general_liability_flow() {
                                     </Link>
                                 </div>*/}
                                 <RatingCard
-                                    reviews="400"
-                                    stars="4.5"
                                     customClass="justify-content-center"
                                 />
                                 <TalkExpert
