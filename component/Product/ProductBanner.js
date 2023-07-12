@@ -154,7 +154,7 @@ export default function ProductBanner(props) {
                         background-image: url(/productBanners/marine_banner.jpg);
                     }
                     .ProductBannerBox{
-                        margin-top: 100px;
+                        margin-top: 80px;
                     }
                     .ProductBannerText{
                         padding-left: 30px;
