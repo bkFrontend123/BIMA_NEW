@@ -86,10 +86,15 @@ export default function directors_and_officers_flow() {
 
     const [annualTurnoverValue, setAnnualTurnoverValue] = useState();
     const annualTurnoverOptions = [
-        {name: '0-200 Cr', value: '1'},
-        {name: '200 - 250 Cr', value: '2'},
-        {name: '250 -700 Cr', value: '3'},
-        {name: '700 Cr and above', value: '4'},
+        {name: 'Upto 100 Cr', value: '1'},
+        {name: '101 to 200 Cr', value: '2'},
+        {name: '201 to 250 Cr', value: '3'},
+        {name: '251 to 300 Cr', value: '4'},
+        {name: '301 to 500 Cr', value: '5'},
+        {name: '501 to 700 Cr', value: '6'},
+        {name: '701 to 1000 Cr', value: '7'},
+        {name: '1001 to 2500 cr', value: '8'},
+        {name: 'More than 2500 Cr', value: '9'},
     ];
 
     const [listedValue, setListedValue] = useState();
@@ -159,7 +164,7 @@ export default function directors_and_officers_flow() {
             <HeaderPlain
                 scheduleCall="true"
             />
-            <section className='productFormBlock sectionPadding'>
+            <section className={`productFormBlock sectionPadding ${form.prdctFrmHeight}`}>
                 <Container>
                     <Row className='justify-content-center'>
                         <Col xl={11}>

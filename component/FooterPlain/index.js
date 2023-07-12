@@ -15,12 +15,9 @@ export default function FooterPlain(props) {
                     <Row className='justify-content-center'>
                         <Col xl={11}>
                             <div className={style.ftrCntnt}>
-                                <p>BIMAKAVACH INSURANCE BROKING PVT. LTD. |CIN- U66010MP2022PTC059393 | REGISTERED OFFICE- FLAT NO 201, CLASSIC AVENUE,184 SHRINAGAR MAIN, INDORE MADHYA PRADESH INDIA- 452018 | PHONE NO.- 9036554785 | EMAIL- SUPPORT@BIMAKAVACH.COM</p>
-
-                                <p>BIMAKAVACH IS REGISTERED AS A DIRECT BROKER | REGISTRATION NO. 901, REGISTRATION CODE NO. IRDAI / DB 985/ 2022, VALID TILL 25/06/2026, LICENSE CATEGORY- DIRECT BROKER (GENERAL).</p>
-
-                                <p>VISITORS ARE BEING INFORMED THAT BIMAKAVACH INSURANCE BROKING PVT. LTD. HOLDS THE RIGHT TO SHARE THE INFORMATION SUBMITTED BY YOU ON THE WEBSITE WITH INSURERS. PRODUCT INFORMATION IS GENUINE AND EXCLUSIVELY BASED ON INFORMATION OBTAINED FROM INSURERS.</p>
-                                <p>© 2023 BimaKavach Insurance Broking Pvt. Ltd. All Rights Reserved</p>
+                                <p>BimaKavach Insurance Broking Pvt. Ltd. | CIN- U66010MP2022PTC059393 | Registered  Office- Flat No 201, Classic Avenue,184 Shrinagar Main, Indore Madhya Pradesh India- 452018 | Phone No.- 9036554785 | Email- support@bimakavach.com </p>
+                                <p>BimaKavach is registered as a Direct Broker | Registration No. 901, Registration Code No.  IRDAI / DB 985/ 2022, Valid till 25/06/2026, License category- Direct Broker (General).</p>
+                                <p>Visitors are being informed that BimaKavach Insurance Broking Pvt. Ltd. holds the right to share the information submitted by you on the website with Insurers. Product information is genuine and exclusively based on information obtained from insurers.</p>
                             </div>
                         </Col>
                     </Row>

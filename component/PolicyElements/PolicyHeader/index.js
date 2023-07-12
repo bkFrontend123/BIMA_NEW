@@ -14,7 +14,12 @@ export default function PolicyHeader(props) {
                 <div>
                     <div className={`${style.policyCovName}`}>
                         <div>Coverage name <span>{coverageName}</span></div>
-                        {children}
+                        <div className='mt-4 mt-md-0'>
+                            {children}
+                            <div className={`${style.policyEditBtn}`}>
+                                <a href='javascript:void(0);'>Edit</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

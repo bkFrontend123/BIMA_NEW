@@ -6,10 +6,11 @@
     text-align: center;
 }
 .ftrCntnt p {
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
     color: var(--whiteText);
     opacity: 0.8;
+    margin-bottom: 6px;
 }
 .ftrCntnt p:last-child {
     margin: 0;

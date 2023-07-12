@@ -18,7 +18,7 @@ export default function RatingCard(props) {
         <>
             <div className={`${style.rateCol} ${customClass} ${background === 'true' ? style.rateBgCol : null}`}>
                 <div className={`${style.rateTextDiv}`}>
-                    <span>{reviews} +</span>
+                    <span>{reviews}+</span>
                     <p>Companies trust us</p>
                 </div>
                 <div className={`${style.rateStarsDiv}`}>

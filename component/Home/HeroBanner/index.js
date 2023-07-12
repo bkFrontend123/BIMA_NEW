@@ -11,7 +11,7 @@ export default function HeroBanner(props) {
       <div className='homeHero'>
 
         {/* <img src='/dummyHeader.webp' className='homeBannerImg'/> */}
-        <div className={`homeBanner HomeBannerStyle `}>
+        <div className={`homeBanner HomeBannerStyle`}>
           <div className='container'>
             <div className={`homeBannerText`}>
               <div className='row align-items-end@'>
@@ -73,7 +73,7 @@ export default function HeroBanner(props) {
         <style jsx scope>
           {`
             .homeBanner {
-              margin-top: 100px;
+              margin-top: 80px;
               padding-bottom: 20px;
             }
             .homeBannerTextTitle {
@@ -115,8 +115,8 @@ export default function HeroBanner(props) {
               margin-top: -230px;
             }
             .homeBannerProduct{
-              margin-top: 85px;
-              padding: 85px;
+              margin-top: 80px;
+              padding: 80px;
               box-shadow: 0px 10px 40px 0px #D9D9D9;
               border: 4px dashed var(--vt-c-yellow);
             }

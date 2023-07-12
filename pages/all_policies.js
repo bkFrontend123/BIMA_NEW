@@ -141,7 +141,7 @@ export default function all_policies() {
                                                 coverageName="Directors & Officers Liability"
                                             >
                                                 <PolicyDropdown
-                                                    customClass="mt-4 mt-md-0 ms-md-5"
+                                                    customClass="ms-md-4"
                                                     label="Limit of Liability"
                                                     icon={<RuppeeIcon width="10"
                                                     height="16" />}

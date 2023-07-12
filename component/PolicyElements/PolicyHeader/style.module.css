@@ -16,6 +16,11 @@
     align-items: center;
     border: 1px solid var(--vt-c-blue);
 }
+.policyCovName > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .policyCovName span {
     font-size: 20px;
     font-weight: 600;
@@ -23,11 +28,21 @@
     display: block;
 }
 
+.policyEditBtn {
+    margin: -15px -24px -15px 24px;
+}
+.policyEditBtn a {
+    display: block;
+    padding: 29px 20px;
+    font-size: 15px;
+    color: var(--vt-c-blue);
+    border-left: 1px solid var(--vt-c-blue);
+}
+
 @media (max-width:1699px) {
     .policyCovName span {
         font-size: 19px;
         line-height: 28px;
-        margin-left: 14px;
     }
 }
 
@@ -46,12 +61,19 @@
     .policyCovName span {
         font-size: 17px;
         line-height: 26px;
-        margin-left: 10px;
+    }
+    .policyEditBtn {
+        margin: -10px -20px -10px 20px;
+    }
+    .policyEditBtn a {
+        padding: 24px 20px;
     }
 }
 
 @media (max-width:991px) {
-
+    .policyEditBtn a {
+        padding: 36px 20px;
+    }
 }
 
 @media (max-width:767px) {
@@ -69,7 +91,13 @@
     .policyCovName span {
         font-size: 15px;
         line-height: 24px;
-        margin-left: 0;
         display: block;
+    }
+    .policyEditBtn {
+        margin: 0 0 0 20px;
+    }
+    .policyEditBtn a {
+        padding: 12px;
+        border: 1px solid var(--vt-c-blue);
     }
 }

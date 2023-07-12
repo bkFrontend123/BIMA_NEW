@@ -38,7 +38,7 @@ export default function ProductBanner(props) {
                                                 <div className='ProductBannerRibbonBox'>
                                                     <img className='ribbonProduct' src='/icons/bimaTick.svg' />
                                                     <div className='title-18 text-yellow fst-italic font-weight-400'>at just</div>
-                                                    <div className='title-48 text-yellow font-weight-600 mt-n2'>₹ {insuranceAmount} *</div>
+                                                    <div className='title-48 text-yellow font-weight-600 mt-n2'>₹ {insuranceAmount}*</div>
                                                     <div className='bg-yellow h-3 mt-1'></div>
                                                     <div className='title-18 text-yellow fst-italic font-weight-400'>annually</div>
                                                 </div>

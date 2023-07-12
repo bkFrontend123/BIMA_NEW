@@ -226,8 +226,8 @@ export default function IndustryBlock() {
             }
             
             .homeBannerProduct{
-              margin-top: 85px;
-              padding: 85px;
+              margin-top: 80px;
+              padding: 80px;
               box-shadow: 0px 10px 40px 0px #D9D9D9;
               border: 4px dashed var(--vt-c-yellow);
             }

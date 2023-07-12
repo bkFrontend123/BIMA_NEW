@@ -874,7 +874,9 @@ export default function product() {
                 <div className="d-none d-md-block" style={{ height: "100px" }}></div>
                 <div className="d-blok d-md-none" style={{ height: "40px" }}></div>
             </div>
-            <Footer />
+            <Footer
+                starContent="true"
+            />
 
             <style jsx scope>
                 {`

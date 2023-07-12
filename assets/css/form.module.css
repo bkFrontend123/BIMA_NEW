@@ -1,3 +1,6 @@
+.prdctFrmHeight {
+    min-height: calc(100vh - 110px);
+}
 .whiteFormBox {
     background-color: var(--whiteBg);
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
@@ -26,6 +29,16 @@
     font-weight: 600;
     margin: 0;
 }
+.frmGrpTtl {
+    margin-bottom: 16px;
+}
+.frmGrpTtl h4 {
+    font-size: 19px;
+    color: var(--vt-c-blue);
+    line-height: 30px;
+    font-weight: 600;
+    margin: 0;
+}
 .commonForm .formLabel {
     font-size: 17px;
     color: var(--vt-c-blue);
@@ -34,10 +47,21 @@
     margin-bottom: 14px;
     display: block;
 }
+.commonForm .formLabel.formSmallLabel {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
+.commonForm .formLabel.formLabelGrey {
+    color: var(--vt-c-grayLight3);
+}
 .commonForm .formLabel i {
     margin-left: 8px;
     display: inline-block;
     vertical-align: text-bottom;
+}
+.commonForm .formIconGroup {
+    position: relative;
 }
 .commonForm .formInput {
     font-size: 16px;
@@ -48,11 +72,26 @@
     font-weight: 500;
     border-color: var(--formBorderColor);
 }
+.commonForm .formIconGroup .formInput {
+    padding: 10px 20px 10px 40px;
+}
 .commonForm textarea.formInput {
     height: 110px;
 }
-.commonForm .formInput:hover {
+.commonForm .formInput:hover,
+.commonForm .formInput:not(:placeholder-shown) {
     border-color: var(--vt-c-blue);
+}
+.commonForm .formIconGroup i {
+    position: absolute;
+    left: 20px;
+    top: 37px;
+    color: var(--vt-c-grayLight3);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.commonForm .formIconGroup .formInput:hover ~ i,
+.commonForm .formIconGroup .formInput:not(:placeholder-shown) ~ i {
+    color: var(--vt-c-blue);
 }
 .commonForm .formSelect {
     font-size: 16px;
@@ -252,6 +291,9 @@
 }
 
 @media (max-width:1699px) {
+    .prdctFrmHeight {
+        min-height: calc(100vh - 98px);
+    }
     .whiteFormBox {
         padding: 32px;
     }
@@ -296,6 +338,13 @@
     }
     .frmTtl h3 {
         font-size: 20px;
+        line-height: 28px;
+    }
+    .frmGrpTtl {
+        margin-bottom: 16px;
+    }
+    .frmGrpTtl h4 {
+        font-size: 18px;
         line-height: 28px;
     }
     .frmBackLink {

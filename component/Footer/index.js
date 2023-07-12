@@ -10,8 +10,8 @@ import Insta from '../Icons/Insta'
 import Twitter from '../Icons/Twitter'
 import Linkdin from '../Icons/Linkdin'
 
-export default function Footer() {
-
+export default function Footer(props) {
+  const { starContent } = props;
   return (
     <>
     <Head>
@@ -176,21 +176,25 @@ export default function Footer() {
               </div>
               <div className='d-none d-md-block' style={{ height: "90px" }}></div>
               <div className='d-md-none' style={{ height: "30px" }}></div>
-
-              <div className="row footer-note text-md-start text-center">
-                <div className="col-md-12">
-                  <p className='title12 text-yellow text-uppercase font-weight-500 mb-1'>*The estimated premium mentioned above is calculated under ideal conditions.</p>
-                  <p className='title12 text-yellow text-uppercase font-weight-500 mb-1'>The actual pricing will vary based on the specific information provided by the insured.</p>
+              
+              {starContent == 'true' ? (
+                <div className="row footer-note text-md-start text-center">
+                  <div className="col-md-12">
+                    <p className='title14 text-yellow font-weight-500 mb-1'>*The estimated premium mentioned above is calculated under ideal conditions. The actual pricing will vary based on the specific information provided by the insured.</p>
+                  </div>
                 </div>
-              </div>
+                ): (
+                  null
+                )
+              }
               <div className="row footer-note text-md-start text-center mt-4">
                 <div className="col-md-12">
-                  <p className='title12 text-primarySkyLight1 font-weight-600 text-uppercase mb-1'>Disclaimer:</p>
-                  <p className='title12 text-primarySkyLight2 text-uppercase font-weight-500 mb-1'>BimaKavach Insurance Broking Pvt. Ltd. |CIN- U66010MP2022PTC059393 | Registered  Office- Flat No 201, Classic Avenue,184 Shrinagar Main, Indore Madhya Pradesh India- 452018 | Phone No.- 9036554785 | Email- support@bimakavach.com </p>
+                  <p className='title14 text-primarySkyLight1 font-weight-600 mb-1'>Disclaimer:</p>
+                  <p className='title14 text-primarySkyLight2 font-weight-500 mb-1'>BimaKavach Insurance Broking Pvt. Ltd. | CIN- U66010MP2022PTC059393 | Registered  Office- Flat No 201, Classic Avenue,184 Shrinagar Main, Indore Madhya Pradesh India- 452018 | Phone No.- 9036554785 | Email- support@bimakavach.com </p>
 
-                  <p className='title12 text-primarySkyLight2 text-uppercase font-weight-500 mb-1'>BimaKavach is registered as a Direct Broker | Registration No. 901, Registration Code No.  IRDAI / DB 985/ 2022, Valid till 25/06/2026, License category- Direct Broker (General).</p>
+                  <p className='title14 text-primarySkyLight2 font-weight-500 mb-1'>BimaKavach is registered as a Direct Broker | Registration No. 901, Registration Code No.  IRDAI / DB 985/ 2022, Valid till 25/06/2026, License category- Direct Broker (General).</p>
 
-                  <p className='title12 text-primarySkyLight2 text-uppercase font-weight-500 mb-0'>Visitors are being informed that BimaKavach Insurance Broking Pvt. Ltd. holds the right to share the information submitted by you on the website with Insurers. Product information is genuine and exclusively based on information obtained from insurers.</p>
+                  <p className='title14 text-primarySkyLight2 font-weight-500 mb-0'>Visitors are being informed that BimaKavach Insurance Broking Pvt. Ltd. holds the right to share the information submitted by you on the website with Insurers. Product information is genuine and exclusively based on information obtained from insurers.</p>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 .hdrBlock {
-    padding: 32px 0;
+    padding: 30px 0;
     border-bottom: 1px solid var(--vt-c-grayLight);
 }
 .logo a {
@@ -15,7 +15,7 @@
     text-align: center;
 }
 button.btnSmall {
-    padding: 16px 30px;
+    //padding: 16px 30px;
 }
 .hdrDrpdwn button::after {
     display: none;
@@ -162,13 +162,13 @@ button.btnSmall {
 
 @media (max-width:1699px) {
     .hdrBlock {
-        padding: 26px 0;
+        padding: 24px 0;
     }
 }
 
 @media (max-width:767px) {
     .hdrBlock {
-        padding: 24px 0;
+        padding: 20px 0;
     }
     .btnSmall {
         padding: 10px;
