@@ -24,7 +24,7 @@ import subitem from '@/assets/css/subitem-select.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 import progress from '@/assets/css/progress.module.css'
 
-import productIcon from '../public/startup1.svg'
+import productIcon from '../public/startup5.svg'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import arrowBack from '../public/icons/arrowBack.svg'
 import WhatsApp from '../component/Icons/WhatsApp'
