@@ -117,11 +117,18 @@ export default function WorkmensCompensation_Flow() {
 
     const [periodInsuranceValue, setPeriodInsuranceValue] = useState();
     const periodInsuranceOptions = [
-        {name: '1 Year', value: '1'},
-        {name: '2 Year', value: '2'},
-        {name: '3 Year', value: '3'},
-        {name: '4 Year', value: '4'},
-        {name: '5 Year', value: '5'},
+        {name: '1 Month', value: '1'},
+        {name: '2 Month', value: '2'},
+        {name: '3 Month', value: '3'},
+        {name: '4 Month', value: '4'},
+        {name: '5 Month', value: '5'},
+        {name: '6 Month', value: '6'},
+        {name: '7 Month', value: '7'},
+        {name: '8 Month', value: '8'},
+        {name: '9 Month', value: '9'},
+        {name: '10 Month', value: '10'},
+        {name: '11 Month', value: '11'},
+        {name: '12 Month', value: '12'},
     ];
 
     const [existingPolicyValue, setExistingPolicyValue] = useState();

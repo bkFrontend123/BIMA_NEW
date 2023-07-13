@@ -496,7 +496,7 @@ export default function WorkmensCompensation_Insurance() {
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
                                                     <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Claim for dead employee in manufacturing company</div>
+                                                        <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Claim for dead employee in manufacturing company</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>ABC Manufacturing is a large industrial company that employs hundreds of workers. To protect their employees and comply with legal requirements, they have a workers' compensation insurance policy in place. Unfortunately, one of their workers died because of a mishap in the production unit. As ABC company has an WC insurance in place, the insurer agrees to indemnify the workers family for the accident.</div>
                                                     </div>
                                                 </div>
@@ -511,7 +511,7 @@ export default function WorkmensCompensation_Insurance() {
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
                                                     <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Claim for injured employee in construction company</div>
+                                                        <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Claim for injured employee in construction company</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>A 35 yr old young entrepreneur runs an e-commerce store exporting wallets to customers worldwide, using a third-party courier for shipping. Regrettably, the entrepreneur didn't secure marine insurance, resulting in lost goods during transit. This loss led to financial difficulties and dissatisfied customers. With an appropriate insurance policy in place, the entrepreneur might have been able to recover the losses from the misplaced shipments.</div>
                                                     </div>
                                                 </div>
