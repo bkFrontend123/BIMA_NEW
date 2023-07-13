@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import {Container, Row, Col, Form, FloatingLabel, Button} from 'react-bootstrap';
 // import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // import the styles
@@ -27,7 +27,7 @@ import Accordion from '../component/Accordion'
 import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
 
-export default function EAndO_Insurance() {
+export default function CommercialCrime_Insurance() {
     const navbarExample2Ref = useRef(null);
     const [activeC, setActiveC] = useState(1);
     useEffect(() => {
@@ -203,30 +203,38 @@ export default function EAndO_Insurance() {
                         description="Crime Insurance is designed to protect your business from losses resulting from criminal activities. It acknowledges the unfortunate reality that not all risks come from outside your business - some come from within.
                         An innovative ‘white-collar crime’ policy, it offers compensation for financial losses due to dishonest activities originating from an employee, a third party, or a vendor. These activities could be related to accounting, cash fraud, theft, vandalism, or digital crimes like email spoofing."
                         noInsurer="true"
+                        form="true"
+                        formHeading="Analyse your Business Risk. Buy the right Policy within 10 Minutes"
                         customClass="crimeBnr"
                     >
-                        <div className={`${form.commonForm}`}>
-                            <Form>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
-                                </Form.Group>
-                                <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button" onClick={goToNextPage}>
-                                        <span className='me-2'>Buy Now</span>
-                                        <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
-                                    </Button>
-                                </div>
-                            </Form>
-                        </div>
+                        <Form>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="companyName" label="Your Company Name">
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="name" label="Your Name">
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="phoneNumber" label="Your Phone Number">
+                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="workEmail" label="Your Work Email Address">
+                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <div className={`${form.fromButtonDiv} d-sm-flex`}>
+                                <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
+                                    <span className='me-2'>Buy Now</span>
+                                    <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
+                                </Button>
+                            </div>
+                        </Form>
                     </ProductBanner>
                 </div>
                 {/* product banner end */}

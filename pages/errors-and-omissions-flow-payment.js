@@ -18,25 +18,26 @@ import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import RuppeeIcon from '../component/Icons/Ruppee';
 import paymentIcon from '../public/payment/bajajFinserv.png';
 
-export default function payment() {
+export default function EAndO_Flow_Payment() {
     const navbarExample2Ref = useRef(null);
     useEffect(() => {
         //document.body.classList.add("userFlowBody")
     }, []);
 
-    const [isBusinessDetails, setBusinessDetails] = useState(true);
-    const handleBusinessDetailsToggle = () => {
-        setBusinessDetails(!isBusinessDetails);
-    };
-
-    const [indValue, setIndValue] = useState();
-    const indTypeOptions = [
-        {name: 'B2B Consulting', value: '1'},
-        {name: 'Enterprise Technology', value: '2'},
-        {name: 'Consumer', value: '3'},
-        {name: 'BFSI', value: '4'},
-        {name: 'Enterprise Technology', value: '5'},
-        {name: 'B2B Consulting', value: '6'},
+    const [servingIndustryValue, setServingIndustryValue] = useState();
+    const servingIndustryOptions = [
+        {name: '"Aviation', value: '1'},
+        {name: 'BFSI', value: '2'},
+        {name: 'Education / Edutech', value: '3'},
+        {name: 'Energy & Utilities', value: '4'},
+        {name: 'Health Care', value: '5'},
+        {name: 'Manufacturing', value: '6'},
+        {name: 'Media', value: '7'},
+        {name: 'Retail', value: '8'},
+        {name: 'Telecommunications', value: '9'},
+        {name: 'Transportation and Logistics', value: '10'},
+        {name: 'Others', value: '11'},
+        {name: 'Not applicable', value: '12'},
     ];
 
     const router = useRouter();
@@ -148,14 +149,14 @@ export default function payment() {
                                                         </Form.Group>
                                                     </Col>
                                                 </Row>
-                                                <Form.Group className={`selectDropDiv searchDropDiv mb-4 ${!indValue == '' ? 'selectedDropDiv' : null}`}>
+                                                <Form.Group className={`selectDropDiv searchDropDiv mb-4 ${!servingIndustryValue == '' ? 'selectedDropDiv' : null}`}>
                                                     <SelectSearch
-                                                        options={indTypeOptions}
+                                                        options={servingIndustryOptions}
                                                         name="industry"
                                                         placeholder="Search by keyword"
-                                                        onChange={setIndValue}
+                                                        onChange={setServingIndustryValue}
                                                         search
-                                                        value={indValue}
+                                                        value={servingIndustryValue}
                                                         multiple
                                                     />
                                                     <label>Serving any of the Industries</label>

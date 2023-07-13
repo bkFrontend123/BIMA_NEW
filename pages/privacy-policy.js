@@ -6,7 +6,7 @@ import Footer from '../component/Footer'
 
 import terms from '@/assets/css/terms.module.css'
 
-export default function About() {
+export default function PrivacyPolicy() {
     useEffect(() => {
         document.body.classList.add("homePageBody")
     }, []);

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: url(#Degradado_sin_nombre_243);
+      }
+
+      .cls-3 {
+        mix-blend-mode: soft-light;
+      }
+
+      .cls-6 {
+        fill: url(#Degradado_sin_nombre_28);
+      }
+
+      .cls-7, .cls-8 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-8 {
+        stroke-linecap: round;
+        stroke-width: 2.47px;
+      }
+
+      .cls-9 {
+        isolation: isolate;
+      }
+
+      .cls-10 {
+        filter: url(#drop-shadow-31);
+      }
+
+      .cls-4 {
+        opacity: .24;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="7.5" y1="88.5" x2="130.5" y2="88.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0e2b72"/>
+      <stop offset=".04" stop-color="#0e2e79"/>
+      <stop offset=".26" stop-color="#143fa8"/>
+      <stop offset=".48" stop-color="#194dcd"/>
+      <stop offset=".68" stop-color="#1c57e8"/>
+      <stop offset=".86" stop-color="#1e5df8"/>
+      <stop offset="1" stop-color="#1f60fe"/>
+    </linearGradient>
+    <filter id="drop-shadow-31" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="4"/>
+      <feFlood flood-color="#0526e8" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="Degradado_sin_nombre_28" data-name="Degradado sin nombre 28" x1="66.47" y1="46.63" x2="138.62" y2="46.63" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".9"/>
+      <stop offset="0" stop-color="#fff" stop-opacity=".84"/>
+      <stop offset=".03" stop-color="#fff" stop-opacity=".73"/>
+      <stop offset=".05" stop-color="#fff" stop-opacity=".65"/>
+      <stop offset=".08" stop-color="#fff" stop-opacity=".58"/>
+      <stop offset=".11" stop-color="#fff" stop-opacity=".53"/>
+      <stop offset=".16" stop-color="#fff" stop-opacity=".51"/>
+      <stop offset=".28" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset=".46" stop-color="#fdfdfd" stop-opacity=".48"/>
+      <stop offset=".67" stop-color="#f9f9f9" stop-opacity=".43"/>
+      <stop offset=".89" stop-color="#f3f3f3" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#efefef" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_243" data-name="Degradado sin nombre 243" x1="-4823.5" y1="-4134.5" x2="-4823.5" y2="-4134.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".9"/>
+      <stop offset=".03" stop-color="#fff" stop-opacity=".83"/>
+      <stop offset=".11" stop-color="#fff" stop-opacity=".68"/>
+      <stop offset=".17" stop-color="#fff" stop-opacity=".58"/>
+      <stop offset=".23" stop-color="#fff" stop-opacity=".52"/>
+      <stop offset=".28" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset=".46" stop-color="#fdfdfd" stop-opacity=".48"/>
+      <stop offset=".67" stop-color="#f9f9f9" stop-opacity=".43"/>
+      <stop offset=".89" stop-color="#f3f3f3" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#efefef" stop-opacity=".3"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-9">
+    <g id="Layer_2" data-name="Layer 2">
+      <rect class="cls-2" width="150" height="150"/>
+    </g>
+    <g id="Office">
+      <g>
+        <polygon class="cls-1" points="130.5 133.5 130.5 141.5 7.5 141.5 7.5 133.5 10.5 133.5 10.5 35.5 67.5 35.5 67.5 56.5 124.5 72.5 124.5 133.5 130.5 133.5"/>
+        <rect class="cls-7" x="66.5" y="78.5" width="48" height="56"/>
+        <rect class="cls-7" x="27.5" y="105.5" width="21" height="29"/>
+        <rect class="cls-7" x="30.5" y="46.5" width="21" height="4"/>
+        <rect class="cls-7" x="23.5" y="46.5" width="4" height="4"/>
+        <rect class="cls-7" x="30.5" y="61.5" width="21" height="4"/>
+        <rect class="cls-7" x="23.5" y="61.5" width="4" height="4"/>
+        <rect class="cls-7" x="30.5" y="75.5" width="21" height="4"/>
+        <rect class="cls-7" x="23.5" y="75.5" width="4" height="4"/>
+        <rect class="cls-7" x="30.5" y="89.5" width="21" height="4"/>
+        <rect class="cls-7" x="23.5" y="89.5" width="4" height="4"/>
+      </g>
+      <polygon class="cls-4" points="67 129 66 135 114 78 111.34 78.64 67 129"/>
+      <line class="cls-7" x1="38" y1="105" x2="38" y2="135"/>
+      <g>
+        <g class="cls-10">
+          <g>
+            <circle class="cls-6" cx="102.54" cy="46.63" r="36.07"/>
+            <path class="cls-3" d="m138.62,45.92c0,.35,0,.71-.02,1.06-.55-19.43-16.48-35.01-36.05-35.01s-35.5,15.58-36.05,35.01c-.01-.35-.02-.71-.02-1.06,0-19.93,16.15-36.07,36.07-36.07s36.07,16.15,36.07,36.07Z"/>
+            <path class="cls-5" d="m102.54,10.56c19.92,0,36.07,16.15,36.07,36.07s-16.15,36.07-36.07,36.07-36.07-16.15-36.07-36.07S82.62,10.56,102.54,10.56m0-1.07c-20.48,0-37.14,16.66-37.14,37.14s16.66,37.14,37.14,37.14,37.14-16.66,37.14-37.14S123.03,9.49,102.54,9.49h0Z"/>
+          </g>
+        </g>
+        <polyline class="cls-8" points="86.16 49.11 97.03 59.99 118.79 38.24"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -22,7 +22,7 @@ import dAndO_insuanceIcon from '../public/startup1.svg'
 import gL_insuanceIcon from '../public/startup2.svg'
 import eAndO_insuanceIcon from '../public/startup3.svg'
 
-export default function thank_you() {
+export default function ThankYou() {
     const navbarExample2Ref = useRef(null);
     useEffect(() => {
         document.body.classList.add("userFlowBody")

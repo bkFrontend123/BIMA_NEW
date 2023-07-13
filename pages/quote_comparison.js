@@ -31,7 +31,7 @@ import iciciMobileIcon from '@/public/policyLogos/icici_logo.png'
 import bajajFinservMobileIcon from '@/public/policyLogos/bajajAllianz_logo.png'
 
 
-export default function quote_comparison() {
+export default function QuoteComparison() {
     const navbarExample2Ref = useRef(null);
     useEffect(() => {
         document.body.classList.add("userFlowBody")

@@ -19,7 +19,7 @@ import CloseIcon from '../component/Icons/Close';
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import paymentIcon from '../public/payment/bajajFinserv.png';
 
-export default function payment() {
+export default function Payment() {
     const navbarExample2Ref = useRef(null);
     useEffect(() => {
         document.body.classList.add("userFlowBody")

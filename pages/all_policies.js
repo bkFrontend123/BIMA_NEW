@@ -31,7 +31,7 @@ import tataAIG_logo from '../public/policyLogos/tataAIG_logo.png'
 import newIndiaAssurance_logo from '../public/policyLogos/newIndiaAssurance_logo.png'
 import hdfcErgo_logo from '../public/policyLogos/hdfcErgo_logo.png'
 
-export default function all_policies() {
+export default function AllPolicies() {
     const navbarExample2Ref = useRef(null);
     useEffect(() => {
         document.body.classList.add("userFlowBody")

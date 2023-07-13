@@ -203,38 +203,38 @@ export default function DAndO_Insurance() {
                         description="Good insurance decisions for C-Suite Executives begin with an understanding of D&O insurance and what it covers."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="7,000"
+                        form="true"
+                        formHeading="Analyse your Business Risk. Buy the right Policy within 10 Minutes"
                         customClass="dAndoBnr"
                     >
-                        <div className={`${form.commonForm}`}>
-                            <Form>
-                                <Form.Group className="floatFormGroup mb-4">
-                                    <FloatingLabel controlId="companyName" label="Your Company Name">
-                                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
-                                    </FloatingLabel>
-                                </Form.Group>
-                                <Form.Group className="floatFormGroup mb-4">
-                                    <FloatingLabel controlId="name" label="Your Name">
-                                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
-                                    </FloatingLabel>
-                                </Form.Group>
-                                <Form.Group className="floatFormGroup mb-4">
-                                    <FloatingLabel controlId="phoneNumber" label="Your Phone Number">
-                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" />
-                                    </FloatingLabel>
-                                </Form.Group>
-                                <Form.Group className="floatFormGroup mb-4">
-                                    <FloatingLabel controlId="workEmail" label="Your Work Email Address">
-                                        <Form.Control className={`${form.formInput}`} type="email" placeholder="&nbsp;" />
-                                    </FloatingLabel>
-                                </Form.Group>
-                                <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
-                                        <span className='me-2'>Buy Now</span>
-                                        <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
-                                    </Button>
-                                </div>
-                            </Form>
-                        </div>
+                        <Form>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="companyName" label="Your Company Name">
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="name" label="Your Name">
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="phoneNumber" label="Your Phone Number">
+                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="workEmail" label="Your Work Email Address">
+                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <div className={`${form.fromButtonDiv} d-sm-flex`}>
+                                <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
+                                    <span className='me-2'>Buy Now</span>
+                                    <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
+                                </Button>
+                            </div>
+                        </Form>
                     </ProductBanner>
                 </div>
                 {/* product banner end */}

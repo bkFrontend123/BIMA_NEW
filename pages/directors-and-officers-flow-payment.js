@@ -15,16 +15,11 @@ import progress from '@/assets/css/progress.module.css'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import paymentIcon from '../public/payment/bajajFinserv.png';
 
-export default function payment() {
+export default function DAndO_Flow_Payment() {
     const navbarExample2Ref = useRef(null);
     useEffect(() => {
         //document.body.classList.add("userFlowBody")
     }, []);
-
-    const [isBusinessDetails, setBusinessDetails] = useState(true);
-    const handleBusinessDetailsToggle = () => {
-        setBusinessDetails(!isBusinessDetails);
-    };
 
     const [qualificationValue, setQualificationValue] = useState();
     const handleChangeQualification = event => {
@@ -74,7 +69,7 @@ export default function payment() {
                                                 <div className="mb-4">
                                                     <Row className='g-4 g-xl-5 align-items-center'>
                                                         <Col>
-                                                            <Form.Label htmlFor="existingPolicy" className={`m-0 ${form.formLabel}`}>No Auditor Qualification in the latest audited financial report</Form.Label>
+                                                            <Form.Label className={`m-0 ${form.formLabel}`}>No Auditor Qualification in the latest audited financial report</Form.Label>
                                                         </Col>
                                                         <Col lg={6} xl={5}>
                                                             <div className='text-lg-end'>
@@ -107,7 +102,7 @@ export default function payment() {
                                                 <div className="mb-4">
                                                     <Row className='g-4 g-xl-5 align-items-center'>
                                                         <Col>
-                                                            <Form.Label htmlFor="existingPolicy" className={`${form.formLabel}`}>No scenario of resignation of equal to or more than 3 directors in past one year?</Form.Label>
+                                                            <Form.Label className={`${form.formLabel}`}>No scenario of resignation of equal to or more than 3 directors in past one year?</Form.Label>
                                                         </Col>
                                                         <Col lg={6} xl={5}>
                                                             <div className='text-lg-end'>
@@ -149,9 +144,7 @@ export default function payment() {
                                                             <p>Please Continue to complete your payment, fill your Proposal form, upload your documents so the issuing of policy can be initiated</p>
                                                         </div>
                                                     </Col>
-                                                    <Col lg={4}>
-                                                    
-                                                    </Col>
+                                                    <Col lg={4}></Col>
                                                 </Row>
                                             </Form>
                                         </div>

@@ -8,7 +8,7 @@ import Footer from '../component/Footer'
 import Search from '../component/Icons/Search'
 import { CareerService } from '../services/CareerService'
 
-export default function IndustryDetail() {
+export default function Career() {
     const [checkedItems, setCheckedItems] = useState({});
     const [categories, setCategories] = useState([])
     const [category, setCategory] = useState([]);

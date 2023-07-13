@@ -19,7 +19,7 @@ import ReactAudioPlayer from 'react-audio-player';
 import { Link as SocialLink, animateScroll as scroll } from "react-scroll";
 import { Button } from 'react-bootstrap';
 
-export default function blogs() {
+export default function BlogDetail() {
     const SocialRef = useRef(null);
     const [activeC, setActiveC] = useState("");
 

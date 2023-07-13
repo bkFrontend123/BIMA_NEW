@@ -5,9 +5,9 @@
     background: var(--whiteBg);
     position: absolute;
     left: 10px;
-    top: 20px;
+    top: 18px;
     font-size: 16px;
-    color: var(--vt-c-blue);
+    color: var(--vt-c-grayLight3);
     padding: 0 10px;
     pointer-events: none;
     transition: opacity .1s ease-in-out,transform .1s ease-in-out;
@@ -16,6 +16,7 @@
 .selectDropDiv .select-search-has-focus ~ label,
 .selectDropDiv.selectedDropDiv label {
     transform: translateY(-30px);
+    color: var(--vt-c-blue);
 }
 .selectDropDiv .select-search-container {
     width: 100%;

@@ -24,13 +24,13 @@ import subitem from '@/assets/css/subitem-select.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 import progress from '@/assets/css/progress.module.css'
 
-import productIcon from '../public/startup1.svg'
+import productIcon from '../public/productIcons/liability/dAndO_icon.svg'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import arrowBack from '../public/icons/arrowBack.svg'
 import WhatsApp from '../component/Icons/WhatsApp'
 import tooltipIcon from '../public/icons/tooltipIcon.svg'
 
-export default function directors_and_officers_flow() {
+export default function DAndO_Flow() {
     const navbarExample2Ref = useRef(null);
     useEffect(() => {
         //document.body.classList.add("userFlowBody")
@@ -353,47 +353,47 @@ export default function directors_and_officers_flow() {
                                                                     </Form.Group>
                                                                     {subsidiaryValue == 'Yes' ? (
                                                                         <div className='mb-4'>
-                                                                             <div className={`${form.formCheckLabel}`}>Select the countries you have subsidiaries in and the number of subsidiaries each country have.</div>
+                                                                            <div className={`${form.formCheckLabel}`}>Select the countries you have subsidiaries in and the number of subsidiaries each country have.</div>
                                                                             {subsidiaryBlocksData.map((block, index) => (
-                                                                            <SubsidiaryCard key={index}>
-                                                                                <SubsidiaryItem
-                                                                                    label={block.label}
-                                                                                    customClass={`${subitem.tooltipDiv} ${block.checked ? subitem.active : ""}`}
-                                                                                >
-                                                                                    <Form.Check
-                                                                                        inline
-                                                                                        type="checkbox"
-                                                                                        id={block.id}
-                                                                                        name={block.label}
+                                                                                <SubsidiaryCard key={index}>
+                                                                                    <SubsidiaryItem
                                                                                         label={block.label}
-                                                                                        onChange={() => handleChangeSubsidiary(index)}
-                                                                                        className={`${subitem.formSubCheck}`}
-                                                                                    />
-                                                                                    <OverlayTrigger
-                                                                                        placement="top"
-                                                                                        overlay={<Tooltip>{block.remark}</Tooltip>}
-                                                                                        >
-                                                                                        {({ ref, ...triggerHandler }) => (
-                                                                                            <i className='tooltipIcon' {...triggerHandler}>
-                                                                                                <Image
-                                                                                                    ref={ref}
-                                                                                                    src={tooltipIcon}
-                                                                                                    width="24"
-                                                                                                    height="24"
-                                                                                                    alt="Remark Icon"
-                                                                                                />
-                                                                                            </i>
-                                                                                        )}
-                                                                                    </OverlayTrigger>
-                                                                                </SubsidiaryItem>
-                                                                                <SubsidiaryQnty
-                                                                                    customClass={`${block.checked ? subitem.active : ""}`}
-                                                                                >
-                                                                                    <Button className={subitem.qtyDcrsBtn} type="button" onClick={() => decrementSubsidiaryCount(index)}>-</Button>
-                                                                                    <Form.Control className={`${subitem.qtyInput}`} type="number" min={0} max={10} value={block.checked ? block.count : block.count} readOnly />
-                                                                                    <Button className={subitem.qtyIncrsBtn} type="button" onClick={() => incrementSubsidiaryCount(index)}>+</Button>
-                                                                                </SubsidiaryQnty>
-                                                                            </SubsidiaryCard>
+                                                                                        customClass={`${subitem.tooltipDiv} ${block.checked ? subitem.active : ""}`}
+                                                                                    >
+                                                                                        <Form.Check
+                                                                                            inline
+                                                                                            type="checkbox"
+                                                                                            id={block.id}
+                                                                                            name={block.label}
+                                                                                            label={block.label}
+                                                                                            onChange={() => handleChangeSubsidiary(index)}
+                                                                                            className={`${subitem.formSubCheck}`}
+                                                                                        />
+                                                                                        <OverlayTrigger
+                                                                                            placement="top"
+                                                                                            overlay={<Tooltip>{block.remark}</Tooltip>}
+                                                                                            >
+                                                                                            {({ ref, ...triggerHandler }) => (
+                                                                                                <i className='tooltipIcon' {...triggerHandler}>
+                                                                                                    <Image
+                                                                                                        ref={ref}
+                                                                                                        src={tooltipIcon}
+                                                                                                        width="24"
+                                                                                                        height="24"
+                                                                                                        alt="Remark Icon"
+                                                                                                    />
+                                                                                                </i>
+                                                                                            )}
+                                                                                        </OverlayTrigger>
+                                                                                    </SubsidiaryItem>
+                                                                                    <SubsidiaryQnty
+                                                                                        customClass={`${block.checked ? subitem.active : ""}`}
+                                                                                    >
+                                                                                        <Button className={subitem.qtyDcrsBtn} type="button" onClick={() => decrementSubsidiaryCount(index)}>-</Button>
+                                                                                        <Form.Control className={`${subitem.qtyInput}`} type="number" min={0} max={10} value={block.checked ? block.count : block.count} readOnly />
+                                                                                        <Button className={subitem.qtyIncrsBtn} type="button" onClick={() => incrementSubsidiaryCount(index)}>+</Button>
+                                                                                    </SubsidiaryQnty>
+                                                                                </SubsidiaryCard>
                                                                             ))}
                                                                         </div>
                                                                     ):(

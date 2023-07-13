@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import {Container, Row, Col, Form, FloatingLabel, Button} from 'react-bootstrap';
 // import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // import the styles
@@ -27,7 +27,7 @@ import Accordion from '../component/Accordion'
 import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
 
-export default function GroupHealth_Insurance() {
+export default function WorkmensCompensation_Insurance() {
     const navbarExample2Ref = useRef(null);
     const [activeC, setActiveC] = useState(1);
     useEffect(() => {
@@ -184,12 +184,12 @@ export default function GroupHealth_Insurance() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        router.push('/directors_and_officers_form');
+        router.push('/workmens-compensation-flow');
     };
     return (
         <>
             <Head>
-                <title>Group Health Insurance | BimaKavach Insurance for Group Health</title>
+                <title>Workmen Compensation Policy | BimaKavach Insurance for Workmen Compensation</title>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
@@ -199,32 +199,44 @@ export default function GroupHealth_Insurance() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Group Health Insurance"
-                        description="Group health insurance is a type of insurance that covers a bunch of people together, like employees in a company or members of a group. It helps them get health insurance at a cheaper price because the risk is shared among all the people in the group. Employers also get tax benefits for providing this kind of insurance to their employees."
-                        customClass="grpHlthBnr"
+                        title="Workmen Compensation Policy"
+                        description="A key requirement to ensure your business's compliance with labor laws, this policy is designed to provide financial coverage for your employees in case of workplace injuries or illnesses. It covers costs related to medical treatments, offers disability benefits, and, if necessary, provides death benefits. 
+                        This policy keeps your business compliant and forms an essential safety net around your employees' futures.
+                        Evaluate your business vulnerability. Secure the optimal policy in just 10 minutes. Avail professional guidance at every step."
+                        insuranceWorth="3 Crore"
+                        insuranceAmount=""
+                        form="true"
+                        formHeading="Analyse your Business Risk. Buy the right Policy within 10 Minutes"
+                        customClass="wrkmnCmpBnr"
                     >
-                        <div className={`${form.commonForm}`}>
-                            <Form>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
-                                </Form.Group>
-                                <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
-                                        <span className='me-2'>Buy Now</span>
-                                        <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
-                                    </Button>
-                                </div>
-                            </Form>
-                        </div>
+                        <Form>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="companyName" label="Your Company Name">
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="name" label="Your Name">
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="phoneNumber" label="Your Phone Number">
+                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="workEmail" label="Your Work Email Address">
+                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <div className={`${form.fromButtonDiv} d-sm-flex`}>
+                                <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
+                                    <span className='me-2'>Buy Now</span>
+                                    <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
+                                </Button>
+                            </div>
+                        </Form>
                     </ProductBanner>
                 </div>
                 {/* product banner end */}
@@ -271,23 +283,66 @@ export default function GroupHealth_Insurance() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Group Health Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The term "Group Health Insurance" refers to an insurance policy that covers a group of employees under the same company. The plan covers a wide range of medical expenses, including ambulance rides, medicines, and specialist fees. The premiums of a group medical insurance plan are paid by the employer and they are purchased by companies or organizations as a perk to provide medical coverage to their employees</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Workmen Compensation Policy?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Workmen Compensation Insurance, serves as a financial safeguard for employees encountering work-related injuries. According to the Employees’ State Insurance Act of 1948, all employers in India, particularly those managing manufacturing units with over 20 employees, are legally required to hold such an assurance policy.</p>
+
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>In case of a work accident resulting in injury or death, Employee Protection Assurance provides financial aid to both the employee and their family. It caters to employees who sustain injuries or become disabled due to mishaps at work locations such as construction zones, factories, plantations, mines, and more.</p>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Group Health Insurance Plan</h3>
-                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>It covers medical benefits for the employee primarily. The spouse, children, and dependent parents of the employee can be included as an add-on cover.</li>
-                                            <li>Some policies have pre-existing illnesses and maternity care.</li>
-                                            <li>Cashless hospitalization is available at hospitals, in most cases.</li>
-                                            <li>Some plans reimburse specialists and other medical practitioners for following checkups.</li>
-                                            <li>There is no requirement for medical screenings.</li>
-                                            <li>Specialists and other medical practitioners may receive reimbursements for subsequent checkups.</li>
-                                        </ul>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Workmen Compensation Policy</h3>
+                                        <div className={`${productStyle.lightYellowSecCards}`}>
+                                            <Row className='g-4 g-lg-5'>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/compensationCalculationIcon.svg' width="80" height="80" alt="Compensation Calculation" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Compensation Calculation</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>This policy considers factors like the employee's age, role, and average monthly wage for compensation calculation.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/fixedRatesIcon.svg' width="80" height="80" alt="Fixed Rates" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Fixed Rates</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Fixed minimum and maximum compensation rates apply for death and disability cases, subject to periodic reviews.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/dependentCompensationIcon.svg' width="80" height="80" alt="Dependent Compensation" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Dependent Compensation</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>In the unfortunate event of an employee's death, their dependents become eligible for compensation from the employer.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/employeeProtectionIcon.svg' width="80" height="80" alt="Employee Protection" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Employee Protection</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>The enforcement of the Employee Protection Assurance policy falls under the purview of the 'Social Security Division' of the Ministry of Labour & Employment.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/implementationAssuranceIcon.svg' width="80" height="80" alt="Implementation Assurance" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Implementation Assurance</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Each state government appoints Compensation Commissioners dedicated to the effective implementation of this assurance policy.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </div>
                                     </Container>
                                 </div>
                             </div>
@@ -295,96 +350,44 @@ export default function GroupHealth_Insurance() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Group Health Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>If you own a business and have officially registered it, it's crucial to offer health insurance to your employees. This applies whether your business is small, just starting, or a large company. Providing health insurance ensures that everyone in your organization has access to medical coverage and can take care of their health needs. It's a beneficial practice for all involved.</p>
-                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>Early Stage Startups <span className='d-block'></span>Buying a group personal accident insurance policy for your team will help you scale the organization faster by attracting & retaining great talents.</li>
-                                            <li>SMEs <span className='d-none d-lg-block'></span>Group health insurance helps SME businesses manage their healthcare costs and ensure they can provide quality care to their employees. The proposition is even more attractive because it gives businesses the ability to customize healthcare plans and avail of tax benefits.</li>
-                                            <li>Large Organizations <span className='d-block'></span>BimaKavach offers customized insurance solutions tailored to your needs. The policy covers all members uniformly regardless of their age, gender, or occupation. Our experts leave no stone unturned to make your insurance buying journey seamless.</li>
-                                        </ul>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Workmen Compensation Policy?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Companies with a workforce of more than 20 employees are mandated by law to possess this form of assurance. As per the Employees' State Insurance Act of 1948, employers are obligated to extend insurance benefits to their employees. Claims under this assurance can be categorized into four types, namely accidental death, permanent total disability, permanent partial disability, and temporary total disability.</p>
+
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>This policy is primarily designed to offer financial security to workers and their families in case of adverse workplace incidents.</p>
                                     </div>
                                 </Container>
+                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
+                                    <Container className='position-relative'>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-black mb-0'>You can raise a claim under WC insurance policy by following these steps:</h3>
+                                        <ol className={`text-black title-20 mt-4 mt-xl-5 ${productStyle.listOrderData}`}>
+                                            <li>Start by notifying the factory inspector promptly if  an accident occurs on your premises.</li>
+                                            <li>Follow this up by formally informing the insurance company in writing about the worker's disability or unfortunate demise.</li>
+                                            <li>The insurance company will deploy a professional investigator  to confirm the veracity of the claim.</li>
+                                            <li>Ensure that you provide any documents requested by the  insurance company for further validation of the claim.</li>
+                                            <li>If you receive a notice from the workmen's compensation commissioner, promptly forward it to your insurance company.</li>
+                                            <li>Meanwhile, submit the claim form along with all necessary documentation to your insurance provider.</li>
+                                        </ol>
+                                    </Container>
+                                </div>
                             </div>
                             <div id="scrollspyHeading3" className={`${productStyle.whyGet}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Group Health Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Nowadays, many companies are focusing more on their employees and providing them with corporate health insurance, which is a popular benefit. This insurance not only takes care of employees' medical needs but also makes them feel better about their company. It helps reduce the number of employees leaving the company and improves their productivity. Moreover, if employees choose to, their family members can also be covered by this insurance. Overall, both employees and employers gain advantages from this type of insurance.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Workmen Compensation Policy?</div>
+                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
+                                            <li>Financial coverage for employees who suffer injuries while on duty, ensuring their wellbeing and financial stability.</li>
+                                            <li>Most workmen's compensation policies include coverage for not only permanent staff but also for temporary and contract workers, extending the protective umbrella to all your employees.</li>
+                                            <li>Acquiring this insurance helps maintain legal compliance within your organization, ensuring you meet all regulatory requirements.</li>
+                                            <li>If an injury leaves a worker incapacitated and unable to perform their duties, this policy assures them a consistent monthly income, allowing them to focus on recovery without financial distress.</li>
+                                            <li>In the unfortunate event of a work-related fatality, workmen's compensation insurance steps in to provide death benefits, offering essential support to the bereaved family.</li>
+                                            <li>Investing in workmen's compensation insurance can shield your business from hefty fines and penalties, promoting financial security and reputation preservation.</li>
+                                        </ul>
                                     </div>
                                 </Container>
 
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
-                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
-                                    <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Group Health Insurance Benefits for Employers</h3>
-                                        <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='g-3 g-lg-5'>
-                                                <Col lg={4}>
-                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Employee Retention</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>As several companies are offering a plethora of employee-associated benefits, employee retention has become increasingly challenging for an organization. Group Health Insurance encourages an employee to stay with the company, increasing employee retention</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Promotes Healthy Workplace Culture and Boosts Productivity</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>A comprehensive group insurance plan demonstrates how much you care for your employee's health and well-being. The more you care, the more productive and healthy your employees will be.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Tax Benefits</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Like all other business insurance premiums, Group health insurance premiums paid by employers are also tax-deductible as a business expense.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0 mt-4 mt-xl-5'>Group Health Insurance Benefits for Employees</h3>
-                                        <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='g-3 g-lg-5'>
-                                                <Col lg={4}>
-                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Pre-existing Disease is Covered From Day 1</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Unlike the retail policy, the Group Health Insurance policy may cover pre-existing illnesses and diseases from the moment an employee joins the organization.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Extensive Coverage With no Limit on Diseases</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Employee group health plans cover various ailments.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Larger Maternity Coverage</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>If opted for maternity cover, most of these plans cover both C-sections and normal deliveries, and some plans also provide coverage for newborns without a standard 90-day maternity period.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`pb-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Negotiated Rates</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Insurance carriers negotiate rates with healthcare providers and facilities on behalf of the employer and employees. These negotiated rates are typically lower than what an individual would pay out-of-pocket, resulting in cost savings.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                    </Container>
-                                </div>
+                                
                             </div>
                             <div id="scrollspyHeading4" className={`pt-0 ${productStyle.coverage}`}>
                                 <Container>
@@ -402,7 +405,7 @@ export default function GroupHealth_Insurance() {
                                             </span>
                                             Coverages & Exclusions in
                                         </h3>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Group Health Insurance</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Workmen Compensation Policy</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
                                         <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
@@ -410,47 +413,34 @@ export default function GroupHealth_Insurance() {
                                     </div>
                                     <div className={`overflow-hidden ${productStyle.coverageTabPanel}`}>
                                         <div data-tab className="place-content-center">
+                                            <Row>
+                                                <Col lg={8}>
+                                                    <div className='title-20 text-black mb-4'>Workmen's compensation insurance facilitates employers to offset the financial responsibilities related to their employees' work-related injuries or illnesses. Here's an overview of the principal protections provided by a standard Workmen's Compensation Insurance policy in India:</div>
+                                                </Col>
+                                            </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Coverage for pre-existing diseases</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>A pre-existing disease is a medical condition or illness that an individual already has before seeking insurance coverage. Group health insurance coverage starts to cover pre-existing diseases from the very day an employee joins the company. There is no waiting period as such for any pre-existing disease.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Medical Expenses Coverage:</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The policy covers medical costs stemming from work-related injuries or illnesses. This includes charges for hospital stays, doctors' consultations, diagnostic tests, medications, surgeries, and other necessary medical treatments. Immediate medical needs, like ambulance services or emergency care, are typically included. The policy may also extend to rehabilitation costs like physical therapy, vocational training, and necessary aids that assist the employee's recovery and return to work.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Maternity coverage</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Group Health Insurance policy offers financial protection for childbirth-related expenses for both C-sections and normal deliveries. Usually, there is no waiting period for maternity coverage in these policies. However, some providers may have a 9-month waiting period. Expenses covered may include hospitalization for childbirth, room charges, nursing fees, operation theater charges, and other medical services specific to the delivery. The policy may have a specified sub-limit for such expenses. Group Health Insurance policies often cover pre and postnatal care expenses as well.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Physical Injury Coverage:</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The policy includes coverage for physical injuries sustained by employees in the course of their employment. This comprises injuries occurring on the employer's premises, during work-related activities, or while traveling for work. The policy also covers associated medical costs, including hospitalization, doctors' fees, diagnostic tests, medications, surgeries, and rehabilitation services.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Newborn baby coverage</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>New-born babies are covered from the moment they are born. The coverage includes medical expenses incurred for the baby during the coverage period. This can include hospitalization expenses, consultations with pediatricians, vaccinations, diagnostic tests, medications and any necessary medical treatments related to the baby's health. However, such expenses may have certain limits and sub-limits.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Death or Disability Coverage:</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The policy provides benefits for death or disability resulting from work-related accidents or occupational diseases. Compensation is extended to the dependents or nominees of a deceased employee. If an employee suffers from permanent or temporary disability due to a work-related incident, the policy provides compensation aligned with the degree of disability. It may also cover rehabilitation costs for disabled employees, including medical treatments, physical therapy, vocational training, and assistive devices.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Ambulance costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The insured can claim the cost of a road ambulance to travel to the hospital or from the hospital to the place of residence under this cover. The policy may cover both emergency and non-emergency ambulance services. The policy specifies the criteria for availing ambulance coverage, which can include the distance of transportation, the severity of the medical condition, and the recommendation of a medical professional. A defined coverage limit is usually set for ambulance expenses.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Pre and post-hospitalization expenses</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The policy specifies a predefined period of pre and post-hospitalization coverage, typically ranging from 30 to 90 days before and after the hospitalization. The coverage may include the costs related to diagnostic tests, consultations, medications, and other medical services directly linked to the hospitalization, within this specified period. It may also include follow-up consultations, rehabilitation services, and other necessary treatments after hospitalization.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Expenses for domiciliary and daycare</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Domiciliary coverage refers to the reimbursement of medical expenses incurred for treatment received at home when hospitalization is either not possible or not medically necessary. The policy specifies the criteria for availing of such coverage, which may include the need for continuous medical supervision and the recommendation of a medical professional. Similarly, daycare treatment refers to medical operations that do not require 24-hour hospitalization. These include cataract surgery, tonsillitis surgery, and others.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Medical practitioners and specialist’s fees</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This policy offers financial protection for the fees charged by doctors and specialists for in-patient hospitalization, outpatient consultations, and treatments. However, the policy may specify a maximum limit on the coverage for such fees.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Occupational Diseases Coverage:</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The policy extends coverage for occupational diseases as outlined in the Workmen's Compensation Act, 1923 and its amendments. To claim this coverage, the employee must provide medical evidence verifying that the disease is a direct result of their occupation or workplace environment. Upon confirmation, the policy covers the relevant medical costs, including hospital stays, doctors' fees, diagnostic tests, medications, surgeries, and other necessary treatments.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -458,25 +448,22 @@ export default function GroupHealth_Insurance() {
                                         <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>There are a few standard exclusions among all these plans:</div>
+                                                    <div className='title-20 text-black mb-4'>Workmen compensation insurance policies come with certain exclusions, which may vary depending on the insurance provider and the specific policy terms. Some commonly encountered exclusions in these policies in India are:</div>
                                                 </Col>
                                             </Row>
-                                            <ul className={`text-black title-20 ${productStyle.listData}`}>
-                                                <li>Some policies may not cover the parents of an employee.</li>
-                                                <li>The insurance does not cover non-allopathic treatments such as homeopathy, ayurveda, etc.</li>
-                                                <li>A corporate health insurance policy is always limited in duration and is only valid during the employee's employment with the company.</li>
-                                                <li>Expenses incurred in the treatment of AIDS and other diseases related to congenital defects.</li>
-                                                <li>Alcohol or drug abuse-related illness or complications.</li>
-                                            </ul>
-                                            <div className='title-32 font-secondary font-weight-600 text-yellow mb-4 mt-4 mt-xl-5'>Add-on Extensions</div>
-                                            <ul className={`text-black title-20 ${productStyle.listData}`}>
-                                                <li>When purchasing group health insurance, companies can select extended coverages such as:</li>
-                                                <li>The expenses associated with childbirth can be capped during maternity.</li>
-                                                <li>There may be no waiting period for maternity cover. The insured members can receive coverage for maternity-related services from the inception of their health insurance policy.</li>
-                                                <li>Within the maternity limit, newborn babies can be covered.</li>
-                                                <li>OPD (Outpatient Department) coverage is also an option for employers.</li>
-                                                <li>If the employee's existing sum assured is exhausted and they need more money to clear their dues, the employer can provide a corporate buffer.</li>
-                                            </ul>
+                                            <Row className='justify-content-between g-4'>
+                                                <Col>
+                                                    <ul className={`text-black title-20 ${productStyle.listData}`}>
+                                                        <li>Assumed liabilities of the insured.</li>
+                                                        <li>Injuries caused by war, foreign invasion, or mutiny.</li>
+                                                        <li>Employees not classified as workers according to the Workmen Compensation Act.</li>
+                                                        <li>Penalties or interests imposed on an employee due to legal complications.</li>
+                                                        <li>Accidents or death caused by self-inflicted harm or intentional aggravation of an injury.</li>
+                                                        <li>Health issues or accidents occurring while the employee was under the influence of drugs or alcohol.</li>
+                                                        <li>Liabilities pertaining to the employees of contractors.</li>
+                                                    </ul>
+                                                </Col>
+                                            </Row>
                                         </div>
                                     </div>
                                 </Container>
@@ -493,7 +480,7 @@ export default function GroupHealth_Insurance() {
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Group Health Insurance Examples</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Workman's Compensation Examples</h3>
                                 </div>
                             </Col>
                         </Row>
@@ -508,14 +495,14 @@ export default function GroupHealth_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Claim for Medical Expenses Cover</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>An electrical cable manufacturing company with 100+ employees in Gurgaon decided to avail Group Health Insurance Policy. Mr. Rajiv, one of the employees of this organization, unfortunately, suffered a heart attack. The cardiologists placed a stent immediately after angioplasty. Thanks to the Group Health Insurance policy of this employer, Mr. Rajeev received a lump sum payment as per the policy terms, helping him cover his medical expenses and providing financial support during his recovery and rehabilitation.</div>
+                                                        <div className='title-26 font-weight-600 text-black m-0'>Claim for dead employee in manufacturing company</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>ABC Manufacturing is a large industrial company that employs hundreds of workers. To protect their employees and comply with legal requirements, they have a workers' compensation insurance policy in place. Unfortunately, one of their workers died because of a mishap in the production unit. As ABC company has an WC insurance in place, the insurer agrees to indemnify the workers family for the accident.</div>
                                                     </div>
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/workmen_incident1.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -523,14 +510,14 @@ export default function GroupHealth_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Claim for Medical Expenses Cover</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>An electrical cable manufacturing company with 100+ employees in Gurgaon decided to avail Group Health Insurance Policy. Mr. Rajiv, one of the employees of this organization, unfortunately, suffered a heart attack. The cardiologists placed a stent immediately after angioplasty. Thanks to the Group Health Insurance policy of this employer, Mr. Rajeev received a lump sum payment as per the policy terms, helping him cover his medical expenses and providing financial support during his recovery and rehabilitation.</div>
+                                                        <div className='title-26 font-weight-600 text-black m-0'>Claim for injured employee in construction company</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>A 35 yr old young entrepreneur runs an e-commerce store exporting wallets to customers worldwide, using a third-party courier for shipping. Regrettably, the entrepreneur didn't secure marine insurance, resulting in lost goods during transit. This loss led to financial difficulties and dissatisfied customers. With an appropriate insurance policy in place, the entrepreneur might have been able to recover the losses from the misplaced shipments.</div>
                                                     </div>
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/workmen_incident2.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -548,98 +535,100 @@ export default function GroupHealth_Insurance() {
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Group Health Insurance</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Workmen Compensation Policy</h3>
                                 </div>
                             </Col>
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What is the difference between group Mediclaim and health insurance?"
-                                content="The main difference between Group Health Insurance and Individual Health Insurance is that in a Group plan, the coverage is shared among a set of people related under a certain condition. Whereas an Individual health insurance policy covers only the individual policyholder."
+                                title="What is the workmen compensation act in simple words?"
+                                content="The Workmen's Compensation Act, 1923 is an Indian law that provides financial protection to workers who suffer injuries or disabilities while performing their job duties. The Act ensures that employees receive compensation for any injury, disability, or death arising out of and during the course of their employment. Under the Act, if a worker sustains an injury or dies due to an accident at the workplace, the employer is liable to pay compensation to the worker or their dependents. The compensation amount is determined based on the nature of the injury, the worker's monthly wages, and other factors. Since 2010, this Act has been known as the Employee's Compensation Act."
                             />
                             <Accordion
-                                title="Is medical insurance part of employees' CTC?"
-                                content="Though it depends from company to company. But, mostly, the premium of Medical insurance provided by a company is usually a part of the CTC (cost to company) structure specified to the employees at the time of joining the company."
+                                title="What is the difference between workmen's compensation and employee compensation?"
+                                content="There is no significant difference in the legal provisions or the purpose of the Indian law. Both 'Workmen's Compensation' and 'Employees' Compensation' essentially refer to the same concept of providing financial protection and compensation to workers who suffer injuries, disabilities, or death in the course of their employment."
                             />
                             <Accordion
-                                title="When it comes to claim admissibility, how does it differ by room type?"
-                                content="In a group mediclaim policy, the claim admissibility may differ based on the room type chosen by the insured individual during their hospitalization. Usually, sub-limits (a specific percentage of the sum insured amount) are specified for different hospital expenses such as room rent. Thus, it is always advised to the policyholder to always stick to the room rent limit, to ensure smooth admissibility of his claim."
-                            />
-                            <Accordion
-                                title="Is group health insurance mandatory for employees?"
-                                content="If the employer has a Group Health Insurance policy in place, any new employee will automatically get covered by this policy"
-                            />
-                            <Accordion
-                                title="What determines the premium for group health insurance?"
+                                title="What are the salient features of the workmen's compensation act?"
                                 content={[<>
-                                    <span>In Group Personal Health Insurance, premiums are calculated based on several factors that help assess the risk associated with providing coverage to a group of individuals.</span>
-                                    <span className='mt-3 d-block'>The following factors are typically considered:</span>
-                                    <ul className={`mt-3 ${productStyle.listData}`}>
-                                        <li>The number of individuals included in the group</li>
-                                        <li>Gender distribution of the group</li>
-                                        <li>The average age of the group members</li>
-                                        <li>Family composition of the employees</li>
-                                        <li>The nature of the occupation or industry of the group members</li>
-                                        <li>The chosen coverage limits for the group policy</li>
-                                        <li>Additional benefits or riders opted for</li>
+                                    <span>Here are some of the key features of the Act:</span>
+                                    <ul className={`mt-4 ${productStyle.listData}`}>
+                                        <li>The Act covers employees across industries, including factories, mines, construction sites and more.</li>
+                                        <li>The Act imposes a statutory liability on employers to compensate workers for injuries, disabilities, or death arising out of and during the course of their employment.</li>
+                                        <li>It establishes a formula for calculating compensation based on the nature and extent of the injury or disability.</li>
+                                        <li>It covers the reimbursement of medical expenses incurred by the worker for treatment related to the work-related injury or illness.</li>
+                                        <li>The Act also requires employers to obtain insurance policies to cover their liability for compensation.</li>
                                     </ul>
                                 </>]}
                             />
                             <Accordion
-                                title="What is group insurance room rent capping?"
-                                content="In a group mediclaim policy, sub-limits or caps (a specific percentage of the sum insured amount) are specified for different hospital expenses such as room rent. The claim admissibility may differ based on the room type the insured individual chose during the hospitalization. Thus, it is always advised to the policyholder to always stick to the room rent limit, to ensure smooth admissibility of his claim."
-                            />
-                            <Accordion
-                                title="When it comes to group health insurance, how are preexisting conditions covered?"
-                                content="In case you have a pre-existing disease, the insurance company might ask you to go for a medical check-up. The insurance premium will be based on the test results. The insurance company may refuse to offer a policy if the results are unfavorable. This is because, if you already have a pre-existing condition, the probability of claims rises."
-                            />
-                            <Accordion
-                                title="How does group health insurance provide maternity benefits?"
+                                title="How is workman's compensation calculated in India?"
                                 content={[<>
-                                    <span>Here's how group health insurance typically provides maternity benefits:</span>
-                                    <ul className={`mt-3 ${productStyle.listData}`}>
-                                        <li>Pre and post-natal expenses - usually offer coverage 60 days before and 90 days after hospitalization.</li>
-                                        <li>In-patient hospitalization - The cost of hospitalization (such as doctor's visit charges, surgeries, etc.) and room rent are covered.</li>
-                                        <li>Type of delivery - Both types of deliveries (normal and c-section) are covered.</li>
-                                        <li>Vaccination costs - The vaccinations for the baby begin soon after birth. Related costs are covered as per the WHO schedule.</li>
-                                        <li>Lawful termination of pregnancy - The cost of legal termination is covered under the maternity Cover</li>
+                                    <span>The calculation of workmen's compensation in India, as per the provisions of the Workmen's Compensation Act, involves considering several factors. The key elements used in determining the compensation amount include:</span>
+                                    <ul className={`mt-4 ${productStyle.listData}`}>
+                                        <li>Monthly wages of the injured worker</li>
+                                        <li>The extent and nature of the injury or disability suffered by the worker</li>
+                                        <li>The age of the worker at the time of the injury</li>
+                                        <li>Compensation Formula, as provided in the Act</li>
                                     </ul>
                                 </>]}
                             />
                             <Accordion
-                                title="Do we need a pre-existing disease waiver?"
-                                content="Pre-existing disease waiver in a Group Health Insurance Policy can be highly beneficial for insured members. It provides coverage for treatment and expenses related to pre-existing diseases from the inception of the policy, without imposing waiting periods or exclusions specific to those conditions. This will also ensure the employees can access necessary medical treatments and services for their pre-existing conditions without delay."
-                            />
-                            <Accordion
-                                title="What is the difference between a cashless claim and a reimbursement claim in Group Health Insurance?"
-                                content="In a cashless claim, you visit a hospital in your network and your health insurer approves some amount initially and pays the remaining amount after the treatment. Whereas, in a reimbursement claim you pay your hospital bills after treatment. In order for your claim to be approved, you must submit these bills and any other medical documents to your insurer."
-                            />
-                            <Accordion
-                                title="How to make a reimbursement claim for Group Health Insurance?"
+                                title="What are the rules of workmen’s compensation?"
                                 content={[<>
-                                    <ul className={`${productStyle.listData}`}>
-                                        <li>In the event of a hospitalization, inform the insurer as soon as possible.</li>
-                                        <li>Within 7 days of discharge, submit the claim form and all required documents.</li>
-                                        <li>Collect all bills, reports, and discharge summaries in original form.</li>
-                                        <li>After checking the policy terms and conditions, the insurer will process the claim.</li>
-                                        <li>Transfer the amount using a canceled cheque.</li>
-                                        <li>The insurer will process the claim after checking the policy's terms and conditions.</li>
-                                        <li>Transfer the amount using a canceled cheque.</li>
-                                        <li>Within 15 days of receiving all the details, the insurer will transfer the funds.</li>
+                                    <span>The rules governing workmen's compensation in India are outlined under the Workmen's Compensation Act and its associated regulations. While the specific rules may vary between states, here are some common aspects and provisions:</span>
+                                    <ul className={`mt-4 ${productStyle.listData}`}>
+                                        <li>The Act establishes the employer's liability to provide compensation for work-related injuries, disabilities, or death.</li>
+                                        <li>Employers are required to report any work-related accidents resulting in death or serious injuries to the appropriate authorities within the specified time frame.</li>
+                                        <li>Employers are mandated to obtain insurance policies to cover their liability for compensation.</li>
+                                        <li>It establishes a formula for calculating compensation based on the nature and extent of the injury or disability.</li>
+                                        <li>It covers the reimbursement of medical expenses incurred by the worker for treatment related to the work-related injury or illness.</li>
                                     </ul>
                                 </>]}
                             />
                             <Accordion
-                                title="How to file a cashless claim for Group Health Insurance"
+                                title="Who is eligible for workman's compensation?"
                                 content={[<>
-                                <ul className={`${productStyle.listData}`}>
-                                    <li>Group health insurance cashless claims can be made by following the steps below.</li>
-                                    <li>At the hospital, fill out a pre-authorization form.</li>
-                                    <li>The TPA notifies the insurer that a pre-approval has been granted.</li>
-                                    <li>The insurer approves the claim and provides some initial funds.</li>
-                                    <li>The final settlement is made after the treatment has been completed according to the terms of the policy.</li>
-                                </ul>
+                                    <span>The Workmen's Compensation Act or Employees Compensation Act applies to the following entities:</span>
+                                    <ul className={`mt-4 ${productStyle.listData}`}>
+                                        <li>Employees working in mines, docks factories, plantations, oilfields, construction establishments, and other establishments listed in Schedule II of the Act.</li>
+                                        <li>Persons recruited for working abroad and those employed outside India, as mentioned in Schedule II of the Act.</li>
+                                        <li>Person recruited as the helper, mechanic, cleaner, driver or others in connection with a motor vehicle and to the members of the crew of an aircraft.</li>
+                                    </ul>
                                 </>]}
+                            />
+                            <Accordion
+                                title="Where is workmen’s compensation applicable?"
+                                content={[<>
+                                    <span>The Workmen's Compensation Act is applicable to the following entities:</span>
+                                    <ul className={`mt-4 ${productStyle.listData}`}>
+                                        <li>Employees working in mines, docks factories, plantations, oilfields, construction establishments, and other establishments listed in Schedule II of the Act.</li>
+                                        <li>Persons recruited for working abroad and those employed outside India, as mentioned in Schedule II of the Act.</li>
+                                        <li>Person recruited as the helper, mechanic, cleaner, driver, or others in connection with a motor vehicle and to the members of the crew of an aircraft.</li>
+                                        <li>Please note that this act does not apply to the members of the armed forces & workmen covered under the ESI Act.</li>
+                                    </ul>
+                                </>]}
+                            />
+                            <Accordion
+                                title="What is the process of WC claims?"
+                                content={[<>
+                                    <span>The following process must be followed:</span>
+                                    <ul className={`mt-4 ${productStyle.listData}`}>
+                                        <li>The insured must immediately notify the insurance provider of the occurrence of the incident.</li>
+                                        <li>If the accident occurs at a manufacturing facility, the factory inspector must be notified promptly.</li>
+                                        <li>The claim must subsequently be put forward in writing, together with all appropriate documents.</li>
+                                        <li>A representative from the insurance provider verifies the claim.</li>
+                                        <li>Depending on the outcome of the verification, the insurer may approve or refuse the claim.</li>
+                                    </ul>
+                                </>]}
+                            />
+                            <Accordion
+                                title="What can be the maximum claim in WC policy?"
+                                content="The maximum claim amount under a Workmen's Compensation policy in India can vary depending on the terms and conditions of the insurance policy and the specific provisions of the insurance company. The compensation limit for workmen's compensation in India is determined by the Employees' Compensation Act, which sets the maximum amounts for different types of injuries and disabilities"
+                            />
+                            <Accordion
+                                title="Is workmen policy compulsory?"
+                                content="Yes, workmen's insurance, also known as workers' compensation insurance, is compulsory in India for certain categories of employers. This requirement is specified under the Employees' Compensation Act, which makes it mandatory for employers to provide compensation to their employees in the event of work-related injuries, disabilities, or death."
                             />
                         </div>
                     </Container>
@@ -762,13 +751,10 @@ export default function GroupHealth_Insurance() {
                                 </div>*/}
                                 <IndustryBlock />
                                 <div className={`${productStyle.productStartupIcon}`}>
-                                    <div className='badgeIconCol'>
-                                        <img className='badgeIcon' src="/icons/badgeIcon.svg" alt="Simple Digital & Transparent" />
-                                        <img className='badgeActiveIcon' src="/icons/badgeActiveIcon.svg" alt="Simple Digital & Transparent" />
-                                    </div>
+                                    <Image src="/prdct_SDT_icon.svg" width="272" height="272" alt="Simple Digital & Transparent" />
                                 </div>
                             </div>
-                            <div className={`mt-5 pt-xl-4 ${productStyle.productStartupBottom}`}>
+                            <div className={`mt-5 ${productStyle.productStartupBottom}`}>
                                 <Row>
                                     <Col>
                                         <ProductSchedule />
@@ -787,7 +773,9 @@ export default function GroupHealth_Insurance() {
                 <div className="d-none d-md-block" style={{ height: "100px" }}></div>
                 <div className="d-blok d-md-none" style={{ height: "40px" }}></div>
             </div>
-            <Footer />
+            <Footer
+                starContent="true"
+            />
 
             <style jsx scope>
                 {`
@@ -812,12 +800,12 @@ export default function GroupHealth_Insurance() {
                 }
                 @media only screen and (max-width: 992px) {
                     .title-42 {
-                        font-size: 28px;
-                        line-height: 40px;
-                    }
-                    .title-36 {
                         font-size: 26px;
                         line-height: 38px;
+                    }
+                    .title-36 {
+                        font-size: 28px;
+                        line-height: 34px;
                     }
                     .title-32 {
                         font-size: 26px;

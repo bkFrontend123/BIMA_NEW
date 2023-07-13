@@ -7,6 +7,9 @@
     top: 16px;
     z-index: 1;
 }
+.floatFormGroup.tooltipDiv .tooltipIcon {
+    right: 20px;
+}
 .tooltip {
     opacity: 1;
 }
@@ -36,6 +39,9 @@
     .tooltipDiv .tooltipIcon {
         right: 34px;
         top: 12px;
+    }
+    .floatFormGroup.tooltipDiv .tooltipIcon {
+        right: 16px;
     }
     .tooltipIcon img {
         width: 20px;

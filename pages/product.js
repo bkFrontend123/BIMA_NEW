@@ -28,7 +28,7 @@ import { Link, animateScroll as scroll } from "react-scroll"
 
 import form from '@/assets/css/form.module.css'
 
-export default function product() {
+export default function Product() {
     const navbarExample2Ref = useRef(null);
     const [activeC, setActiveC] = useState(1);
     useEffect(() => {

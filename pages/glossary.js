@@ -11,7 +11,7 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import { GlossoryService } from '../services/GlossoryService'
 
-export default function IndustryDetail() {
+export default function Glossary() {
 
     let alphabets = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
     const [checkedItems, setCheckedItems] = useState({});

@@ -104,7 +104,7 @@ html {
 }
 
 body.homePageBody .navbar-main .nabbarStrip {
-   padding: 24px 30px;
+   padding: 20px 24px;
    position: relative;
 }
 
@@ -113,7 +113,7 @@ body.homePageBody .navbar-main .nabbarStrip {
 }
 
 .navbar-main {
-   padding-top: 52px;
+   padding-top: 30px;
    position: relative;
    z-index: 2;
 }

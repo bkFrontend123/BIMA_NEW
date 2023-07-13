@@ -24,13 +24,13 @@ import subitem from '@/assets/css/subitem-select.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 import progress from '@/assets/css/progress.module.css'
 
-import productIcon from '../public/startup2.svg'
+import productIcon from '../public/productIcons/liability/eAndO_icon.svg'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import arrowBack from '../public/icons/arrowBack.svg'
 import WhatsApp from '../component/Icons/WhatsApp'
 import tooltipIcon from '../public/icons/tooltipIcon.svg'
 
-export default function errors_and_omissions_flow() {
+export default function EAndO_Flow() {
     const navbarExample2Ref = useRef(null);
     useEffect(() => {
         //document.body.classList.add("userFlowBody")

@@ -28,34 +28,34 @@ function Navbar() {
   console.log(menuToggle)
 
   const LiabiltyInsurance = [
-    { id: "l1", link: "/directors-and-officers-insurance", img: "/productIcons/liability/dAndO_icon.png", title: "Directors & Officers Insurance" },
-    { id: "l2", link: "/errors-and-omissions-insurance", img: "/productIcons/liability/eAndO_icon.png", title: "Errors & Omissions Insurance" },
-    { id: "l3", link: "/general-liability-insurance", img: "/productIcons/liability/generalLiability_icon.png", title: "General Liability Insurance" },
-    //{ id: "l4", link: "/", img: "/productIcons/liability/fidelity_icon.png", title: "Fidelity Insurance" },
-    { id: "l5", link: "/product-liability-insurance", img: "/productIcons/liability/productLiability_icon.png", title: "Product Liability Insurance" },
-    //{ id: "l6", link: "/", img: "/productIcons/liability/workman_icon.png", title: "Workman’s Compensation" },
-    { id: "l7", link: "/commercial-crime-insurance", img: "/productIcons/liability/crime_icon.png", title: "Crime Insurance" },
-    { id: "l8", link: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.png", title: "Cyber Insurance" },
+    { id: "l1", link: "/directors-and-officers-insurance", img: "/productIcons/liability/dAndO_icon.svg", title: "Directors & Officers Insurance" },
+    { id: "l2", link: "/errors-and-omissions-insurance", img: "/productIcons/liability/eAndO_icon.svg", title: "Errors & Omissions Insurance" },
+    { id: "l3", link: "/general-liability-insurance", img: "/productIcons/liability/generalLiability_icon.svg", title: "General Liability Insurance" },
+    //{ id: "l4", link: "/", img: "/productIcons/liability/fidelity_icon.svg", title: "Fidelity Insurance" },
+    { id: "l5", link: "/product-liability-insurance", img: "/productIcons/liability/productLiability_icon.svg", title: "Product Liability Insurance" },
+    { id: "l6", link: "/workmens-compensation-insurance", img: "/productIcons/liability/workman_icon.svg", title: "Workman’s Compensation" },
+    { id: "l7", link: "/commercial-crime-insurance", img: "/productIcons/liability/crime_icon.svg", title: "Crime Insurance" },
+    { id: "l8", link: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.svg", title: "Cyber Insurance" },
   ]
   const AssetInsurance = [
-    { id: "a1", link: "/fire-and-burglary-insurance", img: "/productIcons/asset/fire_icon.png", title: "Fire Insurance" },
-    //{ id: "a2", link: "/", img: "/productIcons/asset/officePackage_icon.png", title: "Office Package" },
-    //{ id: "a3", link: "/", img: "/productIcons/asset/shopOwner_icon.png", title: "Shop Owner’s" },
-    //{ id: "a4", link: "/", img: "/productIcons/asset/restaurant_icon.png", title: "Restaurant, Hotels & Cafes" },
-    //{ id: "a5", link: "/", img: "/productIcons/asset/educational_icon.png", title: "Educational Institutes" },
-    //{ id: "a6", link: "/", img: "/productIcons/asset/hospitals_icon.png", title: "Hospitals & Clinics" },
+    { id: "a1", link: "/fire-and-burglary-insurance", img: "/productIcons/asset/fire_icon.svg", title: "Fire Insurance" },
+    //{ id: "a2", link: "/", img: "/productIcons/asset/officePackage_icon.svg", title: "Office Package" },
+    //{ id: "a3", link: "/", img: "/productIcons/asset/shopOwner_icon.svg", title: "Shop Owner’s" },
+    //{ id: "a4", link: "/", img: "/productIcons/asset/restaurant_icon.svg", title: "Restaurant, Hotels & Cafes" },
+    //{ id: "a5", link: "/", img: "/productIcons/asset/educational_icon.svg", title: "Educational Institutes" },
+    //{ id: "a6", link: "/", img: "/productIcons/asset/hospitals_icon.svg", title: "Hospitals & Clinics" },
   ]
   const EngineeringInsurance = [
-    { id: "e1", link: "/contractor-all-risk-policy", img: "/productIcons/engineering/contractorsAllRisk_icon.png", title: "Contractors All Risk" },
-    { id: "e2", link: "/erection-all-risk-insurance", img: "/productIcons/engineering/erectionAllRisk_icon.png", title: "Erection All Risk" },
+    { id: "e1", link: "/contractor-all-risk-policy", img: "/productIcons/engineering/contractorsAllRisk_icon.svg", title: "Contractors All Risk" },
+    { id: "e2", link: "/erection-all-risk-insurance", img: "/productIcons/engineering/erectionAllRisk_icon.svg", title: "Erection All Risk" },
     { id: "e1", link: "/contractor-plant-and-machinery-insurance", img: "/productIcons/engineering/contractorsPlant_icon.png", title: "Contractors Plant & Machinery" },
   ]
   const EmployeeInsurance = [
-    { id: "eb1", link: "/group-personal-accident-insurance", img: "/productIcons/employeeBenefits/groupPersonal_icon.png", title: "Group Personal Accident" },
-    { id: "eb2", link: "/group-health-insurance", img: "/productIcons/employeeBenefits/groupHealth_icon.png", title: "Group Health Insurance" },
+    { id: "eb1", link: "/group-personal-accident-insurance", img: "/productIcons/employeeBenefits/groupPersonal_icon.svg", title: "Group Personal Accident" },
+    { id: "eb2", link: "/group-health-insurance", img: "/productIcons/employeeBenefits/groupHealth_icon.svg", title: "Group Health Insurance" },
   ]
   const MarineInsurance = [
-    { id: "m1", link: "/marine-cargo-insurance", img: "/productIcons/marine/marine_icon.png", title: "Marine Transit Policy" },
+    { id: "m1", link: "/marine-cargo-insurance", img: "/productIcons/marine/marine_icon.svg", title: "Marine Transit Policy" },
   ]
   const industryTechnology = [
     { id: "it1", link: "/industry", title: "E-Commerce" },

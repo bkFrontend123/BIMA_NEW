@@ -24,13 +24,13 @@ import subitem from '@/assets/css/subitem-select.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 import progress from '@/assets/css/progress.module.css'
 
-import productIcon from '../public/startup5.svg'
+import productIcon from '../public/productIcons/liability/crime_icon.svg'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import arrowBack from '../public/icons/arrowBack.svg'
 import WhatsApp from '../component/Icons/WhatsApp'
 import tooltipIcon from '../public/icons/tooltipIcon.svg'
 
-export default function general_liability_flow() {
+export default function CommercialCrime_Flow() {
     const navbarExample2Ref = useRef(null);
     useEffect(() => {
         //document.body.classList.add("userFlowBody")
@@ -188,7 +188,7 @@ export default function general_liability_flow() {
     return (
         <>
             <Head>
-            <title>Commercial Crime Insurance | BimaKavach Insurance for ommercial Crime</title>
+            <title>Commercial Crime Insurance | BimaKavach Insurance for Commercial Crime</title>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
@@ -205,8 +205,7 @@ export default function general_liability_flow() {
                                     <div className='pe-lg-2 pe-xxl-5'>
                                         <ProductFormContent
                                             icon={productIcon}
-                                            title="Crime Insurance"
-                                            description="Get ₹50 Lakhs Coverage at ₹7,000 per year!"
+                                            title="Commercial Crime Insurance"
                                             listText1="Answer a few Simple Questions"
                                             listText2="Get curated quotes in minutes"
                                             listText3="Secure your business compehensively"

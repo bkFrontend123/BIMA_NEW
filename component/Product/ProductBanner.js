@@ -3,23 +3,27 @@ import Button from 'react-bootstrap/Button';
 import Link from 'next/link'
 import Form from 'react-bootstrap/Form';
 import RatingCard from '../RatingCard'
+
+
+import formStyle from '@/assets/css/form.module.css'
+
 import SubscribeArrow from '../Icons/SubscribeArrow';
 import Building from '../Icons/Building';
 import Clock from '../Icons/Clock';
 
 
 export default function ProductBanner(props) {
-    const { title, description, customClass, insuranceWorth, insuranceAmount, noInsurer, children } = props;
+    const { title, description, customClass, insuranceWorth, insuranceAmount, noInsurer, form, formHeading, children } = props;
     return (
         <>
             <div className={`ProductBanner ${customClass}`}>
                 <div className='ProductBannerBox'>
-                    <div className='container'>
+                    <div className='container p-0'>
                         <div className='row justify-content-between g-4'>
                             <div className='col-lg-7 col-xl-6'>
                                 <div className='ProductBannerText'>
                                     <h1 className='title-60 ProductBannerTextTitle text-black font-weight-700 font-secondary'>{title}</h1>
-                                    <p className='ProductBannerTextDescrip title20  text-primaryDark font-primaryNormal font-weight-500 pe-md-4'>
+                                    <p className='ProductBannerTextDescrip title20 text-primaryDark font-primaryNormal font-weight-500 pe-md-4'>
                                         {description}
                                         {/*<Link className="d-block text-primary" href="/">Read More...</Link>*/}
                                     </p>
@@ -54,28 +58,16 @@ export default function ProductBanner(props) {
                                 </div>
                             </div>
                             <div className='col-lg-5 col-xl-5'>
-                                <div className='ProductBanner-form'>
-                                    <div className='bg-white ProductBanner-formBg p-4 p-xl-5'>
-                                        <p className='ProductBanner-formTopHeading title-20 font-primaryNormal font-weight-500'>Analyse your Business Risk. <span className='d-inlline d-md-none'><br></br></span>Buy the right Policy within 10 Minutes</p>
-                                        {/*<div className='row'>
-                                            <div className='col-lg-12 mx-auto'>
-                                                <div className='ProductBanner-formTop  d-flex flex-md-row flex-column '>
-                                                    <p className=' title20 font-weight-500 me-4 mb-0 d-flex  align-items-center'>
-                                                        <Building iconColor="green " width="20" height="21" />
-                                                        <span className='ms-2 font-primaryNormal'>Trusted by 340 businesses</span>
-                                                    </p>
-                                                    <p className='title20 font-weight-500 me-4 mb-0 d-flex  align-items-center'>
-                                                        <Clock iconColor="green stroke" width="20" height="21" />
-                                                        <span className='ms-2 font-primaryNormal'>Policy in Minutes</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>*/}
+                                {form === 'true' ? (
+                                    <div className={`${formStyle.whiteFormBox} ${formStyle.commonForm}`}>
+                                        <p className='ProductBanner-formTopHeading title-20 font-primaryNormal font-weight-500'>{formHeading}</p>
                                         <div className='ProductBanner-formBox'>
                                             {children}
                                         </div>
                                     </div>
-                                </div>
+                                ):(
+                                    null
+                                )}
                             </div>
                         </div>
                     </div>
@@ -154,16 +146,17 @@ export default function ProductBanner(props) {
                         background-image: url(/productBanners/marine_banner.jpg);
                     }
                     .ProductBannerBox{
-                        margin-top: 80px;
-                    }
-                    .ProductBannerText{
-                        padding-left: 30px;
+                        margin-top: 50px;
                     }
                     .ProductBannerTextTitle{
-                        margin-bottom: 50px;
+                        margin-bottom: 30px;
+                    }
+                    .title-60 {
+                        font-size: 48px;
+                        line-height: 60px;
                     }
                     .ProductBannerTextDescrip{
-                        margin-bottom: 50px;
+                        margin-bottom: 30px;
                     }
                     .ProductBanner-formTop {
                         margin-bottom: 48px;
@@ -261,12 +254,6 @@ export default function ProductBanner(props) {
                           max-width: 1548px !important;
                         }
                       }
-                      @media only screen and (max-width: 1450px) {
-                        .title-60 {
-                            font-size: 54px;
-                            line-height: 70px;
-                        }
-                    }
                      @media only screen and (max-width: 1650px) {
                         .ProductBanner-formTop p{
                             font-size: 18px; 
@@ -282,9 +269,6 @@ export default function ProductBanner(props) {
                          }
                      }
                      @media only screen and (max-width: 1399px){
-                        .ProductBanner-form{
-                            
-                        }
                         .ProductBanner-formBox{
                             padding: 0;
                         }
@@ -431,16 +415,9 @@ export default function ProductBanner(props) {
                         .ProductBannerRibbonCol .title-32 {
                             font-size: 22px;
                         }
-                        .ProductBanner-form {
-                            padding: 0;                            
-                         }
                          .ProductBanner-formBox {
                             padding: 0 105px;
                         }
-                         .ProductBanner-formBg {
-                            padding: 30px;
-                            padding-bottom: 60px;
-                         }
                          .ProductBanner-form .title20{
                             font-size: 15px;
                             line-height: 20px;
@@ -475,15 +452,8 @@ export default function ProductBanner(props) {
                         } 
                       
                         @media only screen and (max-width: 370px) {
-                            .ProductBanner-form{
-                                padding: 0 0px !important;
-                            }
                             .ProductBanner-formBox{
                                 padding: 0 0px !important;
-                            }
-                            .ProductBanner-formBg{
-                                padding: 30px 21px;
-                                padding-bottom: 70px;
                             }
                             .ProductBanner-form .title20{
                                 font-size: 14px;

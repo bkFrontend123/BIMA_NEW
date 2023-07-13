@@ -105,7 +105,7 @@
 }
 .commonForm .formInput::placeholder {
     font-size: 16px;
-    color: var(--vt-c-blue);
+    color: var(--vt-c-gray);
 }
 /* Chrome, Safari, Edge, Opera */
 .commonForm input::-webkit-outer-spin-button,
@@ -206,13 +206,19 @@
     font-size: 16px;
     line-height: 25px;
     font-weight: 500;
-    color: var(--vt-c-blue);
+    color: var(--vt-c-grayLight3);
     margin: 0 !important;
     cursor: pointer;
     padding: 12px 20px 12px 50px;
     position: relative;
     border: 1px solid var(--vt-c-grayLight3);
     transition: all 0.3s ease 0s;
+    outline: 1px;
+    outline-style: solid;
+    outline-color: transparent;
+}
+.formSkillCheckRadio label {
+    padding: 12px 20px 12px 20px;
 }
 .formCheckRadio label::before {
     position: absolute;
@@ -225,7 +231,7 @@
     transition: all 0.3s ease 0s;
 }
 .formCheckRadio label::after {
-    background: var(--vt-c-blue);
+    background: var(--vt-c-yellow);
     position: absolute;
     content: "";
     width: 14px;
@@ -235,12 +241,17 @@
     transition: all 0.3s ease 0s;
     opacity: 0;
 }
+.formSkillCheckRadio label::before,
+.formSkillCheckRadio label::after {
+    display: none;
+}
 .formCheckRadio input:checked[type=radio] ~ label {
-    border-color: var(--vt-c-blue);
+    border-color: var(--vt-c-yellow);
     color: var(--vt-c-blue);
+    outline-color: var(--vt-c-yellow);
 }
 .formCheckRadio input:checked[type=radio] ~ label::before {
-    border-color: var(--vt-c-blue);
+    border-color: var(--vt-c-yellow);
 }
 .formCheckRadio input:checked[type=radio] ~ label::after {
     opacity: 1;
@@ -256,11 +267,26 @@
     border: 0;
     height: 18px;
 }
-.commonForm .formSwitch input :focus {
+.commonForm .formSwitch input:focus {
     background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e);
 }
+.removeCatBtn,
+.addCatBtn {
+    background: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    padding: 0;
+}
+.removeCatBtn {
+    color: var(--error);
+}
+.addCatBtn {
+    color: var(--vt-c-yellow);
+}
 .formBtn {
-    padding: 22px 40px;
+    padding: 18px 30px;
+    font-size: 16px;
 }
 .btnLink {
     display: flex;

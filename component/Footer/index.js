@@ -79,6 +79,9 @@ export default function Footer(props) {
                       <li className="list-group-item">
                         <Link href="/product-liability-insurance" className='title18 font-weight-400'>Product Liability Insurance</Link>
                       </li>
+                      <li className="list-group-item">
+                        <Link href="/workmens-compensation-insurance" className='title18 font-weight-400'>Workman’s Compensation</Link>
+                      </li>
                       {/*<li className="list-group-item">
                         <span className='title18 font-weight-400'>Fidelity Insurance</span>
                       </li>
