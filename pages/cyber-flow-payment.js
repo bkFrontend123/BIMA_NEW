@@ -618,7 +618,7 @@ export default function Cyber_Flow_Payment() {
                                 <Col lg="auto">
                                     <PaymentCard
                                         paymentIcon={paymentIcon}
-                                        policyName="Product Liability"
+                                        policyName="Cyber Insurance"
                                         policyCover="1.5 Crore"
                                         policyPremium="35,000"
                                         gst="1,900"
