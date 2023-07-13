@@ -58,14 +58,7 @@ export default function DAndO_Flow_Payment() {
                                     </div>
                                     <div className={`${form.commonForm}`}>
                                         <div className={`${form.addtnBsnDtlsFormFirst}`}>
-                                            <div className={form.frmTtl}>
-                                                <h3>Additional General Information</h3>
-                                            </div>
                                             <Form>
-                                                <Form.Group className="mb-4">
-                                                    <Form.Label className={`${form.formLabel}`}>Corporate office Address</Form.Label>
-                                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="" as="textarea" />
-                                                </Form.Group>
                                                 <div className="mb-4">
                                                     <Row className='g-4 g-xl-5 align-items-center'>
                                                         <Col>
