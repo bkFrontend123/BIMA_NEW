@@ -184,7 +184,7 @@ export default function FireAndBurglary_Insurance() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        router.push('/directors_and_officers_form');
+        router.push('/fire-and-burglary-flow');
     };
     return (
         <>
@@ -229,7 +229,7 @@ export default function FireAndBurglary_Insurance() {
                                 </FloatingLabel>
                             </Form.Group>
                             <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button">
+                                <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
                                     <span className='me-2'>Buy Now</span>
                                     <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                 </Button>

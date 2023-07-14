@@ -1,0 +1,170 @@
+.desCheckCol {
+    display: flex;
+}
+.desCheckCol + .desCheckCol {
+    border-top: 1px solid var(--formBorderColor);
+    padding-top: 24px;
+}
+.desCheckIcon {
+    min-width: 42px;
+    text-align: center;
+    margin-right: 16px;
+}
+.desCheckData {
+
+}
+.desCheckInfo {
+
+}
+.desCheckInfo h4 {
+    font-size: 22px;
+    color: var(--gray);
+    font-weight: 600;
+    line-height: 28px;
+}
+.desCheckInfo p {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+.desCheckBottom {
+
+}
+.desCheckList {
+    margin-left: -58px;
+}
+.desCheckListCol {
+    background-color: var(--mute3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 16px;
+}
+.desCheckBox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.desCheckBox span {
+    position: relative;
+    background-color: var(--vt-c-gray);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.desCheckBox span svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.desCheckListCol.active .desCheckBox span svg {
+    opacity: 1;
+}
+.desCheckBtn {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+}
+.desCheckBtn input {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+.desCheckInput {
+    width: 100%;
+}
+.desCheckInput input,
+.desCheckInput label {
+    background-color: var(--mute3) !important;
+}
+.desCheckStatus {
+    min-width: 24px;
+}
+
+/***Description Checkbox Without Icon Css Start***/
+.desCheckNewRow {
+
+}
+.desCheckNewCol {
+    
+}
+.desCheckNewBox {
+    position: relative;
+}
+.desCheckNewBox span {
+    position: absolute;
+    background-color: var(--disable);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 4px;
+    pointer-events: none;
+}
+.desCheckNewBox span svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.desCheckNewCol.active .desCheckNewBox span {
+    background-color: var(--vt-c-gray);
+}
+.desCheckNewCol.active .desCheckNewBox span svg {
+    opacity: 1;
+}
+.desCheckNewBtn {
+    position: relative;
+    margin: 0 !important;
+    padding: 0;
+    display: block;
+}
+.desCheckNewBtn input {
+    display: none;
+}
+.desCheckNewBtn label {
+    display: block;
+    padding-left: 40px;
+    cursor: pointer;
+}
+.desCheckNewBtn label h4 {
+    font-size: 22px;
+    color: var(--disable);
+    font-weight: 600;
+    line-height: 28px;
+}
+.desCheckNewBtn label p {
+    font-size: 14px;
+    color: var(--disable);
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+.desCheckNewCol.active .desCheckNewBtn label h4,
+.desCheckNewCol.active .desCheckNewBtn label p {
+    color: var(--gray);
+}
+.desCheckNewBottom {
+    padding-left: 40px;
+}
+.desCheckListNewCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+.desCheckNewInput {
+    width: 100%;
+}
+.desCheckNewStatus {
+    min-width: 24px;
+}
+/***Description Checkbox Without Icon Css End***/

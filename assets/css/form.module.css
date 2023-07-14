@@ -72,6 +72,10 @@
     font-weight: 500;
     border-color: var(--formBorderColor);
 }
+.commonForm .formInput:disabled,
+.commonForm .formInput[readonly] {
+    background-color: var(--whiteBg);
+}
 .commonForm .formIconGroup .formInput {
     padding: 10px 20px 10px 40px;
 }
@@ -81,6 +85,10 @@
 .commonForm .formInput:hover,
 .commonForm .formInput:not(:placeholder-shown) {
     border-color: var(--vt-c-blue);
+}
+.commonForm .formInput:disabled:hover,
+.commonForm .formInput[readonly]:not(:placeholder-shown) {
+    border-color: var(--formBorderColor);
 }
 .commonForm .formIconGroup i {
     position: absolute;
@@ -254,6 +262,67 @@
     border-color: var(--vt-c-yellow);
 }
 .formCheckRadio input:checked[type=radio] ~ label::after {
+    opacity: 1;
+}
+.formCheckFillOuter {
+    margin: -8px 0 0 -8px;
+}
+.formCheckFillRadio {
+    padding: 0;
+    margin: 8px 0 0 8px;
+}
+.formCheckFillRadio:last-child {
+    margin-right: 0;
+}
+.formCheckFillRadio input {
+    width: 1.25em;
+    height: 1.25em;
+    margin-top: 0.15em;
+    background-color: var(--vt-c-gray);
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+.formCheckFillRadio input:checked {
+    background-color: var(--vt-c-blue);
+    border-color: var(--vt-c-blue);
+}
+.formCheckFillRadio input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+.formCheckFillRadio label {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    color: var(--vt-c-grayLight3);
+    margin: 0 !important;
+    cursor: pointer;
+    padding: 10px 16px 10px 16px;
+    position: relative;
+    border: 1px solid var(--vt-c-grayLight3);
+    transition: all 0.3s ease 0s;
+}
+.formCheckFillRadio label::after {
+    background-image: url('../../public/icons/radioCheck.svg');
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 13px;
+    top: 12px;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+.formCheckFillRadio input:checked[type=radio] ~ label {
+    background-color: var(--vt-c-blue);
+    border-color: var(--vt-c-blue);
+    color: var(--whiteText);
+    padding-left: 45px;
+}
+.formCheckFillRadio input:checked[type=radio] ~ label::before {
+    border-color: var(--vt-c-yellow);
+}
+.formCheckFillRadio input:checked[type=radio] ~ label::after {
     opacity: 1;
 }
 .commonForm .formSwitch input {

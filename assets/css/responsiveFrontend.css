@@ -69,4 +69,9 @@
     top: 35px;
     width: 70px;
   }
+  .homeBannerProductOuter::before,
+  .homeBannerProductOuter::after {
+    left: 20px;
+    right: 20px;
+  }
 }
