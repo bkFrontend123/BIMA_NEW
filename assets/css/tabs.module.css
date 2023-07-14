@@ -29,6 +29,14 @@
     bottom: 0;
     height: 1px;
 }
-.tabCmnCol {
-    
+
+@media (max-width:767px) {
+    .tabCmnNav {
+        gap: 0.4rem;
+    }
+    .tabCmnNav li button {
+        font-size: 14px;
+        line-height: 50px;
+        padding: 0 6px !important;
+    }
 }
