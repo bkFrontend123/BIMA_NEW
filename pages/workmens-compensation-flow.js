@@ -144,16 +144,6 @@ export default function WorkmensCompensation_Flow() {
         setExistingPolicyValue(event.target.value);
     };
 
-    const [existingInsurerValue, setExistingInsurerValue] = useState();
-    const existingInsurerOptions = [
-        {name: 'Banking Finance and Insurance', value: '1'},
-        {name: 'Computers, IT Services, Technology and Telecommunication', value: '2'},
-        {name: 'Construction and Real Estate', value: '3'},
-        {name: 'Manufacturing', value: '4'},
-        {name: 'Medical & Pharmaceuticals', value: '5'},
-        {name: 'Construction and Real Estate', value: '6'},
-    ];
-
     const [claimHistoryValue, setClaimHistoryValue] = useState();
     const handleChangeClaimHistory = event => {
         setClaimHistoryValue(event.target.value);
@@ -617,45 +607,34 @@ export default function WorkmensCompensation_Flow() {
                                                                     />
                                                                 </Form.Group>
                                                                 {existingPolicyValue === 'Yes' ? (
-                                                                    <Form.Group className={`selectDropDiv searchDropDiv mb-4 ${!existingInsurerValue == '' ? 'selectedDropDiv' : null}`}>
-                                                                        <SelectSearch
-                                                                            options={existingInsurerOptions}
-                                                                            name="existingInsurer"
-                                                                            placeholder="Search by keyword"
-                                                                            onChange={setExistingInsurerValue}
-                                                                            search
-                                                                            value={existingInsurerValue}
+                                                                    <Form.Group className="mb-4">
+                                                                        <Form.Label htmlFor="claimHistory" className={`${form.formLabel}`}>Is there any claim history?</Form.Label>
+                                                                        <Form.Check
+                                                                            inline
+                                                                            type="radio"
+                                                                            id="claimHistory-1"
+                                                                            name="claimHistory"
+                                                                            label="Yes"
+                                                                            value="Yes"
+                                                                            checked={claimHistoryValue === 'Yes'}
+                                                                            onChange={handleChangeClaimHistory}
+                                                                            className={`${form.formCheckRadio}`}
                                                                         />
-                                                                        <label>Existing Insurer's Name?</label>
+                                                                        <Form.Check 
+                                                                            inline
+                                                                            type="radio"
+                                                                            id="claimHistory-2"
+                                                                            name="claimHistory"
+                                                                            label="No"
+                                                                            value="No"
+                                                                            checked={claimHistoryValue === 'No'}
+                                                                            onChange={handleChangeClaimHistory}
+                                                                            className={`${form.formCheckRadio}`}
+                                                                        />
                                                                     </Form.Group>
                                                                 ):(
                                                                     null
                                                                 )}
-                                                                <Form.Group className="mb-4">
-                                                                    <Form.Label htmlFor="claimHistory" className={`${form.formLabel}`}>Is there any claim history?</Form.Label>
-                                                                    <Form.Check
-                                                                        inline
-                                                                        type="radio"
-                                                                        id="claimHistory-1"
-                                                                        name="claimHistory"
-                                                                        label="Yes"
-                                                                        value="Yes"
-                                                                        checked={claimHistoryValue === 'Yes'}
-                                                                        onChange={handleChangeClaimHistory}
-                                                                        className={`${form.formCheckRadio}`}
-                                                                    />
-                                                                    <Form.Check 
-                                                                        inline
-                                                                        type="radio"
-                                                                        id="claimHistory-2"
-                                                                        name="claimHistory"
-                                                                        label="No"
-                                                                        value="No"
-                                                                        checked={claimHistoryValue === 'No'}
-                                                                        onChange={handleChangeClaimHistory}
-                                                                        className={`${form.formCheckRadio}`}
-                                                                    />
-                                                                </Form.Group>
                                                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
                                                                     <Button onClick={goToNextPage} variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button">
                                                                         <span className='me-2'>Continue</span>
