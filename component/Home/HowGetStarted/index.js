@@ -133,7 +133,7 @@ export default function HowGetStarted(props) {
                 .getStarted-rightBottomDescrip{
                     color: #A3A3A3;
                 }
-                .getStarted-rightBottom .btnCommon:hover{
+                .getStarted-rightBottom .btnCommon.btnBorder:hover{
                     color: var(--whiteText) !important;
                 }
                 .getStarted-rightBottom .btnCommon.bg-white{

@@ -285,7 +285,7 @@
     color: var(--vt-c-yellow);
 }
 .formBtn {
-    padding: 18px 30px;
+    padding: 22px 40px;
     font-size: 16px;
 }
 .btnLink {
@@ -304,7 +304,7 @@
     font-size: 14px;
     color: var(--vt-c-blueSkyLight2);
     line-height: 18px;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
 }
 .brownText p {
@@ -340,6 +340,10 @@
     .frmBackLink {
         font-size: 18px;
         gap: 0.5rem;
+    }
+    .formBtn {
+        padding: 20px 30px;
+        font-size: 16px;
     }
     .btnLink {
         font-size: 14px;

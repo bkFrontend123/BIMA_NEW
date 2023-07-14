@@ -728,6 +728,14 @@ p {
 .quotePageBody .footer {
   display: none;
 }
+
+.tabCmnOuter .nav-link.active {
+  color: var(--gray) !important;
+}
+.tabCmnOuter li .nav-link.active::before {
+  background-color: var(--vt-c-yellow);
+  height: 2px;
+}
 /***Frontend Custom Css End***/
 
 @media (min-width:1300px) {

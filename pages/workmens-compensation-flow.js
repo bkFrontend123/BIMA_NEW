@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import {Container, Row, Col, Form, FloatingLabel, Button, ProgressBar, OverlayTrigger, Tooltip} from 'react-bootstrap';
+import {Container, Row, Col, Form, FloatingLabel, Button, ProgressBar, OverlayTrigger, Tooltip, Tabs, Tab} from 'react-bootstrap';
 import SelectSearch from 'react-select-search';
 import 'react-select-search/style.css'
 
@@ -16,7 +16,7 @@ import TalkExpert from '../component/TalkExpert'
 import RatingCard from '../component/RatingCard'
 
 import form from '@/assets/css/form.module.css'
-import subitem from '@/assets/css/subitem-select.module.css'
+import tabStyle from '@/assets/css/tabs.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 import progress from '@/assets/css/progress.module.css'
 
@@ -62,8 +62,8 @@ export default function WorkmensCompensation_Flow() {
     
     const [natureWorkValue, setNatureWorkValue] = useState();
     const natureWorkOptions = [
-        {name: 'B2B Consulting', value: '1'},
-        {name: 'Enterprise Technology', value: '2'},
+        {name: 'Accuntant/ Admin Staff', value: '1'},
+        {name: 'Cook', value: '2'},
         {name: 'Consumer', value: '3'},
         {name: 'BFSI', value: '4'},
         {name: 'Enterprise Technology', value: '5'},
@@ -114,6 +114,14 @@ export default function WorkmensCompensation_Flow() {
     const handleChangeMedicalExpenses = event => {
         setMedicalExpensesValue(event.target.value);
     };
+
+    const [medicalExpensesLimitValue, setMedicalExpensesLimitValue] = useState();
+    const medicalExpensesLimitOptions = [
+        {name: '25,000', value: '1'},
+        {name: '50,000', value: '2'},
+        {name: '75,000', value: '3'},
+        {name: '1,00,000', value: '4'},
+    ];
 
     const [periodInsuranceValue, setPeriodInsuranceValue] = useState();
     const periodInsuranceOptions = [
@@ -276,7 +284,132 @@ export default function WorkmensCompensation_Flow() {
                                                             </Form.Group>
                                                             {natureWorkValue ? (
                                                                 <>
-                                                                    <div className="appendDivOuter mb-4">
+                                                                    <div className={`${form.formCheckLabel}`}>Skill level of workers</div>
+                                                                    <div className={`tabCmnOuter ${tabStyle.tabCmnOuter}`}>
+                                                                        <Tabs defaultActiveKey="skilled" id="skill-level" className={`mb-4 ${tabStyle.tabCmnNav}`}>
+                                                                            <Tab eventKey="skilled" title="Skilled" className={tabStyle.tabCmnCol}>
+                                                                                <Form.Group className="floatFormGroup tooltipDiv mb-4">
+                                                                                    <FloatingLabel controlId="skilledNumberWorkers" label="Number of workers">
+                                                                                        <Form.Control
+                                                                                            className={`${form.formInput}`}
+                                                                                            type="text"
+                                                                                            placeholder="Enter number of workers"
+                                                                                        />
+                                                                                        <OverlayTrigger
+                                                                                            placement="top"
+                                                                                            overlay={<Tooltip>Current market value of your office at which the property can be sold.</Tooltip>}
+                                                                                            >
+                                                                                            {({ ref, ...triggerHandler }) => (
+                                                                                                <i className="tooltipIcon" {...triggerHandler}>
+                                                                                                <Image ref={ref} src={tooltipIcon} width="24" height="24" alt="Remark Icon" />
+                                                                                                </i>
+                                                                                            )}
+                                                                                        </OverlayTrigger>
+                                                                                    </FloatingLabel>
+                                                                                </Form.Group>
+                                                                                <Form.Group className="floatFormGroup tooltipDiv mb-4">
+                                                                                    <FloatingLabel controlId="skilledMonthlySalary" label="Monthly salary per worker">
+                                                                                        <Form.Control
+                                                                                            className={`${form.formInput}`}
+                                                                                            type="text"
+                                                                                            placeholder="Enter monthly salary per worker"
+                                                                                        />
+                                                                                        <OverlayTrigger
+                                                                                            placement="top"
+                                                                                            overlay={<Tooltip>Current market value of your office at which the property can be sold.</Tooltip>}
+                                                                                            >
+                                                                                            {({ ref, ...triggerHandler }) => (
+                                                                                                <i className="tooltipIcon" {...triggerHandler}>
+                                                                                                <Image ref={ref} src={tooltipIcon} width="24" height="24" alt="Remark Icon" />
+                                                                                                </i>
+                                                                                            )}
+                                                                                        </OverlayTrigger>
+                                                                                    </FloatingLabel>
+                                                                                </Form.Group>
+                                                                            </Tab>
+                                                                            <Tab eventKey="semiSkilled" title="Semi-skilled" className={tabStyle.tabCmnCol}>
+                                                                                <Form.Group className="floatFormGroup tooltipDiv mb-4">
+                                                                                    <FloatingLabel controlId="semiSkilledNumberWorkers" label="Number of workers">
+                                                                                        <Form.Control
+                                                                                            className={`${form.formInput}`}
+                                                                                            type="text"
+                                                                                            placeholder="Enter number of workers"
+                                                                                        />
+                                                                                        <OverlayTrigger
+                                                                                            placement="top"
+                                                                                            overlay={<Tooltip>Current market value of your office at which the property can be sold.</Tooltip>}
+                                                                                            >
+                                                                                            {({ ref, ...triggerHandler }) => (
+                                                                                                <i className="tooltipIcon" {...triggerHandler}>
+                                                                                                <Image ref={ref} src={tooltipIcon} width="24" height="24" alt="Remark Icon" />
+                                                                                                </i>
+                                                                                            )}
+                                                                                        </OverlayTrigger>
+                                                                                    </FloatingLabel>
+                                                                                </Form.Group>
+                                                                                <Form.Group className="floatFormGroup tooltipDiv mb-4">
+                                                                                    <FloatingLabel controlId="semiSkilledMonthlySalary" label="Monthly salary per worker">
+                                                                                        <Form.Control
+                                                                                            className={`${form.formInput}`}
+                                                                                            type="text"
+                                                                                            placeholder="Enter monthly salary per worker"
+                                                                                        />
+                                                                                        <OverlayTrigger
+                                                                                            placement="top"
+                                                                                            overlay={<Tooltip>Current market value of your office at which the property can be sold.</Tooltip>}
+                                                                                            >
+                                                                                            {({ ref, ...triggerHandler }) => (
+                                                                                                <i className="tooltipIcon" {...triggerHandler}>
+                                                                                                <Image ref={ref} src={tooltipIcon} width="24" height="24" alt="Remark Icon" />
+                                                                                                </i>
+                                                                                            )}
+                                                                                        </OverlayTrigger>
+                                                                                    </FloatingLabel>
+                                                                                </Form.Group>
+                                                                            </Tab>
+                                                                            <Tab eventKey="unskilled" title="Unskilled" className={tabStyle.tabCmnCol}>
+                                                                                <Form.Group className="floatFormGroup tooltipDiv mb-4">
+                                                                                    <FloatingLabel controlId="unskilledNumberWorkers" label="Number of workers">
+                                                                                        <Form.Control
+                                                                                            className={`${form.formInput}`}
+                                                                                            type="text"
+                                                                                            placeholder="Enter number of workers"
+                                                                                        />
+                                                                                        <OverlayTrigger
+                                                                                            placement="top"
+                                                                                            overlay={<Tooltip>Current market value of your office at which the property can be sold.</Tooltip>}
+                                                                                            >
+                                                                                            {({ ref, ...triggerHandler }) => (
+                                                                                                <i className="tooltipIcon" {...triggerHandler}>
+                                                                                                <Image ref={ref} src={tooltipIcon} width="24" height="24" alt="Remark Icon" />
+                                                                                                </i>
+                                                                                            )}
+                                                                                        </OverlayTrigger>
+                                                                                    </FloatingLabel>
+                                                                                </Form.Group>
+                                                                                <Form.Group className="floatFormGroup tooltipDiv mb-4">
+                                                                                    <FloatingLabel controlId="unskilledMonthlySalary" label="Monthly salary per worker">
+                                                                                        <Form.Control
+                                                                                            className={`${form.formInput}`}
+                                                                                            type="text"
+                                                                                            placeholder="Enter monthly salary per worker"
+                                                                                        />
+                                                                                        <OverlayTrigger
+                                                                                            placement="top"
+                                                                                            overlay={<Tooltip>Current market value of your office at which the property can be sold.</Tooltip>}
+                                                                                            >
+                                                                                            {({ ref, ...triggerHandler }) => (
+                                                                                                <i className="tooltipIcon" {...triggerHandler}>
+                                                                                                <Image ref={ref} src={tooltipIcon} width="24" height="24" alt="Remark Icon" />
+                                                                                                </i>
+                                                                                            )}
+                                                                                        </OverlayTrigger>
+                                                                                    </FloatingLabel>
+                                                                                </Form.Group>
+                                                                            </Tab>
+                                                                        </Tabs>
+                                                                    </div>
+                                                                    {/*<div className="appendDivOuter mb-4">
                                                                         <div className="appendDiv"></div>
                                                                         {subCategories.map((subCategory) => (
                                                                             <div key={subCategory.id}>
@@ -378,7 +511,7 @@ export default function WorkmensCompensation_Flow() {
                                                                         {subCategories.length < MAX_SUBCATEGORIES && (
                                                                             <button type="button" className={form.addCatBtn} onClick={handleAddSubCategory}>+ Add sub category</button>
                                                                         )}
-                                                                    </div>
+                                                                    </div>*/}
                                                                 </>
                                                             ):(
                                                                 null
@@ -435,19 +568,29 @@ export default function WorkmensCompensation_Flow() {
                                                                     />
                                                                 </Form.Group>
                                                                 {medicalExpensesValue === 'Yes' ? (
-                                                                    <Form.Group className={`selectDropDiv mb-4 ${!periodInsuranceValue == '' ? 'selectedDropDiv' : null}`}>
+                                                                    <Form.Group className={`selectDropDiv mb-4 ${!medicalExpensesLimitValue == '' ? 'selectedDropDiv' : null}`}>
                                                                         <SelectSearch
-                                                                            options={periodInsuranceOptions}
-                                                                            name="periodInsurance"
+                                                                            options={medicalExpensesLimitOptions}
+                                                                            name="medicalExpensesLimit"
                                                                             placeholder="&nbsp;"
-                                                                            onChange={setPeriodInsuranceValue}
-                                                                            value={periodInsuranceValue}
+                                                                            onChange={setMedicalExpensesLimitValue}
+                                                                            value={medicalExpensesLimitValue}
                                                                         />
-                                                                        <label>Period of Insurance</label>
+                                                                        <label>Medical expenses limit per employee</label>
                                                                     </Form.Group>
                                                                 ):(
                                                                     null
                                                                 )}
+                                                                <Form.Group className={`selectDropDiv mb-4 ${!periodInsuranceValue == '' ? 'selectedDropDiv' : null}`}>
+                                                                    <SelectSearch
+                                                                        options={periodInsuranceOptions}
+                                                                        name="periodInsurance"
+                                                                        placeholder="&nbsp;"
+                                                                        onChange={setPeriodInsuranceValue}
+                                                                        value={periodInsuranceValue}
+                                                                    />
+                                                                    <label>Period of Insurance</label>
+                                                                </Form.Group>
                                                                 <Form.Group className="mb-4">
                                                                     <Form.Label htmlFor="existingPolicy" className={`${form.formLabel}`}>Do you have any existing Workmen's Compensation policy?</Form.Label>
                                                                     <Form.Check
