@@ -18,7 +18,7 @@ export default function ProductBanner(props) {
         <>
             <div className={`ProductBanner ${customClass}`}>
                 <div className='ProductBannerBox'>
-                    <div className='container p-0'>
+                    <div className='container p-lg-0'>
                         <div className='row justify-content-between g-4'>
                             <div className='col-lg-7 col-xl-6'>
                                 <div className='ProductBannerText'>
@@ -290,7 +290,8 @@ export default function ProductBanner(props) {
                     }
                      @media only screen and (max-width: 767px) {
                         .ProductBanner{
-                            padding: 48px 0 300px 0;
+                            padding: 68px 0 300px 0;
+                            margin-top: -135px;
                         }
                         .dAndoBnr {
                             background-position: -832px;
