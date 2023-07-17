@@ -57,12 +57,12 @@ export default function ThankYou() {
                             </div>
                             <div className='mb-4 mb-lg-5'>
                                 <Row className='g-4'>
-                                    <Col lg={6}>
+                                    <Col>
                                         <ThankPolicyText
                                             policyName="Directors & Officers Liability"
                                         />
                                     </Col>
-                                    <Col lg={6}>
+                                    <Col>
                                         <ThankPolicyCard
                                             policyLogo={bajajAllianz_logo}
                                             policyLogoAlt="Bajaj Allianz"

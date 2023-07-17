@@ -15,6 +15,23 @@ import ProductFormContent from '../component/ProductForm/ProductFormContent'
 import TalkExpert from '../component/TalkExpert'
 import RatingCard from '../component/RatingCard'
 
+import DescIconRow from '../component/FormElements/ComboElements/DescIconCombo/DescIconRow'
+import DescIconCard from '../component/FormElements/ComboElements/DescIconCombo/DescIconCard'
+import DescIconBottom from '../component/FormElements/ComboElements/DescIconCombo/DescIconBottom'
+import DescIconBottomList from '../component/FormElements/ComboElements/DescIconCombo/DescIconBottomList'
+import DescIconBottomCard from '../component/FormElements/ComboElements/DescIconCombo/DescIconBottomCard'
+import DescIconCheckbox from '../component/FormElements/ComboElements/DescIconCombo/DescIconCheckbox'
+import DescIconInput from '../component/FormElements/ComboElements/DescIconCombo/DescIconInput'
+import DescIconStatus from '../component/FormElements/ComboElements/DescIconCombo/DescIconStatus'
+
+import DescRow from '../component/FormElements/ComboElements/DescCombo/DescRow'
+import DescCard from '../component/FormElements/ComboElements/DescCombo/DescCard'
+import DescCheckbox from '../component/FormElements/ComboElements/DescCombo/DescCheckbox'
+import DescBottom from '../component/FormElements/ComboElements/DescCombo/DescBottom'
+import DescBottomCard from '../component/FormElements/ComboElements/DescCombo/DescBottomCard'
+import DescInput from '../component/FormElements/ComboElements/DescCombo/DescInput'
+import DescStatus from '../component/FormElements/ComboElements/DescCombo/DescStatus'
+
 import form from '@/assets/css/form.module.css'
 import desCheckStyle from '@/assets/css/descriptionCheckbox.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
@@ -22,6 +39,7 @@ import progress from '@/assets/css/progress.module.css'
 
 import productIcon from '../public/productIcons/liability/workman_icon.svg'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
+import RuppeeIcon from '../component/Icons/Ruppee';
 import arrowBack from '../public/icons/arrowBack.svg'
 import WhatsApp from '../component/Icons/WhatsApp'
 import tooltipIcon from '../public/icons/tooltipIcon.svg'
@@ -189,6 +207,8 @@ export default function WorkmensCompensation_Flow() {
         {name: '16 Crores and Above', value: '11'},
     ];
 
+    const isProductLimitLiabilitySelectDisabled = !productLimitLiabilityValue;
+
     const [fidelityGuaranteeValue, setFidelityGuaranteeValue] = useState();
     const handleChangeFidelityGuarantee= event => {
         setFidelityGuaranteeValue(event.target.checked);
@@ -208,6 +228,9 @@ export default function WorkmensCompensation_Flow() {
         {name: 'INR 16 Crores', value: '10'},
         {name: '16 Crores and Above', value: '11'},
     ];
+
+    const isFidelityGuaranteeLiabilitySelectDisabled = !fidelityGuaranteeValue;
+    const isFidelityGuaranteeEmployeeSelectDisabled = !fidelityGuaranteeValue;
 
     const [limitEmployeeValue, setLimitEmployeeValue] = useState();
     const limitEmployeeOptions = [
@@ -279,7 +302,7 @@ export default function WorkmensCompensation_Flow() {
                                                 <Form>
                                                     <Form.Group className="floatFormGroup mb-4">
                                                         <FloatingLabel controlId="otp" label="Enter OTP" >
-                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" required />
                                                         </FloatingLabel>
                                                     </Form.Group>
                                                     <div className={`${form.fromButtonDiv} d-sm-flex`}>
@@ -311,7 +334,7 @@ export default function WorkmensCompensation_Flow() {
                                                         <Form>
                                                             <Form.Group className="floatFormGroup mb-4">
                                                                 <FloatingLabel controlId="pinCode" label="PIN Code" >
-                                                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" required />
                                                                 </FloatingLabel>
                                                             </Form.Group>
                                                             <Form.Group className={`selectDropDiv mb-4 ${!buyingPolicyValue == '' ? 'selectedDropDiv' : null}`}>
@@ -324,6 +347,7 @@ export default function WorkmensCompensation_Flow() {
                                                                     placeholder="&nbsp;"
                                                                     onChange={setBuyingPolicyValue}
                                                                     value={buyingPolicyValue}
+                                                                    required
                                                                 />
                                                                 <label>Buying the policy for the first time?</label>
                                                             </Form.Group>
@@ -337,6 +361,7 @@ export default function WorkmensCompensation_Flow() {
                                                                     placeholder="&nbsp;"
                                                                     onChange={setClaimValue}
                                                                     value={claimValue}
+                                                                    required
                                                                 />
                                                                 <label>Any Claims in Last 3 Years?</label>
                                                             </Form.Group>
@@ -352,6 +377,7 @@ export default function WorkmensCompensation_Flow() {
                                                                     checked={totalSumInsuredValue === 'Less50cr'}
                                                                     onChange={handleChangeTotalSumInsured}
                                                                     className={`${form.formCheckRadio}`}
+                                                                    required
                                                                 />
                                                                 <Form.Check 
                                                                     inline
@@ -363,6 +389,7 @@ export default function WorkmensCompensation_Flow() {
                                                                     checked={totalSumInsuredValue === 'More50cr'}
                                                                     onChange={handleChangeTotalSumInsured}
                                                                     className={`${form.formCheckRadio}`}
+                                                                    required
                                                                 />
                                                             </Form.Group>
                                                             <div className={`${form.fromButtonDiv} d-sm-flex`}>
@@ -405,6 +432,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                 checked={popularBusinessValue === 'Shop'}
                                                                                 onChange={handleChangePopularBusiness}
                                                                                 className={`${form.formCheckFillRadio}`}
+                                                                                required
                                                                             />
                                                                             <Form.Check 
                                                                                 inline
@@ -416,6 +444,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                 checked={popularBusinessValue === 'Office'}
                                                                                 onChange={handleChangePopularBusiness}
                                                                                 className={`${form.formCheckFillRadio}`}
+                                                                                required
                                                                             />
                                                                             <Form.Check 
                                                                                 inline
@@ -427,6 +456,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                 checked={popularBusinessValue === 'Hotel/Restaurant'}
                                                                                 onChange={handleChangePopularBusiness}
                                                                                 className={`${form.formCheckFillRadio}`}
+                                                                                required
                                                                             />
                                                                             <Form.Check 
                                                                                 inline
@@ -438,6 +468,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                 checked={popularBusinessValue === 'Hospital/Clinic/Diagnostic Centre'}
                                                                                 onChange={handleChangePopularBusiness}
                                                                                 className={`${form.formCheckFillRadio}`}
+                                                                                required
                                                                             />
                                                                             <Form.Check 
                                                                                 inline
@@ -449,6 +480,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                 checked={popularBusinessValue === 'Educational Institute'}
                                                                                 onChange={handleChangePopularBusiness}
                                                                                 className={`${form.formCheckFillRadio}`}
+                                                                                required
                                                                             />
                                                                             <Form.Check 
                                                                                 inline
@@ -460,6 +492,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                 checked={popularBusinessValue === 'Manufacturing'}
                                                                                 onChange={handleChangePopularBusiness}
                                                                                 className={`${form.formCheckFillRadio}`}
+                                                                                required
                                                                             />
                                                                             <Form.Check 
                                                                                 inline
@@ -471,6 +504,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                 checked={popularBusinessValue === 'Others'}
                                                                                 onChange={handleChangePopularBusiness}
                                                                                 className={`${form.formCheckFillRadio}`}
+                                                                                required
                                                                             />
                                                                         </div>
                                                                     </Form.Group>
@@ -484,6 +518,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                     onChange={setIndValue}
                                                                                     search
                                                                                     value={indValue}
+                                                                                    required
                                                                                 />
                                                                                 <label>Industry type</label>
                                                                                 <OverlayTrigger
@@ -511,6 +546,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                     onChange={setOccupancyValue}
                                                                                     search
                                                                                     value={occupancyValue}
+                                                                                    required
                                                                                 />
                                                                                 <label>Occupancy</label>
                                                                                 <OverlayTrigger
@@ -546,6 +582,7 @@ export default function WorkmensCompensation_Flow() {
                                                                             checked={premisesTypeValue === 'Owned'}
                                                                             onChange={handleChangePremisesType}
                                                                             className={`${form.formCheckRadio}`}
+                                                                            required
                                                                         />
                                                                         <Form.Check 
                                                                             inline
@@ -557,6 +594,7 @@ export default function WorkmensCompensation_Flow() {
                                                                             checked={premisesTypeValue === 'Rented'}
                                                                             onChange={handleChangePremisesType}
                                                                             className={`${form.formCheckRadio}`}
+                                                                            required
                                                                         />
                                                                     </Form.Group>
                                                                     <div className={`${form.fromButtonDiv} d-sm-flex`}>
@@ -586,384 +624,371 @@ export default function WorkmensCompensation_Flow() {
                                                                             </Row>
                                                                         </div>
                                                                         <Form>
-                                                                            <div className={`${desCheckStyle.desCheckRow}`}>
-                                                                                <div className={desCheckStyle.desCheckCol}>
-                                                                                    <div className={desCheckStyle.desCheckIcon}>
-                                                                                        <Image src="/icons/buildingIcon.svg" width="42" height="44" alt="Building" />
-                                                                                    </div>
-                                                                                    <div className={desCheckStyle.desCheckData}>
-                                                                                        <div className={desCheckStyle.desCheckInfo}>
-                                                                                            <h4>Building</h4>
-                                                                                            <p>Building includes the structure of your establishment with plinth, foundation and Compund Wall</p>
-                                                                                        </div>
-                                                                                        <div className={desCheckStyle.desCheckBottom}>
-                                                                                            <Form.Group className="floatFormGroup mb-4">
+                                                                            <DescIconRow>
+                                                                                <DescIconCard
+                                                                                    icon="/icons/buildingIcon.svg"
+                                                                                    title="Building"
+                                                                                    description="Building includes the structure of your establishment with plinth, foundation and Compund Wall"
+                                                                                >
+                                                                                    <DescIconBottom>
+                                                                                        <DescIconInput>
+                                                                                            <Form.Group className={`floatFormGroup floatRuppeIconGroup mb-4`}>
                                                                                                 <FloatingLabel controlId="buildingValue" label="Building value" >
-                                                                                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" disabled={premisesTypeValue === 'Rented' ? 'disabled' : null} />
+                                                                                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={premisesTypeValue === 'Rented' ? 'disabled' : null} required />
                                                                                                 </FloatingLabel>
                                                                                             </Form.Group>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div className={desCheckStyle.desCheckCol}>
-                                                                                    <div className={desCheckStyle.desCheckIcon}>
-                                                                                        <Image src="/icons/contentIcon.svg" width="42" height="44" alt="Building" />
-                                                                                    </div>
-                                                                                    <div className={desCheckStyle.desCheckData}>
-                                                                                        <div className={desCheckStyle.desCheckInfo}>
-                                                                                            <h4>Content</h4>
-                                                                                            <p>Content includes Plant and Machinery, Furniture & Fixtures and any other content within the premises</p>
-                                                                                        </div>
-                                                                                        <div className={desCheckStyle.desCheckBottom}>
-                                                                                            <div className={desCheckStyle.desCheckList}>
-                                                                                                <div className={`mb-4 ${desCheckStyle.desCheckListCol} ${plantMachineryValue ? desCheckStyle.active : null}`}>
-                                                                                                    <div className={desCheckStyle.desCheckBox}>
-                                                                                                        <span>
-                                                                                                            <CheckYellowIcon />
-                                                                                                        </span>
-                                                                                                        <Form.Check
-                                                                                                            inline
-                                                                                                            type="checkbox"
-                                                                                                            id="plantMachinery"
-                                                                                                            name="plantMachinery"
-                                                                                                            onChange={handleChangePlantMachinery}
-                                                                                                            className={`${desCheckStyle.desCheckBtn}`}
-                                                                                                        />
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckInput}>
-                                                                                                        <Form.Group className={`floatFormGroup tooltipDiv ${plantMachineryValue ? desCheckStyle.active : null}`}>
-                                                                                                            <FloatingLabel controlId="plantMachinery" label="Plant and machinery value" >
-                                                                                                                <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={plantMachineryValue ? null : 'disabled'} />
-                                                                                                                <OverlayTrigger
-                                                                                                                    placement="top"
-                                                                                                                    overlay={<Tooltip>Electrical and mechanical items including electronic and other integral parts of the Insured Items including equipment, fittings, installations, apparatus and Pressure Pipe Systems as defined above</Tooltip>}
-                                                                                                                    >
-                                                                                                                    {({ ref, ...triggerHandler }) => (
-                                                                                                                        <i className='tooltipIcon' {...triggerHandler}>
-                                                                                                                            <Image
-                                                                                                                                ref={ref}
-                                                                                                                                src={tooltipIcon}
-                                                                                                                                width="24"
-                                                                                                                                height="24"
-                                                                                                                                alt="Remark Icon"
-                                                                                                                            />
-                                                                                                                        </i>
-                                                                                                                    )}
-                                                                                                                </OverlayTrigger>
-                                                                                                            </FloatingLabel>
-                                                                                                        </Form.Group>
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckStatus}>
-                                                                                                        <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div className={`mb-4 ${desCheckStyle.desCheckListCol} ${electronicEquipmentValue ? desCheckStyle.active : null}`}>
-                                                                                                    <div className={desCheckStyle.desCheckBox}>
-                                                                                                        <span>
-                                                                                                            <CheckYellowIcon />
-                                                                                                        </span>
-                                                                                                        <Form.Check
-                                                                                                            inline
-                                                                                                            type="checkbox"
-                                                                                                            id="electronicEquipment"
-                                                                                                            name="electronicEquipment"
-                                                                                                            onChange={handleChangeElectronicEquipment}
-                                                                                                            className={`${desCheckStyle.desCheckBtn}`}
-                                                                                                        />
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckInput}>
-                                                                                                        <Form.Group className={`floatFormGroup tooltipDiv ${electronicEquipmentValue ? desCheckStyle.active : null}`}>
-                                                                                                            <FloatingLabel controlId="electronicEquipment" label="Electronic Equipment" >
-                                                                                                                <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={electronicEquipmentValue ? null : 'disabled'} />
-                                                                                                                <OverlayTrigger
-                                                                                                                    placement="top"
-                                                                                                                    overlay={<Tooltip>The items comprises televisions, computers, laptops, air conditioners, telephones, printers, power tools, and appliances of diverse sizes.</Tooltip>}
-                                                                                                                    >
-                                                                                                                    {({ ref, ...triggerHandler }) => (
-                                                                                                                        <i className='tooltipIcon' {...triggerHandler}>
-                                                                                                                            <Image
-                                                                                                                                ref={ref}
-                                                                                                                                src={tooltipIcon}
-                                                                                                                                width="24"
-                                                                                                                                height="24"
-                                                                                                                                alt="Remark Icon"
-                                                                                                                            />
-                                                                                                                        </i>
-                                                                                                                    )}
-                                                                                                                </OverlayTrigger>
-                                                                                                            </FloatingLabel>
-                                                                                                        </Form.Group>
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckStatus}>
-                                                                                                        <i><Image src="/icons/errorNewIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div className={`mb-4 ${desCheckStyle.desCheckListCol} ${pElectronicEquipmentValue ? desCheckStyle.active : null}`}>
-                                                                                                    <div className={desCheckStyle.desCheckBox}>
-                                                                                                        <span>
-                                                                                                            <CheckYellowIcon />
-                                                                                                        </span>
-                                                                                                        <Form.Check
-                                                                                                            inline
-                                                                                                            type="checkbox"
-                                                                                                            id="pElectronicEquipment"
-                                                                                                            name="pElectronicEquipment"
-                                                                                                            onChange={handleChangePElectronicEquipment}
-                                                                                                            className={`${desCheckStyle.desCheckBtn}`}
-                                                                                                        />
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckInput}>
-                                                                                                        <Form.Group className={`floatFormGroup tooltipDiv ${pElectronicEquipmentValue ? desCheckStyle.active : null}`}>
-                                                                                                            <FloatingLabel controlId="pElectronicEquipment" label="Portable electronic equipment" >
-                                                                                                                <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={pElectronicEquipmentValue ? null : 'disabled'} />
-                                                                                                                <OverlayTrigger
-                                                                                                                    placement="top"
-                                                                                                                    overlay={<Tooltip>Portable equipment refers to electrical devices that are easily transportable from one location to another, such as laptop computers, tablets, e-readers, drones, and similar items.</Tooltip>}
-                                                                                                                    >
-                                                                                                                    {({ ref, ...triggerHandler }) => (
-                                                                                                                        <i className='tooltipIcon' {...triggerHandler}>
-                                                                                                                            <Image
-                                                                                                                                ref={ref}
-                                                                                                                                src={tooltipIcon}
-                                                                                                                                width="24"
-                                                                                                                                height="24"
-                                                                                                                                alt="Remark Icon"
-                                                                                                                            />
-                                                                                                                        </i>
-                                                                                                                    )}
-                                                                                                                </OverlayTrigger>
-                                                                                                            </FloatingLabel>
-                                                                                                        </Form.Group>
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckStatus}>
-                                                                                                        <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div className={`mb-4 ${desCheckStyle.desCheckListCol} ${furnitureFittingsValue ? desCheckStyle.active : null}`}>
-                                                                                                    <div className={desCheckStyle.desCheckBox}>
-                                                                                                        <span>
-                                                                                                            <CheckYellowIcon />
-                                                                                                        </span>
-                                                                                                        <Form.Check
-                                                                                                            inline
-                                                                                                            type="checkbox"
-                                                                                                            id="furnitureFittings"
-                                                                                                            name="furnitureFittings"
-                                                                                                            onChange={handleChangeFurnitureFittings}
-                                                                                                            className={`${desCheckStyle.desCheckBtn}`}
-                                                                                                        />
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckInput}>
-                                                                                                        <Form.Group className={`floatFormGroup tooltipDiv ${furnitureFittingsValue ? desCheckStyle.active : null}`}>
-                                                                                                            <FloatingLabel controlId="furnitureFittings" label="Furniture Fixtures & Fittings" >
-                                                                                                                <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={furnitureFittingsValue ? null : 'disabled'} />
-                                                                                                                <OverlayTrigger
-                                                                                                                    placement="top"
-                                                                                                                    overlay={<Tooltip>Furniture comprises various items such as chairs, tables, desks, cabinets, and similar furnishings.</Tooltip>}
-                                                                                                                    >
-                                                                                                                    {({ ref, ...triggerHandler }) => (
-                                                                                                                        <i className='tooltipIcon' {...triggerHandler}>
-                                                                                                                            <Image
-                                                                                                                                ref={ref}
-                                                                                                                                src={tooltipIcon}
-                                                                                                                                width="24"
-                                                                                                                                height="24"
-                                                                                                                                alt="Remark Icon"
-                                                                                                                            />
-                                                                                                                        </i>
-                                                                                                                    )}
-                                                                                                                </OverlayTrigger>
-                                                                                                            </FloatingLabel>
-                                                                                                        </Form.Group>
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckStatus}>
-                                                                                                        <i><Image src="/icons/errorNewIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div className={desCheckStyle.desCheckCol}>
-                                                                                    <div className={desCheckStyle.desCheckIcon}>
-                                                                                        <Image src="/icons/stockIcon.svg" width="42" height="44" alt="Stock" />
-                                                                                    </div>
-                                                                                    <div className={desCheckStyle.desCheckData}>
-                                                                                        <div className={desCheckStyle.desCheckInfo}>
-                                                                                            <h4>Stock</h4>
-                                                                                            <p>Stock includes Raw materials, Open Stock, Finished Stock within the building premises</p>
-                                                                                        </div>
-                                                                                        <div className={desCheckStyle.desCheckBottom}>
-                                                                                            <div className={desCheckStyle.desCheckList}>
-                                                                                                <div className={`mb-4 ${desCheckStyle.desCheckListCol} ${rawMaterialValue ? desCheckStyle.active : null}`}>
-                                                                                                    <div className={desCheckStyle.desCheckBox}>
-                                                                                                        <span>
-                                                                                                            <CheckYellowIcon />
-                                                                                                        </span>
-                                                                                                        <Form.Check
-                                                                                                            inline
-                                                                                                            type="checkbox"
-                                                                                                            id="rawMaterial"
-                                                                                                            name="rawMaterial"
-                                                                                                            onChange={handleChangeRawMaterial}
-                                                                                                            className={`${desCheckStyle.desCheckBtn}`}
-                                                                                                        />
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckInput}>
-                                                                                                        <Form.Group className={`floatFormGroup tooltipDiv ${rawMaterialValue ? desCheckStyle.active : null}`}>
-                                                                                                            <FloatingLabel controlId="rawMaterial" label="Raw material value" >
-                                                                                                                <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={rawMaterialValue ? null : 'disabled'} />
-                                                                                                                <OverlayTrigger
-                                                                                                                    placement="top"
-                                                                                                                    overlay={<Tooltip>The material that is still awaiting processing or undergoing further stages of production.</Tooltip>}
-                                                                                                                    >
-                                                                                                                    {({ ref, ...triggerHandler }) => (
-                                                                                                                        <i className='tooltipIcon' {...triggerHandler}>
-                                                                                                                            <Image
-                                                                                                                                ref={ref}
-                                                                                                                                src={tooltipIcon}
-                                                                                                                                width="24"
-                                                                                                                                height="24"
-                                                                                                                                alt="Remark Icon"
-                                                                                                                            />
-                                                                                                                        </i>
-                                                                                                                    )}
-                                                                                                                </OverlayTrigger>
-                                                                                                            </FloatingLabel>
-                                                                                                        </Form.Group>
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckStatus}>
-                                                                                                        <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div className={`mb-4 ${desCheckStyle.desCheckListCol} ${stockProcessValue ? desCheckStyle.active : null}`}>
-                                                                                                    <div className={desCheckStyle.desCheckBox}>
-                                                                                                        <span>
-                                                                                                            <CheckYellowIcon />
-                                                                                                        </span>
-                                                                                                        <Form.Check
-                                                                                                            inline
-                                                                                                            type="checkbox"
-                                                                                                            id="stockProcess"
-                                                                                                            name="stockProcess"
-                                                                                                            onChange={handleChangeStockProcess}
-                                                                                                            className={`${desCheckStyle.desCheckBtn}`}
-                                                                                                        />
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckInput}>
-                                                                                                        <Form.Group className={`floatFormGroup tooltipDiv ${stockProcessValue ? desCheckStyle.active : null}`}>
-                                                                                                            <FloatingLabel controlId="stockProcess" label="Stock In-process value" >
-                                                                                                                <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={stockProcessValue ? null : 'disabled'} />
-                                                                                                                <OverlayTrigger
-                                                                                                                    placement="top"
-                                                                                                                    overlay={<Tooltip>Stock undergoing through process of Manufacture but hasn't become finished Goods</Tooltip>}
-                                                                                                                    >
-                                                                                                                    {({ ref, ...triggerHandler }) => (
-                                                                                                                        <i className='tooltipIcon' {...triggerHandler}>
-                                                                                                                            <Image
-                                                                                                                                ref={ref}
-                                                                                                                                src={tooltipIcon}
-                                                                                                                                width="24"
-                                                                                                                                height="24"
-                                                                                                                                alt="Remark Icon"
-                                                                                                                            />
-                                                                                                                        </i>
-                                                                                                                    )}
-                                                                                                                </OverlayTrigger>
-                                                                                                            </FloatingLabel>
-                                                                                                        </Form.Group>
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckStatus}>
-                                                                                                        <i><Image src="/icons/errorNewIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div className={`mb-4 ${desCheckStyle.desCheckListCol} ${finishedGoodsValue ? desCheckStyle.active : null}`}>
-                                                                                                    <div className={desCheckStyle.desCheckBox}>
-                                                                                                        <span>
-                                                                                                            <CheckYellowIcon />
-                                                                                                        </span>
-                                                                                                        <Form.Check
-                                                                                                            inline
-                                                                                                            type="checkbox"
-                                                                                                            id="building-1"
-                                                                                                            name="building"
-                                                                                                            onChange={handleChangeFinishedGoods}
-                                                                                                            className={`${desCheckStyle.desCheckBtn}`}
-                                                                                                        />
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckInput}>
-                                                                                                        <Form.Group className={`floatFormGroup tooltipDiv ${finishedGoodsValue ? desCheckStyle.active : null}`}>
-                                                                                                            <FloatingLabel controlId="finishedGoods" label="Finished Goods value" >
-                                                                                                                <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={finishedGoodsValue ? null : 'disabled'} />
-                                                                                                                <OverlayTrigger
-                                                                                                                    placement="top"
-                                                                                                                    overlay={<Tooltip>Goods ready to be sold to the buyer</Tooltip>}
-                                                                                                                    >
-                                                                                                                    {({ ref, ...triggerHandler }) => (
-                                                                                                                        <i className='tooltipIcon' {...triggerHandler}>
-                                                                                                                            <Image
-                                                                                                                                ref={ref}
-                                                                                                                                src={tooltipIcon}
-                                                                                                                                width="24"
-                                                                                                                                height="24"
-                                                                                                                                alt="Remark Icon"
-                                                                                                                            />
-                                                                                                                        </i>
-                                                                                                                    )}
-                                                                                                                </OverlayTrigger>
-                                                                                                            </FloatingLabel>
-                                                                                                        </Form.Group>
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckStatus}>
-                                                                                                        <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div className={`mb-4 ${desCheckStyle.desCheckListCol} ${otherStocksValue ? desCheckStyle.active : null}`}>
-                                                                                                    <div className={desCheckStyle.desCheckBox}>
-                                                                                                        <span>
-                                                                                                            <CheckYellowIcon />
-                                                                                                        </span>
-                                                                                                        <Form.Check
-                                                                                                            inline
-                                                                                                            type="checkbox"
-                                                                                                            id="otherStocks"
-                                                                                                            name="otherStocks"
-                                                                                                            onChange={handleChangeOtherStocks}
-                                                                                                            className={`${desCheckStyle.desCheckBtn}`}
-                                                                                                        />
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckInput}>
-                                                                                                        <Form.Group className={`floatFormGroup tooltipDiv ${otherStocksValue ? desCheckStyle.active : null}`}>
-                                                                                                            <FloatingLabel controlId="otherStocks" label="Any other stocks value" >
-                                                                                                                <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={otherStocksValue ? null : 'disabled'} />
-                                                                                                                <OverlayTrigger
-                                                                                                                    placement="top"
-                                                                                                                    overlay={<Tooltip>Office stationaries and books etc.</Tooltip>}
-                                                                                                                    >
-                                                                                                                    {({ ref, ...triggerHandler }) => (
-                                                                                                                        <i className='tooltipIcon' {...triggerHandler}>
-                                                                                                                            <Image
-                                                                                                                                ref={ref}
-                                                                                                                                src={tooltipIcon}
-                                                                                                                                width="24"
-                                                                                                                                height="24"
-                                                                                                                                alt="Remark Icon"
-                                                                                                                            />
-                                                                                                                        </i>
-                                                                                                                    )}
-                                                                                                                </OverlayTrigger>
-                                                                                                            </FloatingLabel>
-                                                                                                        </Form.Group>
-                                                                                                    </div>
-                                                                                                    <div className={desCheckStyle.desCheckStatus}>
-                                                                                                        <i><Image src="/icons/errorNewIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
+                                                                                        </DescIconInput>
+                                                                                    </DescIconBottom>
+                                                                                </DescIconCard>
+                                                                                <DescIconCard
+                                                                                    icon="/icons/contentIcon.svg"
+                                                                                    title="Content"
+                                                                                    description="Content includes Plant and Machinery, Furniture & Fixtures and any other content within the premises"
+                                                                                >
+                                                                                    <DescIconBottom>
+                                                                                        <DescIconBottomList>
+                                                                                            <DescIconBottomCard
+                                                                                                activeClass={plantMachineryValue ? desCheckStyle.active : null}
+                                                                                            >
+                                                                                                <DescIconCheckbox>
+                                                                                                    <Form.Check
+                                                                                                        inline
+                                                                                                        type="checkbox"
+                                                                                                        id="plantMachinery"
+                                                                                                        name="plantMachinery"
+                                                                                                        onChange={handleChangePlantMachinery}
+                                                                                                        className={`${desCheckStyle.desCheckBtn}`}
+                                                                                                        required
+                                                                                                    />
+                                                                                                </DescIconCheckbox>
+                                                                                                <DescIconInput>
+                                                                                                    <Form.Group className={`floatFormGroup floatRuppeIconGroup tooltipDiv ${plantMachineryValue ? desCheckStyle.active : null}`}>
+                                                                                                        <FloatingLabel controlId="plantMachinery" label="Plant and machinery value" >
+                                                                                                            <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={plantMachineryValue ? null : 'disabled'} required />
+                                                                                                            <OverlayTrigger
+                                                                                                                placement="top"
+                                                                                                                overlay={<Tooltip>Electrical and mechanical items including electronic and other integral parts of the Insured Items including equipment, fittings, installations, apparatus and Pressure Pipe Systems as defined above</Tooltip>}
+                                                                                                                >
+                                                                                                                {({ ref, ...triggerHandler }) => (
+                                                                                                                    <i className='tooltipIcon' {...triggerHandler}>
+                                                                                                                        <Image
+                                                                                                                            ref={ref}
+                                                                                                                            src={tooltipIcon}
+                                                                                                                            width="24"
+                                                                                                                            height="24"
+                                                                                                                            alt="Remark Icon"
+                                                                                                                        />
+                                                                                                                    </i>
+                                                                                                                )}
+                                                                                                            </OverlayTrigger>
+                                                                                                        </FloatingLabel>
+                                                                                                    </Form.Group>
+                                                                                                </DescIconInput>
+                                                                                                <DescIconStatus
+                                                                                                    icon="/icons/correctIcon.svg"
+                                                                                                />
+                                                                                            </DescIconBottomCard>
+                                                                                            <DescIconBottomCard
+                                                                                                activeClass={electronicEquipmentValue ? desCheckStyle.active : null}
+                                                                                            >
+                                                                                                <DescIconCheckbox>
+                                                                                                    <Form.Check
+                                                                                                        inline
+                                                                                                        type="checkbox"
+                                                                                                        id="electronicEquipment"
+                                                                                                        name="electronicEquipment"
+                                                                                                        onChange={handleChangeElectronicEquipment}
+                                                                                                        className={`${desCheckStyle.desCheckBtn}`}
+                                                                                                        required
+                                                                                                    />
+                                                                                                </DescIconCheckbox>
+                                                                                                <DescIconInput>
+                                                                                                    <Form.Group className={`floatFormGroup floatRuppeIconGroup tooltipDiv ${electronicEquipmentValue ? desCheckStyle.active : null}`}>
+                                                                                                        <FloatingLabel controlId="electronicEquipment" label="Electronic Equipment" >
+                                                                                                            <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={electronicEquipmentValue ? null : 'disabled'} required />
+                                                                                                            <OverlayTrigger
+                                                                                                                placement="top"
+                                                                                                                overlay={<Tooltip>The items comprises televisions, computers, laptops, air conditioners, telephones, printers, power tools, and appliances of diverse sizes.</Tooltip>}
+                                                                                                                >
+                                                                                                                {({ ref, ...triggerHandler }) => (
+                                                                                                                    <i className='tooltipIcon' {...triggerHandler}>
+                                                                                                                        <Image
+                                                                                                                            ref={ref}
+                                                                                                                            src={tooltipIcon}
+                                                                                                                            width="24"
+                                                                                                                            height="24"
+                                                                                                                            alt="Remark Icon"
+                                                                                                                        />
+                                                                                                                    </i>
+                                                                                                                )}
+                                                                                                            </OverlayTrigger>
+                                                                                                        </FloatingLabel>
+                                                                                                    </Form.Group>
+                                                                                                </DescIconInput>
+                                                                                                <DescIconStatus
+                                                                                                    icon="/icons/errorNewIcon.svg"
+                                                                                                />
+                                                                                            </DescIconBottomCard>
+                                                                                            <DescIconBottomCard
+                                                                                                activeClass={pElectronicEquipmentValue ? desCheckStyle.active : null}
+                                                                                            >
+                                                                                                <DescIconCheckbox>
+                                                                                                    <Form.Check
+                                                                                                        inline
+                                                                                                        type="checkbox"
+                                                                                                        id="pElectronicEquipment"
+                                                                                                        name="pElectronicEquipment"
+                                                                                                        onChange={handleChangePElectronicEquipment}
+                                                                                                        className={`${desCheckStyle.desCheckBtn}`}
+                                                                                                        required
+                                                                                                    />
+                                                                                                </DescIconCheckbox>
+                                                                                                <DescIconInput>
+                                                                                                    <Form.Group className={`floatFormGroup floatRuppeIconGroup tooltipDiv ${pElectronicEquipmentValue ? desCheckStyle.active : null}`}>
+                                                                                                        <FloatingLabel controlId="pElectronicEquipment" label="Portable electronic equipment" >
+                                                                                                            <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={pElectronicEquipmentValue ? null : 'disabled'} required />
+                                                                                                            <OverlayTrigger
+                                                                                                                placement="top"
+                                                                                                                overlay={<Tooltip>Portable equipment refers to electrical devices that are easily transportable from one location to another, such as laptop computers, tablets, e-readers, drones, and similar items.</Tooltip>}
+                                                                                                                >
+                                                                                                                {({ ref, ...triggerHandler }) => (
+                                                                                                                    <i className='tooltipIcon' {...triggerHandler}>
+                                                                                                                        <Image
+                                                                                                                            ref={ref}
+                                                                                                                            src={tooltipIcon}
+                                                                                                                            width="24"
+                                                                                                                            height="24"
+                                                                                                                            alt="Remark Icon"
+                                                                                                                        />
+                                                                                                                    </i>
+                                                                                                                )}
+                                                                                                            </OverlayTrigger>
+                                                                                                        </FloatingLabel>
+                                                                                                    </Form.Group>
+                                                                                                </DescIconInput>
+                                                                                                <DescIconStatus
+                                                                                                    icon="/icons/correctIcon.svg"
+                                                                                                />
+                                                                                            </DescIconBottomCard>
+                                                                                            <DescIconBottomCard
+                                                                                                activeClass={furnitureFittingsValue ? desCheckStyle.active : null}
+                                                                                            >
+                                                                                                <DescIconCheckbox>
+                                                                                                    <Form.Check
+                                                                                                        inline
+                                                                                                        type="checkbox"
+                                                                                                        id="furnitureFittings"
+                                                                                                        name="furnitureFittings"
+                                                                                                        onChange={handleChangeFurnitureFittings}
+                                                                                                        className={`${desCheckStyle.desCheckBtn}`}
+                                                                                                        required
+                                                                                                    />
+                                                                                                </DescIconCheckbox>
+                                                                                                <DescIconInput>
+                                                                                                    <Form.Group className={`floatFormGroup floatRuppeIconGroup tooltipDiv ${furnitureFittingsValue ? desCheckStyle.active : null}`}>
+                                                                                                        <FloatingLabel controlId="furnitureFittings" label="Furniture Fixtures & Fittings" >
+                                                                                                            <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={furnitureFittingsValue ? null : 'disabled'} required />
+                                                                                                            <OverlayTrigger
+                                                                                                                placement="top"
+                                                                                                                overlay={<Tooltip>Furniture comprises various items such as chairs, tables, desks, cabinets, and similar furnishings.</Tooltip>}
+                                                                                                                >
+                                                                                                                {({ ref, ...triggerHandler }) => (
+                                                                                                                    <i className='tooltipIcon' {...triggerHandler}>
+                                                                                                                        <Image
+                                                                                                                            ref={ref}
+                                                                                                                            src={tooltipIcon}
+                                                                                                                            width="24"
+                                                                                                                            height="24"
+                                                                                                                            alt="Remark Icon"
+                                                                                                                        />
+                                                                                                                    </i>
+                                                                                                                )}
+                                                                                                            </OverlayTrigger>
+                                                                                                        </FloatingLabel>
+                                                                                                    </Form.Group>
+                                                                                                </DescIconInput>
+                                                                                                <DescIconStatus
+                                                                                                    icon="/icons/errorNewIcon.svg"
+                                                                                                />
+                                                                                            </DescIconBottomCard>
+                                                                                        </DescIconBottomList>
+                                                                                    </DescIconBottom>
+                                                                                </DescIconCard>
+                                                                                <DescIconCard
+                                                                                    icon="/icons/stockIcon.svg"
+                                                                                    title="Stock"
+                                                                                    description="Stock includes Raw materials, Open Stock, Finished Stock within the building premises"
+                                                                                >
+                                                                                    <DescIconBottom>
+                                                                                        <DescIconBottomList>
+                                                                                            <DescIconBottomCard
+                                                                                                activeClass={rawMaterialValue ? desCheckStyle.active : null}
+                                                                                            >
+                                                                                                <DescIconCheckbox>
+                                                                                                    <Form.Check
+                                                                                                        inline
+                                                                                                        type="checkbox"
+                                                                                                        id="rawMaterial"
+                                                                                                        name="rawMaterial"
+                                                                                                        onChange={handleChangeRawMaterial}
+                                                                                                        className={`${desCheckStyle.desCheckBtn}`}
+                                                                                                        required
+                                                                                                    />
+                                                                                                </DescIconCheckbox>
+                                                                                                <DescIconInput>
+                                                                                                    <Form.Group className={`floatFormGroup floatRuppeIconGroup tooltipDiv ${rawMaterialValue ? desCheckStyle.active : null}`}>
+                                                                                                        <FloatingLabel controlId="rawMaterial" label="Raw material value" >
+                                                                                                            <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={rawMaterialValue ? null : 'disabled'} required />
+                                                                                                            <OverlayTrigger
+                                                                                                                placement="top"
+                                                                                                                overlay={<Tooltip>The material that is still awaiting processing or undergoing further stages of production.</Tooltip>}
+                                                                                                                >
+                                                                                                                {({ ref, ...triggerHandler }) => (
+                                                                                                                    <i className='tooltipIcon' {...triggerHandler}>
+                                                                                                                        <Image
+                                                                                                                            ref={ref}
+                                                                                                                            src={tooltipIcon}
+                                                                                                                            width="24"
+                                                                                                                            height="24"
+                                                                                                                            alt="Remark Icon"
+                                                                                                                        />
+                                                                                                                    </i>
+                                                                                                                )}
+                                                                                                            </OverlayTrigger>
+                                                                                                        </FloatingLabel>
+                                                                                                    </Form.Group>
+                                                                                                </DescIconInput>
+                                                                                                <DescIconStatus
+                                                                                                    icon="/icons/correctIcon.svg"
+                                                                                                />
+                                                                                            </DescIconBottomCard>
+                                                                                            <DescIconBottomCard
+                                                                                                activeClass={stockProcessValue ? desCheckStyle.active : null}
+                                                                                            >
+                                                                                                <DescIconCheckbox>
+                                                                                                    <Form.Check
+                                                                                                        inline
+                                                                                                        type="checkbox"
+                                                                                                        id="stockProcess"
+                                                                                                        name="stockProcess"
+                                                                                                        onChange={handleChangeStockProcess}
+                                                                                                        className={`${desCheckStyle.desCheckBtn}`}
+                                                                                                        required
+                                                                                                    />
+                                                                                                </DescIconCheckbox>
+                                                                                                <DescIconInput>
+                                                                                                    <Form.Group className={`floatFormGroup floatRuppeIconGroup tooltipDiv ${stockProcessValue ? desCheckStyle.active : null}`}>
+                                                                                                        <FloatingLabel controlId="stockProcess" label="Stock In-process value" >
+                                                                                                            <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={stockProcessValue ? null : 'disabled'} required />
+                                                                                                            <OverlayTrigger
+                                                                                                                placement="top"
+                                                                                                                overlay={<Tooltip>Stock undergoing through process of Manufacture but hasn't become finished Goods</Tooltip>}
+                                                                                                                >
+                                                                                                                {({ ref, ...triggerHandler }) => (
+                                                                                                                    <i className='tooltipIcon' {...triggerHandler}>
+                                                                                                                        <Image
+                                                                                                                            ref={ref}
+                                                                                                                            src={tooltipIcon}
+                                                                                                                            width="24"
+                                                                                                                            height="24"
+                                                                                                                            alt="Remark Icon"
+                                                                                                                        />
+                                                                                                                    </i>
+                                                                                                                )}
+                                                                                                            </OverlayTrigger>
+                                                                                                        </FloatingLabel>
+                                                                                                    </Form.Group>
+                                                                                                </DescIconInput>
+                                                                                                <DescIconStatus
+                                                                                                    icon="/icons/errorNewIcon.svg"
+                                                                                                />
+                                                                                            </DescIconBottomCard>
+                                                                                            <DescIconBottomCard
+                                                                                                activeClass={finishedGoodsValue ? desCheckStyle.active : null}
+                                                                                            >
+                                                                                                <DescIconCheckbox>
+                                                                                                    <Form.Check
+                                                                                                        inline
+                                                                                                        type="checkbox"
+                                                                                                        id="building-1"
+                                                                                                        name="building"
+                                                                                                        onChange={handleChangeFinishedGoods}
+                                                                                                        className={`${desCheckStyle.desCheckBtn}`}
+                                                                                                        required
+                                                                                                    />
+                                                                                                </DescIconCheckbox>
+                                                                                                <DescIconInput>
+                                                                                                    <Form.Group className={`floatFormGroup floatRuppeIconGroup tooltipDiv ${finishedGoodsValue ? desCheckStyle.active : null}`}>
+                                                                                                        <FloatingLabel controlId="finishedGoods" label="Finished Goods value" >
+                                                                                                            <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={finishedGoodsValue ? null : 'disabled'} required />
+                                                                                                            <OverlayTrigger
+                                                                                                                placement="top"
+                                                                                                                overlay={<Tooltip>Goods ready to be sold to the buyer</Tooltip>}
+                                                                                                                >
+                                                                                                                {({ ref, ...triggerHandler }) => (
+                                                                                                                    <i className='tooltipIcon' {...triggerHandler}>
+                                                                                                                        <Image
+                                                                                                                            ref={ref}
+                                                                                                                            src={tooltipIcon}
+                                                                                                                            width="24"
+                                                                                                                            height="24"
+                                                                                                                            alt="Remark Icon"
+                                                                                                                        />
+                                                                                                                    </i>
+                                                                                                                )}
+                                                                                                            </OverlayTrigger>
+                                                                                                        </FloatingLabel>
+                                                                                                    </Form.Group>
+                                                                                                </DescIconInput>
+                                                                                                <DescIconStatus
+                                                                                                    icon="/icons/correctIcon.svg"
+                                                                                                />
+                                                                                            </DescIconBottomCard>
+                                                                                            <DescIconBottomCard
+                                                                                                activeClass={otherStocksValue ? desCheckStyle.active : null}
+                                                                                            >
+                                                                                                <DescIconCheckbox>
+                                                                                                    <Form.Check
+                                                                                                        inline
+                                                                                                        type="checkbox"
+                                                                                                        id="otherStocks"
+                                                                                                        name="otherStocks"
+                                                                                                        onChange={handleChangeOtherStocks}
+                                                                                                        className={`${desCheckStyle.desCheckBtn}`}
+                                                                                                        required
+                                                                                                    />
+                                                                                                </DescIconCheckbox>
+                                                                                                <DescIconInput>
+                                                                                                    <Form.Group className={`floatFormGroup floatRuppeIconGroup tooltipDiv ${otherStocksValue ? desCheckStyle.active : null}`}>
+                                                                                                        <FloatingLabel controlId="otherStocks" label="Any other stocks value" >
+                                                                                                            <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={otherStocksValue ? null : 'disabled'} required />
+                                                                                                            <OverlayTrigger
+                                                                                                                placement="top"
+                                                                                                                overlay={<Tooltip>Office stationaries and books etc.</Tooltip>}
+                                                                                                                >
+                                                                                                                {({ ref, ...triggerHandler }) => (
+                                                                                                                    <i className='tooltipIcon' {...triggerHandler}>
+                                                                                                                        <Image
+                                                                                                                            ref={ref}
+                                                                                                                            src={tooltipIcon}
+                                                                                                                            width="24"
+                                                                                                                            height="24"
+                                                                                                                            alt="Remark Icon"
+                                                                                                                        />
+                                                                                                                    </i>
+                                                                                                                )}
+                                                                                                            </OverlayTrigger>
+                                                                                                        </FloatingLabel>
+                                                                                                    </Form.Group>
+                                                                                                </DescIconInput>
+                                                                                                <DescIconStatus
+                                                                                                    icon="/icons/errorNewIcon.svg"
+                                                                                                />
+                                                                                            </DescIconBottomCard>
+                                                                                        </DescIconBottomList>
+                                                                                    </DescIconBottom>
+                                                                                </DescIconCard>
+                                                                            </DescIconRow>
                                                                             <div className={`${form.fromButtonDiv} d-sm-flex`}>
                                                                                 <Button onClick={handleEnterDetailsThirdToggle} variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button">
                                                                                     <span className='me-2'>Continue</span>
@@ -989,12 +1014,11 @@ export default function WorkmensCompensation_Flow() {
                                                                             </Row>
                                                                         </div>
                                                                         <Form>
-                                                                            <div className={`${desCheckStyle.desCheckNewRow}`}>
-                                                                                <div className={`${desCheckStyle.desCheckNewCol} ${burglaryValue ? desCheckStyle.active : null}`}>
-                                                                                    <div className={desCheckStyle.desCheckNewBox}>
-                                                                                        <span>
-                                                                                            <CheckYellowIcon />
-                                                                                        </span>
+                                                                            <DescRow>
+                                                                                <DescCard
+                                                                                    activeClass={burglaryValue ? desCheckStyle.active : null}
+                                                                                >
+                                                                                    <DescCheckbox>
                                                                                         <Form.Check
                                                                                             inline
                                                                                             type="checkbox"
@@ -1006,28 +1030,28 @@ export default function WorkmensCompensation_Flow() {
                                                                                             </>]}
                                                                                             onChange={handleChangeBurglary}
                                                                                             className={`${desCheckStyle.desCheckNewBtn}`}
+                                                                                            required
                                                                                         />
-                                                                                    </div>
-                                                                                    <div className={desCheckStyle.desCheckNewBottom}>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
-                                                                                                <Form.Group className={`floatFormGroup ${burglaryValue ? desCheckStyle.active : null}`}>
+                                                                                    </DescCheckbox>
+                                                                                    <DescBottom>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
+                                                                                                <Form.Group className={`floatFormGroup floatRuppeIconGroup ${burglaryValue ? desCheckStyle.active : null}`}>
                                                                                                     <FloatingLabel controlId="burglary" label="Sum Insured" >
-                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={burglaryValue ? null : 'disabled'} />
+                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" readOnly disabled={burglaryValue ? null : 'disabled'} value="5000" required />
                                                                                                     </FloatingLabel>
                                                                                                 </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div className={`${desCheckStyle.desCheckNewCol} ${plateGlassValue ? desCheckStyle.active : null}`}>
-                                                                                    <div className={desCheckStyle.desCheckNewBox}>
-                                                                                        <span>
-                                                                                            <CheckYellowIcon />
-                                                                                        </span>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/correctIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                    </DescBottom>
+                                                                                </DescCard>
+                                                                                <DescCard
+                                                                                    activeClass={plateGlassValue ? desCheckStyle.active : null}
+                                                                                >
+                                                                                    <DescCheckbox>
                                                                                         <Form.Check
                                                                                             inline
                                                                                             type="checkbox"
@@ -1039,28 +1063,28 @@ export default function WorkmensCompensation_Flow() {
                                                                                             </>]}
                                                                                             onChange={handleChangePlateGlass}
                                                                                             className={`${desCheckStyle.desCheckNewBtn}`}
+                                                                                            required
                                                                                         />
-                                                                                    </div>
-                                                                                    <div className={desCheckStyle.desCheckNewBottom}>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
-                                                                                                <Form.Group className={`floatFormGroup ${plateGlassValue ? desCheckStyle.active : null}`}>
+                                                                                    </DescCheckbox>
+                                                                                    <DescBottom>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
+                                                                                                <Form.Group className={`floatFormGroup floatRuppeIconGroup ${plateGlassValue ? desCheckStyle.active : null}`}>
                                                                                                     <FloatingLabel controlId="plateGlass" label="Sum Insured" >
-                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={plateGlassValue ? null : 'disabled'} />
+                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={plateGlassValue ? null : 'disabled'} required />
                                                                                                     </FloatingLabel>
                                                                                                 </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div className={`${desCheckStyle.desCheckNewCol} ${neonSignBoardValue ? desCheckStyle.active : null}`}>
-                                                                                    <div className={desCheckStyle.desCheckNewBox}>
-                                                                                        <span>
-                                                                                            <CheckYellowIcon />
-                                                                                        </span>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/errorNewIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                    </DescBottom>
+                                                                                </DescCard>
+                                                                                <DescCard
+                                                                                    activeClass={neonSignBoardValue ? desCheckStyle.active : null}
+                                                                                >
+                                                                                    <DescCheckbox>
                                                                                         <Form.Check
                                                                                             inline
                                                                                             type="checkbox"
@@ -1072,28 +1096,28 @@ export default function WorkmensCompensation_Flow() {
                                                                                             </>]}
                                                                                             onChange={handleChangeNeonSignBoard}
                                                                                             className={`${desCheckStyle.desCheckNewBtn}`}
+                                                                                            required
                                                                                         />
-                                                                                    </div>
-                                                                                    <div className={desCheckStyle.desCheckNewBottom}>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
-                                                                                                <Form.Group className={`floatFormGroup ${neonSignBoardValue ? desCheckStyle.active : null}`}>
+                                                                                    </DescCheckbox>
+                                                                                    <DescBottom>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
+                                                                                                <Form.Group className={`floatFormGroup floatRuppeIconGroup ${neonSignBoardValue ? desCheckStyle.active : null}`}>
                                                                                                     <FloatingLabel controlId="neonSignBoardValue" label="Sum Insured" >
-                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={neonSignBoardValue ? null : 'disabled'} />
+                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={neonSignBoardValue ? null : 'disabled'} required />
                                                                                                     </FloatingLabel>
                                                                                                 </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div className={`${desCheckStyle.desCheckNewCol} ${equipmentInsuranceValue ? desCheckStyle.active : null}`}>
-                                                                                    <div className={desCheckStyle.desCheckNewBox}>
-                                                                                        <span>
-                                                                                            <CheckYellowIcon />
-                                                                                        </span>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/correctIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                    </DescBottom>
+                                                                                </DescCard>
+                                                                                <DescCard
+                                                                                    activeClass={equipmentInsuranceValue ? desCheckStyle.active : null}
+                                                                                >
+                                                                                    <DescCheckbox>
                                                                                         <Form.Check
                                                                                             inline
                                                                                             type="checkbox"
@@ -1105,28 +1129,28 @@ export default function WorkmensCompensation_Flow() {
                                                                                             </>]}
                                                                                             onChange={handleChangeEquipmentInsurance}
                                                                                             className={`${desCheckStyle.desCheckNewBtn}`}
+                                                                                            required
                                                                                         />
-                                                                                    </div>
-                                                                                    <div className={desCheckStyle.desCheckNewBottom}>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
-                                                                                                <Form.Group className={`floatFormGroup ${equipmentInsuranceValue ? desCheckStyle.active : null}`}>
+                                                                                    </DescCheckbox>
+                                                                                    <DescBottom>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
+                                                                                                <Form.Group className={`floatFormGroup floatRuppeIconGroup ${equipmentInsuranceValue ? desCheckStyle.active : null}`}>
                                                                                                     <FloatingLabel controlId="equipmentInsurance" label="Sum Insured" >
-                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={equipmentInsuranceValue ? null : 'disabled'} />
+                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" readOnly disabled={equipmentInsuranceValue ? null : 'disabled'} value="10000" required />
                                                                                                     </FloatingLabel>
                                                                                                 </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div className={`${desCheckStyle.desCheckNewCol} ${moneyInsuranceValue ? desCheckStyle.active : null}`}>
-                                                                                    <div className={desCheckStyle.desCheckNewBox}>
-                                                                                        <span>
-                                                                                            <CheckYellowIcon />
-                                                                                        </span>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/errorNewIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                    </DescBottom>
+                                                                                </DescCard>
+                                                                                <DescCard
+                                                                                    activeClass={moneyInsuranceValue ? desCheckStyle.active : null}
+                                                                                >
+                                                                                    <DescCheckbox>
                                                                                         <Form.Check
                                                                                             inline
                                                                                             type="checkbox"
@@ -1138,64 +1162,64 @@ export default function WorkmensCompensation_Flow() {
                                                                                             </>]}
                                                                                             onChange={handleChangeMoneyInsurance}
                                                                                             className={`${desCheckStyle.desCheckNewBtn}`}
+                                                                                            required
                                                                                         />
-                                                                                    </div>
-                                                                                    <div className={desCheckStyle.desCheckNewBottom}>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
-                                                                                                <Form.Group className={`floatFormGroup ${moneyInsuranceValue ? desCheckStyle.active : null}`}>
+                                                                                    </DescCheckbox>
+                                                                                    <DescBottom>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
+                                                                                                <Form.Group className={`floatFormGroup floatRuppeIconGroup ${moneyInsuranceValue ? desCheckStyle.active : null}`}>
                                                                                                     <FloatingLabel controlId="moneySafe" label="Money in safe" >
-                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={moneyInsuranceValue ? null : 'disabled'} />
+                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={moneyInsuranceValue ? null : 'disabled'} required />
                                                                                                     </FloatingLabel>
                                                                                                 </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
-                                                                                                <Form.Group className={`floatFormGroup ${moneyInsuranceValue ? desCheckStyle.active : null}`}>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/correctIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
+                                                                                                <Form.Group className={`floatFormGroup floatRuppeIconGroup ${moneyInsuranceValue ? desCheckStyle.active : null}`}>
                                                                                                     <FloatingLabel controlId="moneyCounter" label="Money at counter" >
-                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={moneyInsuranceValue ? null : 'disabled'} />
+                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={moneyInsuranceValue ? null : 'disabled'} required />
                                                                                                     </FloatingLabel>
                                                                                                 </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
-                                                                                                <Form.Group className={`floatFormGroup ${moneyInsuranceValue ? desCheckStyle.active : null}`}>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/errorNewIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
+                                                                                                <Form.Group className={`floatFormGroup floatRuppeIconGroup ${moneyInsuranceValue ? desCheckStyle.active : null}`}>
                                                                                                     <FloatingLabel controlId="moneySingleTransit" label="Money in transit (Single carrying)" >
-                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={moneyInsuranceValue ? null : 'disabled'} />
+                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={moneyInsuranceValue ? null : 'disabled'} required />
                                                                                                     </FloatingLabel>
                                                                                                 </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
-                                                                                                <Form.Group className={`floatFormGroup ${moneyInsuranceValue ? desCheckStyle.active : null}`}>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/correctIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
+                                                                                                <Form.Group className={`floatFormGroup floatRuppeIconGroup ${moneyInsuranceValue ? desCheckStyle.active : null}`}>
                                                                                                     <FloatingLabel controlId="moneyAnnualTransit" label="Money in transit (Annual carrying)" >
-                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={moneyInsuranceValue ? null : 'disabled'} />
+                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={moneyInsuranceValue ? null : 'disabled'} required />
                                                                                                     </FloatingLabel>
                                                                                                 </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div className={`${desCheckStyle.desCheckNewCol} ${publicLiabilityValue ? desCheckStyle.active : null}`}>
-                                                                                    <div className={desCheckStyle.desCheckNewBox}>
-                                                                                        <span>
-                                                                                            <CheckYellowIcon />
-                                                                                        </span>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/errorNewIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                    </DescBottom>
+                                                                                </DescCard>
+                                                                                <DescCard
+                                                                                    activeClass={publicLiabilityValue ? desCheckStyle.active : null}
+                                                                                >
+                                                                                    <DescCheckbox>
                                                                                         <Form.Check
                                                                                             inline
                                                                                             type="checkbox"
@@ -1207,33 +1231,35 @@ export default function WorkmensCompensation_Flow() {
                                                                                             </>]}
                                                                                             onChange={handleChangePublicLiability}
                                                                                             className={`${desCheckStyle.desCheckNewBtn}`}
+                                                                                            required
                                                                                         />
-                                                                                    </div>
-                                                                                    <div className={desCheckStyle.desCheckNewBottom}>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
-                                                                                            <Form.Group className={`selectDropDiv ${!productLimitLiabilityValue == '' ? 'selectedDropDiv' : null}`}>
-                                                                                                <SelectSearch
-                                                                                                    options={productLimitLiabilityOptions}
-                                                                                                    name="productLimitLiability"
-                                                                                                    placeholder="&nbsp;"
-                                                                                                    onChange={setProductLimitLiabilityValue}
-                                                                                                    value={productLimitLiabilityValue}
-                                                                                                />
-                                                                                                <label>Limit of Liability</label>
-                                                                                            </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div className={`${desCheckStyle.desCheckNewCol} ${fidelityGuaranteeValue ? desCheckStyle.active : null}`}>
-                                                                                    <div className={desCheckStyle.desCheckNewBox}>
-                                                                                        <span>
-                                                                                            <CheckYellowIcon />
-                                                                                        </span>
+                                                                                    </DescCheckbox>
+                                                                                    <DescBottom>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
+                                                                                                <Form.Group className={`selectDropDiv ${!productLimitLiabilityValue == '' ? 'selectedDropDiv' : null}`}>
+                                                                                                    <SelectSearch
+                                                                                                        options={productLimitLiabilityOptions}
+                                                                                                        name="productLimitLiability"
+                                                                                                        placeholder="&nbsp;"
+                                                                                                        onChange={setProductLimitLiabilityValue}
+                                                                                                        value={productLimitLiabilityValue}
+                                                                                                        disabled={isProductLimitLiabilitySelectDisabled}
+                                                                                                        required
+                                                                                                    />
+                                                                                                    <label>Limit of Liability</label>
+                                                                                                </Form.Group>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/correctIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                    </DescBottom>
+                                                                                </DescCard>
+                                                                                <DescCard
+                                                                                    activeClass={fidelityGuaranteeValue ? desCheckStyle.active : null}
+                                                                                >
+                                                                                    <DescCheckbox>
                                                                                         <Form.Check
                                                                                             inline
                                                                                             type="checkbox"
@@ -1245,63 +1271,66 @@ export default function WorkmensCompensation_Flow() {
                                                                                             </>]}
                                                                                             onChange={handleChangeFidelityGuarantee}
                                                                                             className={`${desCheckStyle.desCheckNewBtn}`}
+                                                                                            required
                                                                                         />
-                                                                                    </div>
-                                                                                    <div className={desCheckStyle.desCheckNewBottom}>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
-                                                                                            <Form.Group className={`selectDropDiv ${!fidelitylimitLiabilityValue == '' ? 'selectedDropDiv' : null}`}>
-                                                                                                <SelectSearch
-                                                                                                    options={fidelitylimitLiabilityOptions}
-                                                                                                    name="limitLiability"
-                                                                                                    placeholder="&nbsp;"
-                                                                                                    onChange={setFidelityLimitLiabilityValue}
-                                                                                                    value={fidelitylimitLiabilityValue}
-                                                                                                    disabled
-                                                                                                />
-                                                                                                <label>Limit of Liability</label>
-                                                                                            </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
+                                                                                    </DescCheckbox>
+                                                                                    <DescBottom>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
+                                                                                                <Form.Group className={`selectDropDiv ${!fidelitylimitLiabilityValue == '' ? 'selectedDropDiv' : null}`}>
+                                                                                                    <SelectSearch
+                                                                                                        options={fidelitylimitLiabilityOptions}
+                                                                                                        name="limitLiability"
+                                                                                                        placeholder="&nbsp;"
+                                                                                                        onChange={setFidelityLimitLiabilityValue}
+                                                                                                        value={fidelitylimitLiabilityValue}
+                                                                                                        disabled={isFidelityGuaranteeLiabilitySelectDisabled}
+                                                                                                        required
+                                                                                                    />
+                                                                                                    <label>Limit of Liability</label>
+                                                                                                </Form.Group>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/errorNewIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
                                                                                                 <Form.Group className={`floatFormGroup ${fidelityGuaranteeValue ? desCheckStyle.active : null}`}>
                                                                                                     <FloatingLabel controlId="fidelityGuarantee" label="Number of Employees" >
-                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={fidelityGuaranteeValue ? null : 'disabled'} />
+                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={fidelityGuaranteeValue ? null : 'disabled'} required />
                                                                                                     </FloatingLabel>
                                                                                                 </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
-                                                                                            <Form.Group className={`selectDropDiv ${!limitEmployeeValue == '' ? 'selectedDropDiv' : null}`}>
-                                                                                                <SelectSearch
-                                                                                                    options={limitEmployeeOptions}
-                                                                                                    name="limitEmployee"
-                                                                                                    placeholder="&nbsp;"
-                                                                                                    onChange={setLimitEmployeeValue}
-                                                                                                    value={limitEmployeeValue}
-                                                                                                />
-                                                                                                <label>Limit per Employee</label>
-                                                                                            </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div className={`${desCheckStyle.desCheckNewCol} ${terrorismValue ? desCheckStyle.active : null}`}>
-                                                                                    <div className={desCheckStyle.desCheckNewBox}>
-                                                                                        <span>
-                                                                                            <CheckYellowIcon />
-                                                                                        </span>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/correctIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
+                                                                                                <Form.Group className={`selectDropDiv ${!limitEmployeeValue == '' ? 'selectedDropDiv' : null}`}>
+                                                                                                    <SelectSearch
+                                                                                                        options={limitEmployeeOptions}
+                                                                                                        name="limitEmployee"
+                                                                                                        placeholder="&nbsp;"
+                                                                                                        onChange={setLimitEmployeeValue}
+                                                                                                        value={limitEmployeeValue}
+                                                                                                        disabled={isFidelityGuaranteeEmployeeSelectDisabled}
+                                                                                                        required
+                                                                                                    />
+                                                                                                    <label>Limit per Employee</label>
+                                                                                                </Form.Group>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/errorNewIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                    </DescBottom>
+                                                                                </DescCard>
+                                                                                <DescCard
+                                                                                    activeClass={terrorismValue ? desCheckStyle.active : null}
+                                                                                >
+                                                                                    <DescCheckbox>
                                                                                         <Form.Check
                                                                                             inline
                                                                                             type="checkbox"
@@ -1313,24 +1342,25 @@ export default function WorkmensCompensation_Flow() {
                                                                                             </>]}
                                                                                             onChange={handleChangeTerrorism}
                                                                                             className={`${desCheckStyle.desCheckNewBtn}`}
+                                                                                            required
                                                                                         />
-                                                                                    </div>
-                                                                                    <div className={desCheckStyle.desCheckNewBottom}>
-                                                                                        <div className={`mb-4 ${desCheckStyle.desCheckListNewCol}`}>
-                                                                                            <div className={desCheckStyle.desCheckNewInput}>
-                                                                                                <Form.Group className={`floatFormGroup ${terrorismValue ? desCheckStyle.active : null}`}>
+                                                                                    </DescCheckbox>
+                                                                                    <DescBottom>
+                                                                                        <DescBottomCard>
+                                                                                            <DescInput>
+                                                                                                <Form.Group className={`floatFormGroup floatRuppeIconGroup ${terrorismValue ? desCheckStyle.active : null}`}>
                                                                                                     <FloatingLabel controlId="terrorism" label="Sum Insured" >
-                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" disabled={terrorismValue ? null : 'disabled'} />
+                                                                                                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" readOnly disabled={terrorismValue ? null : 'disabled'} value="15000" required />
                                                                                                     </FloatingLabel>
                                                                                                 </Form.Group>
-                                                                                            </div>
-                                                                                            <div className={desCheckStyle.desCheckNewStatus}>
-                                                                                                <i><Image src="/icons/correctIcon.svg" width="24" height="24" alt="" /></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
+                                                                                            </DescInput>
+                                                                                            <DescStatus
+                                                                                                icon="/icons/correctIcon.svg"
+                                                                                            />
+                                                                                        </DescBottomCard>
+                                                                                    </DescBottom>
+                                                                                </DescCard>
+                                                                            </DescRow>
                                                                             <div className={`${form.fromButtonDiv} d-sm-flex`}>
                                                                                 <Button onClick={goToNextPage} variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button">
                                                                                     <span className='me-2'>Continue</span>

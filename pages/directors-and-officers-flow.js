@@ -208,7 +208,7 @@ export default function DAndO_Flow() {
                                                 <Form>
                                                     <Form.Group className="floatFormGroup mb-4">
                                                         <FloatingLabel controlId="otp" label="Enter OTP" >
-                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" required />
                                                         </FloatingLabel>
                                                     </Form.Group>
                                                     <div className={`${form.fromButtonDiv} d-sm-flex`}>
@@ -246,6 +246,7 @@ export default function DAndO_Flow() {
                                                                     onChange={setIndValue}
                                                                     search
                                                                     value={indValue}
+                                                                    required
                                                                 />
                                                                 <label>Industry Type</label>
                                                             </Form.Group>
@@ -256,6 +257,7 @@ export default function DAndO_Flow() {
                                                                     placeholder="&nbsp;"
                                                                     onChange={setLimitLiabilityValue}
                                                                     value={limitLiabilityValue}
+                                                                    required
                                                                 />
                                                                 <label>Limit of liability required</label>
                                                                 <OverlayTrigger
@@ -282,6 +284,7 @@ export default function DAndO_Flow() {
                                                                     placeholder="&nbsp;"
                                                                     onChange={setAnnualTurnoverValue}
                                                                     value={annualTurnoverValue}
+                                                                    required
                                                                 />
                                                                 <label>Annual Turnover of your company?</label>
                                                             </Form.Group>
@@ -295,6 +298,7 @@ export default function DAndO_Flow() {
                                                                     placeholder="&nbsp;"
                                                                     onChange={setListedValue}
                                                                     value={listedValue}
+                                                                    required
                                                                 />
                                                                 <label>Are you Listed?</label>
                                                             </Form.Group>
@@ -335,6 +339,7 @@ export default function DAndO_Flow() {
                                                                             placeholder="&nbsp;"
                                                                             onChange={setEmployeesValue}
                                                                             value={employeesValue}
+                                                                            required
                                                                         />
                                                                         <label>Total no of Employees</label>
                                                                     </Form.Group>
@@ -348,6 +353,7 @@ export default function DAndO_Flow() {
                                                                             placeholder="&nbsp;"
                                                                             onChange={setSubsidiaryValue}
                                                                             value={subsidiaryValue}
+                                                                            required
                                                                         />
                                                                         <label>Do you have a subsidiary?</label>
                                                                     </Form.Group>
@@ -368,6 +374,7 @@ export default function DAndO_Flow() {
                                                                                             label={block.label}
                                                                                             onChange={() => handleChangeSubsidiary(index)}
                                                                                             className={`${subitem.formSubCheck}`}
+                                                                                            required
                                                                                         />
                                                                                         <OverlayTrigger
                                                                                             placement="top"
@@ -390,7 +397,7 @@ export default function DAndO_Flow() {
                                                                                         customClass={`${block.checked ? subitem.active : ""}`}
                                                                                     >
                                                                                         <Button className={subitem.qtyDcrsBtn} type="button" onClick={() => decrementSubsidiaryCount(index)}>-</Button>
-                                                                                        <Form.Control className={`${subitem.qtyInput}`} type="number" min={0} max={10} value={block.checked ? block.count : block.count} readOnly />
+                                                                                        <Form.Control className={`${subitem.qtyInput}`} type="number" min={0} max={10} value={block.checked ? block.count : block.count} readOnly required />
                                                                                         <Button className={subitem.qtyIncrsBtn} type="button" onClick={() => incrementSubsidiaryCount(index)}>+</Button>
                                                                                     </SubsidiaryQnty>
                                                                                 </SubsidiaryCard>
@@ -411,6 +418,7 @@ export default function DAndO_Flow() {
                                                                             checked={existingPolicyValue === 'Yes'}
                                                                             onChange={handleChangeExistingPolicy}
                                                                             className={`${form.formCheckRadio}`}
+                                                                            required
                                                                         />
                                                                         <Form.Check 
                                                                             inline
@@ -422,6 +430,7 @@ export default function DAndO_Flow() {
                                                                             checked={existingPolicyValue === 'No'}
                                                                             onChange={handleChangeExistingPolicy}
                                                                             className={`${form.formCheckRadio}`}
+                                                                            required
                                                                         />
                                                                     </Form.Group>
                                                                     {existingPolicyValue === 'Yes' ? (
@@ -433,6 +442,7 @@ export default function DAndO_Flow() {
                                                                                 onChange={setExistingInsurerValue}
                                                                                 search
                                                                                 value={existingInsurerValue}
+                                                                                required
                                                                             />
                                                                             <label>Existing Insurer's Name?</label>
                                                                         </Form.Group>
@@ -476,6 +486,7 @@ export default function DAndO_Flow() {
                                                                             checked={circumstanceValue === 'Yes'}
                                                                             onChange={handleChangeCircumstance}
                                                                             className={`${form.formCheckRadio}`}
+                                                                            required
                                                                         />
                                                                         <Form.Check 
                                                                             inline
@@ -487,6 +498,7 @@ export default function DAndO_Flow() {
                                                                             checked={circumstanceValue === 'No'}
                                                                             onChange={handleChangeCircumstance}
                                                                             className={`${form.formCheckRadio}`}
+                                                                            required
                                                                         />
                                                                     </Form.Group>
                                                                     <Form.Group className="mb-4">
@@ -501,6 +513,7 @@ export default function DAndO_Flow() {
                                                                             checked={revenueValue === 'Yes'}
                                                                             onChange={handleChangeRevenue}
                                                                             className={`${form.formCheckRadio}`}
+                                                                            required
                                                                         />
                                                                         <Form.Check 
                                                                             inline
@@ -512,6 +525,7 @@ export default function DAndO_Flow() {
                                                                             checked={revenueValue === 'No'}
                                                                             onChange={handleChangeRevenue}
                                                                             className={`${form.formCheckRadio}`}
+                                                                            required
                                                                         />
                                                                     </Form.Group>
                                                                     <div className={`${form.fromButtonDiv} d-sm-flex`}>

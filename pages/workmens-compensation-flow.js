@@ -204,7 +204,7 @@ export default function WorkmensCompensation_Flow() {
                                                 <Form>
                                                     <Form.Group className="floatFormGroup mb-4">
                                                         <FloatingLabel controlId="otp" label="Enter OTP" >
-                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" required />
                                                         </FloatingLabel>
                                                     </Form.Group>
                                                     <div className={`${form.fromButtonDiv} d-sm-flex`}>
@@ -242,6 +242,7 @@ export default function WorkmensCompensation_Flow() {
                                                                     onChange={setIndValue}
                                                                     search
                                                                     value={indValue}
+                                                                    required
                                                                 />
                                                                 <label>Industry Type</label>
                                                             </Form.Group>
@@ -253,6 +254,7 @@ export default function WorkmensCompensation_Flow() {
                                                                     onChange={setNatureWorkValue}
                                                                     search
                                                                     value={natureWorkValue}
+                                                                    required
                                                                 />
                                                                 <label>Nature of work</label>
                                                                 <OverlayTrigger
@@ -284,6 +286,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                             className={`${form.formInput}`}
                                                                                             type="text"
                                                                                             placeholder="Enter number of workers"
+                                                                                            required
                                                                                         />
                                                                                         <OverlayTrigger
                                                                                             placement="top"
@@ -303,6 +306,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                             className={`${form.formInput}`}
                                                                                             type="text"
                                                                                             placeholder="Enter monthly salary per worker"
+                                                                                            required
                                                                                         />
                                                                                         <OverlayTrigger
                                                                                             placement="top"
@@ -324,6 +328,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                             className={`${form.formInput}`}
                                                                                             type="text"
                                                                                             placeholder="Enter number of workers"
+                                                                                            required
                                                                                         />
                                                                                         <OverlayTrigger
                                                                                             placement="top"
@@ -343,6 +348,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                             className={`${form.formInput}`}
                                                                                             type="text"
                                                                                             placeholder="Enter monthly salary per worker"
+                                                                                            required
                                                                                         />
                                                                                         <OverlayTrigger
                                                                                             placement="top"
@@ -364,6 +370,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                             className={`${form.formInput}`}
                                                                                             type="text"
                                                                                             placeholder="Enter number of workers"
+                                                                                            required
                                                                                         />
                                                                                         <OverlayTrigger
                                                                                             placement="top"
@@ -383,6 +390,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                             className={`${form.formInput}`}
                                                                                             type="text"
                                                                                             placeholder="Enter monthly salary per worker"
+                                                                                            required
                                                                                         />
                                                                                         <OverlayTrigger
                                                                                             placement="top"
@@ -544,6 +552,7 @@ export default function WorkmensCompensation_Flow() {
                                                                         checked={medicalExpensesValue === 'Yes'}
                                                                         onChange={handleChangeMedicalExpenses}
                                                                         className={`${form.formCheckRadio}`}
+                                                                        required
                                                                     />
                                                                     <Form.Check 
                                                                         inline
@@ -555,6 +564,7 @@ export default function WorkmensCompensation_Flow() {
                                                                         checked={medicalExpensesValue === 'No'}
                                                                         onChange={handleChangeMedicalExpenses}
                                                                         className={`${form.formCheckRadio}`}
+                                                                        required
                                                                     />
                                                                 </Form.Group>
                                                                 {medicalExpensesValue === 'Yes' ? (
@@ -565,6 +575,7 @@ export default function WorkmensCompensation_Flow() {
                                                                             placeholder="&nbsp;"
                                                                             onChange={setMedicalExpensesLimitValue}
                                                                             value={medicalExpensesLimitValue}
+                                                                            required
                                                                         />
                                                                         <label>Medical expenses limit per employee</label>
                                                                     </Form.Group>
@@ -578,6 +589,7 @@ export default function WorkmensCompensation_Flow() {
                                                                         placeholder="&nbsp;"
                                                                         onChange={setPeriodInsuranceValue}
                                                                         value={periodInsuranceValue}
+                                                                        required
                                                                     />
                                                                     <label>Period of Insurance</label>
                                                                 </Form.Group>
@@ -593,6 +605,7 @@ export default function WorkmensCompensation_Flow() {
                                                                         checked={existingPolicyValue === 'Yes'}
                                                                         onChange={handleChangeExistingPolicy}
                                                                         className={`${form.formCheckRadio}`}
+                                                                        required
                                                                     />
                                                                     <Form.Check 
                                                                         inline
@@ -604,6 +617,7 @@ export default function WorkmensCompensation_Flow() {
                                                                         checked={existingPolicyValue === 'No'}
                                                                         onChange={handleChangeExistingPolicy}
                                                                         className={`${form.formCheckRadio}`}
+                                                                        required
                                                                     />
                                                                 </Form.Group>
                                                                 {existingPolicyValue === 'Yes' ? (
@@ -630,6 +644,7 @@ export default function WorkmensCompensation_Flow() {
                                                                             checked={claimHistoryValue === 'No'}
                                                                             onChange={handleChangeClaimHistory}
                                                                             className={`${form.formCheckRadio}`}
+                                                                            required
                                                                         />
                                                                     </Form.Group>
                                                                 ):(

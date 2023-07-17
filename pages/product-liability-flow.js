@@ -243,7 +243,7 @@ export default function ProductLiability_Flow() {
                                                 <Form>
                                                     <Form.Group className="floatFormGroup mb-4">
                                                         <FloatingLabel controlId="otp" label="Enter OTP" >
-                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" required />
                                                         </FloatingLabel>
                                                     </Form.Group>
                                                     <div className={`${form.fromButtonDiv} d-sm-flex`}>
@@ -281,6 +281,7 @@ export default function ProductLiability_Flow() {
                                                                     onChange={setIndValue}
                                                                     search
                                                                     value={indValue}
+                                                                    required
                                                                 />
                                                                 <label>Industry Type</label>
                                                             </Form.Group>
@@ -291,6 +292,7 @@ export default function ProductLiability_Flow() {
                                                                     placeholder="&nbsp;"
                                                                     onChange={setLimitLiabilityValue}
                                                                     value={limitLiabilityValue}
+                                                                    required
                                                                 />
                                                                 <label>Limit of liability required</label>
                                                                 <OverlayTrigger
@@ -317,6 +319,7 @@ export default function ProductLiability_Flow() {
                                                                     placeholder="&nbsp;"
                                                                     onChange={setAnnualTurnoverValue}
                                                                     value={annualTurnoverValue}
+                                                                    required
                                                                 />
                                                                 <label>Annual Turnover of your company?</label>
                                                             </Form.Group>
@@ -357,6 +360,7 @@ export default function ProductLiability_Flow() {
                                                                             placeholder="&nbsp;"
                                                                             onChange={setLocationsValue}
                                                                             value={locationsValue}
+                                                                            required
                                                                         />
                                                                         <label>Do you have multiple Business locations?</label>
                                                                     </Form.Group>
@@ -377,6 +381,7 @@ export default function ProductLiability_Flow() {
                                                                                         label={block.label}
                                                                                         onChange={() => handleChangeLocations(index)}
                                                                                         className={`${subitem.formSubCheck}`}
+                                                                                        required
                                                                                     />
                                                                                     <OverlayTrigger
                                                                                         placement="top"
@@ -399,7 +404,7 @@ export default function ProductLiability_Flow() {
                                                                                     customClass={`${block.checked ? subitem.active : ""}`}
                                                                                 >
                                                                                     <Button className={subitem.qtyDcrsBtn} type="button" onClick={() => decrementLocationsCount(index)}>-</Button>
-                                                                                    <Form.Control className={`${subitem.qtyInput}`} type="number" min={0} max={10} value={block.checked ? block.count : block.count} readOnly />
+                                                                                    <Form.Control className={`${subitem.qtyInput}`} type="number" min={0} max={10} value={block.checked ? block.count : block.count} readOnly required />
                                                                                     <Button className={subitem.qtyIncrsBtn} type="button" onClick={() => incrementLocationsCount(index)}>+</Button>
                                                                                 </SubsidiaryQnty>
                                                                             </SubsidiaryCard>
@@ -418,6 +423,7 @@ export default function ProductLiability_Flow() {
                                                                             placeholder="&nbsp;"
                                                                             onChange={setSubsidiaryValue}
                                                                             value={subsidiaryValue}
+                                                                            required
                                                                         />
                                                                         <label>Do you have a subsidiary?</label>
                                                                     </Form.Group>
@@ -438,6 +444,7 @@ export default function ProductLiability_Flow() {
                                                                                         label={block.label}
                                                                                         onChange={() => handleChangeSubsidiary(index)}
                                                                                         className={`${subitem.formSubCheck}`}
+                                                                                        required
                                                                                     />
                                                                                     <OverlayTrigger
                                                                                         placement="top"
@@ -460,7 +467,7 @@ export default function ProductLiability_Flow() {
                                                                                     customClass={`${block.checked ? subitem.active : ""}`}
                                                                                 >
                                                                                     <Button className={subitem.qtyDcrsBtn} type="button" onClick={() => decrementSubsidiaryCount(index)}>-</Button>
-                                                                                    <Form.Control className={`${subitem.qtyInput}`} type="number" min={0} max={10} value={block.checked ? block.count : block.count} readOnly />
+                                                                                    <Form.Control className={`${subitem.qtyInput}`} type="number" min={0} max={10} value={block.checked ? block.count : block.count} readOnly required />
                                                                                     <Button className={subitem.qtyIncrsBtn} type="button" onClick={() => incrementSubsidiaryCount(index)}>+</Button>
                                                                                 </SubsidiaryQnty>
                                                                             </SubsidiaryCard>
@@ -508,6 +515,7 @@ export default function ProductLiability_Flow() {
                                                                                     checked={hazardousSubstancesValue === 'Yes'}
                                                                                     onChange={handleChangeHazardousSubstances}
                                                                                     className={`${form.formCheckRadio}`}
+                                                                                    required
                                                                                 />
                                                                                 <Form.Check 
                                                                                     inline
@@ -519,6 +527,7 @@ export default function ProductLiability_Flow() {
                                                                                     checked={hazardousSubstancesValue === 'No'}
                                                                                     onChange={handleChangeHazardousSubstances}
                                                                                     className={`${form.formCheckRadio}`}
+                                                                                    required
                                                                                 />
                                                                             </Form.Group>
                                                                             {hazardousSubstancesValue === 'Yes' ? (
@@ -534,6 +543,7 @@ export default function ProductLiability_Flow() {
                                                                                         checked={leakageChemicalValue === 'Yes'}
                                                                                         onChange={handleChangeLeakageChemical}
                                                                                         className={`${form.formCheckRadio}`}
+                                                                                        required
                                                                                     />
                                                                                     <Form.Check 
                                                                                         inline
@@ -545,6 +555,7 @@ export default function ProductLiability_Flow() {
                                                                                         checked={leakageChemicalValue === 'No'}
                                                                                         onChange={handleChangeLeakageChemical}
                                                                                         className={`${form.formCheckRadio}`}
+                                                                                        required
                                                                                     />
                                                                                 </Form.Group>
                                                                             ):(
@@ -587,6 +598,7 @@ export default function ProductLiability_Flow() {
                                                                                     checked={existingPolicyValue === 'Yes'}
                                                                                     onChange={handleChangeExistingPolicy}
                                                                                     className={`${form.formCheckRadio}`}
+                                                                                    required
                                                                                 />
                                                                                 <Form.Check 
                                                                                     inline
@@ -598,6 +610,7 @@ export default function ProductLiability_Flow() {
                                                                                     checked={existingPolicyValue === 'No'}
                                                                                     onChange={handleChangeExistingPolicy}
                                                                                     className={`${form.formCheckRadio}`}
+                                                                                    required
                                                                                 />
                                                                             </Form.Group>
                                                                             {existingPolicyValue === 'Yes' ? (
@@ -609,6 +622,7 @@ export default function ProductLiability_Flow() {
                                                                                         onChange={setExistingInsurerValue}
                                                                                         search
                                                                                         value={existingInsurerValue}
+                                                                                        required
                                                                                     />
                                                                                     <label>Existing Insurer's Name?</label>
                                                                                 </Form.Group>
@@ -627,6 +641,7 @@ export default function ProductLiability_Flow() {
                                                                                     checked={circumstanceValue === 'Yes'}
                                                                                     onChange={handleChangeCircumstance}
                                                                                     className={`${form.formCheckRadio}`}
+                                                                                    required
                                                                                 />
                                                                                 <Form.Check 
                                                                                     inline
@@ -638,6 +653,7 @@ export default function ProductLiability_Flow() {
                                                                                     checked={circumstanceValue === 'No'}
                                                                                     onChange={handleChangeCircumstance}
                                                                                     className={`${form.formCheckRadio}`}
+                                                                                    required
                                                                                 />
                                                                             </Form.Group>
                                                                             <div className={`${form.fromButtonDiv} d-sm-flex`}>
