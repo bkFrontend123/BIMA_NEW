@@ -71,16 +71,16 @@ export default function Footer(props) {
                         <Link href="/general-liability-insurance" className='title18 font-weight-400'>General Liability Insurance</Link>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/commercial-crime-insurance" className='title18 font-weight-400'>Crime Insurance</Link>
+                        <Link href="/product-liability-insurance" className='title18 font-weight-400'>Product Liability Insurance</Link>
                       </li>
                       <li className="list-group-item">
                         <Link href="/cyber-insurance" className='title18 font-weight-400'>Cyber Insurance</Link>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/product-liability-insurance" className='title18 font-weight-400'>Product Liability Insurance</Link>
+                        <Link href="/commercial-crime-insurance" className='title18 font-weight-400'>Crime Insurance</Link>
                       </li>
                       <li className="list-group-item">
-                        <Link href="/workmens-compensation-insurance" className='title18 font-weight-400'>Workman’s Compensation</Link>
+                        <Link href="/workmens-compensation-insurance" className='title18 font-weight-400'>Workmen’s Compensation</Link>
                       </li>
                       {/*<li className="list-group-item">
                         <span className='title18 font-weight-400'>Fidelity Insurance</span>

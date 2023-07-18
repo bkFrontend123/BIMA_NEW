@@ -10,7 +10,6 @@ export default function HeroBanner(props) {
   return (
     <>
       <div className='homeHero'>
-        {/* <img src='/dummyHeader.webp' className='homeBannerImg'/> */}
         <div className={`homeBanner HomeBannerStyle`}>
           <Container>
             <div className={`homeBannerText`}>
@@ -54,6 +53,13 @@ export default function HeroBanner(props) {
 
         <style jsx scope>
           {`
+            .homeHero {
+              position: relative;
+              margin-top: -149px;
+              padding-top: 149px;
+              background: var(--heroBg);
+              z-index: 1;
+            }
             .homeBanner {
               margin-top: 70px;
               padding-bottom: 30px;
@@ -78,21 +84,25 @@ export default function HeroBanner(props) {
               align-items: center;
               margin-bottom: 8px;
             }
+            .homeBannerText-bottomCard-descrip {
+              font-size: 17px;
+            }
+
             .homeHeroMediaOuter {
               position: relative;
-              min-height: 480px;
+              min-height: 460px;
               z-index: 1;
             }
             .homeHeroShield {
               position: absolute;
               right: 0;
-              top: -60px;
+              top: -43px;
               width: auto;
               z-index: 0;
             }
             .homeHeroShield img {
               width: 400px;
-              height: 460px;
+              height: 430px;
             }
             .homeHeroImg {
               position: absolute;
@@ -100,12 +110,12 @@ export default function HeroBanner(props) {
               z-index: 1;
             }
             .homeHeroImg img {
-              width: 434px;
+              width: 411px;
             }
             @media (min-width: 1200px) {
               .title60 {
-                font-size: 48px;
-                line-height: 62px;
+                  font-size: 44px;
+                  line-height: 60px;
               }
             }
             @media (min-width: 1400px) {

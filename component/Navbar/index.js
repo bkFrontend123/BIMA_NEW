@@ -33,9 +33,9 @@ function Navbar() {
     { id: "l3", link: "/general-liability-insurance", img: "/productIcons/liability/generalLiability_icon.svg", title: "General Liability Insurance" },
     //{ id: "l4", link: "/", img: "/productIcons/liability/fidelity_icon.svg", title: "Fidelity Insurance" },
     { id: "l5", link: "/product-liability-insurance", img: "/productIcons/liability/productLiability_icon.svg", title: "Product Liability Insurance" },
-    { id: "l6", link: "/workmens-compensation-insurance", img: "/productIcons/liability/workman_icon.svg", title: "Workman’s Compensation" },
-    { id: "l7", link: "/commercial-crime-insurance", img: "/productIcons/liability/crime_icon.svg", title: "Crime Insurance" },
     { id: "l8", link: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.svg", title: "Cyber Insurance" },
+    { id: "l7", link: "/commercial-crime-insurance", img: "/productIcons/liability/crime_icon.svg", title: "Crime Insurance" },
+    { id: "l6", link: "/workmens-compensation-insurance", img: "/productIcons/liability/workman_icon.svg", title: "Workmen’s Compensation" },
   ]
   const AssetInsurance = [
     { id: "a1", link: "/fire-and-burglary-insurance", img: "/productIcons/asset/fire_icon.svg", title: "Fire Insurance" },
@@ -122,29 +122,24 @@ function Navbar() {
   return (
 
     <>
-
       <div className={`navbar-main bg-yellowLight`} id="backToTop">
         <nav className={`navbar p-0 mainMenu  navbar-expand-xl bg-body-tertiary homeNavbar`}>
           <div className="container nabbarStrip position-relative">
-
             <Link className="navbar-brand" href="/"><img src='/logo-main.svg' /></Link>
             <button className="navbar-toggler p-0" type="button" onClick={menuToggleHandle}>
               <span className="navbar-toggler-icon"><Toggle /></span>
             </button>
-
             <div className={`collapse navbar-collapse ${menuToggleList}`} >
               <ul className="navbar-nav mb-2 mt-4 m-lg-0 menu-container" >
-
                 <li className={`nav-item menu-containerList ${productToggle ? "active" : ""}`} onClick={ProductMenuToggle}>
-                  <Link className="nav-link menu-trigger arrowHide" href="#" >
+                  <Link className="nav-link menu-trigger arrowHide" href="" >
                     Products
                     <span className='ms-1'>
                       {productToggle 
-                       ? <span style={{ }} >
+                       ?
                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <path d="M1.00148 0.553208L5.55469 5.10642L10.1079 0.553208" stroke="#ffb400" strokeWidth="1.5" strokeLinejoin="bevel" />
                        </svg>
-                     </span> 
                      :  <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1.00148 0.553208L5.55469 5.10642L10.1079 0.553208" stroke="black" strokeWidth="1.5" strokeLinejoin="bevel"/>
                       </svg>  
@@ -153,11 +148,11 @@ function Navbar() {
                   </Link>
                   {productToggle
                     ?
-                    <div className='mega-menu productMega-menu' >
+                    <div className='mega-menu productMega-menu'>
                       <div className='mega-menuBox'>
                         <div className='container'>
-                          <div className='row'>
-                            <div className='col-md-10 offset-md-1'>
+                          <div className='row justify-content-center'>
+                            <div className='col-md-11'>
                               <div className='row'>
                                 {/* -------Liability Insurance------- */}
                                 <div className='col-md-4'>
@@ -546,7 +541,7 @@ function Navbar() {
                 </li>*/}
               </ul>
               <div className="nabbarStrip-btns d-flex flex-sm-row flex-column ms-auto " >
-                <a className="btnCommon scheduleCallBtn me-md-4 btnBorder border-primary text-primary mb-2 mb-md-0 text-decoration-none" onClick={handleShowCalendy}> <img className='me-2' src='/icons/calender.svg' width="16px" /> <span> Schedule a call </span></a>
+                <a className="btnCommon scheduleCallBtn me-md-4 btnBorder border-primary text-primary mb-2 mb-md-0 text-decoration-none bg-white" onClick={handleShowCalendy}> <img className='me-2' src='/icons/calender.svg' width="16px" /> <span> Schedule a call </span></a>
                 <div className={`hdrDrpdwn ${headerStyle.hdrDrpdwn} ${headerStyle.hdrTalkDrpdwn}`}>
                   <Dropdown>
                     <Dropdown.Toggle variant="" id="talk-expert" className={`btnCommon yellowBtn ${headerStyle.btnSmall}`}>

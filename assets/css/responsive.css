@@ -20,9 +20,6 @@
   .mainMenu.navbar .navbar-nav li {
     margin: 0 18px;
   }
-  body .mainMenu.navbar .navbar-brand img {
-    max-width: 235px;
-  }
   .btnCommon{
     padding: 18px 34px;
   }
@@ -44,9 +41,6 @@
   .startupCols-cardBox{
     margin-bottom: 10px !important;
    }
-  body .mainMenu.navbar .navbar-brand img {
-    max-width: 240px;
-  }
 
   body .mainMenu.navbar a.btnCommon {
     font-size: 14px;
@@ -72,7 +66,7 @@
     margin: 0 18px;
   }
   .mainMenu.navbar .navbar-nav li a {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 14px;
   }
 
@@ -156,9 +150,6 @@
   }
   .mainMenu.navbar .navbar-nav li {
     margin: 0 14px;
-  }
-  body .mainMenu.navbar .navbar-brand img {
-    max-width: 200px;
   }
   .howDo {
     padding-bottom: 80px;

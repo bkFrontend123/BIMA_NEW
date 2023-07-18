@@ -189,7 +189,7 @@ export default function WorkmensCompensation_Insurance() {
     return (
         <>
             <Head>
-                <title>Workmen Compensation Policy | BimaKavach Insurance for Workmen Compensation</title>
+                <title>Workmen's Compensation Policy | BimaKavach Insurance for Workmenn's Compensation</title>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
@@ -199,7 +199,7 @@ export default function WorkmensCompensation_Insurance() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Workmen Compensation Policy"
+                        title="Workmenn's Compensation Policy"
                         description="A key requirement to ensure your business's compliance with labor laws, this policy is designed to provide financial coverage for your employees in case of workplace injuries or illnesses. It covers costs related to medical treatments, offers disability benefits, and, if necessary, provides death benefits. 
                         This policy keeps your business compliant and forms an essential safety net around your employees' futures.
                         Evaluate your business vulnerability. Secure the optimal policy in just 10 minutes. Avail professional guidance at every step."

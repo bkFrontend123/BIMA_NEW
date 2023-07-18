@@ -123,8 +123,8 @@ body.homePageBody .navbar-main .nabbarStrip {
 }
 
 .mainMenu.navbar .nabbarStrip {
-   background-color: #fff;
-   padding: 27px 36px;
+   background-color: var(--mute1);
+   padding: 24px 32px;
 }
 
 .mainMenu.navbar li a {
@@ -137,6 +137,7 @@ body.homePageBody .navbar-main .nabbarStrip {
 }
 body .mainMenu.navbar .navbar-brand img{
    margin-top: -6px;
+   max-width: 220px;
 }
 .mainMenu.navbar .navbar-nav li {
    margin: 0 20px;
@@ -196,7 +197,7 @@ body .mainMenu.navbar .navbar-brand img{
 .mega-menu {
    position: absolute;
    left: 0;
-   top: 60%;
+   top: 89px;
    width: 100%;
    /* height: 100vh; */
    z-index: 111;
@@ -205,9 +206,8 @@ body .mainMenu.navbar .navbar-brand img{
 
 .mega-menu .mega-menuBox {
    background-color: #ffffff;
-   padding: 40px 20px;
+   padding: 32px 10px;
    /* padding: 200px; */
-   margin-top: 30px;
    box-shadow: 0px 10px 8px 0 rgba(0, 0, 0, 0.15);
    max-height: 80vh;
    overflow: hidden;
@@ -236,18 +236,12 @@ body .mainMenu.navbar .navbar-brand img{
 
 /******/
 
-.homeHero {
-   position: relative;
-   margin-top: -149px;
-   padding-top: 149px;
-   z-index: 1;
-}
+
 .homeHero::before {
    /*background-image: url(/homeHero.jpg);
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;*/
-   background: var(--heroBg);
    position: absolute;
    content: "";
    left: 0;
@@ -255,11 +249,11 @@ body .mainMenu.navbar .navbar-brand img{
    right: 0;
    height: 70%;
    z-index: -1;
+   display: none;
 }
-.homeBannerProduct-card:hover a{
+.homeBannerProduct-card:hover a {
    color: var(--vt-c-yellow) !important
 }  
-
 .homeBannerProduct {
    border: 0 !important;
    position: relative;

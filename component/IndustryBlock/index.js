@@ -9,9 +9,9 @@ export default function IndustryBlock() {
     { id: "l3", titleLink: "/general-liability-insurance", img: "/productIcons/liability/generalLiability_icon.svg", title: "General Liability", subtitle: "Insurance" },
     //{ id: "l4", titleLink: "/fidelity-insurance", img: "/productIcons/liability/fidelity_icon.svg", title: "Fidelity", subtitle: "Insurance" },
     { id: "l5", titleLink: "/product-liability-insurance", img: "/productIcons/liability/productLiability_icon.svg", title: "Product Liability", subtitle: "Insurance" },
-    { id: "l6", titleLink: "/workmens-compensation-insurance", img: "/productIcons/liability/workman_icon.svg", title: "Workman’s", subtitle: "Compensation" },
+    { id: "l6", titleLink: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.svg", title: "Cyber", subtitle: "Insurance" },
     { id: "l7", titleLink: "/commercial-crime-insurance", img: "/productIcons/liability/crime_icon.svg", title: "Crime", subtitle: "Insurance" },
-    { id: "l8", titleLink: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.svg", title: "Cyber", subtitle: "Insurance" },
+    { id: "18", titleLink: "/workmens-compensation-insurance", img: "/productIcons/liability/workman_icon.svg", title: "Workmen’s", subtitle: "Compensation" },
   ]
   const assetInsurance = [
     { id: "a1", titleLink: "/fire-and-burglary-insurance", img: "/productIcons/asset/fire_icon.svg", title: "Fire", subtitle: "Insurance" },
@@ -36,12 +36,21 @@ export default function IndustryBlock() {
   ]
   return (
     <>
-      <div className='homeBannerProductOuter container p-0'>
-        <div className='homeBannerProduct container bg-white'>
+      <div className='homeBannerProductOuter container'>
+        <div className='homeBannerProduct bg-white'>
+          <div className='getBusinessHdng title-26 text-primary text-decoration-none font-weight-700 mb-4'>
+            <i>
+              <Image
+                src="/icons/getBusinessIcon.svg"
+                alt="Get Business Insurance in Minutes"
+                width={30}
+                height={36}
+              />
+            </i> Get Business Insurance in Minutes</div>
           <div className='row'>
             <div className={`col-12`}>
               <div className='homeBannerProduct-heading d-md-flex align-items-center'>
-                <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Liability Insurance</div>
+                <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-700'>Liability Insurance</div>
                 <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
               </div>
             </div>
@@ -70,7 +79,7 @@ export default function IndustryBlock() {
           <div className='row'>
             <div className={`col-12`}>
               <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
-                <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Asset Insurance</div>
+                <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-700'>Asset Insurance</div>
                 <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
               </div>
             </div>
@@ -154,7 +163,7 @@ export default function IndustryBlock() {
           <div className='row'>
             <div className={`col-12`}>
               <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
-                <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Marine Insurance</div>
+                <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-700'>Marine Insurance</div>
                 <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
               </div>
             </div>
@@ -184,20 +193,30 @@ export default function IndustryBlock() {
       </div>
       <style jsx scope>
           {`
-          .homeBannerProduct{
+            .homeBannerProduct{
               margin-top: -92px;
               padding: 50px;
               box-shadow: 0px 10px 40px 0px #D9D9D9;
               border: 4px dashed var(--vt-c-yellow);
             }
-            .homeBannerProduct-heading{
-              margin-bottom: 30px;
+            .getBusinessHdng {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
             }
-            .homeBannerProduct-card img{
+            .homeBannerProduct-heading {
+              margin-bottom: 24px;
+            }
+            .homeBannerProduct-card img {
               width: 52px;
             }
             .homeBannerText-bottomCard-title {
               line-height: 36px;
+            }
+            .title24 {
+              font-size: 22px;
+              line-height: 30px;
             }
             .title-20 {
               font-size: 16px;
@@ -245,17 +264,6 @@ export default function IndustryBlock() {
                 }
             }
             @media only screen and (max-width: 992px) {
-              .homeHero {
-                margin-top: 0;
-                padding-top: 0;
-              } 
-              .homeHero:before {
-                background-position: 0 -5%;
-                background-size: cover;
-              }
-              .homeBannerText-bottomCard-descrip {
-                margin-top: 0;
-              }
               .homeBannerContainer {
                 text-align: center;
               }
@@ -278,17 +286,14 @@ export default function IndustryBlock() {
                 line-height: 48px;
               }
               .title24 {
-                  font-size: 18px;
-                  line-height:26px;
+                font-size: 18px;
+                line-height:26px;
               }
             }
 
             @media only screen and (max-width: 575px) {
               .HomeBannerStyle{
                 padding: 40px 0 0;
-              }
-              .homeBannerTextTitle br {
-                display: none;
               }
               .homeBannerText-bottomCard-title {
                 font-size: 20px;
