@@ -100,6 +100,15 @@ export default function ProductBanner(props) {
                         padding-top: 119px;
                         position: relative;
                     }
+                    .ProductBanner::before {
+                        background: var(--heroBg);
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        height: 150%;
+                    }
                     .dAndoBnr {
                         //background-image: url(/productBanners/dAndO_banner.jpg);
                     }
