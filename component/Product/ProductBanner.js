@@ -37,7 +37,7 @@ export default function ProductBanner(props) {
                                                             <>
                                                                 {/*<img src='/icons/barcode.svg' />*/}
                                                                 <div className='title-16 font-weight-500'>Coverage worth</div>
-                                                                <div className='title-32 font-weight-600 mt-n2'>₹{insuranceWorth}</div>
+                                                                <div className='title-32 font-weight-600 mt-n2'><span  className='font-weight-400'>₹</span>{insuranceWorth}</div>
                                                             </>
                                                         )}
                                                     </div>
@@ -50,7 +50,7 @@ export default function ProductBanner(props) {
                                                             <div className='ProductBannerRibbonBox'>
                                                                 <img className='ribbonProduct' src='/icons/bimaTick.svg' />
                                                                 <div className='title-16 text-yellow fst-italic font-weight-400'>at just</div>
-                                                                <div className='title-48 text-yellow font-weight-600 mt-n2'>₹{insuranceAmount}<sup>*</sup></div>
+                                                                <div className='title-48 text-yellow font-weight-600 mt-n2'><span  className='font-weight-400'>₹</span>{insuranceAmount}<sup>*</sup></div>
                                                                 <div className='bg-yellow h-3 mt-1'></div>
                                                                 <div className='title-16 text-yellow fst-italic font-weight-400'>annually</div>
                                                             </div>
