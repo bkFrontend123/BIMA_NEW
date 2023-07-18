@@ -99,6 +99,7 @@ export default function ProductBanner(props) {
                         margin-top: -119px;
                         padding-top: 119px;
                         position: relative;
+                        z-index: 1;
                     }
                     .ProductBanner::before {
                         background: var(--heroBg);
@@ -108,6 +109,7 @@ export default function ProductBanner(props) {
                         top: 0;
                         right: 0;
                         height: 150%;
+                        z-index: -1;
                     }
                     .dAndoBnr {
                         //background-image: url(/productBanners/dAndO_banner.jpg);
