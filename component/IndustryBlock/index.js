@@ -219,8 +219,8 @@ export default function IndustryBlock() {
               line-height: 30px;
             }
             .title-20 {
-              font-size: 16px;
-              line-height: 24px;
+              font-size: 17px;
+              line-height: 26px;
             }
             @media (min-width: 1200px){
               

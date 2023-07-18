@@ -204,7 +204,7 @@ export default function WorkmensCompensation_Insurance() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Workmenn's Compensation Policy"
+                        title="Workmen's Compensation Policy"
                         description="Workmen Compensation Policy ensures compliance with labor laws and provides financial coverage for workplace injuries and illnesses."
                         insuranceWorth="3 Crore"
                         insuranceAmount=""
