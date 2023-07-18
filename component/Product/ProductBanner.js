@@ -273,6 +273,7 @@ export default function ProductBanner(props) {
                         line-height: 40px;
                         font-size: 40px;
                         position: relative;
+                        display: inline-block;
                     }
                     .ProductBannerRibbonCol .title-48 sup {
                         position: absolute;
