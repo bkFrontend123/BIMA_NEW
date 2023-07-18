@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 20px;
+    left: 16px;
     top: 21px;
     pointer-events: none;
 }
@@ -48,13 +48,17 @@
     border: 1px solid var(--vt-c-grayLight3);
     padding: 8px 20px 8px 50px;
     color: var(--vt-c-grayLight3);
-    font-size: 17px;
-    line-height: 19px;
-    height: 63px;
+    font-size: 16px;
+    line-height: 18px;
+    height: 60px;
     display: grid;
     align-items: center;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+}
+.formSubCheck label small {
+    font-size: 13px;
+    margin-top: -4px;
 }
 .subSelectBtn.active .formSubCheck label {
     border-color: var(--vt-c-blue);
@@ -87,8 +91,8 @@
     text-align: center;
     font-size: 20px;
     outline: none;
-    height: 61px;
-    width: 50px;
+    height: 59px;
+    width: 45px;
     padding-left: 0;
     border-radius: 0;
     color: var(--vt-c-grayLight3);
@@ -102,7 +106,7 @@
     font-size: 25px;
     color: var(--vt-c-grayLight3);
     padding: 0 12px;
-    line-height: 61px;
+    line-height: 59px;
     border: none;
     background: transparent;
     display: inline-flex;

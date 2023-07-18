@@ -64,9 +64,9 @@
     background-color: var(--whiteBg);
     font-size: 16px;
     color: var(--vt-c-blue);
-    height: 63px;
+    height: 60px;
     border-radius: 0 !important;
-    padding: 12px 35px 12px 20px;
+    padding: 10px 35px 10px 20px;
     font-weight: 500;
     font-family: 'Galano Grotesque', sans-serif;
     border-color: var(--formBorderColor);
@@ -97,6 +97,10 @@
 .selectDropDiv.selectedDropDiv .select-search-input {
     border-color: var(--vt-c-blue) !important;
 }
+.selectDropDiv .select-search-is-disabled .select-search-input:hover {
+    border-color: var(--formBorderColor) !important;
+}
+
 
 .selectDropDiv .select-search-select {
     box-shadow: none;

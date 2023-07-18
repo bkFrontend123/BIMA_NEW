@@ -75,6 +75,7 @@
 .commonForm .formInput:disabled,
 .commonForm .formInput[readonly] {
     background-color: var(--whiteBg);
+    cursor: no-drop;
 }
 .commonForm .formIconGroup .formInput {
     padding: 10px 20px 10px 40px;
@@ -387,7 +388,7 @@
 
 @media (max-width:1699px) {
     .prdctFrmHeight {
-        min-height: calc(100vh - 98px);
+        min-height: calc(100vh - 95px);
     }
     .whiteFormBox {
         padding: 32px;
@@ -470,20 +471,23 @@
     .formFileSucess label {
         height: 54px;
     }
+    .formCheckRadio {
+        margin-right: 8px;
+    }
     .formCheckRadio label {
-        font-size: 15px;
-        padding: 8px 16px 8px 46px;
+        font-size: 14.5px;
+        padding: 8px 10px 8px 35px;
     }
     .formCheckRadio label::before {
-        width: 20px;
-        height: 20px;
-        left: 14px;
-        top: 10px;
+        width: 18px;
+        height: 18px;
+        left: 8px;
+        top: 11px;
     }
     .formCheckRadio label::after {
         width: 10px;
         height: 10px;
-        left: 19px;
+        left: 12px;
         top: 15px;
     }
     .fromButtonDiv button {

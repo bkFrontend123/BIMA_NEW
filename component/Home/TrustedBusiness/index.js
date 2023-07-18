@@ -35,8 +35,8 @@ function TrustedBusiness() {
   };
   return (
     <div className='container-fluid p-0'>
-      <div className='row'>
-        <div className={`col-lg-12 mx-auto text-center trusted-business ${styles.trustedBusiness}`}>
+      <div className='row m-0'>
+        <div className={`col-lg-12 p-0 mx-auto text-center trusted-business ${styles.trustedBusiness}`}>
           <h2 className='title24 mb-3 font-weight-500 text-primary px-sm-0 px-5'>We are catering to</h2>
           <div className='pt-2'>
             <Swiper

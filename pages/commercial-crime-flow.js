@@ -202,7 +202,7 @@ export default function CommercialCrime_Flow() {
                         <Col xl={11}>
                             <Row className='g-4'>
                                 <Col xl={6} xxl={7}>
-                                    <div className='pe-lg-2 pe-xxl-5'>
+                                    <div className='pe-lg-2 pe-xxl-4'>
                                         <ProductFormContent
                                             icon={productIcon}
                                             title="Commercial Crime Insurance"

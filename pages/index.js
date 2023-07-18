@@ -44,8 +44,8 @@ export default function Home() {
       <main>
           <div className=''>
             <HeroBanner 
-              title="Business Insurance"
-              subtitle="in Minutes"
+              title="Business Insurance matlab"
+              subtitle="BimaKavach"
               description="Quick questions. Instant quotes. Top insurers."
             />
             <TrustedBusiness />

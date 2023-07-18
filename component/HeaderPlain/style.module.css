@@ -162,13 +162,13 @@ button.btnSmall {
 
 @media (max-width:1699px) {
     .hdrBlock {
-        padding: 24px 0;
+        padding: 20px 0;
     }
 }
 
 @media (max-width:767px) {
     .hdrBlock {
-        padding: 20px 0;
+        padding: 16px 0;
     }
     .btnSmall {
         padding: 10px;

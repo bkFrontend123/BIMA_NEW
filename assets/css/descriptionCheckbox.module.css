@@ -81,8 +81,8 @@
 .desCheckInput {
     width: 100%;
 }
-.desCheckInput input,
-.desCheckInput label {
+.desCheckListCol input,
+.desCheckListCol label {
     background-color: var(--mute3) !important;
 }
 .desCheckStatus {

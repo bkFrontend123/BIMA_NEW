@@ -39,14 +39,14 @@ export default function IndustryBlock() {
       <div className='homeBannerProductOuter container p-0'>
         <div className='homeBannerProduct container bg-white'>
           <div className='row'>
-            <div className={`col-12`} >
+            <div className={`col-12`}>
               <div className='homeBannerProduct-heading d-md-flex align-items-center'>
                 <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Liability Insurance</div>
                 <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
               </div>
             </div>
           </div>
-          <div className='row g-4 g-lg-5 liabilityInsurance'>
+          <div className='row g-4 liabilityInsurance'>
             {liabilityInsurance.map((item) =>
               <div key={item.id} className="col-lg-3 col-6">
                 <div className='onhoverAnimation'>
@@ -68,14 +68,14 @@ export default function IndustryBlock() {
           </div>
 
           <div className='row'>
-            <div className={`col-12`} >
+            <div className={`col-12`}>
               <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
                 <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Asset Insurance</div>
                 <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
               </div>
             </div>
           </div>
-          <div className='row g-4 g-lg-5 assetInsurance'>
+          <div className='row g-4 assetInsurance'>
             {assetInsurance.map((item) =>
               <div key={item.id} className="col-lg-3 col-6">
                 <div className='onhoverAnimation'>
@@ -104,7 +104,7 @@ export default function IndustryBlock() {
               </div>
             </div>
           </div>
-          <div className='row g-4 g-lg-5 engineeringInsurance'>
+          <div className='row g-4 engineeringInsurance'>
             {engineeringInsurance.map((item) =>
               <div key={item.id} className="col-lg-3 col-6">
                 <div className='onhoverAnimation'>
@@ -151,9 +151,8 @@ export default function IndustryBlock() {
               </div>
             )}
           </div>*/}
-
           <div className='row'>
-            <div className={`col-12`} >
+            <div className={`col-12`}>
               <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
                 <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Marine Insurance</div>
                 <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
@@ -185,122 +184,48 @@ export default function IndustryBlock() {
       </div>
       <style jsx scope>
           {`
-            .homeBanner {
-              margin-top: 100px;
-              padding-bottom: 20px;
-            }
-            .homeBannerTextTitle {
-
-            }
-            .BannerDescription{
-              font-size: 24px;
-              line-height: 36px;
-              margin-bottom: 35px;
-            }
-            .homeBannerText{
-              padding-left: 35px;
-            }
-            .homeBannerText-bottom{
-              display: flex;
-              align-items: end;
-              gap: 0 80px;
-            }
-            .homeBannerText-bottomCard{
-              border-bottom: 4px solid var(--vt-c-yellow)
-            }
-            .homeBannerText-bottomCard-descrip{
-              margin-top: -5px;
-            }
-          
-            .homeBannerText-bottomCard-last {
-              display: flex;
-              border: 0;
-              padding: 0;
-              padding-right: 30px;
-              max-width: 272px; 
-              height: 100%;
-              margin-top: -230px;
-            }
-            .homeBannerText-bottomCard-last  .title-24 {
-              line-height: 28px;
-            }
-            
-            .homeBannerProduct{
-              margin-top: 60px;
-              padding: 60px;
+          .homeBannerProduct{
+              margin-top: -92px;
+              padding: 50px;
               box-shadow: 0px 10px 40px 0px #D9D9D9;
               border: 4px dashed var(--vt-c-yellow);
             }
             .homeBannerProduct-heading{
               margin-bottom: 30px;
             }
-            .homeBannerProduct-headingText{
-              // width: 350px;
-            }
             .homeBannerProduct-card img{
               width: 52px;
             }
-            .homeBannerText-bottomCard-title{
+            .homeBannerText-bottomCard-title {
               line-height: 36px;
             }
-            .heroPlay {
-                padding-top: 112px;
-            }
-            .homeBannerBtn a{
-                padding: 20px 41px;
-                box-shadow: 5px 10px 10px rgba(14, 43, 114, 0.1);
-            }
             .title-20 {
-              font-size: 18px;
-              line-height: 26px;
+              font-size: 16px;
+              line-height: 24px;
             }
-            @media (min-width: 1300px){
-              .container {
-                max-width: 1170px !important;
-              }
+            @media (min-width: 1200px){
+              
             }
-            @media (min-width: 1399px){
-              .container {
-                max-width: 1300px !important;
-              }
+            @media (min-width: 1499px){
+              
             }
-            @media (min-width:1600px) {
-              .container {
-                max-width: 1460px !important;
-              }
+            @media (min-width:1700px) {
+              
             }
-            @media (min-width:1650px) {
-              .container {
-                max-width: 1548px !important;
-              }
+            @media only screen and (max-width: 1699px) {
+              
             }
-            @media only screen and (max-width: 1650px) {
-              .homeBannerText-bottomCard-last{
-                max-width: 220px;
-              }
-            }
-            @media only screen and (max-width: 1450px) {   
+            @media only screen and (max-width: 1399px) {   
               .homeBannerProduct{
                 padding: 60px;
               }
-                .BannerDescription{
-                  font-size: 22px;
-                  line-height: 34px;
-                  margin-bottom: 30px;
-                }
-                .homeBannerBtn a{
-                  padding: 16px 28px;
-                }
-                .heroPlay {
-                    padding-top: 40px;
-                }
                 .title-20 {
                   font-size: 18px;
                   line-height: 26px;
                 }
                 .title-18 {
-                    font-size: 16px;
-                    line-height: 24px;
+                  font-size: 16px;
+                  line-height: 24px;
                 }
             }
             @media only screen and (max-width: 1398px) {
@@ -313,80 +238,49 @@ export default function IndustryBlock() {
             }
             @media only screen and (max-width: 1200px) {
                 .HomeBannerStyle{
-                    max-width: 100%;
+                  max-width: 100%;
                 }
                 .homeBannerProduct {
                   margin-top: 60px;
                 }
-                .heroPlay {
-                    padding-top: 50px;
-                }
-                
             }
             @media only screen and (max-width: 992px) {
               .homeHero {
                 margin-top: 0;
                 padding-top: 0;
-                // height: 92vh;
               } 
               .homeHero:before {
                 background-position: 0 -5%;
                 background-size: cover;
               }
-              .homeBannerText-bottomCard-descrip{
+              .homeBannerText-bottomCard-descrip {
                 margin-top: 0;
               }
-              .homeBannerContainer{
+              .homeBannerContainer {
                 text-align: center;
               }
-              .HomeBannerStyle{
-                
+              .HomeBannerStyle {
                   max-width: 100%;
                   display: block;
                   margin-top: 0;
               }
-              .homeBannerText{
+              .homeBannerText {
                 padding-left: 0;
               }
-              .homeBannerText-bottom{
+              .homeBannerText-bottom {
                 flex-wrap: wrap;
               }
-              .homeBannerProduct{
+              .homeBannerProduct {
                 padding: 24px;
               }
-              
-              .homeBannerText-bottomCard{
-                  margin-bottom: 20px;
+              .title64 {
+                font-size: 40px;
+                line-height: 48px;
               }
-                .BannerDescription{
-                    font-size: 18px;
-                    line-height: 24px;
-                }
-                .homeBannerBtn{
-                    width: 92%;
-                    justify-content: center;
-                    margin: 0 auto;
-                    margin-top: 60px;
-                }
-                .heroPlay {
-                  padding-top: 32px;
-                }
-                
-                .homeBannerBtn a{
-                    padding: 14px 18px;
-                    width: 100%;
-                    justify-content: center;
-                }
-
-                .title64 {
-                    font-size: 40px;
-                    line-height: 48px;
-                }
-                .title24 {
-                    font-size: 18px;
-                    line-height:26px;
-                }
-                
+              .title24 {
+                  font-size: 18px;
+                  line-height:26px;
+              }
             }
 
             @media only screen and (max-width: 575px) {
@@ -395,9 +289,6 @@ export default function IndustryBlock() {
               }
               .homeBannerTextTitle br {
                 display: none;
-              }
-              .homeBannerText-bottomCard {
-                margin-bottom: 10px;
               }
               .homeBannerText-bottomCard-title {
                 font-size: 20px;

@@ -207,7 +207,7 @@ export default function GeneralLiability_Flow() {
                         <Col xl={11}>
                             <Row className='g-4'>
                                 <Col xl={6} xxl={7}>
-                                    <div className='pe-lg-2 pe-xxl-5'>
+                                    <div className='pe-lg-2 pe-xxl-4'>
                                         <ProductFormContent
                                             icon={productIcon}
                                             title="Commercial General Liability"
@@ -362,67 +362,50 @@ export default function GeneralLiability_Flow() {
                                                                         />
                                                                         <label>Are you Listed?</label>
                                                                     </Form.Group>
-                                                                    <Form.Group className={`selectDropDiv mb-4 ${!locationsValue == '' ? 'selectedDropDiv' : null}`}>
-                                                                        <SelectSearch
-                                                                            options={[
-                                                                                {name: 'Yes', value: 'Yes'},
-                                                                                {name: 'No', value: 'No'},
-                                                                            ]}
-                                                                            name="locations"
-                                                                            placeholder="&nbsp;"
-                                                                            onChange={setLocationsValue}
-                                                                            value={locationsValue}
-                                                                        />
-                                                                        <label>Do you have multiple Business locations?</label>
-                                                                    </Form.Group>
-                                                                    {locationsValue == 'Yes' ? (
-                                                                        <div className='mb-4'>
-                                                                             <div className={`${form.formCheckLabel}`}>Select the countries you have business locations in and the number of business locations each country have.</div>
-                                                                            {locationsBlocksData.map((block, index) => (
-                                                                            <SubsidiaryCard key={index}>
-                                                                                <SubsidiaryItem
+                                                                    <div className='mb-4'>
+                                                                        <div className={`${form.formLabel}`}>Select the countries you have business locations in and the number of business locations each country have.</div>
+                                                                        {locationsBlocksData.map((block, index) => (
+                                                                        <SubsidiaryCard key={index}>
+                                                                            <SubsidiaryItem
+                                                                                label={block.label}
+                                                                                customClass={`${subitem.tooltipDiv} ${block.checked ? subitem.active : ""}`}
+                                                                            >
+                                                                                <Form.Check
+                                                                                    inline
+                                                                                    type="checkbox"
+                                                                                    id={block.id}
+                                                                                    name={block.label}
                                                                                     label={block.label}
-                                                                                    customClass={`${subitem.tooltipDiv} ${block.checked ? subitem.active : ""}`}
-                                                                                >
-                                                                                    <Form.Check
-                                                                                        inline
-                                                                                        type="checkbox"
-                                                                                        id={block.id}
-                                                                                        name={block.label}
-                                                                                        label={block.label}
-                                                                                        onChange={() => handleChangeLocations(index)}
-                                                                                        className={`${subitem.formSubCheck}`}
-                                                                                    />
-                                                                                    <OverlayTrigger
-                                                                                        placement="top"
-                                                                                        overlay={<Tooltip>{block.remark}</Tooltip>}
-                                                                                        >
-                                                                                        {({ ref, ...triggerHandler }) => (
-                                                                                            <i className='tooltipIcon' {...triggerHandler}>
-                                                                                                <Image
-                                                                                                    ref={ref}
-                                                                                                    src={tooltipIcon}
-                                                                                                    width="24"
-                                                                                                    height="24"
-                                                                                                    alt="Remark Icon"
-                                                                                                />
-                                                                                            </i>
-                                                                                        )}
-                                                                                    </OverlayTrigger>
-                                                                                </SubsidiaryItem>
-                                                                                <SubsidiaryQnty
-                                                                                    customClass={`${block.checked ? subitem.active : ""}`}
-                                                                                >
-                                                                                    <Button className={subitem.qtyDcrsBtn} type="button" onClick={() => decrementLocationsCount(index)}>-</Button>
-                                                                                    <Form.Control className={`${subitem.qtyInput}`} type="number" min={0} max={10} value={block.checked ? block.count : block.count} readOnly />
-                                                                                    <Button className={subitem.qtyIncrsBtn} type="button" onClick={() => incrementLocationsCount(index)}>+</Button>
-                                                                                </SubsidiaryQnty>
-                                                                            </SubsidiaryCard>
-                                                                            ))}
-                                                                        </div>
-                                                                    ):(
-                                                                        null
-                                                                    )}
+                                                                                    onChange={() => handleChangeLocations(index)}
+                                                                                    className={`${subitem.formSubCheck}`}
+                                                                                />
+                                                                                <OverlayTrigger
+                                                                                    placement="top"
+                                                                                    overlay={<Tooltip>{block.remark}</Tooltip>}
+                                                                                    >
+                                                                                    {({ ref, ...triggerHandler }) => (
+                                                                                        <i className='tooltipIcon' {...triggerHandler}>
+                                                                                            <Image
+                                                                                                ref={ref}
+                                                                                                src={tooltipIcon}
+                                                                                                width="24"
+                                                                                                height="24"
+                                                                                                alt="Remark Icon"
+                                                                                            />
+                                                                                        </i>
+                                                                                    )}
+                                                                                </OverlayTrigger>
+                                                                            </SubsidiaryItem>
+                                                                            <SubsidiaryQnty
+                                                                                customClass={`${block.checked ? subitem.active : ""}`}
+                                                                            >
+                                                                                <Button className={subitem.qtyDcrsBtn} type="button" onClick={() => decrementLocationsCount(index)}>-</Button>
+                                                                                <Form.Control className={`${subitem.qtyInput}`} type="number" min={0} max={10} value={block.checked ? block.count : block.count} readOnly />
+                                                                                <Button className={subitem.qtyIncrsBtn} type="button" onClick={() => incrementLocationsCount(index)}>+</Button>
+                                                                            </SubsidiaryQnty>
+                                                                        </SubsidiaryCard>
+                                                                        ))}
+                                                                    </div>
                                                                     <div className={`${form.fromButtonDiv} d-sm-flex`}>
                                                                         <Button onClick={handleEnterDetailsSecondToggle} variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button">
                                                                             <span className='me-2'>Continue</span>

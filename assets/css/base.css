@@ -32,6 +32,7 @@
   --statusGreenBg: #DDF7E2;
 
   --section-gap: 70px;
+  --heroBg: linear-gradient(180deg, rgba(255, 180, 0, 0.30) 0%, rgba(255, 180, 0, 0.00) 47.63%);
   --whiteBg: #ffffff;
   --black: #000000;
   --greyDark: #333333;
@@ -61,7 +62,8 @@
 
 body {
   font-family: 'Galano Grotesque', sans-serif ;
-  font-weight: 500 ;
+  font-weight: 500;
+  line-height: 1.4;
   overflow-x: hidden;
   color: #000; 
 }
@@ -739,23 +741,11 @@ p {
 }
 /***Frontend Custom Css End***/
 
-@media (min-width:1300px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width:1399px) {
-  .container {
-    max-width: 1400px;
-  }
-}
-
-@media (min-width:1600px) {
+@media (min-width:1700px) {
   .container {
     max-width: 1560px;
   }
-  .IndustryList.container{
+  .IndustryList.container {
     max-width: 1450px;
   }
 }

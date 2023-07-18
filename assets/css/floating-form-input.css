@@ -28,6 +28,27 @@
     padding-right: 60px;
 }
 
+.floatRuppeIconGroup .form-floating input {
+    padding-left: 60px;
+}
+.floatRuppeIconGroup .form-floating::before {
+    position: absolute;
+    content: "₹";
+    left: 20px;
+    top: 20px;
+    font-size: 18px;
+    padding-right: 15px;
+    color: var(--gray);
+    border-right: 1px solid var(--formBorderColor);
+    pointer-events: none;
+}
+
+@media (max-width:1699px) {
+    .floatRuppeIconGroup .form-floating::before {
+        top: 18px;
+    }
+}
+
 @media (max-width:767px) {
     .floatFormGroup .form-floating > label {
         left: 6px;
@@ -41,5 +62,14 @@
     }
     .floatFormGroup.tooltipDiv input {
         padding-right: 50px;
+    }
+    .floatRuppeIconGroup .form-floating input {
+        padding-left: 50px;
+    }
+    .floatRuppeIconGroup .form-floating::before {
+        left: 18px;
+        top: 15px;
+        font-size: 16px;
+        padding-right: 12px;
     }
 }

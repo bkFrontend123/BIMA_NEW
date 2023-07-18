@@ -238,15 +238,16 @@ body .mainMenu.navbar .navbar-brand img{
 
 .homeHero {
    position: relative;
-   margin-top: -166px;
-   padding-top: 165px;
+   margin-top: -149px;
+   padding-top: 149px;
    z-index: 1;
 }
 .homeHero::before {
-   background-image: url(/homeHero.jpg);
+   /*background-image: url(/homeHero.jpg);
    background-repeat: no-repeat;
    background-position: center center;
-   background-size: cover;
+   background-size: cover;*/
+   background: var(--heroBg);
    position: absolute;
    content: "";
    left: 0;
@@ -255,18 +256,14 @@ body .mainMenu.navbar .navbar-brand img{
    height: 70%;
    z-index: -1;
 }
-.heroPlay img{
-   height: 118px;
-   width: 118px;
- }
- .homeBannerProduct-card:hover a{
+.homeBannerProduct-card:hover a{
    color: var(--vt-c-yellow) !important
- }  
+}  
 
- .homeBannerProduct {
+.homeBannerProduct {
    border: 0 !important;
    position: relative;
- }
+}
  .homeBannerProduct::before {
    position: absolute;
    content: "";
@@ -276,6 +273,7 @@ body .mainMenu.navbar .navbar-brand img{
    left: 0;
    top: 0;
    bottom: 0;
+   display: none;
 }
 .homeBannerProduct::after {
    position: absolute;
@@ -287,6 +285,7 @@ body .mainMenu.navbar .navbar-brand img{
    top: 0;
    bottom: 0;
    transform: rotate(180deg);
+   display: none;
 }
 .homeBannerProductOuter {
    position: relative;
@@ -301,6 +300,7 @@ body .mainMenu.navbar .navbar-brand img{
    right: 0;
    top: 0;
    z-index: 1;
+   display: none;
 }
 .homeBannerProductOuter::after {
    position: absolute;
@@ -312,6 +312,7 @@ body .mainMenu.navbar .navbar-brand img{
    right: 0;
    bottom: 0;
    z-index: 1;
+   display: none;
 }
 /****Badge****/
 .badgeIconCol {
