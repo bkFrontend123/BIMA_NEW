@@ -5,7 +5,7 @@ import Link from 'next/link'
 import ScrollContainer from 'react-indiana-drag-scroll'
 import ProgressBar from "react-scroll-progress-bar"
 
-import { Container, Row, Col, Accordion} from 'react-bootstrap'
+import { Container, Row, Col, Button, Accordion} from 'react-bootstrap'
 
 import HeaderPlain from '../component/HeaderPlain'
 
@@ -74,10 +74,10 @@ export default function QuoteComparison() {
                     <Row className='justify-content-center'>
                         <Col xl={11}>
                             <div className='d-none d-md-flex mb-3'>
-                                <Link href="" onClick={goToAllPolicy} className='btnCommon btnSmall greyBtn d-flex justify-content-center'>
+                                <Button type="button" onClick={goToAllPolicy} className='btnCommon btnSmall greyBtn d-flex justify-content-center'>
                                     <BackArrow iconColor="primary" width="22" height="8" />
                                     <span className='ms-2'>Back to quotes</span>
-                                </Link>
+                                </Button>
                             </div>
                             <div className='d-flex d-md-none justify-content-between gap-3 mb-4'>
                                 <PolicyHeader

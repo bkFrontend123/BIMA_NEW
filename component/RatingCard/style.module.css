@@ -2,33 +2,40 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    
 }
 .rateBgCol {
-    background-color: var(--whiteBg);
-    max-width: 510px;
-    padding: 8px 20px;
-    border: 3px solid var(--vt-c-yellow);
+    background-color: var(--mute1);
+    padding: 18px 30px;
 }
 .rateTextDiv {
-    padding-top: 5px;
-    padding-right: 20px;
-    padding-bottom: 5px;
-    margin-right: 20px;
-    border-right: 1px solid var(--vt-c-gray);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
-.rateTextDiv span {
+.rateTextDiv p > span {
     font-size: 36px;
     font-weight: 700;
     color: var(--vt-c-yellow);
     letter-spacing: -0.02em;
     font-style: italic;
 }
+.rateTextDiv p > span span {
+    font-style: normal;
+    font-weight: 500;
+}
 .rateCol p {
     font-size: 17px;
     font-weight: 500;
-    color: var(--black);
+    color: var(--vt-c-blue);
     line-height: 28px;
     margin: 0;
+    display: inline-flex;
+    gap: 0.5rem;
 }
 .rateStarsDiv {
     padding: 5px 0;
@@ -43,20 +50,42 @@
     height: 28px;
 }
 
+@media (max-width:1199px) {
+    .rateTextDiv {
+        gap: 1rem;
+    }
+    .rateTextDiv p > span {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:991px) {
+    .rateTextDiv {
+        display: block;
+        text-align: center;
+    }
+    .rateTextDiv i {
+        display: none;
+    }
+    .rateTextDiv p:last-child {
+        margin-top: 16px;
+    }
+}
+
 @media (max-width:767px) {
     .rateBgCol {
-        padding: 6px;
-        max-width: 350px;
+        padding: 10px;
         border-width: 2px;
     }
     .rateTextDiv {
         padding-top: 4px;
-        padding-right: 10px;
         padding-bottom: 4px;
-        margin-right: 10px;
     }
     .rateTextDiv span {
         font-size: 30px;
+    }
+    .rateTextDiv span span {
+        font-size: 26px;
     }
     .rateCol p {
         font-size: 14px;

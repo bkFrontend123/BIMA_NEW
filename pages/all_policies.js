@@ -23,7 +23,8 @@ import talkExpert from '../component/TalkExpert/style.module.css'
 import policy from '../component/PolicyElements/PolicyCard/style.module.css'
 
 import RuppeeIcon from '../component/Icons/Ruppee'
-import WhatsApp from '../component/Icons/WhatsApp'
+
+import expertImg from '../public/expertImg.png'
 
 import bajajAllianz_logo from '../public/policyLogos/bajajAllianz_logo.png'
 import icici_logo from '../public/policyLogos/icici_logo.png'
@@ -158,6 +159,9 @@ export default function AllPolicies() {
                                         <TalkExpert
                                             background={`${talkExpert.gray}`}
                                             size={`${talkExpert.small}`}
+                                            imgSrc={expertImg}
+                                            name="Shruti Vishnoi"
+                                            designation="Insurance Expert"
                                         />
                                     </Col>
                                 </Row>

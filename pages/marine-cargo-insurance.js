@@ -16,8 +16,9 @@ import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
+import TalkExpert from '../component/TalkExpert'
+import RatingCard from '../component/RatingCard'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
-import WhatsApp from '../component/Icons/WhatsApp'
 import IndustryBlock from '../component/IndustryBlock'
 import ProductSchedule from '../component/Product/ProductSchedule'
 import BestBacked from '../component/Product/BestBacked'
@@ -26,6 +27,10 @@ import Accordion from '../component/Accordion'
 
 import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
+import talkExpert from '../component/TalkExpert/style.module.css'
+
+import productImage from '@/public/productImages/productImg2.png'
+import expertImg from '../public/himaniImg.png'
 
 export default function MarineCargo_Insurance() {
     const navbarExample2Ref = useRef(null);
@@ -200,11 +205,12 @@ export default function MarineCargo_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Marine Cargo Insurance"
-                        description="Damage to valuable cargo while in transit can lead to significant losses for any business. Marine Cargo Insurance safeguards your goods during transit, whether by sea, road, rail, or air. With customizable coverage based on the nature of goods and their travel routes, this policy ensures peace of mind during transportation."
+                        description="Marine Cargo Insurance protects your cargo during transit against damage caused by various factors and circumstances."
                         insuranceWorth="20 Lakhs"
                         insuranceAmount="700"
+                        productImgSrc={productImage}
                         form="false"
-                        formHeading="Analyse your Business Risk. Buy the right Policy within 10 Minutes"
+                        formHeading="Marine Cargo Insurance"
                         customClass="marineBnr"
                     >
                         <Form>
@@ -233,12 +239,40 @@ export default function MarineCargo_Insurance() {
                                     <span className='me-2'>Buy Now</span>
                                     <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                 </Button>
+                                <div className='d-none d-md-block'>
+                                    <TalkExpert
+                                        size={`${talkExpert.extraSmall}`}
+                                        imgSrc={expertImg}
+                                        name="Himani Doshi"
+                                        designation="Insurance Expert"
+                                    />
+                                </div>
                             </div>
                         </Form>
                     </ProductBanner>
                 </div>
                 {/* product banner end */}
 
+                {/* product rating start */}
+                <div className={`${productStyle.productRating}`}>
+                    <Container>
+                        <div className='d-md-none mb-4'>
+                            <TalkExpert
+                                background={`${talkExpert.yellow}`}
+                                size={`${talkExpert.extraSmall}`}
+                                imgSrc={expertImg}
+                                name="Himani Doshi"
+                                designation="Insurance Expert"
+                                customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
+                            />
+                        </div>
+                        <RatingCard
+                            background="true"
+                        />
+                    </Container>
+                </div>
+                {/* product rating end */}
+                
                 {/* product main start */}
                 <div className={`${productStyle.ProdMain}`}>
                     <div className={`${productStyle.ProductNavbar}`}>

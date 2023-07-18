@@ -62,7 +62,7 @@ export default function HeroBanner(props) {
             }
             .homeBanner {
               margin-top: 70px;
-              padding-bottom: 30px;
+              padding-bottom: 0;
             }
             .homeBannerText {
               padding-left: 30px;
@@ -148,6 +148,7 @@ export default function HeroBanner(props) {
               }
               .HomeBannerStyle {
                 padding-top: 40px;
+                margin: 0;
               }
               .homeBannerText {
                 padding-left: 0;

@@ -16,8 +16,9 @@ import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
+import TalkExpert from '../component/TalkExpert'
+import RatingCard from '../component/RatingCard'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
-import WhatsApp from '../component/Icons/WhatsApp'
 import IndustryBlock from '../component/IndustryBlock'
 import ProductSchedule from '../component/Product/ProductSchedule'
 import BestBacked from '../component/Product/BestBacked'
@@ -26,6 +27,10 @@ import Accordion from '../component/Accordion'
 
 import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
+import talkExpert from '../component/TalkExpert/style.module.css'
+
+import productImage from '@/public/productImages/productImg2.png'
+import expertImg from '../public/himaniImg.png'
 
 export default function CommercialCrime_Insurance() {
     const navbarExample2Ref = useRef(null);
@@ -184,7 +189,7 @@ export default function CommercialCrime_Insurance() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        router.push('/commercial-crime-insurance-flow');
+        router.push('/commercial-crime-flow');
     };
     return (
         <>
@@ -200,11 +205,11 @@ export default function CommercialCrime_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Commercial Crime Insurance"
-                        description="Crime Insurance is designed to protect your business from losses resulting from criminal activities. It acknowledges the unfortunate reality that not all risks come from outside your business - some come from within.
-                        An innovative ‘white-collar crime’ policy, it offers compensation for financial losses due to dishonest activities originating from an employee, a third party, or a vendor. These activities could be related to accounting, cash fraud, theft, vandalism, or digital crimes like email spoofing."
+                        description="Commercial Crime Insurance safeguards businesses against losses stemming from internal and external criminal activities, covering various fraudulent acts."
                         noInsurer="true"
+                        productImgSrc={productImage}
                         form="true"
-                        formHeading="Analyse your Business Risk. Buy the right Policy within 10 Minutes"
+                        formHeading="Crime Insurance"
                         customClass="crimeBnr"
                     >
                         <Form>
@@ -233,12 +238,40 @@ export default function CommercialCrime_Insurance() {
                                     <span className='me-2'>Buy Now</span>
                                     <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                 </Button>
+                                <div className='d-none d-md-block'>
+                                    <TalkExpert
+                                        size={`${talkExpert.extraSmall}`}
+                                        imgSrc={expertImg}
+                                        name="Himani Doshi"
+                                        designation="Insurance Expert"
+                                    />
+                                </div>
                             </div>
                         </Form>
                     </ProductBanner>
                 </div>
                 {/* product banner end */}
 
+                {/* product rating start */}
+                <div className={`${productStyle.productRating}`}>
+                    <Container>
+                        <div className='d-md-none mb-4'>
+                            <TalkExpert
+                                background={`${talkExpert.yellow}`}
+                                size={`${talkExpert.extraSmall}`}
+                                imgSrc={expertImg}
+                                name="Himani Doshi"
+                                designation="Insurance Expert"
+                                customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
+                            />
+                        </div>
+                        <RatingCard
+                            background="true"
+                        />
+                    </Container>
+                </div>
+                {/* product rating end */}
+                
                 {/* product main start */}
                 <div className={`${productStyle.ProdMain}`}>
                     <div className={`${productStyle.ProductNavbar}`}>

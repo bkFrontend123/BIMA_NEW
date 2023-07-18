@@ -16,8 +16,9 @@ import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
+import TalkExpert from '../component/TalkExpert'
+import RatingCard from '../component/RatingCard'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
-import WhatsApp from '../component/Icons/WhatsApp'
 import IndustryBlock from '../component/IndustryBlock'
 import ProductSchedule from '../component/Product/ProductSchedule'
 import BestBacked from '../component/Product/BestBacked'
@@ -26,6 +27,10 @@ import Accordion from '../component/Accordion'
 
 import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
+import talkExpert from '../component/TalkExpert/style.module.css'
+
+import productImage from '@/public/productImages/productImg1.png'
+import expertImg from '../public/himaniImg.png'
 
 export default function WorkmensCompensation_Insurance() {
     const navbarExample2Ref = useRef(null);
@@ -200,13 +205,12 @@ export default function WorkmensCompensation_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Workmenn's Compensation Policy"
-                        description="A key requirement to ensure your business's compliance with labor laws, this policy is designed to provide financial coverage for your employees in case of workplace injuries or illnesses. It covers costs related to medical treatments, offers disability benefits, and, if necessary, provides death benefits. 
-                        This policy keeps your business compliant and forms an essential safety net around your employees' futures.
-                        Evaluate your business vulnerability. Secure the optimal policy in just 10 minutes. Avail professional guidance at every step."
+                        description="Workmen Compensation Policy ensures compliance with labor laws and provides financial coverage for workplace injuries and illnesses."
                         insuranceWorth="3 Crore"
                         insuranceAmount=""
+                        productImgSrc={productImage}
                         form="true"
-                        formHeading="Analyse your Business Risk. Buy the right Policy within 10 Minutes"
+                        formHeading="WC Policy"
                         customClass="wrkmnCmpBnr"
                     >
                         <Form>
@@ -235,12 +239,40 @@ export default function WorkmensCompensation_Insurance() {
                                     <span className='me-2'>Buy Now</span>
                                     <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                 </Button>
+                                <div className='d-none d-md-block'>
+                                    <TalkExpert
+                                        size={`${talkExpert.extraSmall}`}
+                                        imgSrc={expertImg}
+                                        name="Himani Doshi"
+                                        designation="Insurance Expert"
+                                    />
+                                </div>
                             </div>
                         </Form>
                     </ProductBanner>
                 </div>
                 {/* product banner end */}
 
+                {/* product rating start */}
+                <div className={`${productStyle.productRating}`}>
+                    <Container>
+                        <div className='d-md-none mb-4'>
+                            <TalkExpert
+                                background={`${talkExpert.yellow}`}
+                                size={`${talkExpert.extraSmall}`}
+                                imgSrc={expertImg}
+                                name="Himani Doshi"
+                                designation="Insurance Expert"
+                                customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
+                            />
+                        </div>
+                        <RatingCard
+                            background="true"
+                        />
+                    </Container>
+                </div>
+                {/* product rating end */}
+                
                 {/* product main start */}
                 <div className={`${productStyle.ProdMain}`}>
                     <div className={`${productStyle.ProductNavbar}`}>

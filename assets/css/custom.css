@@ -137,7 +137,7 @@ body.homePageBody .navbar-main .nabbarStrip {
 }
 body .mainMenu.navbar .navbar-brand img{
    margin-top: -6px;
-   max-width: 220px;
+   max-width: 250px;
 }
 .mainMenu.navbar .navbar-nav li {
    margin: 0 20px;
@@ -364,7 +364,7 @@ body .mainMenu.navbar .navbar-brand img{
 
 /* ======== Trusted slider Start===== */
 .trusted-business {
-   margin-top: 90px;
+   margin-top: 80px;
 }
 .trusted-business .swiper-wrapper{
    align-items: center;

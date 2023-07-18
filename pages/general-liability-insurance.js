@@ -16,8 +16,9 @@ import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
+import TalkExpert from '../component/TalkExpert'
+import RatingCard from '../component/RatingCard'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
-import WhatsApp from '../component/Icons/WhatsApp'
 import IndustryBlock from '../component/IndustryBlock'
 import ProductSchedule from '../component/Product/ProductSchedule'
 import BestBacked from '../component/Product/BestBacked'
@@ -26,6 +27,10 @@ import Accordion from '../component/Accordion'
 
 import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
+import talkExpert from '../component/TalkExpert/style.module.css'
+
+import productImage from '@/public/productImages/productImg4.png'
+import expertImg from '../public/himaniImg.png'
 
 export default function GeneralLiability_Insurance() {
     const navbarExample2Ref = useRef(null);
@@ -200,12 +205,12 @@ export default function GeneralLiability_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="General Liability Insurance"
-                        description="General Liability Insurance offers the most comprehensive liability coverage for your business. It protects against various liability claims for bodily injury, property damage, personal and advertising injuries. These claims could arise from your operations, your premises, your products, or your services.
-                        It is also commonly referred to as Commercial General Liability (CGL) policy."
+                        description="General liability insurance is a thorough policy that shields businesses from common lawsuits stemming from their everyday operations."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="5,000"
+                        productImgSrc={productImage}
                         form="true"
-                        formHeading="Analyse your Business Risk. Buy the right Policy within 10 Minutes"
+                        formHeading="CGL Insurance"
                         customClass="gnrlBnr"
                     >
                         <Form>
@@ -234,12 +239,40 @@ export default function GeneralLiability_Insurance() {
                                     <span className='me-2'>Buy Now</span>
                                     <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                 </Button>
+                                <div className='d-none d-md-block'>
+                                    <TalkExpert
+                                        size={`${talkExpert.extraSmall}`}
+                                        imgSrc={expertImg}
+                                        name="Himani Doshi"
+                                        designation="Insurance Expert"
+                                    />
+                                </div>
                             </div>
                         </Form>
                     </ProductBanner>
                 </div>
                 {/* product banner end */}
 
+                {/* product rating start */}
+                <div className={`${productStyle.productRating}`}>
+                    <Container>
+                        <div className='d-md-none mb-4'>
+                            <TalkExpert
+                                background={`${talkExpert.yellow}`}
+                                size={`${talkExpert.extraSmall}`}
+                                imgSrc={expertImg}
+                                name="Himani Doshi"
+                                designation="Insurance Expert"
+                                customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
+                            />
+                        </div>
+                        <RatingCard
+                            background="true"
+                        />
+                    </Container>
+                </div>
+                {/* product rating end */}
+                
                 {/* product main start */}
                 <div className={`${productStyle.ProdMain}`}>
                     <div className={`${productStyle.ProductNavbar}`}>

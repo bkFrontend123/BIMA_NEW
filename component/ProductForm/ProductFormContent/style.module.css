@@ -48,6 +48,7 @@
     .prdctFrmCntntHdr {
         display: flex;
         gap: 1rem;
+        align-items: center;
     }
     .prdctFrmCntntCol h2 {
         font-size: 24px;

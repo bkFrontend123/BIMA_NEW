@@ -23,8 +23,9 @@ import progress from '@/assets/css/progress.module.css'
 import productIcon from '../public/productIcons/liability/workman_icon.svg'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import arrowBack from '../public/icons/arrowBack.svg'
-import WhatsApp from '../component/Icons/WhatsApp'
 import tooltipIcon from '../public/icons/tooltipIcon.svg'
+
+import expertImg from '../public/expertImg.png'
 
 export default function WorkmensCompensation_Flow() {
     const navbarExample2Ref = useRef(null);
@@ -165,7 +166,7 @@ export default function WorkmensCompensation_Flow() {
                     <Row className='justify-content-center'>
                         <Col xl={11}>
                             <Row className='g-4'>
-                                <Col xl={6} xxl={7}>
+                                <Col xl={6} xxl={6}>
                                     <div className='pe-lg-2 pe-xxl-4'>
                                         <ProductFormContent
                                             icon={productIcon}
@@ -175,24 +176,9 @@ export default function WorkmensCompensation_Flow() {
                                             listText2="Get curated quotes in minutes"
                                             listText3="Secure your business compehensively"
                                         />
-                                        <hr className='d-none d-md-block my-3 my-xxl-4'></hr>
-                                        <div className={`d-none d-md-flex align-items-center justify-content-between gap-3`}>
-                                            {/*<TalkExpert />
-                                            <div className={`d-flex mt-4 mt-md-0`}>
-                                                <Link href="/" className="btnCommon btnBorder border-primary">
-                                                    <WhatsApp iconColor="primary" width="18" height="18" />
-                                                    <span className='ms-2'>Talk to an expert</span>
-                                                </Link>
-                                            </div>*/}
-                                            <RatingCard />
-                                            <TalkExpert
-                                                background={`${talkExpert.yellow}`}
-                                                size={`${talkExpert.small}`}
-                                            />
-                                        </div>
                                     </div>
                                 </Col>
-                                <Col xl={6} xxl={5}>
+                                <Col xl={6} xxl={6}>
                                     <div className={`${form.whiteFormBox} ${form.commonForm}`}>
                                         {isOtpActive ? (
                                             <div className={`${form.otpForm}`}>
@@ -212,6 +198,14 @@ export default function WorkmensCompensation_Flow() {
                                                             <span className='me-2'>Submit</span>
                                                             <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                                         </Button>
+                                                        <div className='d-none d-md-block'>
+                                                            <TalkExpert
+                                                                size={`${talkExpert.extraSmall}`}
+                                                                imgSrc={expertImg}
+                                                                name="Shruti Vishnoi"
+                                                                designation="Insurance Expert"
+                                                            />
+                                                        </div>
                                                     </div>
                                                 </Form>
                                             </div>
@@ -519,6 +513,14 @@ export default function WorkmensCompensation_Flow() {
                                                                     <span className='me-2'>Continue</span>
                                                                     <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                                                 </Button>
+                                                                <div className='d-none d-md-block'>
+                                                                    <TalkExpert
+                                                                        size={`${talkExpert.extraSmall}`}
+                                                                        imgSrc={expertImg}
+                                                                        name="Shruti Vishnoi"
+                                                                        designation="Insurance Expert"
+                                                                    />
+                                                                </div>
                                                             </div>
                                                         </Form>
                                                     </div> 
@@ -655,6 +657,14 @@ export default function WorkmensCompensation_Flow() {
                                                                         <span className='me-2'>Continue</span>
                                                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                                                     </Button>
+                                                                    <div className='d-none d-md-block'>
+                                                                        <TalkExpert
+                                                                            size={`${talkExpert.extraSmall}`}
+                                                                            imgSrc={expertImg}
+                                                                            name="Shruti Vishnoi"
+                                                                            designation="Insurance Expert"
+                                                                        />
+                                                                    </div>
                                                                 </div>
                                                             </Form>
                                                         </div>
@@ -668,23 +678,20 @@ export default function WorkmensCompensation_Flow() {
                                     </div>
                                 </Col>
                             </Row>
-                            <div className={`d-md-none mt-4`}>
-                                {/*<TalkExpert
-                                    customClass={`${talkExpert.tlkExprtMobile}`}
-                                />
-                                <div className={`d-flex justify-content-center mt-4 mt-md-0`}>
-                                    <Link href="/" className="btnCommon btnBorder border-primary">
-                                        <WhatsApp iconColor="primary" width="18" height="18" />
-                                        <span className='ms-2'>Talk to an expert</span>
-                                    </Link>
-                                </div>*/}
-                                <RatingCard
+                            <div className={`mt-4 mt-lg-5 pt-xl-3`}>
+                                <div className='d-md-none mb-4'>
+                                    <TalkExpert
+                                        background={`${talkExpert.yellow}`}
+                                        size={`${talkExpert.extraSmall}`}
+                                        imgSrc={expertImg}
+                                        name="Shruti Vishnoi"
+                                        designation="Insurance Expert"
+                                        customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
+                                    />
+                                </div>
+                                <RatingCard 
                                     customClass="justify-content-center"
-                                />
-                                <TalkExpert
-                                    background={`${talkExpert.yellow}`}
-                                    size={`${talkExpert.small}`}
-                                    customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
+                                    background="true"
                                 />
                             </div>
                         </Col>

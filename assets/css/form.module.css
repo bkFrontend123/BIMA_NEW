@@ -56,8 +56,8 @@
     color: var(--vt-c-grayLight3);
 }
 .commonForm .formLabel i {
-    margin-left: 8px;
-    display: inline-block;
+    margin-left: 6px;
+    display: inline;
     vertical-align: text-bottom;
 }
 .commonForm .formIconGroup {
@@ -354,6 +354,10 @@
 .addCatBtn {
     color: var(--vt-c-yellow);
 }
+.fromButtonDiv {
+    justify-content: space-between;
+    gap: 1rem;
+}
 .formBtn {
     padding: 22px 40px;
     font-size: 16px;
@@ -384,6 +388,14 @@
     color: var(--vt-c-blue);
     text-decoration: underline;
     font-weight: 600;
+}
+
+
+@media (min-width:1400px) {
+    .prdctFrmHeight .whiteFormBox {
+        max-width: 510px;
+        float: right;
+    }
 }
 
 @media (max-width:1699px) {

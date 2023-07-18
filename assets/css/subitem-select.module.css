@@ -57,7 +57,7 @@
     cursor: pointer;
 }
 .formSubCheck label small {
-    font-size: 13px;
+    font-size: 14px;
     margin-top: -4px;
 }
 .subSelectBtn.active .formSubCheck label {
