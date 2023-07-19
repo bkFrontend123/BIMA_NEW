@@ -131,7 +131,7 @@ function Navbar() {
                 <span className="navbar-toggler-icon"><Toggle /></span>
               </button>
               <div className={`collapse navbar-collapse ${menuToggleList}`} >
-                <ul className="navbar-nav mb-2 mt-4 m-lg-0 menu-container" >
+                <ul className="navbar-nav mb-2 mt-4 m-xl-0 menu-container" >
                   <li className={`nav-item menu-containerList ${productToggle ? "active" : ""}`} onClick={ProductMenuToggle}>
                     <Link className="nav-link menu-trigger arrowHide" href="" >
                       Products
@@ -612,15 +612,11 @@ function Navbar() {
             .mega-menu{
               position: relative; 
             }
-            .container{
-              max-width: 100% ;
-            }
             .mainMenu.navbar .navbar-nav li{              
               text-align: left;
             }
             .mega-menu .mega-menuBox{
-              padding: 0;
-              padding-left: 8px;
+              padding: 15px;
               box-shadow: none;
               margin-top: 0;
               text-align: left;

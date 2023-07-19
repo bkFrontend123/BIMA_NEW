@@ -127,6 +127,7 @@ body.homePageBody .navbar-main .nabbarStrip {
    padding: 24px 32px;
    width: 100%;
    display: flex;
+   flex-wrap: inherit;
    align-items: center;
    justify-content: space-between;
 }

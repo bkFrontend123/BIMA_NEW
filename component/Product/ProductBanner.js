@@ -13,7 +13,7 @@ export default function ProductBanner(props) {
                 <div className='ProductBannerBox'>
                     <div className='container'>
                         <div className='row justify-content-between g-4'>
-                            <div className='col-lg-7 col-xxl-6'>
+                            <div className='col-lg-6 col-xxl-6'>
                                 <div className='ProductBannerText'>
                                     <h1 className='title-60 ProductBannerTextTitle text-primary font-weight-700 font-secondary'>{title}</h1>
                                     <p className='ProductBannerTextDescrip title20 text-black font-primaryNormal font-weight-500'>
@@ -62,16 +62,24 @@ export default function ProductBanner(props) {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-lg-5 col-xxl-5'>
+                            <div className='col-lg-6 col-xxl-5'>
                                 {form === 'true' ? (
                                     <div className={`${formStyle.whiteFormBox} ${formStyle.commonForm}`}>
                                         <p className='ProductBanner-formTopHeading title-20 font-primaryNormal text-primary font-weight-700 mb-4'>
-                                            <i>
+                                            <i className='d-none d-md-block'>
                                                 <Image
                                                     src="/icons/getBusinessIcon.svg"
                                                     alt={[<>Get {formHeading} Business Insurance in Minutes</>]}
                                                     width={30}
                                                     height={36}
+                                                />
+                                            </i>
+                                            <i className='d-md-none'>
+                                                <Image
+                                                    src="/icons/getBusinessIcon.svg"
+                                                    alt={[<>Get {formHeading} Business Insurance in Minutes</>]}
+                                                    width={22}
+                                                    height={28}
                                                 />
                                             </i> Get {formHeading} in Minutes
                                         </p>
@@ -187,10 +195,6 @@ export default function ProductBanner(props) {
                     .ProductBanner-formTop {
                         margin-bottom: 48px;
                     }
-                    .ProductBanner-formBox a.btnCommon {
-                        padding: 21px 70px;
-                        box-shadow: 0 0 25px 0 rgb(0 0 0 / 15%);
-                     }
                     .ProductBanner-formTopHeading {
                         display: flex;
                         align-items: center;
@@ -299,13 +303,13 @@ export default function ProductBanner(props) {
                         bottom: -6px;
                         width: 36px;
                     }
-                      @media (min-width:1600px) {
-                        .ProductBanner-form{
-                            max-width: 665px;
+                      @media (min-width:1700px) {
+                        .ProductBanner-form {
+                            max-width: 650px;
                             margin-left: auto;
                         }
                       }
-                     @media only screen and (max-width: 1650px) {
+                     @media only screen and (max-width: 1699px) {
                         .ProductBanner-formTop p {
                             font-size: 18px; 
                             line-height: 27px;
@@ -319,39 +323,37 @@ export default function ProductBanner(props) {
                             line-height: 26px;
                          }
                      }
-                     @media only screen and (max-width: 1399px){
-                        .ProductBanner-formBox{
-                            padding: 0;
-                        }
-                    }
                     @media only screen and (max-width: 1199px) {
                         .title-64, .title-60 {
-                            font-size: 42px;
-                            line-height: 48px;
+                            font-size: 30px;
+                            line-height: 40px;
                         }
                     }
                     @media only screen and (max-width: 991px) {
+                        .ProductBannerBox {
+                            margin-top: 40px;
+                        }
                         .title-64, .title-60 {
-                            font-size: 34px;
-                            line-height: 42px;
+                            font-size: 30px;
+                            line-height: 40px;
                         }
                     }
                      @media only screen and (max-width: 767px) {
                         .ProductBanner{
-                            padding: 68px 0 300px 0;
-                            margin-top: -135px;
+                            padding: 72px 0 30px 0;
+                            margin-top: -72px;
                         }
                         .dAndoBnr {
-                            background-position: -832px;
-                            padding-bottom: 320px !important;
+                            //background-position: -832px;
+                            //padding-bottom: 320px !important;
                         }
                         .eAndoBnr {
                             //background-position: -755px;
                             //padding-bottom: 300px !important;
                         }
                         .gnrlBnr {
-                            background-position: -740px;
-                            padding-bottom: 320px !important;
+                            //background-position: -740px;
+                            //padding-bottom: 320px !important;
                         }
                         .fdltyBnr {
                             //background-position: -832px;
@@ -421,13 +423,9 @@ export default function ProductBanner(props) {
                             //background-position: -620px;
                             //padding-bottom: 300px !important;
                         }
-                        .ProductBannerTextTitle{
-                            margin-bottom: 10px;
-                            font-size: 34px;
-                            line-height: 42px;
-                        }
-                        .ProductBannerText{
-                            padding: 50px 0 0 0;
+                        .ProductBannerTextTitle {
+                            font-size: 26px;
+                            line-height: 38px;
                         }
                         .ProductBannerTextDescrip{
                             margin-bottom: 34px;
@@ -451,8 +449,8 @@ export default function ProductBanner(props) {
                         }
                         .ribbonProduct {
                             width: 24px;
-                            right: -25px;
-                            bottom: -4px
+                            right: -45px;
+                            bottom: -5px;
                         }
                         .ProductBannerRibbonCol .title-20 {
                             font-size: 15px;
@@ -461,6 +459,10 @@ export default function ProductBanner(props) {
                         .ProductBannerRibbonCol .title-18 {
                             font-size: 16px;
                         }
+                        .ProductBannerRibbonCol .title-16 {
+                            font-size: 15px;
+                            line-height: 18px;
+                        }
                         .ProductBannerRibbonCol .title-48 {
                             font-size: 26px;
                             line-height: 30px;
@@ -468,10 +470,7 @@ export default function ProductBanner(props) {
                         .ProductBannerRibbonCol .title-32 {
                             font-size: 22px;
                         }
-                         .ProductBanner-formBox {
-                            padding: 0 105px;
-                        }
-                         .ProductBanner-form .title20{
+                         .ProductBanner-form .title20 {
                             font-size: 15px;
                             line-height: 20px;
                             margin-bottom: 4px;
@@ -481,32 +480,48 @@ export default function ProductBanner(props) {
                              justify-content: center;
 
                          }
-                         .ProductBanner-formTop p{
-                                padding: 0;
-                                margin: 0 !important;
-                            }
-                            .ProductBanner-formTop p svg{
-                                width: 16px;
-                            }
-                            .ProductBanner-formBox{
-                                padding: 0 !important;
-                            }
-                            .ProductBanner-formBox a.btnCommon {
-                                padding: 22px 70px;
-                                width: 100%;
-                                justify-content: center;
-                            }
+                         .ProductBanner-formTop p {
+                            padding: 0;
+                            margin: 0 !important;
                         }
-                        @media only screen and (max-width: 420px) {
-                            
-                        } 
+                        .ProductBanner-formTop p svg{
+                            width: 16px;
+                        }
+                        }
                       
-                        @media only screen and (max-width: 370px) {
-                            .ProductBanner-formBox{
-                                padding: 0 0px !important;
+                        @media only screen and (max-width: 575px) {
+                            .ProductBannerRibbonInner {
+                                transform: skew(0);
                             }
-                            .ProductBanner-form .title20{
-                                font-size: 14px;
+                            .ProductBannerRibbonImg span i {
+                                transform: skew(0);
+                                margin-left: 0;
+                            }
+                            .ProductBannerRibbonCol {
+                                padding: 0 15px;
+                            }
+                            .ProductBannerRibbonBox {
+                                transform: skew(0);
+                            }
+                            .ribbonProduct {
+                                right: -50px;
+                                bottom: -9px;
+                            }
+                            .ProductBannerRibbon-right::before {
+                                width: 15px;
+                                left: -4px;
+                                bottom: 1px;
+                                transform: skew(5deg);
+                            }
+                            .ProductBanner-formTopHeading {
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weigt: 600;
+                                gap: 0.6rem;
+                            }
+                            .ProductBanner-formTopHeading i img {
+                                width: 24px;
+                                height: 30px;
                             }
                         }
                      

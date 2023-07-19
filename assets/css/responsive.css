@@ -183,8 +183,16 @@
 
 @media only screen and (max-width: 1199px) {
 
+  .navbar-main.bg-yellowLight {
+    background-color: var(--mute1);
+    padding-top: 0;
+  }
+
+  .mainMenu.navbar .navbar-nav li {
+    margin: 0;
+  }
   body .mainMenu.navbar ul.navbar-nav li > a {
-    padding: 15px;
+    padding: 15px 0;
   }
 
   .mainMenu.navbar .navbar-collapse {
@@ -195,6 +203,16 @@
     display: block !important;
     height: auto;
     transition: 2s ease-in-out;
+  }
+  .mega-menu {
+    top: 129px;
+  } 
+  .mega-menu .mega-menuBox {
+    padding: 20px;
+  }
+  .mega-menuBox-title .title-24 {
+    font-size: 20px;
+    line-height: 33px;
   }
 
   .footer-listMenu-listALign ul {
@@ -224,13 +242,8 @@
   }
 
   .navbar-main.bg-yellowLight {
-    background-color: transparent;
+    background-color: var(--mute1);
     padding-top: 0;
-  }
-
-  .container {
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
   .homeBannerContainer {
@@ -769,6 +782,9 @@
   .mega-menu{
     position: relative;
   }
+  .mega-menu {
+    top: 0;
+  }
   .mainMenu.navbar .navbar-nav li .mega-menu.productMega-menu a {
       font-size: 14px;
       line-height: 20px;
@@ -778,7 +794,7 @@
 
 @media only screen and (max-width: 575px) {
   body.homePageBody .navbar-main .nabbarStrip {
-    padding: 27.5px 20px;
+    padding: 20px 0;
   }
   .IndustryList-card-seeMore a:before{
     position: absolute;
