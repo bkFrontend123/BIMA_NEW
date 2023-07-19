@@ -126,6 +126,7 @@ export default function HowGetStarted(props) {
                 .getStarted-left:hover .getStarted-rightBottom .btnCommon {
                     margin-left: 0;
                     opacity: 1;
+                    color: var(--whiteText) !important;
                 }
                 .getStarted-right {
                     padding: 70px 125px;

@@ -1,15 +1,11 @@
 import React,{useEffect} from 'react'
 import Image from 'next/image'
 
-import {Container, Row, Col} from 'react-bootstrap';
-
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import TeamCard from '../component/TeamCard'
 import BestBacked from '../component/Product/BestBacked'
-
-import arrowIcon from '../public/icons/abtArrowIcon.svg';
 
 export default function About() {
 
@@ -31,108 +27,39 @@ export default function About() {
         <>
             <Navbar />
             <div className='aboutUs'>
-                <Container>
-                    <Row>
-                        <Col md={10} className={`mx-auto`}>
+                <div className={`container `}>
+                    <div className={`row `}>
+                        <div className={`col-md-9 mx-auto px-md-5`}>
                             <div className='commnHeading text-start'>
                                 <div className='polyBox border-primary bg-blueLight mb-md-4 mb-2 text-primary title-12 text-uppercase font-weight-700'>About Us</div>
                                 <div className='title-60 font-secondary mb-md-3 mb-2 text-primary font-weight-700'>Bima, <span className='text-yellow fst-italic'>Simplified</span></div>
                                 <p className='title-22 font-weight-500 text-primary mb-0'>We are committed to making Business Insurance Simple, Digital and Transparent</p>
                             </div>
-                        </Col>
-                    </Row>
-                </Container>
-
-                <div className={`abtCntntBlock`}>
-                    <Container>
-                        <Row>
-                            <Col md={10} className={`mx-auto`}>
-                                <div className="abtCntntRow">
-                                    <div className="abtCntntCol">
-                                        <h3><span>Before <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>How We Began</h3>
-                                        <p>With a clear aim, BimaKavach was established to simplify the complex process of business insurance. Our experience spanning four decades highlighted a significant issue - clients often felt overwhelmed by the extensive paperwork, confusing quote requirements, and the opaque nature of policy acquisition.</p>
-                                        <p>In response, we devised a unique approach. We investigated various sectors, used our findings to create tailored insurance coverage, and developed standard policies that are customized to meet our client's specific needs. This ensures top-tier coverage for each client and allows us to leverage our partnerships with numerous insurance companies to secure the best prices.</p>
-                                        <p>BimaKavach is built on trust. We have strong relationships with our clients and providers, underpinned by transparency and mutual respect. Our policies eliminate mis-spelling and streamline claims, establishing a trust-filled environment for all stakeholders.</p>
-                                        <div className="abtCntntMedia">
-                                            <i>
-                                                <img src="/abtBeforeImg.png" alt="Before Image" />
-                                            </i>
-                                        </div>
-                                    </div>
-                                    <div className="abtCntntCol">
-                                        <h3><span>Now <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>How We Are Going</h3>
-                                        <p>Today, BimaKavach proudly serves over 500 companies nationwide, offering them comprehensive 24x7 claims support. Our diversified client base spans multiple sectors, including but not limited to manufacturing, trading, software, contracting, real estate, consulting, energy, education, and HR. From dynamic startups and ambitious SMEs to established listed companies, we accommodate the unique needs of businesses at all stages.</p>
-                                        <p>Our portfolio now encompasses more than 17 meticulously curated business insurance policies, each customizable to protect your business's assets, liabilities, directors, and employees.</p>
-                                        <p>At the heart of BimaKavach is our team of insurance experts, who tirelessly work to present the best insurance options for our clients. Our key focus is on simplicity, speed, and clarity, ensuring a seamless insurance experience for all our clients.</p>
-                                        <div className="abtCntntMedia">
-                                            <i>
-                                                <img src="/abtNowImg.png" alt="Now" />
-                                            </i>
-                                        </div>
-                                    </div>
-                                    <div className="abtCntntCol">
-                                        <h3><span>After <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>What Is Our Goal</h3>
-                                        <p>At BimaKavach, we are driven by the vision of securing every Indian business with precisely the insurance coverage they require. As India forges its path as a global economic contender, its foundation relies heavily on the stability and continuity of Indian businesses. Our insurance policies are designed to shield these businesses from unforeseen circumstances, ensuring they thrive even in the face of adversity. We believe in bolstering India's economic growth and stability through well-insured businesses. At the core of our ethos are Simplicity, Speed, and Transparency. These values permeate everything we do:</p>
-                                        <div className="abtInfoRow mt-4">
-                                            <Row className="g-4">
-                                                <Col lg={4}>
-                                                    <div className="abtInfoCol">
-                                                        <h4>Jargons, Simplified.</h4>
-                                                        <p>We simplify the critical terminologies to make insurance easy to understand and purchase</p>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className="abtInfoCol">
-                                                        <h4>Efficiency at Every Step.</h4>
-                                                        <p>We make the process of getting quotes and buying insurance as quick and easy as possible</p>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className="abtInfoCol">
-                                                        <h4>Transparent Trust.</h4>
-                                                        <p>We offer competitive pricing and relevant coverages, so our customers know exactly what they're getting</p>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                        <div className="abtCntntMedia">
-                                            <i>
-                                                <img src="/abtAfterImg.png" alt="After Image" />
-                                            </i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
+                        </div>
+                    </div>
                 </div>
-                
-                <div className={`aboutUs-teamCards`}>
-                    <Container>
-                        <Row>
-                            <Col md={10} className={`mx-auto`}>
-                                <div className='title-26 font-secondary mb-md-3 mb-2 text-black font-weight-700'>Meet Our Amazing Enthusiasts</div>
-                                <p className='title-18 font-weight-500 text-primary mb-4 mb-xl-5'>At the heart of BimaKavach is a vibrant team of professionals who share a passion for revolutionizing the insurance industry. Each team member brings a wealth of knowledge and a steadfast commitment to breaking down the complexities of insurance jargon, making the process more understandable for our clients.</p>
-                                <Row className={`g-4 g-lg-5`}>
-                                    {TeamCardList.map((item) =>
-                                        <Col md={6} xl={4} key={item.id}>
-                                            <TeamCard
-                                                img={item.img}
-                                                name={item.name}
-                                                position={item.position}
-                                            />
-                                        </Col>
-                                    )}
-                                </Row>
-                            </Col>
-                        </Row>
-                    </Container>
+                <div className={`container aboutUs-teamCards pt-0`}>
+                    <div className={`row `}>
+                        <div className={`col-md-9 mx-auto px-md-5`}>
+                            <div className={`row g-4 g-lg-5`}>
+                                {TeamCardList.map((item) =>
+                                    <div className={`col-lg-4`} key={item.id}>
+                                        <TeamCard
+                                            img={item.img}
+                                            name={item.name}
+                                            position={item.position}
+                                        />
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    </div>
                 </div>
  
-                <div className={`founder bg-yellow`}>
-                    <Container>
-                        <Row>
-                            <Col md={10} className={`mx-auto`}>
+                <div className={`founder bg-yellow `}>
+                    <div className={`container-fluid `}>
+                        <div className={`row `}>
+                            <div className={`col-lg-7 mx-auto `}>
                                 <div className={`d-flex align-items-center gap-3 mb-4`}>
                                     <div>
                                         <Image
@@ -168,13 +95,13 @@ export default function About() {
                                         CEO
                                     </h6>
                                 </div>
-                            </Col>
-                        </Row>
-                    </Container>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div className={`aboutBestBacked`}>
-                    <div className="d-none d-md-block" style={{height: "80px"}}></div>
+                <div className={`aboutBestBacked  `}>
+                    <div className="d-none d-md-block" style={{height: "90px"}}></div>
                     <div className="d-blok d-md-none" style={{height: "50px"}}></div>
                     <BestBacked />
                 </div>
@@ -184,114 +111,56 @@ export default function About() {
 
             <style jsx scope>
                 {`
-                    .aboutUs .commnHeading {
-                        padding: 80px 0;   
+                    
+                    .aboutUs .commnHeading{
+                        padding: 100px 0 80px 0;   
                     }
-                    .title-60 {
-                        font-size: 50px;
-                        line-height: 70px;
+                    .aboutUs-teamCards{
+                        padding-top: 110px 0;
+                        padding-bottom: 110px;
                     }
-                    .title-64 {
-                        font-size: 50px;
-                        line-height: 70px;
+                    .founder{
+                        padding: 90px 0;
                     }
-                    .abtCntntCol + .abtCntntCol {
-                        margin-top: 80px;
-                    }
-                    .abtCntntCol h3 {
-                        font-size: 26px;
-                        font-weight: 700;
-                        color: var(--vt-c-blue);
-                        display: flex;
-                        align-items: center;
-                        gap: 10px;
-                        margin-bottom: 16px;
-                    }
-                    .abtCntntCol h3 span {
-                        background: var(--vt-c-yellow);
-                        position: relative;
-                        padding: 6px 12px;
-                        font-size: 15px;
-                        color: var(--black);
-                        font-weight: 600;
-                        display: inline-flex;
-                        align-items: center;
-                        gap: 5px;
-                    }
-                    .abtCntntCol h3 span i {
-                        display: flex;
-                        align-items: center;
-                    }
-                    .abtCntntCol p {
-                        font-size: 18px;
-                        font-weight: 500;
-                        color: var(--black);
-                        line-height: 28px;
-                    }
-                    .abtCntntMedia {
-                        margin-top: 80px;
-                        border: 3px;
-                        border-style: solid;
-                        border-color: transparent transparent var(--vt-c-yellow) transparent;
-                        transition: all 0.3s ease 0s;
-                    }
-                    .abtCntntMedia:hover {
-                        border-color: var(--vt-c-yellow);
-                    }
-                    .abtCntntMedia i {
-                        position: relative;
-                        display: flex;
-                        filter: grayscale(1);
-                        height: 350px;
-                        transition: all 0.3s ease 0s;
-                        overflow: hidden;
-                    }
-                    .abtCntntMedia i img {
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                    .abtCntntMedia:hover i {
-                        filter: grayscale(0);
-                        height: 540px;
-                    }
-                    .abtInfoCol h4 {
-                        font-size: 22px;
-                        color: var(--gray);
-                        font-weight: 600;
-                        transition: all 0.3s ease 0;
-                    }
-                    .abtInfoCol p {
-                        color: var(--gray) !important;
-                        opacity: 0.5;
-                        margin: 0;
-                        transition: all 0.3s ease 0;
-                    }
-                    .abtCntntCol:hover .abtInfoCol h4 {
-                        color: var(--vt-c-blueDark);
-                    }
-                    .abtCntntCol:hover .abtInfoCol p {
-                        color: var(--vt-c-blue) !important;
-                        opacity: 1;
-                    }
-                    .aboutUs-teamCards {
-                        padding-top: 80px;
-                        padding-bottom: 80px;
-                    }
-                    .founder {
-                        padding: 80px 0;
-                    }
-                    .founderTitle {
-                        margin-bottom: 40px;
-                    }
-                    .founderSubtitle {
+                    .founderSubtitle{
                         margin-bottom: 10px;
                     }
-                    .title-20 {
-                        font-size: 18px;
+                    .founderTitle{
+                        margin-bottom: 40px;
                     }
-                  
-                    @media only screen and (max-width: 992px) {
+
+                    // .container{
+                    //    max-width: 1520px;
+                    // }
+                    
+                    
+
+                    .title-64{
+                        // font-size: 62px;
+                    }
+                    @media only screen and (max-width: 1450px) {
+                        .aboutUs .commnHeading{
+                            padding: 100px 0 80px 0;
+                        }
+                        .aboutUs-teamCards{
+                            padding-top: 80px;
+                            padding-bottom: 90px;
+                        }
                         .title-60 {
+                            font-size: 50px;
+                            line-height: 70px;
+                        }
+                        .title-64 {
+                            font-size: 50px;
+                            line-height: 70px;
+                        }
+                      
+                    }
+                    @media only screen and (max-width: 992px) {
+                        .container-fluid{
+                            padding: 0 20px;
+                        }
+                        .title-60{
                             font-size: 30px;
                             line-height: 36px;
                         }
@@ -299,94 +168,64 @@ export default function About() {
                             font-size: 30px;
                             line-height: 36px;
                         }
-                        .aboutBestBacked .title48 {
+                        .aboutBestBacked .title48{
                             font-size: 30px;
                             line-height: 36px;
                         }
-                        .title-24 {
+                        .title-24{
                             font-size: 18px;
                             line-height: 27px;
                         }
-                        .title-20 {
+                        .title-20{
                             font-size: 16px;
                             line-height: 24px;
                         }
-                        .title-21 {
-                            font-size: 16px;
+                        .title-21{
+                            font-size: 15px;
                             line-height: 23px;
                         }
-                        .title-18 {
-                            font-size: 16px;
-                            line-height: 24px;
+                        .title-18{
+                            font-size: 15px;
+                            line-height: 23px;
                         }
-                        .title-16 {
+                        .title-16{
                             font-size: 12px;
                             line-height: 18px;
                         }
-                        .aboutUs .commnHeading {
-                            padding: 60px 0; 
-                        }
-                        .abtCntntCol + .abtCntntCol {
-                            margin-top: 60px;
-                        }
-                        .abtCntntCol h3 {
-                            font-size: 24px;
-                        }
-                        .abtCntntCol p {
-                            font-size: 16px;
-                            line-height: 24px;
-                        }
-                        .abtInfoCol h4 {
-                            font-size: 20px;
-                        }
-                        .founder {
+
+
+                        .founder{
                             padding: 46px 0;
                         }
-                        .founderTitle {
+                        .aboutUs .commnHeading{
+                            padding-bottom: 50px;  
+                            padding-top: 50px; 
+                        }
+                        .founderTitle{
                             margin-bottom: 20px;
                         }
-                        .founderSubtitle {
+                        .founderSubtitle{
                             margin-bottom: 0;
                         }
-                        .founder .founderDescrip {
+                        .founder .founderDescrip{
                             color: var(--vt-c-blueDark) !important;
                         }
-                        .aboutUs-teamCards {
-                            padding: 60px 0;
-                        }
-                    }
-
-                    @media (max-width: 767px) {
-                        .aboutUs .commnHeading {
-                            padding: 50px 0;
-                        }
-                        .abtCntntCol + .abtCntntCol {
-                            margin-top: 50px;
-                        }
-                        .abtCntntCol h3 {
-                            font-size: 22px;
-                        }
-                        .abtCntntMedia {
-                            margin-top: 40px;
-                        }
-                        .abtCntntMedia i,
-                        .abtCntntMedia i:hover {
-                            height: auto;
-                        }
-                        .aboutUs-teamCards {
-                            padding: 50px 0;
-                        }
-                        .title-22 {
-                            font-size: 18px;
-                            line-height: 27px;
-                        }
-                        .title-26 {
-                            font-size: 22px;
-                            line-height: 30px;
+                        .aboutUs-teamCards{
+                            padding-bottom: 60px
                         }
                     }
                     @media (max-width: 575px) {
-                        
+                        .aboutUs .commnHeading {
+                            padding-bottom: 40px;
+                            padding-top: 40px;
+                        }
+                        .title-22 {
+                          font-size: 18px;
+                          line-height: 27px;
+                        }
+                        .aboutUs-teamCards {
+                            padding-bottom: 50px;
+                        }
                     }
                    
                 `}
