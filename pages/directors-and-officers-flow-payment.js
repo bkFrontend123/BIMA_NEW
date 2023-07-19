@@ -57,6 +57,7 @@ export default function DAndO_Flow_Payment() {
                                         <p>Shield your business with certainty! Complete your profile now to unlock personalized coverage that fits your requirements.</p>
                                     </div>
                                     <div className={`${form.commonForm}`}>
+                                        <h3>ICICI Lombard & SBI General Insurance</h3>
                                         <div className={`${form.addtnBsnDtlsFormFirst}`}>
                                             <Form>
                                                 <div className="mb-4">

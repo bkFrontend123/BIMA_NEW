@@ -26,7 +26,7 @@ export default function EAndO_Flow_Payment() {
 
     const [servingIndustryValue, setServingIndustryValue] = useState();
     const servingIndustryOptions = [
-        {name: '"Aviation', value: '1'},
+        {name: 'Aviation', value: '1'},
         {name: 'BFSI', value: '2'},
         {name: 'Education / Edutech', value: '3'},
         {name: 'Energy & Utilities', value: '4'},
@@ -66,6 +66,7 @@ export default function EAndO_Flow_Payment() {
                                         <p>Shield your business with certainty! Complete your profile now to unlock personalized coverage that fits your requirements.</p>
                                     </div>
                                     <div className={`${form.commonForm}`}>
+                                        <h3>ICICI Lombard</h3>
                                         <div className={`${form.addtnBsnDtlsFormFirst}`}>
                                             <div className={form.frmTtl}>
                                                 <h3>Please fill the below details to buy the Policy</h3>

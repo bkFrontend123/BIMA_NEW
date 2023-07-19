@@ -50,6 +50,7 @@ export default function GeneralLiability_Flow_Payment() {
                                         <p>Shield your business with certainty! Complete your profile now to unlock personalized coverage that fits your requirements.</p>
                                     </div>
                                     <div className={`${form.commonForm}`}>
+                                        <h3>For All Insurers</h3>
                                         <div className={`${form.addtnBsnDtlsFormFirst}`}>
                                             <div className={form.frmTtl}>
                                                 <h3>Please fill the below details to buy the Policy</h3>
