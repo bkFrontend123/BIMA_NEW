@@ -316,7 +316,7 @@ export default function IndustryBlock() {
               }
               .homeBannerProduct-headingText {
                 text-align: center;
-                font-size: 22px;
+                font-size: 20px;
                 line-height: 30px;
                 font-style: italic;
               }
@@ -325,11 +325,22 @@ export default function IndustryBlock() {
               }
               .homeBannerProduct-card {
                 text-align: center;
-                
               }
               .homeBannerProduct-card .title-20 {
                 font-size: 15px;
                 line-height: 20px;
+              }
+              .getBusinessHdng {
+                display: block;
+                text-align: center;
+              }
+              .getBusinessHdng i {
+                display: block;
+              }
+              .liabilityInsurance,
+              .assetInsurance,
+              .marineInsurance {
+                justify-content: center;
               }
               
             }

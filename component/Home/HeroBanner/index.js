@@ -80,7 +80,7 @@ export default function HeroBanner(props) {
             }
             .homeBannerText-bottom {
               display: flex;
-              align-items: end;
+              align-items: flex-start;
               gap: 1rem;
             }
             .homeBannerText-bottomCard i {
@@ -215,12 +215,18 @@ export default function HeroBanner(props) {
               .HomeBannerStyle {
                 padding: 40px 0 0;
               }
+              .homeBannerText {
+                text-align: center;
+              }
               .homeBannerText-bottomCard {
                 margin-bottom: 10px;
               }
               .homeBannerText-bottomCard-descrip {
                 font-size: 15px;
                 line-height: 22px;
+              }
+              .homeBannerText-bottomCard i {
+                justify-content: center;
               }
             }
           `}
