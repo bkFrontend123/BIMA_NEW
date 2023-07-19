@@ -258,8 +258,8 @@ p {
   align-items: center;
   font-weight: 500;
   border: 0;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 17px;
+  line-height: 17px;
   color: var(--vt-c-blue);
   transition: all 0.4s ease 0s;
   position: relative;

@@ -24,7 +24,9 @@ import policy from '../component/PolicyElements/PolicyCard/style.module.css'
 
 import RuppeeIcon from '../component/Icons/Ruppee'
 
-import expertImg from '../public/expertImg.png'
+import expertImg1 from '../public/himaniImg.png'
+import expertImg2 from '../public/ravikantImg.png'
+import expertImg3 from '../public/shrutiImg.png'
 
 import bajajAllianz_logo from '../public/policyLogos/bajajAllianz_logo.png'
 import icici_logo from '../public/policyLogos/icici_logo.png'
@@ -159,7 +161,21 @@ export default function AllPolicies() {
                                         <TalkExpert
                                             background={`${talkExpert.gray}`}
                                             size={`${talkExpert.small}`}
-                                            imgSrc={expertImg}
+                                            imgSrc={expertImg1}
+                                            name="Himani Doshi"
+                                            designation="Insurance Expert"
+                                        />
+                                        <TalkExpert
+                                            background={`${talkExpert.gray}`}
+                                            size={`${talkExpert.small}`}
+                                            imgSrc={expertImg2}
+                                            name="Ravikant Sawant"
+                                            designation="Insurance Expert"
+                                        />
+                                        <TalkExpert
+                                            background={`${talkExpert.gray}`}
+                                            size={`${talkExpert.small}`}
+                                            imgSrc={expertImg3}
                                             name="Shruti Vishnoi"
                                             designation="Insurance Expert"
                                         />

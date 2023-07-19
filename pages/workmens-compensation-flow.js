@@ -25,7 +25,7 @@ import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import arrowBack from '../public/icons/arrowBack.svg'
 import tooltipIcon from '../public/icons/tooltipIcon.svg'
 
-import expertImg from '../public/expertImg.png'
+import expertImg from '../public/himaniImg.png'
 
 export default function WorkmensCompensation_Flow() {
     const navbarExample2Ref = useRef(null);
@@ -202,7 +202,7 @@ export default function WorkmensCompensation_Flow() {
                                                             <TalkExpert
                                                                 size={`${talkExpert.extraSmall}`}
                                                                 imgSrc={expertImg}
-                                                                name="Shruti Vishnoi"
+                                                                name="Himani Doshi"
                                                                 designation="Insurance Expert"
                                                             />
                                                         </div>
@@ -517,7 +517,7 @@ export default function WorkmensCompensation_Flow() {
                                                                     <TalkExpert
                                                                         size={`${talkExpert.extraSmall}`}
                                                                         imgSrc={expertImg}
-                                                                        name="Shruti Vishnoi"
+                                                                        name="Himani Doshi"
                                                                         designation="Insurance Expert"
                                                                     />
                                                                 </div>
@@ -661,7 +661,7 @@ export default function WorkmensCompensation_Flow() {
                                                                         <TalkExpert
                                                                             size={`${talkExpert.extraSmall}`}
                                                                             imgSrc={expertImg}
-                                                                            name="Shruti Vishnoi"
+                                                                            name="Himani Doshi"
                                                                             designation="Insurance Expert"
                                                                         />
                                                                     </div>
@@ -684,7 +684,7 @@ export default function WorkmensCompensation_Flow() {
                                         background={`${talkExpert.yellow}`}
                                         size={`${talkExpert.extraSmall}`}
                                         imgSrc={expertImg}
-                                        name="Shruti Vishnoi"
+                                        name="Himani Doshi"
                                         designation="Insurance Expert"
                                         customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
                                     />

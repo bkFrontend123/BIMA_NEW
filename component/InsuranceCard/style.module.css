@@ -11,10 +11,10 @@
     margin-left: 20px;
 }
 .insuranceTitle a {
-    font-size: 19px;
+    font-size: 17px;
     color: var(--vt-c-blue) !important;
     line-height: 24px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 @media (max-width: 1399px) {
@@ -32,5 +32,8 @@
 @media (max-width: 767px) {
     .insuranceTitle {
         max-width: 100%;
+    }
+    .insuranceTitle a {
+        font-size: 16px;
     }
 }

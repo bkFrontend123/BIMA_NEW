@@ -46,7 +46,7 @@ export default function ThankYou() {
             <section className='thankYouBlock sectionPadding pt-4 pt-md-5'>
                 <Container>
                     <Row className='justify-content-center'>
-                        <Col xl={10} xxl={9}>
+                        <Col xl={11} xxl={10}>
                             <div className='d-flex d-lg-none justify-content-between gap-3 mb-4'>
                                 <PolicyHeader
                                     coverageName="Directors & Officers Liability"

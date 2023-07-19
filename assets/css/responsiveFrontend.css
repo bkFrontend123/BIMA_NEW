@@ -8,6 +8,9 @@
   :root {
     --section-gap: 60px;
   }
+  .whiteCol {
+    padding: 32px;
+  }
   .quoteCompareAccordian .accordion-button::before {
     width: 1.6rem;
     height: 1.6rem;

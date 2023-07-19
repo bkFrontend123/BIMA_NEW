@@ -1,5 +1,5 @@
 .ProdMain {
-    margin-top: 80px;
+    margin-top: 70px;
 }
 .ProductNavbar {
     position: sticky;
@@ -199,6 +199,7 @@
 
 .productStartup {
     margin-top: 80px;
+    overflow: hidden;
 }
 
 .productStartupCard {
@@ -218,9 +219,9 @@
 }
 .productStartupIcon {
     position: absolute;
-    right: -84px;
+    right: -62px;
     bottom: -90px;
-    width: 200px;
+    width: 180px;
 }
 
 .productStartupBottom {

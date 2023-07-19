@@ -21,7 +21,7 @@
     margin: 0 18px;
   }
   .btnCommon{
-    padding: 18px 34px;
+    padding: 18px 26px;
   }
 }
 
@@ -669,14 +669,6 @@
   body .ProductList li a.active::after{
     height: 2px;
     bottom: -7px;
-  }
-
-  .ProductBanner-formBox input.form-control {
-    height: 50px;
-  }
-
-  .ProductBanner-formBox input.form-control::placeholder {
-    font-size: 13px;
   }
 
   /** footer**/

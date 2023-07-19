@@ -125,6 +125,10 @@ body.homePageBody .navbar-main .nabbarStrip {
 .mainMenu.navbar .nabbarStrip {
    background-color: var(--mute1);
    padding: 24px 32px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 
 .mainMenu.navbar li a {
@@ -253,7 +257,10 @@ body .mainMenu.navbar .navbar-brand img{
 }
 .homeBannerProduct-card:hover a {
    color: var(--vt-c-yellow) !important
-}  
+}
+.homeIndustryRow > div > div {
+   margin-top: 0 !important;
+}
 .homeBannerProduct {
    border: 0 !important;
    position: relative;
@@ -312,8 +319,8 @@ body .mainMenu.navbar .navbar-brand img{
 .badgeIconCol {
    position: relative;
    transition: all .4s ease 0s;
-   width: 232px;
-   height: 232px;
+   width: 212px;
+   height: 212px;
    padding: 30px;
  }
  .badgeIconCol::before {
@@ -345,7 +352,7 @@ body .mainMenu.navbar .navbar-brand img{
    top: 40px;
    right: 0;
    bottom: 0;
-   width: 130px;
+   width: 110px;
    transition: all 0.8s ease 0s;
  }
  .badgeActiveIcon {

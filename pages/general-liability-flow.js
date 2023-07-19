@@ -29,7 +29,7 @@ import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import arrowBack from '../public/icons/arrowBack.svg'
 import tooltipIcon from '../public/icons/tooltipIcon.svg'
 
-import expertImg from '../public/expertImg.png'
+import expertImg from '../public/himaniImg.png'
 
 export default function GeneralLiability_Flow() {
     const navbarExample2Ref = useRef(null);
@@ -243,7 +243,7 @@ export default function GeneralLiability_Flow() {
                                                             <TalkExpert
                                                                 size={`${talkExpert.extraSmall}`}
                                                                 imgSrc={expertImg}
-                                                                name="Shruti Vishnoi"
+                                                                name="Himani Doshi"
                                                                 designation="Insurance Expert"
                                                             />
                                                         </div>
@@ -325,7 +325,7 @@ export default function GeneralLiability_Flow() {
                                                                     <TalkExpert
                                                                         size={`${talkExpert.extraSmall}`}
                                                                         imgSrc={expertImg}
-                                                                        name="Shruti Vishnoi"
+                                                                        name="Himani Doshi"
                                                                         designation="Insurance Expert"
                                                                     />
                                                                 </div>
@@ -375,7 +375,7 @@ export default function GeneralLiability_Flow() {
                                                                                 <Form.Check
                                                                                     inline
                                                                                     type="checkbox"
-                                                                                    id={block.id}
+                                                                                    id={`location-${block.id}`}
                                                                                     name={block.label}
                                                                                     label={block.label}
                                                                                     onChange={() => handleChangeLocations(index)}
@@ -417,7 +417,7 @@ export default function GeneralLiability_Flow() {
                                                                             <TalkExpert
                                                                                 size={`${talkExpert.extraSmall}`}
                                                                                 imgSrc={expertImg}
-                                                                                name="Shruti Vishnoi"
+                                                                                name="Himani Doshi"
                                                                                 designation="Insurance Expert"
                                                                             />
                                                                         </div>
@@ -468,7 +468,7 @@ export default function GeneralLiability_Flow() {
                                                                                             <Form.Check
                                                                                                 inline
                                                                                                 type="checkbox"
-                                                                                                id={block.id}
+                                                                                                id={`subsidiary-${block.id}`}
                                                                                                 name={block.label}
                                                                                                 label={block.label}
                                                                                                 onChange={() => handleChangeSubsidiary(index)}
@@ -567,7 +567,7 @@ export default function GeneralLiability_Flow() {
                                                                                     <TalkExpert
                                                                                         size={`${talkExpert.extraSmall}`}
                                                                                         imgSrc={expertImg}
-                                                                                        name="Shruti Vishnoi"
+                                                                                        name="Himani Doshi"
                                                                                         designation="Insurance Expert"
                                                                                     />
                                                                                 </div>
@@ -665,7 +665,7 @@ export default function GeneralLiability_Flow() {
                                                                                     <TalkExpert
                                                                                         size={`${talkExpert.extraSmall}`}
                                                                                         imgSrc={expertImg}
-                                                                                        name="Shruti Vishnoi"
+                                                                                        name="Himani Doshi"
                                                                                         designation="Insurance Expert"
                                                                                     />
                                                                                 </div>
@@ -691,7 +691,7 @@ export default function GeneralLiability_Flow() {
                                         background={`${talkExpert.yellow}`}
                                         size={`${talkExpert.extraSmall}`}
                                         imgSrc={expertImg}
-                                        name="Shruti Vishnoi"
+                                        name="Himani Doshi"
                                         designation="Insurance Expert"
                                         customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
                                     />

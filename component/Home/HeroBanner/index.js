@@ -48,7 +48,9 @@ export default function HeroBanner(props) {
               </Row>
             </div>
           </Container>
-          <IndustryBlock />
+          <div className="homeIndustryRow">
+            <IndustryBlock />
+          </div>
         </div>
 
         <style jsx scope>
@@ -111,6 +113,9 @@ export default function HeroBanner(props) {
             }
             .homeHeroImg img {
               width: 411px;
+            }
+            .homeIndustryRow {
+              margin-top: -92px;
             }
             @media (min-width: 1200px) {
               .title60 {

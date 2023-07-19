@@ -194,7 +194,7 @@ export default function IndustryBlock() {
       <style jsx scope>
           {`
             .homeBannerProduct{
-              margin-top: -92px;
+              margin-top: 85px;
               padding: 50px;
               box-shadow: 0px 10px 40px 0px #D9D9D9;
               border: 4px dashed var(--vt-c-yellow);

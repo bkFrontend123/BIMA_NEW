@@ -29,7 +29,7 @@ import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import arrowBack from '../public/icons/arrowBack.svg'
 import tooltipIcon from '../public/icons/tooltipIcon.svg'
 
-import expertImg from '../public/expertImg.png'
+import expertImg from '../public/himaniImg.png'
 
 export default function CommercialCrime_Flow() {
     const navbarExample2Ref = useRef(null);
@@ -237,7 +237,7 @@ export default function CommercialCrime_Flow() {
                                                             <TalkExpert
                                                                 size={`${talkExpert.extraSmall}`}
                                                                 imgSrc={expertImg}
-                                                                name="Shruti Vishnoi"
+                                                                name="Himani Doshi"
                                                                 designation="Insurance Expert"
                                                             />
                                                         </div>
@@ -322,7 +322,7 @@ export default function CommercialCrime_Flow() {
                                                                     <TalkExpert
                                                                         size={`${talkExpert.extraSmall}`}
                                                                         imgSrc={expertImg}
-                                                                        name="Shruti Vishnoi"
+                                                                        name="Himani Doshi"
                                                                         designation="Insurance Expert"
                                                                     />
                                                                 </div>
@@ -362,23 +362,8 @@ export default function CommercialCrime_Flow() {
                                                                         />
                                                                         <label>Total no of Employees</label>
                                                                     </Form.Group>
-                                                                    <Form.Group className={`selectDropDiv mb-4 ${!locationsValue == '' ? 'selectedDropDiv' : null}`}>
-                                                                        <SelectSearch
-                                                                            options={[
-                                                                                {name: 'Yes', value: 'Yes'},
-                                                                                {name: 'No', value: 'No'},
-                                                                            ]}
-                                                                            name="locations"
-                                                                            placeholder="&nbsp;"
-                                                                            onChange={setLocationsValue}
-                                                                            value={locationsValue}
-                                                                            required
-                                                                        />
-                                                                        <label>Do you have multiple Business locations?</label>
-                                                                    </Form.Group>
-                                                                    {locationsValue == 'Yes' ? (
                                                                         <div className='mb-4'>
-                                                                             <div className={`${form.formCheckLabel}`}>Select the countries you have business locations in and the number of business locations each country have.</div>
+                                                                            <div className={`${form.formCheckLabel}`}>Select the countries you have business locations in and the number of business locations each country have.</div>
                                                                             {locationsBlocksData.map((block, index) => (
                                                                             <SubsidiaryCard key={index}>
                                                                                 <SubsidiaryItem
@@ -388,7 +373,7 @@ export default function CommercialCrime_Flow() {
                                                                                     <Form.Check
                                                                                         inline
                                                                                         type="checkbox"
-                                                                                        id={block.id}
+                                                                                        id={`location-${block.id}`}
                                                                                         name={block.label}
                                                                                         label={block.label}
                                                                                         onChange={() => handleChangeLocations(index)}
@@ -421,10 +406,7 @@ export default function CommercialCrime_Flow() {
                                                                                 </SubsidiaryQnty>
                                                                             </SubsidiaryCard>
                                                                             ))}
-                                                                        </div>
-                                                                    ):(
-                                                                        null
-                                                                    )}
+                                                                    </div>
                                                                     <Form.Group className={`selectDropDiv mb-4 ${!subsidiaryValue == '' ? 'selectedDropDiv' : null}`}>
                                                                         <SelectSearch
                                                                             options={[
@@ -451,7 +433,7 @@ export default function CommercialCrime_Flow() {
                                                                                     <Form.Check
                                                                                         inline
                                                                                         type="checkbox"
-                                                                                        id={block.id}
+                                                                                        id={`subsidiary-${block.id}`}
                                                                                         name={block.label}
                                                                                         label={block.label}
                                                                                         onChange={() => handleChangeSubsidiary(index)}
@@ -497,7 +479,7 @@ export default function CommercialCrime_Flow() {
                                                                             <TalkExpert
                                                                                 size={`${talkExpert.extraSmall}`}
                                                                                 imgSrc={expertImg}
-                                                                                name="Shruti Vishnoi"
+                                                                                name="Himani Doshi"
                                                                                 designation="Insurance Expert"
                                                                             />
                                                                         </div>
@@ -551,7 +533,7 @@ export default function CommercialCrime_Flow() {
                                                                                 />
                                                                             </Form.Group>
                                                                             <Form.Group className="mb-4">
-                                                                                <Form.Label htmlFor="existingPolicy" className={`${form.formLabel}`}>Do you have any existing Product Liability Policy?</Form.Label>
+                                                                                <Form.Label htmlFor="existingPolicy" className={`${form.formLabel}`}>Do you have any existing Crime Policy?</Form.Label>
                                                                                 <Form.Check
                                                                                     inline
                                                                                     type="radio"
@@ -629,8 +611,8 @@ export default function CommercialCrime_Flow() {
                                                                                 <div className='d-none d-md-block'>
                                                                                     <TalkExpert
                                                                                         size={`${talkExpert.extraSmall}`}
-
-                                                                                        name="Shruti Vishnoi"
+                                                                                        imgSrc={expertImg}
+                                                                                        name="Himani Doshi"
                                                                                         designation="Insurance Expert"
                                                                                     />
                                                                                 </div>
@@ -658,7 +640,7 @@ export default function CommercialCrime_Flow() {
                                         background={`${talkExpert.yellow}`}
                                         size={`${talkExpert.extraSmall}`}
                                         imgSrc={expertImg}
-                                        name="Shruti Vishnoi"
+                                        name="Himani Doshi"
                                         designation="Insurance Expert"
                                         customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
                                     />

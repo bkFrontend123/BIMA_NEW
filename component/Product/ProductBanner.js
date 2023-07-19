@@ -11,9 +11,9 @@ export default function ProductBanner(props) {
         <>
             <div className={`ProductBanner ${customClass}`}>
                 <div className='ProductBannerBox'>
-                    <div className='container p-lg-0'>
+                    <div className='container'>
                         <div className='row justify-content-between g-4'>
-                            <div className='col-lg-7 col-xl-6'>
+                            <div className='col-lg-7 col-xxl-6'>
                                 <div className='ProductBannerText'>
                                     <h1 className='title-60 ProductBannerTextTitle text-primary font-weight-700 font-secondary'>{title}</h1>
                                     <p className='ProductBannerTextDescrip title20 text-black font-primaryNormal font-weight-500'>
@@ -62,7 +62,7 @@ export default function ProductBanner(props) {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-lg-5 col-xl-5'>
+                            <div className='col-lg-5 col-xxl-5'>
                                 {form === 'true' ? (
                                     <div className={`${formStyle.whiteFormBox} ${formStyle.commonForm}`}>
                                         <p className='ProductBanner-formTopHeading title-20 font-primaryNormal text-primary font-weight-700 mb-4'>
@@ -299,34 +299,14 @@ export default function ProductBanner(props) {
                         bottom: -6px;
                         width: 36px;
                     }
-                    
-                    @media (min-width: 1300px){
-                        .container {
-                          max-width: 1170px !important;
-                        }
-                      }
-                      
-                      @media (min-width: 1399px){
-                        .container {
-                          max-width: 1300px !important;
-                        }
-                      }
                       @media (min-width:1600px) {
-                        .container {
-                          max-width: 1460px !important;
-                        }
                         .ProductBanner-form{
                             max-width: 665px;
                             margin-left: auto;
                         }
                       }
-                      @media (min-width:1650px) {
-                        .container {
-                          max-width: 1548px !important;
-                        }
-                      }
                      @media only screen and (max-width: 1650px) {
-                        .ProductBanner-formTop p{
+                        .ProductBanner-formTop p {
                             font-size: 18px; 
                             line-height: 27px;
                         }
@@ -510,9 +490,6 @@ export default function ProductBanner(props) {
                             }
                             .ProductBanner-formBox{
                                 padding: 0 !important;
-                            }
-                            .ProductBanner-formBox input{
-                                height: 54px; 
                             }
                             .ProductBanner-formBox a.btnCommon {
                                 padding: 22px 70px;
