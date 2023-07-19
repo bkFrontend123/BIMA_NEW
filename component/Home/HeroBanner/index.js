@@ -216,7 +216,7 @@ export default function HeroBanner(props) {
                 padding: 40px 0 0;
               }
               .homeBannerText {
-                text-align: center;
+                //text-align: center;
               }
               .homeBannerText-bottomCard {
                 margin-bottom: 10px;
@@ -226,7 +226,7 @@ export default function HeroBanner(props) {
                 line-height: 22px;
               }
               .homeBannerText-bottomCard i {
-                justify-content: center;
+                //justify-content: center;
               }
             }
           `}
