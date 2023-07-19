@@ -14,7 +14,7 @@ export default function HeroBanner(props) {
           <Container>
             <div className={`homeBannerText`}>
               <Row>
-                <Col xs={6}>
+                <Col lg={6}>
                   <div className={`homeBannerLeft`}>
                     <h1 className='homeBannerTextTitle title60 font-secondary text-primary font-weight-700 mb-0'>{title} <span className='text-yellow'>{subtitle}</span>
                     </h1>
@@ -35,7 +35,7 @@ export default function HeroBanner(props) {
                     </div>
                   </div>
                 </Col>
-                <Col xs={6}>
+                <Col lg={6}>
                   <div className="homeHeroMediaOuter">
                       <div className="homeHeroShield">
                         <img src="/icons/homeShield.svg" alt="Shield" />

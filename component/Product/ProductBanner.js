@@ -425,7 +425,7 @@ export default function ProductBanner(props) {
                         }
                         .ProductBannerTextTitle {
                             font-size: 26px;
-                            line-height: 38px;
+                            line-height: 36px;
                         }
                         .ProductBannerTextDescrip{
                             margin-bottom: 34px;
