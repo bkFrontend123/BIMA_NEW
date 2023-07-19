@@ -636,7 +636,7 @@ export default function GeneralLiability_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/gL_incident1.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -656,7 +656,7 @@ export default function GeneralLiability_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/gL_incident2.png' />
                                             </Col>
                                         </Row>
                                     </div>

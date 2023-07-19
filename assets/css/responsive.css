@@ -405,7 +405,8 @@
   }
 
   .howDo-sliderBox {
-    min-height: 670px !important;
+    height: 540px;
+    min-height: 540px !important;
     overflow: hidden;
   }
 
@@ -437,10 +438,9 @@
     border: 1px solid;
   }
   .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxImg{
-    width: 100%;
-    transform: scale(1.5);
-    left: 40%;
-    bottom: -36%;
+    width: 80%;
+    right: 0;
+    bottom: 0;
   }
   .howDo-sliderBox-mob.howDo-sliderBox .howDoswiper-button-next a{
     display: inline !important;
@@ -806,9 +806,6 @@
     width: 121px;
     height: 2px;
   }
-  .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxImg{
-    bottom: -20%;
-  }
   .errorForm-result .title-24 {
     font-size: 15px;
     line-height: 22px;
@@ -854,11 +851,6 @@
   .tabLink {
     font-size: 16px !important;
     padding: 10px 10px;
-  }
-}
-@media only screen and (max-width: 420px) {
-  .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxImg{
-    bottom: -10%;
   }
 }
 

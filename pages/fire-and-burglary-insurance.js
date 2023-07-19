@@ -357,7 +357,7 @@ export default function FireAndBurglary_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/stormIcon.svg' width="100" height="100" alt="Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation" />
+                                                                <Image src='/icons/stormNewIcon.svg' width="100" height="100" alt="Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Storm, Cyclone, Typhoon, Tempest, Hurricane, Tornado, Flood and Inundation</p>
                                                         </div>
@@ -389,7 +389,7 @@ export default function FireAndBurglary_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/plannersIcon.svg' width="100" height="100" alt="Bursting and/or overflowing of Water Tanks, Apparatus and Pipes" />
+                                                                <Image src='/icons/waterTanksIcon.svg' width="100" height="100" alt="Bursting and/or overflowing of Water Tanks, Apparatus and Pipes" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Bursting and/or overflowing of Water Tanks, Apparatus and Pipes</p>
                                                         </div>
@@ -841,7 +841,7 @@ export default function FireAndBurglary_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/fire_incident1.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -861,7 +861,7 @@ export default function FireAndBurglary_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/fire_incident2.png' />
                                             </Col>
                                         </Row>
                                     </div>

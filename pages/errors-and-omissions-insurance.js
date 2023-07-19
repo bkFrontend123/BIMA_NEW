@@ -638,7 +638,7 @@ export default function EAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/eAndO_incident1.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -658,7 +658,7 @@ export default function EAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/eAndO_incident2.png' />
                                             </Col>
                                         </Row>
                                     </div>

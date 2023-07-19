@@ -176,7 +176,7 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkImg1.png" />
+                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg1.png" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
@@ -200,7 +200,7 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkImg2.png" />
+                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg2.png" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
@@ -224,7 +224,7 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkImg3.png" />
+                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg3.png" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
@@ -249,7 +249,7 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkImg4.png" />
+                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg4.png" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
@@ -274,7 +274,7 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkImg5.png" />
+                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg5.png" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">

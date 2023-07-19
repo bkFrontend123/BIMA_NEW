@@ -7,7 +7,7 @@ export default function TeamCard(props) {
     
     return (
         <>
-            <div className='teamCard px-md-1'>
+            <div className='teamCard'>
                 <Image
                     // loader={myLoader}
                     src={img}
@@ -15,8 +15,8 @@ export default function TeamCard(props) {
                     width={335}
                     height={336}
                 />
-                <h3 className='title-24 mt-3 mb-0 font-weight-600 text-primary'>{name}</h3>
-                <h4 className='title-18 font-weight-500 text-black'>{position}</h4>
+                <h3 className='title-22 mt-3 mb-0 font-weight-600 text-primary'>{name}</h3>
+                <h4 className='title-18 font-weight-500 text-black m-0'>{position}</h4>
             </div>
 
             <style jsx scope>
@@ -32,7 +32,7 @@ export default function TeamCard(props) {
                             text-align: center; 
                         }
     
-                        .title-24{
+                        .title-22{
                             font-size: 18px;
                             line-height: 27px;
                         }

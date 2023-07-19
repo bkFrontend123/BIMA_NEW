@@ -606,7 +606,7 @@ export default function ProductLiability_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/pL_incident1.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -626,7 +626,7 @@ export default function ProductLiability_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/pL_incident2.png' />
                                             </Col>
                                         </Row>
                                     </div>
