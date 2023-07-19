@@ -736,6 +736,8 @@ body .swiper-scrollbar {
 
 .footer::before {
    background-image: url('/ftr_bg.png');
+   background-position: center center;
+   background-size: cover;
    position: absolute;
    content: "";
    left: 0;
