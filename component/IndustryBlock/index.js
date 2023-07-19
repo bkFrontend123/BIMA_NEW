@@ -239,7 +239,7 @@ export default function IndustryBlock() {
                 padding: 60px;
               }
                 .title-20 {
-                  font-size: 18px;
+                  font-size: 17px;
                   line-height: 26px;
                 }
                 .title-18 {
@@ -285,6 +285,10 @@ export default function IndustryBlock() {
                 font-size: 40px;
                 line-height: 48px;
               }
+              .title-26 {
+                font-size: 20px;
+                line-height: 28px;
+              }
               .title24 {
                 font-size: 18px;
                 line-height:26px;
@@ -307,14 +311,12 @@ export default function IndustryBlock() {
                 margin-top: 0;
               }
               .homeBannerProduct {
-                width: calc(100% - 40px);
-                margin-top: 40px;
                 padding: 16px;
                 border-style: solid;
               }
               .homeBannerProduct-headingText {
                 text-align: center;
-                font-size: 24px;
+                font-size: 22px;
                 line-height: 30px;
                 font-style: italic;
               }

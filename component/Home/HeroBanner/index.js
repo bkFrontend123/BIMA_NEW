@@ -40,8 +40,11 @@ export default function HeroBanner(props) {
                       <div className="homeHeroShield">
                         <img src="/icons/homeShield.svg" alt="Shield" />
                       </div>
-                      <div className="homeHeroImg">
-                        <img src="/jethaLalHome.png" alt="Shield" />
+                      <div className="homeHeroImg d-none d-lg-block">
+                        <img src="/homeHero_Img.png" alt="Dilip Joshi" />
+                      </div>
+                      <div className="homeHeroImg d-lg-none">
+                        <img src="/homeHeroMbl_Img.png" alt="Dilip Joshi" />
                       </div>
                   </div>
                 </Col>
@@ -146,7 +149,7 @@ export default function HeroBanner(props) {
             @media only screen and (max-width: 1199px) {
               
             }
-            @media only screen and (max-width: 992px) {
+            @media only screen and (max-width: 991px) {
               .homeHero {
                 margin-top: 0;
                 padding-top: 0;
@@ -157,21 +160,56 @@ export default function HeroBanner(props) {
               }
               .homeBannerText {
                 padding-left: 0;
+                padding-right: 0;
               }
               .homeBannerText-bottom {
                 flex-wrap: wrap;
               }
               .homeBannerText-bottomCard {
                   margin-bottom: 20px;
+                  width: 31.4%;
               }
               .BannerDescription {
-                  font-size: 18px;
-                  line-height: 24px;
-                  margin: 16px 0;
+                font-size: 17px;
+                line-height: 24px;
+                margin: 16px 0;
+              }
+              .homeBannerText-bottom {
+                gap: 0.6rem;
+              }
+              .homeHeroMediaOuter {
+                min-height: auto;
+                margin-top: 20px;
+              }
+              .homeHeroShield {
+                left: 0;
+                top: 0;
+                bottom: 0;
+              }
+              .homeHeroShield img {
+                width: 100%;
+                height: 100%;
+              }
+              .homeHeroImg {
+                position: relative;
+                right: 0;
+                left: 0;
+                text-align: center
+              }
+              .homeHeroImg img {
+                width: auto;
+                max-width: 100%;
+                margin: auto;
+              }
+              .homeIndustryRow {
+                margin-top: 0;
               }
             }
             @media only screen and (max-width: 767px) {
-              
+              .title64, .title60 {
+                font-size: 30px;
+                line-height: 40px;
+              }
             }
             @media only screen and (max-width: 575px) {
               .HomeBannerStyle {
