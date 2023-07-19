@@ -9,10 +9,10 @@ import "swiper/swiper-bundle.css";
 
 export default function RecentActivity() {
     const recentActivity = ([
-        { id: "ra1", img: "/recent1.jpg", title: "Tejas Jain", date: "CEO, Insurance Expert" },
-        { id: "ra2", img: "/recent2.jpg", title: "Himani Doshi", date: "Chief Underwriter, Insurance Expert" },
-        { id: "ra3", img: "/recent3.jpg", title: "Shruti Vishnoi", date: "Insurance Expert" },
-        { id: "ra4", img: "/recent1.jpg", title: "CII Event in Nashik", date: "21 January 2023" },
+        { id: "ra1", img: "/team/tejasJain.png", title: "Tejas Jain", date: "CEO, Insurance Expert" },
+        { id: "ra2", img: "/team/priyalataPatra.png", title: "Priyalata Patra", date: "VP Product, Insurance Expert" },
+        { id: "ra3", img: "/team/himaniDoshi.png", title: "Himani Doshi", date: "Insurance Expert" },
+        { id: "ra4", img: "/team/ravikantSawant.png", title: "Ravikant Sawant", date: "Insurance Expert" },
     ])
 
     return (

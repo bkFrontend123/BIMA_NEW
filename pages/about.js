@@ -27,9 +27,9 @@ export default function About() {
         <>
             <Navbar />
             <div className='aboutUs'>
-                <div className={`container `}>
+                <div className={`container`}>
                     <div className={`row `}>
-                        <div className={`col-md-9 mx-auto px-md-5`}>
+                        <div className={`col-md-10 mx-auto`}>
                             <div className='commnHeading text-start'>
                                 <div className='polyBox border-primary bg-blueLight mb-md-4 mb-2 text-primary title-12 text-uppercase font-weight-700'>About Us</div>
                                 <div className='title-60 font-secondary mb-md-3 mb-2 text-primary font-weight-700'>Bima, <span className='text-yellow fst-italic'>Simplified</span></div>
@@ -40,7 +40,7 @@ export default function About() {
                 </div>
                 <div className={`container aboutUs-teamCards pt-0`}>
                     <div className={`row `}>
-                        <div className={`col-md-9 mx-auto px-md-5`}>
+                        <div className={`col-md-10 mx-auto`}>
                             <div className={`row g-4 g-lg-5`}>
                                 {TeamCardList.map((item) =>
                                     <div className={`col-lg-4`} key={item.id}>
@@ -59,7 +59,7 @@ export default function About() {
                 <div className={`founder bg-yellow `}>
                     <div className={`container-fluid `}>
                         <div className={`row `}>
-                            <div className={`col-lg-7 mx-auto `}>
+                            <div className={`col-lg-8 mx-auto `}>
                                 <div className={`d-flex align-items-center gap-3 mb-4`}>
                                     <div>
                                         <Image
