@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import Image from 'next/image'
 import { ToggleCard, TinderLikeCard, StackCard } from 'react-stack-cards'
 import { Swiper, SwiperSlide } from "swiper/react";
 // import Card from "../ThreeD/Card";
@@ -17,11 +18,11 @@ export default function HowDo() {
 
   const tinderRef = useRef(null);
   const data = [
-    { title: "Choose your policy", direction: "call or message us if you need help", btnText: 'Next: Digital' },
-    { title: "Brief your business", direction: "Answer a few simple questions about your business", btnText: 'Next: Digital'},
-    { title: "Receive suggestions", direction: "Get instant quotes from top insurance companies", btnText: 'Next: Digital' },
-    { title: "Talk to an expert", direction: "Consult with our experts and make payment", btnText: 'Next: Digital' },
-    { title: "Get your quote", direction: "Receive policy copy via email and in your BimaKavach dashboard", btnText: 'Next: Digital' },
+    { title: "Choose your policy", description: "Call or message us if you need help", imgSrc: "/howWorks/howWorkImg1.png", btnText: 'Next: Digital' },
+    { title: "Tell us about business", description: "Answer a few simple questions about your business", imgSrc: "/howWorks/howWorkImg2.png", btnText: 'Next: Digital'},
+    { title: "Compare quotes", description: "Get instant quotes from top insurance companies", imgSrc: "/howWorks/howWorkImg3.png", btnText: 'Next: Digital' },
+    { title: "Talk to an expert", description: "Consult with our experts and make payment", imgSrc: "/howWorks/howWorkImg4.png", btnText: 'Next: Digital' },
+    { title: "Manage your policies", description: "Receive policy copy via email and in your BimaKavach dashboard", imgSrc: "/howWorks/howWorkImg5.png", btnText: 'Next: Digital' },
   ]
   const onSwipeDown = (e) => {
     console.log("e  eeeeee",e)
@@ -46,7 +47,7 @@ export default function HowDo() {
     for (let i = 0; i < 50; i++) {
       for (let j = 0; j < data.length; j++) {
         // let ti = data[j].btnText;
-        let div = card(data[j].title, data[j].direction, data[j].btnText, j);
+        let div = card(data[j].title, data[j].description, data[j].imgSrc, data[j].btnText, j);
         arr1 = arr1.concat(div)
       }
     }
@@ -57,17 +58,17 @@ export default function HowDo() {
     )
 
   }
-  function card(title, direction, btnText, index) {
+  function card(title, description, imgSrc, btnText, index) {
     return (
       <>
         <div className={`bg-primary howDo-sliderBox @radius-15 position-relative d-flex flex-column justify-content-md-between active`}>
-          <img className="howDo-sliderBoxImg position-absolute" src="/howdo.png" />
+          <Image className="howDo-sliderBoxImg position-absolute" src={imgSrc} width={549} height={616} alt={title} />
           <div className="row mb-5">
             <div className="col-md-7">
               <div className="howDo-sliderBoxText text-white">
                 <div className="howDo-sliderBox-index d-flex align-items-center justify-content-start title16 mb-4 mb-md-0">{index + 1}</div>
                 <div className="title60 howDo-sliderBoxText-title font-secondary font-weight-600">{title}</div>
-                <div className="title22 font-weight-400 mt-2 mt-md-0">{direction}</div>
+                <div className="title22 font-weight-400 mt-2 mt-md-0">{description}</div>
               </div>
             </div>
           </div>
@@ -175,13 +176,13 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howdo.png" />
+                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkImg1.png" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
                             <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">01</div>
                             <div className="title60 font-secondary font-weight-600">Choose your policy</div>
-                            <div className="title20 font-weight-500 mt-2 mt-md-0">call or message us if you need help</div>
+                            <div className="title20 font-weight-500 mt-2 mt-md-0">Call or message us if you need help</div>
                           </div>
                         </div>
                       </div>
@@ -199,12 +200,12 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howdo.png" />
+                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkImg2.png" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
                             <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">02</div>
-                            <div className="title60 font-secondary font-weight-600">Brief your business</div>
+                            <div className="title60 font-secondary font-weight-600">Tell us about business</div>
                             <div className="title20 font-weight-500 mt-2 mt-md-0">Answer a few simple questions about your business</div>
                           </div>
                         </div>
@@ -223,12 +224,12 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howdo.png" />
+                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkImg3.png" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
                             <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">03</div>
-                            <div className="title60 font-secondary font-weight-600">Receive suggestions</div>
+                            <div className="title60 font-secondary font-weight-600">Compare quotes</div>
                             <div className="title20 font-weight-500 mt-2 mt-md-0">Get instant quotes from top insurance companies</div>
                           </div>
                         </div>
@@ -248,7 +249,7 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howdo.png" />
+                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkImg4.png" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
@@ -273,12 +274,12 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howdo.png" />
+                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkImg5.png" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
                             <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">05</div>
-                            <div className="title60 font-secondary font-weight-600">Get your quote</div>
+                            <div className="title60 font-secondary font-weight-600">Manage your policies</div>
                             <div className="title20 font-weight-500 mt-2 mt-md-0">Receive policy copy via email and in your BimaKavach dashboard</div>
                           </div>
                         </div>
