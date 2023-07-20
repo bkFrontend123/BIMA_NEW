@@ -173,26 +173,7 @@ function Business() {
                                 <tr>
                                     <td>
                                         <div className='businessInsurance-colBox title24 text-primary font-weight-500'>
-                                            Quick Payment & Policy Delivery
-                                        </div>
-                                    </td>
-                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
-                                        </div>
-                                    </td>
-                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
-                                        </div>
-                                    </td>
-                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/tickTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div className='businessInsurance-colBox title24 text-primary font-weight-500'>
-                                            Customer Support with Experienced Underwriters
+                                            24x7 Customer Support
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
@@ -211,7 +192,45 @@ function Business() {
                                 <tr>
                                     <td>
                                         <div className='businessInsurance-colBox title24 text-primary font-weight-500'>
-                                            All-in One Digital Platform
+                                            1-on-1 Session with Product Experts
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div className='businessInsurance-colBox title24 text-primary font-weight-500'>
+                                            Best-in-industry Pricing
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                    <td className='businessInsurance-col title24 font-weight-500 text-center'>
+                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div className='businessInsurance-colBox title24 text-primary font-weight-500'>
+                                            Fast Payment and Policy Delivery
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
@@ -230,7 +249,7 @@ function Business() {
                                 <tr>
                                     <td>
                                         <div className='businessInsurance-colBox title24 text-primary font-weight-500'>
-                                            Cost Effective Products
+                                            All-in-one Digital Platform
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
@@ -242,7 +261,7 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><img src='/tickTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                 </tr>
