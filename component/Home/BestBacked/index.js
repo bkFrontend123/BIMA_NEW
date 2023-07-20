@@ -24,7 +24,6 @@ export default function BestBacked(props) {
                 <div className={`row text-center`}>
                     <div className={`col-md-8 mx-auto`}>
                         <div className='commnHeading'>
-                            <div className='polyBox border-primary bg-blueLight text-primary title12 text-uppercase font-weight-600 mb-3'>Our Investors</div>
                             <div className={`title-36 font-secondary mb-4 text-primary font-weight-700 ${props.titleClass}`}>Backed by <span className="text-yellow fst-italic">The Best</span></div>
                         </div>
                     </div>

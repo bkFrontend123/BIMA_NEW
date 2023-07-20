@@ -690,7 +690,6 @@ export default function DAndO_Insurance() {
                         <Row>
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Directors & Officers Claims Examples</h3>
                                 </div>
                             </Col>
@@ -776,7 +775,6 @@ export default function DAndO_Insurance() {
                         <Row>
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Directors & Officers Liability Insurance</h3>
                                 </div>
                             </Col>
@@ -882,8 +880,7 @@ export default function DAndO_Insurance() {
                     <Container>
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
-                                <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
+                                <h3 className={`title-42 font-secondary font-weight-700 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>
@@ -1022,13 +1019,16 @@ export default function DAndO_Insurance() {
                 starContent="true"
             />
 
-            <style jsx scope>
+<style jsx scope>
                 {`
                 .title-15 {
                     font-size: 15px;
                     line-height: 22.5px;
                 }
-
+                .title-20 {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
                 @media only screen and (max-width: 1699px) {
                     .title-42 {
                         font-size: 38px;
@@ -1039,18 +1039,18 @@ export default function DAndO_Insurance() {
                         line-height: 36px;
                     }
                     .title-24 {
-                        font-size: 20px;
-                        line-height: 32px;
+                        font-size: 22px;
+                        line-height: 34px;
                     } 
                 }
                 @media only screen and (max-width: 992px) {
                     .title-42 {
-                        font-size: 28px;
-                        line-height: 40px;
-                    }
-                    .title-36 {
                         font-size: 26px;
                         line-height: 38px;
+                    }
+                    .title-36 {
+                        font-size: 28px;
+                        line-height: 34px;
                     }
                     .title-32 {
                         font-size: 26px;

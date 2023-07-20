@@ -131,6 +131,32 @@ function BusinessRisk() {
         {id: "bc80", title: "Large Fines", img: "/icons/risk5.svg" },
 
     ])
+    const businessSolutions = ([
+        {id: "bs1", title: "Directors & Officers Insurance", img: "/productIcons/liability/dAndO_icon.svg" },
+        {id: "bs2", title: "Errors & Omissions Insurance", img: "/productIcons/liability/eAndO_icon.svg" },
+        {id: "bs3", title: "General Liability Insurance", img: "/productIcons/liability/generalLiability_icon.svg" },
+        {id: "bs4", title: "Product Liability Insurance", img: "/productIcons/liability/productLiability_icon.svg" },
+        {id: "bs5", title: "Cyber Insurance", img: "/productIcons/liability/cyber_icon.svg" },
+        {id: "bs6", title: "Crime Insurance", img: "/productIcons/liability/crime_icon.svg" },
+        {id: "bs7", title: "Workmen's Compensation", img: "/productIcons/liability/workman_icon.svg" },
+        {id: "bs8", title: "Fire Insurance", img: "/productIcons/asset/fire_icon.svg" },
+        {id: "bs9", title: "Contractors All Risk", img: "/productIcons/engineering/contractorsAllRisk_icon.svg" },
+        {id: "bs10", title: "Erection All Risk", img: "/productIcons/engineering/erectionAllRisk_icon.svg" },
+        {id: "bs11", title: "Contractors Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.png" },
+        {id: "bs12", title: "Marine Transit Policy", img: "/productIcons/marine/marine_icon.svg" },
+        {id: "bs13", title: "Directors & Officers Insurance", img: "/productIcons/liability/dAndO_icon.svg" },
+        {id: "bs14", title: "Errors & Omissions Insurance", img: "/productIcons/liability/eAndO_icon.svg" },
+        {id: "bs15", title: "General Liability Insurance", img: "/productIcons/liability/generalLiability_icon.svg" },
+        {id: "bs16", title: "Product Liability Insurance", img: "/productIcons/liability/productLiability_icon.svg" },
+        {id: "bs17", title: "Cyber Insurance", img: "/productIcons/liability/cyber_icon.svg" },
+        {id: "bs18", title: "Crime Insurance", img: "/productIcons/liability/crime_icon.svg" },
+        {id: "bs19", title: "Workmen's Compensation", img: "/productIcons/liability/workman_icon.svg" },
+        {id: "bs20", title: "Fire Insurance", img: "/productIcons/asset/fire_icon.svg" },
+        {id: "bs21", title: "Contractors All Risk", img: "/productIcons/engineering/contractorsAllRisk_icon.svg" },
+        {id: "bs22", title: "Erection All Risk", img: "/productIcons/engineering/erectionAllRisk_icon.svg" },
+        {id: "bs23", title: "Contractors Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.png" },
+        {id: "bs24", title: "Marine Transit Policy", img: "/productIcons/marine/marine_icon.svg" },
+    ])
 
     return (
         <div className={`business-risk`}>
@@ -138,7 +164,7 @@ function BusinessRisk() {
                 <div className={`row text-center`}>
                     <div className={`col-md-8 mx-auto`}>
                         {/*<div className='polyBox border-primary bg-blueLight text-primary title12 text-uppercase font-weight-600 mb-3'>The Problems</div>*/}
-                        <h2 className='title-36 font-secondary mb-3 text-primary font-secondary font-weight-700'>Simple Solutions to <span className='text-yellow fst-italic'> Complex Risks</span></h2>
+                        <h2 className='title-36 font-secondary mb-3 text-primary font-secondary font-weight-700'>Every business has <span className='text-yellow fst-italic'>risks</span></h2>
                         <p className='title-22 font-weight-500 text-primary px-0 px-lg-5 mb-0'>
                             No matter the industry or size of your business, 
                             <span className="d-none d-xl-block">we have got you covered.</span>
@@ -147,129 +173,167 @@ function BusinessRisk() {
                     </div>
                 </div>
             </div>
-            <div className={` container px-0 business-riskSliderBox bg-primary`}>
-                <div className={`row business-riskSliderBox-row`}>
-                    <div className={`col`}>
-                        <div className='bg-primary business-riskBlue'>
-                            <div className='bg-primary@ '>
-                                <div className={`row mx-0 mb-5`}>
-                                    <div className={`col-md-12 px-0`}>
-                                        <div className={`row mx-0`}>
-                                            <div className={`col-md-8 mx-auto text-sm-start text-center`}>
-                                                <div className='title32 font-secondary text-white font-weight-600 mb-4 ps-lg-5'><i>Situations</i></div>
-                                            </div>
-                                        </div>
-                                        <Swiper
-                                            modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-                                            navigation={false}
-                                            // slidesPerView={"5"}
-                                            className={`businessRisk-slider smoothSwiper my-2`}
-                                            itemclass="mx-5"
-                                            spaceBetween={30}
-                                            slidesPerView={6.5}
-                                            autowidth="true"
-                                            infinite="true"
-                                            loop="true"
-                                            speed={6500}
-                                            autoplay={{
-                                                delay: 0,
-                                                disableOnInteraction: false
-                                            }}
-                                            breakpoints={{
-                                                1399: {
-                                                    slidesPerView: 6.5,
-                                                },
-                                                1200: {
-                                                    slidesPerView: 5.5,
-                                                },
-                                                992: {
-                                                    slidesPerView: 4.5,
-                                                },
-                                                768: {
-                                                    slidesPerView: 3.5,
-                                                    spaceBetween: 20
-                                                },
-                                                576: {
-                                                    slidesPerView: 2.5,
-                                                    spaceBetween: 20
-                                                },
-                                                320: {
-                                                    slidesPerView: 2,
-                                                    spaceBetween: 20
-                                                },
-                                            }}
-
-                                        >
-                                            {businessSituations.map((item) =>
-                                                <SwiperSlide key={item.id}>
-                                                    <div className='businessRisk-sliderItem font-secondary@ font-weight-500 title20 text-center text-white'>
-                                                        <span>{item.title}</span>
-                                                    </div>
-                                                </SwiperSlide>
-                                            )}
-                                        </Swiper>
-                                    </div>
-                                </div>
-                                <div className={`row mx-0 pt-4`}>
-                                    <div className={`col-md-12 px-0`}>
-                                        <div className={`row mx-0`}>
-                                            <div className={`col-md-8 mx-auto text-sm-start text-center`}>
-                                                <div className='title32 font-secondary text-white font-weight-600 mb-4 ps-lg-5'><i>Consequences</i></div>
-                                            </div>
-                                        </div> 
-                                        <Swiper
-                                            modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-                                            // dir="rtl"
-                                            className={`businessRisk-slider businessRisk-sliderRTL smoothSwiper my-2 `}
-                                            itemclass="mx-5"
-                                            spaceBetween={30}
-                                            slidesPerView={4.5}
-                                            autowidth="true"
-                                            infinite="true"
-                                            loop="true"
-                                            speed={5000}
-                                            autoplay={{
-                                                delay: 0,
-                                                disableOnInteraction: false
-                                            }}
-                                            breakpoints={{
-                                                1399: {
-                                                    slidesPerView: 6.5,
-                                                },
-                                                1200: {
-                                                    slidesPerView: 5.5,
-                                                },
-                                                992: {
-                                                    slidesPerView: 4.5,
-                                                },
-                                                768: {
-                                                    slidesPerView: 3.5,
-                                                    spaceBetween: 20
-                                                },
-                                                576: {
-                                                    slidesPerView: 2.5,
-                                                    spaceBetween: 20
-                                                },
-                                                320: {
-                                                    slidesPerView: 2,
-                                                    spaceBetween: 20
-                                                },
-                                            }}  
-                                        >
-                                            {businessConsequences.map((item) =>
-                                                <SwiperSlide className="text-start" key={item.id}>
-                                                    <div className='title20 font-weight-500 businessRisk-sliderItem text-white'>
-                                                        <img src={item.img} className="text-start" />
-                                                        <span className='text-center'>{item.title}</span>
-                                                    </div>
-                                                </SwiperSlide>
-                                            )}
-                                        </Swiper>
-                                    </div>
-                                </div>
-
-                            </div>
+            <div className={`container business-riskSliderBox`}>
+                <div className={`business-riskSliderBox-row`}>
+                    <div className='bg-primary pt-4 pt-xl-5'>
+                        <div className={`text-center`}>
+                            <div className='title32 font-secondary text-white text-center font-weight-600 mb-4 ps-lg-5'><i>Situations</i></div>
                         </div>
+                        <Swiper
+                            modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+                            navigation={false}
+                            // slidesPerView={"5"}
+                            className={`businessRisk-slider smoothSwiper`}
+                            itemclass="mx-5"
+                            spaceBetween={30}
+                            slidesPerView={6.5}
+                            autowidth="true"
+                            infinite="true"
+                            loop="true"
+                            speed={4000}
+                            autoplay={{
+                                delay: 0,
+                                disableOnInteraction: false
+                            }}
+                            breakpoints={{
+                                1399: {
+                                    slidesPerView: 6.5,
+                                },
+                                1200: {
+                                    slidesPerView: 5.5,
+                                },
+                                992: {
+                                    slidesPerView: 4.5,
+                                },
+                                768: {
+                                    slidesPerView: 3.5,
+                                    spaceBetween: 20
+                                },
+                                576: {
+                                    slidesPerView: 2.5,
+                                    spaceBetween: 20
+                                },
+                                320: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20
+                                },
+                            }}
+
+                        >
+                            {businessSituations.map((item) =>
+                                <SwiperSlide key={item.id}>
+                                    <div className='businessRisk-sliderItem font-secondary@ font-weight-500 title20 text-center text-white'>
+                                        <span>{item.title}</span>
+                                    </div>
+                                </SwiperSlide>
+                            )}
+                        </Swiper>
+                    </div>
+                    <div className='bg-primary py-4 py-xl-5'>
+                        <div className={`text-center`}>
+                            <div className='title32 font-secondary text-white text-center font-weight-600 mb-4 ps-lg-5'><i>Consequences</i></div>
+                        </div>
+                        <Swiper
+                            modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+                            // dir="rtl"
+                            className={`businessRisk-slider businessRisk-sliderRTL smoothSwiper`}
+                            itemclass="mx-5"
+                            spaceBetween={30}
+                            slidesPerView={4.5}
+                            autowidth="true"
+                            infinite="true"
+                            loop="true"
+                            speed={5000}
+                            autoplay={{
+                                delay: 0,
+                                disableOnInteraction: false
+                            }}
+                            breakpoints={{
+                                1399: {
+                                    slidesPerView: 6.5,
+                                },
+                                1200: {
+                                    slidesPerView: 5.5,
+                                },
+                                992: {
+                                    slidesPerView: 4.5,
+                                },
+                                768: {
+                                    slidesPerView: 3.5,
+                                    spaceBetween: 20
+                                },
+                                576: {
+                                    slidesPerView: 2.5,
+                                    spaceBetween: 20
+                                },
+                                320: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20
+                                },
+                            }}  
+                        >
+                            {businessConsequences.map((item) =>
+                                <SwiperSlide className="text-start" key={item.id}>
+                                    <div className='title20 font-weight-500 businessRisk-sliderItem text-white'>
+                                        <img src={item.img} className="text-start" />
+                                        <span className='text-center'>{item.title}</span>
+                                    </div>
+                                </SwiperSlide>
+                            )}
+                        </Swiper>
+                    </div>
+                    <div className="bg-white py-4">
+                        <div className={`text-center`}>
+                            <div className='title32 font-secondary text-primary text-center font-weight-600 mb-4 ps-lg-5'><i>Solutions</i></div>
+                        </div> 
+                        <Swiper
+                            modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+                            // dir="rtl"
+                            className={`businessRisk-slider smoothSwiper`}
+                            itemclass="mx-5"
+                            spaceBetween={30}
+                            slidesPerView={4.5}
+                            autowidth="true"
+                            infinite="true"
+                            loop="true"
+                            speed={4000}
+                            autoplay={{
+                                delay: 0,
+                                disableOnInteraction: false
+                            }}
+                            breakpoints={{
+                                1399: {
+                                    slidesPerView: 6.5,
+                                },
+                                1200: {
+                                    slidesPerView: 5.5,
+                                },
+                                992: {
+                                    slidesPerView: 4.5,
+                                },
+                                768: {
+                                    slidesPerView: 3.5,
+                                    spaceBetween: 20
+                                },
+                                576: {
+                                    slidesPerView: 2.5,
+                                    spaceBetween: 20
+                                },
+                                320: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20
+                                },
+                            }}  
+                        >
+                            {businessSolutions.map((item) =>
+                                <SwiperSlide className="text-start" key={item.id}>
+                                    <div className='title18 font-weight-500 businessRisk-sliderItem border-primary text-black'>
+                                        <img src={item.img} className="text-start" />
+                                        <span className='text-center'>{item.title}</span>
+                                    </div>
+                                </SwiperSlide>
+                            )}
+                        </Swiper>
                     </div>
                 </div>
             </div>
@@ -279,9 +343,7 @@ function BusinessRisk() {
             <style jsx scope>
                 {`
                     .business-riskSliderBox{
-                        padding: 55px 0 90px 0;
                         margin-top: 62px;
-
                     }
                     .business-risk .businessRisk-sliderItem{
                         border: 2px solid #fff;
@@ -295,8 +357,6 @@ function BusinessRisk() {
                      .business-risk .businessRisk-sliderItem img{
                         height: 35px;
                         margin-bottom: 10px;
-                     }
-                     .business-riskBlue{
                      }
                      .swiper-slide{
                         width: auto !important;
@@ -319,7 +379,6 @@ function BusinessRisk() {
                        }
                       @media only screen and (max-width: 575px) {
                         .business-riskSliderBox {
-                            padding: 50px 0 50px 0;
                             margin-top: 50px;
                             width: calc(100% - 40px);
                         }
@@ -331,13 +390,10 @@ function BusinessRisk() {
                             font-size: 18px;
                             line-height: 27px;
                         }
-                        .business-riskSliderBox{
-
-                        }
-                        .business-riskSliderBox-row{
+                        .business-riskSliderBox-row {
                             margin: 0;
                         }
-                        .business-riskSliderBox-row .col{
+                        .business-riskSliderBox-row .col {
                             padding: 0;
                         }
 

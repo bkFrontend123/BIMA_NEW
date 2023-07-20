@@ -326,7 +326,7 @@ export default function GeneralLiability_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Works on Occurence Basis</h3>
+                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Works on Occurence Basis</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0'>Claims can be made even after a policy expires given that the incident happened within the policy’s active period.</p>
                                                     </div>
                                                 </div>
@@ -334,7 +334,7 @@ export default function GeneralLiability_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Start Date</h3>
+                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Start Date</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0'>Claims cannot be filed for any incidents that occured prior to the date when the coverage of the policy begins.</p>
                                                     </div>
                                                 </div>
@@ -342,7 +342,7 @@ export default function GeneralLiability_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Insurance Period</h3>
+                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Insurance Period</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0'>Any incident that happens between the policy's effective date to the policy's expiration date are covered. Renewal before expiration date is essential to maintain coverage.</p>
                                                     </div>
                                                 </div>
@@ -608,7 +608,6 @@ export default function GeneralLiability_Insurance() {
                         <Row>
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>General Liability Claims Examples</h3>
                                 </div>
                             </Col>
@@ -673,7 +672,6 @@ export default function GeneralLiability_Insurance() {
                         <Row>
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About General Liability Insurance</h3>
                                 </div>
                             </Col>
@@ -729,8 +727,7 @@ export default function GeneralLiability_Insurance() {
                     <Container>
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
-                                <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
+                                <h3 className={`title-42 font-secondary font-weight-700 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>
@@ -869,13 +866,16 @@ export default function GeneralLiability_Insurance() {
                 starContent="true"
             />
 
-            <style jsx scope>
+<style jsx scope>
                 {`
                 .title-15 {
                     font-size: 15px;
                     line-height: 22.5px;
                 }
-
+                .title-20 {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
                 @media only screen and (max-width: 1699px) {
                     .title-42 {
                         font-size: 38px;
@@ -886,18 +886,18 @@ export default function GeneralLiability_Insurance() {
                         line-height: 36px;
                     }
                     .title-24 {
-                        font-size: 20px;
-                        line-height: 32px;
+                        font-size: 22px;
+                        line-height: 34px;
                     } 
                 }
                 @media only screen and (max-width: 992px) {
                     .title-42 {
-                        font-size: 28px;
-                        line-height: 40px;
-                    }
-                    .title-36 {
                         font-size: 26px;
                         line-height: 38px;
+                    }
+                    .title-36 {
+                        font-size: 28px;
+                        line-height: 34px;
                     }
                     .title-32 {
                         font-size: 26px;

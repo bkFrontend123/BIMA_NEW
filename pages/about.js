@@ -35,7 +35,6 @@ export default function About() {
                     <Row>
                         <Col md={10} className={`mx-auto`}>
                             <div className='commnHeading text-start'>
-                                <div className='polyBox border-primary bg-blueLight mb-md-4 mb-2 text-primary title-12 text-uppercase font-weight-700'>About Us</div>
                                 <div className='title-60 font-secondary mb-md-3 mb-2 text-primary font-weight-700'>Bima, <span className='text-yellow fst-italic'>Simplified</span></div>
                                 <p className='title-22 font-weight-500 text-primary mb-0'>We are committed to making Business Insurance Simple, Digital and Transparent</p>
                             </div>

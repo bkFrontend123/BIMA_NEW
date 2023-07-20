@@ -332,7 +332,7 @@ export default function MarineCargo_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/importMarineIcon.svg' width="80" height="80" alt="Import Marine Insurance" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Import Marine Insurance</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Import Marine Insurance</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>This policy provides comprehensive coverage for any kind of import, from any global location to any destination in India. The primary modes of transit covered under this policy typically include air and sea transport.</p>
                                                         </div>
                                                     </div>
@@ -341,7 +341,7 @@ export default function MarineCargo_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/exportMarineIcon.svg' width="80" height="80" alt="Export Marine Insurance" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Export Marine Insurance</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Export Marine Insurance</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Specifically designed for exporters, this policy offers protection for any form of export, emanating from any part of India to destinations worldwide. The key transit methods incorporated in this policy are air and sea transport.</p>
                                                         </div>
                                                     </div>
@@ -350,7 +350,7 @@ export default function MarineCargo_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/inlandMarineIcon.svg' width="80" height="80" alt="Inland Marine Insurance" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Inland Marine Insurance</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Inland Marine Insurance</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Catering to domestic transportation needs, this policy ensures coverage for the transfer of goods across India, predominantly by road and rail. This insurance type is ideal for mitigating risks associated with inland goods transportation.</p>
                                                         </div>
                                                     </div>
@@ -359,7 +359,7 @@ export default function MarineCargo_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/alopMarineIcon.svg' width="80" height="80" alt="ALOP Insurance" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>ALOP Insurance</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>ALOP Insurance</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>It stands for Advanced Loss of Profit and is a particular type of business interruption insurance. It relates to the financial consequences of a project delay due to the occurrence of material damage to critical equipment during shipment. It is also known by the various names like Delay in Start-up, and Project-Cargo Marine/Consequential loss</p>
                                                         </div>
                                                     </div>
@@ -368,7 +368,7 @@ export default function MarineCargo_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/eProductVoyageIcon.svg' width="80" height="80" alt="E-product Specific Voyage" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>E-product Specific Voyage</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>E-product Specific Voyage</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>This insurance covers any manufactured e-product or device or any component of the same, and other interests from various losses and damages, such as fire, collisions, earthquakes, and lightning during a specific voyage.</p>
                                                         </div>
                                                     </div>
@@ -377,7 +377,7 @@ export default function MarineCargo_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/agreementIcon.svg' width="80" height="80" alt="Open Cover Agreement" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Open Cover Agreement</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Open Cover Agreement</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>It is an agreement (not a policy) in which the insurer will accept responsibility for the insurance of all shipments for a fixed period, usually 12 months, within the terms of the cover. Here, the insured party does not need to arrange separate insurance for each individual shipment.</p>
                                                         </div>
                                                     </div>
@@ -386,7 +386,7 @@ export default function MarineCargo_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/marineLossIcon.svg' width="80" height="80" alt="Direct Loss" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Direct Loss</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Direct Loss</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Unlike other marine policies that cover the value of items, this policy covers the sales turnover of a company. In this case, the insured receives coverage for all transits required to achieve sales. In this policy, imports & customs duties, raw materials, consumables, inter-factory, inter-depot, and job worker movement are covered. Along with that, export transit and temporary storage at intermediary locations such as ports and C&F facilities are covered also. Therefore, an annual turnover policy can satisfy all the requirements of a marine cargo insurance policy.</p>
                                                         </div>
                                                     </div>
@@ -395,7 +395,7 @@ export default function MarineCargo_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/specificVoyageIcon.svg' width="80" height="80" alt="Specific Voyage Policy" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Specific Voyage Policy</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Specific Voyage Policy</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>It provides coverage for a specific single transit, from one location to another. It typically includes protection against various perils and risks that may occur during the transportation of goods. This policy concludes upon the journey's completion.</p>
                                                         </div>
                                                     </div>
@@ -404,7 +404,7 @@ export default function MarineCargo_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/annualPolicyIcon.svg' width="80" height="80" alt="Annual Policy" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Annual Policy</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Annual Policy</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>This policy is issued to cover marine cargo shipments from all potential perils for a period of 12 months.</p>
                                                         </div>
                                                     </div>
@@ -661,7 +661,6 @@ export default function MarineCargo_Insurance() {
                         <Row>
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Marine Cargo Examples</h3>
                                 </div>
                             </Col>
@@ -714,7 +713,6 @@ export default function MarineCargo_Insurance() {
                         <Row>
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Marine Cargo Insurance</h3>
                                 </div>
                             </Col>
@@ -783,8 +781,7 @@ export default function MarineCargo_Insurance() {
                     <Container>
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
-                                <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
+                                <h3 className={`title-42 font-secondary font-weight-700 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>
@@ -926,7 +923,10 @@ export default function MarineCargo_Insurance() {
                     font-size: 15px;
                     line-height: 22.5px;
                 }
-
+                .title-20 {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
                 @media only screen and (max-width: 1699px) {
                     .title-42 {
                         font-size: 38px;
@@ -937,8 +937,8 @@ export default function MarineCargo_Insurance() {
                         line-height: 36px;
                     }
                     .title-24 {
-                        font-size: 20px;
-                        line-height: 32px;
+                        font-size: 22px;
+                        line-height: 34px;
                     } 
                 }
                 @media only screen and (max-width: 992px) {

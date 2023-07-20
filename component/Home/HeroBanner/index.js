@@ -21,15 +21,39 @@ export default function HeroBanner(props) {
                     <p className={`BannerDescription font-primaryNormal font-weight-500 text-black`}>{description}</p>
                     <div className='homeBannerText-bottom'>
                       <div className='homeBannerText-bottomCard'>
-                        <i><Image src="/icons/simplifiedIcon.svg" width="33" height="20" alt="Simplified Business Icon" /></i>
+                        <i>
+                          <Image
+                            src="/icons/simplifiedIcon.svg"
+                            width={33}
+                            height={20}
+                            alt="Simplified Business Icon"
+                            loading="lazy"
+                          />
+                        </i>
                         <p className='homeBannerText-bottomCard-descrip text-primary font-weight-600 mb-0'>Simplified Business Insurance</p>
                       </div>
                       <div className='homeBannerText-bottomCard'>
-                        <i><Image src="/icons/supportHomeIcon.svg" width="34" height="34" alt="Support Icon" /></i>
+                        <i>
+                          <Image
+                            src="/icons/supportHomeIcon.svg"
+                            width={34}
+                            height={34}
+                            alt="Support Icon"
+                            loading="lazy"
+                          />
+                        </i>
                         <p className='homeBannerText-bottomCard-descrip text-primary font-weight-600 mb-0'>Easy 24*7 Claims Support</p>
                       </div>
                       <div className='homeBannerText-bottomCard'>
-                        <i><Image src="/icons/bestPriceIcon.svg" width="32" height="32" alt="Best Price Icon" /></i>
+                        <i>
+                          <Image
+                            src="/icons/bestPriceIcon.svg"
+                            width={32}
+                            height={32}
+                            alt="Best Price Icon"
+                            loading="lazy"
+                          />
+                        </i>
                         <p className='homeBannerText-bottomCard-descrip text-primary font-weight-600 mb-0'>20+ insurers with best prices</p>
                       </div>
                     </div>

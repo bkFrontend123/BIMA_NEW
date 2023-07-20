@@ -50,9 +50,9 @@ export default function Home() {
           <TrustedBusiness />
           {/* <Startup id="PRODUCT" /> */}
           <Partner />
-          <BusinessRisk />
-          <BusinessInsurance />
           <HowDo />
+          <BusinessInsurance />
+          <BusinessRisk />
           {/* <IndustryList /> */}
           <CompaniesReview customClass="homeReview" />
           <FaqQuestions />

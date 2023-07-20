@@ -334,7 +334,7 @@ export default function ProductLiability_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/worksIcon.svg' width="80" height="80" alt="Works on Claims-Made Basis" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Works on Claims-Made Basis</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Works on Claims-Made Basis</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Claims need to be initiated within the policy period. The incident triggering the claim must also happen within the policy’s coverage duration.</p>
                                                         </div>
                                                     </div>
@@ -343,7 +343,7 @@ export default function ProductLiability_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/dateIcon.svg' width="80" height="80" alt="Retroactive Date" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Retroactive Date</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Retroactive Date</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Your first policy’s start date is carried forward to subsequent policy renewals. Hence, you can initiate claims for incidents that occur post your first policy’s start date assuming that continuous coverage is maintained</p>
                                                         </div>
                                                     </div>
@@ -352,7 +352,7 @@ export default function ProductLiability_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/periodIcon.svg' width="80" height="80" alt="Insurance Period:" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Insurance Period:</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Insurance Period:</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>The insurance period spans from the retroactive date to the policy's termination date, providing coverage during this entire timeframe.</p>
                                                         </div>
                                                     </div>
@@ -578,7 +578,6 @@ export default function ProductLiability_Insurance() {
                         <Row>
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Product Liability Insurance Claims Example</h3>
                                 </div>
                             </Col>
@@ -643,7 +642,6 @@ export default function ProductLiability_Insurance() {
                         <Row>
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Product Liability Insurance</h3>
                                 </div>
                             </Col>
@@ -719,8 +717,7 @@ export default function ProductLiability_Insurance() {
                     <Container>
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
-                                <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
+                                <h3 className={`title-42 font-secondary font-weight-700 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>
@@ -865,7 +862,10 @@ export default function ProductLiability_Insurance() {
                     font-size: 15px;
                     line-height: 22.5px;
                 }
-
+                .title-20 {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
                 @media only screen and (max-width: 1699px) {
                     .title-42 {
                         font-size: 38px;
@@ -876,18 +876,18 @@ export default function ProductLiability_Insurance() {
                         line-height: 36px;
                     }
                     .title-24 {
-                        font-size: 20px;
-                        line-height: 32px;
+                        font-size: 22px;
+                        line-height: 34px;
                     } 
                 }
                 @media only screen and (max-width: 992px) {
                     .title-42 {
-                        font-size: 28px;
-                        line-height: 40px;
-                    }
-                    .title-36 {
                         font-size: 26px;
                         line-height: 38px;
+                    }
+                    .title-36 {
+                        font-size: 28px;
+                        line-height: 34px;
                     }
                     .title-32 {
                         font-size: 26px;

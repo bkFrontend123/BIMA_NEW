@@ -332,7 +332,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/fileIcon.svg' width="80" height="80" alt="File or program malfunctions" />
-                                                            <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>File or program malfunctions</h3>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>File or program malfunctions</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -340,7 +340,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/passwordIcon.svg' width="80" height="80" alt="Unauthorized password changes" />
-                                                            <p className='title-18 font-weight-500 text-black mt-2 m-0'>Unauthorized password changes</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Unauthorized password changes</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -348,7 +348,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/appearanceIcon.svg' width="80" height="80" alt="Appearance of unwanted software or spyware" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Appearance of unwanted software or spyware</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Appearance of unwanted software or spyware</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -356,7 +356,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/pluginIcon.svg' width="80" height="80" alt="Difficulty installing plugins" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Difficulty installing plugins</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Difficulty installing plugins</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -364,7 +364,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/scanningIcon.svg' width="80" height="80" alt="Random file scanning" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Random file scanning</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Random file scanning</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -372,7 +372,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/browserIcon.svg' width="80" height="80" alt="Unusual toolbars on your internet browser" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Unusual toolbars on your internet browser</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Unusual toolbars on your internet browser</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -380,7 +380,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/internetIcon.svg' width="80" height="80" alt="Persistent pop-ups while accessing the internet" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Persistent pop-ups while accessing the internet</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Persistent pop-ups while accessing the internet</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -408,7 +408,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/technologyIcon.svg' width="80" height="80" alt="Information Technology" />
-                                                            <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>Information Technology</h3>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Information Technology</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -416,7 +416,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/manufacturingIcon.svg' width="80" height="80" alt="Manufacturing" />
-                                                            <p className='title-18 font-weight-500 text-black mt-2 m-0'>Manufacturing</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Manufacturing</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -424,7 +424,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/financeIcon.svg' width="80" height="80" alt="Finance" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Finance</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Finance</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -432,7 +432,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/energyIcon.svg' width="80" height="80" alt="Energy" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Energy</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Energy</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -440,7 +440,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/consumerIcon.svg' width="80" height="80" alt="Consumer service" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Consumer services</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Consumer services</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -452,7 +452,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/damageIcon.svg' width="80" height="80" alt="Reputation damage" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Reputation damage</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Reputation damage</h3>
                                                             <p className='title-18 font-weight-500 text-black mt-2 mb-0'>A breach can harm your company's reputation, potentially leading to lost customers and decreased trust</p>
                                                         </div>
                                                     </div>
@@ -461,7 +461,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/finesIcon.svg' width="80" height="80" alt="Heavy fines" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Heavy fines</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Heavy fines</h3>
                                                             <p className='title-18 font-weight-500 text-black mt-2 mb-0'>If sensitive financial information is compromised, you may face substantial fines from credit and debit card companies.</p>
                                                         </div>
                                                     </div>
@@ -470,7 +470,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/transferIcon.svg' width="80" height="80" alt="False wire transfers" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>False wire transfers</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>False wire transfers</h3>
                                                             <p className='title-18 font-weight-500 text-black mt-2 mb-0'>Cybercriminals may attempt to make false wire transfers using your clients' online banking credentials if your computer system is hacked.</p>
                                                         </div>
                                                     </div>
@@ -507,7 +507,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/bLossIcon.svg' width="80" height="80" alt="Business loss compensation to clients" />
-                                                            <h3 className='title-18 font-weight-500 text-black mt-2 mb-0'>Business loss compensation to clients</h3>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Business loss compensation to clients</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -515,7 +515,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/feesIcon.svg' width="80" height="80" alt="Ransom fees for restoring stolen data" />
-                                                            <p className='title-18 font-weight-500 text-black mt-2 m-0'>Ransom fees for restoring stolen data</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Ransom fees for restoring stolen data</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -523,7 +523,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/forensicIcon.svg' width="80" height="80" alt="Cyber forensic investigation costs" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Cyber forensic investigation costs</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Cyber forensic investigation costs</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -531,7 +531,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/legalIcon.svg' width="80" height="80" alt="Legal attorney fees" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Legal attorney fees</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Legal attorney fees</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -539,7 +539,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/monitoringIcon.svg' width="80" height="80" alt="Credit monitoring expenses" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Credit monitoring expenses</p>
+                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Credit monitoring expenses</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -710,7 +710,6 @@ export default function Cyber_Insurance() {
                         <Row>
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Cyber Claims Examples</h3>
                                 </div>
                             </Col>
@@ -796,7 +795,6 @@ export default function Cyber_Insurance() {
                         <Row>
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Cyber Insurance</h3>
                                 </div>
                             </Col>
@@ -856,8 +854,7 @@ export default function Cyber_Insurance() {
                     <Container>
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
-                                <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
+                                <h3 className={`title-42 font-secondary font-weight-700 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>
@@ -993,13 +990,16 @@ export default function Cyber_Insurance() {
                 starContent="true"
             />
 
-            <style jsx scope>
+<style jsx scope>
                 {`
                 .title-15 {
                     font-size: 15px;
                     line-height: 22.5px;
                 }
-
+                .title-20 {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
                 @media only screen and (max-width: 1699px) {
                     .title-42 {
                         font-size: 38px;
@@ -1010,8 +1010,8 @@ export default function Cyber_Insurance() {
                         line-height: 36px;
                     }
                     .title-24 {
-                        font-size: 20px;
-                        line-height: 32px;
+                        font-size: 22px;
+                        line-height: 34px;
                     } 
                 }
                 @media only screen and (max-width: 992px) {

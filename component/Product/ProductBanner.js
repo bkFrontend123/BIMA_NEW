@@ -297,11 +297,23 @@ export default function ProductBanner(props) {
                         font-size: 24px;
                         font-weight: 400;
                     }
-                    .ribbonProduct{
+                    .ribbonProduct {
                         position: absolute;
-                        right: -36px;
-                        bottom: -6px;
+                        right: -43px;
+                        bottom: -7px;
                         width: 36px;
+                    }
+                    .dAndoBnr .ribbonProduct,
+                    .eAndoBnr .ribbonProduct,
+                    .cybrBnr .ribbonProduct,
+                    .gnrlBnr .ribbonProduct,
+                    .cntrctrBnr .ribbonProduct,
+                    .cntrctrPlantBnr .ribbonProduct,
+                    .erctnBnr .ribbonProduct {
+                        right: -36px;
+                    }
+                    .prdctLlbtyBnr .ribbonProduct {
+                        right: -38px;
                     }
                       @media (min-width:1700px) {
                         .ProductBanner-form {
@@ -317,10 +329,6 @@ export default function ProductBanner(props) {
                         .title-64{
                             font-size: 55px;
                             line-height: 55px;
-                         }
-                        .title20{
-                            font-size: 18px;
-                            line-height: 26px;
                          }
                      }
                     @media only screen and (max-width: 1199px) {
@@ -451,6 +459,18 @@ export default function ProductBanner(props) {
                             width: 24px;
                             right: -45px;
                             bottom: -5px;
+                        }
+                        .dAndoBnr .ribbonProduct,
+                        .eAndoBnr .ribbonProduct,
+                        .cybrBnr .ribbonProduct,
+                        .gnrlBnr .ribbonProduct,
+                        .cntrctrBnr .ribbonProduct,
+                        .cntrctrPlantBnr .ribbonProduct,
+                        .erctnBnr .ribbonProduct {
+                            right: -36px;
+                        }
+                        .prdctLlbtyBnr .ribbonProduct {
+                            right: -38px;
                         }
                         .ProductBannerRibbonCol .title-20 {
                             font-size: 15px;

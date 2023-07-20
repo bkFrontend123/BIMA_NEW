@@ -26,7 +26,6 @@ export default function Companies(props) {
           <div className={`row text-start text-center`}>
             <div className={`col-md-12 mx-auto`}>
               <div className='commnHeading'>
-                <div className='polyBox border-primary bg-blueLight text-primary title12 text-uppercase font-weight-600 mb-3'>Reviews by our Clients</div>
                 <div className='title-36 font-secondary mb-0 text-primary font-weight-700'>Trusted by <span className='text-yellow fst-italic'>500+ Clients</span> Across India</div>
                 {/* <div className=' text-primary font-weight-600 title16' >Our customers trust us.</div> */}
               </div>
@@ -64,7 +63,6 @@ export default function Companies(props) {
                   delay: 5000,
                   disableOnInteraction: false
                 }}
-
               >
                 {review.map((item) =>
                   <SwiperSlide key={item.id}>

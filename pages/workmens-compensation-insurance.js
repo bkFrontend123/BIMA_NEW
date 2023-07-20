@@ -332,7 +332,7 @@ export default function WorkmensCompensation_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/compensationCalculationIcon.svg' width="80" height="80" alt="Compensation Calculation" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Compensation Calculation</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Compensation Calculation</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>This policy considers factors like the employee's age, role, and average monthly wage for compensation calculation.</p>
                                                         </div>
                                                     </div>
@@ -341,7 +341,7 @@ export default function WorkmensCompensation_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/fixedRatesIcon.svg' width="80" height="80" alt="Fixed Rates" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Fixed Rates</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Fixed Rates</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Fixed minimum and maximum compensation rates apply for death and disability cases, subject to periodic reviews.</p>
                                                         </div>
                                                     </div>
@@ -350,7 +350,7 @@ export default function WorkmensCompensation_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/dependentCompensationIcon.svg' width="80" height="80" alt="Dependent Compensation" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Dependent Compensation</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Dependent Compensation</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>In the unfortunate event of an employee's death, their dependents become eligible for compensation from the employer.</p>
                                                         </div>
                                                     </div>
@@ -359,7 +359,7 @@ export default function WorkmensCompensation_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/employeeProtectionIcon.svg' width="80" height="80" alt="Employee Protection" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Employee Protection</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Employee Protection</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>The enforcement of the Employee Protection Assurance policy falls under the purview of the 'Social Security Division' of the Ministry of Labour & Employment.</p>
                                                         </div>
                                                     </div>
@@ -368,7 +368,7 @@ export default function WorkmensCompensation_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/implementationAssuranceIcon.svg' width="80" height="80" alt="Implementation Assurance" />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Implementation Assurance</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Implementation Assurance</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Each state government appoints Compensation Commissioners dedicated to the effective implementation of this assurance policy.</p>
                                                         </div>
                                                     </div>
@@ -511,7 +511,6 @@ export default function WorkmensCompensation_Insurance() {
                         <Row>
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Workman's Compensation Examples</h3>
                                 </div>
                             </Col>
@@ -566,7 +565,6 @@ export default function WorkmensCompensation_Insurance() {
                         <Row>
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Workmen Compensation Policy</h3>
                                 </div>
                             </Col>
@@ -672,8 +670,7 @@ export default function WorkmensCompensation_Insurance() {
                     <Container>
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
-                                <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
+                                <h3 className={`title-42 font-secondary font-weight-700 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>
@@ -815,7 +812,10 @@ export default function WorkmensCompensation_Insurance() {
                     font-size: 15px;
                     line-height: 22.5px;
                 }
-
+                .title-20 {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
                 @media only screen and (max-width: 1699px) {
                     .title-42 {
                         font-size: 38px;
@@ -826,8 +826,8 @@ export default function WorkmensCompensation_Insurance() {
                         line-height: 36px;
                     }
                     .title-24 {
-                        font-size: 20px;
-                        line-height: 32px;
+                        font-size: 22px;
+                        line-height: 34px;
                     } 
                 }
                 @media only screen and (max-width: 992px) {

@@ -109,9 +109,8 @@ export default function HowDo() {
           <div className={`row text-center `}>
             <div className={`col-md-12 mx-auto`}>
               <div className='commnHeading'>
-                <div className='polyBox border-primary bg-blueLight text-primary title12 text-uppercase font-weight-600 mb-3'>hassle free</div>
                 <div className='howDoTitle title-36 font-secondary text-primary font-weight-700'><span className="text-yellow fst-italic">How</span> it Works</div>
-                <p className='howDoSubTitle title-22 text-primary font-weight-500 mb-0'>Simple process to buy the most complex business insurance policies -<br/>developed by experts.</p>
+                <p className='howDoSubTitle title-22 text-primary font-weight-500 mb-0'>Simple 5-step process to get your comprehensive business insurance</p>
               </div>
             </div>
           </div>

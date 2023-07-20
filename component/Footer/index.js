@@ -34,6 +34,7 @@ export default function Footer(props) {
                         alt="Picture of the author"
                         width={400}
                         height={68}
+                        loading="lazy"
                       />
                     </Link>
                   </div>

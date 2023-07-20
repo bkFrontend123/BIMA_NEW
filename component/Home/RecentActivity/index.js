@@ -13,6 +13,10 @@ export default function RecentActivity() {
         { id: "ra2", img: "/team/priyalataPatra.png", title: "Priyalata Patra", date: "VP Product, Insurance Expert" },
         { id: "ra3", img: "/team/himaniDoshi.png", title: "Himani Doshi", date: "Insurance Expert" },
         { id: "ra4", img: "/team/ravikantSawant.png", title: "Ravikant Sawant", date: "Insurance Expert" },
+        { id: "ra1", img: "/team/tejasJain.png", title: "Tejas Jain", date: "CEO, Insurance Expert" },
+        { id: "ra2", img: "/team/priyalataPatra.png", title: "Priyalata Patra", date: "VP Product, Insurance Expert" },
+        { id: "ra3", img: "/team/himaniDoshi.png", title: "Himani Doshi", date: "Insurance Expert" },
+        { id: "ra4", img: "/team/ravikantSawant.png", title: "Ravikant Sawant", date: "Insurance Expert" },
     ])
 
     return (
@@ -23,13 +27,12 @@ export default function RecentActivity() {
                 <div className={`row text-center`}>
                     <div className={`col-md-8 mx-auto`}>
                         <div className='commnHeading ms-xxl-5'>
-                            <div className='polyBox border-primary bg-blueLight text-primary title12 text-uppercase font-weight-600 mb-3'>Our TEAM</div>
-                            <div className='title-36 font-secondary text-primary font-weight-600'>Meet your <span className='text-yellow fst-italic'>Expert Team</span></div>
+                            <div className='title-36 font-secondary text-primary font-weight-700'>Meet your <span className='text-yellow fst-italic'>Expert Team</span></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='RecentActivity-yellow mt-md-4'>
+            <div className='RecentActivity-yellow'>
                 <div className='container'>
                     <Swiper
                         modules={[Navigation, Pagination, Autoplay]}
@@ -39,13 +42,15 @@ export default function RecentActivity() {
                             disabledClass: "swiper-button-disabled"
                         }}
                         className={``}
-                        spaceBetween={20}
-                        loop="false"
-                        speed={500}
+                        slidesPerView={3}
+                        spaceBetween={30}
+                        loop="true"
+                        speed={1000}
                         autoplay={{
-                            delay: 0,
+                            delay: 5000,
                             disableOnInteraction: false
                         }}
+
                         breakpoints={{
                             // when window width is >= 640px
                             1399: {
@@ -58,23 +63,22 @@ export default function RecentActivity() {
                             },
                             992: {
                                 slidesPerView: 2,
-                                spaceBetween: 32,
+                                spaceBetween: 30,
                             },
                             0: {
                                 slidesPerView: 1,
                             },
-
                         }}
 
                     >
                         {recentActivity.map((item) =>
-                            <SwiperSlide key={item.id}>
-                                <div className='RecentActivity-card border-primary p-xl-2'>
-                                    <img className='img-fluid' src={item.img} />
-                                    <p className='title24 RecentActivity-cardTitle font-weight-600 mb-1 mt-2 text-primary'>{item.title}</p>
-                                    <p className='title16 RecentActivity-cardDate text-yellow3'>{item.date}</p>
-                                </div>
-                            </SwiperSlide>
+                        <SwiperSlide key={item.id}>
+                            <div className='RecentActivity-card border-primary p-xl-2'>
+                                <img className='img-fluid' src={item.img} />
+                                <p className='title24 RecentActivity-cardTitle font-weight-600 mb-1 mt-2 text-primary'>{item.title}</p>
+                                <p className='title16 RecentActivity-cardDate text-yellow3'>{item.date}</p>
+                            </div>
+                        </SwiperSlide>
                         )}
                     </Swiper>
                     <div className='divider d-none @d-lg-block bg-yellow2 w-100'></div>

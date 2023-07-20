@@ -176,7 +176,8 @@ function Navbar() {
                                                 alt="Bimakavach"
                                                 width={48}
                                                 height={48}
-                                                className='d-none d-md-block '
+                                                className='d-none d-md-block'
+                                                loading="lazy"
                                               />
                                               <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary @mt-md-3 font-weight-600 ms-md-2'>{item.title}</Link>
                                             </div>
@@ -202,7 +203,8 @@ function Navbar() {
                                                 alt="Bimakavach"
                                                 width={48}
                                                 height={48}
-                                                className='d-none d-md-block '
+                                                className='d-none d-md-block'
+                                                loading="lazy"
                                               />
                                               <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-md-2'>{item.title}</Link>
                                             </div>
@@ -224,7 +226,8 @@ function Navbar() {
                                                 alt="Bimakavach"
                                                 width={48}
                                                 height={48}
-                                                className='d-none d-md-block '
+                                                className='d-none d-md-block'
+                                                loading="lazy"
                                               />
                                               <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-md-2'>{item.title}</Link>
                                             </div>
@@ -248,7 +251,8 @@ function Navbar() {
                                                 alt="Bimakavach"
                                                 width={48}
                                                 height={48}
-                                                className='d-none d-md-block '
+                                                className='d-none d-md-block'
+                                                loading="lazy"
                                               />
                                               <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-md-2'>{item.title}</Link>
                                             </div>
@@ -271,7 +275,8 @@ function Navbar() {
                                                 alt="Bimakavach"
                                                 width={48}
                                                 height={48}
-                                                className='d-none d-md-block '
+                                                className='d-none d-md-block'
+                                                loading="lazy"
                                               />
                                               <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-md-2'>{item.title}</Link>
                                             </div>
@@ -565,7 +570,13 @@ function Navbar() {
                           <ul>
                             <li>
                               <i>
-                                <Image src="/icons/whatsapp_icon.svg" width="18" height="19" alt="Whatsapp" />
+                                <Image
+                                  src="/icons/whatsapp_icon.svg"
+                                  width={18}
+                                  height={19}
+                                  alt="Whatsapp"
+                                  loading="lazy"
+                                />
                               </i>
                               <div>
                                 <span>WhatApp us:</span>
@@ -574,7 +585,13 @@ function Navbar() {
                             </li>
                             <li>
                               <i>
-                                <Image src="/icons/call_fill_icon.svg" width="13" height="13" alt="Call" />
+                                <Image
+                                  src="/icons/call_fill_icon.svg"
+                                  width={13}
+                                  height={13}
+                                  alt="Call"
+                                  loading="lazy"
+                                />
                               </i>
                               <div>
                                 <span>Call us:</span>

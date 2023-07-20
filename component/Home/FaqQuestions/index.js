@@ -10,7 +10,6 @@ export default function FaqQuestions() {
             <div className={`row text-center`}>
                 <div className={`col-md-10 mx-auto`}>
                     <div className='commnHeading'>
-                        <div className='polyBox border-primary bg-blueLight text-primary title12 text-uppercase font-weight-600 mb-3'>Before You Ask</div>
                         <div className={`title-36 font-secondary mb-md-4 text-primary font-weight-700`}>Frequently Asked <span className="text-yellow fst-italic">Questions</span></div>
                     </div>
                     <div className='mt-4'>

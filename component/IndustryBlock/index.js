@@ -45,6 +45,7 @@ export default function IndustryBlock() {
                 alt="Get Business Insurance in Minutes"
                 width={30}
                 height={36}
+                loading="lazy"
               />
             </i> Get Business Insurance in Minutes</div>
           <div className='row'>
@@ -66,6 +67,7 @@ export default function IndustryBlock() {
                       alt="Bimakavach"
                       width={52}
                       height={52}
+                      loading="lazy"
                     />
                     <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
                       <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
@@ -95,6 +97,7 @@ export default function IndustryBlock() {
                       alt="Bimakavach"
                       width={52}
                       height={52}
+                      loading="lazy"
                     />
                     <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
                       <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
@@ -123,6 +126,7 @@ export default function IndustryBlock() {
                       alt="Bimakavach"
                       width={52}
                       height={52}
+                      loading="lazy"
                     />
                     <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
                       <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
@@ -151,6 +155,7 @@ export default function IndustryBlock() {
                       alt="Bimakavach"
                       width={52}
                       height={52}
+                      loading="lazy"
                     />
                     <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
                       <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
@@ -179,6 +184,7 @@ export default function IndustryBlock() {
                       alt="Bimakavach"
                       width={52}
                       height={52}
+                      loading="lazy"
                     />
                     <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
                       <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
@@ -194,7 +200,7 @@ export default function IndustryBlock() {
       <style jsx scope>
           {`
             .homeBannerProduct{
-              margin-top: 85px;
+              margin-top: 60px;
               padding: 50px;
               box-shadow: 0px 10px 40px 0px #D9D9D9;
               border: 4px dashed var(--vt-c-yellow);

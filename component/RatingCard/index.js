@@ -15,7 +15,7 @@ export default function RatingCard(props) {
                 <div className={`${style.rateTextDiv}`}>
                     <p><span>50+ years</span>  of collective insurance experience</p>
                     <i><Image src={unionIcon} width={20} height={20} alt="Star Icon" /></i>
-                    <p><span><span>₹</span> 5,000 Cr +</span> of cumulative risks insured</p>
+                    <p><span><span>₹</span>5,000 Cr+</span> of cumulative risks insured</p>
                 </div>
             </div>
         </>
