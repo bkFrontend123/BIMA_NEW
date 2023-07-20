@@ -163,31 +163,39 @@ function BusinessRisk() {
                                             modules={[Navigation, Pagination, Scrollbar, Autoplay]}
                                             navigation={false}
                                             // slidesPerView={"5"}
-                                            className={`businessRisk-slider my-2`}
+                                            className={`businessRisk-slider smoothSwiper my-2`}
                                             itemclass="mx-5"
                                             spaceBetween={30}
                                             slidesPerView={6.5}
                                             autowidth="true"
                                             infinite="true"
                                             loop="true"
-                                            speed={6000}
+                                            speed={6500}
                                             autoplay={{
-                                                delay: 500,
+                                                delay: 0,
                                                 disableOnInteraction: false
                                             }}
                                             breakpoints={{
-
                                                 1399: {
                                                     slidesPerView: 6.5,
                                                 },
                                                 1200: {
-                                                    slidesPerView: 4,
+                                                    slidesPerView: 5.5,
                                                 },
                                                 992: {
-                                                    slidesPerView: 3,
+                                                    slidesPerView: 4.5,
                                                 },
-                                                0: {
+                                                768: {
+                                                    slidesPerView: 3.5,
+                                                    spaceBetween: 20
+                                                },
+                                                576: {
+                                                    slidesPerView: 2.5,
+                                                    spaceBetween: 20
+                                                },
+                                                320: {
                                                     slidesPerView: 2,
+                                                    spaceBetween: 20
                                                 },
                                             }}
 
@@ -212,31 +220,39 @@ function BusinessRisk() {
                                         <Swiper
                                             modules={[Navigation, Pagination, Scrollbar, Autoplay]}
                                             // dir="rtl"
-                                            className={`businessRisk-slider businessRisk-sliderRTL my-2 `}
+                                            className={`businessRisk-slider businessRisk-sliderRTL smoothSwiper my-2 `}
                                             itemclass="mx-5"
                                             spaceBetween={30}
                                             slidesPerView={4.5}
                                             autowidth="true"
                                             infinite="true"
                                             loop="true"
-                                            speed={6000}
+                                            speed={5000}
                                             autoplay={{
                                                 delay: 0,
                                                 disableOnInteraction: false
                                             }}
                                             breakpoints={{
-                                                // when window width is >= 640px
                                                 1399: {
-                                                    slidesPerView: 4,
+                                                    slidesPerView: 6.5,
                                                 },
                                                 1200: {
-                                                    slidesPerView: 4,
+                                                    slidesPerView: 5.5,
                                                 },
                                                 992: {
-                                                    slidesPerView: 3,
+                                                    slidesPerView: 4.5,
                                                 },
-                                                0: {
+                                                768: {
+                                                    slidesPerView: 3.5,
+                                                    spaceBetween: 20
+                                                },
+                                                576: {
+                                                    slidesPerView: 2.5,
+                                                    spaceBetween: 20
+                                                },
+                                                320: {
                                                     slidesPerView: 2,
+                                                    spaceBetween: 20
                                                 },
                                             }}  
                                         >

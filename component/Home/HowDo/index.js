@@ -169,7 +169,7 @@ export default function HowDo() {
                 }}
                 slidesPerView={1.1}
                 spaceBetween={10}
-                loop={true}
+                loop="false"
                 modules={[Navigation, Pagination]}
                 className="howDo-swiper @px-5"
               >
@@ -325,7 +325,6 @@ export default function HowDo() {
                  min-height: 702px;
                  padding: 140px 100px;
                  border: 1px solid #ddd;
-              
               }
               @media (max-width: 575px) {
                 .howDo {

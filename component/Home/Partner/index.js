@@ -33,7 +33,6 @@ function Partner() {
                     <Swiper
                         modules={[Navigation, Pagination, Scrollbar, Autoplay]}
                         arrows="true"
-                       
                         className={`smoothSwiper`}
                         spaceBetween={40}
                         infinite="true"
@@ -50,14 +49,23 @@ function Partner() {
                             },
                             1200: {
                               slidesPerView: 4,
+                              spaceBetween: 30,
                             },
                             992: {
-                              slidesPerView: 2,
-                              spaceBetween: 20,
+                              slidesPerView: 4,
+                              spaceBetween: 30,
                             },
-                            0: {
-                              slidesPerView: 3,
-                              spaceBetween: 20,
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 20,
+                            },
+                            576: {
+                                slidesPerView: 3,
+                                spaceBetween: 20,
+                            },
+                            320: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
                             },
                           
                           }}
@@ -115,7 +123,7 @@ function Partner() {
                         }
                         .prtnrSlideCol img {
                             max-width: 100% !important;
-                            max-height: 30px !important;
+                            max-height: 50px !important;
                         }
                     } 
                 `}

@@ -95,15 +95,27 @@ function TrustedBusiness() {
               breakpoints={{
                 1399: {
                   slidesPerView: 7,
+                  spaceBetween: 40,
                 },
                 1200: {
                   slidesPerView: 6,
+                  spaceBetween: 40,
                 },
                 992: {
                   slidesPerView: 5,
+                  spaceBetween: 30,
                 },
-                0: {
-                  slidesPerView: 3,
+                768: {
+                  slidesPerView: 5,
+                  spaceBetween: 20,
+                },
+                576: {
+                  slidesPerView: 5,
+                  spaceBetween: 20,
+                },
+                320: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
                 },
 
               }}
@@ -168,7 +180,7 @@ function TrustedBusiness() {
               }
               .cmpnySlideCol img {
                 max-width: 100% !important;
-                max-height: 30px !important;
+                max-height: 50px !important;
               }
               .startupCols-cardBox{
                 margin-bottom: 30px;

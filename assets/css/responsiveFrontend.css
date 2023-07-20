@@ -77,4 +77,13 @@
     left: 20px;
     right: 20px;
   }
+  .copyright {
+    text-align: center;
+  }
+  .ftrLinks a:last-child {
+    margin-right: 0;
+  }
+  .footerSocial {
+    margin-top: 1rem;
+  }
 }

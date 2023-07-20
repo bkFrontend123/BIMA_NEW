@@ -57,7 +57,7 @@ export default function IndustryBlock() {
           </div>
           <div className='row g-4 liabilityInsurance'>
             {liabilityInsurance.map((item) =>
-              <div key={item.id} className="col-lg-3 col-6">
+              <div key={item.id} className="col-xl-3 col-lg-4 col-6">
                 <div className='onhoverAnimation'>
                   <div className={`homeBannerProduct-card d-lg-flex w-100 align-items-center ${item.class}`}>
                     <Image
@@ -86,7 +86,7 @@ export default function IndustryBlock() {
           </div>
           <div className='row g-4 assetInsurance'>
             {assetInsurance.map((item) =>
-              <div key={item.id} className="col-lg-3 col-6">
+              <div key={item.id} className="col-xl-3 col-lg-4 col-6">
                 <div className='onhoverAnimation'>
                   <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
                     <Image
@@ -115,7 +115,7 @@ export default function IndustryBlock() {
           </div>
           <div className='row g-4 engineeringInsurance'>
             {engineeringInsurance.map((item) =>
-              <div key={item.id} className="col-lg-3 col-6">
+              <div key={item.id} className="col-xl-3 col-lg-4 col-6">
                 <div className='onhoverAnimation'>
                   <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
                     <Image
@@ -143,7 +143,7 @@ export default function IndustryBlock() {
           </div>
           <div className='row g-4 g-lg-5 employeeBenefits'>
             {employeeBenefits.map((item) =>
-              <div key={item.id} className="col-lg-3 col-6">
+              <div key={item.id} className="col-xl-3 col-lg-4 col-6">
                 <div className='onhoverAnimation'>
                   <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
                     <Image
@@ -170,7 +170,7 @@ export default function IndustryBlock() {
           </div>
           <div className='row g-4 g-lg-5 marineInsurance'>
             {marineInsurance.map((item) =>
-              <div key={item.id} className="col-lg-3 col-6">
+              <div key={item.id} className="col-xl-3 col-lg-4 col-6">
                 <div className='onhoverAnimation'>
                   <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
                     <Image
@@ -311,7 +311,7 @@ export default function IndustryBlock() {
                 margin-top: 0;
               }
               .homeBannerProduct {
-                padding: 16px;
+                padding: 20px;
                 border-style: solid;
               }
               .homeBannerProduct-headingText {

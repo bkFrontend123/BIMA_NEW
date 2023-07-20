@@ -205,6 +205,11 @@ export default function HowGetStarted(props) {
                         margin-left: 30px;
                     }
                 }
+                @media only screen and (max-width:767px) {
+                    .getStarted-left {
+                        padding: 40px !important;
+                    }
+                }
                 @media only screen and (max-width: 575px) {
                     .container{
                         padding: 0;

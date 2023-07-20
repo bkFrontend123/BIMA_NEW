@@ -279,8 +279,8 @@ function Business() {
                 </div>
             </div>
             </div> */}
-                <div className="d-none d-md-block" style={{ height: "160px" }}></div>
-                <div className="d-blok d-md-none" style={{ height: "60px" }}></div>
+                <div className="d-none d-xl-block" style={{ height: "160px" }}></div>
+                <div className="d-block d-xl-none" style={{ height: "60px" }}></div>
 
                 <style jsx scope>
                     {`

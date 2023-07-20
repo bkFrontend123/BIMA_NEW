@@ -73,6 +73,10 @@ export default function HeroBanner(props) {
               padding-left: 30px;
               padding-right: 60px;
             }
+            .title60 {
+              font-size: 38px;
+              line-height: 50px;
+            }
             .BannerDescription {
               font-size: 20px;
               line-height: 32px;
@@ -147,7 +151,10 @@ export default function HeroBanner(props) {
               
             }
             @media only screen and (max-width: 1199px) {
-              
+              .homeBannerText {
+                padding-left: 0;
+                padding-right: 0;
+              }
             }
             @media only screen and (max-width: 991px) {
               .homeHero {

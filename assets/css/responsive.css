@@ -182,7 +182,9 @@
 }
 
 @media only screen and (max-width: 1199px) {
-
+  body.homePageBody .navbar-main .nabbarStrip {
+    padding: 20px 0;
+  }
   .navbar-main.bg-yellowLight {
     background-color: var(--mute1);
     padding-top: 0;
@@ -217,6 +219,10 @@
 
   .footer-listMenu-listALign ul {
     padding-left: 20px;
+  }
+  .tinder,
+  .tinder > div {
+    max-width: 100% !important;
   }
 }
 
@@ -439,8 +445,8 @@
   }
   .howDo-sliderBox-mob.howDo-sliderBox .howDo-sliderBoxImg{
     width: 80%;
-    right: 0;
-    bottom: 0;
+    right: -1px;
+    bottom: -1px;
   }
   .howDo-sliderBox-mob.howDo-sliderBox .howDoswiper-button-next a{
     display: inline !important;
@@ -497,6 +503,9 @@
     border: 0;
   }
 
+  .footerLogo {
+    margin-bottom: 16px;
+  }
   .footerLogo img {
     width: 250px;
   }
@@ -703,7 +712,7 @@
   }
 
   .footer-listMenu-list ul {
-    text-align: right;
+    text-align: left;
   }
 
   .footer-listMenu-listALign ul {

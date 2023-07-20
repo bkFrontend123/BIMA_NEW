@@ -760,6 +760,10 @@ body .swiper-scrollbar {
    z-index: -1;
 }
 
+.footerLogo a {
+   display: inline-block;
+}
+
 .ftrNwsltr {
    max-width: 450px;
 }

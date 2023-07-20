@@ -180,6 +180,9 @@ export default function Companies(props) {
                       margin-top: -70px;
                       position: relative;
                       z-index: 999999999;
+                      width: 110px;
+                      margin-left: auto;
+                      margin-right: auto;
                     }
 
 
