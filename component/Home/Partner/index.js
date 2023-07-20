@@ -9,20 +9,19 @@ function Partner() {
         { id: "p2", img: "/partners/cholaMs.svg" },
         { id: "p3", img: "/partners/digit.svg" },
         { id: "p4", img: "/partners/futureGenerali.svg" },
-        { id: "p5", img: "/partners/digit.svg" },
-        { id: "p6", img: "/partners/hdfcErgo.svg" },
-        { id: "p7", img: "/partners/iciciLombard.svg" },
-        { id: "p8", img: "/partners/iffcoTokio.svg" },
-        { id: "p9", img: "/partners/magmaHDI.svg" },
-        { id: "p10", img: "/partners/nationalInsurance.svg" },
-        { id: "p11", img: "/partners/rahejaQBE.svg" },
-        { id: "p12", img: "/partners/reliance.svg" },
-        { id: "p13", img: "/partners/royalSundaram.svg" },
-        { id: "p14", img: "/partners/sbiGeneral.svg" },
-        { id: "p15", img: "/partners/tataAIG.svg" },
-        { id: "p16", img: "/partners/indiaInsurance.svg" },
-        { id: "p17", img: "/partners/orientalInsurance.svg" },
-        { id: "p18", img: "/partners/unitedIndia.svg" },
+        { id: "p5", img: "/partners/hdfcErgo.svg" },
+        { id: "p6", img: "/partners/iciciLombard.svg" },
+        { id: "p7", img: "/partners/iffcoTokio.svg" },
+        { id: "p8", img: "/partners/magmaHDI.svg" },
+        { id: "p9", img: "/partners/nationalInsurance.svg" },
+        { id: "p10", img: "/partners/rahejaQBE.svg" },
+        { id: "p11", img: "/partners/reliance.svg" },
+        { id: "p12", img: "/partners/royalSundaram.svg" },
+        { id: "p13", img: "/partners/sbiGeneral.svg" },
+        { id: "p14", img: "/partners/tataAIG.svg" },
+        { id: "p15", img: "/partners/indiaInsurance.svg" },
+        { id: "p16", img: "/partners/orientalInsurance.svg" },
+        { id: "p17", img: "/partners/unitedIndia.svg" },
     ]
 
     return (
@@ -92,7 +91,7 @@ function Partner() {
                     }
                     .prtnrSlideCol {
                         position: relative;
-                        height: 85px;
+                        height: 75px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -103,7 +102,7 @@ function Partner() {
                         width: auto !important;
                         height: auto !important;
                         max-width: 90% !important;
-                        max-height: 90% !important;
+                        max-height: 80% !important;
                         margin: auto;
                         filter: grayscale(1);
                         opacity: 0.5;

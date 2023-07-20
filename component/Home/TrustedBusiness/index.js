@@ -162,7 +162,7 @@ function TrustedBusiness() {
         {` 
           .cmpnySlideCol {
             position: relative;
-            height: 85px;
+            height: 75px;
             display: flex;
             align-items: center;
             justify-content: center;
