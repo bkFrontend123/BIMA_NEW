@@ -5,13 +5,17 @@ import Image from 'next/image'
 import {Dropdown} from 'react-bootstrap';
 import AOS from 'aos';
 
-
 import CalendyModal from '../Modal/CalendyModal'
 
 import WhatsApp from '../Icons/WhatsApp'
 import DropdownArrow from '../Icons/DropdownArrow'
 
 import headerStyle from '../HeaderPlain/style.module.css'
+
+import { InlineWidget } from "react-calendly";
+import { PopupModal } from "react-calendly";
+import { PopupWidget } from "react-calendly";
+import { PopupButton } from "react-calendly";
 
 function Navbar() {
   const [menuToggle, setMenuToggle] = useState(false)
@@ -46,9 +50,9 @@ function Navbar() {
     //{ id: "a6", link: "/", img: "/productIcons/asset/hospitals_icon.svg", title: "Hospitals & Clinics" },
   ]
   const EngineeringInsurance = [
-    { id: "e1", link: "/contractor-all-risk-policy", img: "/productIcons/engineering/contractorsAllRisk_icon.svg", title: "Contractors All Risk" },
-    { id: "e2", link: "/erection-all-risk-insurance", img: "/productIcons/engineering/erectionAllRisk_icon.svg", title: "Erection All Risk" },
-    { id: "e1", link: "/contractor-plant-and-machinery-insurance", img: "/productIcons/engineering/contractorsPlant_icon.png", title: "Contractors Plant & Machinery" },
+    { id: "e1", link: "/", img: "/productIcons/engineering/contractorsAllRisk_icon.svg", title: "Contractors All Risk" },
+    { id: "e2", link: "/", img: "/productIcons/engineering/erectionAllRisk_icon.svg", title: "Erection All Risk" },
+    { id: "e1", link: "/", img: "/productIcons/engineering/contractorsPlant_icon.png", title: "Contractors Plant & Machinery" },
   ]
   const EmployeeInsurance = [
     { id: "eb1", link: "/group-personal-accident-insurance", img: "/productIcons/employeeBenefits/groupPersonal_icon.svg", title: "Group Personal Accident" },
@@ -541,7 +545,7 @@ function Navbar() {
                     <a className="nav-link" href="">Sign In</a>
                   </li>*/}
                 </ul>
-                <div className="nabbarStrip-btns d-flex flex-sm-row flex-column ms-auto " >
+                <div className="nabbarStrip-btns d-flex flex-sm-row flex-column ms-auto" >
                   <a className="btnCommon scheduleCallBtn me-md-4 btnBorder border-primary text-primary mb-2 mb-md-0 text-decoration-none bg-white" onClick={handleShowCalendy}> <img className='me-2' src='/icons/calender.svg' width="16px" /> <span> Schedule a call </span></a>
                   <div className={`hdrDrpdwn ${headerStyle.hdrDrpdwn} ${headerStyle.hdrTalkDrpdwn}`}>
                     <Dropdown>

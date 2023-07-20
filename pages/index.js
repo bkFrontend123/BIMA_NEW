@@ -1,7 +1,7 @@
-import React  from 'react'
+import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google' 
+import { Inter } from 'next/font/google'
 
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
@@ -23,14 +23,13 @@ import FaqQuestions from '../component/Home/FaqQuestions'
 //import Questions from '../component/Home/Questions'
 import { useEffect } from 'react'
 
-
 export default function Home() {
 
   // let homeBody = document.querySelector("body").classList.add("homePage")
   useEffect(() => {
     // document.body.classList.add = "homePage";
     document.body.classList.add("homePageBody")
-  },[]);
+  }, []);
 
   return (
     <>
@@ -42,26 +41,26 @@ export default function Home() {
         <link rel="canonical" href="" />
       </Head>
       <main>
-          <div className=''>
-            <HeroBanner 
-              title="Business Insurance matlab"
-              subtitle="BimaKavach"
-              description="Quick questions. Instant quotes. Top insurers."
-            />
-            <TrustedBusiness />
-            {/* <Startup id="PRODUCT" /> */}
-            <Partner />
-            <BusinessRisk />
-            <BusinessInsurance />
-            <HowDo />
-            {/* <IndustryList /> */}            
-            <CompaniesReview customClass="homeReview"/>                
-            <FaqQuestions />
-            {/* <Questions />   */}           
-            <BestBacked />                
-            <HowGetStarted />    
-            <RecentActivity />
-          </div>
+        <div className=''>
+          <HeroBanner
+            title="Business Insurance matlab"
+            subtitle="BimaKavach"
+            description="Quick questions. Instant quotes. Top insurers."
+          />
+          <TrustedBusiness />
+          {/* <Startup id="PRODUCT" /> */}
+          <Partner />
+          <BusinessRisk />
+          <BusinessInsurance />
+          <HowDo />
+          {/* <IndustryList /> */}
+          <CompaniesReview customClass="homeReview" />
+          <FaqQuestions />
+          {/* <Questions />   */}
+          <BestBacked />
+          <HowGetStarted />
+          <RecentActivity />
+        </div>
       </main>
       <Footer />
     </>
