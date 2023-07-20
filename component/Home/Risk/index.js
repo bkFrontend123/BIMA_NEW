@@ -289,7 +289,7 @@ function BusinessRisk() {
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, Autoplay]}
                             // dir="rtl"
-                            className={`businessRisk-slider smoothSwiper`}
+                            className={`businessRisk-slider businessRisk-sliderRTL smoothSwiper`}
                             itemclass="mx-5"
                             spaceBetween={30}
                             slidesPerView={4.5}
@@ -345,11 +345,14 @@ function BusinessRisk() {
                     .business-riskSliderBox{
                         margin-top: 62px;
                     }
+                    .business-riskSliderBox-row {
+                        border: 2px solid var(--vt-c-blue);
+                    }
                     .business-risk .businessRisk-sliderItem{
                         border: 2px solid #fff;
                         display: flex;
                         flex-direction: column;
-                         align-items: center;
+                        align-items: center;
                         padding: 10px 28px;
                     }
          
