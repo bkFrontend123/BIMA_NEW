@@ -16,17 +16,37 @@ function TrustedBusiness() {
     { id: "b9", img: "/clients/client9.png" },
     { id: "b10", img: "/clients/client10.png" },
     { id: "b11", img: "/clients/client11.png" },
-    { id: "b12", img: "/clients/client1.png" },
-    { id: "b13", img: "/clients/client2.png" },
-    { id: "b14", img: "/clients/client3.png" },
-    { id: "b15", img: "/clients/client4.png" },
-    { id: "b16", img: "/clients/client5.png" },
-    { id: "b17", img: "/clients/client6.png" },
-    { id: "b18", img: "/clients/client7.png" },
-    { id: "b19", img: "/clients/client8.png" },
-    { id: "b20", img: "/clients/client9.png" },
-    { id: "b21", img: "/clients/client10.png" },
-    { id: "b22", img: "/clients/client11.png" },
+    { id: "b12", img: "/clients/client12.svg" },
+    { id: "b13", img: "/clients/client13.svg" },
+    { id: "b14", img: "/clients/client14.svg" },
+    { id: "b15", img: "/clients/client15.svg" },
+    { id: "b16", img: "/clients/client16.svg" },
+    { id: "b17", img: "/clients/client17.svg" },
+    { id: "b18", img: "/clients/client18.svg" },
+    { id: "b19", img: "/clients/client19.svg" },
+    { id: "b20", img: "/clients/client20.svg" },
+    { id: "b21", img: "/clients/client21.svg" },
+    { id: "b22", img: "/clients/client1.png" },
+    { id: "b23", img: "/clients/client2.png" },
+    { id: "b24", img: "/clients/client3.png" },
+    { id: "b25", img: "/clients/client4.png" },
+    { id: "b26", img: "/clients/client5.png" },
+    { id: "b27", img: "/clients/client6.png" },
+    { id: "b28", img: "/clients/client7.png" },
+    { id: "b29", img: "/clients/client8.png" },
+    { id: "b30", img: "/clients/client9.png" },
+    { id: "b31", img: "/clients/client10.png" },
+    { id: "b32", img: "/clients/client11.png" },
+    { id: "b33", img: "/clients/client12.svg" },
+    { id: "b34", img: "/clients/client13.svg" },
+    { id: "b35", img: "/clients/client14.svg" },
+    { id: "b36", img: "/clients/client15.svg" },
+    { id: "b37", img: "/clients/client16.svg" },
+    { id: "b38", img: "/clients/client17.svg" },
+    { id: "b39", img: "/clients/client18.svg" },
+    { id: "b40", img: "/clients/client19.svg" },
+    { id: "b41", img: "/clients/client20.svg" },
+    { id: "b42", img: "/clients/client21.svg" },
   ]
   const params = {
     // direction: 'horizontal',
@@ -153,7 +173,7 @@ function TrustedBusiness() {
             width: auto !important;
             height: auto !important;
             max-width: 90% !important;
-            //max-height: 90% !important;
+            max-height: 90% !important;
             margin: auto;
             filter: grayscale(1);
             opacity: 0.5;
