@@ -206,9 +206,7 @@ function Navbar() {
                                         </div>
                                       )}
                                     </div>
-                                  </div>
-                                  <div className='col-md-4'>
-                                    {/*<div className='mega-menuBox-title'>
+                                    <div className='mega-menuBox-title mt-4'>
                                       <div className='title-24 font-weight-600 text-primary fst-italic'>Engineering</div>
                                       <hr className='bg-gray mb-md-3 my-2' />
                                     </div>
@@ -230,7 +228,9 @@ function Navbar() {
                                         </div>
                                       )}
                                     </div>
-                                    <div className='mega-menuBox-title'>
+                                  </div>
+                                  <div className='col-md-4'>
+                                    {/*<div className='mega-menuBox-title'>
                                       <div className='title-24 font-weight-600 text-primary fst-italic'>Employee</div>
                                       <hr className='bg-gray mb-md-3 my-2' />
                                     </div>

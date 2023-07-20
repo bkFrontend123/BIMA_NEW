@@ -37,13 +37,13 @@ export default function RecentActivity() {
                             nextEl: ".recent-swiper-button-next",
                             prevEl: ".recent-swiper-button-prev",
                             disabledClass: "swiper-button-disabled"
-                            }}
+                        }}
                         className={``}
                         spaceBetween={20}
-                        loop="true"
-                        speed={1000}
+                        loop="false"
+                        speed={500}
                         autoplay={{
-                            delay: 5000,
+                            delay: 0,
                             disableOnInteraction: false
                         }}
                         breakpoints={{

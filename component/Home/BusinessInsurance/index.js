@@ -187,7 +187,7 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><img src='/tickTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                 </tr>
@@ -202,7 +202,7 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><img src='/tickTrans.svg' /><span className='opacity-0 d-inline d-md-none'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>

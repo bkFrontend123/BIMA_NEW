@@ -491,7 +491,7 @@
   }
 
   .backedBest .backedBest-card {
-    min-height: 100px;
+    height: 70px;
   }
 
   .footer {
@@ -759,9 +759,6 @@
  }
  .aboutCompany-bottom .title20 {
   font-size: 12px;
-}
-  .howDo-sliderBox .howDo-sliderBoxText{
-    
   }
   .howDoSliderBox{
     padding-right: 0;
@@ -798,6 +795,12 @@
       font-size: 14px;
       line-height: 20px;
       color: #000 !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footerSocial {
+    justify-content: center;
   }
 }
 

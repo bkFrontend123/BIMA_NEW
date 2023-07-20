@@ -17,13 +17,6 @@ export default function BestBacked(props) {
         { id: "b2", img: "/backBest2.png" },
         { id: "b3", img: "/backBest3.png" },
         { id: "b4", img: "/backBest4.png" },
-        { id: "b5", img: "/backBest3.png" },
-        { id: "b6", img: "/backBest2.png" },
-        { id: "b7", img: "/backBest1.png" },
-        { id: "b8", img: "/backBest2.png" },
-        { id: "b9", img: "/backBest3.png" },
-        { id: "b10", img: "/backBest4.png" },
-
     ]) 
     return (
         <>
@@ -32,7 +25,7 @@ export default function BestBacked(props) {
                     <div className={`col-md-8 mx-auto`}>
                         <div className='commnHeading'>
                             <div className='polyBox border-primary bg-blueLight text-primary title12 text-uppercase font-weight-600 mb-3'>Our Investors</div>
-                            <div className={`title-36 font-secondary mb-md-4 text-primary font-weight-700 ${props.titleClass}`}>Backed by <span className="text-yellow fst-italic">The Best</span></div>
+                            <div className={`title-36 font-secondary mb-4 text-primary font-weight-700 ${props.titleClass}`}>Backed by <span className="text-yellow fst-italic">The Best</span></div>
                         </div>
                     </div>
                 </div>
@@ -42,10 +35,10 @@ export default function BestBacked(props) {
                             modules={[Navigation, Pagination, Autoplay]}
                             arrows="true"
                             // navigation="true"
-                            className={`smoothSwiper`}
+                            className={``}
                             slidesPerView={5}
-                            loop="true"
-                            speed={2000}
+                            loop="false"
+                            speed={3000}
                             autoplay={{
                                 delay: 0,
                                 disableOnInteraction: false
@@ -61,9 +54,12 @@ export default function BestBacked(props) {
                                   slidesPerView: 4,
                                 },
                                 992: {
-                                  slidesPerView: 1,
+                                  slidesPerView: 2,
                                 },
-                              0: {
+                                768: {
+                                    slidesPerView: 2,
+                                },
+                                0: {
                                   slidesPerView: 2,
                                   spaceBetween: 15
                                 },
@@ -82,7 +78,7 @@ export default function BestBacked(props) {
                     </div>
                 </div>
                 <div className="d-none d-md-block" style={{height: "90px"}}></div>
-                <div className="d-blok d-md-none" style={{height: "20px"}}></div>
+                <div className="d-blok d-md-none" style={{height: "40px"}}></div>
                
             </div>
             <style jsx scope>

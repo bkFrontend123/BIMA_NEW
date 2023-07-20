@@ -462,12 +462,14 @@
 
 @media (max-width: 575px) {
     .productStartupListSec {
-        margin: 0 -20px 120px -20px;
+        margin: 0 -20px 40px -20px;
     }
     .productStartupIcon {
         right: 40px;
         bottom: -75px;
         width: 140px;
+        position: static;
+        margin: 30px auto 0 auto;
     }
     .ProductList li {
         margin-right: 6px;
