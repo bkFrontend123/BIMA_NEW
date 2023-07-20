@@ -353,11 +353,10 @@ function BusinessRisk() {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        padding: 10px 28px;
+                        padding: 10px 24px;
                     }
-         
                     
-                     .business-risk .businessRisk-sliderItem img{
+                    .business-risk .businessRisk-sliderItem img{
                         height: 35px;
                         margin-bottom: 10px;
                      }
