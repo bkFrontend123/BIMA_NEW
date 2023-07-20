@@ -240,7 +240,7 @@ export default function About() {
                     }
                     .abtCntntMedia i {
                         position: relative;
-                        display: flex;
+                        //display: flex;
                         filter: grayscale(1);
                         height: 350px;
                         transition: all 0.3s ease 0s;
@@ -248,7 +248,7 @@ export default function About() {
                     }
                     .abtCntntMedia i img {
                         width: 100%;
-                        object-fit: cover;
+                        //object-fit: cover;
                     }
                     .abtCntntMedia:hover i {
                         filter: grayscale(0);

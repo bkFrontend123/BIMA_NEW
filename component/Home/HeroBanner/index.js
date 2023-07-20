@@ -223,7 +223,7 @@ export default function HeroBanner(props) {
               }
               .homeBannerText-bottomCard-descrip {
                 font-size: 15px;
-                line-height: 22px;
+                line-height: 20px;
               }
               .homeBannerText-bottomCard i {
                 //justify-content: center;
