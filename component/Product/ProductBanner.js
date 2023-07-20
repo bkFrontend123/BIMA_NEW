@@ -116,7 +116,7 @@ export default function ProductBanner(props) {
                         left: 0;
                         top: 0;
                         right: 0;
-                        height: 150%;
+                        height: 100%;
                         z-index: -1;
                     }
                     .dAndoBnr {

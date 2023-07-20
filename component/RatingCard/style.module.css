@@ -91,6 +91,13 @@
         font-size: 14px;
         line-height: 24px;
     }
+    .rateTextDiv p {
+        display: block;
+    }
+    .rateTextDiv p > span {
+        font-size: 22px;
+        display: block;
+    }
     .rateStars {
         gap: 0.1rem;
     }
