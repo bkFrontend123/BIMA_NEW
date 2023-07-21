@@ -206,7 +206,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Contractor’s Plant and Machinery Insurance"
-                        description="A contractor’s plant and machinery insurance policy helps protect contractors, machinery owners, or investors from potential damage to their equipment."
+                        description="Contractor's plant and machinery insurance safeguards contractors, machinery owners, and investors from equipment damage, offering financial compensation."
                         insuranceWorth="3 Crore"
                         insuranceAmount="15,000"
                         productImgSrc={productImage}
@@ -622,14 +622,14 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                 title="What perils are covered under the contractor’s plant and machinery insurance?"
                                 content={[<>
                                     <span>The typical perils that may be covered under CPM insurance include:</span>
-                                    <ul className={`${productStyle.listData}`}>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
                                         <li>Accidental damage</li>
                                         <li>Earthquake</li>
                                         <li>Fire and lightning</li>
                                         <li>Theft and burglary</li>
                                         <li>Flood and inundation</li>
                                         <li>Storms, cyclones, and tempests</li>
-                                        <li>Damage caused by intentional acts of vandalism, sabotage, or malicious actions by third Parties</li>
+                                        <li>Damage caused by intentional acts of vandalism, sabotage, or malicious actions by third parties</li>
                                     </ul>
                                 </>]}
                             />

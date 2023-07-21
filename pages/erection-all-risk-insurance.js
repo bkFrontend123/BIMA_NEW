@@ -206,7 +206,7 @@ export default function ErectionAllRisk_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Erection All Risk Policy"
-                        description="The erection all risk policy (EAR) covers any loss or damage when installing machinery or equipment in a factory or office."
+                        description="Erection All Risks insurance offers financial coverage for property loss or damage during construction until project completion."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="7,000"
                         productImgSrc={productImage}
@@ -539,7 +539,7 @@ export default function ErectionAllRisk_Insurance() {
                                 title="What is the difference between CAR and EAR Policies?"
                                 content={[<>
                                     <span>CAR coverage typically protects constructions or contractors from all risks and is mostly utilized for the movement of debris and concrete building activity. CAR is better suited for civil construction projects such as buildings, bridges, roads, and ports.</span>
-                                    <span>On the other hand, EAR coverage is taken while installing machinery and equipment. EAR is more suited to engineering facilities and other construction projects that include erections and installations. EAR insurance policies, for example, cover the development of power plants, gas processing facilities, and other facilities.</span>
+                                    <span className='mt-3 d-block'>On the other hand, EAR coverage is taken while installing machinery and equipment. EAR is more suited to engineering facilities and other construction projects that include erections and installations. EAR insurance policies, for example, cover the development of power plants, gas processing facilities, and other facilities.</span>
                                 </>]}
                             />
                             <Accordion
@@ -564,11 +564,15 @@ export default function ErectionAllRisk_Insurance() {
                             />
                             <Accordion
                                 title="Is there any specific time limit set for submitting claims under the erection all policy?"
+                                content="Yes, each insurer has set up a deadline for submitting claim documentation. So, it is usually advisable to submit the documents as soon as they become available. The sooner you submit all the necessary paperwork, the sooner you will receive your claim."
+                            />
+                            <Accordion
+                                title="What are the documents required for filing a claim under the erection all-risk policy?"
                                 content={[<>
                                     <span>Here are some common documents that are typically required while filing an EAR claim:</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>
                                         <li>Detailed RFQ (Request for Quotation)</li>
-                                        <li>Details related to the Principal, Contractor, Sub-contractor</li>
+                                        <li>Details related  to the Principal, Contractor, Sub-contractor</li>
                                         <li>Estimated cost of the project</li>
                                         <li>Projects start date and end date, including the Bar chart</li>
                                         <li>Details related to Testing for EAR projects</li>
@@ -583,7 +587,7 @@ export default function ErectionAllRisk_Insurance() {
                             />
                             <Accordion
                                 title="Who can be insured under the EAR Policy?"
-                                content="Both contractors, as well as employers, can be insured in this policy either individually or in joint names. Several parties that can be insured under this policy include general contractors, subcontractors, equipment suppliers & manufacturers, and also the buyer or the owner."
+                                content="Both contractors, as well as employers, can be insured in this policy either individually or in joint names. Several parties that can be insured under this policy include general contractors, subcontractors,  equipment suppliers & manufacturers, and also the buyer or the owner."
                             />
                             <Accordion
                                 title="How is the premium computed for the erection all risk policy?"
@@ -602,11 +606,11 @@ export default function ErectionAllRisk_Insurance() {
                                 content={[<>
                                     <span>Here is how premium is calculated:</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>
-                                        <li>Sum Insured - The higher the sum insured, the higher the premium; and vice versa.</li>
-                                        <li>Project Duration - A longer installation period will result in a higher premium.</li>
-                                        <li>Type of Project: Projects with higher risks, such as large-scale infrastructure developments or projects involving environmental and location risk, may attract higher premium</li>
-                                        <li>Testing Period - As soon as the new machinery is installed, it is tested before being handed over to its owners. This period is used to calculate the premium.</li>
-                                        <li>Insureds seek voluntary access - A voluntary excess option, if availed as part of the policy, may result in a reduction in premiums.</li>
+                                        <li><span className="font-weight-700">Sum Insured</span> - The higher the sum insured, the higher the premium; and vice versa.</li>
+                                        <li><span className="font-weight-700">Project Duration</span> - A longer installation period will result in a higher premium.</li>
+                                        <li><span className="font-weight-700">Type of Project</span> - Projects with higher risks, such as large-scale infrastructure developments or projects involving environmental and location risk, may attract higher premium</li>
+                                        <li><span className="font-weight-700">Testing Period</span> - As soon as the new machinery is installed, it is tested before being handed over to its owners. This period is used to calculate the premium.</li>
+                                        <li><span className="font-weight-700">Insureds seek voluntary access</span> - A voluntary excess option, if availed as part of the policy, may result in a reduction in premiums.</li>
                                     </ul>
                                 </>]}
                             />

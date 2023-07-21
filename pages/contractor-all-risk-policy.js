@@ -206,7 +206,7 @@ export default function ContractorAllRisk_Policy() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Contractor’s All Risk Policy"
-                        description="Contractor's all risk Insurance is a type of coverage that protects contractors, architects, engineers, and financiers involved in construction projects."
+                        description="Contractor's all risk Insurance shields contractors and other stakeholders involved in the projet, from financial losses due to construction accidents and damages."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="7,000"
                         productImgSrc={productImage}
@@ -613,10 +613,10 @@ export default function ContractorAllRisk_Policy() {
                                 content="Though there is no specific law or regulation that mandates contractors to have an All Risk Insurance (CAR insurance) policy, in various cases the financier and the project assigner do ask the contractor to have a CAR policy in place before the project work inception. So, it is often recommended that contractors obtain CAR insurance. Construction projects involve various risks, including damage to the site, materials, and third-party liabilities. It can provide financial protection to the contractor in the event of accidents, natural disasters, theft, or other unforeseen circumstances during the construction process."
                             />
                             <Accordion
-                                title="Why is contractor all risk policy important?"
+                                title="Why is the contractor all risk policy important?"
                                 content={[<>
                                     <span>Construction projects involve significant investments in materials, equipment, and labor. The CAR policy provides financial protection to contractors and project owners by covering the potential losses or damages that can occur during the construction phase. It helps mitigate the financial risks associated with accidents, natural disasters, theft, vandalism, and other unforeseen events. Thus, this policy can provide contractors with peace of mind, knowing that their project is protected in the event of an accident or damage. This can help contractors to focus on their work and avoid worrying about the financial implications of such incidents.</span>
-                                    <span className='mt-3 d-block'>Many clients may require contractors to have a CAR policy in place before they will award a contract. This is because they want to ensure that their project is protected in the event of an accident or damage"</span>
+                                    <span className='mt-3 d-block'>Many clients may require contractors to have a CAR policy in place before they will award a contract. This is because they want to ensure that their project is protected in the event of an accident or damage.</span>
                                 </>]}
                             />
                             <Accordion
@@ -641,7 +641,7 @@ export default function ContractorAllRisk_Policy() {
                                 </>]}
                             />
                             <Accordion
-                                title="In which risks does contractor's all risk policy not apply?"
+                                title="In which risks does the contractor's all risk policy not apply?"
                                 content={[<>
                                     <span>The contractor's All Risk Policy (CAR) does not typically apply to the following risks. However, some of these perils can be covered under certain conditions with an additional premium.</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>
