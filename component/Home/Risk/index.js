@@ -382,7 +382,7 @@ function BusinessRisk() {
                       @media only screen and (max-width: 575px) {
                         .business-riskSliderBox {
                             margin-top: 50px;
-                            width: calc(100% - 40px);
+                            width: 100%;
                         }
                         .title-36{
                             font-size: 26px;

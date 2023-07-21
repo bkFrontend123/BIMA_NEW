@@ -22,9 +22,9 @@ export default function IndustryBlock() {
     //{ id: "a6", titleLink: "/", img: "/productIcons/asset/hospitals_icon.svg", title: "Hospitals", subtitle: "Clinics" },
   ]
   const engineeringInsurance = [
-    { id: "e1", titleLink: "/", img: "/productIcons/engineering/contractorsAllRisk_icon.svg", title: "Contractors", subtitle: "All Risk" },
-    { id: "e2", titleLink: "/", img: "/productIcons/engineering/erectionAllRisk_icon.svg", title: "Erection", subtitle: "All Risk" },
-    { id: "e3", titleLink: "/", img: "/productIcons/engineering/contractorsPlant_icon.png", title: "Contractors Plant", subtitle: "& Machinery" },
+    { id: "e1", titleLink: "/contractor-all-risk-policy", img: "/productIcons/engineering/contractorsAllRisk_icon.svg", title: "Contractors", subtitle: "All Risk" },
+    { id: "e2", titleLink: "/erection-all-risk-insurance", img: "/productIcons/engineering/erectionAllRisk_icon.svg", title: "Erection", subtitle: "All Risk" },
+    { id: "e3", titleLink: "/contractor-plant-and-machinery-insurance", img: "/productIcons/engineering/contractorsPlant_icon.png", title: "Contractors Plant", subtitle: "& Machinery" },
   ]
   const employeeBenefits = [
     { id: "eb1", titleLink: "/group-personal-accident-insurance", img: "/productIcons/employeeBenefits/groupPersonal_icon.svg", title: "Group Personal", subtitle: "Accident" },

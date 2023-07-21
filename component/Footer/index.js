@@ -131,13 +131,13 @@ export default function Footer(props) {
                       <ul className="list-group list-group-borderless bg-transparent">
                         <li className="list-group-item text-yellow title20 font-weight-600 mt-3">Engineering</li>
                         <li className="list-group-item">
-                          <span className='title18 font-weight-400'>Contractors All Risk</span>
+                          <Link href="/contractor-all-risk-policy" className='title18 font-weight-400'>Contractors All Risk</Link>
                         </li>
                         <li className="list-group-item">
-                          <span className='title18 font-weight-400'>Erection All Risk</span>
+                          <Link href="/erection-all-risk-insurance" className='title18 font-weight-400'>Erection All Risk</Link>
                         </li>
                         <li className="list-group-item">
-                          <span className='title18 font-weight-400'>Contractors Plant & Machinery</span>
+                          <Link href="/contractor-plant-and-machinery-insurance" className='title18 font-weight-400'>Contractors Plant & Machinery</Link>
                         </li>
                       </ul>
                     </div>

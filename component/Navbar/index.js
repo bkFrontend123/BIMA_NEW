@@ -12,11 +12,6 @@ import DropdownArrow from '../Icons/DropdownArrow'
 
 import headerStyle from '../HeaderPlain/style.module.css'
 
-import { InlineWidget } from "react-calendly";
-import { PopupModal } from "react-calendly";
-import { PopupWidget } from "react-calendly";
-import { PopupButton } from "react-calendly";
-
 function Navbar() {
   const [menuToggle, setMenuToggle] = useState(false)
   const [menuToggleList, setMenuToggleList] = useState("")
@@ -50,9 +45,9 @@ function Navbar() {
     //{ id: "a6", link: "/", img: "/productIcons/asset/hospitals_icon.svg", title: "Hospitals & Clinics" },
   ]
   const EngineeringInsurance = [
-    { id: "e1", link: "/", img: "/productIcons/engineering/contractorsAllRisk_icon.svg", title: "Contractors All Risk" },
-    { id: "e2", link: "/", img: "/productIcons/engineering/erectionAllRisk_icon.svg", title: "Erection All Risk" },
-    { id: "e1", link: "/", img: "/productIcons/engineering/contractorsPlant_icon.png", title: "Contractors Plant & Machinery" },
+    { id: "e1", link: "/contractor-all-risk-policy", img: "/productIcons/engineering/contractorsAllRisk_icon.svg", title: "Contractors All Risk" },
+    { id: "e2", link: "/erection-all-risk-insurance", img: "/productIcons/engineering/erectionAllRisk_icon.svg", title: "Erection All Risk" },
+    { id: "e1", link: "/contractor-plant-and-machinery-insurance", img: "/productIcons/engineering/contractorsPlant_icon.png", title: "Contractors Plant & Machinery" },
   ]
   const EmployeeInsurance = [
     { id: "eb1", link: "/group-personal-accident-insurance", img: "/productIcons/employeeBenefits/groupPersonal_icon.svg", title: "Group Personal Accident" },
