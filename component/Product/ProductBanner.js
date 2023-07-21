@@ -16,7 +16,7 @@ export default function ProductBanner(props) {
                             <div className='col-lg-6 col-xxl-6'>
                                 <div className='ProductBannerText'>
                                     <h1 className='title-60 ProductBannerTextTitle text-primary font-weight-700 font-secondary'>{title}</h1>
-                                    <p className='ProductBannerTextDescrip title20 text-black font-primaryNormal font-weight-500'>
+                                    <p className='ProductBannerTextDescrip title18 text-black font-primaryNormal font-weight-500'>
                                         {description}
                                     </p>
                                     <div className='ProductBannerRibbonOuter position-relative'>
