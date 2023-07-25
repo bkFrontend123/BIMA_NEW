@@ -157,9 +157,8 @@ export default function DAndO_Flow() {
     return (
         <>
             <Head>
-                <title>D&O Insurance | BimaKavach Insurance for Directors and Officers</title>
+                <title>Directors' & Officers' Insurance (D&O) - At an Affordable Price</title>
                 <meta name="description" content="" />
-                <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain

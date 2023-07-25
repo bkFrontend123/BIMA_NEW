@@ -194,9 +194,8 @@ export default function MarineCargo_Insurance() {
     return (
         <>
             <Head>
-                <title>Marine Cargo Insurance | BimaKavach Insurance for Marine Cargo</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>Marine Cargo Insurance - Get Quote in Minutes</title>
+                <meta name="description" content="Marine Cargo Insurance protects your cargo during transit against damage. Get customized quotes for your business. Instant reply. 24*7 claim support. Expert underwriting." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />

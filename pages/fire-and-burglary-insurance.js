@@ -194,9 +194,8 @@ export default function FireAndBurglary_Insurance() {
     return (
         <>
             <Head>
-                <title>Fire Insurance | BimaKavach Insurance for Fire</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>Fire Insurance - Instant Quotes and 24*7 Claim Support</title>
+                <meta name="description" content="Fire Insurance safeguards the property and its belonging from allied perils. Get customized quotes at an affordable price at BimaKavach. 24*7 claim support." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />

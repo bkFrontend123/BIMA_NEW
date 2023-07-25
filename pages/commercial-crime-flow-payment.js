@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState  } from 'react'
 import { useRouter } from 'next/router';
+import Head from 'next/head'
 import Link from 'next/link'
 
 import { Container, Row, Col, Form, Button, ProgressBar, ToastContainer } from 'react-bootstrap';
@@ -68,6 +69,11 @@ export default function CommercialCrime_Flow_Payment() {
 
     return (
         <>
+            <Head>
+                <title>Commercial Crime Insurance Quotes - BimaKavach</title>
+                <meta name="description" content="" />
+                <link rel="canonical" href="" />
+            </Head>
             <HeaderPlain
                 talkExpert="true"
             />

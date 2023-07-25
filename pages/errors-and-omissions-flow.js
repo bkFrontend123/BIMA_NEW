@@ -151,9 +151,8 @@ export default function EAndO_Flow() {
     return (
         <>
             <Head>
-                <title>E&O Insurance | BimaKavach Insurance for Errors & Omissions</title>
+                <title>Errors and Omissions Insurance (E&O Insurance) | BimaKavach</title>
                 <meta name="description" content="" />
-                <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain

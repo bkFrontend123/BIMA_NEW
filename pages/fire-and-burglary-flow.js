@@ -249,9 +249,8 @@ export default function WorkmensCompensation_Flow() {
     return (
         <>
             <Head>
-                <title>Fire Insurance | BimaKavach Insurance for Fire</title>
+                <title>Fire Insurance - Instant Quotes and 24*7 Claim Support</title>
                 <meta name="description" content="" />
-                <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain

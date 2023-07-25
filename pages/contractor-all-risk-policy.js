@@ -195,9 +195,8 @@ export default function ContractorAllRisk_Policy() {
     return (
         <>
             <Head>
-                <title>Contractor’s All Risk Policy | BimaKavach Policy for Contractor’s All Risk</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>Contractor's All Risk Policy Coverage - BimaKavach</title>
+                <meta name="description" content="The Contractor's All Risk Policy shields contractors and other project stakeholders from financial losses. Find customized quotes from top insurers at BimaKavach." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />
@@ -236,7 +235,7 @@ export default function ContractorAllRisk_Policy() {
                                 </FloatingLabel>
                             </Form.Group>
                             <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button">
+                                <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
                                     <span className='me-2'>Buy Now</span>
                                     <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                 </Button>

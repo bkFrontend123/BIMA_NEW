@@ -194,9 +194,8 @@ export default function GeneralLiability_Insurance() {
     return (
         <>
             <Head>
-                <title>General Liability Insurance | BimaKavach Insurance for General Liability</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>General Liability Insurance (CGL) | BimaKavach</title>
+                <meta name="description" content="General Liability Insurance (CGL) secure your business with losses. Defend against unwanted lawsuits arising from daily operations. Get your customized policy now." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />

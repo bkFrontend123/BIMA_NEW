@@ -194,9 +194,8 @@ export default function EAndO_Insurance() {
     return (
         <>
             <Head>
-                <title>E&O Insurance | BimaKavach Insurance for Errors & Omissions</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>Errors and Omissions Insurance (E&O Insurance) | BimaKavach</title>
+                <meta name="description" content="Errors and Omissions or E&O Insurance protects your business from unwanted losses. Shield against claims stemming from professional errors and negligence." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />

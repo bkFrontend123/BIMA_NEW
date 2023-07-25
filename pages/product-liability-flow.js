@@ -192,9 +192,8 @@ export default function ProductLiability_Flow() {
     return (
         <>
             <Head>
-                <title>Product Liability Insurance | BimaKavach Insurance for Product Liability</title>
+                <title>Product Liability Insurance for Business | BimaKavach</title>
                 <meta name="description" content="" />
-                <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain

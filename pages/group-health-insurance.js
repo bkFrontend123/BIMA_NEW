@@ -197,7 +197,6 @@ export default function GroupHealth_Insurance() {
             <Head>
                 <title>Group Health Insurance | BimaKavach Insurance for Group Health</title>
                 <meta name="description" content="" />
-                <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />

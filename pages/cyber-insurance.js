@@ -194,9 +194,8 @@ export default function Cyber_Insurance() {
     return (
         <>
             <Head>
-                <title>Cyber Insurance | BimaKavach Insurance for Cyber</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>Cyber Insurance - Get Instant Quotes for Business | BimaKavach</title>
+                <meta name="description" content="Cyber Insurance protects individuals and organizations from losses from cyberattacks and data breaches. Get your customized insurance from BimaKavach." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />

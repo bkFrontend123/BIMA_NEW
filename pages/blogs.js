@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Head from 'next/head'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper';
 import 'swiper/css';
@@ -147,6 +148,11 @@ export default function blogs() {
 
     return (
         <>
+            <Head>
+                <title>Blog | BimaKavach</title>
+                <meta name="description" content="Read detailed articles, ideas, and reviews on commercial insurance for businesses at BimaKavach. Explore everything you need to know about business insurance." />
+                <link rel="canonical" href="" />
+            </Head>
             <Navbar />
             <div className='blogList '>
                 <div className='bg-yellowLight2 blogListBg'>

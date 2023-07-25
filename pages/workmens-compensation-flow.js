@@ -153,9 +153,8 @@ export default function WorkmensCompensation_Flow() {
     return (
         <>
             <Head>
-                <title>Workmen's Compensation Insurance | BimaKavach Insurance for Workmen's Compensation</title>
+                <title>Workmen's Compensation Policy (WC) - Top Quotes in Minutes</title>
                 <meta name="description" content="" />
-                <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain
@@ -171,7 +170,7 @@ export default function WorkmensCompensation_Flow() {
                                         <ProductFormContent
                                             icon={productIcon}
                                             title="Workmen's Compensation Insurance"
-                                            description="Get Lorem Ipsum coverage at just Lorem Ipsum per month!"
+                                            description="Get ₹15 Lakhs Coverage at ₹1,200* per year!"
                                             listText1="Answer a few Simple Questions"
                                             listText2="Get curated quotes in minutes"
                                             listText3="Secure your business compehensively"

@@ -189,9 +189,8 @@ export default function CommercialCrime_Flow() {
     return (
         <>
             <Head>
-            <title>Commercial Crime Insurance | BimaKavach Insurance for Commercial Crime</title>
+                <title>Commercial Crime Insurance Quotes - BimaKavach</title>
                 <meta name="description" content="" />
-                <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain
@@ -207,6 +206,7 @@ export default function CommercialCrime_Flow() {
                                         <ProductFormContent
                                             icon={productIcon}
                                             title="Commercial Crime Insurance"
+                                            description="Get ₹50 Lakhs Coverage at ₹40,000* per year!"
                                             listText1="Answer a few Simple Questions"
                                             listText2="Get curated quotes in minutes"
                                             listText3="Secure your business compehensively"

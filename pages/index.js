@@ -33,13 +33,12 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
       <Head>
-        <title>BimaKavach | Business Insurance Made Simple, Digital & Transparent</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
+        <title>BimaKavach - Simplifying Business Insurance in India</title>
+        <meta name="description" content="BimaKavach offers multiple business insurance quotes from top insurers in less than 10 minutes at an affordable price. Buy comprehensive insurance policies." />
         <link rel="canonical" href="" />
       </Head>
+      <Navbar />
       <main>
         <div className=''>
           <HeroBanner

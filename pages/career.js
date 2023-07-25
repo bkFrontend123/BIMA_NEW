@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
+import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -85,6 +86,11 @@ export default function Career() {
     }, []);
     return (
         <>
+            <Head>
+                <title>Careers | BimaKavach</title>
+                <meta name="description" content="Search for jobs in BimaKavach. Begin a BimaKavach career in India and help us make a difference.  Passionate people. Creating a strong force for transformation." />
+                <link rel="canonical" href="" />
+            </Head>
             <Navbar />
             <div className='career'>
                 <div className='glossaryHero'>

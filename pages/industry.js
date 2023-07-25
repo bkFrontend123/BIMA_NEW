@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -19,6 +20,11 @@ export default function Industry() {
   }, []);
   return (
     <>
+      <Head>
+        <title>Industry | BimaKavach</title>
+        <meta name="description" content="" />
+        <link rel="canonical" href="" />
+      </Head>
       <Navbar />
       <div className='industry'>
         <div className='industryHero'>

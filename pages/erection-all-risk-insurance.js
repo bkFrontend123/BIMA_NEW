@@ -195,9 +195,8 @@ export default function ErectionAllRisk_Insurance() {
     return (
         <>
             <Head>
-                <title>Erection All Risk Policy | BimaKavach Policy for Erection All Risk</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>Erection All Risk Policy - Get the Best Quotes</title>
+                <meta name="description" content="Erection All Risk Policy offers financial coverage for property loss or damage during construction until completion. BimaKavach has customized quotes." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />
@@ -236,7 +235,7 @@ export default function ErectionAllRisk_Insurance() {
                                 </FloatingLabel>
                             </Form.Group>
                             <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button">
+                                <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
                                     <span className='me-2'>Buy Now</span>
                                     <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                 </Button>

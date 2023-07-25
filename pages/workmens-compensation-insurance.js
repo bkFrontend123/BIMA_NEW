@@ -194,9 +194,8 @@ export default function WorkmensCompensation_Insurance() {
     return (
         <>
             <Head>
-                <title>Workmen's Compensation Policy | BimaKavach Insurance for Workmenn's Compensation</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>Workmen's Compensation Policy (WC) - Top Quotes in Minutes</title>
+                <meta name="description" content="Workmen's Compensation Policy ensures compliance with labor laws and offers financial coverage for workplace injuries and illnesses. Find top insurers at BimaKavach." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />
@@ -206,8 +205,8 @@ export default function WorkmensCompensation_Insurance() {
                     <ProductBanner
                         title="Workmen's Compensation Policy"
                         description="Workmen Compensation Policy ensures compliance with labor laws and provides financial coverage for workplace injuries and illnesses."
-                        insuranceWorth="3 Crore"
-                        insuranceAmount=""
+                        insuranceWorth="15 Lakhs"
+                        insuranceAmount="1,200"
                         productImgSrc={productImage}
                         form="true"
                         formHeading="WC Policy"

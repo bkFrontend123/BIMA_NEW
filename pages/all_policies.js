@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
+import Head from 'next/head'
 import Link from 'next/link'
 
 import {Container, Row, Col, Form, Button, ToastContainer} from 'react-bootstrap';
@@ -78,6 +79,11 @@ export default function AllPolicies() {
 
     return (
         <>
+            <Head>
+                <title>All Policy | BimaKavach</title>
+                <meta name="description" content="" />
+                <link rel="canonical" href="" />
+            </Head>
             <HeaderPlain
                 emailQuote="true"
                 scheduleCall="true"

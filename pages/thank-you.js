@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
+import Head from 'next/head'
 import Link from 'next/link'
 
 import {Container, Row, Col, Form, Button} from 'react-bootstrap';
@@ -40,6 +41,11 @@ export default function ThankYou() {
     };
     return (
         <>
+            <Head>
+                <title>Thank You | BimaKavach</title>
+                <meta name="description" content="Workmen's Compensation Policy ensures compliance with labor laws and offers financial coverage for workplace injuries and illnesses. Find top insurers at BimaKavach." />
+                <link rel="canonical" href="" />
+            </Head>
             <HeaderPlain
                 talkExpert="true"
             />

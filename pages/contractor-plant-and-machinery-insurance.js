@@ -195,9 +195,8 @@ export default function ContractorPlantAndMachinery_Insurance() {
     return (
         <>
             <Head>
-                <title>Contractor’s Plant and Machinery Insurance | BimaKavach Insurance for Contractor’s Plant and Machinery</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>Contractor's Plant and Machinery Insurance (CPM) | BimaKavach</title>
+                <meta name="description" content="The Contractor's Plant and Machinery Insurance (CPM) safeguards the stakeholders from equipment damage, offering financial compensation. Get 24*7 claim support." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />
@@ -236,7 +235,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                 </FloatingLabel>
                             </Form.Group>
                             <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button">
+                                <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
                                     <span className='me-2'>Buy Now</span>
                                     <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                 </Button>

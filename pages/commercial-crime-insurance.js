@@ -194,9 +194,8 @@ export default function CommercialCrime_Insurance() {
     return (
         <>
             <Head>
-                <title>Commercial Crime Insurance | BimaKavach Insurance for ommercial Crime</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>Commercial Crime Insurance Quotes - BimaKavach</title>
+                <meta name="description" content="Commercial Crime Insurance protects businesses from losses from internal and external criminal activities. Get the best quotes from top insurers at BimaKavach." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />
@@ -206,7 +205,8 @@ export default function CommercialCrime_Insurance() {
                     <ProductBanner
                         title="Commercial Crime Insurance"
                         description="Commercial Crime Insurance safeguards businesses against losses stemming from internal and external criminal activities, covering various fraudulent acts."
-                        noInsurer="true"
+                        insuranceWorth="50 Lakhs"
+                        insuranceAmount="40,000"
                         productImgSrc={productImage}
                         form="true"
                         formHeading="Crime Insurance"

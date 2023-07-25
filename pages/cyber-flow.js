@@ -161,9 +161,8 @@ export default function Cyber_Flow() {
     return (
         <>
             <Head>
-                <title>Cyber Insurance | BimaKavach Insurance for Cyber</title>
+                <title>Cyber Insurance - Get Instant Quotes for Business | BimaKavach</title>
                 <meta name="description" content="" />
-                <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain

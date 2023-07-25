@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 
 import Navbar from '../component/Navbar'
@@ -12,6 +13,11 @@ export default function PrivacyPolicy() {
     }, []);
     return (
         <>
+            <Head>
+                <title>Privacy Policy | BimaKavach</title>
+                <meta name="description" content="This Privacy Policy explains how BimaKavach collects and uses information that we may gather and/or receive from you via your usage of this website." />
+                <link rel="canonical" href="" />
+            </Head>
             <Navbar />
             <div className='infrmtnPage'>
                 <div className={`container `}>

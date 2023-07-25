@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
+import Head from 'next/head'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper';
 import 'swiper/css';
@@ -103,6 +104,11 @@ export default function BlogDetail() {
 
     return (
         <>
+            <Head>
+                <title>Blog Detail | BimaKavach</title>
+                <meta name="description" content="" />
+                <link rel="canonical" href="" />
+            </Head>
             <Navbar />
             <div className='blogList@ blogDetail '>
                 <div className='bg-yellowLight2 blogListBg'>

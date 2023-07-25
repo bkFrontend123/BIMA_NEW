@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Head from 'next/head'
 import Link from 'next/link'
 
 import Navbar from '../component/Navbar'
@@ -15,6 +16,11 @@ export default function Custom404() {
 
   return (
     <>
+      <Head>
+        <title>Page Not Found | BimaKavach</title>
+        <meta name="description" content="" />
+        <link rel="canonical" href="" />
+      </Head>
       <Navbar />
       <div className='errorPage'>
         <div className={`container `}>

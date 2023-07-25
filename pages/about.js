@@ -1,4 +1,5 @@
 import React,{useEffect} from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 
 import {Container, Row, Col} from 'react-bootstrap';
@@ -29,6 +30,11 @@ export default function About() {
       }, []);
     return (
         <>
+            <Head>
+                <title>About Us | BimaKavach</title>
+                <meta name="description" content="BimaKavach is a direct business insurance broking firm catering to startups & SMEs in India. We are making commercial insurance simple, fast, and transparent." />
+                <link rel="canonical" href="" />
+            </Head>
             <Navbar />
             <div className='aboutUs'>
                 <Container>

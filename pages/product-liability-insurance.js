@@ -194,9 +194,8 @@ export default function ProductLiability_Insurance() {
     return (
         <>
             <Head>
-                <title>Product Liability Insurance | BimaKavach Insurance for Product Liability</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>Product Liability Insurance for Business | BimaKavach</title>
+                <meta name="description" content="Product Liability Insurance covers claims of damage or injury caused by your products. Get the best insurance quotes from BimaKavach for your business requirement." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />

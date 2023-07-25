@@ -194,9 +194,8 @@ export default function DAndO_Insurance() {
     return (
         <>
             <Head>
-                <title>D&O Insurance | BimaKavach Insurance for Directors and Officers</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>Directors' & Officers' Insurance (D&O) - At an Affordable Price</title>
+                <meta name="description" content="Directors' & Officers' (D&O) Insurance safeguards your directors, officers, and organization against unwanted lawsuits. Cover legal costs & defend against claims." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />

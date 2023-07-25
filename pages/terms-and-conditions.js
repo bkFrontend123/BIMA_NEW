@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 
 import Navbar from '../component/Navbar'
@@ -12,6 +13,11 @@ export default function TermsAndConditions() {
     }, []);
     return (
         <>
+            <Head>
+                <title>Terms And Conditions Policy | BimaKavach</title>
+                <meta name="description" content="" />
+                <link rel="canonical" href="" />
+            </Head>
             <Navbar />
             <div className='infrmtnPage'>
                 <div className={`container `}>

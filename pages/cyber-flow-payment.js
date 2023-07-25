@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState  } from 'react'
 import { useRouter } from 'next/router';
+import Head from 'next/head'
 import Link from 'next/link'
 
 import { Container, Row, Col, Form, Button, ProgressBar, ToastContainer } from 'react-bootstrap';
@@ -167,6 +168,11 @@ export default function Cyber_Flow_Payment() {
 
     return (
         <>
+            <Head>
+                <title>Cyber Insurance - Get Instant Quotes for Business | BimaKavach</title>
+                <meta name="description" content="" />
+                <link rel="canonical" href="" />
+            </Head>
             <HeaderPlain
                 talkExpert="true"
             />
