@@ -65,18 +65,8 @@ export default function ErectionAllRisk_Flow() {
         router.push('/erection-all-risk-insurance');
     };
     const goToNextPage = () => {
-        router.push('/all_policies');
+        router.push('/thank-you');
     };
-
-    const [cityValue, setCityValue] = useState();
-    const cityOptions = [
-        {name: 'Ambala', value: '1'},
-        {name: 'Bengaluru', value: '2'},
-        {name: 'Chandigarh', value: '3'},
-        {name: 'Delhi', value: '4'},
-        {name: 'Hyderabad', value: '5'},
-        {name: 'Mumbai', value: '6'},
-    ];
 
     const [totalSumInsuredValue, setTotalSumInsuredValue] = useState();
     const totalSumInsuredOptions = [
@@ -87,9 +77,9 @@ export default function ErectionAllRisk_Flow() {
 
     const [policyTypeValue, setPolicyTypeValue] = useState();
     const policyTypeOptions = [
-        {name: 'Specific Locationr', value: '1'},
+        {name: 'Specific Location', value: '1'},
         {name: 'Defined Locations', value: '2'},
-        {name: 'PAN Indiae', value: '3'},
+        {name: 'PAN India', value: '3'},
     ];
 
     const [plantAndMachineryTypeValue, setPlantAndMachineryTypeValue] = useState();
@@ -121,7 +111,7 @@ export default function ErectionAllRisk_Flow() {
         {name: 'Graders, pan scrappers, rippers', value: '20'},
         {name: 'Hauling equipment Dumpers, Dump cars, Dump trucks', value: '21'},
         {name: 'Hydraulic Twin Boom Jumbo Drilling Machine', value: '22'},
-        {name: 'jacks, screws', value: '23'},
+        {name: 'Jacks, Screws', value: '23'},
         {name: 'Loaders', value: '24'},
         {name: 'Mechanical sweepers', value: '25'},
         {name: 'Mixing Machines, Mixing Plants', value: '26'},
@@ -148,7 +138,6 @@ export default function ErectionAllRisk_Flow() {
         {name: 'Water containers, Surveying Equipment', value: '47'},
         {name: 'Welding set', value: '47'},
         {name: 'Workshop Machines, woodworking Machines, Reinforcement bar benders, drying plant', value: '49'},
-        {name: 'Workshop Machines, woodworking Machines, Reinforcement bar benders, drying plant', value: '50'},
     ];
 
     const [usedPublicRoadValue, setUsedPublicRoadValue] = useState();
@@ -263,17 +252,10 @@ export default function ErectionAllRisk_Flow() {
                                                             </Row>
                                                         </div>
                                                         <Form>
-                                                            <Form.Group className={`selectDropDiv searchDropDiv mb-4 ${!cityValue == '' ? 'selectedDropDiv' : null}`}>
-                                                                <SelectSearch
-                                                                    options={cityOptions}
-                                                                    name="city"
-                                                                    placeholder="Search by keyword"
-                                                                    onChange={setCityValue}
-                                                                    search
-                                                                    value={cityValue}
-                                                                    required
-                                                                />
-                                                                <label>City</label>
+                                                            <Form.Group className="floatFormGroup mb-4">
+                                                                <FloatingLabel controlId="city" label="City" >
+                                                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" required />
+                                                                </FloatingLabel>
                                                             </Form.Group>
                                                             <Form.Group className={`selectDropDiv searchDropDiv mb-4 ${!totalSumInsuredValue == '' ? 'selectedDropDiv' : null}`}>
                                                                 <SelectSearch
@@ -310,7 +292,7 @@ export default function ErectionAllRisk_Flow() {
                                                                 <div className={`${form.frmBack}`}>
                                                                     <Row className='align-items-center gap-4 gap-lg-2'>
                                                                         <Col>
-                                                                            <span className={`${form.frmBackLink}`} onClick={handleOtpToggle}>
+                                                                            <span className={`${form.frmBackLink}`} onClick={handleEnterDetailsFirstToggle}>
                                                                                 <Image src={arrowBack} alt="Back Arrow" /> About your industry
                                                                             </span>
                                                                         </Col>

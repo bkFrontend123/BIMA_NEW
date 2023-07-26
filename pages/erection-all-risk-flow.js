@@ -60,7 +60,7 @@ export default function ErectionAllRisk_Flow() {
         router.push('/erection-all-risk-insurance');
     };
     const goToNextPage = () => {
-        router.push('/all_policies');
+        router.push('/thank-you');
     };
 
     const [riskExposureValue, setRiskExposureValue] = useState();

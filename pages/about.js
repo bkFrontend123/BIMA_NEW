@@ -68,7 +68,7 @@ export default function About() {
                                         <h3><span>Now <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>How We Are Going</h3>
                                         <p>Today, BimaKavach proudly serves over 500 companies nationwide, offering them comprehensive 24x7 claims support. Our diversified client base spans multiple sectors, including but not limited to manufacturing, trading, software, contracting, real estate, consulting, energy, education, and HR. From dynamic startups and ambitious SMEs to established listed companies, we accommodate the unique needs of businesses at all stages.</p>
                                         <p>Our portfolio now encompasses more than 17 meticulously curated business insurance policies, each customizable to protect your business's assets, liabilities, directors, and employees.</p>
-                                        <p>At the heart of BimaKavach is our team of insurance experts, who tirelessly work to present the best insurance options for our clients. Our key focus is on simplicity, speed, and clarity, ensuring a seamless insurance experience for all our clients.</p>
+                                        <p>We have a team of insurance experts working tirelessly to present the best insurance options for our clients. Our key focus is on simplicity, speed, and clarity, ensuring a seamless insurance experience for all our clients.</p>
                                         <div className="abtCntntMedia">
                                             <i>
                                                 <img src="/abtNowImg.png" alt="Now" />

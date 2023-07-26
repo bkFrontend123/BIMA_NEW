@@ -62,7 +62,7 @@ export default function CommercialCrime_Flow() {
         router.push('/product-liability-insurance');
     };
     const goToNextPage = () => {
-        router.push('/all_policies');
+        router.push('/thank-you');
     };
 
     const [indValue, setIndValue] = useState();

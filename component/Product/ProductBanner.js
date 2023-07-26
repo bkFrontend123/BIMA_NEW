@@ -417,7 +417,7 @@ export default function ProductBanner(props) {
                         }
                         .cntrctrBnr {
                             //background-position: -880px;
-                            padding-bottom: 300px !important;
+                            //padding-bottom: 300px !important;
                         }
                         .grpPrsnlBnr {
                             //background-position: -832px;

@@ -497,7 +497,7 @@ export default function ErectionAllRisk_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/EAR_incident1.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -512,7 +512,7 @@ export default function ErectionAllRisk_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/EAR_incident2.png' />
                                             </Col>
                                         </Row>
                                     </div>
