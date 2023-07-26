@@ -121,7 +121,7 @@ export default function QuoteComparison() {
                                                         customClass="mt-4 mt-lg-5"
                                                     />
                                                 </QCompareKnowMore>
-                                                <div>1. Side A</div>
+                                                <div><span>1. Cover for failure / negligence to supervise against any Professional Indemnity related claims Cover for failure / negligence to supervise against any Professional Indemnity related claims</span></div>
                                             </div>
                                             <div className={`${quoteCompare.quoteCompareListCol}`}>
                                                 <QCompareKnowMore
@@ -146,7 +146,7 @@ export default function QuoteComparison() {
                                                             customClass="mt-4 mt-lg-5"
                                                         />
                                                     </QCompareKnowMore>
-                                                    <div>a. India</div>
+                                                    <div><span>a. India</span></div>
                                                 </div>
                                                 <div className={`${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
@@ -158,7 +158,7 @@ export default function QuoteComparison() {
                                                             customClass="mt-4 mt-lg-5"
                                                         />
                                                     </QCompareKnowMore>
-                                                    <div>b. ROW</div>
+                                                    <div><span>b. ROW</span></div>
                                                 </div>
                                                 <div className={`${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
@@ -170,7 +170,7 @@ export default function QuoteComparison() {
                                                             customClass="mt-4 mt-lg-5"
                                                         />
                                                     </QCompareKnowMore>
-                                                    <div>c. EPLI</div>
+                                                    <div><span>c. EPLI</span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -196,7 +196,7 @@ export default function QuoteComparison() {
                                                         customClass="mt-4 mt-lg-5"
                                                     />
                                                 </QCompareKnowMore>
-                                                <div>1. Side A</div>
+                                                <div><span>1. Side A</span></div>
                                             </div>
                                         </div>
                                     </Accordion.Body>
@@ -221,7 +221,7 @@ export default function QuoteComparison() {
                                                         customClass="mt-4 mt-lg-5"
                                                     />
                                                 </QCompareKnowMore>
-                                                <div>1. Side A</div>
+                                                <div><span>1. Side A</span></div>
                                             </div>
                                             <div className={`${quoteCompare.quoteCompareListCol}`}>
                                                 <QCompareKnowMore
@@ -246,7 +246,7 @@ export default function QuoteComparison() {
                                                             customClass="mt-4 mt-lg-5"
                                                         />
                                                     </QCompareKnowMore>
-                                                    <div>a. India</div>
+                                                    <div><span>a. India</span></div>
                                                 </div>
                                                 <div className={`${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
@@ -258,7 +258,7 @@ export default function QuoteComparison() {
                                                             customClass="mt-4 mt-lg-5"
                                                         />
                                                     </QCompareKnowMore>
-                                                    <div>b. ROW</div>
+                                                    <div><span>b. ROW</span></div>
                                                 </div>
                                                 <div className={`${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
@@ -270,7 +270,7 @@ export default function QuoteComparison() {
                                                             customClass="mt-4 mt-lg-5"
                                                         />
                                                     </QCompareKnowMore>
-                                                    <div>c. EPLI</div>
+                                                    <div><span>c. EPLI</span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -296,7 +296,7 @@ export default function QuoteComparison() {
                                                         customClass="mt-4 mt-lg-5"
                                                     />
                                                 </QCompareKnowMore>
-                                                <div>1. Side A</div>
+                                                <div><span>1. Side A</span></div>
                                             </div>
                                             <div className={`${quoteCompare.quoteCompareListCol}`}>
                                                 <QCompareKnowMore
@@ -321,7 +321,7 @@ export default function QuoteComparison() {
                                                             customClass="mt-4 mt-lg-5"
                                                         />
                                                     </QCompareKnowMore>
-                                                    <div>a. India</div>
+                                                    <div><span>a. India</span></div>
                                                 </div>
                                                 <div className={`${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
@@ -333,7 +333,7 @@ export default function QuoteComparison() {
                                                             customClass="mt-4 mt-lg-5"
                                                         />
                                                     </QCompareKnowMore>
-                                                    <div>b. ROW</div>
+                                                    <div><span>b. ROW</span></div>
                                                 </div>
                                                 <div className={`${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
@@ -345,7 +345,7 @@ export default function QuoteComparison() {
                                                             customClass="mt-4 mt-lg-5"
                                                         />
                                                     </QCompareKnowMore>
-                                                    <div>c. EPLI</div>
+                                                    <div><span>c. EPLI</span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -420,7 +420,7 @@ export default function QuoteComparison() {
                                                 </div>
                                                 <div className={`${quoteCompare.quoteCompareListCol}`}>
                                                     <div>
-                                                        <span>₹10.5 Lacs in Total</span>
+                                                        <span>₹10.5 Lacs in Total ₹10.5 Lacs in Total ₹10.5 Lacs in Total ₹10.5 Lacs in Total ₹10.5 Lacs in Total ₹10.5 Lacs in Total</span>
                                                     </div>
                                                     <div>
                                                         <span>₹10.5 Lacs in Total</span>

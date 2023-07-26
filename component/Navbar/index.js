@@ -208,7 +208,7 @@ function Navbar() {
                                       )}
                                     </div>
                                     <div className='mega-menuBox-title mt-4'>
-                                      <div className='title-24 font-weight-600 text-primary fst-italic'>Engineering</div>
+                                      <div className='title-24 font-weight-600 text-primary fst-italic'>Engineering Insurance</div>
                                       <hr className='bg-gray mb-md-3 my-2' />
                                     </div>
                                     <div className='startupColsList'>

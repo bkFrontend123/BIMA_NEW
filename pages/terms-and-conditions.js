@@ -14,8 +14,8 @@ export default function TermsAndConditions() {
     return (
         <>
             <Head>
-                <title>Terms And Conditions Policy | BimaKavach</title>
-                <meta name="description" content="" />
+                <title>Terms & Conditions | BimaKavach</title>
+                <meta name="description" content="Know about BimaKavach terms & conditions, disclaimers, warranties, cancellation policy, and more. Get expert support. Quick quotes." />
                 <link rel="canonical" href="" />
             </Head>
             <Navbar />
