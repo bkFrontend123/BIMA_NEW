@@ -67,8 +67,8 @@ export default function QuoteComparison() {
     return (
         <>
             <Head>
-                <title>Quote Comparison | BimaKavach</title>
-                <meta name="description" content="" />
+                <title>Compare Quote | BimaKavach</title>
+                <meta name="description" content="Compare customized quotes from top insurers. 24*7 claims support. Policy curated only for your business." />
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain

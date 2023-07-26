@@ -70,8 +70,8 @@ export default function CommercialCrime_Flow_Payment() {
     return (
         <>
             <Head>
-                <title>Commercial Crime Insurance Quotes - BimaKavach</title>
-                <meta name="description" content="" />
+                <title>Commercial Crime Insurance | BimaKavach</title>
+                <meta name="description" content="Avail the customized insurance quote from top insurers in minutes. Business insurance in minutes." />
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain

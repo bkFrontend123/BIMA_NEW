@@ -18,7 +18,7 @@ export default function Custom404() {
     <>
       <Head>
         <title>Page Not Found | BimaKavach</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Read the detailed blogs and explore more products at bimakavach.com" />
         <link rel="canonical" href="" />
       </Head>
       <Navbar />

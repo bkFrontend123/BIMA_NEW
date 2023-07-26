@@ -194,8 +194,8 @@ export default function GeneralLiability_Flow() {
     return (
         <>
             <Head>
-                <title>General Liability Insurance (CGL) | BimaKavach</title>
-                <meta name="description" content="" />
+                <title>Business Insurance | BimaKavach</title>
+                <meta name="description" content="Get the best insurance quote from top insurers in minutes. Customized for your business." />
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain

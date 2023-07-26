@@ -80,8 +80,8 @@ export default function AllPolicies() {
     return (
         <>
             <Head>
-                <title>All Policy | BimaKavach</title>
-                <meta name="description" content="" />
+                <title>Top Insurers | BimaKavach</title>
+                <meta name="description" content="We offer the best option customized exclusively for your business. 20+ insurers from India." />
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain
