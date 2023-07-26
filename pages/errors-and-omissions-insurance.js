@@ -204,7 +204,7 @@ export default function EAndO_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Errors & Omissions Insurance"
-                        description="Errors and Omissions Insurance protects companies from claims related to negligence or errors in professional services."
+                        description="Safeguard your company against client disputes stemming from human errors or unmet expectations in providing professional services."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="20,000"
                         productImgSrc={productImage}

@@ -204,7 +204,7 @@ export default function GeneralLiability_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="General Liability Insurance"
-                        description="General liability insurance is a thorough policy that shields businesses from common lawsuits stemming from their everyday operations."
+                        description="All-inclusive coverage for your business. Safeguard against claims from operations, premises, products, or services-related liabilities."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="5,000"
                         productImgSrc={productImage}
@@ -325,7 +325,7 @@ export default function GeneralLiability_Insurance() {
                                             <Col lg={4}>
                                                 <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Works on Occurence Basis</h3>
+                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Works on Occurrence Basis</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0'>Claims can be made even after a policy expires given that the incident happened within the policy’s active period.</p>
                                                     </div>
                                                 </div>

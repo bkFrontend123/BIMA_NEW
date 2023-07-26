@@ -204,7 +204,7 @@ export default function MarineCargo_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Marine Cargo Insurance"
-                        description="Marine Cargo Insurance protects your cargo during transit against damage caused by various factors and circumstances."
+                        description="Protect your goods during transit across sea, road, rail, or air, from risks such as explosion, fire, and more."
                         insuranceWorth="20 Lakhs"
                         insuranceAmount="700"
                         productImgSrc={productImage}

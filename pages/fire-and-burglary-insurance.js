@@ -204,7 +204,7 @@ export default function FireAndBurglary_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Fire Insurance"
-                        description="Fire Insurance is vital in Property Insurance, safeguarding residential & commercial properties from fire with allied perils and housebreaking related losses."
+                        description="Extensive asset protection against diverse threats like fire, theft, natural calamities, covering costs for repair, replacement, and reconstruction."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="2,100"
                         productImgSrc={productImage}

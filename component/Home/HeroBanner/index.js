@@ -54,7 +54,7 @@ export default function HeroBanner(props) {
                             loading="lazy"
                           />
                         </i>
-                        <p className='homeBannerText-bottomCard-descrip text-primary font-weight-600 mb-0'>20+ insurers with best prices</p>
+                        <p className='homeBannerText-bottomCard-descrip text-primary font-weight-600 mb-0'>20+ Insurers with Best Prices</p>
                       </div>
                     </div>
                   </div>

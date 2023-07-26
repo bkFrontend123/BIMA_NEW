@@ -22,7 +22,7 @@ export default function HowDo() {
     { title: "Tell us about business", description: "Answer a few simple questions about your business", imgSrc: "/howWorks/howWorkImg2.png", btnText: 'Next: Digital'},
     { title: "Compare quotes", description: "Get instant quotes from top insurance companies", imgSrc: "/howWorks/howWorkImg3.png", btnText: 'Next: Digital' },
     { title: "Talk to an expert", description: "Consult with our experts and make payment", imgSrc: "/howWorks/howWorkImg4.png", btnText: 'Next: Digital' },
-    { title: "All-in-one Digital Platform", description: "Mangae everything on a single dashboard", imgSrc: "/howWorks/howWorkImg5.png", btnText: 'Next: Digital' },
+    { title: "All-in-one digital platform", description: "Mangae everything on a single dashboard", imgSrc: "/howWorks/howWorkImg5.png", btnText: 'Next: Digital' },
   ]
   const onSwipeDown = (e) => {
     console.log("e  eeeeee",e)
@@ -278,7 +278,7 @@ export default function HowDo() {
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
                             <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">05</div>
-                            <div className="title60 font-secondary font-weight-600">All-in-one Digital Platform</div>
+                            <div className="title60 font-secondary font-weight-600">All-in-one digital platform</div>
                             <div className="title20 font-weight-500 mt-2 mt-md-0">Mangae everything on a single dashboard</div>
                           </div>
                         </div>

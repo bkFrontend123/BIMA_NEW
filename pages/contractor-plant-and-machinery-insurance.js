@@ -204,8 +204,8 @@ export default function ContractorPlantAndMachinery_Insurance() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Contractor’s Plant and Machinery Insurance"
-                        description="Contractor's plant and machinery insurance safeguards contractors, machinery owners, and investors from equipment damage, offering financial compensation."
+                        title="Contractor's Plant and Machinery Insurance"
+                        description="For machinery owners and contractors, this policy provides compensation against potential losses due to equipment damage.."
                         insuranceWorth="3 Crore"
                         insuranceAmount="15,000"
                         productImgSrc={productImage}

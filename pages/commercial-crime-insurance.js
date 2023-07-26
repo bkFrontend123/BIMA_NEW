@@ -204,7 +204,7 @@ export default function CommercialCrime_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Commercial Crime Insurance"
-                        description="Commercial Crime Insurance safeguards businesses against losses stemming from internal and external criminal activities, covering various fraudulent acts."
+                        description="An innovative 'white-collar crime' policy protecting your business from internal and external criminal activities, ranging from theft to digital fraud."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="40,000"
                         productImgSrc={productImage}

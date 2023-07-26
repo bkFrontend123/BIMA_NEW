@@ -204,7 +204,7 @@ export default function DAndO_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Directors & Officers Liability Insurance"
-                        description="Directors and Officers Liability Insurance protects directors, officers, and organizations from legal actions and associated costs."
+                        description="Protect your company's decision-makers from liabilities and safeguard their personal assets in case of a legal lawsuit."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="7,000"
                         productImgSrc={productImage}
@@ -315,7 +315,8 @@ export default function DAndO_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A Director and Officers (D&O) policy protects directors, board members, and other individuals in management and supervisory positions from possible legal liability if they are indicted for decisions made to run a business. <span className='d-none d-lg-block'></span>This type of insurance protects the personal assets of the directors and officers along with their spouses and compensates them for any settlements or legal fees they incur as a result of lawsuits.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Directors and Officers (D&O) policy protects directors, board members, and other individuals in management and supervisory positions from possible legal liabilityif they are indicted for decisions made to run a business.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>This type of insurance protects the personal assets of the directors and officers along with their spouses and compensates them for any settlements or legal fees they incur as a result of lawsuits.</p>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
@@ -366,7 +367,7 @@ export default function DAndO_Insurance() {
                                             <Col lg={6}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
                                                     <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Offers protection to Directors & Officers</p>
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Offers protection to directors & officers</p>
                                                 </div>
                                             </Col>
                                             <Col lg={6}>

@@ -205,7 +205,7 @@ export default function ErectionAllRisk_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Erection All Risk Policy"
-                        description="Erection All Risks insurance offers financial coverage for property loss or damage during construction until project completion."
+                        description="Covers losses during machinery or equipment installation, providing vital financial protection for construction and manufacturing industries against various risks."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="7,000"
                         productImgSrc={productImage}
@@ -353,10 +353,10 @@ export default function ErectionAllRisk_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black'>Erection All Risk Policy?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Contractors and employers can take out the policy jointly and individually. Any of the following parties involved in the construction process may be covered:</p>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>General contractors</li>
-                                            <li>GSubcontractors</li>
-                                            <li>GSuppliers and manufacturers of equipment</li>
-                                            <li>GThe purchaser or owner of the equipment</li>
+                                            <li>General contractorst</li>
+                                            <li>Subcontractorst</li>
+                                            <li>Suppliers and manufacturers of equipmentt</li>
+                                            <li>The purchaser or owner of the equipmentt</li>
                                         </ul>
                                     </div>
                                 </Container>
@@ -439,7 +439,7 @@ export default function ErectionAllRisk_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Riot & Strike</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage covers damage to the construction site, materials, equipment, or structures caused by riots, demonstrations, protests, or other forms of public disturbance. It also includes damage resulting from strikes, lockouts, labor disputes, or other related events that may affect the construction project.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This policy covers damage to the construction site, materials, equipment, or structures caused by riots, demonstrations, protests, or other forms of public disturbance. It also includes damage resulting from strikes, lockouts, labor disputes, or other related events that may affect the construction project.</div>
                                                     </div>
                                                 </Col>
                                             </Row>

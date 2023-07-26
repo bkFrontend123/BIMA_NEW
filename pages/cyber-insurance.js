@@ -204,7 +204,7 @@ export default function Cyber_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Cyber Insurance"
-                        description="Cyber Insurance safeguards individuals and organizations from losses stemming from cyberattacks and data breaches."
+                        description="A vital tool in your risk management strategy and your shield against digital threats in an era of prevalent cyber-attacks."
                         insuranceWorth="1 Crore"
                         insuranceAmount="38,000"
                         productImgSrc={productImage}
@@ -586,7 +586,7 @@ export default function Cyber_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 font-secondry'>Malware Attack</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>A malware attack can cause significant harm to a business's computer systems, in such case this coverage provides the resources necessary to restore the affected systems and defend any legal claims made by victims.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>A malware attack can cause significant harm to a business's computer systems. In such case this coverage provides the resources necessary to restore the affected systems and defend any legal claims made by victims.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>

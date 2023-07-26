@@ -204,7 +204,7 @@ export default function WorkmensCompensation_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Workmen's Compensation Policy"
-                        description="Workmen Compensation Policy ensures compliance with labor laws and provides financial coverage for workplace injuries and illnesses."
+                        description="Stay compliant with labor law and provide financial coverage for workplace injuries or illnesses, ensuring a safety net for your employees."
                         insuranceWorth="15 Lakhs"
                         insuranceAmount="1,200"
                         productImgSrc={productImage}
