@@ -244,6 +244,7 @@ export default function About() {
                         border-color: var(--vt-c-yellow);
                     }
                     .abtCntntMedia i {
+                        display: block;
                         position: relative;
                         //display: flex;
                         filter: grayscale(1);
@@ -257,7 +258,7 @@ export default function About() {
                     }
                     .abtCntntMedia:hover i {
                         filter: grayscale(0);
-                        height: 540px;
+                        height: 680px;
                     }
                     .abtInfoCol h4 {
                         font-size: 22px;
