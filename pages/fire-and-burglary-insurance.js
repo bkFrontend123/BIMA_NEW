@@ -950,7 +950,7 @@ export default function FireAndBurglary_Insurance() {
                             <Accordion
                                 title="What is the key clause in burglary insurance?"
                                 content={[<>
-                                    <span>The key clause in burglary insurance is the burglary clause, which outlines the coverage provided by the policy in the event of theft or burglary. It typically specifies the terms and conditions of coverage, includingDefinition of burglary</span>
+                                    <span>The key clause in burglary insurance is the burglary clause, which outlines the coverage provided by the policy in the event of theft or burglary. It typically specifies the terms and conditions of coverage, including definition of burglary</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>
                                         <li>Coverage limits</li>
                                         <li>Deductibles</li>

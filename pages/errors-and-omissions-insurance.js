@@ -624,7 +624,7 @@ export default function EAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Design Drawings Errors by Insured Result in Flawed Fabrication due to Drawings Errors</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Flawed Fabrication & Erection of Structure</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>The insured provided multiple inaccurate design drawings, leading to improper fabrication and consequently necessitating re-fabrication. The principal incurred additional expenses and was required to employ extra manpower to address these issues.</div>

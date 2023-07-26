@@ -479,7 +479,7 @@ export default function ProductLiability_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 font-secondry'>Product-related property damage</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It protects your business in case a product you sell or manufactures damages a customer's property, whether due to product defects or instruction manual errors.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It protects your business in case a product you sell or manufacture damages a customer's property, whether due to product defects or instruction manual errors.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>

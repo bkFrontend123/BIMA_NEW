@@ -366,7 +366,7 @@ export default function ErectionAllRisk_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Erection All Risk Policy?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>If you're in the construction business, the erection all risk policy is really helpful. It's a complete insurance policy that protects you from things going wrong when you're installing, testing, and starting up equipment or machinery during construction. At BimaKavach, they can give you a personalized price from the best insurance companies at a price that won't break the bank.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>If you're in the construction business, the erection all risk policy is really helpful. It's a complete insurance policy that protects you from things going wrong when you're installing, testing, and starting up equipment or machinery during construction. At BimaKavach, we can give you a personalized price from the best insurance companies at a price that won't break the bank.</p>
                                     </div>
                                 </Container>
                             </div>

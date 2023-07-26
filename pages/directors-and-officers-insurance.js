@@ -379,7 +379,7 @@ export default function DAndO_Insurance() {
                                             <Col lg={6}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
                                                     <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Important for both large and small-scale businesses.</p>
+                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Important for both large and small-scale businesses</p>
                                                 </div>
                                             </Col>
                                             <Col lg={6}>
