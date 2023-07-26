@@ -427,33 +427,37 @@ export default function Cyber_Flow() {
                                                                             required
                                                                         />
                                                                     </Form.Group>
-                                                                    <Form.Group className={`selectDropDiv tooltipDiv mb-4 ${!identifiableCountValue == '' ? 'selectedDropDiv' : null}`}>
-                                                                        <SelectSearch
-                                                                            options={identifiableCountOptions}
-                                                                            name="identifiableCount"
-                                                                            placeholder="&nbsp;"
-                                                                            onChange={setIdentifiableCountValue}
-                                                                            value={identifiableCountValue}
-                                                                            required
-                                                                        />
-                                                                        <label>How Many PII do you store?</label>
-                                                                        <OverlayTrigger
-                                                                            placement="top"
-                                                                            overlay={<Tooltip>Personally Identifiable Information (PII) encompasses various types of sensitive data, including Social Security Numbers, Credit Card Information, Personal Health Data, Employee Information, and Bank Account Information.</Tooltip>}
-                                                                            >
-                                                                            {({ ref, ...triggerHandler }) => (
-                                                                                <i className='tooltipIcon' {...triggerHandler}>
-                                                                                    <Image
-                                                                                        ref={ref}
-                                                                                        src={tooltipIcon}
-                                                                                        width="24"
-                                                                                        height="24"
-                                                                                        alt="Remark Icon"
-                                                                                    />
-                                                                                </i>
-                                                                            )}
-                                                                        </OverlayTrigger>
-                                                                    </Form.Group>
+                                                                    {identifiableValue === 'Yes' ? (
+                                                                        <Form.Group className={`selectDropDiv tooltipDiv mb-4 ${!identifiableCountValue == '' ? 'selectedDropDiv' : null}`}>
+                                                                            <SelectSearch
+                                                                                options={identifiableCountOptions}
+                                                                                name="identifiableCount"
+                                                                                placeholder="&nbsp;"
+                                                                                onChange={setIdentifiableCountValue}
+                                                                                value={identifiableCountValue}
+                                                                                required
+                                                                            />
+                                                                            <label>How Many PII do you store?</label>
+                                                                            <OverlayTrigger
+                                                                                placement="top"
+                                                                                overlay={<Tooltip>Personally Identifiable Information (PII) encompasses various types of sensitive data, including Social Security Numbers, Credit Card Information, Personal Health Data, Employee Information, and Bank Account Information.</Tooltip>}
+                                                                                >
+                                                                                {({ ref, ...triggerHandler }) => (
+                                                                                    <i className='tooltipIcon' {...triggerHandler}>
+                                                                                        <Image
+                                                                                            ref={ref}
+                                                                                            src={tooltipIcon}
+                                                                                            width="24"
+                                                                                            height="24"
+                                                                                            alt="Remark Icon"
+                                                                                        />
+                                                                                    </i>
+                                                                                )}
+                                                                            </OverlayTrigger>
+                                                                        </Form.Group>
+                                                                    ):(
+                                                                        null
+                                                                    )}
                                                                     <div className={`${form.fromButtonDiv} d-sm-flex`}>
                                                                         <Button onClick={handleEnterDetailsSecondToggle} variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button">
                                                                             <span className='me-2'>Continue</span>
