@@ -539,7 +539,7 @@ function Navbar() {
                     </ul>
                   </li> */}
                   <li className="nav-item">
-                    <a className="nav-link" href="/about">About Us</a>
+                    <Link className="nav-link" href="/about">About Us</Link>
                   </li>
                   {/*<li className="nav-item">
                     <a className="nav-link" href="">Sign In</a>
