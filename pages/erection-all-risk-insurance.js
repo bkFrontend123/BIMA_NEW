@@ -353,8 +353,8 @@ export default function ErectionAllRisk_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black'>Erection All Risk Policy?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Contractors and employers can take out the policy jointly and individually. Any of the following parties involved in the construction process may be covered:</p>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>General contractorst</li>
-                                            <li>Subcontractorst</li>
+                                            <li>General contractors</li>
+                                            <li>Subcontractors</li>
                                             <li>Suppliers and manufacturers of equipment</li>
                                             <li>The purchaser or owner of the equipment</li>
                                         </ul>
