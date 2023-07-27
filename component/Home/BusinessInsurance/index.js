@@ -111,7 +111,7 @@ function Business() {
                                         <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col"></th>
                                         <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col"><img width="195px" src='/logo-white.svg' /></th>
                                         <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Offline Brokers</th>
-                                        <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital brokers</th>
+                                        <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital Brokers</th>
                                     </tr>
                                 </thead>
                                 <tbody>
