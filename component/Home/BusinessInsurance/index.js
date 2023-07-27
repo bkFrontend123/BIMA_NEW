@@ -146,7 +146,7 @@ function Business() {
                                         <img width="195px" src='/logoTextWhite.svg' />
                                     </th>
                                     <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Offline Brokers</th>
-                                    <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital brokers</th>
+                                    <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital Brokers</th>
                                 </tr>
                             </thead>
                             <tbody>
