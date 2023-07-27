@@ -355,8 +355,8 @@ export default function ErectionAllRisk_Insurance() {
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                             <li>General contractorst</li>
                                             <li>Subcontractorst</li>
-                                            <li>Suppliers and manufacturers of equipmentt</li>
-                                            <li>The purchaser or owner of the equipmentt</li>
+                                            <li>Suppliers and manufacturers of equipment</li>
+                                            <li>The purchaser or owner of the equipment</li>
                                         </ul>
                                     </div>
                                 </Container>
