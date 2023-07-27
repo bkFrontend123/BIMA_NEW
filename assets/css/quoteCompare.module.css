@@ -168,25 +168,25 @@
     overflow: auto;
 }
 /* width */
-.quoteCompare_quoteCompareListCol__JqdmY>div>span::-webkit-scrollbar {
+.quoteCompareListCol > div > span::-webkit-scrollbar {
     width: 8px;
 }
-.quoteCompare_quoteCompareListCol__JqdmY>div:last-child>span::-webkit-scrollbar {
+.quoteCompareListCol > div:last-child > span::-webkit-scrollbar {
     width: 5px;
 }
 
 /* Track */
-.quoteCompare_quoteCompareListCol__JqdmY>div>span::-webkit-scrollbar-track {
+.quoteCompareListCol > div > span::-webkit-scrollbar-track {
     background: var(--mute3); 
 }
 
 /* Handle */
-.quoteCompare_quoteCompareListCol__JqdmY>div>span::-webkit-scrollbar-thumb {
+.quoteCompareListCol > div > span::-webkit-scrollbar-thumb {
     background: var(--gray1); 
 }
 
 /* Handle on hover */
-.quoteCompare_quoteCompareListCol__JqdmY>div>span::-webkit-scrollbar-thumb:hover {
+.quoteCompareListCol > div > span::-webkit-scrollbar-thumb:hover {
     background: var(--gray); 
 }
 .quoteCompareRightCol .quoteCompareListCol > div > span  {
