@@ -95,8 +95,8 @@ function Business() {
                 <div className={`row text-center`}>
                     <div className={`col-md-8 mx-auto`}>
                         <div className='commnHeading'>
-                            <div className='title-36 font-secondary mb-3 text-primary font-weight-700'>Why choose <span className='text-yellow fst-italic'>BimaKavach</span></div>
-                            <p className='title-22 font-weight-500 text-primary px-0 px-lg-5 mb-0 mb-lg-5 pb-xxl-4'>We help you get the best quotes from top insurers within 10 Minutes</p>
+                            <div className='title-36 font-secondary mb-3 text-primary font-weight-700'>Why <span className='text-yellow fst-italic'>BimaKavach</span></div>
+                            <p className='title-22 font-weight-500 text-primary px-0 px-lg-5 mb-0 mb-lg-5 pb-xxl-4'>Get Quotes and Policies in Minutes, not Weeks</p>
                         </div>
                     </div>
                 </div>

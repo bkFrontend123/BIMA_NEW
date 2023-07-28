@@ -3,6 +3,7 @@
   --vt-c-blueDark: #071639;
   --vt-c-blueDark1: #050F28;
   --vt-c-blueSky: #1869f6;
+  --vt-c-blueSkyHover: #4287FF;
   --vt-c-blueSkyLight: #5177D4;
   --vt-c-blueSkyLight1: #DBDFEA;
   --vt-c-blueSkyLight2: #B4BDD3;
@@ -40,7 +41,9 @@
   --whiteBg: #ffffff;
   --black: #000000;
   --greyDark: #333333;
+  --greyDark1: #373737;
   --border-mute: #B4BDD3;
+  --border-mute1: #99B1CE;
   --whiteText: #ffffff;
   --formBorderColor: #A9A9A9;
   --mute: #F8F8F8;
