@@ -13,10 +13,12 @@ export default function RecentActivity() {
         { id: "ra2", img: "/team/priyalataPatra.png", title: "Priyalata Patra", date: "VP Product, Insurance Expert" },
         { id: "ra3", img: "/team/himaniDoshi.png", title: "Himani Doshi", date: "Liability Insurance Expert" },
         { id: "ra4", img: "/team/ravikantSawant.png", title: "Ravikant Sawant", date: "P&C Insurance Expert" },
-        { id: "ra1", img: "/team/tejasJain.png", title: "Tejas Jain", date: "Founder & CEO" },
-        { id: "ra2", img: "/team/priyalataPatra.png", title: "Priyalata Patra", date: "VP Product, Insurance Expert" },
-        { id: "ra3", img: "/team/himaniDoshi.png", title: "Himani Doshi", date: "Liability Insurance Expert" },
-        { id: "ra4", img: "/team/ravikantSawant.png", title: "Ravikant Sawant", date: "P&C Insurance Expert" },
+        { id: "ra5", img: "/team/shrutiVishnoi.png", title: "Shruti Vishnoi", date: "Chief of Customer Success" },
+        { id: "ra6", img: "/team/tejasJain.png", title: "Tejas Jain", date: "Founder & CEO" },
+        { id: "ra7", img: "/team/priyalataPatra.png", title: "Priyalata Patra", date: "VP Product, Insurance Expert" },
+        { id: "ra8", img: "/team/himaniDoshi.png", title: "Himani Doshi", date: "Liability Insurance Expert" },
+        { id: "ra9", img: "/team/ravikantSawant.png", title: "Ravikant Sawant", date: "P&C Insurance Expert" },
+        { id: "ra10", img: "/team/shrutiVishnoi.png", title: "Shruti Vishnoi", date: "Chief of Customer Success" },
     ])
 
     return (
