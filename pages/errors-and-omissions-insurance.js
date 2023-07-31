@@ -440,7 +440,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/courtFeesIcon.svg' width="80" height="80" alt="Court Attendance Fees" />
+                                                            <Image src='/icons/lossDocumentIcon.svg' width="80" height="80" alt="Court Attendance Fees" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Court Attendance Fees</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Cover losses for attending court due to an E&O lawsuit, including lawyer's fees, travel expenses, and lost wages.</p>
                                                         </div>
@@ -449,7 +449,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/lossDocumentIcon.svg' width="80" height="80" alt="Loss of Document" />
+                                                            <Image src='/icons/courtFeesIcon.svg' width="80" height="80" alt="Loss of Document" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Loss of Document</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>In case of a lawsuit alleging loss or destruction of important documents, this policy will cover the legal and claim charges</p>
                                                         </div>
