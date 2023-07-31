@@ -100,7 +100,7 @@ html {
    background-color: transparent;
 }
 .userFlowBody .navbar-main {
-   padding: 0;
+   /*padding: 0;*/
 }
 
 body.homePageBody .navbar-main .nabbarStrip {
