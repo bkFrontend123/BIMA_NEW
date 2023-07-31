@@ -76,7 +76,7 @@ export default function QuoteComparison() {
                 talkExpert="true"
             />
             <section className='quoteCompareBlock pt-4 pt-md-5'>
-                <Container>
+                <Container fluid>
                     <Row className='justify-content-center'>
                         <Col xl={11}>
                             <div className='d-none d-md-flex mb-3'>
