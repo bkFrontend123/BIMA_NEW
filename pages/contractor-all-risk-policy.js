@@ -204,7 +204,7 @@ export default function ContractorAllRisk_Policy() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Contractor’'s All Risk Policy"
+                        title="Contractor's All Risk Policy"
                         description="Shield contractors, architects, and engineers from financial losses due to unexpected accidents, damage, or third-party claims in construction projects."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="7,000"
