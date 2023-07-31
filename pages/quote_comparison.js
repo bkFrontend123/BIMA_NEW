@@ -106,7 +106,7 @@ export default function QuoteComparison() {
                                 <div className={`${quoteCompare.quoteCompareBody}`}>
                                     <Accordion.Header className={quoteCompare.accordianHeader}>
                                         <QCompareHeading
-                                            title="Deductables"
+                                            title="Deductible"
                                         />
                                     </Accordion.Header>
                                     <Accordion.Body>
