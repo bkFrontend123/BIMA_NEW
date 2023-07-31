@@ -589,8 +589,23 @@ function Navbar() {
                                 />
                               </i>
                               <div>
-                                <span>Call us:</span>
+                                <span>Call us for Liability:</span>
                                 <a href="tel:9036554785">+91 9036554785</a>
+                              </div>
+                            </li>
+                            <li>
+                              <i>
+                                <Image
+                                  src="/icons/call_fill_icon.svg"
+                                  width={13}
+                                  height={13}
+                                  alt="Call"
+                                  loading="lazy"
+                                />
+                              </i>
+                              <div>
+                                <span>Call us for P&C:</span>
+                                <a href="tel:9035492594">+91 9035492594</a>
                               </div>
                             </li>
                           </ul>
