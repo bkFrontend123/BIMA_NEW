@@ -19,10 +19,10 @@ export default function About() {
         { id: "t2", img: "/team/customer_chief.png", name: "Shruti Vishnoi", position: "Chief of Customer Success" },
         { id: "t3", img: "/team/operating_officer.png", name: "R.K Jain", position: "Chief Operating Officer" },
         { id: "t4", img: "/team/principle.png", name: "Milind Vitvekar", position: "Principal Officer" },
-        { id: "t5", img: "/team/creative_director.png", name: "Vishal Sharma", position: "Chief Creative Director" },
+        { id: "t5", img: "/team/creative_director.png", name: "Vishal Sharma", position: "Head of Design" },
         { id: "t6", img: "/team/chief_marketing.png", name: "Ankit Mittal", position: "Chief of Marketing" },
         { id: "t7", img: "/team/chief_staff.png", name: "Parthav Kidangoor", position: "Chief of Staff" },
-        { id: "t8", img: "/team/mascot_officer.png", name: "Arya", position: "Chief Mascot Officer" },
+        { id: "t8", img: "/team/vp_product.png", name: "Priyalata Patra", position: "VP, Product" },
         { id: "t9", img: "/team/marketing_officer.png", name: "Shravan Deshmukh", position: "Performance Marketing Officer" },
     ]
     useEffect(() => {
@@ -129,6 +129,7 @@ export default function About() {
                                         </Col>
                                     )}
                                 </Row>
+                                <p className='title-18 font-weight-500 text-primary mt-4 mt-xl-5 mb-0'>Our team's expertise and dedication form the backbone of our operations, ensuring we deliver the best service to our clients every day.</p>
                             </Col>
                         </Row>
                     </Container>
