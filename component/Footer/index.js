@@ -131,13 +131,13 @@ export default function Footer(props) {
                       <ul className="list-group list-group-borderless bg-transparent">
                         <li className="list-group-item text-yellow title20 font-weight-600 mt-3">Engineering</li>
                         <li className="list-group-item">
-                          <Link href="/contractor-all-risk-policy" className='title18 font-weight-400'>Contractors All Risk</Link>
+                          <Link href="/contractor-all-risk-policy" className='title18 font-weight-400'>Contractor's All Risk</Link>
                         </li>
                         <li className="list-group-item">
                           <Link href="/erection-all-risk-insurance" className='title18 font-weight-400'>Erection All Risk</Link>
                         </li>
                         <li className="list-group-item">
-                          <Link href="/contractor-plant-and-machinery-insurance" className='title18 font-weight-400'>Contractors Plant & Machinery</Link>
+                          <Link href="/contractor-plant-and-machinery-insurance" className='title18 font-weight-400'>Contractor's Plant & Machinery</Link>
                         </li>
                       </ul>
                     </div>
@@ -205,7 +205,7 @@ export default function Footer(props) {
                 <div className="row footer-note text-md-start text-center mt-4">
                   <div className="col-md-12">
                     <p className='title14 text-primarySkyLight1 font-weight-600 mb-2'>Disclaimer:</p>
-                    <p className='title14 text-primarySkyLight2 font-weight-500 mb-2'>BimaKavach Insurance Broking Pvt. Ltd. | CIN- U66010MP2022PTC059393 | Registered  Office- Flat No 201, Classic Avenue,184 Shrinagar Main, Indore Madhya Pradesh India- 452018 | Phone No.- 9036554785 | Email- support@bimakavach.com </p>
+                    <p className='title14 text-primarySkyLight2 font-weight-500 mb-2'>BimaKavach Insurance Broking Pvt. Ltd. | CIN- U66010MP2022PTC059393 | Registered  Office- Flat No 201, Classic Avenue, 184 Shrinagar Main, Indore Madhya Pradesh India- 452018 | Phone No.- 9036554785 | Email- support@bimakavach.com </p>
 
                     <p className='title14 text-primarySkyLight2 font-weight-500 mb-2'>BimaKavach is registered as a Direct Broker | Registration No. 901, Registration Code No.  IRDAI / DB 985/ 2022, Valid till 25/06/2026, License category- Direct Broker (General).</p>
 

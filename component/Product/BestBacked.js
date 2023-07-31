@@ -16,8 +16,7 @@ export default function BestBacked(props) {
         { id: "b1", img: "/backBest1.png" },
         { id: "b2", img: "/backBest2.png" },
         { id: "b3", img: "/backBest3.png" },
-        { id: "b4", img: "/backBest2.png" },
-        { id: "b5", img: "/backBest4.png" },
+        { id: "b4", img: "/backBest4.png" },
 
     ]) 
     return (

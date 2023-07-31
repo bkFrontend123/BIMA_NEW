@@ -314,8 +314,8 @@ export default function WorkmensCompensation_Insurance() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Workmen Compensation Policy?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Workmen Compensation Insurance, serves as a financial safeguard for employees encountering work-related injuries. According to the Employees’ State Insurance Act of 1948, all employers in India, particularly those managing manufacturing units with over 20 employees, are legally required to hold such an assurance policy.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Workmen's Compensation Policy?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Workmen's Compensation Insurance, serves as a financial safeguard for employees encountering work-related injuries. According to the Employees’ State Insurance Act of 1948, all employers in India, particularly those managing manufacturing units with over 20 employees, are legally required to hold such an assurance policy.</p>
 
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>In case of a work accident resulting in injury or death, Employee Protection Assurance provides financial aid to both the employee and their family. It caters to employees who sustain injuries or become disabled due to mishaps at work locations such as construction zones, factories, plantations, mines, and more.</p>
                                     </div>
@@ -324,7 +324,7 @@ export default function WorkmensCompensation_Insurance() {
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Workmen Compensation Policy</h3>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Workmen's Compensation Policy</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-4 g-lg-5'>
                                                 <Col lg={4}>
@@ -381,7 +381,7 @@ export default function WorkmensCompensation_Insurance() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Workmen Compensation Policy?</div>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Workmen's Compensation Policy?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Companies with a workforce of more than 20 employees are mandated by law to possess this form of assurance. As per the Employees' State Insurance Act of 1948, employers are obligated to extend insurance benefits to their employees. Claims under this assurance can be categorized into four types, namely accidental death, permanent total disability, permanent partial disability, and temporary total disability.</p>
 
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>This policy is primarily designed to offer financial security to workers and their families in case of adverse workplace incidents.</p>
@@ -406,7 +406,7 @@ export default function WorkmensCompensation_Insurance() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Workmen Compensation Policy?</div>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Workmen's Compensation Policy?</div>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                             <li>Financial coverage for employees who suffer injuries while on duty, ensuring their wellbeing and financial stability.</li>
                                             <li>Most workmen's compensation policies include coverage for not only permanent staff but also for temporary and contract workers, extending the protective umbrella to all your employees.</li>
@@ -436,7 +436,7 @@ export default function WorkmensCompensation_Insurance() {
                                             </span>
                                             Coverages & Exclusions in
                                         </h3>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Workmen Compensation Policy</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Workmen's Compensation Policy</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
                                         <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
@@ -479,7 +479,7 @@ export default function WorkmensCompensation_Insurance() {
                                         <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>Workmen compensation insurance policies come with certain exclusions, which may vary depending on the insurance provider and the specific policy terms. Some commonly encountered exclusions in these policies in India are:</div>
+                                                    <div className='title-20 text-black mb-4'>Workmen's compensation insurance policies come with certain exclusions, which may vary depending on the insurance provider and the specific policy terms. Some commonly encountered exclusions in these policies in India are:</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
@@ -487,7 +487,7 @@ export default function WorkmensCompensation_Insurance() {
                                                     <ul className={`text-black title-20 ${productStyle.listData}`}>
                                                         <li>Assumed liabilities of the insured.</li>
                                                         <li>Injuries caused by war, foreign invasion, or mutiny.</li>
-                                                        <li>Employees not classified as workers according to the Workmen Compensation Act.</li>
+                                                        <li>Employees not classified as workers according to the Workmen's Compensation Act.</li>
                                                         <li>Penalties or interests imposed on an employee due to legal complications.</li>
                                                         <li>Accidents or death caused by self-inflicted harm or intentional aggravation of an injury.</li>
                                                         <li>Health issues or accidents occurring while the employee was under the influence of drugs or alcohol.</li>
@@ -510,7 +510,7 @@ export default function WorkmensCompensation_Insurance() {
                         <Row>
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Workman's Compensation Examples</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Workmen's Compensation Examples</h3>
                                 </div>
                             </Col>
                         </Row>
@@ -564,13 +564,13 @@ export default function WorkmensCompensation_Insurance() {
                         <Row>
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Workmen Compensation Policy</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Workmen's Compensation Policy</h3>
                                 </div>
                             </Col>
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What is the workmen compensation act in simple words?"
+                                title="What is the workmen's compensation act in simple words?"
                                 content="The Workmen's Compensation Act, 1923 is an Indian law that provides financial protection to workers who suffer injuries or disabilities while performing their job duties. The Act ensures that employees receive compensation for any injury, disability, or death arising out of and during the course of their employment. Under the Act, if a worker sustains an injury or dies due to an accident at the workplace, the employer is liable to pay compensation to the worker or their dependents. The compensation amount is determined based on the nature of the injury, the worker's monthly wages, and other factors. Since 2010, this Act has been known as the Employee's Compensation Act."
                             />
                             <Accordion
@@ -591,7 +591,7 @@ export default function WorkmensCompensation_Insurance() {
                                 </>]}
                             />
                             <Accordion
-                                title="How is workman's compensation calculated in India?"
+                                title="How is workmen's compensation calculated in India?"
                                 content={[<>
                                     <span>The calculation of workmen's compensation in India, as per the provisions of the Workmen's Compensation Act, involves considering several factors. The key elements used in determining the compensation amount include:</span>
                                     <ul className={`mt-4 ${productStyle.listData}`}>
@@ -616,7 +616,7 @@ export default function WorkmensCompensation_Insurance() {
                                 </>]}
                             />
                             <Accordion
-                                title="Who is eligible for workman's compensation?"
+                                title="Who is eligible for workmen's compensation?"
                                 content={[<>
                                     <span>The Workmen's Compensation Act or Employees Compensation Act applies to the following entities:</span>
                                     <ul className={`mt-4 ${productStyle.listData}`}>
@@ -656,7 +656,7 @@ export default function WorkmensCompensation_Insurance() {
                                 content="The maximum claim amount under a Workmen's Compensation policy in India can vary depending on the terms and conditions of the insurance policy and the specific provisions of the insurance company. The compensation limit for workmen's compensation in India is determined by the Employees' Compensation Act, which sets the maximum amounts for different types of injuries and disabilities"
                             />
                             <Accordion
-                                title="Is workmen policy compulsory?"
+                                title="Is workmen's policy compulsory?"
                                 content="Yes, workmen's insurance, also known as workers' compensation insurance, is compulsory in India for certain categories of employers. This requirement is specified under the Employees' Compensation Act, which makes it mandatory for employers to provide compensation to their employees in the event of work-related injuries, disabilities, or death."
                             />
                         </div>

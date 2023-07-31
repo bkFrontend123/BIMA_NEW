@@ -359,7 +359,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                                             <span>
                                                                 <Image src='/icons/generatorsIcon.svg' width="100" height="100" alt="Generators" />
                                                             </span>
-                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Generatorss</p>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Generators</p>
                                                         </div>
                                                     </Col>
                                                     <Col lg={4}>
@@ -400,7 +400,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>The insurance premium depends on the type of equipment, use of equipment, location, and risk you are entailing.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>The insurance premium depends on the type of equipment, use of equipment, location, and risk you are entailing</p>
                                                         </div>
                                                     </div>
                                                 </Col>

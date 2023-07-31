@@ -473,7 +473,7 @@ export default function CommercialCrime_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Court Attendance Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It provides protection from reasonable costs and expenses incurred by the insured due to required attendance at court proceedings, hearings, trials, and depositions related to the defense of a claim. .</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It provides protection from reasonable costs and expenses incurred by the insured due to required attendance at court proceedings, hearings, trials, and depositions related to the defense of a claim.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
@@ -659,7 +659,7 @@ export default function CommercialCrime_Insurance() {
                             />
                             <Accordion
                                 title="Which insurance policy can offer protection against embezzlement?"
-                                content="Embezzlement is a type of theft in which an employee or trusted individual takes money or property that belongs to their employer or another party.Crime insurance is typically offered as protection against embezzlement. It provides coverage for losses arising from criminal activities such as theft, fraud, and embezzlement."
+                                content="Embezzlement is a type of theft in which an employee or trusted individual takes money or property that belongs to their employer or another party. Crime insurance is typically offered as protection against embezzlement. It provides coverage for losses arising from criminal activities such as theft, fraud, and embezzlement."
                             />
                         </div>
                     </Container>

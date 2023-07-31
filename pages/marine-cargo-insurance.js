@@ -584,11 +584,6 @@ export default function MarineCargo_Insurance() {
                                             </Row>
                                         </div>
                                         <div data-tab className="hidden place-content-center">
-                                            <Row>
-                                                <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>Inadequatre Packaging & Inherent Vice or nature was duplicated. please remove the duplicated points.</div>
-                                                </Col>
-                                            </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>

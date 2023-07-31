@@ -106,7 +106,7 @@ export default function QuoteComparison() {
                                 <div className={`${quoteCompare.quoteCompareBody}`}>
                                     <Accordion.Header className={quoteCompare.accordianHeader}>
                                         <QCompareHeading
-                                            title="Deductible"
+                                            title="Deductibles"
                                         />
                                     </Accordion.Header>
                                     <Accordion.Body>
@@ -181,7 +181,7 @@ export default function QuoteComparison() {
                                 <div className={`${quoteCompare.quoteCompareBody}`}>
                                     <Accordion.Header className={quoteCompare.accordianHeader}>
                                         <QCompareHeading
-                                            title="Coverage/Extensions"
+                                            title="Coverages/Extensions"
                                         />
                                     </Accordion.Header>
                                     <Accordion.Body>
@@ -362,7 +362,7 @@ export default function QuoteComparison() {
                                         iconWidth="34"
                                         iconHeight="53"
                                     >
-                                        <span>99,000</span>
+                                        <span>₹99,000</span>
                                     </QCompareHeadCol>
                                     <QCompareHeadCol
                                         icon={stateBankIcon}
@@ -378,7 +378,7 @@ export default function QuoteComparison() {
                                         iconWidth="57"
                                         iconHeight="35"
                                     >
-                                        <span>60,000</span>
+                                        <span>₹60,000</span>
                                     </QCompareHeadCol>
                                     <QCompareHeadCol
                                         icon={iciciIcon}
@@ -386,7 +386,7 @@ export default function QuoteComparison() {
                                         iconWidth="32"
                                         iconHeight="35"
                                     >
-                                        <span>99,000</span>
+                                        <span>₹99,000</span>
                                     </QCompareHeadCol>
                                     <QCompareHeadCol
                                         icon={bajajFinservIcon}
@@ -394,7 +394,7 @@ export default function QuoteComparison() {
                                         iconWidth="128"
                                         iconHeight="16"
                                     >
-                                        <span>99,000</span>
+                                        <span>₹99,000</span>
                                     </QCompareHeadCol>
                                 </div>
                                 <Accordion.Item eventKey="0" className={quoteCompare.accordianItem}>

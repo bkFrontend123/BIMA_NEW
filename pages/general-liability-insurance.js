@@ -693,7 +693,7 @@ export default function GeneralLiability_Insurance() {
                                 content="General Liability Insurance can cover advertising injury claims, including certain types of claims related to social media use. For instance, if your business faces a libel or slander claim due to a social media post, your General Liability Insurance may cover legal defense costs and any damages awarded. Some policies may also offer additional coverage for claims related to hacked social media accounts or leaked personal information through social media channels."
                             />
                             <Accordion
-                                title="How much general liability insurance do i need?"
+                                title="How much general liability insurance do I need?"
                                 content="The amount of General Liability Insurance you need depends on various factors, such as your business size, type, location, and the level of risk you're willing to assume. Consider these factors when calculating the insurance coverage you need."
                             />
                             <Accordion

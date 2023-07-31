@@ -173,7 +173,7 @@ function Business() {
                                 <tr>
                                     <td>
                                         <div className='businessInsurance-colBox title24 text-primary font-weight-500'>
-                                            24x7 Customer Support
+                                            24*7 Customer Support
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
