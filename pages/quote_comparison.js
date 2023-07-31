@@ -386,7 +386,7 @@ export default function QuoteComparison() {
                                         iconWidth="32"
                                         iconHeight="35"
                                     >
-                                        99,000
+                                        <span>99,000</span>
                                     </QCompareHeadCol>
                                     <QCompareHeadCol
                                         icon={bajajFinservIcon}
@@ -394,7 +394,7 @@ export default function QuoteComparison() {
                                         iconWidth="128"
                                         iconHeight="16"
                                     >
-                                        99,000
+                                        <span>99,000</span>
                                     </QCompareHeadCol>
                                 </div>
                                 <Accordion.Item eventKey="0" className={quoteCompare.accordianItem}>
