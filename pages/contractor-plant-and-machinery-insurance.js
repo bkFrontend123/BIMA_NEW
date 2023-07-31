@@ -208,6 +208,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                         description="For machinery owners and contractors, this policy provides compensation against potential losses due to equipment damage."
                         insuranceWorth="3 Crore"
                         insuranceAmount="15,000"
+                        noInsurer="true"
                         productImgSrc={productImage}
                         form="true"
                         formHeading="CPM Policy"

@@ -208,6 +208,7 @@ export default function ErectionAllRisk_Insurance() {
                         description="Covers losses during machinery or equipment installation, providing vital financial protection for construction and manufacturing industries against various risks."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="7,000"
+                        noInsurer="true"
                         productImgSrc={productImage}
                         form="true"
                         formHeading="EAR Policy"

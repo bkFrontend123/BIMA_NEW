@@ -208,6 +208,7 @@ export default function ContractorAllRisk_Policy() {
                         description="Shield contractors, architects, and engineers from financial losses due to unexpected accidents, damage, or third-party claims in construction projects."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="7,000"
+                        noInsurer="true"
                         productImgSrc={productImage}
                         form="true"
                         formHeading="CAR Policy"
