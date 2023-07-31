@@ -108,7 +108,7 @@ export default function PolicyCard(props) {
                                 </div>
                                 <div>
                                     <Button variant="primary" className='btnCommon yellowBtn' type="button">
-                                        <span>Download Policy</span>
+                                        <span>Download quote</span>
                                     </Button>
                                 </div>
                             </div>
