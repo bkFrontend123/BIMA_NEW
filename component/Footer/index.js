@@ -183,8 +183,13 @@ export default function Footer(props) {
                         <li className="list-group-item">
                           <Link href="mailto:support@bimakavach.co" className='title18 font-weight-400'>support@bimakavach.com</Link>
                         </li>
+                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">For Liability Insurance</li>
                         <li className="list-group-item">
                           <Link href="tel:+91 9036554785" className='title18 font-weight-400'>+91 9036554785</Link>
+                        </li>
+                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">For P&C Insurance</li>
+                        <li className="list-group-item">
+                          <Link href="tel:+91 9035492594" className='title18 font-weight-400'>+91 9035492594</Link>
                         </li>
                       </ul>
                     </div>

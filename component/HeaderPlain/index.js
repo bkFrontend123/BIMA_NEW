@@ -265,7 +265,7 @@ export default function HeaderPlain(props) {
                                       <Image src="/icons/call_fill_icon.svg" width="13" height="13" alt="Call" />
                                     </i>
                                     <div>
-                                      <span>Call us for Liability:</span>
+                                      <span>For Liability Insurance:</span>
                                       <a href="tel:9036554785">+91 9036554785</a>
                                     </div>
                                   </li>
@@ -274,7 +274,7 @@ export default function HeaderPlain(props) {
                                       <Image src="/icons/call_fill_icon.svg" width="13" height="13" alt="Call" />
                                     </i>
                                     <div>
-                                      <span>Call us for P&C:</span>
+                                      <span>For P&C Insurance:</span>
                                       <a href="tel:9035492594">+91 9035492594</a>
                                     </div>
                                   </li>

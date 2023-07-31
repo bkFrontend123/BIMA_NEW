@@ -589,7 +589,7 @@ function Navbar() {
                                 />
                               </i>
                               <div>
-                                <span>Call us for Liability:</span>
+                                <span>For Liability Insurance:</span>
                                 <a href="tel:9036554785">+91 9036554785</a>
                               </div>
                             </li>
@@ -604,7 +604,7 @@ function Navbar() {
                                 />
                               </i>
                               <div>
-                                <span>Call us for P&C:</span>
+                                <span>For P&C Insurance:</span>
                                 <a href="tel:9035492594">+91 9035492594</a>
                               </div>
                             </li>
