@@ -55,7 +55,7 @@ export default function ThankPolicyCard(props) {
                         </div>
                     </div>
                     <div className={`d-md-flex align-items-center justify-content-between gap-3 gap-lg-4 ${style.thankPolicyFtr}`}>
-                        <Link href="" className='btnCommon greyBtn w-100 justify-content-center'>
+                        <Link href="https://wa.me/9036554785" className='btnCommon greyBtn w-100 justify-content-center'>
                             <WhatsApp iconColor="primary" width="16" height="16" />
                             <span className='ms-2'>WhatsApp Us</span>
                         </Link>

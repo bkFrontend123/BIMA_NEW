@@ -17,7 +17,7 @@ export default function ProductSchedule() {
                         <img src='/icons/calender.svg' width="22px" />
                         <span className='ms-2'>Schedule a call</span>
                     </a>
-                    <a target="_blank" href="https://wa.me/9876543210" className={`btnCommon yellowBtn text-primary text-decoration-none mt-4 mt-sm-0 ${productStyle.btnCommon} ${productStyle.yellowBtn}`}>
+                    <a target="_blank" href="https://wa.me/9036554785" className={`btnCommon yellowBtn text-primary text-decoration-none mt-4 mt-sm-0 ${productStyle.btnCommon} ${productStyle.yellowBtn}`}>
                         <WhatsApp iconColor="primary" height="23" width="23" />
                         <span className='ms-2'>WhatsApp us</span>
                     </a>
