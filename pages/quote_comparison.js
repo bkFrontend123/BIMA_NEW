@@ -391,8 +391,8 @@ export default function QuoteComparison() {
                                     <QCompareHeadCol
                                         icon={bajajFinservIcon}
                                         title="Bajaj Finserv"
-                                        iconWidth="115"
-                                        iconHeight="35"
+                                        iconWidth="128"
+                                        iconHeight="16"
                                     >
                                         99,000
                                     </QCompareHeadCol>

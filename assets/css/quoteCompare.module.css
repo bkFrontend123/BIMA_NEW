@@ -10,7 +10,7 @@
 }
 .quoteCompareRightCol {
     float: left;
-    width: calc(100% - 430px);
+    width: calc(100% - 410px);
     margin-top: -164px;
     position: relative;
     z-index: 2;
@@ -29,8 +29,8 @@
 }
 .quoteCompareHeader > div {
     padding: 20px;
-    text-align: center;
-    display: flex;
+    text-align: left;
+    //display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -38,8 +38,8 @@
     min-width: 324px;
 }
 .quoteCompareLeftCol .quoteCompareHeader > div:first-child {
-    width: 400px;
-    min-width: 400px;
+    width: 380px;
+    min-width: 380px;
     align-items: start;
     justify-content: end;
     z-index: 1;
@@ -80,7 +80,7 @@
     align-items: center;
     justify-content: left;
     width: 100%;
-    min-width: 324px;
+    min-width: 305px;
     text-align: left;
     position: relative;
     box-shadow: 15.64811px 10.09265px 10.5372px -1.22227px rgba(0, 0, 0, 0.1);
@@ -157,8 +157,8 @@
     box-shadow: none;
 }
 .quoteCompareLeftCol .quoteCompareListCol > div:nth-child(2) {
-    width: 400px;
-    min-width: 400px;
+    width: 380px;
+    min-width: 380px;
     text-align: left;
     justify-content: start;
 }
@@ -203,36 +203,42 @@
 @media (min-width: 992px) {
     .quoteCompareTable {
         margin-left: calc(((100% - 960px)/2) + 3%);
+        margin-left: 100px;
     }
 }
 
 @media (min-width: 1200px) {
     .quoteCompareTable {
         margin-left: calc(((100% - 1140px)/2) + 3%);
+        margin-left: 100px;
     }
 }
 
 @media (min-width: 1300px) {
     .quoteCompareTable {
         margin-left: calc(((100% - 1280px)/2) + 5%);
+        margin-left: 100px;
     }
 }
 
 @media (min-width: 1400px) {
     .quoteCompareTable {
         margin-left: calc(((100% - 1400px)/2) + 6%);
+        margin-left: 100px;
     }
 }
 
 @media (min-width: 1600px) {
     .quoteCompareTable {
         margin-left: calc(((100% - 1400px)/2) + 0%);
+        margin-left: 100px;
     }
 }
 
 @media (min-width: 1700px) {
     .quoteCompareTable {
         margin-left: calc(((100% - 1560px)/2) + 2.5%);
+        margin-left: 100px;
     }   
 }
 
@@ -242,7 +248,7 @@
         margin-top: -154px;
     }
     .quoteCompareRightCol .accordianItem {
-        padding-top: 67px;
+        padding-top: 63px;
     }
 }
 
@@ -259,8 +265,8 @@
         min-width: 280px;
     }
     .quoteCompareListCol > div {
-        font-size: 15px;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 20px;
         padding: 8px 16px;
         height: 80px;
         min-width: 280px;
@@ -273,7 +279,7 @@
         max-height: 64px;
     }
     .quoteCompareRightCol .accordianItem {
-        padding-top: 63px;
+        padding-top: 59px;
     }
 }
 

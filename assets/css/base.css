@@ -34,6 +34,12 @@
   --statusGreenColor: #0FB600;
   --statusGreenBg: #DDF7E2;
 
+  --statusRedColor: #C80D0D;
+  --statusRedBg: #FFD0D0;
+
+  --statusOrangeColor: #FFB400;
+  --statusOrangeBg: #FFECD0;
+
   --activeColor: #00AB82;
 
   --section-gap: 70px;

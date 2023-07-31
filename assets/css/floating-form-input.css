@@ -10,6 +10,9 @@
     width: 80%;
     z-index: 1;
 }
+.greyForm .floatFormGroup .form-floating > label {
+    background: var(--mute3);
+}
 .floatFormGroup .form-floating > .form-control:focus ~ label,
 .floatFormGroup .form-floating > .form-control:not(:placeholder-shown) ~ label,
 .floatFormGroup .form-floating > .form-select ~ label {

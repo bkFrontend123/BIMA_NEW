@@ -2,15 +2,16 @@
     min-height: 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .quoteCompareHdr h4 {
     font-size: 20px;
     line-height: 26px;
     color: var(--black);
     font-weight: 500;
-    margin: 8px auto 24px auto;
-    width: 70%;
+    margin: 8px 0 24px 0;
+    width: 60%;
+    min-height: 52px;
 }
 .quoteCompareBtn {
     font-size: 18px;
@@ -26,13 +27,15 @@
     color: var(--whiteText);
     font-size: 18px;
     font-weight: 600;
+    text-align: center;
 }
 
 @media (max-width: 1699px) {
     .quoteCompareHdr h4 {
         font-size: 17px;
         line-height: 24px;
-        margin: 8px auto 18px auto;
+        margin: 8px 0 18px 0;
+        width: 50%;
     }
     .quoteCompareBtn,
     .quoteCompareBtn span,
