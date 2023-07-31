@@ -208,7 +208,7 @@ export default function FireAndBurglary_Insurance() {
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="2,100"
                         productImgSrc={productImage}
-                        form="true"
+                        form="false"
                         formHeading="Fire Insurance"
                         customClass="fireBnr"
                     >

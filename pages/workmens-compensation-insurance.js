@@ -208,7 +208,7 @@ export default function WorkmensCompensation_Insurance() {
                         insuranceWorth="15 Lakhs"
                         insuranceAmount="1,200"
                         productImgSrc={productImage}
-                        form="true"
+                        form="false"
                         formHeading="WC Policy"
                         customClass="wrkmnCmpBnr"
                     >
