@@ -30,12 +30,11 @@
 .quoteCompareHeader > div {
     padding: 20px;
     text-align: left;
-    //display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    min-width: 324px;
+    min-width: 305px;
 }
 .quoteCompareLeftCol .quoteCompareHeader > div:first-child {
     width: 380px;
