@@ -352,7 +352,7 @@ export default function DAndO_Insurance() {
                                                             <Image src='/icons/sideC.svg' width="80" height="80" alt="Side C" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>3. Side C</h3>
                                                             <div className='title-22 font-weight-600 text-black mb-3'>Coverage for Entity</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It is designed to protect the company as a whole from certain legal claims, regardless of whether the directors or officers are directly involved in the underlying dispute. This coverage typically addresses two main areas: employment disputes & security related issues.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Side C coverage basically covers the companies that are listed on the Stock Exchange. It covers the claims and liabilities arising from security-related grievances. It indemnifies the company for legal costs incurred while dealing with such claims or liabilities related to the securities traded. Thus, if the shareholders or any stakeholders sue the company for any reason related to securities traded on the stock exchange, Side C will cover costs incurred by the company in defense of the lawsuit, including legal fees, expert witness fees, and other related expenses.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
