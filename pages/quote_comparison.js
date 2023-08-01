@@ -359,8 +359,6 @@ export default function QuoteComparison() {
                                     <QCompareHeadCol
                                         icon={standardCharteredIcon}
                                         title="Standard Chartered"
-                                        iconWidth="34"
-                                        iconHeight="53"
                                     >
                                         <span>₹99,000</span>
                                     </QCompareHeadCol>
@@ -375,24 +373,18 @@ export default function QuoteComparison() {
                                     <QCompareHeadCol
                                         icon={hdfcErgoIcon}
                                         title="HFC Ergo"
-                                        iconWidth="57"
-                                        iconHeight="35"
                                     >
                                         <span>₹60,000</span>
                                     </QCompareHeadCol>
                                     <QCompareHeadCol
                                         icon={iciciIcon}
                                         title="ICICI Lombard"
-                                        iconWidth="32"
-                                        iconHeight="35"
                                     >
                                         <span>₹99,000</span>
                                     </QCompareHeadCol>
                                     <QCompareHeadCol
                                         icon={bajajFinservIcon}
                                         title="Bajaj Finserv"
-                                        iconWidth="128"
-                                        iconHeight="16"
                                     >
                                         <span>₹99,000</span>
                                     </QCompareHeadCol>
