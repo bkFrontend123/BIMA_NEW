@@ -244,10 +244,10 @@
 
 @media (max-width: 1699px) {
     .quoteCompareRightCol {
-        margin-top: -154px;
+        margin-top: -158px;
     }
     .quoteCompareRightCol .accordianItem {
-        padding-top: 63px;
+        padding-top: 67px;
     }
 }
 
@@ -278,7 +278,7 @@
         max-height: 64px;
     }
     .quoteCompareRightCol .accordianItem {
-        padding-top: 59px;
+        padding-top: 63px;
     }
 }
 
