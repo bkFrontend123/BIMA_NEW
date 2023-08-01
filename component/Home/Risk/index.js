@@ -140,9 +140,9 @@ function BusinessRisk() {
         {id: "bs6", title: "Crime Insurance", img: "/productIcons/liability/crime_icon.svg" },
         {id: "bs7", title: "Workmen's Compensation", img: "/productIcons/liability/workman_icon.svg" },
         {id: "bs8", title: "Fire Insurance", img: "/productIcons/asset/fire_icon.svg" },
-        {id: "bs9", title: "Contractors All Risk", img: "/productIcons/engineering/contractorsAllRisk_icon.svg" },
+        {id: "bs9", title: "Contractor's All Risk", img: "/productIcons/engineering/contractorsAllRisk_icon.svg" },
         {id: "bs10", title: "Erection All Risk", img: "/productIcons/engineering/erectionAllRisk_icon.svg" },
-        {id: "bs11", title: "Contractors Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.png" },
+        {id: "bs11", title: "Contractor's Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.png" },
         {id: "bs12", title: "Marine Transit Policy", img: "/productIcons/marine/marine_icon.svg" },
         {id: "bs13", title: "Directors & Officers Insurance", img: "/productIcons/liability/dAndO_icon.svg" },
         {id: "bs14", title: "Errors & Omissions Insurance", img: "/productIcons/liability/eAndO_icon.svg" },
@@ -152,9 +152,9 @@ function BusinessRisk() {
         {id: "bs18", title: "Crime Insurance", img: "/productIcons/liability/crime_icon.svg" },
         {id: "bs19", title: "Workmen's Compensation", img: "/productIcons/liability/workman_icon.svg" },
         {id: "bs20", title: "Fire Insurance", img: "/productIcons/asset/fire_icon.svg" },
-        {id: "bs21", title: "Contractors All Risk", img: "/productIcons/engineering/contractorsAllRisk_icon.svg" },
+        {id: "bs21", title: "Contractor's All Risk", img: "/productIcons/engineering/contractorsAllRisk_icon.svg" },
         {id: "bs22", title: "Erection All Risk", img: "/productIcons/engineering/erectionAllRisk_icon.svg" },
-        {id: "bs23", title: "Contractors Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.png" },
+        {id: "bs23", title: "Contractor's Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.png" },
         {id: "bs24", title: "Marine Transit Policy", img: "/productIcons/marine/marine_icon.svg" },
     ])
 
@@ -164,11 +164,11 @@ function BusinessRisk() {
                 <div className={`row text-center`}>
                     <div className={`col-md-8 mx-auto`}>
                         {/*<div className='polyBox border-primary bg-blueLight text-primary title12 text-uppercase font-weight-600 mb-3'>The Problems</div>*/}
-                        <h2 className='title-36 font-secondary mb-3 text-primary font-secondary font-weight-700'>Every business has <span className='text-yellow fst-italic'>risks</span></h2>
+                        <h2 className='title-36 font-secondary mb-3 text-primary font-secondary font-weight-700'>Simple Solutions to Complex <span className='text-yellow fst-italic'>risks</span></h2>
                         <p className='title-22 font-weight-500 text-primary px-0 px-lg-5 mb-0'>
                             No matter the industry or size of your business, 
-                            <span className="d-none d-xl-block">we have got you covered.</span>
-                            <span className="d-inline d-xl-none">we have got you covered..</span>
+                            <span className="d-none d-xl-block">we have got you covered</span>
+                            <span className="d-inline d-xl-none">we have got you covered</span>
                         </p>
                     </div>
                 </div>

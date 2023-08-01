@@ -539,7 +539,7 @@ function Navbar() {
                     </ul>
                   </li> */}
                   <li className="nav-item">
-                    <a className="nav-link" href="/about">About Us</a>
+                    <Link className="nav-link" href="/about">About Us</Link>
                   </li>
                   {/*<li className="nav-item">
                     <a className="nav-link" href="">Sign In</a>
@@ -589,8 +589,23 @@ function Navbar() {
                                 />
                               </i>
                               <div>
-                                <span>Call us:</span>
+                                <span>For Liability Insurance:</span>
                                 <a href="tel:9036554785">+91 9036554785</a>
+                              </div>
+                            </li>
+                            <li>
+                              <i>
+                                <Image
+                                  src="/icons/call_fill_icon.svg"
+                                  width={13}
+                                  height={13}
+                                  alt="Call"
+                                  loading="lazy"
+                                />
+                              </i>
+                              <div>
+                                <span>For P&C Insurance:</span>
+                                <a href="tel:9035492594">+91 9035492594</a>
                               </div>
                             </li>
                           </ul>

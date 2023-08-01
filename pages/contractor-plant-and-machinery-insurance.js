@@ -31,7 +31,7 @@ import productStyle from '@/assets/css/product.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 
 import productImage from '@/public/productImages/productImg2.png'
-import expertImg from '../public/himaniImg.png'
+import expertImg from '../public/ravikantImg.png'
 
 export default function ContractorPlantAndMachinery_Insurance() {
     const navbarExample2Ref = useRef(null);
@@ -205,9 +205,10 @@ export default function ContractorPlantAndMachinery_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Contractor's Plant and Machinery Insurance"
-                        description="For machinery owners and contractors, this policy provides compensation against potential losses due to equipment damage.."
+                        description="For machinery owners and contractors, this policy provides compensation against potential losses due to equipment damage."
                         insuranceWorth="3 Crore"
                         insuranceAmount="15,000"
+                        noInsurer="true"
                         productImgSrc={productImage}
                         form="true"
                         formHeading="CPM Policy"
@@ -239,6 +240,14 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                     <span className='me-2'>Buy Now</span>
                                     <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                 </Button>
+                                <div className='d-none d-md-block'>
+                                    <TalkExpert
+                                        size={`${talkExpert.extraSmall}`}
+                                        imgSrc={expertImg}
+                                        name="Ravikant Sawant"
+                                        designation="Insurance Expert"
+                                    />
+                                </div>
                             </div>
                         </Form>
                     </ProductBanner>
@@ -253,7 +262,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                 background={`${talkExpert.yellow}`}
                                 size={`${talkExpert.extraSmall}`}
                                 imgSrc={expertImg}
-                                name="Himani Doshi"
+                                name="Ravikant Sawant"
                                 designation="Insurance Expert"
                                 customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
                             />
@@ -351,7 +360,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                                             <span>
                                                                 <Image src='/icons/generatorsIcon.svg' width="100" height="100" alt="Generators" />
                                                             </span>
-                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Generatorss</p>
+                                                            <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Generators</p>
                                                         </div>
                                                     </Col>
                                                     <Col lg={4}>
@@ -392,7 +401,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>The insurance premium depends on the type of equipment, use of equipment, location, and risk you are entailing.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>The insurance premium depends on the type of equipment, use of equipment, location, and risk you are entailing</p>
                                                         </div>
                                                     </div>
                                                 </Col>

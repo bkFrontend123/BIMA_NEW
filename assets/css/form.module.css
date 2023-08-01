@@ -72,10 +72,17 @@
     font-weight: 500;
     border-color: var(--formBorderColor);
 }
+.commonForm.greyForm .formInput {
+    background-color: var(--mute3);
+}
 .commonForm .formInput:disabled,
 .commonForm .formInput[readonly] {
     background-color: var(--whiteBg);
     cursor: no-drop;
+}
+.commonForm.greyForm .formInput:disabled,
+.commonForm.greyForm .formInput[readonly] {
+    background-color: var(--mute3);
 }
 .commonForm .formIconGroup .formInput {
     padding: 10px 20px 10px 40px;

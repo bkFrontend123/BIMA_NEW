@@ -208,7 +208,7 @@ export default function FireAndBurglary_Insurance() {
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="2,100"
                         productImgSrc={productImage}
-                        form="true"
+                        form="false"
                         formHeading="Fire Insurance"
                         customClass="fireBnr"
                     >
@@ -782,7 +782,7 @@ export default function FireAndBurglary_Insurance() {
                                                 </Col>
                                             </Row>
                                             <div className='title-32 font-secondary font-weight-600 text-yellow mb-4 mt-4 mt-xl-5'>Add-on Coverage</div>
-                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The policy provides extensive protection for the business and its assets. However, there are certain things that are not automatically included in the coverage.But depending on the relevance to the business the insured can obtain add-on coverage. Here are some:</p>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The policy provides extensive protection for the business and its assets. However, there are certain things that are not automatically included in the coverage. But depending on the relevance to the business the insured can obtain add-on coverage. Here are some:</p>
                                             <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                                 <li>Debris</li>
                                                 <li>Forest fire</li>

@@ -397,7 +397,7 @@ export default function EAndO_Insurance() {
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/legalCostsIcon.svg' width="80" height="80" alt="Legal Representation Costs" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Legal Representation Costs</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>E&O insurance safeguards you from the financial burden of legal representation expenses when facing lawsuits. Whether in court or negotiating with regulators, this coverage ensures you have the support you need,including the cost of settlements.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>E&O insurance safeguards you from the financial burden of legal representation expenses when facing lawsuits. Whether in court or negotiating with regulators, this coverage ensures you have the support you need, including the cost of settlements.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -440,7 +440,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/courtFeesIcon.svg' width="80" height="80" alt="Court Attendance Fees" />
+                                                            <Image src='/icons/lossDocumentIcon.svg' width="80" height="80" alt="Court Attendance Fees" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Court Attendance Fees</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Cover losses for attending court due to an E&O lawsuit, including lawyer's fees, travel expenses, and lost wages.</p>
                                                         </div>
@@ -449,7 +449,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/lossDocumentIcon.svg' width="80" height="80" alt="Loss of Document" />
+                                                            <Image src='/icons/courtFeesIcon.svg' width="80" height="80" alt="Loss of Document" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Loss of Document</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>In case of a lawsuit alleging loss or destruction of important documents, this policy will cover the legal and claim charges</p>
                                                         </div>
@@ -697,8 +697,8 @@ export default function EAndO_Insurance() {
                             <Accordion
                                 title="What are the most common reasons for claims in E&O policies?"
                                 content={[<>
-                                    <ul className={`${productStyle.listData}`}>
-                                        <li>Some of the most common reasons for E&O claims are as follows:</li>
+                                    <span>Some of the most common reasons for E&O claims are as follows:</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
                                         <li>Breach of Confidentiality</li>
                                         <li>Breach of Privacy</li>
                                         <li>Defamation, Libel, and Slander</li>
@@ -721,7 +721,7 @@ export default function EAndO_Insurance() {
                             />
                             <Accordion
                                 title="Does E&O insurance have a deductible?"
-                                content="Yes, E&O insurance policies typically have a deductible during the claim.which is the amount that the policyholder must pay out of pocket before the insurance coverage kicks in. The amount of the deductible can vary depending on the policy and the insurer, and it may be expressed as a specific rupee amount or as a percentage of the coverage limit. Generally, higher deductibles will result in lower premiums."
+                                content="Yes, E&O insurance policies typically have a deductible during the claim. This is the amount that the policyholder must pay out of pocket before the insurance coverage kicks in. The amount of the deductible can vary depending on the policy and the insurer, and it may be expressed as a specific rupee amount or as a percentage of the coverage limit. Generally, higher deductibles will result in lower premiums."
                             />
                             <Accordion
                                 title="What are the two types of limits offered in E&O policies?"

@@ -315,7 +315,7 @@ export default function DAndO_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Directors and Officers (D&O) policy protects directors, board members, and other individuals in management and supervisory positions from possible legal liabilityif they are indicted for decisions made to run a business.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Directors and Officers (D&O) policy protects directors, board members, and other individuals in management and supervisory positions from possible legal liability if they are indicted for decisions made to run a business.</p>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>This type of insurance protects the personal assets of the directors and officers along with their spouses and compensates them for any settlements or legal fees they incur as a result of lawsuits.</p>
                                     </div>
                                 </Container>
@@ -480,21 +480,21 @@ export default function DAndO_Insurance() {
                                                             <Image src='/icons/regulatoryBodiesIcon.svg' width="80" height="80" alt="Regulatory Bodie" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Regulatory Bodies</h3>
                                                         </div>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/clientsIcon.svg' width="80" height="80" alt="Clients" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Clients</h3>
-                                                        </div>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/shareholdersIcon.svg' width="80" height="80" alt="Shareholders" />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Shareholders</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`border-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`border-0 pb-0 ${productStyle.lightYellowSecCardBox}`}>
+                                                        <div className={`mb-3 mb-lg-4 border-0 pb-0 ${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/stakeholdersIcon.svg' width="80" height="80" alt="Other Stakeholder" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Other Stakeholders</h3>
+                                                        </div>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/shareholdersIcon.svg' width="80" height="80" alt="Shareholders" />
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Shareholders</h3>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -589,7 +589,7 @@ export default function DAndO_Insurance() {
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Dedicated Additional Limit for Non-Executive Directors and Officers</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Dedicated Additional Limit for Non-executive Directors and Officers</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>With this add-on cover, you get an extra layer of protection that is added to the overall coverage limit for non-executive directors and officers of a company.</div>
                                                     </div>
                                                 </Col>
@@ -706,7 +706,7 @@ export default function DAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees’ claim for outstanding contract</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees’ Claim for Outstanding Contract</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>Multiple employees initiated legal proceedings against the subsidiary of a policyholder in China claiming unpaid contractual benefits and economic compensation.</div>
@@ -726,10 +726,10 @@ export default function DAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>FIR Filed for alleged unfair practices</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>FIR Filed for Alleged Unfair Practices</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>FIR filed by ex-employee against 7 directors for cheating and unfair trade practices. The matter is in litigation before the Trial Court.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>An FIR filed by ex-employee against 7 directors for cheating and unfair trade practices. The matter is in litigation before the Trial Court.</div>
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
@@ -790,7 +790,7 @@ export default function DAndO_Insurance() {
                             />
                             <Accordion
                                 title="Does D&O insurance cover owners?"
-                                content="Yes. The Side B Coverage in D&O insurance provides coverage for losses that the company (or the business owner) incurs as a result of paying for damages and defense costs for claims brought against its directors and officers. Here, the owner/ company is insured and its corporate assets are at risk."
+                                content="Yes. The Side B Coverage in D&O insurance provides coverage for losses that the company (or the business owner) incurs as a result of paying for damages and defense costs for claims brought against its directors and officers. Here, the owner/company is insured and its corporate assets are at risk."
                             />
                             <Accordion
                                 title="As a director or officer can you become personally liable for your actions?"

@@ -841,7 +841,7 @@ export default function Cyber_Insurance() {
                             />
                             <Accordion
                                 title="What is cyber security?"
-                                content="Cyber security involves protecting a business's assets and employees from cyberattacks. To get a cyber security quote, provide a few details about your company and a team member will contact you to discuss your needs. With BimaKavach, you can receive the best product recommendations for cyber insurance quotes from top insurers in just 5 minutes."
+                                content="Cyber security involves protecting a business's assets and employees from cyberattacks. To get a cyber security quote, provide a few details about your company and a team member will contact you to discuss your needs. With BimaKavach, you can receive the best product recommendations for cyber insurance quotes from top insurers within 10 minutes."
                             />
                         </div>
                     </Container>

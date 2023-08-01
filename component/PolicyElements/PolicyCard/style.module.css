@@ -3,6 +3,7 @@
     position: relative;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
     padding: 55px 40px 166px 40px;
+    padding: 40px 40px 166px 40px;
     height: 100%;
 }
 .policyInstant {
@@ -143,6 +144,7 @@
 @media (max-width:1699px) {
     .policyCol {
         padding: 60px 32px 156px 32px;
+        padding: 32px 32px 156px 32px;
     }
     .policyInstant {
         font-size: 18px;
@@ -178,6 +180,7 @@
 @media (max-width:1399px) {
     .policyCol {
         padding: 60px 24px 136px 24px;
+        padding: 24px 24px 136px 24px;
     }
     .policyInstant {
         font-size: 17px;
@@ -210,6 +213,7 @@
 @media (max-width:1199px) {
     .policyCol {
         padding: 50px 24px 24px 24px;
+        padding: 24px 24px 24px 24px;
     }
     .policyCardHdr h4 {
         font-size: 19px;
@@ -232,6 +236,7 @@
 @media (max-width:767px) {
     .policyCol {
         padding: 40px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
     }
     .policyInstant {
         font-size: 16px;

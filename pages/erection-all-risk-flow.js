@@ -223,9 +223,9 @@ export default function ErectionAllRisk_Flow() {
                                             icon={productIcon}
                                             title="EAR"
                                             description="Get ₹50 Lakhs Coverage at ₹1,453 per year"
-                                            listText1="Answer a few Simple Questions"
+                                            listText1="Answer a few simple questions"
                                             listText2="Get curated quotes in minutes"
-                                            listText3="Secure your business compehensively"
+                                            listText3="Secure your business comprehensively"
                                         />
                                     </div>
                                 </Col>
@@ -579,7 +579,7 @@ export default function ErectionAllRisk_Flow() {
                                             </>
                                         )}
                                         <div className={`${form.frmftr}`}>
-                                            <p>By clicking on "View Quotes", you agree to our <Link href='/privacy-policy' target="_blank">Privacy Policy</Link> and <Link href='/terms-and-conditions' target="_blank">Terms of Use</Link> , and also provide us a formal mandate to represent you to the insurer and communicate to you the grant of a cover</p>
+                                            <p>By clicking on "Submit", you agree to our <Link href='/privacy-policy' target="_blank">Privacy Policy</Link> and <Link href='/terms-and-conditions' target="_blank">Terms of Use</Link> , and also provide us a formal mandate to represent you to the insurer and communicate to you the grant of a cover</p>
                                         </div>
                                     </div>
                                 </Col>

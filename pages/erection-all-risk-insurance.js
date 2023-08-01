@@ -31,7 +31,7 @@ import productStyle from '@/assets/css/product.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 
 import productImage from '@/public/productImages/productImg3.png'
-import expertImg from '../public/himaniImg.png'
+import expertImg from '../public/ravikantImg.png'
 
 export default function ErectionAllRisk_Insurance() {
     const navbarExample2Ref = useRef(null);
@@ -208,6 +208,7 @@ export default function ErectionAllRisk_Insurance() {
                         description="Covers losses during machinery or equipment installation, providing vital financial protection for construction and manufacturing industries against various risks."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="7,000"
+                        noInsurer="true"
                         productImgSrc={productImage}
                         form="true"
                         formHeading="EAR Policy"
@@ -239,6 +240,14 @@ export default function ErectionAllRisk_Insurance() {
                                     <span className='me-2'>Buy Now</span>
                                     <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                 </Button>
+                                <div className='d-none d-md-block'>
+                                    <TalkExpert
+                                        size={`${talkExpert.extraSmall}`}
+                                        imgSrc={expertImg}
+                                        name="Ravikant Sawant"
+                                        designation="Insurance Expert"
+                                    />
+                                </div>
                             </div>
                         </Form>
                     </ProductBanner>
@@ -253,7 +262,7 @@ export default function ErectionAllRisk_Insurance() {
                                 background={`${talkExpert.yellow}`}
                                 size={`${talkExpert.extraSmall}`}
                                 imgSrc={expertImg}
-                                name="Himani Doshi"
+                                name="Ravikant Sawant"
                                 designation="Insurance Expert"
                                 customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
                             />
@@ -353,10 +362,10 @@ export default function ErectionAllRisk_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black'>Erection All Risk Policy?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Contractors and employers can take out the policy jointly and individually. Any of the following parties involved in the construction process may be covered:</p>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>General contractorst</li>
-                                            <li>Subcontractorst</li>
-                                            <li>Suppliers and manufacturers of equipmentt</li>
-                                            <li>The purchaser or owner of the equipmentt</li>
+                                            <li>General contractors</li>
+                                            <li>Subcontractors</li>
+                                            <li>Suppliers and manufacturers of equipment</li>
+                                            <li>The purchaser or owner of the equipment</li>
                                         </ul>
                                     </div>
                                 </Container>
@@ -492,7 +501,7 @@ export default function ErectionAllRisk_Insurance() {
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
                                                     <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Claim for Machinery Collapse During Installation</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>Bangalore Metro Rail Corporation Limited (BMRCL) deployed nine Tunnel Boring Machines (TBM) last year to dig tunnels between Dairy Circle and Nagawara. Rudra, one of the Tunnel Boring Machines (TBMs) faced a huge pile of garbage which caught the cutter head of the machine, preventing it from moving. Luckily, 6 months later, the machine achieved a breakthrough and tunneled towards Langford Metro station.However, in such cases, there is a high probability that the machine can have severe damage. Not only this, there could be multiple instances such as landslides, earthquakes, or fire incidents which can also lead to damage to the heavy machinery used in construction projects. Here, the Contractor's Plant & Machinery (CPM) Insurance Policy comes to the rescue of the contractor. The policy covers the cost of repairs or replacement of the damaged machinery.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Bangalore Metro Rail Corporation Limited (BMRCL) deployed nine Tunnel Boring Machines (TBM) last year to dig tunnels between Dairy Circle and Nagawara. Rudra, one of the Tunnel Boring Machines (TBMs) faced a huge pile of garbage which caught the cutter head of the machine, preventing it from moving. Luckily, 6 months later, the machine achieved a breakthrough and tunneled towards Langford Metro station. However, in such cases, there is a high probability that the machine can have severe damage. Not only this, there could be multiple instances such as landslides, earthquakes, or fire incidents which can also lead to damage to the heavy machinery used in construction projects. Here, the Contractor's Plant & Machinery (CPM) Insurance Policy comes to the rescue of the contractor. The policy covers the cost of repairs or replacement of the damaged machinery.</div>
                                                     </div>
                                                 </div>
                                             </Col>

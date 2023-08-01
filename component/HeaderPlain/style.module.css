@@ -50,6 +50,7 @@ button.btnSmall {
     padding: 20px;
     right: 0 !important;
     left: inherit !important;
+    min-width: 230px;
 }
 .hdrDrpMenu p {
     font-size: 16px;
@@ -71,7 +72,7 @@ button.btnSmall {
     align-items: center;
     gap: 1rem
 }
-.hdrTalkDrpdwn ul li:last-child {
+.hdrTalkDrpdwn ul li + li {
     margin-top: 16px;
 }
 .hdrTalkDrpdwn ul li i {

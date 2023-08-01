@@ -31,7 +31,7 @@ import productStyle from '@/assets/css/product.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 
 import productImage from '@/public/productImages/productImg1.png'
-import expertImg from '../public/himaniImg.png'
+import expertImg from '../public/ravikantImg.png'
 
 export default function ContractorAllRisk_Policy() {
     const navbarExample2Ref = useRef(null);
@@ -204,10 +204,11 @@ export default function ContractorAllRisk_Policy() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Contractor’'s All Risk Policy"
+                        title="Contractor's All Risk Policy"
                         description="Shield contractors, architects, and engineers from financial losses due to unexpected accidents, damage, or third-party claims in construction projects."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="7,000"
+                        noInsurer="true"
                         productImgSrc={productImage}
                         form="true"
                         formHeading="CAR Policy"
@@ -243,7 +244,7 @@ export default function ContractorAllRisk_Policy() {
                                     <TalkExpert
                                         size={`${talkExpert.extraSmall}`}
                                         imgSrc={expertImg}
-                                        name="Himani Doshi"
+                                        name="Ravikant Sawant"
                                         designation="Insurance Expert"
                                     />
                                 </div>
@@ -261,7 +262,7 @@ export default function ContractorAllRisk_Policy() {
                                 background={`${talkExpert.yellow}`}
                                 size={`${talkExpert.extraSmall}`}
                                 imgSrc={expertImg}
-                                name="Himani Doshi"
+                                name="Ravikant Sawant"
                                 designation="Insurance Expert"
                                 customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
                             />

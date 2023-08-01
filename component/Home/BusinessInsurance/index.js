@@ -95,8 +95,8 @@ function Business() {
                 <div className={`row text-center`}>
                     <div className={`col-md-8 mx-auto`}>
                         <div className='commnHeading'>
-                            <div className='title-36 font-secondary mb-3 text-primary font-weight-700'>Why choose <span className='text-yellow fst-italic'>BimaKavach</span></div>
-                            <p className='title-22 font-weight-500 text-primary px-0 px-lg-5 mb-0 mb-lg-5 pb-xxl-4'>We help you get the best quotes from top insurers within 10 Minutes</p>
+                            <div className='title-36 font-secondary mb-3 text-primary font-weight-700'>Why <span className='text-yellow fst-italic'>BimaKavach</span></div>
+                            <p className='title-22 font-weight-500 text-primary px-0 px-lg-5 mb-0 mb-lg-5 pb-xxl-4'>Get Quotes and Policies in Minutes, not Weeks</p>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@ function Business() {
                                         <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col"></th>
                                         <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col"><img width="195px" src='/logo-white.svg' /></th>
                                         <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Offline Brokers</th>
-                                        <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital brokers</th>
+                                        <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital Brokers</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -146,7 +146,7 @@ function Business() {
                                         <img width="195px" src='/logoTextWhite.svg' />
                                     </th>
                                     <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Offline Brokers</th>
-                                    <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital brokers</th>
+                                    <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital Brokers</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -173,7 +173,7 @@ function Business() {
                                 <tr>
                                     <td>
                                         <div className='businessInsurance-colBox title24 text-primary font-weight-500'>
-                                            24x7 Customer Support
+                                            24*7 Customer Support
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
