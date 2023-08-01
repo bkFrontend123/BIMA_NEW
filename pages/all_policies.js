@@ -192,7 +192,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={bajajAllianz_logo}
-                                        logoHeight="50"
                                         title="Bajaj Allianz"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -234,7 +233,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={icici_logo}
-                                        logoHeight="50"
                                         title="ICICI Lombard"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -276,7 +274,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={tataAIG_logo}
-                                        logoHeight="50"
                                         title="TATA AIG"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -318,7 +315,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={newIndiaAssurance_logo}
-                                        logoHeight="50"
                                         title="New India Assurance Co. Ltd."
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -360,7 +356,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={hdfcErgo_logo}
-                                        logoHeight="50"
                                         title="HDFC Ergo"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -392,7 +387,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={bajajAllianz_logo}
-                                        logoHeight="50"
                                         title="Bajaj Allianz"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -424,7 +418,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={newIndiaAssurance_logo}
-                                        logoHeight="50"
                                         title="New India Assurance Co. Ltd."
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -466,7 +459,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={hdfcErgo_logo}
-                                        logoHeight="50"
                                         title="HDFC Ergo"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -498,7 +490,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={bajajAllianz_logo}
-                                        logoHeight="50"
                                         title="Bajaj Allianz"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
