@@ -36,8 +36,9 @@ export default function PolicyCard(props) {
                         <Image
                             src={policyLogo}
                             alt={title}
-                            width={logoWidth}
+                            width="auto"
                             height={logoHeight}
+                            className={`${style.policyCardLogo}`}
                         />
                     </i>
                     <h4>{title}</h4>
