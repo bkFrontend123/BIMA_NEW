@@ -283,6 +283,12 @@
         padding: 18px 34px;
     }
 }
+@media (max-width:1499px) {
+    .prodContainer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
 @media (max-width:1450px) {
     .productStartupBottom .yellowBtn {
         font-size: 17px;
