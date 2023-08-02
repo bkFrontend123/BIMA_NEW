@@ -88,7 +88,37 @@ export default function ProductBanner(props) {
                                         </div>
                                     </div>
                                 ):(
-                                    null
+                                    <div className={`productNoFormBox ${formStyle.whiteFormBox} ${formStyle.commonForm}`}>
+                                        <p className='ProductBanner-formTopHeading title-20 font-primaryNormal text-gray font-weight-700 mb-4'>
+                                            <i className='d-none d-md-block'>
+                                                <Image
+                                                    src="/icons/getBusinessIcon.svg"
+                                                    alt={[<>Get {formHeading} Business Insurance in Minutes</>]}
+                                                    width={30}
+                                                    height={36}
+                                                />
+                                            </i>
+                                            <i className='d-md-none'>
+                                                <Image
+                                                    src="/icons/getBusinessIcon.svg"
+                                                    alt={[<>Get {formHeading} Business Insurance in Minutes</>]}
+                                                    width={22}
+                                                    height={28}
+                                                />
+                                            </i> Get {formHeading} in Minutes
+                                        </p>
+                                        <div className='productNoFormBoxText'>
+                                            <i>
+                                                <Image
+                                                    src="/icons/clockIcon.svg"
+                                                    alt="clock icon"
+                                                    width={22}
+                                                    height={22}
+                                                />
+                                            </i>
+                                            <p>They say good things take time. Exciting changes are coming soon. Stay tuned!</p>
+                                        </div>
+                                    </div>
                                 )}
                             </div>
                         </div>
@@ -315,12 +345,32 @@ export default function ProductBanner(props) {
                     .prdctLlbtyBnr .ribbonProduct {
                         right: -38px;
                     }
-                      @media (min-width:1700px) {
+                    .productNoFormBox {
+                        height: 100%;
+                    }
+                    .productNoFormBox .ProductBanner-formTopHeading {
+                        filter: grayscale(1);
+                    }
+                    .productNoFormBoxText {
+                        padding: 32px 16px;
+                        border: 1px solid var(--vt-c-gray);
+                        margin-top: 160px;
+                    }
+                    .productNoFormBoxText i {
+                        display: inline-block;
+                        margin-bottom: 8px;
+                    }
+                    .productNoFormBoxText p {
+                        font-size: 18px;
+                        color: var(--vt-c-grayLight3);
+                        margin: 0;
+                    }
+                    @media (min-width:1700px) {
                         .ProductBanner-form {
                             max-width: 650px;
                             margin-left: auto;
                         }
-                      }
+                    }
                      @media only screen and (max-width: 1699px) {
                         .ProductBanner-formTop p {
                             font-size: 18px; 
