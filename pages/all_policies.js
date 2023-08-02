@@ -192,8 +192,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={bajajAllianz_logo}
-                                        logoWidth="245"
-                                        logoHeight="31"
                                         title="Bajaj Allianz"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -235,8 +233,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={icici_logo}
-                                        logoWidth="221"
-                                        logoHeight="46"
                                         title="ICICI Lombard"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -278,8 +274,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={tataAIG_logo}
-                                        logoWidth="80"
-                                        logoHeight="80"
                                         title="TATA AIG"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -321,8 +315,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={newIndiaAssurance_logo}
-                                        logoWidth="68"
-                                        logoHeight="70"
                                         title="New India Assurance Co. Ltd."
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -364,8 +356,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={hdfcErgo_logo}
-                                        logoWidth="61"
-                                        logoHeight="61"
                                         title="HDFC Ergo"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -397,8 +387,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={bajajAllianz_logo}
-                                        logoWidth="245"
-                                        logoHeight="31"
                                         title="Bajaj Allianz"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -430,8 +418,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={newIndiaAssurance_logo}
-                                        logoWidth="68"
-                                        logoHeight="70"
                                         title="New India Assurance Co. Ltd."
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -473,8 +459,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={hdfcErgo_logo}
-                                        logoWidth="61"
-                                        logoHeight="61"
                                         title="HDFC Ergo"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"
@@ -506,8 +490,6 @@ export default function AllPolicies() {
                                 <Col lg={6} xl={4}>
                                     <PolicyCard
                                         policyLogo={bajajAllianz_logo}
-                                        logoWidth="245"
-                                        logoHeight="31"
                                         title="Bajaj Allianz"
                                         listText1="Policy in Minutes"
                                         listText2="Trusted by 340 businesses"

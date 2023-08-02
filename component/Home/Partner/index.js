@@ -18,7 +18,6 @@ function Partner() {
         { id: "p11", img: "/partners/reliance.svg" },
         { id: "p12", img: "/partners/royalSundaram.svg" },
         { id: "p13", img: "/partners/sbiGeneral.svg" },
-        { id: "p14", img: "/partners/tataAIG.svg" },
         { id: "p15", img: "/partners/indiaInsurance.svg" },
         { id: "p16", img: "/partners/orientalInsurance.svg" },
         { id: "p17", img: "/partners/unitedIndia.svg" },
