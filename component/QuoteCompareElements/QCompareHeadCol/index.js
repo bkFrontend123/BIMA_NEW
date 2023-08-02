@@ -17,7 +17,7 @@ export default function QCompareHeadCol(props) {
         <>
             <div className={`${style.quoteCompareHdr} ${customClass}`}>
                 <div>
-                    <i><Image src={icon} width={iconWidth} height={iconHeight} alt={title} /></i>
+                    <i><Image src={icon} alt={title} className={`${style.quoteCompareLogo}`} /></i>
                     <h4>{title}</h4>
                 </div>
                 <div className={`${style.quoteCompareBtn}`}>
