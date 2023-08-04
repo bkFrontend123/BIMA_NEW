@@ -801,7 +801,7 @@ export default function DAndO_Insurance() {
                                 content="If one director sues another within the same organization, this is considered an 'insured v. insured' situation, and a D&O policy would typically not cover that dispute. However, there may be certain exceptions and these may vary from one insurance provider to another."
                             />
                             <Accordion
-                                title="Are the subsidiary's board covered under the Officers & Directors liability insurance?"
+                                title="Are the subsidiary's board covered under the directors & officers liability insurance?"
                                 content={[<>
                                     <span>Yes. D&O policy automatically protects new subsidiaries of an insured company that are acquired or created during the policy period. The automatic coverage will start with effect from the date of such creation or acquisition except-</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>
@@ -816,7 +816,7 @@ export default function DAndO_Insurance() {
                                 content="D&O policies typically allow the defendant insureds to choose their preferred defense counsel, subject to the prior consent of the insurer. Insurers, of course, would seek to pay only reasonable and necessary defense costs. Therefore, an insured should select a counsel experienced in the field of law that is related to the concerned litigation and whom the insured trusts."
                             />
                             <Accordion
-                                title="Does a small business need liability insurance for Directors and Officers?"
+                                title="Does a small business need liability insurance for directors and officers?"
                                 content="Yes. Being a small business does not necessarily make a small business immune to potential lawsuits. A costly lawsuit can have a severe impact on the personal fortunes of its employees in a decision-making position. When a potentially damaging lawsuit comes in the way, a small business may not quite have the financial ‘muscle power’ enjoyed by the larger companies to deal with it. This is why, in the case of a small business, protection from D&O insurance becomes even more essential."
                             />
                             <Accordion

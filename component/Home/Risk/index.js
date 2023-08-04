@@ -142,7 +142,7 @@ function BusinessRisk() {
         {id: "bs8", title: "Fire Insurance", img: "/productIcons/asset/fire_icon.svg" },
         {id: "bs9", title: "Contractor's All Risk", img: "/productIcons/engineering/contractorsAllRisk_icon.svg" },
         {id: "bs10", title: "Erection All Risk", img: "/productIcons/engineering/erectionAllRisk_icon.svg" },
-        {id: "bs11", title: "Contractor's Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.png" },
+        {id: "bs11", title: "Contractor's Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.svg" },
         {id: "bs12", title: "Marine Transit Policy", img: "/productIcons/marine/marine_icon.svg" },
         {id: "bs13", title: "Directors & Officers Insurance", img: "/productIcons/liability/dAndO_icon.svg" },
         {id: "bs14", title: "Errors & Omissions Insurance", img: "/productIcons/liability/eAndO_icon.svg" },
@@ -154,7 +154,7 @@ function BusinessRisk() {
         {id: "bs20", title: "Fire Insurance", img: "/productIcons/asset/fire_icon.svg" },
         {id: "bs21", title: "Contractor's All Risk", img: "/productIcons/engineering/contractorsAllRisk_icon.svg" },
         {id: "bs22", title: "Erection All Risk", img: "/productIcons/engineering/erectionAllRisk_icon.svg" },
-        {id: "bs23", title: "Contractor's Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.png" },
+        {id: "bs23", title: "Contractor's Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.svg" },
         {id: "bs24", title: "Marine Transit Policy", img: "/productIcons/marine/marine_icon.svg" },
     ])
 

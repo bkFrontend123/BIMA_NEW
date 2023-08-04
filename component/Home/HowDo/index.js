@@ -146,7 +146,6 @@ export default function HowDo() {
           <div className={`row text-center `}>
             <div className={`col-md-11 mx-auto`}>
               <div className='commnHeading'>
-                <div className='polyBox border-primary bg-blueLight text-primary title12 text-uppercase font-weight-600 mb-3'>hassle free</div>
                 <div className='howDoTitle title-36 font-secondary text-primary font-weight-600'><span className="text-yellow fst-italic">How</span> it works</div>
                 <p className='howDoSubTitle title-22 text-primary font-weight-500 mb-0'>Simple process to buy the most complex business insurance policies -<br/>developed by experts.</p>
               </div>

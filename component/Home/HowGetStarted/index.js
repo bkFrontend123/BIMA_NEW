@@ -25,8 +25,8 @@ export default function HowGetStarted(props) {
                                     <div className='title-32 getStarted-rightTitle font-secondary mb-5 text-black font-weight-700 fst-italic'>Indore-based BimaKavach caters to the Business Insurance needs of Small & Medium Enterprises</div>
                                 </div>
                                 <div className="getStarted-rightBottom">
-                                    <div className="d-flex flex-column flex-md-row pb-2" >
-                                        <a target="_blank" href="https://yourstory.com/smbstory/indore-bimakavach-helping-small-business-msme-insurance" className="btnCommon btn-primary d-none d-md-flex align-items-cet text-white text-decoration-none bordre2 mt-3 mt-md-0">
+                                    <div className="d-flex flex-row pb-2" >
+                                        <a target="_blank" href="https://yourstory.com/smbstory/indore-bimakavach-helping-small-business-msme-insurance" className="btnCommon btn-primary d-flex align-items-cet text-white text-decoration-none bordre2 mt-3 mt-md-0">
                                             <span>View Article</span>
                                         </a>
                                     </div>
@@ -206,8 +206,18 @@ export default function HowGetStarted(props) {
                     }
                 }
                 @media only screen and (max-width:767px) {
-                    .getStarted-left {
+                    .getStarted-left,
+                    .getStarted-left:hover {
+                        background-color: var(--vt-c-yellow);
                         padding: 40px !important;
+                    }
+                    .getStarted-left .getStarted-rightBottom .btnCommon {
+                        margin-left: 0;
+                        opacity: 1;
+                        color: var(--whiteText) !important;
+                    }
+                    .getStarted-left .getStarted-rightBottom p {
+                        color: var(--black);
                     }
                 }
                 @media only screen and (max-width: 575px) {

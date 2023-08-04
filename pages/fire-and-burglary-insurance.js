@@ -525,7 +525,7 @@ export default function FireAndBurglary_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black'>Fire & Burglary Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Companies that own or rent assets in the form of office premises, stock, machinery, cash, or other forms need comprehensive fire and burglary insurance policies.</p>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>In addition to covering the office, retail, or factory premises, this policy also protects the contents inside the premises including electronic equipment like laptops, computers, and phones.</p>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Fire & burglary insurance offers valuable coverage for businesses of all sizes and industries.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Fire & Burglary Insurance offers valuable coverage for businesses of all sizes and industries.</p>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A few common businesses that purchase fire insurance are:</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
@@ -534,7 +534,7 @@ export default function FireAndBurglary_Insurance() {
                                                 <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                         <Image src='/icons/hotelIcon.svg' width="80" height="80" alt="Hotel Owners and Service Providers" />
-                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Hotel Owners and Service Providers</h3>
+                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Hotel Owners and Service Providers</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0'>Guard against the financial consequences of fire damage  to your hospitality or service-based business.</p>
                                                     </div>
                                                 </div>
@@ -543,7 +543,7 @@ export default function FireAndBurglary_Insurance() {
                                                 <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                         <Image src='/icons/shopIcon.svg' width="80" height="80" alt="Shop-keepers and Godown Owners" />
-                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Shop-keepers and Godown Owners</h3>
+                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Shop-keepers and Godown Owners</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0 mt-2'>Protect your retail or storage space from the potential financial impact of a fire.</p>
                                                     </div>
                                                 </div>
@@ -552,7 +552,7 @@ export default function FireAndBurglary_Insurance() {
                                                 <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                         <Image src='/icons/manufacturingIcon.svg' width="80" height="80" alt="Manufacturing and Industrial Units" />
-                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Manufacturing and Industrial Units</h3>
+                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Manufacturing and Industrial Units</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0 mt-2'>Safeguard your operations, vehicles, and equipment with fire insurance.</p>
                                                     </div>
                                                 </div>
@@ -561,7 +561,7 @@ export default function FireAndBurglary_Insurance() {
                                                 <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                         <Image src='/icons/medicalIcon.svg' width="80" height="80" alt="Medical Clinics" />
-                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Medical Clinics</h3>
+                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Medical Clinics</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0 mt-2'>Protect your medical facility, equipment, and patient records from fire damage</p>
                                                     </div>
                                                 </div>
@@ -570,7 +570,7 @@ export default function FireAndBurglary_Insurance() {
                                                 <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                         <Image src='/icons/bankIcon.svg' width="80" height="80" alt="Banks and Other Institutions" />
-                                                        <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Banks and Other Institutions</h3>
+                                                        <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Banks and Other Institutions</h3>
                                                         <p className='title-18 font-weight-500 text-black m-0 mt-2'>Ensure the protection of your financial assets and operations with fire insurance.</p>
                                                     </div>
                                                 </div>
@@ -666,7 +666,7 @@ export default function FireAndBurglary_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 font-secondry'>Fire-related loss</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Fire-related property losses to office buildings, machinery, furniture, and other items inside the premises, can result in severe financial damage. Fire and burglary insurance covers damage caused by fire, including the cost of repairing or replacing the damaged property.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Fire-related property losses to office buildings, machinery, furniture, and other items inside the premises, can result in severe financial damage. Fire and Burglary Insurance covers damage caused by fire, including the cost of repairing or replacing the damaged property.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
@@ -696,7 +696,7 @@ export default function FireAndBurglary_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Armed robbery</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The loss of items like money, jewellery, gadgets, and other stolen personal property may be covered by the policyholder's Fire & Burglary insurance in the event of an armed robbery. It may also cover any property damage incurred as a result of the heist, including broken or damaged windows, doors, or other sections of the building.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The loss of items like money, jewellery, gadgets, and other stolen personal property may be covered by the policyholder's fire & burglary insurance in the event of an armed robbery. It may also cover any property damage incurred as a result of the heist, including broken or damaged windows, doors, or other sections of the building.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
@@ -714,7 +714,7 @@ export default function FireAndBurglary_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Damage to personal property</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Fire and burglary insurance offers coverage for expenses resulting from property damage due to fire or theft  including temporary renting costs. The policy may also cover the expense of storing personal belongings elsewhere temporarily.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Fire and Burglary Insurance offers coverage for expenses resulting from property damage due to fire or theft including temporary renting costs. The policy may also cover the expense of storing personal belongings elsewhere temporarily.</div>
                                                     </div>
                                                 </Col>
                                             </Row>

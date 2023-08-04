@@ -33,7 +33,6 @@ export default function Companies() {
           <div className={`row text-center`}>
             <div className={`col-md-9 mx-auto`}>
               <div className='commnHeading'>
-                <div className='polyBox border-primary bg-blueLight mb-4 text-primary title16 font-weight-500 '>Reviews by our Clients</div>
                 <div className='title64 font-secondary mb-4 text-primary font-weight-600'>Trusted by the Most Innovative Companies in India</div>
                 {/* <div className=' text-primary font-weight-600 title16' >Our customers trust us.</div> */}
               </div>

@@ -315,11 +315,11 @@ export default function ProductLiability_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Product Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Product liability insurance covers a spectrum of risks that your products might encounter. These could range from manufacturing defects, design flaws, or inadequate warning labels to misuse by consumers. If someone files a claim against your business because of an issue with your product then this policy can cover legal defense costs, settlements, and court judgments.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Product Liability Insurance covers a spectrum of risks that your products might encounter. These could range from manufacturing defects, design flaws, or inadequate warning labels to misuse by consumers. If someone files a claim against your business because of an issue with your product then this policy can cover legal defense costs, settlements, and court judgments.</p>
 
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Product Liability insurance provides a shield of protection for your business reputation as well. In a time when news travels fast and a single negative incident can severely harm your business image, having a policy that promptly addresses issues and compensates those affected can be a major asset.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Product Liability Insurance provides a shield of protection for your business reputation as well. In a time when news travels fast and a single negative incident can severely harm your business image, having a policy that promptly addresses issues and compensates those affected can be a major asset.</p>
 
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Without Product Liability insurance, one significant claim could mean the end of the business you've worked so hard to build. With this policy, you can continue your operations, innovate and expand your product line with the confidence that you're safeguarded against unforeseen liabilities.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Without product liability insurance, one significant claim could mean the end of the business you've worked so hard to build. With this policy, you can continue your operations, innovate, and expand your product line with the confidence that you're safeguarded against unforeseen liabilities.</p>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
@@ -423,7 +423,7 @@ export default function ProductLiability_Insurance() {
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Product Liability Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Introduction of Consumer Protection Act 2019 has brought significant changes to the product liability landscape in India. It includes a dedicated chapter dealing with product liability, expanding the scope of liability across the supply chain to include manufacturers, product sellers, and product service providers​. This means businesses at various points in the supply chain could face liability claims, making product liability insurance all the more critical.</p>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Even with the utmost dedication and care put into crafting your products, they may still fall short of customer expectations. You need Product Liability Insurance because, in case of a lawsuit, it covers legal defense costs and potential damages. Plus, it aids in covering repair or replacement expenses for defective products—even if you aren't sued. There can be design flaws, product defects, poor instructions, labels, or warnings that cause physical harm or damage to the user.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Even with the utmost dedication and care put into crafting your products, they may still fall short of customer expectations. You need product liability insurance because, in case of a lawsuit, it covers legal defense costs and potential damages. Plus, it aids in covering repair or replacement expenses for defective products—even if you aren't sued. There can be design flaws, product defects, poor instructions, labels, or warnings that cause physical harm or damage to the user.</p>
                                     </div>
                                 </Container>
 
@@ -495,7 +495,7 @@ export default function ProductLiability_Insurance() {
                                                     </div>
                                                 </Col>
                                             </Row>
-                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4 mb-4'>Product liability insurance covers the following costs related to the aforementioned claims:</p>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4 mb-4'>Product Liability Insurance covers the following costs related to the aforementioned claims:</p>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>

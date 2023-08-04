@@ -18,6 +18,7 @@ export default function PaymentCard(props) {
                             <Image
                                 src={paymentIcon}
                                 alt="payment_icon"
+                                className={`${style.paymentIconImg}`}
                             />
                         </i>
                     </div>

@@ -12,7 +12,6 @@ export default function IndustryList() {
       <div className="IndustryList container @d-none">
         <div className="row IndustryList-row">
           <div className="col-lg-3 IndustryList-left">
-          <div className='polyBox border-primary d-inline-block d-md-none bg-blueLight mb-3 text-primary title16 font-weight-500 '>The Industry</div>
             <div className="title-36 font-weight-600 text-primary font-secondary mb-md-3 mb-2">Insurance by <i className='text-yellow fst-italic'>Industry</i></div>
             <p className='title-24 text-primary font-weight-500 mb-md-4 '>Business risk management can vary significantly depending on the type of company.</p>
             <div className='d-inline pt-1 d-none d-md-block'>

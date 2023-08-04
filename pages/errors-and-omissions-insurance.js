@@ -317,16 +317,16 @@ export default function EAndO_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black'>Errors & Omissions Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Errors & Omissions Insurance acknowledges the inherent risk in offering expert services: the risk of making a mistake or failing to meet a client's expectations.</p>
 
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The unique value of E&O Insurance lies in its coverage of claims arising from your professional services (or tech product). Whether it's an oversight in a contract, copyright infringement, a missed deadline, an error in a financial analysis, or alleged negligence, E&O Insurance can cover the cost of defending your business in court, as well as any settlements or judgments you're required to pay.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The unique value of E&O insurance lies in its coverage of claims arising from your professional services (or tech product). Whether it's an oversight in a contract, copyright infringement, a missed deadline, an error in a financial analysis, or alleged negligence, E&O Insurance can cover the cost of defending your business in court, as well as any settlements or judgments you're required to pay.</p>
 
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Facing a claim without E&O Insurance can drain your time, resources, and focus from serving your clients. With an E&O policy, your insurer takes on much of the burden of a claim, allowing you to continue your work with minimal disruption.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Facing a claim without E&O insurance can drain your time, resources, and focus from serving your clients. With an E&O policy, your insurer takes on much of the burden of a claim, allowing you to continue your work with minimal disruption.</p>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>E&O insurance provides coverage for errors such as:</h3>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>E&O Insurance provides coverage for errors such as:</h3>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                             <li>Copyright infringement</li>
                                             <li>Defamation</li>
@@ -343,7 +343,7 @@ export default function EAndO_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Errors & Omissions Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>If your company performs a professional service, you run the risk of your client claiming that they suffered financial loss due to a faulty tech product or failure in your service. Errors & Omissions insurance is designed for companies that sell tech products and professional services.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>If your company performs a professional service, you run the risk of your client claiming that they suffered financial loss due to a faulty tech product or failure in your service. Errors & Omissions Insurance is designed for companies that sell tech products and professional services.</p>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The types of businesses that need professional liability coverage to mitigate their risk include:</p>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                             <li>SaaS, PaaS, IaaS</li>
@@ -364,9 +364,9 @@ export default function EAndO_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Errors & Omissions Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>In a tech company, the majority of work involves creating software, developing applications, managing data, and providing professional services. These activities come with inherent risks that can lead to financial losses and legal disputes. Errors and Omissions insurance is vital for your tech company because it provides protection against:</p>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Claims from Clients: <span className='d-block'></span>Despite your best efforts, errors, software bugs, or unintentional omissions can occur, potentially causing harm to your clients' businesses. E&O insurance provides coverage for claims arising from financial losses, property damage, or business interruptions caused by your products, services, or advice.</p>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Legal Defense: <span className='d-block'></span>Defending your tech company against claims or lawsuits can be financially burdensome. E&O insurance not only covers settlements but also includes legal defense costs. This means you'll have the necessary resources to hire legal experts who specialize in technology-related litigation, ensuring a robust defense for your business.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>In a tech company, the majority of work involves creating software, developing applications, managing data, and providing professional services. These activities come with inherent risks that can lead to financial losses and legal disputes. Errors and Omissions Insurance is vital for your tech company because it provides protection against:</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Claims from Clients: <span className='d-block'></span>Despite your best efforts, errors, software bugs, or unintentional omissions can occur, potentially causing harm to your clients' businesses. E&O Insurance provides coverage for claims arising from financial losses, property damage, or business interruptions caused by your products, services, or advice.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Legal Defense: <span className='d-block'></span>Defending your tech company against claims or lawsuits can be financially burdensome. E&O Insurance not only covers settlements but also includes legal defense costs. This means you'll have the necessary resources to hire legal experts who specialize in technology-related litigation, ensuring a robust defense for your business.</p>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Professional Services Coverage: <span className='d-block'></span>If your tech company provides professional services, such as consulting or implementation support, E&O insurance can protect you from claims related to errors, delays, or inadequate performance. This coverage ensures that your clients are financially compensated for any harm caused by mistakes or shortcomings in your professional services.</p>
                                     </div>
                                 </Container>
@@ -397,7 +397,7 @@ export default function EAndO_Insurance() {
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/legalCostsIcon.svg' width="80" height="80" alt="Legal Representation Costs" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Legal Representation Costs</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>E&O insurance safeguards you from the financial burden of legal representation expenses when facing lawsuits. Whether in court or negotiating with regulators, this coverage ensures you have the support you need, including the cost of settlements.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>E&O Insurance safeguards you from the financial burden of legal representation expenses when facing lawsuits. Whether in court or negotiating with regulators, this coverage ensures you have the support you need, including the cost of settlements.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -406,7 +406,7 @@ export default function EAndO_Insurance() {
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/employeeDishonestyIcon.svg' width="80" height="80" alt="Employee Dishonesty" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Employee Dishonesty</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Protect your business from third-party claims resulting from frauds or dishonest acts conducted by your employees. E&O insurance covers investigation costs, legal fees, and damages caused by their actions.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Protect your business from third-party claims resulting from frauds or dishonest acts conducted by your employees. E&O Insurance covers investigation costs, legal fees, and damages caused by their actions.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -424,7 +424,7 @@ export default function EAndO_Insurance() {
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/errorServiceIcon.svg' width="80" height="80" alt="Error in Service" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Error in Service</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>If an employee makes an error while providing a service then E&O insurance covers resulting claims.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>If an employee makes an error while providing a service, then E&O insurance covers resulting claims.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -538,13 +538,13 @@ export default function EAndO_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Employee Dishonesty</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Protect your business from third-party claims resulting from frauds or dishonest acts conducted by your employees. E&O insurance covers investigation costs, legal fees, and damages caused by their actions.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Protect your business from third-party claims resulting from frauds or dishonest acts conducted by your employees. E&O Insurance covers investigation costs, legal fees, and damages caused by their actions.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Legal Representation Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>E&O insurance safeguards you from the financial burden of legal representation expenses when facing lawsuits. Whether in court or negotiating with regulators, this coverage ensures you have the support you need,including the cost of settlements.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>E&O Insurance safeguards you from the financial burden of legal representation expenses when facing lawsuits. Whether in court or negotiating with regulators, this coverage ensures you have the support you need,including the cost of settlements.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -692,7 +692,7 @@ export default function EAndO_Insurance() {
                             />
                             <Accordion
                                 title="Is errors and omissions insurance required by law?"
-                                content="Errors and omissions insurance is not mandatory by law in India. However, some professional bodies and regulatory authorities may require certain professionals to carry this type of insurance as a condition of their membership or licensing. For example, the Institute of Chartered Accountants of India (ICAI) recommends its members to carry professional indemnity insurance. Similarly, the Insurance Regulatory and Development Authority of India (IRDAI) mandates insurance brokers to have professional indemnity insurance."
+                                content="Errors and Omissions Insurance is not mandatory by law in India. However, some professional bodies and regulatory authorities may require certain professionals to carry this type of insurance as a condition of their membership or licensing. For example, the Institute of Chartered Accountants of India (ICAI) recommends its members to carry professional indemnity insurance. Similarly, the Insurance Regulatory and Development Authority of India (IRDAI) mandates insurance brokers to have professional indemnity insurance."
                             />
                             <Accordion
                                 title="What are the most common reasons for claims in E&O policies?"
@@ -709,11 +709,11 @@ export default function EAndO_Insurance() {
                             />
                             <Accordion
                                 title="Does E&O cover negligence?"
-                                content="Yes, E&O insurance typically covers negligence on the part of professionals in the services they provide to clients. Negligence here is a legal term that refers to the failure to exercise reasonable care or skill in the performance of one's duties or responsibilities. E&O insurance provides protection to insured professionals against claims of negligence, errors, or mistakes that result in financial losses to their clients."
+                                content="Yes, E&O insurance typically covers negligence on the part of professionals in the services they provide to clients. Negligence here is a legal term that refers to the failure to exercise reasonable care or skill in the performance of one's duties or responsibilities. E&O Insurance provides protection to insured professionals against claims of negligence, errors, or mistakes that result in financial losses to their clients."
                             />
                             <Accordion
                                 title="Is E&O insurance paid monthly or yearly?"
-                                content="E&O insurance premiums are payable only on an annual basis. Monthly payment options are not available for this type of insurance."
+                                content="E&O Insurance premiums are payable only on an annual basis. Monthly payment options are not available for this type of insurance."
                             />
                             <Accordion
                                 title="Is E&O insurance tax deductible?"
@@ -735,7 +735,7 @@ export default function EAndO_Insurance() {
                             />
                             <Accordion
                                 title="Does E&O insurance cover breach of contract?"
-                                content="No insurance policy can protect you if you knowingly breach a business contract. However, a breach of contract caused by your error or oversight may be protected by errors and omissions insurance (E&O). E&O insurance can cover breach of contract claims involving errors and omissions at work, services that have not been delivered, missed deadlines, budget overruns, incomplete work, and negligence allegations."
+                                content="No insurance policy can protect you if you knowingly breach a business contract. However, a breach of contract caused by your error or oversight may be protected by errors and omissions insurance (E&O). E&O Insurance can cover breach of contract claims involving errors and omissions at work, services that have not been delivered, missed deadlines, budget overruns, incomplete work, and negligence allegations."
                             />
                             <Accordion
                                 title="When should E&O claims be reported?"

@@ -160,7 +160,7 @@ export default function HeroBanner(props) {
                 padding-right: 80px;
               }
               .title60 {
-                font-size: 52px;
+                font-size: 54px;
                 line-height: 66px;
               }
             }

@@ -12,7 +12,7 @@ function BlogListCard(props) {
                 <div className='col-md-12 col' onClick={handleChildClick}>
                     <div className={`position-relative p-4 pt-4  BlogListCardBox ${Style.ListCardBox}`} style={{ background: "url(/blog1.jpg) no-repeat center center/cover" }}>
                         <div className='BlogList-cardOverlay d-none'></div>
-                        <div className='polyBox border-primary bg-blueLight text-primary  title16 font-weight-600 '>{label}</div>
+                        <div className='polyBox border-primary bg-blueLight text-primary  title16 font-weight-600 d-none'>{label}</div>
                         <div className='BlogList-cardLink  mt-2 title-30 d-block BlogList-cardTitle font-secondary text-capitalize  font-weight-600 @w-75'>
                             <Link href={linking} className='text-primarySky text-decoration-none'>{title}</Link>
                         </div>

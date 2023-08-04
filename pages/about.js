@@ -54,7 +54,7 @@ export default function About() {
                             <Col md={10} className={`mx-auto`}>
                                 <div className="abtCntntRow">
                                     <div className="abtCntntCol">
-                                        <h3><span>Before <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>How We Began</h3>
+                                        <h3 className='font-secondary'><span className='font-primary'>Before <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>How We Began</h3>
                                         <p>With a clear aim, BimaKavach was established to simplify the complex process of business insurance. Our experience spanning four decades highlighted a significant issue - clients often felt overwhelmed by the extensive paperwork, confusing quote requirements, and the opaque nature of policy acquisition.</p>
                                         <p>In response, we devised a unique approach. We investigated various sectors, used our findings to create tailored insurance coverage, and developed standard policies that are customized to meet our client's specific needs. This ensures top-tier coverage for each client and allows us to leverage our partnerships with numerous insurance companies to secure the best prices.</p>
                                         <p>BimaKavach is built on trust. We have strong relationships with our clients and providers, underpinned by transparency and mutual respect. Our policies eliminate mis-spelling and streamline claims, establishing a trust-filled environment for all stakeholders.</p>
@@ -65,7 +65,7 @@ export default function About() {
                                         </div>
                                     </div>
                                     <div className="abtCntntCol">
-                                        <h3><span>Now <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>How We Are Going</h3>
+                                        <h3 className='font-secondary'><span className='font-primary'>Now <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>How We Are Going</h3>
                                         <p>Today, BimaKavach proudly serves over 500 companies nationwide, offering them comprehensive 24x7 claims support. Our diversified client base spans multiple sectors, including but not limited to manufacturing, trading, software, contracting, real estate, consulting, energy, education, and HR. From dynamic startups and ambitious SMEs to established listed companies, we accommodate the unique needs of businesses at all stages.</p>
                                         <p>Our portfolio now encompasses more than 17 meticulously curated business insurance policies, each customizable to protect your business's assets, liabilities, directors, and employees.</p>
                                         <p>We have a team of insurance experts working tirelessly to present the best insurance options for our clients. Our key focus is on simplicity, speed, and clarity, ensuring a seamless insurance experience for all our clients.</p>
@@ -76,7 +76,7 @@ export default function About() {
                                         </div>
                                     </div>
                                     <div className="abtCntntCol">
-                                        <h3><span>After <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>What Is Our Goal</h3>
+                                        <h3 className='font-secondary'><span className='font-primary'>After <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>What Is Our Goal</h3>
                                         <p>At BimaKavach, we are driven by the vision of securing every Indian business with precisely the insurance coverage they require. As India forges its path as a global economic contender, its foundation relies heavily on the stability and continuity of Indian businesses. Our insurance policies are designed to shield these businesses from unforeseen circumstances, ensuring they thrive even in the face of adversity. We believe in bolstering India's economic growth and stability through well-insured businesses. At the core of our ethos are Simplicity, Speed, and Transparency. These values permeate everything we do:</p>
                                         <div className="abtInfoRow mt-4">
                                             <Row className="g-4">
@@ -223,6 +223,7 @@ export default function About() {
                         display: inline-flex;
                         align-items: center;
                         gap: 5px;
+                        letter-spacing: 0px;
                     }
                     .abtCntntCol h3 span i {
                         display: flex;
@@ -249,7 +250,7 @@ export default function About() {
                         position: relative;
                         //display: flex;
                         filter: grayscale(1);
-                        height: 350px;
+                        max-height: 350px;
                         transition: all 0.3s ease 0s;
                         overflow: hidden;
                     }
@@ -259,7 +260,7 @@ export default function About() {
                     }
                     .abtCntntMedia:hover i {
                         filter: grayscale(0);
-                        height: 680px;
+                        max-height: 680px;
                     }
                     .abtInfoCol h4 {
                         font-size: 22px;

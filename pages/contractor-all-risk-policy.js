@@ -404,11 +404,11 @@ export default function ContractorAllRisk_Policy() {
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>Contractor’s All Risk Policy</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all">Coverages</span>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Exclusions</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all">Exclusions</span>
                                     </div>
                                     <div className={`overflow-hidden ${productStyle.coverageTabPanel}`}>
-                                        <div data-tab className="hidden place-content-center">
+                                        <div data-tab className="place-content-center">
                                             <Row>
                                                 <Col lg={8}>
                                                     <div className='title-20 text-black mb-4'>Here are the common elements that are typically covered in a CAR policy in India</div>
@@ -475,7 +475,7 @@ export default function ContractorAllRisk_Policy() {
                                                 <li>Water damage</li>
                                             </ul>
                                         </div>
-                                        <div data-tab className="place-content-center">
+                                        <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
                                                     <div className='title-20 text-black mb-4'>Here are some common exclusions typically found in contractors all risk insurance policies in India:</div>
@@ -585,12 +585,12 @@ export default function ContractorAllRisk_Policy() {
                             />
                             <Accordion
                                 title="What is the method of calculating risk used by insurance companies?"
-                                content="An insurance company examines several aspects while calculating risks and quoting the premium for the contractor's all-risk insurance policy. These criteria include the scope, location, cost, and time frame for the construction work."
+                                content="An insurance company examines several aspects while calculating risks and quoting the premium for the contractor's all risk insurance policy. These criteria include the scope, location, cost, and time frame for the construction work."
                             />
                             <Accordion
-                                title="How do I claim a contractor all risk policy?"
+                                title="How do I claim a contractor's all risk policy?"
                                 content={[<>
-                                    <span>To file a claim under the contractor's all-risk policy, please follow the steps below:</span>
+                                    <span>To file a claim under the contractor's all risk policy, please follow the steps below:</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>
                                         <li>Inform your broker right away to report the damage/loss. He will assist you in the entire claim settlement process.</li>
                                         <li>Following phone notification, the insurer must be notified in writing of the damage or incidence of a loss. The severity of property damage must be included in the written notification.</li>
@@ -620,11 +620,11 @@ export default function ContractorAllRisk_Policy() {
                                 </>]}
                             />
                             <Accordion
-                                title="What does a cross liability mean in a contractor all-risk policy?"
-                                content="In a Contractor's All Risk (CAR) insurance policy, a 'cross liability' provision is a key feature that addresses the potential legal liability of different parties involved in a construction project. It ensures that each party is individually protected against claims made by other parties covered under the same policy."
+                                title="What does a cross liability mean in a contractor's all risk policy?"
+                                content="In a contractor's all risk (CAR) insurance policy, a 'cross liability' provision is a key feature that addresses the potential legal liability of different parties involved in a construction project. It ensures that each party is individually protected against claims made by other parties covered under the same policy."
                             />
                             <Accordion
-                                title="What is covered in the construction all-risk policy?"
+                                title="What is covered in the contractor's all risk policy?"
                                 content={[<>
                                     <span>Here are the common elements that are typically covered in a CAR policy in India-</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>
@@ -643,7 +643,7 @@ export default function ContractorAllRisk_Policy() {
                             <Accordion
                                 title="In which risks does the contractor's all risk policy not apply?"
                                 content={[<>
-                                    <span>The contractor's All Risk Policy (CAR) does not typically apply to the following risks. However, some of these perils can be covered under certain conditions with an additional premium.</span>
+                                    <span>The contractor's all risk policy (CAR) does not typically apply to the following risks. However, some of these perils can be covered under certain conditions with an additional premium.</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>
                                         <li>Nuclear risks like nuclear radiation or other nuclear incidents.</li>
                                         <li>War risks like damage caused by war, invasion, acts of foreign enemy, terrorism, etc</li>
@@ -654,8 +654,8 @@ export default function ContractorAllRisk_Policy() {
                                 </>]}
                             />
                             <Accordion
-                                title="Is theft covered under the contractor’s all-risk policy?"
-                                content="Yes. The contractor’s all-risk policy covers theft that may happen in the project or construction site."
+                                title="Is theft covered under the contractor’s all risk policy?"
+                                content="Yes. The contractor’s all risk policy covers theft that may happen in the project or construction site."
                             />
                         </div>
                     </Container>

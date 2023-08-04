@@ -510,7 +510,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                                     </ul>
                                                 </Col>
                                             </Row>
-                                            <div class="title-32 font-secondary font-weight-600 text-yellow mb-4 mt-4 mt-xxl-5">Add-on Coverage</div>
+                                            <div className="title-32 font-secondary font-weight-600 text-yellow mb-4 mt-4 mt-xxl-5">Add-on Coverage</div>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
@@ -582,7 +582,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Third-Party Property Damage Claim</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Third-party Property Damage Claim</div>
                                                     <div className='mb-4'>
                                                         <div className='title-18 font-weight-500 text-black m-0'>Let’s suppose a crane placed at a construction site accidentally drops a stone and damages a third-party car. If the contractor has obtained a CPM insurance policy to protect its project from various risks, including third-party liability, the policy would cover the liability of the insured contractor for the damage caused to the third-party car by the crane. This could include the cost of repairs, replacement parts, or, in severe cases, the total loss of the vehicle.</div>
                                                     </div>
@@ -613,7 +613,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                         <div className='mt-4'>
                             <Accordion
                                 title="What is the full form of CPM insurance?"
-                                content="The full form of CPM insurance is Contractor Plant & Machinery Insurance. It is also known as Construction Plant and Machinery Insurance."
+                                content="The full form of CPM insurance is Contractor's Plant & Machinery Insurance. It is also known as Construction Plant and Machinery Insurance."
                             />
                             <Accordion
                                 title="What is floater cover in CPM policy?"
@@ -642,8 +642,8 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                 </>]}
                             />
                             <Accordion
-                                title="What is the duration of the contractor plant and machinery insurance policy?"
-                                content="Typically, CPM insurance policies are issued for a specific period known as the policy term. Generally, this depends on how long the project will last, or how long the equipment and machinery will be in use. It can range from short-term policies that cover a specific small project over a specified time frame, to long-term policies that provide coverage for long-term projects/ contract periods."
+                                title="What is the duration of the contractor's plant and machinery insurance policy?"
+                                content="Typically, CPM insurance policies are issued for a specific period known as the policy term. Generally, this depends on how long the project will last, or how long the equipment and machinery will be in use. It can range from short-term policies that cover a specific small project over a specified time frame, to long-term policies that provide coverage for long-term projects/contract periods."
                             />
                             <Accordion
                                 title="Is plant and machinery a liability or asset?"
@@ -651,7 +651,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                             />
                             <Accordion
                                 title="Who can take the contractor's plant and machinery insurance policy?"
-                                content="The policy can be taken by the Owner, Lessor, or Hirer (responsible either legally or through a leasing agreement) of the Machinery/Equipment. Banks and institutions investing on a construction project can also take this policy."
+                                content="The policy can be taken by the owner, lessor, or hirer (responsible either legally or through a leasing agreement) of the machinery/equipment. Banks and institutions investing on a construction project can also take this policy."
                             />
                             <Accordion
                                 title="What are the additional add-ons one should purchase along with this policy?"
@@ -671,7 +671,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                 content="Yes. It is always important to inform the insurer of any changes in your contact information. This will ensure that you will receive all correspondence promptly."
                             />
                             <Accordion
-                                title="How to make an insurance claim for Contractor’s Plant and Machinery?"
+                                title="How to make an insurance claim for contractor’s plant and machinery?"
                                 content={[<>
                                     <span>Please follow the steps mentioned below-</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>

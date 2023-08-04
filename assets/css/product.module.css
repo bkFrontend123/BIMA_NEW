@@ -29,9 +29,11 @@
 .ProductList li a img.svgActive {
     display: none;
 }
+.ProductList li a:hover img.svgActive,
 .ProductList li a.active img.svgActive {
     display: inline;
 }
+.ProductList li a:hover img.svg,
 .ProductList li a.active img.svg {
     display: none;
 }

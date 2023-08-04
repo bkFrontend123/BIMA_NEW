@@ -672,7 +672,7 @@ export default function WorkmensCompensation_Flow() {
                                             </>
                                         )}
                                         <div className={`${form.frmftr}`}>
-                                            <p>By clicking on "Submit", you agree to our <Link href='/privacy-policy'>Privacy Policy</Link> and <Link href='/terms-and-conditions'>Terms of Use</Link> , and also provide us a formal mandate to represent you to the insurer and communicate to you the grant of a cover</p>
+                                            <p>By continuing to the next step, you agree to our <Link href='/privacy-policy'>Privacy Policy</Link> and <Link href='/terms-and-conditions'>Terms of Use</Link> , and also provide us a formal mandate to represent you to the insurer and communicate to you the grant of a cover</p>
                                         </div>
                                     </div>
                                 </Col>

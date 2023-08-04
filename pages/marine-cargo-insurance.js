@@ -484,7 +484,7 @@ export default function MarineCargo_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Marine Cargo Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Business shipments often hold significant value, and any damage can directly affect a company's bottom line. Marine cargo insurance policies can provide coverage for theft, malicious damage, shortages, non-delivery of goods, damages during loading and unloading, and cargo mishandling. You can tailor marine cargo insurance coverage to meet your specific business requirements, and it is available for a broad range of cargo and goods.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Business shipments often hold significant value, and any damage can directly affect a company's bottom line. Marine Cargo Insurance policies can provide coverage for theft, malicious damage, shortages, non-delivery of goods, damages during loading and unloading, and cargo mishandling. You can tailor marine cargo insurance coverage to meet your specific business requirements, and it is available for a broad range of cargo and goods.</p>
                                     </div>
                                 </Container>
 
@@ -705,7 +705,7 @@ export default function MarineCargo_Insurance() {
                                 content={[<>
                                     <span>The most common types of marine insurance are:</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>
-                                        <li>Marine Cargo Insurance - Cargo owners incur the risk of cargo mishandling both at the terminal and on the ship's voyage. Their shipment could possibly be damaged, misplaced or lost as well.  Marine cargo insurance is provided to protect the cargo owner from financial losses caused by such accidents. It also includes third-party liability cover, which compensates for any damage to the port, ship, railway track, other cargo, or individuals caused by your cargo.</li>
+                                        <li>Marine Cargo Insurance - Cargo owners incur the risk of cargo mishandling both at the terminal and on the ship's voyage. Their shipment could possibly be damaged, misplaced or lost as well.  Marine Cargo Insurance is provided to protect the cargo owner from financial losses caused by such accidents. It also includes third-party liability cover, which compensates for any damage to the port, ship, railway track, other cargo, or individuals caused by your cargo.</li>
                                         <li>Machinery Insurance - All essential machinery is covered under this marine insurance policy, as well as any operational damages (subject to post-survey approval by the surveyor).</li>
                                         <li>Liability Insurance - In cases of collisions, crashings, or other persuaded attacks, compensation is required.</li>
                                         <li>Freight Insurance - The purpose of freight insurance is to provide companies with financial security in case they lose money due to an unforeseeable event or accident.</li>
@@ -726,7 +726,7 @@ export default function MarineCargo_Insurance() {
                             />
                             <Accordion
                                 title="What is marine cargo insurance?"
-                                content="Cargo owners face the danger of cargo mishandling at the terminal as well as during the ship's voyage. It is also possible that your cargo has been misplaced, damaged, or lost.  Marine cargo insurance is offered to safeguard the cargo owner from financial damages resulting from such incidents. It includes third-party liability insurance, which covers any damage caused by your cargo to the port, ship, railway track, other cargo, or individuals."
+                                content="Cargo owners face the danger of cargo mishandling at the terminal as well as during the ship's voyage. It is also possible that your cargo has been misplaced, damaged, or lost. Marine Cargo Insurance is offered to safeguard the cargo owner from financial damages resulting from such incidents. It includes third-party liability insurance, which covers any damage caused by your cargo to the port, ship, railway track, other cargo, or individuals."
                             />
                             <Accordion
                                 title="What is a constructive total loss in marine insurance?"

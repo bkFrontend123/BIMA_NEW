@@ -100,7 +100,10 @@ export default function QuoteComparison() {
                     <Accordion defaultActiveKey={['0']} alwaysOpen>
                         <div className={`${quoteCompare.quoteCompareLeftCol}`}>
                             <div className={`${quoteCompare.quoteCompareHeader}`}>
-                                <div className={`${quoteCompare.quoteCompareTtl}`}>Premium + GST @18%</div>
+                                <div className={`${quoteCompare.quoteCompareTtl}`}>
+                                    <div className={`${quoteCompare.quoteCompareBtn}`}><span>Premium</span></div>
+                                    (Additional GST will be applicable on the given premium)
+                                </div>
                             </div>
                             <Accordion.Item eventKey="0" className={quoteCompare.accordianItem}>
                                 <div className={`${quoteCompare.quoteCompareBody}`}>

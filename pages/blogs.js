@@ -159,8 +159,6 @@ export default function blogs() {
                     <div className=' pb-5'>
                         <div className='container '>
                             <div className='blogListHero  text-md-center d-flex justify-content-center flex-column'>
-                                <h1 className='polyBox border-primary bg-blueLight text-primary mx-md-auto title16 font-weight-600 mb-4' style={{ maxWidth: "120px" }}>The blog </h1>
-
                                 <h2 className='title64 font-weight-600 font-secondary'>Writings from our team</h2>
                                 <h3 className='title20'>The latest industry news, interviews, technologies, and resources.</h3>
                             </div>

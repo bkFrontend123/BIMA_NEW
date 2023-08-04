@@ -11,7 +11,7 @@
 .quoteCompareRightCol {
     float: left;
     width: calc(100% - 410px);
-    margin-top: -164px;
+    margin-top: -144px;
     position: relative;
     z-index: 2;
 }
@@ -26,6 +26,7 @@
 .quoteCompareRightCol .quoteCompareHeader {
     position: sticky;
     top: 0;
+    padding-bottom: 54px;
 }
 .quoteCompareHeader > div {
     padding: 20px;
@@ -48,9 +49,26 @@
 }
 
 .quoteCompareTtl {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 17px;
+    line-height: 22px;
     color: var(--vt-c-grayText);
+    padding-right: 70px !important;
+}
+.quoteCompareBtn {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+.quoteCompareBtn span {
+    background-color: var(--vt-c-blue);
+    display: inline-block;
+    min-width: 150px;
+    color: var(--whiteText);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
 }
 
 .quoteCompareRightCol .accordianItem {
@@ -243,8 +261,14 @@
 
 
 @media (max-width: 1699px) {
+    .quoteCompareBtn,
+    .quoteCompareBtn span,
+    .quoteCompareBtn a {
+        font-size: 17px;
+        min-width: 140px
+    }
     .quoteCompareRightCol {
-        margin-top: -158px;
+        margin-top: -138px;
     }
     .quoteCompareRightCol .accordianItem {
         padding-top: 67px;
@@ -291,8 +315,9 @@
         min-width: 300px;
     }
     .quoteCompareTtl {
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 15px;
+        line-height: 22px;
+        padding-right: 70px !important;
     }
     .quoteCompareHeader > div {
         padding: 16px;

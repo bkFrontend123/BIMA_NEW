@@ -65,7 +65,6 @@ export default function Questions() {
                 <div className=' text-center@ text-xl-start@ '>
                     <div className='row'>
                         <div className='col-12 text-start text-md-center'>
-                            <div className='polyBox border-primary bg-blueLight mb-md-4 mb-2 text-primary title16 font-weight-600 '>Frequently Answered Questions</div>
                             <div className='title48 font-secondary mb-4 text-primary mb-xl-4 mb-3 font-weight-600'>Before You Even Ask</div>
                             {/* <div className='text-primary font-weight-600 title16 mb-5 mb-xl-0'>Our customers trust us.</div> */}
                         </div>

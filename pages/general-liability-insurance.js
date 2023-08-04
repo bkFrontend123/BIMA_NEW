@@ -317,7 +317,7 @@ export default function GeneralLiability_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black'>General Liability Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Imagine you own a store, and a customer slips and falls, or your product somehow causes harm to a user - the costs of legal defense and potential settlements could be financially devastating. But with a CGL policy, you are protected against these risks. It can pay for immediate medical expenses in such cases, providing quick relief and potentially mitigating a larger claim.</p>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>It also covers personal and advertising injuries. This means if your business unintentionally infringes on someone else's copyright or is accused of libel or slander during advertising, your CGL policy has got you covered.</p>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Because of its comprehensive nature, General Liability Insurance has your back. Without insurance, a single claim can be financially devastating to your business. But with the right CGL policy, you can focus on running your business and serving your customers, secure in the knowledge that you're protected against many of the risks you face every day.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Because of its comprehensive nature, general liability insurance has your back. Without insurance, a single claim can be financially devastating to your business. But with the right CGL policy, you can focus on running your business and serving your customers, secure in the knowledge that you're protected against many of the risks you face every day.</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary mb-4'>Features of General Liability Insurance</div>
@@ -453,7 +453,7 @@ export default function GeneralLiability_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>General Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>We all know that accidents can happen, even when you're doing everything right. In fact, 43% of small business owners have reported being threatened with or involved in a civil lawsuit. That's when general liability insurance becomes your go-to solution.It takes care of legal defense costs, settlements, and judgments that might come up from third-party claims, helping to keep your business secure. And it doesn't stop there; it also covers personal and advertising injury claims, ensuring your reputation stays intact. With general liability insurance, you can breathe easier knowing your business has a strong safety net in place for unexpected situations.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>We all know that accidents can happen, even when you're doing everything right. In fact, 43% of small business owners have reported being threatened with or involved in a civil lawsuit. That's when general liability insurance becomes your go-to solution. It takes care of legal defense costs, settlements, and judgments that might come up from third-party claims, helping to keep your business secure. And it doesn't stop there; it also covers personal and advertising injury claims, ensuring your reputation stays intact. With general liability insurance, you can breathe easier knowing your business has a strong safety net in place for unexpected situations.</p>
                                     </div>
                                 </Container>
 
@@ -555,7 +555,7 @@ export default function GeneralLiability_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crisis Communication Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers costs for hiring public relations or crisis management firms to advise on public communication strategies related to incidents, lawsuits, or allegations covered under the General Liability Insurance policy.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers costs for hiring public relations or crisis management firms to advise on public communication strategies related to incidents, lawsuits, or allegations covered under the general liability insurance policy.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -677,7 +677,7 @@ export default function GeneralLiability_Insurance() {
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What is the difference between commercial general liability and commercial umbrella inusance?"
+                                title="What is the difference between commercial general liability and commercial umbrella insurance?"
                                 content="Commercial General Liability (CGL) insurance covers liability claims related to bodily injury, property damage, and personal and advertising injury. On the other hand, Commercial Umbrella Insurance provides excess liability coverage beyond the limits of primary insurance policies, such as CGL or professional liability insurance. For instance, if a business faces a liability claim that exceeds its CGL policy limits, an umbrella policy can offer additional coverage to help cover the costs of the claim."
                             />
                             <Accordion
@@ -686,35 +686,35 @@ export default function GeneralLiability_Insurance() {
                             />
                             <Accordion
                                 title="Does general liability insurance protect my store, office, or physical location?"
-                                content="Yes. General Liability Insurance covers claims arising from third-party bodily injury or property damage occurring on your business premises. For example, if a customer slips and falls in your store, your General Liability Insurance may cover their medical expenses and any damages they may seek as a result of the injury."
+                                content="Yes. General Liability Insurance covers claims arising from third-party bodily injury or property damage occurring on your business premises. For example, if a customer slips and falls in your store, your general liability insurance may cover their medical expenses and any damages they may seek as a result of the injury."
                             />
                             <Accordion
                                 title="What protection does general liability insurance provide against social media risks?"
-                                content="General Liability Insurance can cover advertising injury claims, including certain types of claims related to social media use. For instance, if your business faces a libel or slander claim due to a social media post, your General Liability Insurance may cover legal defense costs and any damages awarded. Some policies may also offer additional coverage for claims related to hacked social media accounts or leaked personal information through social media channels."
+                                content="General Liability Insurance can cover advertising injury claims, including certain types of claims related to social media use. For instance, if your business faces a libel or slander claim due to a social media post, your general liability insurance may cover legal defense costs and any damages awarded. Some policies may also offer additional coverage for claims related to hacked social media accounts or leaked personal information through social media channels."
                             />
                             <Accordion
                                 title="How much general liability insurance do I need?"
-                                content="The amount of General Liability Insurance you need depends on various factors, such as your business size, type, location, and the level of risk you're willing to assume. Consider these factors when calculating the insurance coverage you need."
+                                content="The amount of general liability insurance you need depends on various factors, such as your business size, type, location, and the level of risk you're willing to assume. Consider these factors when calculating the insurance coverage you need."
                             />
                             <Accordion
                                 title="Can I customize my commercial general liability insurance policy?"
-                                content="Yes, you can tailor your Commercial General Liability (CGL) Insurance policy to suit your specific business needs and risk profile. Common customizations include increasing policy limits, adding endorsements, removing exclusions, and adding additional insureds."
+                                content="Yes, you can tailor your commercial general liability (CGL) insurance policy to suit your specific business needs and risk profile. Common customizations include increasing policy limits, adding endorsements, removing exclusions, and adding additional insureds."
                             />
                             <Accordion
                                 title="What happens if I have a claim that exceeds my commercial general liability insurance coverage?"
-                                content="If a claim exceeds your Commercial General Liability (CGL) Insurance coverage, you may need to pay the remaining amount out of pocket. This amount, called the 'coverage gap,' is not covered by your policy."
+                                content="If a claim exceeds your commercial general liability (CGL) insurance coverage, you may need to pay the remaining amount out of pocket. This amount, called the 'coverage gap,' is not covered by your policy."
                             />
                             <Accordion
                                 title="Does commercial general liability insurance cover damages to my property?"
-                                content="No, Commercial General Liability (CGL) Insurance doesn't cover damages to your property. CGL insurance protects your business from liability claims for bodily injury or property damage caused by you or your employees to others."
+                                content="No, commercial general Liability (CGL) insurance doesn't cover damages to your property. CGL insurance protects your business from liability claims for bodily injury or property damage caused by you or your employees to others."
                             />
                             <Accordion
                                 title="Does commercial general liability insurance cover customer or client injuries?"
-                                content="Yes, Commercial General Liability (CGL) Insurance covers bodily injury to customers or clients occurring on your business premises or as a result of your business operations. It also covers bodily injury caused by your products or services."
+                                content="Yes, commercial general liability (CGL) insurance covers bodily injury to customers or clients occurring on your business premises or as a result of your business operations. It also covers bodily injury caused by your products or services."
                             />
                             <Accordion
                                 title="Does commercial general liability insurance cover damages from my advertising?"
-                                content="Yes, Commercial General Liability (CGL) Insurance covers damages resulting from your advertising. It includes coverage for personal and advertising injury, which refers to harm caused by offenses such as libel, slander, or copyright infringement in your advertising."
+                                content="Yes, commercial general liability (CGL) insurance covers damages resulting from your advertising. It includes coverage for personal and advertising injury, which refers to harm caused by offenses such as libel, slander, or copyright infringement in your advertising."
                             />
                         </div>
                     </Container>

@@ -119,7 +119,7 @@ export default function BlogDetail() {
                         {/* Certificate of Insurance for business */}
                         {/* AUGUST 27, 2023 • 4 MIN READ */}
                         <div className='text-center '>
-                            <span className='polyBox border-primary d-inline-block bg-blueLight text-primary  title16 font-weight-600 '>{blog?.categoryDetail[0]?.title}</span>
+                            <span className='polyBox border-primary d-inline-block bg-blueLight text-primary  title16 font-weight-600 d-none'>{blog?.categoryDetail[0]?.title}</span>
                             <h2 className='title-60 font-weight-600 font-secondary mt-4 px-md-5 mx-md-5'>{blog?.title}</h2>
                             <div topicsiv className='BlogList-cardDate mt-4 mt-md-0 title14 text-yellow3'>{`${blog?.time}, ${blog?.readingTime}`}</div>
                         </div>

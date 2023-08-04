@@ -16,7 +16,6 @@ export default function OurBlog() {
                         <div className='col-md-12'>
                             <div className='col-md-12'>
                                 <div className='commnHeading'>
-                                    <div className='polyBox border-primary bg-blueLight mb-md-4 mb-3 text-primary title-16 font-weight-500 '>Our Blogs</div>
                                     <h3 className='aboutProductSec-leftTitle title-64 font-secondary font-weight-600 text-primary'>Food for Thought, Served Fresh</h3>
                                 </div>
                             </div>

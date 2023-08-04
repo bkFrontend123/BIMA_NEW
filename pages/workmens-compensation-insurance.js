@@ -446,7 +446,7 @@ export default function WorkmensCompensation_Insurance() {
                                         <div data-tab className="place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>Workmen's compensation insurance facilitates employers to offset the financial responsibilities related to their employees' work-related injuries or illnesses. Here's an overview of the principal protections provided by a standard Workmen's Compensation Insurance policy in India:</div>
+                                                    <div className='title-20 text-black mb-4'>Workmen's Compensation Insurance facilitates employers to offset the financial responsibilities related to their employees' work-related injuries or illnesses. Here's an overview of the principal protections provided by a standard workmen's compensation insurance policy in India:</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
@@ -598,7 +598,7 @@ export default function WorkmensCompensation_Insurance() {
                                         <li>Monthly wages of the injured worker</li>
                                         <li>The extent and nature of the injury or disability suffered by the worker</li>
                                         <li>The age of the worker at the time of the injury</li>
-                                        <li>Compensation Formula, as provided in the Act</li>
+                                        <li>Compensation formula, as provided in the Act</li>
                                     </ul>
                                 </>]}
                             />
@@ -653,7 +653,7 @@ export default function WorkmensCompensation_Insurance() {
                             />
                             <Accordion
                                 title="What can be the maximum claim in WC policy?"
-                                content="The maximum claim amount under a Workmen's Compensation policy in India can vary depending on the terms and conditions of the insurance policy and the specific provisions of the insurance company. The compensation limit for workmen's compensation in India is determined by the Employees' Compensation Act, which sets the maximum amounts for different types of injuries and disabilities"
+                                content="The maximum claim amount under a workmen's compensation policy in India can vary depending on the terms and conditions of the insurance policy and the specific provisions of the insurance company. The compensation limit for workmen's compensation in India is determined by the Employees' Compensation Act, which sets the maximum amounts for different types of injuries and disabilities"
                             />
                             <Accordion
                                 title="Is workmen's policy compulsory?"

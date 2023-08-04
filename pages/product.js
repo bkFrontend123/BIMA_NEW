@@ -383,15 +383,12 @@ export default function Product() {
                         <div className='row '>
                             <div className='col-md-7'>
                                 <div className='aboutProductSec-left '>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title16 font-weight-500 '>Some Examples</div>
                                     <h3 className='aboutProductSec-leftTitle title-64 font-secondary font-weight-600 text-primary'>Directors & Officers Claims Examples</h3>
                                     <h4 className='title-24 text-black font-secondary@ mt-4 mb-4 mb-md-0 '>Augue elit leo ut laoreet. Et erat in elementum justo aliquet enim dolor iaculis quis.</h4>
                                 </div>
                             </div>
                             <div className='col-md-5'>
                                 <div className='aboutProductSec-right position-relative h-100'>
-
-                                    <div className='d-none d-md-block polyBox border-primary bg-blueLight mb-4 text-primary title16 font-weight-500 opacity-0'>Some Examples</div>
                                     <Swiper
                                         modules={[Navigation, Pagination, Scrollbar, Autoplay]}
                                         arrows="true"
@@ -505,7 +502,6 @@ export default function Product() {
                         <div className='prodContainer'>
                             <div className='row text-center'>
                                 <div className='col-md-12'>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title16 font-weight-500 '>Our Products</div>
                                     <h3 className='aboutProductSec-leftTitle title-64 font-secondary font-weight-600 text-primary'>Business Protection for Startups & SMEs</h3>
                                     <h4 className='title-24 text-black font-weight-500 mt-4 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
                                 </div>

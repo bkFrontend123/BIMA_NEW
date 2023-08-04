@@ -315,11 +315,11 @@ export default function CommercialCrime_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Commercial Crime Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>There is a persistent issue of employee fraud across all industries. Whether it's an employee who has succumbed to temptation, a fraudulent scheme from a supplier, or even cybercriminals looking to exploit your trust, these threats can cause significant financial harm to your business. That's where Crime Insurance comes in.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>There is a persistent issue of employee fraud across all industries. Whether it's an employee who has succumbed to temptation, a fraudulent scheme from a supplier, or even cybercriminals looking to exploit your trust, these threats can cause significant financial harm to your business. That's where crime insurance comes in.</p>
 
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Also known as commercial crime insurance, this policy provides a comprehensive coverage for criminal acts like employee dishonesty, computer fraud, identity theft, wire transfer fraud, or crimes committed by third-party.</p>
 
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Apart from financial compensation, a Crime Insurance policy provides you the ability to respond promptly to crimial incidents, ensuring that your business's reputation remains intact.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Apart from financial compensation, a crime insurance policy provides you the ability to respond promptly to criminal incidents, ensuring that your business's reputation remains intact.</p>
                                     </div>
                                 </Container>
                             </div>
@@ -623,11 +623,11 @@ export default function CommercialCrime_Insurance() {
                         <div className='mt-4'>
                             <Accordion
                                 title="What is the jurisdiction/territory of the claim?"
-                                content="The Jurisdiction Limit of a claim indicates that the policy will cover only the claims lodged in the courts of the listed countries. The territorial limit relates to the location where the act or an error takes place."
+                                content="The jurisdiction limit of a claim indicates that the policy will cover only the claims lodged in the courts of the listed countries. The territorial limit relates to the location where the act or an error takes place."
                             />
                             <Accordion
                                 title="How does crime insurance work?"
-                                content="Commercial crime insurance is a type of insurance that provides coverage for businesses against losses caused by criminal acts such as theft, fraud, and embezzlement. This type of insurance can be purchased by companies to protect against financial losses resulting from criminal activities committed by employees, customers, vendors, or other third parties. By having this coverage in place, businesses can improve their risk management practices, protect their assets, and improve their reputation."
+                                content="Commercial Crime Insurance is a type of insurance that provides coverage for businesses against losses caused by criminal acts such as theft, fraud, and embezzlement. This type of insurance can be purchased by companies to protect against financial losses resulting from criminal activities committed by employees, customers, vendors, or other third parties. By having this coverage in place, businesses can improve their risk management practices, protect their assets, and improve their reputation."
                             />
                             <Accordion
                                 title="What are the most common crime insurance claims?"
@@ -659,7 +659,7 @@ export default function CommercialCrime_Insurance() {
                             />
                             <Accordion
                                 title="Which insurance policy can offer protection against embezzlement?"
-                                content="Embezzlement is a type of theft in which an employee or trusted individual takes money or property that belongs to their employer or another party. Crime insurance is typically offered as protection against embezzlement. It provides coverage for losses arising from criminal activities such as theft, fraud, and embezzlement."
+                                content="Embezzlement is a type of theft in which an employee or trusted individual takes money or property that belongs to their employer or another party. Crime Insurance is typically offered as protection against embezzlement. It provides coverage for losses arising from criminal activities such as theft, fraud, and embezzlement."
                             />
                         </div>
                     </Container>

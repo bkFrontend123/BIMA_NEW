@@ -812,6 +812,10 @@ body .swiper-scrollbar {
 .footer .list-group li a {
    color: #fff;
    text-decoration: none;
+   transition: all 0.3s ease 0s;
+}
+.footer .list-group li a:hover {
+   color: var(--vt-c-yellow);
 }
 .footer .list-group li span {
    color: #fff;

@@ -24,7 +24,7 @@ export default function IndustryBlock() {
   const engineeringInsurance = [
     { id: "e1", titleLink: "/contractor-all-risk-policy", img: "/productIcons/engineering/contractorsAllRisk_icon.svg", title: "Contractor's", subtitle: "All Risk" },
     { id: "e2", titleLink: "/erection-all-risk-insurance", img: "/productIcons/engineering/erectionAllRisk_icon.svg", title: "Erection", subtitle: "All Risk" },
-    { id: "e3", titleLink: "/contractor-plant-and-machinery-insurance", img: "/productIcons/engineering/contractorsPlant_icon.png", title: "Contractor's Plant", subtitle: "& Machinery" },
+    { id: "e3", titleLink: "/contractor-plant-and-machinery-insurance", img: "/productIcons/engineering/contractorsPlant_icon.svg", title: "Contractor's Plant", subtitle: "& Machinery" },
   ]
   const employeeBenefits = [
     { id: "eb1", titleLink: "/group-personal-accident-insurance", img: "/productIcons/employeeBenefits/groupPersonal_icon.svg", title: "Group Personal", subtitle: "Accident" },

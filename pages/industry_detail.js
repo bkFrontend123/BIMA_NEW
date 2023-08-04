@@ -415,7 +415,6 @@ export default function IndustryDetail() {
             <div className='row'>
               <div className='col-md-12 '>
                 <div className='aboutCompany-title'>
-                  <div className='polyBox border-primary bg-blueLight mb-md-4 mb-3 text-primary title16 font-weight-500 '>Frequently Answered Questions</div>
                   <h3 className=' title-60 font-secondary font-weight-600 text-primary'>About E-commerce Insurance</h3>
                 </div>
               </div>

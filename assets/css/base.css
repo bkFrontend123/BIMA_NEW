@@ -590,6 +590,10 @@ p {
 
 .font-secondary {
   font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.72px;
+}
+h1.font-secondary {
+  letter-spacing: -0.72px;
 }
 
 .font-light {

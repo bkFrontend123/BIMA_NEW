@@ -99,7 +99,6 @@ export default function Career() {
                     <div className='container '>
                         <div className='row'>
                             <div className='col-12'>
-                                <div className="polyBox border-primary bg-blueLight text-primary title16 font-weight-600 mb-4">Careers</div>
                                 <h3 className='industryHero-title title-60 font-secondary font-weight-600 text-primary mb-lg-4 mb-3'> Join the Indian Growth Story’s <div className='text-yellow fst-italic'>Proudest Narrators</div></h3>
                                 <p className='industryHero-descrip title-22 text-black font-weight-500 mb-0 pe-md-4'>The people of India are the architects of India's growth story. The saga <span className='d-none d-lg-block'></span> of BimaKavach is a single thread in this rich tapestry of stories.</p>
                             </div>

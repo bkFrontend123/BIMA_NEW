@@ -331,7 +331,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/fileIcon.svg' width="80" height="80" alt="File or program malfunctions" />
-                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>File or program malfunctions</h3>
+                                                            <p className='title-24 font-weight-600 text-black mt-2 mb-0'>File or program malfunctions</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -407,7 +407,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/technologyIcon.svg' width="80" height="80" alt="Information Technology" />
-                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Information Technology</h3>
+                                                            <p className='title-24 font-weight-600 text-black mt-2 mb-0'>Information Technology</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -444,7 +444,7 @@ export default function Cyber_Insurance() {
                                                     </div>
                                                 </Col>
                                             </Row>
-                                            <p className='title-20 mb-0 text-black font-weight-500 my-4 my-lg-5'>Almost every organization in today's digital age relies on technology in their everyday operations. Customers' names, addresses, and financial information are handled by a wide range of businesses, including IT services, product corporations, e-commerce companies, finance firms, real estate brokers, online marketplaces, restaurants, and many more. All such organizations must carry Cyber Liability Insurance to safeguard themselves against the risk of internet fraud.</p>
+                                            <p className='title-20 mb-0 text-black font-weight-500 my-4 my-lg-5'>Almost every organization in today's digital age relies on technology in their everyday operations. Customers' names, addresses, and financial information are handled by a wide range of businesses, including IT services, product corporations, e-commerce companies, finance firms, real estate brokers, online marketplaces, restaurants, and many more. All such organizations must carry cyber liability insurance to safeguard themselves against the risk of internet fraud.</p>
                                             <h3 className='title-36 font-secondary font-weight-700 text-primary my-4 my-xl-5'>What happens after a cyber security breach?</h3>
                                             <Row className='g-4 g-lg-5'>
                                                 <Col lg={4}>
@@ -506,7 +506,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/bLossIcon.svg' width="80" height="80" alt="Business loss compensation to clients" />
-                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Business loss compensation to clients</h3>
+                                                            <p className='title-18 font-weight-500 text-black mt-2 mb-0'>Business loss compensation to clients</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -514,7 +514,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/feesIcon.svg' width="80" height="80" alt="Ransom fees for restoring stolen data" />
-                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Ransom fees for restoring stolen data</h3>
+                                                            <p className='title-18 font-weight-500 text-black mt-2 mb-0'>Ransom fees for restoring stolen data</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -522,7 +522,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/forensicIcon.svg' width="80" height="80" alt="Cyber forensic investigation costs" />
-                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Cyber forensic investigation costs</h3>
+                                                            <p className='title-18 font-weight-500 text-black mt-2 mb-0'>Cyber forensic investigation costs</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -530,7 +530,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/legalIcon.svg' width="80" height="80" alt="Legal attorney fees" />
-                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Legal attorney fees</h3>
+                                                            <p className='title-18 font-weight-500 text-black mt-2 mb-0'>Legal attorney fees</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -538,7 +538,7 @@ export default function Cyber_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/monitoringIcon.svg' width="80" height="80" alt="Credit monitoring expenses" />
-                                                            <h3 className='title-24 font-weight-600 text-black mt-2 mb-0'>Credit monitoring expenses</h3>
+                                                            <p className='title-18 font-weight-500 text-black mt-2 mb-0'>Credit monitoring expenses</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -661,13 +661,13 @@ export default function Cyber_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Email Spoofing and Phishing</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Some cyber insurance policies may not provide coverage for certain types of social engineering attacks. Instead, these attacks are typically included under Commercial Crime Insurance Policies. Examples of such attacks include email spoofing and phishing.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Some cyber insurance policies may not provide coverage for certain types of social engineering attacks. Instead, these attacks are typically included under commercial crime insurance policies. Examples of such attacks include email spoofing and phishing.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 font-secondry'>Physical Injury, Disease, Disability, Sickness, or Death</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Claims related to physical injury, disease, disability, sickness, or death are not covered under a cyber insurance policy. However, claims related to mental injury or anguish resulting from a breach of Data Protection Law by the company are included.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Claims related to physical injury, disease, disability, sickness, or death are not covered under a cyber insurance policy. However, claims related to mental injury or anguish resulting from a breach of data protection law by the company are included.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
@@ -809,7 +809,7 @@ export default function Cyber_Insurance() {
                             />
                             <Accordion
                                 title="Is email spoofing/phishing covered under cyber insurance?"
-                                content="No, email spoofing and phishing are covered under Crime/Fidelity Insurance."
+                                content="No, email spoofing and phishing are covered under crime/fidelity insurance."
                             />
                             <Accordion
                                 title="What would be the out-of-pocket cost for a cyberattack without cyber insurance?"
@@ -837,7 +837,7 @@ export default function Cyber_Insurance() {
                             />
                             <Accordion
                                 title="Is cyber insurance the same as professional liability insurance?"
-                                content="Cyber insurance helps companies recover from cyberattacks, while professional liability insurance protects against claims arising from alleged errors, omissions, or negligence in providing professional services."
+                                content="Cyber Insurance helps companies recover from cyberattacks, while professional liability insurance protects against claims arising from alleged errors, omissions, or negligence in providing professional services."
                             />
                             <Accordion
                                 title="What is cyber security?"

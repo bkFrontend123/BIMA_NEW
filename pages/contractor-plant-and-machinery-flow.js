@@ -33,7 +33,7 @@ import desCheckStyle from '@/assets/css/descriptionCheckbox.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 import progress from '@/assets/css/progress.module.css'
 
-import productIcon from '../public/productIcons/engineering/contractorsPlant_icon.png'
+import productIcon from '../public/productIcons/engineering/contractorsPlant_icon.svg'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import arrowBack from '../public/icons/arrowBack.svg'
 
@@ -588,7 +588,7 @@ export default function ErectionAllRisk_Flow() {
                                             </>
                                         )}
                                         <div className={`${form.frmftr}`}>
-                                            <p>By clicking on "Submit", you agree to our <Link href='/privacy-policy'>Privacy Policy</Link> and <Link href='/terms-and-conditions'>Terms of Use</Link> , and also provide us a formal mandate to represent you to the insurer and communicate to you the grant of a cover</p>
+                                            <p>By continuing to the next step, you agree to our <Link href='/privacy-policy'>Privacy Policy</Link> and <Link href='/terms-and-conditions'>Terms of Use</Link> , and also provide us a formal mandate to represent you to the insurer and communicate to you the grant of a cover</p>
                                         </div>
                                     </div>
                                 </Col>

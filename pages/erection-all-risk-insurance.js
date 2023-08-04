@@ -575,20 +575,20 @@ export default function ErectionAllRisk_Insurance() {
                                 content="Yes, each insurer has set up a deadline for submitting claim documentation. So, it is usually advisable to submit the documents as soon as they become available. The sooner you submit all the necessary paperwork, the sooner you will receive your claim."
                             />
                             <Accordion
-                                title="What are the documents required for filing a claim under the erection all-risk policy?"
+                                title="What are the documents required for filing a claim under the erection all risk policy?"
                                 content={[<>
                                     <span>Here are some common documents that are typically required while filing an EAR claim:</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>
                                         <li>Detailed RFQ (Request for Quotation)</li>
-                                        <li>Details related  to the Principal, Contractor, Sub-contractor</li>
+                                        <li>Details related  to the principal, contractor, sub-contractor</li>
                                         <li>Estimated cost of the project</li>
-                                        <li>Projects start date and end date, including the Bar chart</li>
-                                        <li>Details related to Testing for EAR projects</li>
+                                        <li>Projects start date and end date, including the bar chart</li>
+                                        <li>Details related to testing for EAR projects</li>
                                         <li>Equipment details for EAR projects</li>
                                         <li>Sum Insured breakup towards the different scope of works</li>
                                         <li>Risk location details</li>
                                         <li>In case of multiple locations- the names and coordinates of all locations</li>
-                                        <li>Complete/Detailed scope of works or contract copy</li>
+                                        <li>Complete/detailed scope of works or contract copy</li>
                                         <li>Wet work details, if involved</li>
                                     </ul>
                                 </>]}
