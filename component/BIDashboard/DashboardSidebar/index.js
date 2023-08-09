@@ -66,12 +66,12 @@ export default function DashboardSidebar(props) {
         <SidebarLinkItem
           title="Support"
           icon={<SupportIcon/>}
-          href="/dashboard/login"
+          href="/dashboard/support"
         />
         <SidebarLinkItem
           title="Profile"
           icon={<ProfileIcon/>}
-          href="/dashboard/login"
+          href="/dashboard/profile"
         />
         <SidebarLinkItem
           title="Logout"
