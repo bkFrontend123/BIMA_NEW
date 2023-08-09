@@ -5,8 +5,6 @@ import Link from 'next/link'
 import LogoIcon from "@/component/BIDashboard/Icons/IconLogo";
 import SwapIcon from "@/component/BIDashboard/Icons/IconSwap";
 import SidebarLinkItem from "@/component/BIDashboard/DashboardSidebarLink";
-import AlertModal from '@/component/BIDashboard/DashboardElements/Modal/AlertModal'
-import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
 
 import HomeIcon from '@/component/BIDashboard/Icons/IconHome';
 import ShopIcon from '@/component/BIDashboard/Icons/IconShop';
@@ -17,7 +15,6 @@ import ProfileIcon from '@/component/BIDashboard/Icons/IconProfile';
 import LogoutIcon from '@/component/BIDashboard/Icons/IconLogout';
 
 import dashLayoutStyle from '@/assets/css/dashboardLayout.module.css'
-import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
 export default function DashboardSidebar(props) {
 
