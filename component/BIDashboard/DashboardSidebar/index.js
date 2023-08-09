@@ -26,10 +26,6 @@ export default function DashboardSidebar(props) {
     router.push('/dashboard/login');
   };
 
-  const [showLogout, setShowLogout] = useState(false);
-  const handleCloseLogout = () => setShowLogout(false);
-  const handleShowLogout = () => setShowLogout(true);
-
   return (
     <>
       <div className={`${dashLayoutStyle.sdbrLogo}`}>
@@ -70,32 +66,20 @@ export default function DashboardSidebar(props) {
         <SidebarLinkItem
           title="Support"
           icon={<SupportIcon/>}
-          href="/dashboard/support"
+          href="/dashboard/login"
         />
         <SidebarLinkItem
           title="Profile"
           icon={<ProfileIcon/>}
-          href="/dashboard/profile"
+          href="/dashboard/login"
         />
         <SidebarLinkItem
           title="Logout"
           icon={<LogoutIcon/>}
-          href=""
-          onClick={handleShowLogout}
+          href="/"
+		  onClick={goToLogout}
         />
       </div>
-      <AlertModal
-        title="Are you sure you want to logout?"
-        show={showLogout}
-        handleClose={handleCloseLogout}
-      >
-        <ButtonItem
-          title="Yes"
-          type="button"
-          customClass={`m-0 px-2 ${buttonStyle.minWidth} ${buttonStyle.btnYellowBorder}`}
-          onClick={goToLogout}
-        />
-      </AlertModal>
     </>
   )
 }
