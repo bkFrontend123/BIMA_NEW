@@ -30,7 +30,7 @@ export default function DashboardSidebar(props) {
           <span><LogoIcon/></span>
         </Link>
       </div>
-      <div className={`mt-4 ${dashLayoutStyle.sdbrDropOuter}`}>
+      {/*<div className={`mt-4 ${dashLayoutStyle.sdbrDropOuter}`}>
         <div className={`${dashLayoutStyle.sdbrDrop}`}>
           <div className={`${dashLayoutStyle.sdbrDropInput}`}>
             <input type="text" placeholder="" className={`${dashLayoutStyle.bInsurance}`} readonly="" value="Business Insurance" />
@@ -38,7 +38,7 @@ export default function DashboardSidebar(props) {
           </div>
           <div className={`${dashLayoutStyle.sdbrDropInputSmall}`}><span>BI</span></div>
         </div>
-      </div>
+      </div>*/}
       <div className={`${dashLayoutStyle.sdbrLnksList}`}>
         <SidebarLinkItem
           title="Your Quotes"
