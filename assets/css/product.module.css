@@ -4,7 +4,7 @@
 .ProductNavbar {
     position: sticky;
     top: 0;
-    z-index: 222;
+    z-index: 2;
 }
 .ProductNavbar .navbar {
     border-bottom: 1px solid var(--vt-c-yellow);

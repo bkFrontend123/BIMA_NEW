@@ -12,7 +12,6 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
@@ -199,7 +198,6 @@ export default function ContractorAllRisk_Policy() {
                 <meta name="description" content="The Contractor's All Risk Policy shields contractors and other project stakeholders from financial losses. Find customized quotes from top insurers at BimaKavach." />
                 <link rel="canonical" href="" />
             </Head>
-            <Navbar />
             <div className={`productPage ${productStyle.productPage}`}>
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
@@ -320,10 +318,10 @@ export default function ContractorAllRisk_Policy() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A contractor's all risk insurance policy, also known as CAR insurance, is like a safety net for construction projects. It protects against unexpected problems and covers things like damage to construction equipment, machinery, as well as third-party claims arising from bodily injury and property damage. This insurance is important because it helps keep construction projects on track and prevents financial losses, making sure they finish on time and within budget.</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Contractor’s All Risk Policy</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-3 g-lg-5'>
@@ -464,7 +462,7 @@ export default function ContractorAllRisk_Policy() {
                                                     </div>
                                                 </Col>
                                             </Row>
-                                            <div class="title-32 font-secondary font-weight-600 text-yellow mb-4 mt-4 mt-xxl-5">Add-on Coverage</div>
+                                            <div className="title-32 font-secondary font-weight-600 text-yellow mb-4 mt-4 mt-xxl-5">Add-on Coverage</div>
                                             <ul className={`text-black title-20 ${productStyle.listData}`}>
                                                 <li>Fire and allied perils</li>
                                                 <li>Collapse</li>

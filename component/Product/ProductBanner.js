@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import Navbar from '../Navbar'
 
 import formStyle from '@/assets/css/form.module.css'
 
@@ -10,6 +11,7 @@ export default function ProductBanner(props) {
     return (
         <>
             <div className={`ProductBanner ${customClass}`}>
+                <Navbar />
                 <div className='ProductBannerBox'>
                     <div className='container'>
                         <div className='row justify-content-between g-4'>
@@ -137,7 +139,7 @@ export default function ProductBanner(props) {
                         margin-top: -119px;
                         padding-top: 119px;
                         position: relative;
-                        z-index: 1;
+                        z-index: 3;
                     }
                     .ProductBanner::before {
                         background: var(--heroBg);

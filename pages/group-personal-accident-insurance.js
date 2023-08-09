@@ -12,7 +12,6 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
@@ -198,7 +197,6 @@ export default function GroupPersonalAccident_Insurance() {
                 <meta name="description" content="" />
                 <link rel="canonical" href="" />
             </Head>
-            <Navbar />
             <div className={`productPage ${productStyle.productPage}`}>
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
@@ -318,10 +316,10 @@ export default function GroupPersonalAccident_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A group personal accident policy, also known as GPA Insurance, is a type of insurance that helps protect you and your family financially if you have an accident that causes accidental death or disability. It compensates a policyholder in the event of accidental death, loss of limbs, eyes, permanent partial disability, and permanent total disability. No matter how big or small your group is, you can purchase a customizable group personal accident policy to meet the needs of all group members. It also offers discounts based on the number of members in your group.</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Group Personal Accident (GPA)</h3>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                             <li>From small to big organizations, everyone can avail of GPA insurance for their employees and board members.</li>

@@ -12,7 +12,6 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
@@ -198,7 +197,6 @@ export default function ProductLiability_Insurance() {
                 <meta name="description" content="Product Liability Insurance covers claims of damage or injury caused by your products. Get the best insurance quotes from BimaKavach for your business requirement." />
                 <link rel="canonical" href="" />
             </Head>
-            <Navbar />
             <div className={`productPage ${productStyle.productPage}`}>
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
@@ -322,10 +320,10 @@ export default function ProductLiability_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Without product liability insurance, one significant claim could mean the end of the business you've worked so hard to build. With this policy, you can continue your operations, innovate, and expand your product line with the confidence that you're safeguarded against unforeseen liabilities.</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Product Liability Insurance:</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-3 g-lg-5'>
@@ -427,9 +425,9 @@ export default function ProductLiability_Insurance() {
                                     </div>
                                 </Container>
 
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Scope of coverage under product liability insurance</h3>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                             <li>Incidents covered: The policy provides coverage for accidents, injuries, and damages resulting from the use of the product.</li>

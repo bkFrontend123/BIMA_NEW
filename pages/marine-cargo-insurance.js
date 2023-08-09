@@ -12,7 +12,6 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
@@ -198,7 +197,6 @@ export default function MarineCargo_Insurance() {
                 <meta name="description" content="Marine Cargo Insurance protects your cargo during transit against damage. Get customized quotes for your business. Instant reply. 24*7 claim support. Expert underwriting." />
                 <link rel="canonical" href="" />
             </Head>
-            <Navbar />
             <div className={`productPage ${productStyle.productPage}`}>
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
@@ -319,10 +317,10 @@ export default function MarineCargo_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Companies that regularly transport valuable or fragile goods need this insurance policy for their shipments.</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Types of Marine Cargo Insurance</h3>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>There are various kinds of marine insurance policies. Our insurance experts can help you secure the most appropriate type of policy for your business.</p>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
@@ -488,9 +486,9 @@ export default function MarineCargo_Insurance() {
                                     </div>
                                 </Container>
 
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-black mb-0'>How to File a Claim Under Marine Cargo Insurance?</h3>
                                         <ol className={`text-black title-20 mt-4 mt-xl-5 ${productStyle.listOrderData}`}>
                                             <li>Provide a copy of the insurance policy as proof of coverage.</li>

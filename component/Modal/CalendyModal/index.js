@@ -8,7 +8,7 @@ import style from './style.module.css'
 import calendyModal from '@/assets/css/calendyModal.module.css'
 
 export default function CalendyModal(props) {
-    const { show, handleClose } = props;
+    const { show, handleClose, calendyLink } = props;
     return (
         <>
             {/*<Modal show={show} onHide={handleClose} centered size="lg" className={calendyModal.calendyMdlOuter}>
@@ -30,7 +30,21 @@ export default function CalendyModal(props) {
                             <Button type="button" variant="" className="btn-close" onClick={handleClose}></Button>
                         </div>
                         <div className={`${style.caldendyPopBody}`}>
-                            <InlineWidget url="https://calendly.com/tejasjain?hide_gdpr_banner=1" />
+                            {calendyLink == 'tejas' ? (
+                                <InlineWidget url="https://calendly.com/tejasjain?hide_gdpr_banner=1" />
+                            ) : (
+                                null
+                            )}
+                            {calendyLink == 'himani' ? (
+                                <InlineWidget url="https://calendly.com/himanidoshi-bk?hide_gdpr_banner=1" />
+                            ) : (
+                                null
+                            )}
+                            {calendyLink == 'ravi' ? (
+                                <InlineWidget url="https://calendly.com/ravikant-bk?hide_gdpr_banner=1" />
+                            ) : (
+                                null
+                            )}
                         </div>
                     </div>
                 </div>

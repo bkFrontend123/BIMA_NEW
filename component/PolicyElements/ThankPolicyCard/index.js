@@ -67,6 +67,7 @@ export default function ThankPolicyCard(props) {
                 </div>
             </div>
             <CalendyModal
+                calendyLink="tejas"
                 show={showCalendy}
                 handleClose={handleCloseCalendy}
             />

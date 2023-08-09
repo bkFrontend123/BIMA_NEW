@@ -368,7 +368,7 @@ export default function CommercialCrime_Flow() {
                                                                             <SubsidiaryCard key={index}>
                                                                                 <SubsidiaryItem
                                                                                     label={block.label}
-                                                                                    customClass={`${subitem.tooltipDiv} ${block.checked ? subitem.active : ""}`}
+                                                                                    customClass={`${subitem.tooltipDivNo} ${block.checked ? subitem.active : ""}`}
                                                                                 >
                                                                                     <Form.Check
                                                                                         inline
@@ -380,7 +380,7 @@ export default function CommercialCrime_Flow() {
                                                                                         className={`${subitem.formSubCheck}`}
                                                                                         required
                                                                                     />
-                                                                                    <OverlayTrigger
+                                                                                    {/*<OverlayTrigger
                                                                                         placement="top"
                                                                                         overlay={<Tooltip>{block.remark}</Tooltip>}
                                                                                         >
@@ -395,7 +395,7 @@ export default function CommercialCrime_Flow() {
                                                                                                 />
                                                                                             </i>
                                                                                         )}
-                                                                                    </OverlayTrigger>
+                                                                                    </OverlayTrigger>*/}
                                                                                 </SubsidiaryItem>
                                                                                 <SubsidiaryQnty
                                                                                     customClass={`${block.checked ? subitem.active : ""}`}
@@ -428,7 +428,7 @@ export default function CommercialCrime_Flow() {
                                                                             <SubsidiaryCard key={index}>
                                                                                 <SubsidiaryItem
                                                                                     label={block.label}
-                                                                                    customClass={`${subitem.tooltipDiv} ${block.checked ? subitem.active : ""}`}
+                                                                                    customClass={`${subitem.tooltipDivNo} ${block.checked ? subitem.active : ""}`}
                                                                                 >
                                                                                     <Form.Check
                                                                                         inline
@@ -440,7 +440,7 @@ export default function CommercialCrime_Flow() {
                                                                                         className={`${subitem.formSubCheck}`}
                                                                                         required
                                                                                     />
-                                                                                    <OverlayTrigger
+                                                                                    {/*<OverlayTrigger
                                                                                         placement="top"
                                                                                         overlay={<Tooltip>{block.remark}</Tooltip>}
                                                                                         >
@@ -455,7 +455,7 @@ export default function CommercialCrime_Flow() {
                                                                                                 />
                                                                                             </i>
                                                                                         )}
-                                                                                    </OverlayTrigger>
+                                                                                    </OverlayTrigger>*/}
                                                                                 </SubsidiaryItem>
                                                                                 <SubsidiaryQnty
                                                                                     customClass={`${block.checked ? subitem.active : ""}`}

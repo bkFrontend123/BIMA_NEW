@@ -28,9 +28,9 @@ export default function PolicyCard(props) {
     return (
         <>
             <div className={`${style.policyCol} ${customClass}`}>
-                <div className={`${style.policyInstant}`}>
+                {/*<div className={`${style.policyInstant}`}>
                     <i><Image src={instantIcon} width={15} height={15} alt="Instant Policy" /></i> Instant Policy
-                </div>
+                </div>*/}
                 <div className={`${style.policyCardHdr}`}>
                     <i>
                         <Image

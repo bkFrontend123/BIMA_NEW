@@ -12,7 +12,6 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
@@ -198,7 +197,6 @@ export default function EAndO_Insurance() {
                 <meta name="description" content="Errors and Omissions or E&O Insurance protects your business from unwanted losses. Shield against claims stemming from professional errors and negligence." />
                 <link rel="canonical" href="" />
             </Head>
-            <Navbar />
             <div className={`productPage ${productStyle.productPage}`}>
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
@@ -322,10 +320,10 @@ export default function EAndO_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Facing a claim without E&O insurance can drain your time, resources, and focus from serving your clients. With an E&O policy, your insurer takes on much of the burden of a claim, allowing you to continue your work with minimal disruption.</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>E&O Insurance provides coverage for errors such as:</h3>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                             <li>Copyright infringement</li>
@@ -371,9 +369,9 @@ export default function EAndO_Insurance() {
                                     </div>
                                 </Container>
 
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Why is Errors & Omissions Insurance essential?</h3>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Cases involving allegations of copyright infringement, negligence in work, and defamation have increased by more than 50% in India in the recent years.</p>
 

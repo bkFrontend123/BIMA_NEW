@@ -1,0 +1,107 @@
+.loginPage {
+    background-image: url('/loginBg.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-height: calc(100vh - 111px);
+    padding: 50px 0;
+}
+
+.loginRight {
+    position: relative;
+    overflow: auto;
+    padding-left: 50px;
+}
+
+.loginRightInner {
+    background-color: var(--whiteBg);
+    padding: 40px;
+    min-height: 450px;
+}
+
+.loginLogo {
+    margin-bottom: 100px;
+}
+
+.loginRightInner > p {
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 500;
+    margin: 0 0 28px 0;
+}
+
+
+.loginInfoText p {
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 500;
+    margin: 0;
+}
+
+.loginInfoText p .loginInfoLink {
+    color: var(--vt-c-blueSky);
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width:1699px) {
+    .loginPage {
+        min-height: calc(100vh - 90.4px);
+    }
+
+    .loginRightInner {
+        padding: 32px;
+    }
+
+    .loginLogo {
+        margin-bottom: 80px;
+    }
+
+    .loginLogo svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .loginRightInner > p {
+        font-size: 16px;
+    }
+
+    .loginInfoText p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:1199px) {
+    .loginRightInner {
+        margin: auto;
+    }
+
+    .loginLogo {
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .loginRightInner {
+        padding: 16px;
+    }
+
+    .loginLogo {
+        margin-bottom: 50px;
+    }
+
+    .loginLogo svg {
+        width: 60px;
+    }
+
+    .loginRightInner > p {
+        font-size: 15px;
+    }
+
+    .loginInfoText p {
+        font-size: 15px;
+    }
+
+    .loginButton {
+        text-align: center;
+    }
+}

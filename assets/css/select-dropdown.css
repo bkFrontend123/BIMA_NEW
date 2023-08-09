@@ -1,6 +1,9 @@
 .selectDropDiv {
     position: relative;
 }
+.selectDropFilterDiv.selectDropDiv {
+    display: inline-block;
+}
 .selectDropDiv label {
     background: var(--whiteBg);
     position: absolute;
@@ -13,10 +16,24 @@
     transition: opacity .1s ease-in-out,transform .1s ease-in-out;
     z-index: 1;
 }
+.selectDropDivSmall.selectDropDiv label {
+    top: 18px;
+}
+.selectDropFilterDiv.selectDropDiv label {
+    top: 18px;
+}
 .selectDropDiv .select-search-has-focus ~ label,
 .selectDropDiv.selectedDropDiv label {
     transform: translateY(-30px);
     color: var(--vt-c-blue);
+}
+.selectDropDivSmall.selectDropDiv .select-search-has-focus ~ label,
+.selectDropDivSmall.selectDropDiv.selectedDropDiv label {
+    transform: translateY(-27px);
+}
+.selectDropFilterDiv.selectDropDiv .select-search-has-focus ~ label,
+.selectDropFilterDiv.selectDropDiv.selectedDropDiv label {
+    transform: translateY(-27px);
 }
 .selectDropDiv .select-search-container {
     width: 100%;
@@ -35,6 +52,14 @@
     left: 20px;
     pointer-events: none;
     z-index: 2;
+}
+.selectDropDivSmall.searchDropDiv .select-search-value::before {
+    top: 20px;
+    left: 14px;
+}
+.selectDropFilterDiv.searchDropDiv .select-search-value::before {
+    top: 20px;
+    left: 14px;
 }
 .searchDropDiv.selectedDropDiv .select-search-value::before {
     display: none;
@@ -60,6 +85,22 @@
     top: 20px;
     right: 12px;
 }
+.selectDropDivSmall.selectDropDiv .select-search-value::after {
+    top: 20px;
+    right: 15px;
+}
+.selectDropDivSmall.selectDropDiv .select-search-has-focus .select-search-value::after {
+    top: 15px;
+    right: 12px;
+}
+.selectDropFilterDiv.selectDropDiv .select-search-value::after {
+    top: 15px;
+    right: 15px;
+}
+.selectDropFilterDiv.selectDropDiv .select-search-has-focus .select-search-value::after {
+    top: 10px;
+    right: 12px;
+}
 .selectDropDiv .select-search-input {
     background-color: var(--whiteBg);
     font-size: 16px;
@@ -74,12 +115,28 @@
     cursor: pointer;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input {
+.selectDropDivSmall.selectDropDiv .select-search-input {
+    height: 58px;
+}
+.selectDropFilterDiv.selectDropDiv .select-search-input {
+    background-color: transparent;
+    height: 50px;
+    max-width: 140px;
+}
+.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,
+.selectDropDivSmall.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,
+.selectDropFilterDiv.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input {
     padding-left: 20px;
 }
 .searchDropDiv.selectDropDiv .select-search-input,
 .searchDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus .select-search-input  {
     padding-left: 40px;
+}
+.selectDropDivSmall.searchDropDiv.selectDropDiv .select-search-input,
+.selectDropDivSmall.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus .select-search-input,
+.selectDropFilterDiv.searchDropDiv.selectDropDiv .select-search-input,
+.selectDropFilterDiv.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus .select-search-input  {
+    padding-left: 36px;
 }
 .tooltipDiv.selectDropDiv .select-search-input {
     padding-right: 80px
@@ -111,14 +168,14 @@
     border-color: var(--vt-c-blue);
 }
 .selectDropDiv .select-search-container .select-search-select {
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    left: 0;
-    border-radius: 0;
-    display: none;
-    top: 62px;
-    border-radius: 0;
+    border-radius: 0 !important;
+    top: 60px;
+}
+.selectDropDivSmall.selectDropDiv .select-search-container .select-search-select {
+    top: 52px !important;
+}
+.selectDropFilterDiv.selectDropDiv .select-search-container .select-search-select {
+    top: 43px !important;
 }
 .select-search-container.select-search-has-focus .select-search-select {
     display: block !important;
@@ -141,6 +198,31 @@
 .selectDropDiv .select-search-is-selected {
     color: var(--vt-c-blue) !important;
     font-weight: 600;
+}
+
+@media (max-width:1699px) {
+    .selectDropDivSmall.selectDropDiv .select-search-input {
+        font-size: 15px;
+        height: 52px;
+    }
+    .selectDropFilterDiv.selectDropDiv .select-search-input {
+        font-size: 15px;
+        height: 44px;
+    }
+    .selectDropDivSmall.selectDropDiv .select-search-value::after {
+        top: 18px;
+    }
+    .selectDropDivSmall.selectDropDiv .select-search-has-focus .select-search-value::after {
+        top: 14px;
+    }
+    .selectDropDivSmall.selectDropDiv label {
+        font-size: 15px;
+        top: 16px;
+    }
+    .selectDropFilterDiv.selectDropDiv label {
+        font-size: 15px;
+        top: 16px;
+    }
 }
 
 @media (max-width:767px) {

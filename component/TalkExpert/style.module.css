@@ -1,3 +1,6 @@
+.tlkExprtCol {
+    cursor: pointer;
+}
 .tlkExprtCol.gray {
     background-color: var(--vt-c-grayLight2);
     padding: 10px 15px;
@@ -22,8 +25,8 @@
     border-radius: 50%;
 }
 .tlkExprtCol.small .tlkExprtImg img {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
 }
 .tlkExprtCol.extraSmall .tlkExprtImg img {
     width: 58px;
@@ -83,6 +86,12 @@
         width: 80px;
         height: 80px;
     }
+    .tlkExprtCol.small h4 {
+        font-size: 18px;
+    }
+    .tlkExprtCol.small h4 {
+        font-size: 16px;
+    }
 }
 
 @media (max-width:1199px) {
@@ -104,6 +113,6 @@
         margin-right: 0;
     }
     .tlkExprtCol h4 {
-        font-size: 19px;
+        font-size: 16px;
     }
 }

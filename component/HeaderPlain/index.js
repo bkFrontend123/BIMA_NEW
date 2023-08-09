@@ -305,6 +305,7 @@ export default function HeaderPlain(props) {
       </header>
 
       <CalendyModal
+        calendyLink="tejas"
         show={showCalendy}
         handleClose={handleCloseCalendy}
       />

@@ -6,7 +6,7 @@
 
 .dashboardMobileHeader {
     background-color: var(--whiteBg);
-    padding: 16px;
+    padding: 10px 16px;
     border-bottom: 1px solid #CCC;
     position: fixed;
     left: 0;
@@ -75,7 +75,7 @@
 .dashboardMainCard {
     position: relative;
     margin-left: 380px;
-    padding: 40px 110px 40px 40px;
+    padding: 40px;
     min-height: 100vh;
     transition: all 0.3s ease 0s;
 }
@@ -254,7 +254,7 @@
 .sdbrLnksItem h4 {
     font-size: 18px;
     color: inherit;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 18px;
     transition: all 0.3s ease 0s;
 }
 
@@ -274,6 +274,7 @@
     position: relative;
     padding: 27px 34px;
     border-radius: 0;
+    height: 100%;
 }
 
 .dashUserProCol {
@@ -281,39 +282,54 @@
     align-items: center;
 }
 
-.dashUserProCol>span {
+.dashUserProCol > span {
     background: var(--vt-c-yellow-soft);
-    min-width: 57px;
-    line-height: 57px;
-    display: inline-block;
-    border-radius: 57px;
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 60px;
     margin-right: 16px;
     text-align: center;
     font-size: 32px;
     color: var(--vt-c-yellow);
+    align-items: center;
+    justify-content: center;
 }
 
-.dashboardHeader h4 {
-    font-size: 20px;
-    color: var(--color-text-black);
+.dashUserProCol h4,
+.dashUserInfoCol h4 {
+    font-size: 18px;
+    color: var(--black);
     margin: 0;
     line-height: 22px;
     font-weight: 500;
 }
 
-.dashboardHeader h4 span {
+.dashUserProCol h4 span,
+.dashUserInfoCol h4 span {
     font-weight: 600;
 }
 
-.dashboardHeader h4 a {
-    color: var(--color-text-black);
+.dashUserProCol h4 a,
+.dashUserInfoCol h4 a {
+    color: var(--black);
 }
 
-.dashboardHeader p {
+.dashUserProCol p,
+.dashUserInfoCol p {
     font-size: 14px;
     color: #909FCE;
     line-height: 18px;
     margin: 6px 0 0 0;
+}
+
+.dashboardHeader h5,
+.dashboardHeader .dashUserTtl p  {
+    font-size: 15px;
+    color: var(--black);
+    line-height: 18px;
+    font-weight: 500;
+    margin: 3px 0 0 0;
 }
 
 .dashUserInfoCol {
@@ -326,7 +342,7 @@
 
 @media (max-width:1699px) {
     .dashSidebar {
-        width: 260px;
+        width: 300px;
         padding: 40px 32px;
     }
 
@@ -335,12 +351,12 @@
     }
 
     .dashboardMainCard {
-        margin-left: 260px;
-        padding: 32px 50px 32px 32px;
+        margin-left: 300px;
+        padding: 32px;
     }
 
     .hideSidebarBtn {
-        left: 247px;
+        left: 288px;
         top: 135px;
     }
 
@@ -482,7 +498,7 @@
     }
 
     .dashSidebar {
-        left: -260px;
+        left: -300px;
         padding: 40px 24px;
     }
 
@@ -550,7 +566,7 @@
 
 @media (max-width:767px) {
     .dashboardMainCard {
-        padding: 110px 16px 40px 16px;
+        padding: 96px 16px 40px 16px;
     }
 
     .dashboardOuterSmall .dashSidebar {
@@ -568,15 +584,16 @@
         background: var(--color-background-grey);
     }
 
-    .dashUserProCol>span {
+    .dashUserProCol > span {
         min-width: 50px;
-        line-height: 50px;
+        height: 50px;
         border-radius: 50px;
         margin-right: 12px;
         font-size: 18px;
     }
 
-    .dashboardHeader h4 {
+    .dashUserProCol h4,
+    .dashUserInfoCol h4 {
         font-size: 16px;
         line-height: 20px;
     }

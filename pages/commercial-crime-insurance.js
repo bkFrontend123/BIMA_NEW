@@ -12,7 +12,6 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
@@ -198,7 +197,6 @@ export default function CommercialCrime_Insurance() {
                 <meta name="description" content="Commercial Crime Insurance protects businesses from losses from internal and external criminal activities. Get the best quotes from top insurers at BimaKavach." />
                 <link rel="canonical" href="" />
             </Head>
-            <Navbar />
             <div className={`productPage ${productStyle.productPage}`}>
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
@@ -332,10 +330,10 @@ export default function CommercialCrime_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>E-mail spoofing, phishing, theft, employee dishonesty, third-party fraud, forgery, and embezzlement impacts businesses of all types and sizes</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>When are you vulnerable to digital theft and manipulation?</h3>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                             <li>You do electronic transactions regularly</li>
@@ -356,9 +354,9 @@ export default function CommercialCrime_Insurance() {
                                     </div>
                                 </Container>
 
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Policy costs are affected by a variety of factors:</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='gx-lg-5'>

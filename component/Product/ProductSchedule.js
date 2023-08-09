@@ -25,6 +25,7 @@ export default function ProductSchedule() {
                 <p className={`title-15 mt-4 mb-0 text-blueGray font-weight-500 ${productStyle.productStartupBottomDecrip}`}>Say hello to a spam-free zone! We respect your privacy and <span className='d-sm-inline d-none'><br></br></span> won't bombard you with unwanted calls.</p>
             </div>
             <CalendyModal
+                calendyLink="tejas"
                 show={showCalendy}
                 handleClose={handleCloseCalendy}
             />

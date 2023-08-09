@@ -365,7 +365,7 @@ export default function DAndO_Flow() {
                                                                                 <SubsidiaryCard key={index}>
                                                                                     <SubsidiaryItem
                                                                                         label={block.label}
-                                                                                        customClass={`${subitem.tooltipDiv} ${block.checked ? subitem.active : ""}`}
+                                                                                        customClass={`${subitem.tooltipDivNo} ${block.checked ? subitem.active : ""}`}
                                                                                     >
                                                                                         <Form.Check
                                                                                             inline
@@ -377,7 +377,7 @@ export default function DAndO_Flow() {
                                                                                             className={`${subitem.formSubCheck}`}
                                                                                             required
                                                                                         />
-                                                                                        <OverlayTrigger
+                                                                                        {/*<OverlayTrigger
                                                                                             placement="top"
                                                                                             overlay={<Tooltip>{block.remark}</Tooltip>}
                                                                                             >
@@ -392,7 +392,7 @@ export default function DAndO_Flow() {
                                                                                                     />
                                                                                                 </i>
                                                                                             )}
-                                                                                        </OverlayTrigger>
+                                                                                        </OverlayTrigger>*/}
                                                                                     </SubsidiaryItem>
                                                                                     <SubsidiaryQnty
                                                                                         customClass={`${block.checked ? subitem.active : ""}`}

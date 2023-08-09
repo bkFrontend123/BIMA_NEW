@@ -12,7 +12,6 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
@@ -198,7 +197,6 @@ export default function FireAndBurglary_Insurance() {
                 <meta name="description" content="Fire Insurance safeguards the property and its belonging from allied perils. Get customized quotes at an affordable price at BimaKavach. 24*7 claim support." />
                 <link rel="canonical" href="" />
             </Head>
-            <Navbar />
             <div className={`productPage ${productStyle.productPage}`}>
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
@@ -462,9 +460,9 @@ export default function FireAndBurglary_Insurance() {
                                         </Row>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Fire & Burglary Insurance</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='gx-lg-5'>
@@ -592,9 +590,9 @@ export default function FireAndBurglary_Insurance() {
                                     </div>
                                 </Container>
 
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Benefits of a Fire Insurance Policy</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='gx-lg-5'>

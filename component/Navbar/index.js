@@ -621,6 +621,7 @@ function Navbar() {
         </nav >
       </div >
       <CalendyModal
+        calendyLink="tejas"
         show={showCalendy}
         handleClose={handleCloseCalendy}
       />

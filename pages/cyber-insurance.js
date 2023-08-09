@@ -12,7 +12,6 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
@@ -198,7 +197,6 @@ export default function Cyber_Insurance() {
                 <meta name="description" content="Cyber Insurance protects individuals and organizations from losses from cyberattacks and data breaches. Get your customized insurance from BimaKavach." />
                 <link rel="canonical" href="" />
             </Head>
-            <Navbar />
             <div className={`productPage ${productStyle.productPage}`}>
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
@@ -320,10 +318,10 @@ export default function Cyber_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Also referred to as 'cyber risk insurance' or 'cyber liability insurance', this policy can help cover the costs of responding, including legal fees, public relations efforts, and notifying affected customers. It not only covers damages caused by cyber assaults on bank accounts, credit and debit cards linked to your website, but also unintentional payments made using digital wallets.</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>How to Spot a Cyber Attack:</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-4 g-lg-5'>
@@ -396,10 +394,10 @@ export default function Cyber_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>According to a report by Nordlocker, small businesses with an employee base of 500 are at the highest risk of ransomware attacks, accounting for around 54 percent of total attacks between Jan ‘20 to Jul ‘22.</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The top five sectors prone to cyber attacks in India are:</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-4 g-lg-5'>
@@ -495,10 +493,10 @@ export default function Cyber_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Cyber risk provides covers for a range of costs associated with cybercrimes, including investigative charges, data restoration costs, and crisis management fees. By purchasing cyber risk insurance, corporations can ensure continued success in the face of ever-evolving cyber threats.</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The Cost of not Having Cyber Fraud Insurance:</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-4 g-lg-5'>

@@ -12,7 +12,6 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
@@ -199,7 +198,6 @@ export default function ContractorPlantAndMachinery_Insurance() {
                 <meta name="description" content="The Contractor's Plant and Machinery Insurance (CPM) safeguards the stakeholders from equipment damage, offering financial compensation. Get 24*7 claim support." />
                 <link rel="canonical" href="" />
             </Head>
-            <Navbar />
             <div className={`productPage ${productStyle.productPage}`}>
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
@@ -377,10 +375,10 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                     </div>
                                     <p className='title-20 mb-0 text-black font-weight-500 mt-4'>It also covers third-party claims against property damage and bodily injury caused at the insured construction site during the tenure of the policy.</p>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Contractor’s Plant and Machinery Insurance</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-3 g-lg-5'>

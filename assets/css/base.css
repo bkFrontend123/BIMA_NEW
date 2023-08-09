@@ -75,6 +75,22 @@
   outline: 0;
 }
 
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+*::selection {
+  background: none;
+}
+*::-moz-selection {
+  background: none;
+}
+
 body {
   font-family: 'Galano Grotesque', sans-serif ;
   font-weight: 500;
@@ -109,6 +125,11 @@ input:focus,
 select:focus,
 textarea:focus {
   box-shadow: none !important;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: #dc3545 !important;
 }
 
 body .bg-primary {
@@ -592,8 +613,9 @@ p {
   font-family: 'Poppins', sans-serif;
   letter-spacing: -0.72px;
 }
-h1.font-secondary {
-  letter-spacing: -0.72px;
+h1.font-secondary,
+h2.font-secondary {
+  letter-spacing: -1.28px;
 }
 
 .font-light {

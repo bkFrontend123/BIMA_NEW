@@ -1,0 +1,21 @@
+.formMdlOuter > div > div {
+    border-radius: 0;
+    border: 0;
+}
+.formMdlBody {
+    padding: 32px;
+}
+.formMdlHdr {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 32px 32px 0 32px;
+    border: 0;
+}
+.formMdlHdr > div {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 30px;
+    margin: 0;
+}

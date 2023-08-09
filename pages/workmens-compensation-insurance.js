@@ -12,7 +12,6 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
@@ -198,7 +197,6 @@ export default function WorkmensCompensation_Insurance() {
                 <meta name="description" content="Workmen's Compensation Policy ensures compliance with labor laws and offers financial coverage for workplace injuries and illnesses. Find top insurers at BimaKavach." />
                 <link rel="canonical" href="" />
             </Head>
-            <Navbar />
             <div className={`productPage ${productStyle.productPage}`}>
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
@@ -320,10 +318,10 @@ export default function WorkmensCompensation_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>In case of a work accident resulting in injury or death, Employee Protection Assurance provides financial aid to both the employee and their family. It caters to employees who sustain injuries or become disabled due to mishaps at work locations such as construction zones, factories, plantations, mines, and more.</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Workmen's Compensation Policy</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-4 g-lg-5'>
@@ -387,9 +385,9 @@ export default function WorkmensCompensation_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>This policy is primarily designed to offer financial security to workers and their families in case of adverse workplace incidents.</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
-                                    <Container className='position-relative'>
+                                    <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-black mb-0'>You can raise a claim under WC insurance policy by following these steps:</h3>
                                         <ol className={`text-black title-20 mt-4 mt-xl-5 ${productStyle.listOrderData}`}>
                                             <li>Start by notifying the factory inspector promptly if  an accident occurs on your premises.</li>

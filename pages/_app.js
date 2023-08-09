@@ -36,6 +36,10 @@
                 })(window,document,'script','dataLayer','GTM-PNXFZLT');`,
               }}
             />
+            {/*LeadSquared Tracking Code Start*/}
+            <script type="text/javascript" src="https://web-in21.mxradon.com/t/Tracker.js"></script>
+            <script type="text/javascript">pidTracker('66484');</script>
+            {/*LeadSquared Tracking Code End*/}
           </Head>
           {/*<Navbar  />*/}
             <Component {...pageProps} />
