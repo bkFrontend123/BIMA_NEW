@@ -3,8 +3,6 @@ import Image from 'next/image'
 
 import ClaimCardItem from "@/component/BIDashboard/DashboardElements/ClaimCard";
 import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
-import ClaimFileModal from '@/component/BIDashboard/DashboardElements/Modal/ClaimFileModal'
-import ClaimFileThankModal from '@/component/BIDashboard/DashboardElements/Modal/ClaimFileThankModal'
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
