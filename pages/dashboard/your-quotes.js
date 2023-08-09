@@ -42,6 +42,10 @@ export default function YourQuotes() {
   ];
 
   const router = useRouter();
+  const goToShopCoveragePage = () => {
+      router.push('/dashboard/shop-coverages');
+  };
+
   const goToNextPage = () => {
       router.push('/dashboard/your-quote-detail');
   };
@@ -64,6 +68,7 @@ export default function YourQuotes() {
             <FilterButton
               title="Add New Quote +"
               customClass="me-3"
+              onClick={goToShopCoveragePage}
             />
             <FilterDropdown
               title="Year"
