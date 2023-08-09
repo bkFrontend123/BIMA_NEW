@@ -1,0 +1,65 @@
+.secondary {
+    color: var(--vt-c-blue);
+}
+
+.primary {
+    color: var(--vt-c-blue);
+}
+
+.black {
+    color: var(--black);
+}
+
+.blueGray {
+    color: var(--vt-c-blueGray);
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.font24 {
+    font-size: 24px;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semiBold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+@media only screen and (max-width:767px) {
+    .text br {
+        display: none;
+    }
+    
+    .font18 {
+        font-size: 16px;
+    }
+    
+    .font20 {
+        font-size: 18px;
+    }
+    
+    .font24 {
+        font-size: 22px;
+    }
+}

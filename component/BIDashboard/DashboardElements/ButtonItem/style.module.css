@@ -1,0 +1,292 @@
+.btnCommonDiv {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.btnCommon {
+    background: var(--whiteBg);
+    padding: 0 22px !important;
+    display: inline-block;
+    transform: skewX(-10deg);
+    border-radius: 0;
+    border: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    color: var(--color-text);
+    transition: all 0.4s ease 0s;
+    margin: 0 6px;
+}
+
+.btnCommon.btnBig {
+    padding: 0 20px !important;
+    line-height: 58px;
+}
+
+.minWidth.btnCommon {
+    min-width: 160px;
+}
+.minWidth2.btnCommon {
+    min-width: 180px;
+}
+.minWidth3.btnCommon {
+    min-width: 200px;
+}
+
+.btnCommon:hover {
+    color: var(--vt-c-blueSky);
+}
+.btnCommon:focus {
+    box-shadow: none !important;
+}
+
+.btnCommon span {
+    transform: skewX(10deg);
+    display: inline-block;
+}
+
+.noRotate.btnCommon,
+.noRotate.btnCommon span {
+    transform: inherit;
+}
+
+.btnDark.btnCommon {
+    background: var(--vt-c-yellow);
+    color: var(--black);
+}
+
+.btnCommon .iconRight {
+    margin-left: 6px;
+    transition: all 0.4s ease 0s;
+    position: relative;
+    left: 0;
+    top: -3px;
+}
+
+.btnCommon:hover {
+    background: var(--vt-c-blueSkyHover);
+    color: var(--whiteText);
+}
+
+.btnCommon:hover .iconRight {
+    left: 6px;
+}
+
+.noAnimate.btnCommon:hover .iconRight {
+    left: 0;
+}
+
+.btnDark.btnCommon:hover {
+    background: var(--vt-c-yellow);
+    color: var(--black);
+    box-shadow: 0px 8px 30px rgba(255, 81, 0, 0.2);
+}
+
+.btnWhite.btnCommon {
+    background: var(--whiteBg);
+    color: var(--color-text-black);
+}
+
+.btnWhite.btnCommon:hover {
+    background: var(--whiteBg);
+    color: var(--vt-c-blueSky);
+}
+
+.btnTrans.btnCommon {
+    background: transparent;
+    color: var(--black);
+}
+
+.btnTrans .iconLeft {
+    margin-right: 8px;
+    transition: all 0.4s ease 0s;
+}
+
+.btnTrans.btnCommon:hover {
+    background: var(--color-background-mute);
+    color: var(--black);
+    border-color: var(--black);
+}
+
+.btnBorder.btnCommon {
+    background: var(--whiteBg);
+    border: 1px solid var(--vt-c-blue);
+    color: var(--vt-c-blue);
+    line-height: 46px;
+}
+
+.border2.btnCommon {
+    border-width: 2px;
+    border-style: solid;
+    line-height: 44px;
+}
+
+.btnDark.btnBorder.btnCommon {
+    background: var(--whiteBg);
+    border-color: var(--vt-c-yellow);
+    color: var(--vt-c-yellow);
+}
+
+.btnDark.btnBorder.btnCommon:hover {
+    background: var(--vt-c-yellow);
+    color: var(--black);
+    box-shadow: none;
+}
+
+.btnActiveBorder.btnCommon {
+    background: var(--whiteBg);
+    border: 1px solid var(--vt-c-blueSky);
+    color: var(--vt-c-blueSky);
+    line-height: 48.4px;
+}
+
+.btnYellowBorder.btnCommon {
+    background: var(--whiteBg);
+    border: 1px solid var(--vt-c-yellow);
+    color: var(--vt-c-yellow);
+    line-height: 48.4px;
+    white-space: nowrap;
+}
+
+.btnYellowBorder.btnCommon:hover {
+    background: var(--vt-c-yellow);
+    border: 1px solid var(--vt-c-yellow);
+    color: var(--black);
+}
+
+.btnBig.btnBorder.btnCommon,
+.btnBig.border2.btnCommon {
+    line-height: 54.45px;
+}
+
+.btnBig.btnIcon.btnCommon {
+    width: 58px;
+    padding: 0 !important;
+}
+.btnIcon.btnCommon i {
+    margin: 0 !important;
+    position: relative;
+    top: -5px;
+}
+
+.btnDisabled.btnCommon,
+.btnDisabled.btnCommon:hover {
+    background-color: #CCCCCC;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btnDisabled.btnCommon:hover .iconRight {
+    left: 0;
+}
+
+.noIcon i {
+    display: none !important;
+}
+
+.leftIcon .iconRight {
+    display: none !important;
+}
+
+.btnCommon.btnEdit {
+    background: #ececec !important;
+    border-radius: 70px;
+    transform: inherit;
+    min-width: 150px;
+    color: var(--vt-c-blueSky);
+}
+
+.btnCommon.btnEdit span {
+    transform: inherit;
+}
+
+
+.btnCommon i svg path {
+    transition: all 0.3s ease 0s;
+}
+
+.btnDark.btnCommon i svg path {
+    fill: var(--black);
+}
+
+.btnDark.btnCommon:hover i svg path {
+    fill: var(--black);
+}
+
+.btnDark.btnBorder.btnCommon i svg path {
+    fill: var(--vt-c-yellow);
+}
+
+.btnDark.btnBorder.btnCommon:hover i svg path {
+    fill: var(--black);
+}
+
+@media (max-width:1699px) {
+    .btnCommon {
+        padding: 0 20px !important;
+        font-size: 15px;
+        line-height: 48px;
+    }
+
+    .btnActiveBorder.btnCommon {
+        line-height: 46.4px;
+    }
+    
+    .btnYellowBorder.btnCommon {
+        line-height: 46.4px;
+    }
+
+    .btnCommon.btnBig {
+        line-height: 52px;
+    }
+    .btnBig.btnBorder.btnCommon,
+    .btnBig.border2.btnCommon {
+        line-height: 48.8px;
+    }
+
+    .btnBig.btnIcon.btnCommon {
+        width: 52px;
+        padding: 0 !important;
+    }
+
+    .minWidth.btnCommon {
+        min-width: 140px;
+    }
+    .minWidth2.btnCommon {
+        min-width: 160px;
+    }
+    .minWidth3.btnCommon {
+        min-width: 180px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .btnCommonDiv {
+        display: block;
+        text-align: center;
+    }
+
+    .btnCommon {
+        font-size: 16px;
+        padding: 0 18px !important;
+        max-width: 100%;
+        line-height: 44px;
+    }
+
+    .btnCommon.btnBig {
+        font-size: 15px;
+        padding: 0 24px !important;
+        line-height: 48px;
+    }
+
+    .btnBig.btnBorder.btnCommon,
+    .btnBig.border2.btnCommon {
+        line-height: 44px;
+    }
+
+    .btnYellowBorder.btnCommon {
+        font-size: 14px;
+        line-height: 34px;
+        padding: 0 12px !important;
+    }
+}

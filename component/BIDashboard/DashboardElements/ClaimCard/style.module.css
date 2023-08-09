@@ -1,0 +1,49 @@
+.claimNoCardCol {
+    background: var(--whiteBg);
+    padding: 32px;
+    border-radius: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 253px;
+}
+
+.claimNoCardCol h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--gray1);
+    margin-bottom: 0;
+    line-height: 34px;
+}
+
+.claimNoCardBtn {
+    margin-top: 24px;
+}
+
+.claimNoCardBtn button {
+    min-width: 280px;
+}
+
+@media (max-width:1699px) {
+    .claimNoCardCol {
+        padding: 24px;
+    }
+
+    .claimNoCardCol h3 {
+        font-size: 22px;
+    }
+
+    .claimNoCardBtn {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .claimNoCardCol {
+        padding: 16px;
+    }
+    .claimNoCardCol h3 {
+        font-size: 20px;
+    }
+}

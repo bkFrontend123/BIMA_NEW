@@ -1,0 +1,123 @@
+.quoteCompareCardTtl h2 {
+    font-size: 46px;
+    color: var(--vt-c-blue);
+    font-weight: 700;
+    margin: 0;
+}
+
+.quoteCompareCardList {
+    margin-top: 18px;
+}
+
+.quoteCompareCardList ul {
+    margin: -12px 0 0 -24px;
+}
+
+.quoteCompareCardList ul li {
+    display: inline-block;
+    font-size: 18px;
+    color: var(--black);
+    margin-top: 12px;
+    margin-left: 24px;
+}
+
+.quoteCompareCardList ul li i {
+    position: relative;
+    top: -3px;
+}
+
+.quoteCompareCardLimit {
+    margin-top: 32px;
+}
+
+.quoteCompareCardLimit p {
+    font-size: 20px;
+    color: var(--vt-c-blueGray);
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.quoteCompareCardLimit h4 {
+    font-size: 32px;
+    color: var(--black);
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.quoteCompareCardBody {
+    margin-top: 32px;
+}
+
+@media (max-width:1699px) {
+    .quoteCompareCardTtl h2 {
+        font-size: 36px;
+    }
+
+    .quoteCompareCardList {
+        margin-top: 8px;
+    }
+
+    .quoteCompareCardList ul {
+        margin: -12px 0 0 -20px;
+    }
+
+    .quoteCompareCardList ul li {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .quoteCompareCardLimit {
+        margin-top: 24px;
+    }
+
+    .quoteCompareCardLimit p {
+        font-size: 18px;
+    }
+    
+    .quoteCompareCardLimit h4 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .quoteCompareCardBody {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width:1199px) {
+    .quoteCompareCardTtl h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width:992px) {
+    .quoteCompareCardTtl h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:767px) {
+    .quoteCompareCardTtl h2 {
+        font-size: 24px;
+    }
+
+    .quoteCompareCardLimit {
+        margin-top: 20px;
+    }
+
+    .quoteCompareCardLimit p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .quoteCompareCardLimit h4 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .quoteCompareCardBody {
+        margin-top: 20px;
+    }
+}

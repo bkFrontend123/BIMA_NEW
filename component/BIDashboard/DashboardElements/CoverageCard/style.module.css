@@ -1,0 +1,96 @@
+.shopCovrgCol {
+  background: var(--whiteBg);
+  position: relative;
+  padding: 32px;
+  border-radius: 0;
+  box-shadow: 0 0 20px rgba(35, 32, 32, 0.04);
+}
+.shopCovrgTtl {
+  position: relative;
+}
+.shopCovrgTtl .shopCovrgArrow {
+  width: 10px;
+  position: relative;
+  z-index: 2;
+  top: -1px;
+  transition: all 0.3s ease;
+}
+.shopCovrgTtl .shopCovrgArrow.active {
+  transform: rotate(90deg);
+}
+.shopCovrgTtl span i {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.shopCovrgTtl h3 {
+  font-size: 26px;
+  color: var(--black);
+  font-weight: 500;
+  margin: 0;
+}
+.mblShopCovrgInfo {
+  margin-top: 12px;
+}
+.shopCovrgCol p {
+  font-size: 16px;
+  color: var(--black);
+  margin: 0;
+}
+.shopCovrgInfo {
+  margin-top: 12px;
+}
+.shopCovrgBtns {
+  margin-top: 16px;
+}
+
+@media (max-width: 1699px) {
+  .shopCovrgCol {
+    padding: 24px;
+  }
+  .shopCovrgTtl h3 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  .shopCovrgBtns {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .shopCovrgCol {
+    padding: 16px;
+  }
+  .shopCovrgTtl span i {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0;
+  }
+  .shopCovrgTtl span img {
+    width: 36px;
+    height: 36px;
+  }
+  .shopCovrgTtl h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .shopActnBtn a svg {
+    width: 28px;
+    height: 28px;
+  }
+  .shopActnBtn .tooltipData {
+    display: none;
+  }
+  .mblShopCovrgInfo {
+    display: none;
+  }
+  .mblShopCovrgInfo.show {
+    display: block;
+  }
+}

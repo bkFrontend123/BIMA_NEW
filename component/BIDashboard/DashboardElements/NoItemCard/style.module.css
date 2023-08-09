@@ -1,0 +1,27 @@
+.noItemDiv {
+    min-height: 312px;
+}
+
+.noItemDiv h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--gray1);
+    margin-bottom: 0;
+    line-height: 34px;
+}
+
+@media (max-width:1699px) {
+    .noItemDiv {
+        min-height: 230px;
+    }
+}
+
+@media (max-width:767px) {
+    .noItemDiv {
+        min-height: 180px;
+    }
+
+    .noItemDiv h3 {
+        font-size: 18px;
+    }
+}

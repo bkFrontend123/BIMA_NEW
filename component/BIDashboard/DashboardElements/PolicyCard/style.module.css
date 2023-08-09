@@ -1,0 +1,192 @@
+.policyCardCol {
+    background: var(--whiteBg);
+    padding: 32px;
+    border-radius: 0;
+    /*border: 1px solid var(--color-border-white);
+    box-shadow: 0 0 20px rgb(0 0 0 / 4%);*/
+}
+
+.policyCardCol.active {
+    border-color: var(--vt-c-blueSky);
+}
+
+.policyCardTtl {
+    position: relative;
+}
+
+.policyCardTtl h3 {
+    font-size: 28px;
+    color: var(--black);
+    font-weight: 500;
+    margin: 0;
+}
+
+.policyCardTtl .policyCardArrow {
+    width: 10px;
+    position: relative;
+    z-index: 2;
+    top: -1px;
+    transition: all 0.3s ease;
+}
+
+.policyCardTtl .policyCardArrow.active {
+    transform: rotate(90deg);
+}
+
+.policyCardTtl h5 {
+    font-size: 15px;
+    color: #99B1CE;
+    font-weight: 500;
+    margin: 6px 0 0;
+}
+
+.policyStatus {
+    display: inline-block;
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+    vertical-align: middle;
+    margin-left: 24px;
+}
+
+.policyStatus i {
+    font-style: normal;
+}
+
+.policyStatus span {
+    background-color: var(--vt-c-gray);
+    font-size: 15px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 12px;
+    margin-left: 4px;
+    white-space: nowrap;
+}
+
+.pendingStatus span {
+    background-color: var(--statusRedBg);
+    color: var(--statusRedColor);
+}
+
+.processStatus span {
+    background-color: var(--statusOrangeBg);
+    color: var(--statusOrangeColor);
+}
+
+.confirmStatus span {
+    background-color: var(--statusGreenBg);
+    color: var(--statusGreenColor);
+}
+
+.policyLogo .policyLogoIcon {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: 40px;
+}
+
+.policyCardList {
+    margin-top: 18px;
+}
+
+.policyCardList ul {
+    margin: -12px 0 0 -12px;
+}
+
+.policyCardList ul li {
+    display: inline-block;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.policyCardList ul li + li {
+    padding-left: 12px;
+    border-left: 1px solid var(--border-mute1);
+}
+
+.policyCardCol ul li p {
+    font-size: 18px;
+    color: var(--black);
+    margin: 0;
+}
+
+.policyCardCol ul li p small {
+    color: var(--vt-c-grayLight3);
+}
+
+.policyCardCol ul li p strong {
+    font-weight: 600;
+}
+
+.policyCardInfo {
+    margin-top: 20px;
+}
+
+@media (max-width:1699px) {
+    .policyCardCol {
+        padding: 24px;
+    }
+
+    .policyCardTtl h3 {
+        font-size: 24px;
+    }
+
+    .policyStatus {
+        font-size: 15px;
+    }
+    
+    .policyStatus span {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .policyCardList {
+        margin-top: 16px;
+    }
+
+    .policyCardCol ul li p {
+        font-size: 16px;
+    }
+
+    .policyCardBtn {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width:767px) {
+    .policyCardCol {
+        padding: 12px;
+    }
+
+    .mblPolicyCardInfo {
+        display: none;
+    }
+
+    .mblPolicyCardInfo.show {
+        display: block;
+    }
+    
+    .policyCardTtl h3 {
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .policyCardTtl h5 {
+        font-size: 13px;
+        margin: 3px 0 0;
+    }
+
+    .policyStatus {
+        font-size: 12px;
+    }
+    
+    .policyStatus span {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 6px;
+        margin: 0;
+    }
+}

@@ -1,0 +1,29 @@
+.fltrDropCard {
+    position: relative;
+    display: inline-block;
+}
+
+.fltrDropCard + .fltrDropCard {
+    margin-left: 16px;
+}
+
+.fltrDropCard > span {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 0.8rem;
+}
+
+@media (max-width:1699px) {
+    .fltrDropCard > span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:767px) {
+    .fltrDropCard span {
+        font-size: 16px;
+        left: 12px;
+    }
+}

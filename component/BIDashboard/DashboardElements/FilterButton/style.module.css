@@ -1,0 +1,36 @@
+.fltrBtn {
+    background: transparent;
+    border: 1px solid var(--vt-c-blue);
+    padding: 0 16px;
+    border-radius: 0;
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 48.23px;
+    display: inline-block;
+}
+
+.fltrBtn span {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.fltrBtn span svg {
+    width: 18px;
+}
+
+@media (max-width:1699px) {
+    .fltrBtn {
+        font-size: 15px;
+        line-height: 42.4px;
+    }
+}
+
+@media (max-width:767px) {
+    .fltrBtn {
+        font-size: 14px;
+        padding: 0 12px;
+        line-height: 42px;
+    }
+}

@@ -1,0 +1,46 @@
+.reminderTtl h3 {
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--vt-c-yellow);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.reminderTtl h3 i {
+    position: relative;
+    top: -8px;
+}
+.reminderTtl h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black);
+}
+.reminderCard p {
+    font-size: 16px;
+    color: var(--vt-c-blueGray);
+    margin: 12px 0 0 0;
+}
+
+@media (max-width:1699px) {
+    .reminderTtl h3 {
+        font-size: 30px;
+    }
+    .reminderTtl h3 i {
+        top: -6px;
+    }
+    .reminderTtl h4 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:1199px) {
+    .reminderTtl h3 {
+        font-size: 28px;
+    }
+    .reminderTtl h3 i {
+        top: -5px;
+    }
+    .reminderTtl h4 {
+        font-size: 20px;
+    }
+}

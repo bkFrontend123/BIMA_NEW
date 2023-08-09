@@ -1,0 +1,90 @@
+.premiumField {
+    background: var(--mute4);
+    padding: 11.41px 20px;
+    min-width: 230px;
+    border-radius: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+}
+
+.premiumField > p {
+    font-size: 14px;
+    color: var(--greyDark1);
+    line-height: 24px;
+    margin: 0;
+    display: inline-block;
+    border-right: 1px solid var(--gray1);
+    margin-right: 14px;
+    padding-right: 14px;
+}
+
+.premiumField i {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+    position: relative;
+    top: -3px;
+}
+
+.premiumField i svg {
+    width: 12px;
+    color: var(--greyDark1);
+}
+
+.premiumField span {
+    font-size: 24px;
+    color: var(--greyDark1);
+    font-weight: 600;
+}
+
+.busInsCol .premiumField span,
+.busInsCol .premiumField i svg,
+.busInsCol .premiumFieldDiv > p {
+    color: #B6B6B6;
+}
+
+.busInsActiveCol .premiumField span,
+.busInsActiveCol .premiumField i svg,
+.busInsActiveCol .premiumFieldDiv>p {
+    color: var(--vt-c-blue);
+}
+
+.busInsCol .premiumField {
+    pointer-events: inherit;
+}
+
+@media only screen and (max-width:1699px) {
+    .premiumField {
+        padding: 11.6px 14px;
+        min-width: 210px;
+    }
+
+    .premiumField span {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1399px) {
+    .shopCovrgInfo .premiumField {
+        min-width: 200px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .premiumField {
+        padding: 10px 16px;
+    }
+
+    .premiumField span {
+        font-size: 18px;
+    }
+
+    .premiumField i {
+        margin-right: 10px;
+    }
+
+    .premiumField i svg {
+        width: 10px;
+    }
+}

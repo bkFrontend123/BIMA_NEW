@@ -1,0 +1,44 @@
+.contSprtCol span {
+  display: inline-block;
+}
+.contSprtInfo {
+  margin-left: 16px;
+}
+.contSprtInfo h5 {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--black);
+  margin: 0;
+}
+.contSprtInfo p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+  margin: 4px 0 0 0;
+  line-height: 28px;
+}
+.contSprtInfo p .contLink {
+  color: var(--black);
+}
+
+@media (min-width:1200px) {
+  .contSprtInfo {
+    margin-left: 20px;
+  }
+}
+@media (min-width:1700px) {
+  .contSprtInfo {
+    margin-left: 26px;
+  }
+}
+@media (max-width:767px) {
+  .contSprtCol span {
+    width: 40px;
+  }
+  .contSprtInfo {
+    margin-left: 15px;
+  }
+  .contSprtInfo p {
+    font-size: 16px;
+  }
+}
