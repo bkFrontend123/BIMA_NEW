@@ -66,13 +66,6 @@ export default function OTP() {
           <div className={`mt-3 ${loginLayoutStyle.loginInfoText}`}>
             <p>Didn't receive the OTP yet? <Link href="" className={`${loginLayoutStyle.loginInfoLink}`}>Resend OTP</Link></p>
           </div>
-          <div className={`mt-4 mt-lg-5 ${loginLayoutStyle.loginInfoText}`}>
-            <p className='mb-2'>First time user?</p>
-            <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToSignupPage}>
-                <span className='me-2'>Sign up</span>
-                <SubscribeArrow iconColor="black stroke" width="21" height="16" />
-            </Button>
-          </div>
         </div>
       </DashboardLoginCard>
     </>
