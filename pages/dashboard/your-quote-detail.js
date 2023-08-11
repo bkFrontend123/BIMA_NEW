@@ -45,7 +45,10 @@ export default function YourQuoteDetail() {
         <meta name="description" content="" />
         <link rel="canonical" href="" />
       </Head>
-      <DashboardCard>
+      <DashboardCard
+        talkExpert="himani"
+        activeMenu="1"
+      >
         <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
             <div className='d-flex align-items-center'>
@@ -76,7 +79,8 @@ export default function YourQuoteDetail() {
             InsurerLogo={icici_logo}
             PolicyName="Directors & Officers Insurance"
           />
-          <AddPolicyButton />
+          {/*<AddPolicyButton />*/}
+          <p className='title-14 text-black mt-4 text-center d-none d-md-block'>Please select at least 3 to compare</p>
           <PolicyCompareButton
             href="/quote_comparison"
           />
@@ -85,7 +89,7 @@ export default function YourQuoteDetail() {
           title="Director's & Officer's Liability Insurance"
           jurisdiction="Worldwide Jurisdiction"
           territory="Worldwide Territory"
-          limitIndemnity="15,00,00,000.00"
+          limitIndemnity="15 Cr"
         >
           <Row className="g-3 g-md-4">
             <Col>
@@ -93,7 +97,7 @@ export default function YourQuoteDetail() {
                 <Col md={10} xl={7}>
                   <ReminderCard
                     days="45"
-                    description="Lorem ipsum dolor sit amet consectetur. Egestas diam quam duis at ultrices. Suscipit dignissim eu phasellus amet commodo purus. Sit dolor pellentesque condimentum."
+                    description="Depending on the change in the market circumstances and the insurance company's underwriting guidelines the quote may change."
                   >
                     <ProgressBar now={10} />
                   </ReminderCard>

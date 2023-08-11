@@ -20,10 +20,6 @@ export default function OTP() {
   const goToDashboardPage = () => {
       router.push('/dashboard/your-quotes');
   };
-
-  const goToSignupPage = () => {
-    router.push('/');
-  };
   
   return (
     <>

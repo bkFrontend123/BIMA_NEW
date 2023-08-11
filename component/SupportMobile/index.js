@@ -14,7 +14,7 @@ export default function SupportMobile(props) {
     return (
         <>
             <div className={`d-flex align-items-center ${style.supportMobileCol} ${customClass}`}>
-                <Link href="">
+                <Link href="https://wa.me/9036554785">
                     <Image
                         src={supportIcon}
                         alt="Support"

@@ -8,7 +8,7 @@ import HideArrowIcon from "@/component/BIDashboard/Icons/IconHideArrow";
 import dashLayoutStyle from '@/assets/css/dashboardLayout.module.css'
 
 export default function DashboardCard(props) {
-  const { talkExpert, children } = props;
+  const { activeMenu, talkExpert, children } = props;
 
   const [isActive, setIsActive] = useState(false);
 
@@ -25,7 +25,9 @@ export default function DashboardCard(props) {
           <div className={`${dashLayoutStyle.sdbrClosebtn}`} onClick={handleClick}>
             <button type="button" class="btn-close text-reset"></button>
           </div>
-          <DashboardSidebar />
+          <DashboardSidebar
+            activeMenu={activeMenu}
+          />
         </div>
         <div className={`${dashLayoutStyle.dashboardMainCard}`}>
           <div className={`${dashLayoutStyle.hideSidebarBtn}`}>

@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { useRouter } from 'next/router';
 import Image from 'next/image'
 
 import { Row, Col } from 'react-bootstrap';
@@ -14,6 +15,11 @@ import indiaFlag from "@/public/icons/indiaFlag.png";
 
 export default function QuoteCard(props) {
   const {title, jurisdiction, territory, limitIndemnity, children} = props;
+
+  const router = useRouter();
+  const goToYourQuotePage = () => {
+    router.push('/dashboard/your-quotes');
+  };
 
   return (
     <>
@@ -33,7 +39,7 @@ export default function QuoteCard(props) {
               </div>
               <div className={`${style.quoteCompareCardLimit}`}>
                 <p>Limit of Indemnity:</p>
-                <h4>₹{limitIndemnity}/-</h4>
+                <h4>₹{limitIndemnity}</h4>
               </div>
             </Col>
             <Col md="auto">
@@ -41,6 +47,7 @@ export default function QuoteCard(props) {
                 title="Edit details"
                 type="button"
                 customClass={`m-0 px-2 ${buttonStyle.minWidth3} ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                onClick={goToYourQuotePage}
               />
             </Col>
           </Row>

@@ -614,7 +614,6 @@ function Navbar() {
                     </Dropdown>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>

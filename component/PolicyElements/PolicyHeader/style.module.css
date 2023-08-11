@@ -88,13 +88,16 @@
         padding: 9.5px;
         border: 1px solid var(--vt-c-blue);
     }
+    .policyCovName > div:last-child {
+        justify-content: flex-start;
+    }
     .policyCovName span {
         font-size: 15px;
         line-height: 24px;
         display: block;
     }
     .policyEditBtn {
-        margin: 0 0 0 20px;
+        margin: 0;
     }
     .policyEditBtn a {
         padding: 12px;

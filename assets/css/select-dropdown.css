@@ -71,6 +71,8 @@
 
 .selectDropDiv .select-search-value::after {
     background-image: url('/icons/selectArrowIcon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     content: "";
     width: 19px;
@@ -82,6 +84,8 @@
 }
 .selectDropDiv .select-search-has-focus .select-search-value::after {
     background-image: url('/icons/selectArrowDownIcon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
     top: 20px;
     right: 12px;
 }
@@ -94,8 +98,11 @@
     right: 12px;
 }
 .selectDropFilterDiv.selectDropDiv .select-search-value::after {
+    background-image: url('/icons/selectedArrowIcon.svg');
     top: 15px;
     right: 15px;
+    width: 16px;
+    height: 16px;
 }
 .selectDropFilterDiv.selectDropDiv .select-search-has-focus .select-search-value::after {
     top: 10px;
@@ -121,7 +128,7 @@
 .selectDropFilterDiv.selectDropDiv .select-search-input {
     background-color: transparent;
     height: 50px;
-    max-width: 140px;
+    max-width: 120px;
 }
 .searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,
 .selectDropDivSmall.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,
@@ -222,6 +229,9 @@
     .selectDropFilterDiv.selectDropDiv label {
         font-size: 15px;
         top: 16px;
+    }
+    .selectDropFilterDiv.selectDropDiv .select-search-value::after {
+        top: 13px;
     }
 }
 

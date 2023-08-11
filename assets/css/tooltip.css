@@ -11,7 +11,7 @@
     right: 20px;
 }
 .tooltip {
-    opacity: 1;
+    opacity: 1 !important;
 }
 .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow:before,.bs-tooltip-top .tooltip-arrow:before {
     border-top-color: var(--vt-c-blueExtraLight1);
@@ -33,6 +33,7 @@
     font-family: 'Galano Grotesque', sans-serif;
     color: var(--vt-c-blue);
     font-weight: 500;
+    opacity: 1 !important;
 }
 
 @media (max-width:767px) {

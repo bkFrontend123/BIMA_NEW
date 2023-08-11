@@ -57,7 +57,10 @@ export default function YourQuotes() {
         <meta name="description" content="" />
         <link rel="canonical" href="" />
       </Head>
-      <DashboardCard>
+      <DashboardCard
+        talkExpert="himani"
+        activeMenu="1"
+      >
         <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
             <DashboardHeadingItem
@@ -112,13 +115,14 @@ export default function YourQuotes() {
                             value={sumInsuredValue}
                             required
                         />
-                        <label>Selected sum insured</label>
+                        <label>Selected Limit of Liability</label>
                       </Form.Group>
                     </Col>
                     <Col md>
                       <PremiumFieldItem
                         title="Premium"
                         cost="93,000"
+                        gst="true"
                       />
                     </Col>
                     <Col md={3}>
@@ -182,13 +186,14 @@ export default function YourQuotes() {
                             value={sumInsuredValue}
                             required
                         />
-                        <label>Selected sum insured</label>
+                        <label>Selected Limit of Liability</label>
                       </Form.Group>
                     </Col>
                     <Col md>
                       <PremiumFieldItem
                         title="Premium"
                         cost="93,000"
+                        gst="true"
                       />
                     </Col>
                     <Col md={3}>
@@ -252,13 +257,14 @@ export default function YourQuotes() {
                             value={sumInsuredValue}
                             required
                         />
-                        <label>Selected sum insured</label>
+                        <label>Selected Limit of Liability</label>
                       </Form.Group>
                     </Col>
                     <Col md>
                       <PremiumFieldItem
                         title="Premium"
                         cost="93,000"
+                        gst="true"
                       />
                     </Col>
                     <Col md={3}>

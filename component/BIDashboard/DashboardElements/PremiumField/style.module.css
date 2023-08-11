@@ -1,6 +1,6 @@
 .premiumField {
     background: var(--mute4);
-    padding: 11.41px 20px;
+    padding: 11.41px 16px;
     min-width: 230px;
     border-radius: 0;
     pointer-events: none;
@@ -15,13 +15,13 @@
     margin: 0;
     display: inline-block;
     border-right: 1px solid var(--gray1);
-    margin-right: 14px;
-    padding-right: 14px;
+    margin-right: 10px;
+    padding-right: 10px;
 }
 
 .premiumField i {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 4px;
     vertical-align: text-bottom;
     position: relative;
     top: -3px;
@@ -36,6 +36,10 @@
     font-size: 24px;
     color: var(--greyDark1);
     font-weight: 600;
+}
+
+.premiumField span small {
+    font-size: 14px;
 }
 
 .busInsCol .premiumField span,
@@ -56,7 +60,7 @@
 
 @media only screen and (max-width:1699px) {
     .premiumField {
-        padding: 11.6px 14px;
+        padding: 11.6px 12px;
         min-width: 210px;
     }
 
@@ -73,7 +77,7 @@
 
 @media only screen and (max-width:767px) {
     .premiumField {
-        padding: 10px 16px;
+        padding: 10px 12px;
     }
 
     .premiumField span {

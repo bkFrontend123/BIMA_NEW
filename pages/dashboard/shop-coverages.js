@@ -31,6 +31,7 @@ export default function ShopCoverages() {
       </Head>
       <DashboardCard
         talkExpert="himani"
+        activeMenu="4"
       >
         <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
@@ -101,9 +102,9 @@ export default function ShopCoverages() {
           </Col>
           <Col xl={6}>
             <CoverageCardItem
-              icon={productIcon5}
-              title="Crime & Fidelity Insurance"
-              description="Fidelity insurance insurance provides protection against business losses caused due to employee dishonesty."
+              icon={productIcon6}
+              title="Product Liability Insurance"
+              description="It provides protection against claims resulting from injuries and damage to other people or property."
               link="/"
             >
               <ButtonItem
@@ -115,9 +116,9 @@ export default function ShopCoverages() {
           </Col>
           <Col xl={6}>
             <CoverageCardItem
-              icon={productIcon6}
-              title="Product Liability Insurance"
-              description="It provides protection against claims resulting from injuries and damage to other people or property."
+              icon={productIcon5}
+              title="Crime & Fidelity Insurance"
+              description="Fidelity insurance insurance provides protection against business losses caused due to employee dishonesty."
               link="/"
             >
               <ButtonItem

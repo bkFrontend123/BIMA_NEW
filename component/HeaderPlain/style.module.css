@@ -47,10 +47,11 @@ button.btnSmall {
 }
 
 .hdrTalkDrpdwn .hdrDrpMenu {
-    padding: 20px;
+    padding: 16px;
     right: 0 !important;
     left: inherit !important;
-    min-width: 230px;
+    min-width: 240px;
+    border-radius: 0;
 }
 .hdrDrpMenu p {
     font-size: 16px;

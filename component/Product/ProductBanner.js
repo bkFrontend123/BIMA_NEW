@@ -550,7 +550,6 @@ export default function ProductBanner(props) {
                          .ProductBanner-formTop {
                              max-width: 85%;
                              justify-content: center;
-
                          }
                          .ProductBanner-formTop p {
                             padding: 0;
@@ -558,6 +557,13 @@ export default function ProductBanner(props) {
                         }
                         .ProductBanner-formTop p svg{
                             width: 16px;
+                        }
+                        .productNoFormBoxText {
+                            padding: 24px 16px;
+                            margin-top: 40px;
+                        }
+                        .productNoFormBoxText p {
+                            font-size: 16px;
                         }
                         }
                       

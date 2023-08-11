@@ -105,7 +105,7 @@ export default function Companies(props) {
         </div>
 
         <div className="d-none d-md-block" style={{ height: "90px" }}></div>
-        <div className="d-blok d-md-none" style={{ height: "60px" }}></div>
+        <div className="d-blok d-md-none" style={{ height: "70px" }}></div>
         <style jsx scope>
           {`
                 .companyReview-sliderBox{

@@ -14,10 +14,6 @@ import star from '../../../public/icons/star.svg'
 import arrowRight_white from '../../../public/icons/arrowRight-white.svg'
 
 export default function PolicyCard(props) {
-    useEffect(() => {
-        document.body.classList.add("homePageBody")
-    }, []);
-    
     const {customClass, policyLogo, logoWidth, logoHeight, title, listText1, listText2, listText3, price, priceAmount, children, policyName, policyCover, policyPremium, featuresIncluded, exclusions } = props;
 
     const [show, setShow] = useState(false);
@@ -66,9 +62,9 @@ export default function PolicyCard(props) {
                         </ul>
                     </div>
                 </div>
-                <div className={`${style.policyFeaBtn}`}>
+                {/*<div className={`${style.policyFeaBtn}`}>
                     <Link href="" onClick={handleShow}>View all features</Link>
-                </div>
+                </div>*/}
                 <div className={`${style.policyPrice} ${`d-${price}`}`}>
                     <span>₹ {priceAmount}</span> <small>+ GST</small>
                 </div>

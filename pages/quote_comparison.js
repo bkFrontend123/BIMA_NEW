@@ -85,7 +85,7 @@ export default function QuoteComparison() {
                                     <span className='ms-2'>Back to quotes</span>
                                 </Button>
                             </div>
-                            <div className='d-flex d-md-none justify-content-between gap-3 mb-4'>
+                            <div className='d-flex d-md-none align-items-start align-items-md-center justify-content-between gap-3 mb-4'>
                                 <PolicyHeader
                                     coverageName="Directors & Officers Liability"
                                 />

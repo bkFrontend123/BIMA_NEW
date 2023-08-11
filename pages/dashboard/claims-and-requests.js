@@ -17,7 +17,10 @@ export default function ClaimsAndRequests() {
         <meta name="description" content="" />
         <link rel="canonical" href="" />
       </Head>
-      <DashboardCard>
+      <DashboardCard
+        talkExpert="himani"
+        activeMenu="3"
+      >
         <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
             <DashboardHeadingItem

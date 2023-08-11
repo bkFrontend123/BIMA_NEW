@@ -72,6 +72,7 @@
 @media (max-width:767px) {
     .dropdownContainer {
         min-width: 130px;
+        margin-right: 20px;
     }
     .dropdownSelectedValue {
         font-size: 17px;

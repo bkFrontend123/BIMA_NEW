@@ -104,7 +104,12 @@
     cursor: pointer;
     text-align: center;
     line-height: 44px;
-  }
+}
+
+.hideBtn span {
+    position: relative;
+    top: -4px;
+}
 
 .sdbrDropOuter {
     text-align: center;
@@ -225,7 +230,7 @@
     position: relative;
 }
 
-.sdbrLnksItem+.sdbrLnksItem {
+.sdbrLnksItem + .sdbrLnksItem {
     margin-top: 50px;
 }
 
@@ -249,6 +254,8 @@
     vertical-align: top;
     width: 28px;
     text-align: center;
+    position: relative;
+    top: -4px;
 }
 
 .sdbrLnksItem h4 {

@@ -156,7 +156,7 @@ function TrustedBusiness() {
       </div>
 
       <div className="d-none d-md-block" style={{ height: "90px" }}></div>
-      <div className="d-blok d-md-none" style={{ height: "70px" }}></div>
+      <div className="d-blok d-md-none" style={{ height: "80px" }}></div>
 
       <style jsx scope>
         {` 
@@ -185,7 +185,7 @@ function TrustedBusiness() {
           }
           @media only screen and (max-width: 575px) {
               .trusted-business {
-                  margin-top: 50px;
+                  margin-top: 70px;
               }
               .container{
                 padding: 0;

@@ -245,11 +245,14 @@
 
   .ProdFAQ-accordionBox {
     padding: 16px 0;
+    border-color: var(--border-mute1);
   }
 
   .navbar-main.bg-yellowLight {
     background-color: var(--mute1);
     padding-top: 0;
+    position: sticky;
+    top: 0;
   }
 
   .homeBannerContainer {

@@ -198,7 +198,7 @@ export default function Footer(props) {
                 <div className='d-none d-md-block' style={{ height: "90px" }}></div>
 
                 {starContent == 'true' ? (
-                  <div className="row footer-note text-md-start text-center">
+                  <div className="row footer-note">
                     <div className="col-md-12">
                       <p className='title14 text-yellow font-weight-500 mb-1'>*The estimated premium mentioned above is calculated under ideal conditions. The actual pricing will vary based on the specific information provided by the insured.</p>
                     </div>
@@ -207,7 +207,7 @@ export default function Footer(props) {
                   null
                 )
                 }
-                <div className="row footer-note text-md-start text-center mt-4">
+                <div className="row footer-note mt-4">
                   <div className="col-md-12">
                     <p className='title14 text-primarySkyLight1 font-weight-600 mb-2'>Disclaimer:</p>
                     <p className='title14 text-primarySkyLight2 font-weight-500 mb-2'>BimaKavach Insurance Broking Pvt. Ltd. | CIN- U66010MP2022PTC059393 | Registered  Office- Flat No 201, Classic Avenue, 184 Shrinagar Main, Indore Madhya Pradesh India- 452018 | Phone No.- 9036554785 | Email- support@bimakavach.com </p>

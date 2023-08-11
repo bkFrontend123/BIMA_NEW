@@ -133,7 +133,8 @@ export default function AllPolicies() {
                     InsurerLogo={icici_logo}
                     PolicyName="Directors & Officers Insurance"
                 />
-                <AddPolicyButton />
+                {/*<AddPolicyButton />*/}
+                <p className='title-14 text-black mt-4 text-center d-none d-md-block'>Please select at least 3 to compare</p>
                 <PolicyCompareButton
                     href="/quote_comparison"
                 />
