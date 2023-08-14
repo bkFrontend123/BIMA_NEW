@@ -99,12 +99,13 @@
 }
 .selectDropFilterDiv.selectDropDiv .select-search-value::after {
     background-image: url('/icons/selectedArrowIcon.svg');
-    top: 15px;
+    top: 17px;
     right: 15px;
     width: 16px;
     height: 16px;
 }
 .selectDropFilterDiv.selectDropDiv .select-search-has-focus .select-search-value::after {
+    background-image: url(/icons/selectArrowDownIcon.svg);
     top: 10px;
     right: 12px;
 }
