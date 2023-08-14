@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { Row, Col, Form, Button, ProgressBar } from 'react-bootstrap';
+import { Row, Col, Form, Button, ProgressBar, Dropdown } from 'react-bootstrap';
 
 import DashboardCard from '@/component/BIDashboard/DashboardCard'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
@@ -21,7 +21,9 @@ import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/st
 import textStyle from '@/component/BIDashboard/DashboardElements/TextItem/style.module.css';
 import policyCompare from '@/component/PolicyElements/PolicyCompare/style.module.css'
 import policy from '@/component/PolicyElements/PolicyCard/style.module.css'
+import headerStyle from '@/component/HeaderPlain/style.module.css'
 
+import DropdownArrow from '@/component/Icons/DropdownArrow'
 import brdcrmbArrow from '@/public/icons/brdcrmbArrow.svg'
 import downloadIcon from '@/public/icons/downloadIcon.svg'
 import shareIcon from '@/public/icons/shareIcon.svg'
@@ -106,25 +108,65 @@ export default function YourQuoteDetail() {
             </Col>
             <Col md="auto">
               <div className="text-md-end">
-                <ButtonItem
-                  title="Talk to an Expert"
-                  type="button"
-                  customClass={`m-0 px-2 ${buttonStyle.minWidth3} ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
-                />
-                <ButtonItem
-                  type="button"
-                  iconPosition="left"
-                  customClass={`ms-3 me-0 ${buttonStyle.btnTrans} ${buttonStyle.border2} ${buttonStyle.btnBig} ${buttonStyle.btnIcon}`}
-                >
-                  <Image src={downloadIcon} width={19} height={24} alt="download icon" />
-                </ButtonItem>
-                <ButtonItem
-                  type="button"
-                  iconPosition="left"
-                  customClass={`ms-3 me-0 ${buttonStyle.btnTrans} ${buttonStyle.border2} ${buttonStyle.btnBig} ${buttonStyle.btnIcon}`}
-                >
-                  <Image src={shareIcon} width={19} height={24} alt="share icon" />
-                </ButtonItem>
+                <div className='d-flex align-items-center justify-content-end'>
+                  <div className={`hdrDrpdwn ${headerStyle.hdrDrpdwn} ${headerStyle.hdrTalkDrpdwn}`}>
+                    <Dropdown>
+                      <Dropdown.Toggle variant="" id="talk-expert" className={`btnCommon yellowBtn ${headerStyle.btnBig}`}>
+                        <span>Talk to an expert</span>
+                        <i className='ms-2'>
+                          <DropdownArrow width="11" height="7" />
+                        </i>
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu className={headerStyle.hdrDrpMenu}>
+                        <div>
+                          <ul>
+                            <li>
+                              <i>
+                                <Image src="/icons/whatsapp_icon.svg" width="18" height="19" alt="Whatsapp" />
+                              </i>
+                              <div>
+                                <span>WhatApp us:</span>
+                                <a href="https://wa.me/9036554785" target="_blank">+91 9036554785</a>
+                              </div>
+                            </li>
+                            <li>
+                              <i>
+                                <Image src="/icons/call_fill_icon.svg" width="13" height="13" alt="Call" />
+                              </i>
+                              <div>
+                                <span>Call us for Liability:</span>
+                                <a href="tel:9036554785">+91 9036554785</a>
+                              </div>
+                            </li>
+                            <li>
+                              <i>
+                                <Image src="/icons/call_fill_icon.svg" width="13" height="13" alt="Call" />
+                              </i>
+                              <div>
+                              <span>Call us for P&C:</span>
+                                <a href="tel:9035492594">+91 9035492594</a>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </div>
+                  <ButtonItem
+                    type="button"
+                    iconPosition="left"
+                    customClass={`ms-3 me-0 ${buttonStyle.btnTrans} ${buttonStyle.border2} ${buttonStyle.btnBig} ${buttonStyle.btnIcon}`}
+                  >
+                    <Image src={downloadIcon} width={19} height={24} alt="download icon" />
+                  </ButtonItem>
+                  <ButtonItem
+                    type="button"
+                    iconPosition="left"
+                    customClass={`ms-3 me-0 ${buttonStyle.btnTrans} ${buttonStyle.border2} ${buttonStyle.btnBig} ${buttonStyle.btnIcon}`}
+                  >
+                    <Image src={shareIcon} width={19} height={24} alt="share icon" />
+                  </ButtonItem>
+                </div>
                 <Text
                   color={textStyle.blueGray}
                   size={textStyle.font14}

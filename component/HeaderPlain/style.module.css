@@ -17,6 +17,11 @@
 button.btnSmall {
     //padding: 16px 30px;
 }
+.btnBig {
+    font-size: 16px;
+    line-height: 58px;
+    padding: 0 20px;
+}
 .hdrDrpdwn button::after {
     display: none;
 }
@@ -165,6 +170,9 @@ button.btnSmall {
 @media (max-width:1699px) {
     .hdrBlock {
         padding: 20px 0;
+    }
+    .btnBig {
+        line-height: 52px;
     }
 }
 
