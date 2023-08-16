@@ -572,8 +572,17 @@
 }
 
 @media (max-width:767px) {
+    .dashboardMobileHeader {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: inherit;
+        box-shadow: 0px -4px 20px 0px rgba(5, 15, 40, 0.10);
+    }
+
     .dashboardMainCard {
-        padding: 96px 16px 40px 16px;
+        padding: 0 16px 120px 16px;
     }
 
     .dashboardOuterSmall .dashSidebar {
@@ -588,21 +597,28 @@
 
     .dashboardHeader {
         padding: 16px;
-        background: var(--color-background-grey);
+        margin: 0 -16px;
     }
 
     .dashUserProCol > span {
-        min-width: 50px;
-        height: 50px;
-        border-radius: 50px;
+        min-width: 54px;
+        height: 54px;
+        border-radius: 54px;
         margin-right: 12px;
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .dashUserProCol h4,
     .dashUserInfoCol h4 {
         font-size: 16px;
         line-height: 20px;
+    }
+
+    .dashboardHeader h5,
+    .dashboardHeader .dashUserTtl p  {
+        font-size: 13px;
+        line-height: 16px;
+        margin: 2px 0 0 0;
     }
 
     .dashUserInfoCol {

@@ -23,7 +23,7 @@
 
 @media (max-width:767px) {
     .fltrDropCard span {
-        font-size: 16px;
-        left: 12px;
+        font-size: 14px;
+        margin-right: 0.5rem;
     }
 }
