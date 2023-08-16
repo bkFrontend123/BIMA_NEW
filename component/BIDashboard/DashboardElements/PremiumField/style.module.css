@@ -77,19 +77,11 @@
 
 @media only screen and (max-width:767px) {
     .premiumField {
-        display: block;
         padding: 10px 12px;
     }
 
-    .premiumField > p {
-        display: block;
-        border-right: 0;
-        margin-right: 0;
-        padding-right: 0;
-    }
-
     .premiumField span {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .premiumField i {
@@ -97,10 +89,6 @@
     }
 
     .premiumField i svg {
-        width: 9px;
-    }
-    
-    .premiumField span small {
-        font-size: 13px;
+        width: 10px;
     }
 }

@@ -17,7 +17,7 @@
 .quoteCardTtl h3 {
     font-size: 28px;
     color: var(--black);
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -143,17 +143,15 @@
 
 @media (max-width:767px) {
     .quoteCardCol {
-        padding: 16px;
-        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);
-        margin: 0 10px 10px 10px;
+        padding: 12px;
     }
 
     .mblQuoteCardInfo {
-        /*display: none;*/
+        display: none;
     }
 
     .mblQuoteCardInfo.show {
-        /*display: block;*/
+        display: block;
     }
     
     .quoteCardTtl h3 {
@@ -166,7 +164,7 @@
 
     .quoteCardTtl h5 {
         font-size: 13px;
-        margin: 8px 0;
+        margin: 3px 0 0;
     }
 
     .quoteStatus {
@@ -178,26 +176,5 @@
         line-height: 26px;
         padding: 0 6px;
         margin: 0;
-    }
-
-    .quoteCardList ul li {
-        margin-left: 12px;
-        margin-top: 12px;
-        width: calc(50% - 12px);
-        vertical-align: top;
-    }
-    .quoteCardList ul li + li {
-        padding-left: 0;
-        border-left: 0;
-    }
-    .quoteCardCol ul li p {
-        font-size: 14px;
-        font-weight: 600;
-    }
-    .quoteCardCol ul li p strong {
-        font-size: 13px;
-        font-weight: 400;
-        color: var(--vt-c-gray);
-        display: block;
     }
 }

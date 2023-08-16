@@ -782,24 +782,6 @@ h2.font-secondary {
 }
 /***Frontend Custom Css End***/
 
-@media (min-width:768px) {
-  .cardsSlider {
-    overflow: visible !important;
-  }
-  .cardsSlider .swiper-wrapper {
-    display: block;
-    transform: inherit !important;
-  }
-  .cardsSlider .swiper-wrapper .swiper-slide {
-    width: 100% !important;
-    margin: 0 !important;
-    transform: inherit !important;
-  }
-  .cardsSlider .swiper-wrapper .swiper-slide + .swiper-slide {
-    margin-top: 1.5rem !important;
-  }
-}
-
 @media (min-width:1700px) {
   .container {
     max-width: 1560px;
@@ -809,8 +791,3 @@ h2.font-secondary {
   }
 }
 
-@media (max-width:767px) {
-  .cardsSliderOuter .cardsSlider {
-    margin-left: -10px;
-  }
-}

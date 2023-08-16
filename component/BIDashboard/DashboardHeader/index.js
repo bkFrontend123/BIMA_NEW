@@ -17,7 +17,7 @@ export default function DashboardHeader(props) {
 
   return (
     <>
-      <div className={`mb-3 mb-md-4`}>
+      <div className={`mb-3 mb-md-4 d-none d-md-block`}>
         <Row className='g-2 g-md-3 align-items-center'>
           <Col md>
             <div className={`${dashLayoutStyle.dashboardHeader}`}>
@@ -54,7 +54,7 @@ export default function DashboardHeader(props) {
             </div>
           </Col>
           {talkExpert === 'himani' ? (
-            <Col md className='d-none d-md-block'>
+            <Col md>
               <div className={`${dashLayoutStyle.dashboardHeader}`}>
                 <Row className='g-2 g-md-3 align-items-center justify-content-between'>
                   <Col md>
