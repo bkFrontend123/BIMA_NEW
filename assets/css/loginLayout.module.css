@@ -1,20 +1,104 @@
 .loginPage {
-    background-image: url('/loginBg.jpg');
+    background: linear-gradient(180deg, rgba(255, 180, 0, 0.00) 0%, rgba(255, 180, 0, 0.30) 47.63%);
+    /*background-image: url('/loginBg.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center center;*/
     min-height: calc(100vh - 111px);
     padding: 50px 0;
+}
+
+.loginHeroMediaOuter {
+    position: relative;
+    min-height: 380px;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+.loginHeroShield {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -10px;
+    width: auto;
+    text-align: center;
+    z-index: 0;
+}
+
+.loginHeroShield img {
+    width: 320px;
+    height: 370px;
+}
+
+.loginHeroImg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.loginHeroImg img {
+    width: 411px;
+}
+
+.loginHeroTextDiv {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 1;
+}
+.loginHeroText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginHeroText p {
+    background-color: var(--whiteBg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--vt-c-blue);
+    font-weight: 700;
+    padding: 8px 16px;
+    margin: 0;
+}
+
+.loginBottom {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.loginBottomCol i {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.loginBottomCol p {
+    font-size: 17px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+    margin: 0;
 }
 
 .loginRight {
     position: relative;
     overflow: auto;
-    padding-left: 50px;
+    padding-left: 60px;
 }
 
 .loginRightInner {
     background-color: var(--whiteBg);
     padding: 40px;
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.10);
     min-height: 450px;
 }
 
@@ -61,7 +145,7 @@
         height: 70px;
     }
 
-    .loginRightInner > p {
+    .loginRightInner>p {
         font-size: 16px;
     }
 
@@ -80,10 +164,40 @@
     }
 }
 
+@media only screen and (max-width:991px) {
+    .loginBottom {
+        gap: 0.6rem;
+    }
+
+    .loginBottomCol {
+        width: 31.4%;
+    }
+
+    .loginBottomCol p {
+        font-size: 16px;
+    }
+
+    .loginRight {
+        padding-left: 0;
+        margin-top: 24px;
+    }
+}
+
 @media only screen and (max-width:767px) {
     .loginRightInner {
-        padding: 16px;
+        padding: 24px;
+        min-height: auto;
     }
+
+    .loginHeroText p {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px 10px;
+    }
+
+    .loginBottomCol p {
+        font-size: 15px;
+    }    
 
     .loginLogo {
         margin-bottom: 50px;
@@ -104,4 +218,36 @@
     .loginButton {
         text-align: center;
     }
+}
+
+@media only screen and (max-width:575px) {
+    .loginHeroMediaOuter {
+        min-height: auto;
+        padding-bottom: 40px;
+    }
+    
+    .loginHeroShield img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .loginHeroImg {
+        position: relative;
+    }
+
+    .loginHeroImg img {
+        width: auto;
+    }
+
+    .loginHeroText p {
+        font-size: 14px;
+        padding: 6px 8px;
+        gap: 0.5rem;
+        font-weight: 600;
+    }
+
+    .loginBottomCol p {
+        font-size: 14px;
+    }
+    
 }
