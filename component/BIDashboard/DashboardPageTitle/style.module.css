@@ -1,0 +1,30 @@
+.dashTtlDiv {
+    padding: 0 16px 5px 16px;
+    border-bottom: 1px solid var(--vt-c-blueSkyLight2);
+    margin: 0 -16px 1rem -16px;
+    display: none;
+}
+.dashTtlDiv h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--vt-c-blue);
+    margin-bottom: 0;
+    line-height: 44px;
+}
+
+@media (max-width:1699px) {
+    .dashTtlDiv h2 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .dashTtlDiv {
+        display: block;
+    }
+    .dashTtlDiv h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}

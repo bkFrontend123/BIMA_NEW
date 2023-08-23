@@ -782,6 +782,34 @@ h2.font-secondary {
 }
 /***Frontend Custom Css End***/
 
+@media (min-width:768px) {
+  .cardsSlider {
+    overflow: visible !important;
+  }
+  .cardsSlider .swiper-wrapper {
+    display: block;
+    transform: inherit !important;
+    overflow: hidden;
+    margin-top: -1.5rem;
+  }
+  .cardsSliderItemTwo.cardsSlider .swiper-wrapper {
+    margin: -1.5rem -0.75rem 0 -0.75rem;
+    width: calc(100% + 1.5rem);
+  }
+  .cardsSlider .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+    margin: 0 !important;
+    transform: inherit !important;
+    margin-top: 1.5rem !important;
+  }
+  .cardsSliderItemTwo.cardsSlider .swiper-wrapper .swiper-slide {
+    float: left;
+    width: 50% !important;
+    padding-left: calc((1.5rem)/2) !important;
+    padding-right: calc((1.5rem)/2) !important;
+  }
+}
+
 @media (min-width:1700px) {
   .container {
     max-width: 1560px;
@@ -791,3 +819,8 @@ h2.font-secondary {
   }
 }
 
+@media (max-width:767px) {
+  .cardsSliderOuter .cardsSlider {
+    margin-left: -10px;
+  }
+}

@@ -1,14 +1,16 @@
 import React, {useState} from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+
 
 import {Row, Col, Form} from 'react-bootstrap';
 import SelectSearch from 'react-select-search';
 import 'react-select-search/style.css'
 
 import DashboardCard from '@/component/BIDashboard/DashboardCard'
+import DashboardPageTitle from '@/component/BIDashboard/DashboardPageTitle'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
 import FilterButton from '@/component/BIDashboard/DashboardElements/FilterButton'
 import FilterDropdown from '@/component/BIDashboard/DashboardElements/FilterDropdown'
@@ -41,6 +43,42 @@ export default function YourQuotes() {
       {name: '5 Cr', value: '5'},
   ];
 
+  const quoteData = ([
+    {
+      id: "1",
+      title: "Directors & Officers quote",
+      industry: "Finance",
+      turnover: "24 Cr",
+      employees: "234",
+      city: "Bangalore",
+      state: "Karnataka",
+      statusType: "offline",
+      dateTime: "24 April 2023"
+    },
+    {
+      id: "2",
+      title: "Errors & Omissions quote",
+      industry: "Finance",
+      turnover: "24 Cr",
+      employees: "234",
+      city: "Bangalore",
+      state: "Karnataka",
+      statusType: "progress",
+      dateTime: "24 April 2023"
+    },
+    {
+      id: "3",
+      title: "Product Liability quote",
+      industry: "Finance",
+      turnover: "24 Cr",
+      employees: "234",
+      city: "Bangalore",
+      state: "Karnataka",
+      statusType: "progress",
+      dateTime: "24 April 2023"
+    },
+  ])
+
   const router = useRouter();
   const goToShopCoveragePage = () => {
       router.push('/dashboard/shop-coverages');
@@ -61,7 +99,10 @@ export default function YourQuotes() {
         talkExpert="himani"
         activeMenu="1"
       >
-        <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
+        <DashboardPageTitle
+          title="Your Quotes"
+        />
+        <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
             <DashboardHeadingItem
               title="Resume Quotes"
@@ -88,222 +129,106 @@ export default function YourQuotes() {
             </FilterDropdown>
           </Col>
         </Row>
-        
-        <Row className="g-3 g-md-4">
-          <Col xs={12}>
-            <QuoteCardItem
-              title="Directors & Officers quote"
-              industry="Finance"
-              turnover="24 Cr"
-              employees="234"
-              city="Bangalore"
-              state="Karnataka"
-              statusType="offline"
-              dateTime="24 April 2023"
-            >
-              <Row className="g-0 align-items-center">
-                <Col md={8}>
+        <div className='cardsSliderOuter'>
+          <Swiper              
+            className={`cardsSlider`}
+            spaceBetween={0}
+            slidesPerView={100}
+            loop="false"
+            breakpoints={{
+              1399: {
+                slidesPerView: 100,
+              },
+              1200: {
+                slidesPerView: 100,
+              },
+              992: {
+                slidesPerView: 100,
+              },
+              768: {
+                slidesPerView: 100,
+              },
+              320: {
+                slidesPerView: 1.3,
+              },
+            }}
+          >
+            {quoteData.map((item) =>
+              <SwiperSlide key={item.id}>
+                <QuoteCardItem
+                  title={item.title}
+                  industry={item.industry}
+                  turnover={item.turnover}
+                  employees={item.employees}
+                  city={item.city}
+                  state={item.state}
+                  statusType={item.statusType}
+                  dateTime={item.dateTime}
+                >
                   <Row className="g-3 align-items-center">
-                    <Col md>
-                      <Form.Group className={`selectDropDiv selectDropDivSmall searchDropDiv ${!sumInsuredValue == '' ? 'selectedDropDiv' : null}`}>
-                        <SelectSearch
-                            options={sumInsuredOptions}
-                            name="industry"
-                            placeholder="Search by keyword"
-                            onChange={setSumInsuredValue}
-                            search
-                            value={sumInsuredValue}
-                            required
-                        />
-                        <label>Selected Limit of Liability</label>
-                      </Form.Group>
+                    <Col md={8}>
+                      <Row className="g-3 align-items-center">
+                        <Col md>
+                          <hr className="mt-0 mb-3 d-md-none" />
+                          <Form.Group className={`selectDropDiv selectDropDivSmall ${!sumInsuredValue == '' ? 'selectedDropDiv' : null}`}>
+                            <SelectSearch
+                                options={sumInsuredOptions}
+                                name="industry"
+                                placeholder="&nbsp;"
+                                onChange={setSumInsuredValue}
+                                value={sumInsuredValue}
+                                required
+                            />
+                            <label>Selected Limit of Liability</label>
+                          </Form.Group>
+                        </Col>
+                        <Col md>
+                          <PremiumFieldItem
+                            title="Premium"
+                            cost="93,000"
+                            gst="true"
+                          />
+                          <hr className="mt-3 mb-0 d-md-none" />
+                        </Col>
+                        <Col md={3}>
+                          <LinkItem
+                            title="Email Policy"
+                            icon="true"
+                            href=""
+                          >
+                            <EmailIcon />
+                          </LinkItem>
+                        </Col>
+                      </Row>
                     </Col>
-                    <Col md>
-                      <PremiumFieldItem
-                        title="Premium"
-                        cost="93,000"
-                        gst="true"
-                      />
-                    </Col>
-                    <Col md={3}>
-                      <LinkItem
-                        title="Email Policy"
-                        icon="true"
-                        href="javascript:void(0);"
-                      >
-                        <EmailIcon />
-                      </LinkItem>
+                    <Col md={4}>
+                      <Row className="g-3 align-items-center">
+                        <Col md={7}>
+                          <ButtonItem
+                            title="Compare Quote"
+                            type="button"
+                            iconPosition="right"
+                            customClass={`w-100 m-0 px-2 ${buttonStyle.btnBorder} ${buttonStyle.border2} ${buttonStyle.btnBig}`}
+                            onClick={goToNextPage}
+                          >
+                            <ArrowPrimaryIcon />
+                          </ButtonItem>
+                        </Col>
+                        <Col md={5}>
+                          <ButtonItem
+                            title="Buy Now"
+                            type="submit"
+                            customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                          />
+                        </Col>
+                      </Row>
                     </Col>
                   </Row>
-                </Col>
-                <Col md={4}>
-                  <Row className="g-3 align-items-center">
-                    <Col md={7}>
-                      <ButtonItem
-                        title="Compare Quote"
-                        type="button"
-                        iconPosition="right"
-                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnBorder} ${buttonStyle.border2} ${buttonStyle.btnBig}`}
-                        onClick={goToNextPage}
-                      >
-                        <ArrowPrimaryIcon />
-                      </ButtonItem>
-                    </Col>
-                    <Col md={5}>
-                      <ButtonItem
-                        title="Buy Now"
-                        type="submit"
-                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
-                      />
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </QuoteCardItem>
-          </Col>
-          <Col xs={12}>
-            <QuoteCardItem
-              title="Errors & Omissions quote"
-              industry="Finance"
-              turnover="24 Cr"
-              employees="234"
-              city="Bangalore"
-              state="Karnataka"
-              statusType="progress"
-              dateTime="24 April 2023"
-            >
-              <Row className="g-0 align-items-center">
-                <Col md={8}>
-                  <Row className="g-3 align-items-center">
-                    <Col md>
-                      <Form.Group className={`selectDropDiv selectDropDivSmall searchDropDiv ${!sumInsuredValue == '' ? 'selectedDropDiv' : null}`}>
-                        <SelectSearch
-                            options={sumInsuredOptions}
-                            name="industry"
-                            placeholder="Search by keyword"
-                            onChange={setSumInsuredValue}
-                            search
-                            value={sumInsuredValue}
-                            required
-                        />
-                        <label>Selected Limit of Liability</label>
-                      </Form.Group>
-                    </Col>
-                    <Col md>
-                      <PremiumFieldItem
-                        title="Premium"
-                        cost="93,000"
-                        gst="true"
-                      />
-                    </Col>
-                    <Col md={3}>
-                      <LinkItem
-                        title="Email Policy"
-                        icon="true"
-                        href="javascript:void(0);"
-                      >
-                        <EmailIcon />
-                      </LinkItem>
-                    </Col>
-                  </Row>
-                </Col>
-                <Col md={4}>
-                  <Row className="g-3 align-items-center">
-                    <Col md={7}>
-                      <ButtonItem
-                        title="Compare Quote"
-                        type="button"
-                        iconPosition="right"
-                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnBorder} ${buttonStyle.border2} ${buttonStyle.btnBig}`}
-                        onClick={goToNextPage}
-                      >
-                        <ArrowPrimaryIcon />
-                      </ButtonItem>
-                    </Col>
-                    <Col md={5}>
-                      <ButtonItem
-                        title="Buy Now"
-                        type="submit"
-                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
-                      />
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </QuoteCardItem>
-          </Col>
-          <Col xs={12}>
-            <QuoteCardItem
-              title="Product Liability quote"
-              industry="Finance"
-              turnover="24 Cr"
-              employees="234"
-              city="Bangalore"
-              state="Karnataka"
-              statusType="progress"
-              dateTime="24 April 2023"
-            >
-              <Row className="g-0 align-items-center">
-                <Col md={8}>
-                  <Row className="g-3 align-items-center">
-                    <Col md>
-                      <Form.Group className={`selectDropDiv selectDropDivSmall searchDropDiv ${!sumInsuredValue == '' ? 'selectedDropDiv' : null}`}>
-                        <SelectSearch
-                            options={sumInsuredOptions}
-                            name="industry"
-                            placeholder="Search by keyword"
-                            onChange={setSumInsuredValue}
-                            search
-                            value={sumInsuredValue}
-                            required
-                        />
-                        <label>Selected Limit of Liability</label>
-                      </Form.Group>
-                    </Col>
-                    <Col md>
-                      <PremiumFieldItem
-                        title="Premium"
-                        cost="93,000"
-                        gst="true"
-                      />
-                    </Col>
-                    <Col md={3}>
-                      <LinkItem
-                        title="Email Policy"
-                        icon="true"
-                        href="javascript:void(0);"
-                      >
-                        <EmailIcon />
-                      </LinkItem>
-                    </Col>
-                  </Row>
-                </Col>
-                <Col md={4}>
-                  <Row className="g-3 align-items-center">
-                    <Col md={7}>
-                      <ButtonItem
-                        title="Compare Quote"
-                        type="button"
-                        iconPosition="right"
-                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnBorder} ${buttonStyle.border2} ${buttonStyle.btnBig}`}
-                        onClick={goToNextPage}
-                      >
-                        <ArrowPrimaryIcon />
-                      </ButtonItem>
-                    </Col>
-                    <Col md={5}>
-                      <ButtonItem
-                        title="Buy Now"
-                        type="submit"
-                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
-                      />
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </QuoteCardItem>
-          </Col>
-        </Row>
+                </QuoteCardItem>
+              </SwiperSlide>
+            )}
+          </Swiper>
+        </div>
 
         <NoItemCard customClass="mt-4">No Quotes Found</NoItemCard>
       </DashboardCard>

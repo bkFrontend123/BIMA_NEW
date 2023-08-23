@@ -23,7 +23,7 @@ export default function DashboardCard(props) {
         />
         <div className={`${dashLayoutStyle.dashSidebar}`}>
           <div className={`${dashLayoutStyle.sdbrClosebtn}`} onClick={handleClick}>
-            <button type="button" class="btn-close text-reset"></button>
+            <button type="button" className="btn-close text-reset"></button>
           </div>
           <DashboardSidebar
             activeMenu={activeMenu}

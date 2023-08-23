@@ -15,9 +15,9 @@ export default function QuoteCard(props) {
   return (
     <>
       <div className={`${style.quoteCardCol}`}>
-        <div className={`d-flex gap-2 align-items-start justify-content-between ${style.quoteCardTtl}`} onClick={handleClick}>
+        <div className={`d-md-flex gap-2 align-items-start justify-content-between ${style.quoteCardTtl}`} onClick={handleClick}>
           <div className={`d-flex align-items-start`}>
-            <span className={`d-md-none me-2 ${style.quoteCardArrow} ${!isActive ? style.active : ''}`}><DropdownArrowIcon /></span>
+            <span className={`d-none me-2 ${style.quoteCardArrow} ${!isActive ? style.active : ''}`}><DropdownArrowIcon /></span>
             <div>
               <h3>{title}</h3>
               <h5>Last updated: {dateTime}</h5>
@@ -37,6 +37,7 @@ export default function QuoteCard(props) {
           </div>
         </div>
         <div className={`${style.mblQuoteCardInfo} ${!isActive ? style.show : ''}`}>
+          <hr className="mt-3 mb-0 d-md-none" />
           <div className={`${style.quoteCardList}`}>
             <ul>
               <li>

@@ -254,10 +254,27 @@
         top: 14px;
         right: 8px;
     }
+    .selectDropDivSmall.selectDropDiv .select-search-value::after {
+        top: 14px;
+        right: 10px;
+    }
+    .selectDropDivSmall.selectDropDiv .select-search-has-focus .select-search-value::after {
+        top: 14px;
+        right: 10px;
+    }
     .selectDropDiv .select-search-input {
         font-size: 15px;
         height: 54px;
         padding: 8px 30px 8px 16px;
+        height: 48px;
+    }
+    .selectDropDivSmall.selectDropDiv .select-search-input {
+        height: 48px;
+        padding: 8px 24px 8px 10px;
+    }
+    .selectDropFilterDiv.selectDropDiv .select-search-input {
+        font-size: 14px;
+        max-width: 110px;
     }
     .searchDropDiv.selectDropDiv .select-search-input,
     .searchDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus .select-search-input {
@@ -276,5 +293,14 @@
     .selectDropDiv .select-search-not-found {
         padding: 8px 16px;
         font-size: 15px;
+    }
+    .selectDropDivSmall.selectDropDiv label {
+        font-size: 13px;
+        top: 15px;
+        padding: 0 6px;
+    }
+    .selectDropDivSmall.selectDropDiv .select-search-has-focus ~ label,
+    .selectDropDivSmall.selectDropDiv.selectedDropDiv label {
+        transform: translateY(-26px);
     }
 }

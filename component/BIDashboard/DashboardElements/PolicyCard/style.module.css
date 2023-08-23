@@ -155,15 +155,25 @@
 
 @media (max-width:767px) {
     .policyCardCol {
-        padding: 12px;
+        padding: 16px;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);
+        margin: 0 10px 10px 10px;
     }
 
     .mblPolicyCardInfo {
-        display: none;
+        /*display: none;*/
     }
 
     .mblPolicyCardInfo.show {
-        display: block;
+        /*display: block;*/
+    }
+    
+    .policyCardTtl {
+        display: grid;
+    }
+
+    .policyCardTtl > div:first-child {
+        order :2;
     }
     
     .policyCardTtl h3 {
@@ -176,17 +186,39 @@
 
     .policyCardTtl h5 {
         font-size: 13px;
-        margin: 3px 0 0;
+        margin: 8px 0;
     }
 
     .policyStatus {
         font-size: 12px;
+        margin-left: 0;
     }
-    
+
     .policyStatus span {
         font-size: 12px;
         line-height: 26px;
         padding: 0 6px;
         margin: 0;
+    }
+
+    .policyCardList ul li {
+        margin-left: 12px;
+        margin-top: 12px;
+        width: calc(100% - 12px);
+        vertical-align: top;
+    }
+    .policyCardList ul li + li {
+        padding-left: 0;
+        border-left: 0;
+    }
+    .policyCardCol ul li p {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .policyCardCol ul li p strong {
+        font-size: 13px;
+        font-weight: 400;
+        color: var(--vt-c-gray);
+        display: block;
     }
 }

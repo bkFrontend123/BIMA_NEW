@@ -92,7 +92,7 @@
     font-weight: 500;
     padding: 8px 20px;
     border-top: 1px solid var(--vt-c-gray);
-    height: 90px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -181,8 +181,9 @@
 }
 .quoteCompareListCol > div > span {
     display: block;
-    max-height: 74px;
+    /*max-height: 74px;*/
     overflow: auto;
+    max-height: 300px;
 }
 /* width */
 .quoteCompareListCol > div > span::-webkit-scrollbar {
@@ -373,4 +374,6 @@
         line-height: 24px;
     }
 }
+
+
 

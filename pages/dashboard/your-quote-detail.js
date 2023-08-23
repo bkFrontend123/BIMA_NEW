@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
 import Image from 'next/image'
 
 import { Row, Col, Form, Button, ProgressBar, Dropdown } from 'react-bootstrap';

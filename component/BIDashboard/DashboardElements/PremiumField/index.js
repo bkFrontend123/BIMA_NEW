@@ -12,7 +12,7 @@ export default function PremiumField(props) {
       <div className={`${style.premiumFieldDiv}`}>
         <div className={`${style.premiumField}`}>
           <p>{title}</p>
-          <span><i><RupeeIcon/></i>{cost} {gst == 'true' ? (<small>+ 18% GST</small>) : ( null )}</span>
+          <span><i><RupeeIcon /></i>{cost} {gst == 'true' ? (<small>+ 18% GST</small>) : ( null )}</span>
         </div>
       </div>
     </>

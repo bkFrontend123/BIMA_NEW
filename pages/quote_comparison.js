@@ -64,6 +64,71 @@ export default function QuoteComparison() {
     const goToAllPolicy = () => {
         router.push('/all_policies');
     };
+
+    const firstDivRef = useRef(null);
+    const secondDivRef = useRef(null);
+    const [contentLoaded, setContentLoaded] = useState(false);
+    const [accordianValues, setAccordianValues] = useState(['0','1','2','3'])
+
+    useEffect(() => {
+    // Function to set column heights based on the taller content
+    const setDynamicHeights = () => {
+        window.requestAnimationFrame(() => {
+        const firstDiv = firstDivRef.current;
+        const secondDiv = secondDivRef.current;
+
+        if (firstDiv && secondDiv) {
+            const firstRows = firstDiv.querySelectorAll('.quote-row');
+            const secondRows = secondDiv.querySelectorAll('.quote-row');
+
+            firstRows.forEach((firstRow, index) => {
+            const secondRow = secondRows[index];
+            if (secondRow) {
+                const firstColumns = firstRow.querySelectorAll('.quote-column');
+                const secondColumns = secondRow.querySelectorAll('.quote-column');
+
+                firstColumns.forEach((firstCol, colIndex) => {
+                const secondCol = secondColumns[colIndex];
+                if (secondCol) {
+                    const firstColContentHeight = firstCol.clientHeight;
+                    const secondColContentHeight = secondCol.clientHeight;
+
+                    // Set the column height based on the taller content
+                    const maxHeight = Math.max(firstColContentHeight, secondColContentHeight);
+                    firstCol.style.height = `${maxHeight}px`;
+                    secondCol.style.height = `${maxHeight}px`;
+                }
+                });
+            }
+            });
+        }
+        });
+    };
+
+    // Call the function initially and whenever contentLoaded changes
+    if (contentLoaded) {
+        setDynamicHeights();
+    }
+
+    // Add an event listener for window resize
+    window.addEventListener('resize', setDynamicHeights);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+        window.removeEventListener('resize', setDynamicHeights);
+    };
+    }, [contentLoaded]);
+
+    // Simulate loading content dynamically
+    useEffect(() => {
+    // Simulate loading content asynchronously
+    setTimeout(() => {
+        // Set contentLoaded to true after content is loaded
+        setContentLoaded(true);
+    },); // Adjust the time as needed to simulate content loading
+    }, []);
+
+
     return (
         <>
             <Head>
@@ -97,8 +162,10 @@ export default function QuoteComparison() {
                     </Row>
                 </Container>
                 <div className={`quoteCompareAccordian ${quoteCompare.quoteCompareTable} pb-5 d-none d-lg-block`}>
-                    <Accordion defaultActiveKey={['0']} alwaysOpen>
-                        <div className={`${quoteCompare.quoteCompareLeftCol}`}>
+                    <Accordion allowMultiple defaultActiveKey={['0','1','2','3']} alwaysOpen>
+                        <div className={quoteCompare.container}>
+                        <div className={`${quoteCompare.quoteCompareLeftCol}`} ref={firstDivRef}>
+                            <div className='quote-row'>
                             <div className={`${quoteCompare.quoteCompareHeader}`}>
                                 <div className={`${quoteCompare.quoteCompareTtl}`}>
                                     <div className={`${quoteCompare.quoteCompareBtn}`}><span>Premium</span></div>
@@ -114,7 +181,7 @@ export default function QuoteComparison() {
                                     </Accordion.Header>
                                     <Accordion.Body>
                                         <div className={`${quoteCompare.quoteCompareBodyList}`}>
-                                            <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                            <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                 <QCompareKnowMore
                                                     title="Coverages"
                                                     subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -126,7 +193,7 @@ export default function QuoteComparison() {
                                                 </QCompareKnowMore>
                                                 <div><span>1. Cover for failure / negligence to supervise against any Professional Indemnity related claims Cover for failure / negligence to supervise against any Professional Indemnity related claims</span></div>
                                             </div>
-                                            <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                            <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                 <QCompareKnowMore
                                                     title="Coverages"
                                                     subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -139,7 +206,7 @@ export default function QuoteComparison() {
                                                 <div className={`${quoteCompare.cursor} ${isActiveDeductables ? quoteCompare.inactive : quoteCompare.active}`} onClick={handleClickDeductables}><span>2. Side B</span></div>
                                             </div>
                                             <div className={isActiveDeductables ? 'd-none' : ''}>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
                                                         title="Coverages"
                                                         subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -189,7 +256,7 @@ export default function QuoteComparison() {
                                     </Accordion.Header>
                                     <Accordion.Body>
                                         <div className={`${quoteCompare.quoteCompareBodyList}`}>
-                                            <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                            <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                 <QCompareKnowMore
                                                     title="Coverages"
                                                     subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -214,7 +281,7 @@ export default function QuoteComparison() {
                                     </Accordion.Header>
                                     <Accordion.Body>
                                         <div className={`${quoteCompare.quoteCompareBodyList}`}>
-                                            <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                            <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                 <QCompareKnowMore
                                                     title="Coverages"
                                                     subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -226,7 +293,7 @@ export default function QuoteComparison() {
                                                 </QCompareKnowMore>
                                                 <div><span>1. Side A</span></div>
                                             </div>
-                                            <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                            <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                 <QCompareKnowMore
                                                     title="Coverages"
                                                     subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -239,7 +306,7 @@ export default function QuoteComparison() {
                                                 <div className={`${quoteCompare.cursor} ${isActiveTerritory ? quoteCompare.inactive : quoteCompare.active}`} onClick={handleClickTerritory}><span>2. Side B</span></div>
                                             </div>
                                             <div className={isActiveTerritory ? 'd-none' : ''}>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
                                                         title="Coverages"
                                                         subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -251,7 +318,7 @@ export default function QuoteComparison() {
                                                     </QCompareKnowMore>
                                                     <div><span>a. India</span></div>
                                                 </div>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
                                                         title="Coverages"
                                                         subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -263,7 +330,7 @@ export default function QuoteComparison() {
                                                     </QCompareKnowMore>
                                                     <div><span>b. ROW</span></div>
                                                 </div>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
                                                         title="Coverages"
                                                         subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -289,7 +356,7 @@ export default function QuoteComparison() {
                                     </Accordion.Header>
                                     <Accordion.Body>
                                         <div className={`${quoteCompare.quoteCompareBodyList}`}>
-                                            <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                            <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                 <QCompareKnowMore
                                                     title="Coverages"
                                                     subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -301,7 +368,7 @@ export default function QuoteComparison() {
                                                 </QCompareKnowMore>
                                                 <div><span>1. Side A</span></div>
                                             </div>
-                                            <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                            <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                 <QCompareKnowMore
                                                     title="Coverages"
                                                     subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -314,7 +381,7 @@ export default function QuoteComparison() {
                                                 <div className={`${quoteCompare.cursor} ${isActiveExclusions ? quoteCompare.inactive : quoteCompare.active}`} onClick={handleClickExclusions}><span>2. Side B</span></div>
                                             </div>
                                             <div className={isActiveExclusions ? 'd-none' : ''}>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
                                                         title="Coverages"
                                                         subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -326,7 +393,7 @@ export default function QuoteComparison() {
                                                     </QCompareKnowMore>
                                                     <div><span>a. India</span></div>
                                                 </div>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
                                                         title="Coverages"
                                                         subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -338,7 +405,7 @@ export default function QuoteComparison() {
                                                     </QCompareKnowMore>
                                                     <div><span>b. ROW</span></div>
                                                 </div>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <QCompareKnowMore
                                                         title="Coverages"
                                                         subtitle="1. Dedicated additional limit for Non Executive Directors and Officers"
@@ -355,8 +422,10 @@ export default function QuoteComparison() {
                                     </Accordion.Body>
                                 </div>
                             </Accordion.Item>
+                            </div>
                         </div>
-                        <div className={`${quoteCompare.quoteCompareRightCol}`}>
+                        <div className={`${quoteCompare.quoteCompareRightCol}`} ref={secondDivRef}>
+                            <div className='quote-row'>
                             <ScrollContainer className="scroll-container">
                                 <div className={`${quoteCompare.quoteCompareHeader}`}>
                                     <QCompareHeadCol
@@ -396,7 +465,7 @@ export default function QuoteComparison() {
                                     <div className={`${quoteCompare.quoteCompareBody}`}>
                                         <Accordion.Body>
                                             <div className={`${quoteCompare.quoteCompareBodyList}`}>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <div>
                                                         <span>N/A</span>
                                                     </div>
@@ -413,7 +482,7 @@ export default function QuoteComparison() {
                                                         <span>N/A</span>
                                                     </div>
                                                 </div>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <div>
                                                         <span>₹10.5 Lacs in Total ₹10.5 Lacs in Total ₹10.5 Lacs in Total ₹10.5 Lacs in Total ₹10.5 Lacs in Total ₹10.5 Lacs in Total</span>
                                                     </div>
@@ -431,7 +500,7 @@ export default function QuoteComparison() {
                                                     </div>
                                                 </div>
                                                 <div className={isActiveDeductables ? 'd-none' : ''}>
-                                                    <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                    <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                         <div>
                                                             <span>₹1 Lacs each & every claim</span>
                                                         </div>
@@ -491,7 +560,7 @@ export default function QuoteComparison() {
                                     <div className={`${quoteCompare.quoteCompareBody}`}>
                                         <Accordion.Body>
                                             <div className={`${quoteCompare.quoteCompareBodyList}`}>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <div>
                                                         <span>N/A</span>
                                                     </div>
@@ -516,7 +585,7 @@ export default function QuoteComparison() {
                                     <div className={`${quoteCompare.quoteCompareBody}`}>
                                         <Accordion.Body>
                                             <div className={`${quoteCompare.quoteCompareBodyList}`}>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <div>
                                                         <span>N/A</span>
                                                     </div>
@@ -533,7 +602,7 @@ export default function QuoteComparison() {
                                                         <span>N/A</span>
                                                     </div>
                                                 </div>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <div>
                                                         <span>₹10.5 Lacs in Total</span>
                                                     </div>
@@ -551,7 +620,7 @@ export default function QuoteComparison() {
                                                     </div>
                                                 </div>
                                                 <div className={isActiveTerritory ? 'd-none' : ''}>
-                                                    <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                    <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                         <div>
                                                             <span>₹1 Lacs each & every claim</span>
                                                         </div>
@@ -568,7 +637,7 @@ export default function QuoteComparison() {
                                                             <span>₹1 Lacs each & every claim</span>
                                                         </div>
                                                     </div>
-                                                    <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                    <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                         <div>
                                                             <span>₹2 Lacs each & every claim</span>
                                                         </div>
@@ -585,7 +654,7 @@ export default function QuoteComparison() {
                                                             <span>₹2 Lacs each & every claim</span>
                                                         </div>
                                                     </div>
-                                                    <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                    <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                         <div>
                                                             <span>₹7.5 Lacs each & every claim</span>
                                                         </div>
@@ -611,7 +680,7 @@ export default function QuoteComparison() {
                                     <div className={`${quoteCompare.quoteCompareBody}`}>
                                         <Accordion.Body>
                                             <div className={`${quoteCompare.quoteCompareBodyList}`}>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <div>
                                                         <span>N/A</span>
                                                     </div>
@@ -628,7 +697,7 @@ export default function QuoteComparison() {
                                                         <span>N/A</span>
                                                     </div>
                                                 </div>
-                                                <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                     <div>
                                                         <span>₹10.5 Lacs in Total</span>
                                                     </div>
@@ -646,7 +715,7 @@ export default function QuoteComparison() {
                                                     </div>
                                                 </div>
                                                 <div className={isActiveExclusions ? 'd-none' : ''}>
-                                                    <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                    <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                         <div>
                                                             <span>₹1 Lacs each & every claim</span>
                                                         </div>
@@ -663,7 +732,7 @@ export default function QuoteComparison() {
                                                             <span>₹1 Lacs each & every claim</span>
                                                         </div>
                                                     </div>
-                                                    <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                    <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                         <div>
                                                             <span>₹2 Lacs each & every claim</span>
                                                         </div>
@@ -680,9 +749,9 @@ export default function QuoteComparison() {
                                                             <span>₹2 Lacs each & every claim</span>
                                                         </div>
                                                     </div>
-                                                    <div className={`${quoteCompare.quoteCompareListCol}`}>
+                                                    <div className={`quote-column ${quoteCompare.quoteCompareListCol}`}>
                                                         <div>
-                                                            <span>₹7.5 Lacs each & every claim</span>
+                                                            <span>₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim ₹7.5 Lacs each & every claim</span>
                                                         </div>
                                                         <div>
                                                             <span>₹7.5 Lacs each & every claim</span>
@@ -703,6 +772,8 @@ export default function QuoteComparison() {
                                     </div>
                                 </Accordion.Item>
                             </ScrollContainer>
+                            </div>
+                        </div>
                         </div>
                     </Accordion>
                 </div>

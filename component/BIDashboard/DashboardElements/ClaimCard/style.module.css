@@ -32,6 +32,7 @@
 
     .claimNoCardCol h3 {
         font-size: 22px;
+        line-height: 32px;
     }
 
     .claimNoCardBtn {
@@ -42,8 +43,15 @@
 @media (max-width:767px) {
     .claimNoCardCol {
         padding: 16px;
+        min-height: auto;
+        text-align: left;
+        display: block;
     }
     .claimNoCardCol h3 {
         font-size: 20px;
+        color: var(--black);
+        border-bottom: 1px solid var(--vt-c-gray);
+        line-height: 30px;
+        padding-bottom: 10px;
     }
 }
