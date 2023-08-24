@@ -68,57 +68,74 @@ export default function QuoteComparison() {
     const firstDivRef = useRef(null);
     const secondDivRef = useRef(null);
     const [contentLoaded, setContentLoaded] = useState(false);
-    const [accordianValues, setAccordianValues] = useState(['0','1','2','3'])
+    const [activeKeys, setActiveKeys] = useState(["0"]);
+
+
+    const handleAccordionSelect = (selectedKey) => {
+        // Find if the selectedKey is already in activeKeys
+        const index = activeKeys.indexOf(selectedKey);
+
+        if (index === -1) {
+            // If not present, add it
+            setActiveKeys(selectedKey);
+        } else {
+            // If present, remove it
+            setActiveKeys(activeKeys.filter(key => key !== selectedKey));
+        }
+        // setContentLoaded(true);
+    };
 
     useEffect(() => {
-    // Function to set column heights based on the taller content
-    const setDynamicHeights = () => {
-        window.requestAnimationFrame(() => {
-        const firstDiv = firstDivRef.current;
-        const secondDiv = secondDivRef.current;
-
-        if (firstDiv && secondDiv) {
-            const firstRows = firstDiv.querySelectorAll('.quote-row');
-            const secondRows = secondDiv.querySelectorAll('.quote-row');
-
-            firstRows.forEach((firstRow, index) => {
-            const secondRow = secondRows[index];
-            if (secondRow) {
-                const firstColumns = firstRow.querySelectorAll('.quote-column');
-                const secondColumns = secondRow.querySelectorAll('.quote-column');
-
-                firstColumns.forEach((firstCol, colIndex) => {
-                const secondCol = secondColumns[colIndex];
-                if (secondCol) {
-                    const firstColContentHeight = firstCol.clientHeight;
-                    const secondColContentHeight = secondCol.clientHeight;
-
-                    // Set the column height based on the taller content
-                    const maxHeight = Math.max(firstColContentHeight, secondColContentHeight);
-                    firstCol.style.height = `${maxHeight}px`;
-                    secondCol.style.height = `${maxHeight}px`;
+        // Function to set column heights based on the taller content
+        const setDynamicHeights = () => {
+            window.requestAnimationFrame(() => {
+            const firstDiv = firstDivRef.current;
+            const secondDiv = secondDivRef.current;
+    
+            if (firstDiv && secondDiv) {
+                const firstRows = firstDiv.querySelectorAll('.quote-row');
+                const secondRows = secondDiv.querySelectorAll('.quote-row');
+                console.log("First Rows: ", firstRows)
+                console.log("Second Rows: ", secondRows)
+    
+                firstRows.forEach((firstRow, index) => {
+                const secondRow = secondRows[index];
+                if (secondRow) {
+                    const firstColumns = firstRow.querySelectorAll('.quote-column');
+                    const secondColumns = secondRow.querySelectorAll('.quote-column');
+    
+                    firstColumns.forEach((firstCol, colIndex) => {
+                    const secondCol = secondColumns[colIndex];
+                    if (secondCol) {
+                        firstCol.style.height = "0px";
+                        secondCol.style.height = "0px";
+                        const firstColContentHeight = firstCol.scrollHeight;
+                        const secondColContentHeight = secondCol.scrollHeight;
+                        // Set the column height based on the taller content
+                        const maxHeight = Math.max(firstColContentHeight, secondColContentHeight);
+                        firstCol.style.height = `${maxHeight*2+16}px`;
+                        secondCol.style.height = `${maxHeight*2+16}px`;
+                        }
+                    });
                 }
                 });
             }
             });
+        };
+    
+        // Call the function initially and whenever contentLoaded changes
+        if (contentLoaded) {
+            setDynamicHeights();
         }
-        });
-    };
-
-    // Call the function initially and whenever contentLoaded changes
-    if (contentLoaded) {
-        setDynamicHeights();
-    }
-
-    // Add an event listener for window resize
-    window.addEventListener('resize', setDynamicHeights);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-        window.removeEventListener('resize', setDynamicHeights);
-    };
-    }, [contentLoaded]);
-
+    
+        // Add an event listener for window resize
+        window.addEventListener('resize', setDynamicHeights);
+    
+        // Clean up the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('resize', setDynamicHeights);
+        };
+    }, [contentLoaded, activeKeys]);
     // Simulate loading content dynamically
     useEffect(() => {
     // Simulate loading content asynchronously
@@ -162,7 +179,7 @@ export default function QuoteComparison() {
                     </Row>
                 </Container>
                 <div className={`quoteCompareAccordian ${quoteCompare.quoteCompareTable} pb-5 d-none d-lg-block`}>
-                    <Accordion allowMultiple defaultActiveKey={['0','1','2','3']} alwaysOpen>
+                    <Accordion allowMultiple defaultActiveKey={["0"]} onSelect={handleAccordionSelect} alwaysOpen>
                         <div className={quoteCompare.container}>
                         <div className={`${quoteCompare.quoteCompareLeftCol}`} ref={firstDivRef}>
                             <div className='quote-row'>

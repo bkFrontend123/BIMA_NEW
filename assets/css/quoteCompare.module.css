@@ -183,7 +183,7 @@
     display: block;
     /*max-height: 74px;*/
     overflow: auto;
-    max-height: 300px;
+    max-height: 500px;
 }
 /* width */
 .quoteCompareListCol > div > span::-webkit-scrollbar {
