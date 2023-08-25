@@ -10,7 +10,7 @@
     transition: all 0.4s ease 0s;
 }
 .quoteCompareInfo a:hover {
-    margin-left: -88px;
+    /*margin-left: -88px;*/
 }
 .quoteCompareInfo a img {
     margin-right: 6px;
@@ -19,6 +19,7 @@
     font-size: 15px;
     color: var(--vt-c-blue);
     line-height: 22px;
+    display: none;
 }
 
 .qCmprOffcanvasDiv {

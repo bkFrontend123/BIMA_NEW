@@ -94,7 +94,7 @@
     border-top: 1px solid var(--vt-c-gray);
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: left;
     width: 100%;
     min-width: 305px;
@@ -110,12 +110,12 @@
     display: flex;
     position: relative;
     padding-right: 30px;
-    align-items: center;
+    /*align-items: center;*/
 }
 .quoteCompareListCol > div.cursor span::after {
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 8px;
     width: 1.25rem;
     height: 1.25rem;
     margin-left: auto;
@@ -221,42 +221,42 @@
 @media (min-width: 992px) {
     .quoteCompareTable {
         margin-left: calc(((100% - 960px)/2) + 3%);
-        margin-left: 100px;
+        margin-left: 20px;
     }
 }
 
 @media (min-width: 1200px) {
     .quoteCompareTable {
         margin-left: calc(((100% - 1140px)/2) + 3%);
-        margin-left: 100px;
+        margin-left: 20px;
     }
 }
 
 @media (min-width: 1300px) {
     .quoteCompareTable {
         margin-left: calc(((100% - 1280px)/2) + 5%);
-        margin-left: 100px;
+        margin-left: 20px;
     }
 }
 
 @media (min-width: 1400px) {
     .quoteCompareTable {
         margin-left: calc(((100% - 1400px)/2) + 6%);
-        margin-left: 100px;
+        margin-left: 20px;
     }
 }
 
 @media (min-width: 1600px) {
     .quoteCompareTable {
         margin-left: calc(((100% - 1400px)/2) + 0%);
-        margin-left: 100px;
+        margin-left: 20px;
     }
 }
 
 @media (min-width: 1700px) {
     .quoteCompareTable {
         margin-left: calc(((100% - 1560px)/2) + 2.5%);
-        margin-left: 100px;
+        margin-left: 20px;
     }   
 }
 

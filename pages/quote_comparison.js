@@ -113,8 +113,8 @@ export default function QuoteComparison() {
                         const secondColContentHeight = secondCol.scrollHeight;
                         // Set the column height based on the taller content
                         const maxHeight = Math.max(firstColContentHeight, secondColContentHeight);
-                        firstCol.style.height = `${maxHeight*2+16}px`;
-                        secondCol.style.height = `${maxHeight*2+16}px`;
+                        firstCol.style.height = `${maxHeight+16}px`;
+                        secondCol.style.height = `${maxHeight+16}px`;
                         }
                     });
                 }
@@ -160,7 +160,7 @@ export default function QuoteComparison() {
             <section className='quoteCompareBlock pt-4 pt-md-5'>
                 <Container fluid>
                     <Row className='justify-content-center'>
-                        <Col xl={11}>
+                        <Col xl={11} className="p-md-0">
                             <div className='d-none d-md-flex mb-3'>
                                 <Button type="button" onClick={goToAllPolicy} className='btnCommon btnSmall greyBtn d-flex justify-content-center'>
                                     <BackArrow iconColor="primary" width="22" height="8" />
