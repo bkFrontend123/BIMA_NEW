@@ -141,6 +141,13 @@
     }
 }
 
+@media (max-width:991px) {
+    .quoteCardCol {
+        padding: 20px;
+    }
+
+}
+
 @media (max-width:767px) {
     .quoteCardCol {
         padding: 16px;

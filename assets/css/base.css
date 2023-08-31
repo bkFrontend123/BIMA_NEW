@@ -789,8 +789,8 @@ h2.font-secondary {
   .cardsSlider .swiper-wrapper {
     display: block;
     transform: inherit !important;
-    overflow: hidden;
-    margin-top: -1.5rem;
+    overflow: visible;
+    margin-top: 0;
   }
   .cardsSliderItemTwo.cardsSlider .swiper-wrapper {
     margin: -1.5rem -0.75rem 0 -0.75rem;

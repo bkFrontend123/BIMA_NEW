@@ -187,7 +187,8 @@ export default function FireAndBurglary_Insurance() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        router.push('/fire-and-burglary-flow');
+        //router.push('/fire-and-burglary-flow');
+        router.push('/thank-you');
     };
     return (
         <>
@@ -205,7 +206,7 @@ export default function FireAndBurglary_Insurance() {
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="2,100"
                         productImgSrc={productImage}
-                        form="false"
+                        form="true"
                         formHeading="Fire Insurance"
                         customClass="fireBnr"
                     >

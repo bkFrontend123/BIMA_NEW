@@ -29,9 +29,9 @@ export default function YourQuotes() {
 
   const [filterYearValue, setFilterYearValue] = useState(3);
   const filterYearOptions = [
-      {name: '2021', value: '1'},
-      {name: '2022', value: '2'},
-      {name: '2023', value: '3'},
+      {name: '2021-2022', value: '1'},
+      {name: '2022-2023', value: '2'},
+      {name: '2023-2024', value: '3'},
   ];
 
   const [sumInsuredValue, setSumInsuredValue] = useState();
@@ -166,7 +166,7 @@ export default function YourQuotes() {
                   dateTime={item.dateTime}
                 >
                   <Row className="g-3 align-items-center">
-                    <Col md={8}>
+                    <Col xxl={8} xl={10}>
                       <Row className="g-3 align-items-center">
                         <Col md>
                           <hr className="mt-0 mb-3 d-md-none" />
@@ -201,7 +201,7 @@ export default function YourQuotes() {
                         </Col>
                       </Row>
                     </Col>
-                    <Col md={4}>
+                    <Col xxl={4} xl={5} md={6}>
                       <Row className="g-3 align-items-center">
                         <Col md={7}>
                           <ButtonItem

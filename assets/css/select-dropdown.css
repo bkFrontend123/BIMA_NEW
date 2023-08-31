@@ -129,7 +129,7 @@
 .selectDropFilterDiv.selectDropDiv .select-search-input {
     background-color: transparent;
     height: 50px;
-    max-width: 120px;
+    max-width: 140px;
 }
 .searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,
 .selectDropDivSmall.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,

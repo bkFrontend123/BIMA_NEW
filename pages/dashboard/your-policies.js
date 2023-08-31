@@ -152,7 +152,7 @@ export default function YourPolicies() {
                   statusType={item.statusType}
                 >
                   <Row className="g-3 align-items-center">
-                    <Col md={8} lg={9}>
+                    <Col xxl={9} xl={10}>
                       <Row className="g-3 align-items-center">
                         <Col md>
                           <hr className="mt-0 mb-3 d-md-none" />
@@ -179,7 +179,7 @@ export default function YourPolicies() {
                         </Col>
                       </Row>
                     </Col>
-                    <Col md={4} lg={3}>
+                    <Col xxl={3} xl={4} md={4}>
                       <Row className="g-3 align-items-center">
                         <Col md={12}>
                           <ButtonItem

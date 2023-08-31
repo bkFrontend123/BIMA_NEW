@@ -187,7 +187,8 @@ export default function MarineCargo_Insurance() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        router.push('/directors_and_officers_form');
+        //router.push('/marine-cargo-flow');
+        router.push('/thank-you');
     };
     return (
         <>
@@ -205,7 +206,7 @@ export default function MarineCargo_Insurance() {
                         insuranceWorth="20 Lakhs"
                         insuranceAmount="700"
                         productImgSrc={productImage}
-                        form="false"
+                        form="true"
                         formHeading="Marine Cargo Insurance"
                         customClass="marineBnr"
                     >

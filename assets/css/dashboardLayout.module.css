@@ -349,8 +349,8 @@
 
 @media (max-width:1699px) {
     .dashSidebar {
-        width: 300px;
-        padding: 40px 32px;
+        width: 270px;
+        padding: 32px 24px;
     }
 
     .dashboardOuterSmall .dashSidebar {
@@ -358,12 +358,12 @@
     }
 
     .dashboardMainCard {
-        margin-left: 300px;
-        padding: 32px;
+        margin-left: 270px;
+        padding: 24px;
     }
 
     .hideSidebarBtn {
-        left: 288px;
+        left: 258px;
         top: 135px;
     }
 
@@ -379,7 +379,7 @@
         margin-top: 40px;
     }
 
-    .sdbrLnksItem+.sdbrLnksItem {
+    .sdbrLnksItem + .sdbrLnksItem {
         margin-top: 36px;
     }
 
@@ -389,7 +389,7 @@
     }
 }
 
-@media (min-width:992px) and (max-width:1400px) {
+@media (min-width:992px) and (max-width:1420px) {
     .dashboardOuterMedium {
         overflow: visible;
     }
@@ -400,12 +400,12 @@
 
     .dashboardOuterMedium .dashSidebar {
         width: 109px;
-        padding: 40px 24px;
+        padding: 24px;
     }
 
     .dashboardOuterMedium.dashboardOuterSmall .dashSidebar {
-        width: 300px;
-        padding: 40px 32px;
+        width: 270px;
+        padding: 32px 24px;
     }
 
     .dashboardOuterMedium .dashboardMainCard {
@@ -413,14 +413,14 @@
         margin-right: 0;
         overflow: visible;
         height: auto;
-        padding: 32px 50px 32px 32px;
+        padding: 24px;
     }
 
     .dashboardOuterMedium.dashboardOuterSmall .dashboardMainCard {
         margin-right: -191px;
         overflow: hidden;
         height: 100vh;
-        margin-left: 300px;
+        margin-left: 270px;
     }
 
     .dashboardOuterMedium .dashboardMainCard {
@@ -432,7 +432,7 @@
     }
 
     .dashboardOuterMedium.dashboardOuterSmall .hideSidebarBtn {
-        left: 286px;
+        left: 258px;
     }
 
     .dashboardOuterMedium .sdbrDrop {
@@ -467,7 +467,11 @@
         width: auto;
         height: auto;
     }
-
+    
+    .sdbrLnksItem + .sdbrLnksItem {
+        margin-top: 30px;
+    }
+    
     .dashboardOuterMedium .sdbrLnksItem .sdbrLnksAnchor {
         justify-content: center;
     }
@@ -488,6 +492,20 @@
         visibility: visible;
         margin-left: 16px;
         display: block;
+    }
+    .dashboardHeader {
+        padding: 20px 12px;
+    }
+    .dashUserProCol h4,
+    .dashUserInfoCol h4 {
+        font-size: 16px;
+    }
+    .dashUserProCol > span {
+        min-width: 55px;
+        height: 55px;
+        border-radius: 55px;
+        margin-right: 12px;
+        font-size: 30px;
     }
 }
 
@@ -520,13 +538,17 @@
 
     .dashboardMainCard {
         margin-left: 0;
-        padding: 133px 20px 40px 24px;
+        padding: 104px 20px 20px 20px;
     }
 
     .dashboardOuterSmall .dashboardMainCard {
         margin-left: 0;
         overflow: hidden;
         height: 100vh;
+    }
+
+    .dashboardHeader {
+        padding: 20px;
     }
 
     .dashboardMobileHeader {

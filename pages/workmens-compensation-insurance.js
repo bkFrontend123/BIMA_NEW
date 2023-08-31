@@ -187,7 +187,8 @@ export default function WorkmensCompensation_Insurance() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        router.push('/workmens-compensation-flow');
+        //router.push('/workmens-compensation-flow');
+        router.push('/thank-you');
     };
     return (
         <>
@@ -205,7 +206,7 @@ export default function WorkmensCompensation_Insurance() {
                         insuranceWorth="15 Lakhs"
                         insuranceAmount="1,200"
                         productImgSrc={productImage}
-                        form="false"
+                        form="true"
                         formHeading="WC Policy"
                         customClass="wrkmnCmpBnr"
                     >

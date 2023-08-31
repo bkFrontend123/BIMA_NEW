@@ -45,6 +45,11 @@
 .shopCovrgBtns {
   margin-top: 16px;
 }
+.shopActnBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
 @media (max-width: 1699px) {
   .shopCovrgCol {
@@ -52,6 +57,18 @@
   }
   .shopCovrgTtl h3 {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .shopCovrgCol {
+    padding: 20px;
+  }
+  .shopCovrgTtl h3 {
+    font-size: 20px;
+  }
+  .shopCovrgCol p {
+    font-size: 15px;
   }
 }
 

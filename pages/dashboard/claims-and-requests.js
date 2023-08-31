@@ -37,7 +37,7 @@ export default function ClaimsAndRequests() {
           <Col md>
             <ClaimFileCard />
           </Col>
-          <Col md={1}></Col>
+          <Col lg={1} className='d-none d-lg-block'></Col>
           <Col md>
             <div className="d-md-none mb-4">
               <DashboardHeadingItem
