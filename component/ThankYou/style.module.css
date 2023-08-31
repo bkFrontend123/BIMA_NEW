@@ -1,0 +1,32 @@
+.thankCntnt > span {
+    display: inline-block;
+}
+.thankCntnt > p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+@media (max-width:1699px) {
+    .thankCntnt > p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width:1399px) {
+
+}
+
+@media (max-width:767px) {
+    .thankIcon {
+        width: 80px;
+        height: 80px;
+    }
+    .thankCntnt > p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+}

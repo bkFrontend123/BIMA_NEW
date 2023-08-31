@@ -15,6 +15,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
+import ThankYou from '../component/ThankYou'
 import TalkExpert from '../component/TalkExpert'
 import RatingCard from '../component/RatingCard'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
@@ -246,6 +247,7 @@ export default function MarineCargo_Insurance() {
                                 </div>
                             </div>
                         </Form>
+                        <ThankYou />
                     </ProductBanner>
                 </div>
                 {/* product banner end */}

@@ -14,44 +14,40 @@ export default function FaqQuestions() {
                     </div>
                     <div className='mt-4'>
                         <Accordion
-                            title="How does business insurance work?"
-                            content="Business insurance shields you against unanticipated situations. It protects your company from legal battles, accidents, natural disasters, and other unforeseeable events. While buying business insurance might seem like a complex process, our experts at BimaKavach simplify the entire process, making it hassle-free for you. We'll walk you through every step, freeing you up to focus on what you do best: operating your business!"
+                            title="Why do I need insurance for my business?"
+                            content="Every business needs to protect its assets, legal liabilities, and employees from potential harm. Business insurance protects them against unforeseen events like legal issues, accidents, and natural disasters. It is essential to safeguard your business against potential risks and financial losses."
                         />
                         <Accordion
-                            title="How long does it take to get a business insurance quote via BimaKavach?"
-                            content="BimaKavach offers fast and easy business insurance quotes that help you safeguard your business quickly and efficiently. By answering a few simple questions, you get the insurance quote you need in just a matter of minutes."
+                            title="How can BimaKavach help me in buying insurance for my business?"
+                            content="BimaKavach offers the convenience of an online platform for quick comparisons and purchase of business insurance policies. We have picked the best coverages for your industry so your crucial risks are covered and our algorithms generate the best price from multiple insurance companies. There is no need to wait days and weeks to get quotes anymore. We welcome any discussions or questions you may have before you purchase the policies."
                         />
                         <Accordion
-                            title="Can I buy insurance online?"
-                            content="Yes, you can conveniently buy insurance online through various platforms, including BimaKavach, offering a seamless purchasing experience. Depending on the nature of your business, we involve the right experts to make sure that your business gets well-curated coverage."
+                            title="Is it safe to buy insurance online?"
+                            content={[<>
+                                <div>Buying insurance online is usually safe but it is important to adhere to the following best practices:</div>
+                                <div className='mt-3'>Always purchase from IRDAI-registered insurance brokers like BimaKavach</div>
+                                <div className='mt-3'>Make sure that your broker has the right expertise and claims support available. A lot of claims are rejected because of mistakes that happen during the purchase process.</div>
+                                <div className='mt-3'>Always ensure that the online platform has secure payment gateways and maintains strict data privacy standards.</div>
+                            </>]}
                         />
                         <Accordion
-                            title="Is it safe to buy online?"
-                            content="Yes, buying online is generally safe, but it is recommended to choose an IRDAI-registered insurance broker like BimaKavach before purchasing any business insurance policy."
+                            title="How does pricing work for insurance policies?"
+                            content={[<>
+                                <div>Pricing is determined by the nature and quantum of risks. Different insurance companies view risks differently and may have different pricing structures. A competitive insurance broker will be able to understand the nature of risks in your business, recommend the right policies and coverages, and then fetch you the best price from multiple insurers.</div>
+                                <div className='mt-3'>While this process can be quite cumbersome, BimaKavach has simplified it by creating the best coverages for your industry in advance. Hence, we are able to provide battle-tested and reliable recommendations along with pricing quotes in a fraction of the time.</div>
+                            </>]}
                         />
                         <Accordion
-                            title="Is BimaKavach (really) cost-effective?"
-                            content="Yes, we offer the most cost-effective quotes from top insurance companies in India. Because of our focus on technology and deep relationships with insurance companies, we are able to get the cheapest quotes for our clients."
+                            title="Who is responsible for getting my claims processed?"
+                            content="A competent insurance broker will handle claims for you. However, significant underwriting experience and proactiveness are required to handle claims properly. BimaKavach has 24x7 claims support which you can trust to handle the most complex of cases. We get the right information and documentation from you and liaison with the insurance company on your behalf. You may be surprised to know that most business insurance claims are rejected because of missing coverages, underinsurance, or errors made while filling out the policy proposal forms. BimaKavach’s digital process and strong industry expertise ensure that no errors happen and that your policy includes the coverages crucial for your business."
                         />
                         <Accordion
-                            title="Online or offline, which mode of buying insurance is easy?"
-                            content="Buying insurance online is easy, as it offers convenience, quick comparisons, and a hassle-free documentation process, eliminating the need for physical visits or paperwork. However, please ensure that you buy from IRDAI-registered brokers that have expert underwriters to guide you through the process."
+                            title="I already have existing business insurance policies. How can BimaKavach help me?"
+                            content="It is really good that you have taken the right step towards business longevity. BimaKavach provides a complementary risk assessment service to audit your current policies and highlight any missing coverages, avenues to save costs and policy errors. With our focused expertise in business insurance, our insurance experts have strengthened our client’s policies and reduced costs at the same time."
                         />
                         <Accordion
-                            title="How can I renew my online insurance?"
-                            content="Renewing your insurance online is a quick and hassle-free process. We kindly notify you about your policy renewal, ensuring you get all the benefits. You have the flexibility to make the payment using various convenient methods and effortlessly renew your policy."
-                        />
-                        <Accordion
-                            title="How do I raise a claim?"
-                            content="BimaKavach provides 24x7 claims support. Notify your account manager as soon as possible about the occurrence, and our team will get involved right away to ensure that you receive the claim as per your policy."
-                        />
-                        <Accordion
-                            title="How does BimaKavach work?"
-                            content="At BimaKavach, we believe in three key principles: simple, fast, and transparent. We genuinely care about our customers and provide customized insurance quotes that precisely suit their business needs."
-                        />
-                        <Accordion
-                            title="Does BimaKavach maintain the privacy of data?"
-                            content="Yes, we maintain the privacy of our customer data as it is our core value."
+                            title="How does BimaKavach ensure data privacy?"
+                            content="Customer data privacy is paramount to us. We implement rigorous security measures and protocols to protect your data. For detailed information, you can refer to our Privacy Policy. "
                         />
                     </div>
                 </div>
