@@ -534,3 +534,20 @@
         margin-top: 20px;
     }
 }
+
+.formEditField {
+    background: var(--mute3);
+    border: 1px solid var(--vt-c-gray);
+    padding: 16.27px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.formEditField span {
+    font-size: 16px;
+    color: var(--greyDark1);
+}
+.formEditFieldBtn {
+    padding: 0;
+    border: 0;
+}
