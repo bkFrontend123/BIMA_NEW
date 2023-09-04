@@ -61,17 +61,21 @@ export default function IndustryBlock() {
               <div key={item.id} className="col-xl-3 col-lg-4 col-6">
                 <div className='onhoverAnimation'>
                   <div className={`homeBannerProduct-card d-lg-flex w-100 align-items-center ${item.class}`}>
-                    <Image
+                  <Link className='text-decoration-none d-lg-flex align-items-center text-black' href={item.titleLink}>
+                    <div>
+                      <Image
                       // loader={myLoader}
                       src={item.img}
                       alt="Bimakavach"
                       width={52}
                       height={52}
                       loading="lazy"
-                    />
-                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                      <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
+                      />
                     </div>
+                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
+                      {item.title} <br/>{item.subtitle}
+                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -91,6 +95,8 @@ export default function IndustryBlock() {
               <div key={item.id} className="col-xl-3 col-lg-4 col-6">
                 <div className='onhoverAnimation'>
                   <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
+                  <Link className='text-decoration-none d-lg-flex align-items-center text-black' href={item.titleLink}>
+                    <div>
                     <Image
                       // loader={myLoader}
                       src={item.img}
@@ -99,9 +105,11 @@ export default function IndustryBlock() {
                       height={52}
                       loading="lazy"
                     />
-                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                      <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
                     </div>
+                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
+                     {item.title} <br/>{item.subtitle}
+                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -121,6 +129,8 @@ export default function IndustryBlock() {
               <div key={item.id} className="col-xl-3 col-lg-4 col-6">
                 <div className='onhoverAnimation'>
                   <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
+                  <Link className='text-decoration-none d-lg-flex align-items-center text-black' href={item.titleLink}>
+                    <div>
                     <Image
                       src={item.img}
                       alt="Bimakavach"
@@ -128,9 +138,11 @@ export default function IndustryBlock() {
                       height={52}
                       loading="lazy"
                     />
-                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                      <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
                     </div>
+                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
+                      {item.title} <br/>{item.subtitle}
+                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -178,6 +190,8 @@ export default function IndustryBlock() {
               <div key={item.id} className="col-xl-3 col-lg-4 col-6">
                 <div className='onhoverAnimation'>
                   <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
+                  <Link className='text-decoration-none d-lg-flex align-items-center text-black' href={item.titleLink}>
+                    <div>
                     <Image
                       // loader={myLoader}
                       src={item.img}
@@ -186,9 +200,11 @@ export default function IndustryBlock() {
                       height={52}
                       loading="lazy"
                     />
-                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                      <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
                     </div>
+                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
+                      {item.title} <br/>{item.subtitle}
+                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>

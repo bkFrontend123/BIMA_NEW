@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
-
+import productStyle from '@/assets/css/product.module.css'
 import Accordion from '../../Accordion'
 
 export default function FaqQuestions() {
@@ -24,10 +24,16 @@ export default function FaqQuestions() {
                         <Accordion
                             title="Is it safe to buy insurance online?"
                             content={[<>
-                                <div>Buying insurance online is usually safe but it is important to adhere to the following best practices:</div>
-                                <div className='mt-3'>Always purchase from IRDAI-registered insurance brokers like BimaKavach</div>
+                                <span>Buying insurance online is usually safe but it is important to adhere to the following best practices:</span>
+                                <ul className={`mt-3 ${productStyle.listData}`}>
+                                    <li>Always purchase from IRDAI-registered insurance brokers like BimaKavach</li>
+                                    <li>Make sure that your broker has the right expertise and claims support available. A lot of claims are rejected because of mistakes that happen during the purchase process.</li>
+                                    <li>Always ensure that the online platform has secure payment gateways and maintains strict data privacy standards.</li>
+                                </ul>
+
+                                {/* <div className='mt-3'>Always purchase from IRDAI-registered insurance brokers like BimaKavach</div>
                                 <div className='mt-3'>Make sure that your broker has the right expertise and claims support available. A lot of claims are rejected because of mistakes that happen during the purchase process.</div>
-                                <div className='mt-3'>Always ensure that the online platform has secure payment gateways and maintains strict data privacy standards.</div>
+                                <div className='mt-3'></div> */}
                             </>]}
                         />
                         <Accordion
