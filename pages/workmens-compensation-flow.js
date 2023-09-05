@@ -734,18 +734,6 @@ export default function WorkmensCompensation_Flow() {
                                                                 ) : (
                                                                     null
                                                                 )}
-                                                                <Form.Group className="floatFormGroup mb-4">
-                                                                    <FloatingLabel
-                                                                        controlId="pincode"
-                                                                        label="Pincode">
-                                                                        <Form.Control
-                                                                            className={`${form.formInput}`}
-                                                                            type="text"
-                                                                            placeholder="Enter your 6 digit pincode"
-                                                                            required
-                                                                        />
-                                                                    </FloatingLabel>
-                                                                </Form.Group>
                                                                 <Form.Label htmlFor="periodInsurance" className={`${form.formLabel}`}>What is the period of issurance?</Form.Label>
                                                                 <Form.Group className={`selectDropDiv mb-4 ${!periodInsuranceValue == '' ? 'selectedDropDiv' : null}`}>
                                                                     <SelectSearch
@@ -815,6 +803,18 @@ export default function WorkmensCompensation_Flow() {
                                                                 ) : (
                                                                     null
                                                                 )}
+                                                                <Form.Label htmlFor="pincode" className={`${form.formLabel}`}>Pincode</Form.Label>
+                                                                <Form.Group className="floatFormGroup mb-4">
+                                                                    <FloatingLabel
+                                                                        controlId="pincode">
+                                                                        <Form.Control
+                                                                            className={`${form.formInput}`}
+                                                                            type="text"
+                                                                            placeholder="Enter your 6 digit pincode"
+                                                                            required
+                                                                        />
+                                                                    </FloatingLabel>
+                                                                </Form.Group>
                                                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
                                                                     <Button onClick={goToNextPage} variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button">
                                                                         <span className='me-2'>Continue</span>
