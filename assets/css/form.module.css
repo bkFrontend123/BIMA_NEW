@@ -6,6 +6,7 @@
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
     padding: 40px;
     position: relative;
+    width: 100%;
 }
 .frmBack {
     margin-bottom: 30px;
@@ -367,6 +368,22 @@
 .addCatBtn {
     color: var(--vt-c-yellow);
 }
+.formEditField {
+    background: var(--mute3);
+    border: 1px solid var(--vt-c-gray);
+    padding: 16.27px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.formEditField span {
+    font-size: 16px;
+    color: var(--greyDark1);
+}
+.formEditFieldBtn {
+    padding: 0;
+    border: 0;
+}
 .fromButtonDiv {
     gap: 3rem;
 }
@@ -522,6 +539,12 @@
         left: 12px;
         top: 15px;
     }
+    .formEditField {
+        padding: 13px 16px;
+    }
+    .formEditField span {
+        font-size: 15px;
+    }
     .fromButtonDiv button {
         width: 100%;
         justify-content: center;
@@ -535,19 +558,14 @@
     }
 }
 
-.formEditField {
-    background: var(--mute3);
-    border: 1px solid var(--vt-c-gray);
-    padding: 16.27px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.editingModeForm .formBlock:not(.active),
+.editingModeForm > .fromButtonDiv {
+    display: none !important;
 }
-.formEditField span {
-    font-size: 16px;
-    color: var(--greyDark1);
+
+.formBlock .frmBack {
+    display: none;
 }
-.formEditFieldBtn {
-    padding: 0;
-    border: 0;
+.editingModeForm .formBlock .frmBack {
+    display: block;
 }
