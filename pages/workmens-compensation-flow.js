@@ -338,11 +338,6 @@ export default function WorkmensCompensation_Flow() {
                                                                                             <Image src={arrowBack} alt="Back Arrow" /> Employee Details {employee.id}
                                                                                         </span>
                                                                                     </Col>
-                                                                                    <Col md="auto">
-                                                                                        <div className={`${progress.progressDiv} ${progress.smallProgress} ${progress.noRadiusProgress} ${progress.noLabel} ${progress.warning}`}>
-                                                                                            <ProgressBar now={40} />
-                                                                                        </div>
-                                                                                    </Col>
                                                                                 </Row>
                                                                             </div>
                                                                             <Form.Group className={`selectDropDiv searchDropDiv tooltipDiv mb-4 ${employee.occupancy ? 'selectedDropDiv' : ''}`}>

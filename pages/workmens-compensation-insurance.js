@@ -188,8 +188,8 @@ export default function WorkmensCompensation_Insurance() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        //router.push('/workmens-compensation-flow');
-        router.push('/thank-you');
+        router.push('/workmens-compensation-flow');
+        //router.push('/thank-you');
     };
     return (
         <>
@@ -247,7 +247,7 @@ export default function WorkmensCompensation_Insurance() {
                                 </div>
                             </div>
                         </Form>
-                        <ThankYou />
+                        {/*<ThankYou />*/}
                     </ProductBanner>
                 </div>
                 {/* product banner end */}
