@@ -824,11 +824,3 @@ h2.font-secondary {
     margin-left: -10px;
   }
 }
-
-.formBlock:not(.active) {
-  //display: none;
-}
-
-.your-parent-div-class {
-  
-}

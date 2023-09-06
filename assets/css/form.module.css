@@ -384,6 +384,16 @@
     padding: 0;
     border: 0;
 }
+.editingModeForm .formBlock:not(.active),
+.editingModeForm > .fromButtonDiv {
+    display: none !important;
+}
+.formBlock .frmBack {
+    display: none;
+}
+.editingModeForm .formBlock .frmBack {
+    display: block;
+}
 .fromButtonDiv {
     gap: 3rem;
 }
@@ -556,16 +566,4 @@
     .frmftr {
         margin-top: 20px;
     }
-}
-
-.editingModeForm .formBlock:not(.active),
-.editingModeForm > .fromButtonDiv {
-    display: none !important;
-}
-
-.formBlock .frmBack {
-    display: none;
-}
-.editingModeForm .formBlock .frmBack {
-    display: block;
 }
