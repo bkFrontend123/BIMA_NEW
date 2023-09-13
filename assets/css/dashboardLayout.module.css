@@ -1,8 +1,7 @@
 .dashboardOuter {
     background: var(--mute3);
     position: relative;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
 }
 
 .dashboardMobileHeader {
@@ -80,7 +79,6 @@
     padding: 40px;
     margin-top: 90px;
     min-height: 100vh;
-    overflow: auto;
     transition: all 0.3s ease 0s;
 }
 
