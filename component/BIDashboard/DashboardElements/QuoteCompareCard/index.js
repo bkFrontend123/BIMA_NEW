@@ -18,7 +18,7 @@ export default function QuoteCard(props) {
 
   const router = useRouter();
   const goToYourQuotePage = () => {
-    router.push('/dashboard/your-quotes');
+    router.push('/dashboard/quotes');
   };
 
   return (

@@ -12,7 +12,10 @@
     color: var(--black);
     font-weight: 500;
     display: inline-block;
-    margin-right: 0.8rem;
+}
+
+.fltrDropCard > div {
+    margin-left: 16px;
 }
 
 @media (max-width:1699px) {
@@ -24,6 +27,5 @@
 @media (max-width:767px) {
     .fltrDropCard span {
         font-size: 14px;
-        margin-right: 0.5rem;
     }
 }

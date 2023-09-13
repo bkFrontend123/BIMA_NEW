@@ -32,6 +32,9 @@
 .minWidth3.btnCommon {
     min-width: 200px;
 }
+.minWidth4.btnCommon {
+    min-width: 240px;
+}
 
 .btnCommon:hover {
     color: var(--vt-c-blueSky);
@@ -63,6 +66,13 @@
     top: -3px;
 }
 
+.btnCommon .iconLeft {
+    margin-right: 6px;
+    position: relative;
+    left: 0;
+    top: -3px;
+}
+
 .btnCommon:hover {
     background: var(--vt-c-blueSkyHover);
     color: var(--whiteText);
@@ -80,6 +90,20 @@
     background: var(--vt-c-yellow);
     color: var(--black);
     box-shadow: 0px 8px 30px rgba(255, 81, 0, 0.2);
+}
+
+.btnGray.btnCommon {
+    background: var(--vt-c-gray);
+    color: var(--black);
+}
+
+.btnGray.btnCommon svg path {
+    fill: var(--black) !important;
+}
+
+.btnGray.btnCommon:hover {
+    border-color: var(--vt-c-gray1) !important;
+    background: var(--vt-c-gray1);
 }
 
 .btnWhite.btnCommon {

@@ -70,7 +70,7 @@ export default function ShopCoverages() {
       </Head>
       <DashboardCard
         talkExpert="himani"
-        activeMenu="4"
+        activeMenu="5"
       >
         <DashboardPageTitle
           title="Shop Coverages"
@@ -128,8 +128,6 @@ export default function ShopCoverages() {
             )}
           </Swiper>
         </div>
-
-        <NoItemCard customClass="mt-4">No Insurance Coverages Found</NoItemCard>
       </DashboardCard>
     </>
   )

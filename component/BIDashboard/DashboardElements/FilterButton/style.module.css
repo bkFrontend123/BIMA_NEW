@@ -7,7 +7,7 @@
     color: var(--vt-c-blue);
     font-weight: 500;
     cursor: pointer;
-    line-height: 48.23px;
+    line-height: 38.23px;
     display: inline-block;
 }
 
@@ -22,8 +22,8 @@
 
 @media (max-width:1699px) {
     .fltrBtn {
-        font-size: 15px;
-        line-height: 42.4px;
+        font-size: 14px;
+        line-height: 34.4px;
     }
 }
 

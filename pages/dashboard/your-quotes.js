@@ -25,7 +25,7 @@ import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
-export default function YourQuotes() {
+export default function YourQuotesOld() {
 
   const [filterYearValue, setFilterYearValue] = useState(3);
   const filterYearOptions = [
@@ -96,7 +96,6 @@ export default function YourQuotes() {
         <link rel="canonical" href="" />
       </Head>
       <DashboardCard
-        talkExpert="himani"
         activeMenu="1"
       >
         <DashboardPageTitle

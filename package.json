@@ -21,6 +21,7 @@
     "react-audio-player": "^0.17.0",
     "react-bootstrap": "^2.7.2",
     "react-calendly": "^4.1.1",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-indiana-drag-scroll": "^2.2.0",
     "react-paginate": "^8.1.4",

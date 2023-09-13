@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function IconLogout() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 18.572 18.571">
+    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 18.572 18.571">
       <g id="logout_2_" data-name="logout (2)" transform="translate(0 -0.008)">
         <path id="Path_956" data-name="Path 956" d="M285.264,209.169h-7.351a.58.58,0,1,1,0-1.161h7.351a.58.58,0,1,1,0,1.161Zm0,0" transform="translate(-267.273 -200.455)" fill="currentColor"/>
         <path id="Path_957" data-name="Path 957" d="M400.584,134.935a.581.581,0,0,1-.41-.991l2.492-2.492-2.492-2.492a.581.581,0,0,1,.821-.821l2.9,2.9a.581.581,0,0,1,0,.821l-2.9,2.9A.577.577,0,0,1,400.584,134.935Zm0,0" transform="translate(-385.495 -123.32)" fill="currentColor"/>

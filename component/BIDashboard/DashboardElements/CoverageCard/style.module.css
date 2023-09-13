@@ -2,8 +2,7 @@
   background: var(--whiteBg);
   position: relative;
   padding: 32px;
-  border-radius: 0;
-  box-shadow: 0 0 20px rgba(35, 32, 32, 0.04);
+  border: 1px solid var(--vt-c-gray1);
 }
 .shopCovrgTtl {
   position: relative;
@@ -99,6 +98,7 @@
     left: 16px;
     right: 16px;
     bottom: 16px;
+    top: inherit;
   }
   .shopActnBtn a svg {
     width: 28px;

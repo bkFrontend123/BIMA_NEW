@@ -1,7 +1,8 @@
 .dashboardOuter {
     background: var(--mute3);
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .dashboardMobileHeader {
@@ -26,13 +27,14 @@
 }
 
 .dashSidebar {
-    background: var(--whiteBg);
+    background: var(--mute3);
     position: fixed;
     left: 0;
-    top: 0;
+    top: 90px;
     bottom: 0;
-    width: 380px;
-    padding: 50px 60px;
+    width: 320px;
+    padding: 40px 0 156px 0;
+    border-right: 1px solid var(--vt-c-gray1);
     overflow-y: auto;
     z-index: 99;
     transition: all 0.3s ease 0s;
@@ -74,9 +76,11 @@
 
 .dashboardMainCard {
     position: relative;
-    margin-left: 380px;
+    margin-left: 320px;
     padding: 40px;
+    margin-top: 90px;
     min-height: 100vh;
+    overflow: auto;
     transition: all 0.3s ease 0s;
 }
 
@@ -90,6 +94,7 @@
     top: 142px;
     transition: all 0.3s ease 0s;
     z-index: 999;
+    display: none;
 }
 
 .dashboardOuterSmall .hideSidebarBtn {
@@ -222,16 +227,12 @@
     height: 56px;
 }
 
-.sdbrLnksList {
-    margin-top: 60px;
-}
-
 .sdbrLnksItem {
     position: relative;
 }
 
 .sdbrLnksItem + .sdbrLnksItem {
-    margin-top: 50px;
+    margin-top: 32px;
 }
 
 .sdbrLnksItem .sdbrLnksAnchor {
@@ -239,23 +240,25 @@
     align-items: center;
     min-width: 100%;
     width: 100%;
-    color: #7B8EB5;
+    color: var(--gray);
     transition: all 0.3s ease 0s;
+    border-left: 3px solid transparent;
+    padding: 0 40px;
 }
 
 .sdbrLnksItem .sdbrLnksAnchor:hover,
 .sdbrLnksItem.active .sdbrLnksAnchor,
 .sdbrLnksItem.active .sdbrLnksAnchor:hover {
     color: var(--vt-c-blue);
+    border-color: var(--vt-c-blue);
 }
 
-.sdbrLnksItem span {
+.sdbrLnksItem .sdbrLnksAnchor > span {
     display: inline-block;
     vertical-align: top;
-    width: 28px;
     text-align: center;
     position: relative;
-    top: -4px;
+    top: -2px;
 }
 
 .sdbrLnksItem h4 {
@@ -263,6 +266,17 @@
     color: inherit;
     margin: 0 0 0 18px;
     transition: all 0.3s ease 0s;
+}
+
+.sdbrLnksItem h4 span {
+    display: inline-block;
+    background-color: var(--error);
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
 }
 
 .dashboardOuterSmall .sdbrLnksItem .sdbrLnksAnchor {
@@ -276,12 +290,31 @@
     display: none;
 }
 
+.sdbrHelpBox {
+    border: 1px solid var(--vt-c-grayLight3);
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    padding: 16px;
+}
+
+.sdbrHelpBox > p {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
 .dashboardHeader {
-    background: var(--whiteText);
-    position: relative;
-    padding: 27px 34px;
-    border-radius: 0;
-    height: 100%;
+    background: var(--mute3);
+    position: fixed;
+    padding: 24.6px 34px;
+    border-bottom: 1px solid var(--vt-c-gray1);
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 9;
 }
 
 .dashUserProCol {
@@ -290,15 +323,17 @@
 }
 
 .dashUserProCol > span {
-    background: var(--vt-c-yellow-soft);
-    min-width: 60px;
-    height: 60px;
+    background: var(--vt-c-blueSkyLight1);
     display: flex;
-    border-radius: 60px;
-    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    margin-right: 0;
     text-align: center;
-    font-size: 32px;
-    color: var(--vt-c-yellow);
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
     align-items: center;
     justify-content: center;
 }
@@ -350,16 +385,22 @@
 @media (max-width:1699px) {
     .dashSidebar {
         width: 270px;
-        padding: 32px 24px;
+        padding: 24px 0 140px 0;
+        top: 74px;
     }
 
     .dashboardOuterSmall .dashSidebar {
-        padding: 40px 24px;
+        padding: 24px;
+    }
+
+    .sdbrLnksItem .sdbrLnksAnchor {
+        padding: 0 24px;
     }
 
     .dashboardMainCard {
         margin-left: 270px;
         padding: 24px;
+        margin-top: 74px;
     }
 
     .hideSidebarBtn {
@@ -368,28 +409,36 @@
     }
 
     .dashboardHeader {
-        padding: 24px;
+        padding: 16.6px 24px;
     }
 
     .sdbrLogo span svg {
         height: 60px;
     }
 
-    .sdbrLnksList {
-        margin-top: 40px;
-    }
-
     .sdbrLnksItem + .sdbrLnksItem {
-        margin-top: 36px;
+        margin-top: 24px;
     }
 
     .sdbrLnksItem h4 {
         font-size: 16px;
         margin: 0 0 0 16px;
     }
+
+    .sdbrHelpBox {
+        left: 24px;
+        right: 24px;
+        bottom: 24px;
+        padding: 12px;
+    }
+    
+    .sdbrHelpBox > p {
+        font-size: 15px;
+        margin: 0 0 12px 0;
+    }
 }
 
-@media (min-width:992px) and (max-width:1420px) {
+@media (min-width:992px) and (max-width:1300px) {
     .dashboardOuterMedium {
         overflow: visible;
     }
@@ -425,6 +474,10 @@
 
     .dashboardOuterMedium .dashboardMainCard {
         margin-left: 109px;
+    }
+
+    .hideSidebarBtn {
+        display: block;
     }
 
     .dashboardOuterMedium .hideSidebarBtn {

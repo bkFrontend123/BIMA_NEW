@@ -17,10 +17,13 @@
     z-index: 1;
 }
 .selectDropDivSmall.selectDropDiv label {
-    top: 18px;
+    top: 18px;  
 }
 .selectDropFilterDiv.selectDropDiv label {
-    top: 18px;
+    background: var(--mute3);
+    font-size: 15px;
+    top: 10px;
+    padding: 0 6px;
 }
 .selectDropDiv .select-search-has-focus ~ label,
 .selectDropDiv.selectedDropDiv label {
@@ -33,7 +36,7 @@
 }
 .selectDropFilterDiv.selectDropDiv .select-search-has-focus ~ label,
 .selectDropFilterDiv.selectDropDiv.selectedDropDiv label {
-    transform: translateY(-27px);
+    transform: translateY(-21px);
 }
 .selectDropDiv .select-search-container {
     width: 100%;
@@ -98,16 +101,19 @@
     right: 12px;
 }
 .selectDropFilterDiv.selectDropDiv .select-search-value::after {
-    background-image: url('/icons/selectedArrowIcon.svg');
-    top: 17px;
-    right: 15px;
-    width: 16px;
-    height: 16px;
+    background-image: url(/icons/selectFilterArrowIcon.svg);
+    top: 16px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
 }
 .selectDropFilterDiv.selectDropDiv .select-search-has-focus .select-search-value::after {
-    background-image: url(/icons/selectArrowDownIcon.svg);
-    top: 10px;
-    right: 12px;
+    background-image: url(/icons/selectedFilterArrowIcon.svg);
+    right: 10px;
+    transform: rotate(30deg);
+}
+.selectDropFilterDiv.selectDropDiv.selectedDropDiv .select-search-value::after {
+    background-image: url(/icons/selectedFilterArrowIcon.svg);
 }
 .selectDropDiv .select-search-input {
     background-color: var(--whiteBg);
@@ -128,8 +134,16 @@
 }
 .selectDropFilterDiv.selectDropDiv .select-search-input {
     background-color: transparent;
-    height: 50px;
-    max-width: 140px;
+    font-size: 15px;
+    height: 40px;
+    max-width: 130px;
+    padding: 10px 24px 10px 10px;
+}
+.selectDropFilterDiv.selectDropFilterMediumDiv.selectDropDiv .select-search-input {
+    max-width: 170px;
+}
+.selectDropFilterDiv.selectDropFilterLargeDiv.selectDropDiv .select-search-input {
+    max-width: 200px;
 }
 .searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,
 .selectDropDivSmall.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,
@@ -151,6 +165,9 @@
 }
 .selectDropDiv .select-search-input::placeholder {
     color: var(--whiteText);
+}
+.selectDropFilterDiv.selectDropDiv .select-search-input::placeholder {
+    color: var(--vt-c-grayLight3);
 }
 .selectDropDiv.selectedDropDiv .select-search-input::placeholder,
 .selectDropDiv .select-search-has-focus .select-search-input::placeholder {
@@ -183,7 +200,7 @@
     top: 52px !important;
 }
 .selectDropFilterDiv.selectDropDiv .select-search-container .select-search-select {
-    top: 43px !important;
+    top: 39px !important;
 }
 .select-search-container.select-search-has-focus .select-search-select {
     display: block !important;
@@ -198,6 +215,11 @@
     letter-spacing: 0;
     font-weight: 500;
     color: var(--gray);
+}
+.selectDropFilterDiv.selectDropDiv .select-search-option,
+.selectDropFilterDiv.selectDropDiv .select-search-not-found {
+    font-size: 15px;
+    padding: 8.8px 10px;
 }
 .selectDropDiv .select-search-is-highlighted,
 .selectDropDiv .select-search-option:not(.select-search-is-selected):hover {
@@ -214,8 +236,8 @@
         height: 52px;
     }
     .selectDropFilterDiv.selectDropDiv .select-search-input {
-        font-size: 15px;
-        height: 44px;
+        font-size: 14px;
+        height: 36px;
     }
     .selectDropDivSmall.selectDropDiv .select-search-value::after {
         top: 18px;
@@ -228,11 +250,22 @@
         top: 16px;
     }
     .selectDropFilterDiv.selectDropDiv label {
-        font-size: 15px;
-        top: 16px;
+        font-size: 14px;
+        top: 8px;
     }
     .selectDropFilterDiv.selectDropDiv .select-search-value::after {
         top: 13px;
+    }
+    .selectDropFilterDiv.selectDropDiv .select-search-has-focus .select-search-value::after {
+        top: 13px;
+    }
+    .selectDropFilterDiv.selectDropDiv .select-search-container .select-search-select {
+        top: 35px !important;
+    }
+    .selectDropFilterDiv.selectDropDiv .select-search-option,
+    .selectDropFilterDiv.selectDropDiv .select-search-not-found {
+        font-size: 14px;
+        padding: 6.8px 10px;
     }
 }
 

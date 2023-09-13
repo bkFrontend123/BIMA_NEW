@@ -1,18 +1,40 @@
 .noItemDiv {
-    min-height: 312px;
+    background: var(--whiteBg);
+    padding: 104px 32px 32px 32px;
+    border: 1px solid var(--vt-c-gray1);
+    min-height: 580px;
+    text-align: center;
+    position: relative;
 }
 
 .noItemDiv h3 {
     font-size: 24px;
     font-weight: 600;
-    color: var(--gray1);
-    margin-bottom: 0;
+    color: var(--black);
     line-height: 34px;
+    margin-bottom: 36px;
+}
+
+.noItemBtm {
+    position: absolute;
+    left: 50%;
+    bottom: 32px;
+    max-width: 160px;
+    margin-left: -80px;
 }
 
 @media (max-width:1699px) {
     .noItemDiv {
-        min-height: 230px;
+        padding: 70px 24px 24px 24px;
+        min-height: 460px;
+    }
+    .noItemDiv h3 {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 30px;
+    }
+    .noItemBtm {
+        bottom: 24px;
     }
 }
 

@@ -8,7 +8,7 @@ import HideArrowIcon from "@/component/BIDashboard/Icons/IconHideArrow";
 import dashLayoutStyle from '@/assets/css/dashboardLayout.module.css'
 
 export default function DashboardCard(props) {
-  const { activeMenu, talkExpert, children } = props;
+  const { activeMenu, children } = props;
 
   const [isActive, setIsActive] = useState(false);
 
@@ -18,6 +18,7 @@ export default function DashboardCard(props) {
   return (
     <>
       <section className={`${dashLayoutStyle.dashboardOuter} ${dashLayoutStyle.dashboardOuterMedium} ${isActive ? dashLayoutStyle.dashboardOuterSmall : ''}`}>
+        <DashboardHeader />
         <DashboardMobileHeader
           click={handleClick}
         />
@@ -37,9 +38,6 @@ export default function DashboardCard(props) {
               </span>
             </div>
           </div>
-          <DashboardHeader
-            talkExpert={talkExpert}
-          />
           <div className={`${dashLayoutStyle.dashboardBody}`}>
             {children}
           </div>

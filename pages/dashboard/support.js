@@ -25,7 +25,7 @@ export default function Support() {
       </Head>
       <DashboardCard
         talkExpert="himani"
-        activeMenu="5"
+        activeMenu="6"
       >
         <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
@@ -36,7 +36,7 @@ export default function Support() {
         </Row>
         <Text
           color={textStyle.black}
-          size={textStyle.font18}
+          size={textStyle.font16}
           weight={textStyle.medium}
           customClass="m-0 pb-2"
         >Advisor can answer your insurance questions, provide guidance,<br/> and tailor coverages to your startup.</Text>

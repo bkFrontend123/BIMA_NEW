@@ -18,7 +18,7 @@ export default function OTP() {
 
   const router = useRouter();
   const goToDashboardPage = () => {
-      router.push('/dashboard/your-quotes');
+      router.push('/dashboard/quotes');
   };
   
   return (
