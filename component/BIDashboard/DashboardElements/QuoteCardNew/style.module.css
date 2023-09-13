@@ -1,0 +1,264 @@
+.quoteCardCol {
+    background: var(--whiteBg);
+    padding: 32px;
+    border: 1px solid var(--vt-c-gray1);
+}
+
+.quoteCardCol.active {
+    border-color: var(--vt-c-blueSky);
+}
+
+.quoteCardTtl {
+    position: relative;
+}
+
+.quoteCardTtl span i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.quoteCardTtl h3 {
+    font-size: 22px;
+    color: var(--black);
+    font-weight: 600;
+    margin: 0;
+}
+
+.quoteCardTtl .quoteCardArrow {
+    width: 10px;
+    position: relative;
+    z-index: 2;
+    top: -1px;
+    transition: all 0.3s ease;
+}
+
+.quoteCardTtl .quoteCardArrow.active {
+    transform: rotate(90deg);
+}
+
+.quoteCardTtl h4 {
+    font-size: 16px;
+    color: #99B1CE;
+    font-weight: 500;
+    margin: 6px 0 0;
+}
+
+.quoteCardTtl h5 {
+    font-size: 13px;
+    color: #99B1CE;
+    font-weight: 400;
+    margin: 6px 0 0;
+}
+
+.quoteCardCat {
+    background-color: var(--vt-c-gray);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    color: var(--vt-c-black);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid var(--vt-c-gray);
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.liabilityCat.quoteCardCat {
+    background-color: var(--liabilityBg);
+    color: var(--liabilityColor);
+    border-color: var(--liabilityColor);
+}
+
+.assetCat.quoteCardCat {
+    background-color: var(--assetBg);
+    color: var(--assetColor);
+    border-color: var(--assetColor);
+}
+
+.quoteStatus {
+    font-size: 15px;
+    color: var(--black);
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.quoteStatus i {
+    font-style: normal;
+}
+
+.quoteStatus span {
+    position: relative;
+    font-size: 15px;
+    line-height: 24px;
+    display: inline-block;
+    padding-left: 14px;
+    white-space: nowrap;
+}
+
+.quoteStatus span::before {
+    background-color: var(--vt-c-gray);
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+}
+
+.offlineStatus span {
+    color: var(--greyDark);
+}
+
+.offlineStatus span::before {
+    background-color: var(--greyDark);
+}
+
+.progressStatus span {
+    color: var(--statusGreenColor);
+}
+
+.progressStatus span::before {
+    background-color: var(--statusGreenColor);
+}
+
+.quoteCardList {
+    margin-top: 1rem;
+}
+
+.quoteCardList ul {
+    margin: 0 -6px;
+    overflow: hidden;
+}
+
+.quoteCardList ul li {
+    float: left;
+    width: 50%;
+    padding: 0 6px;
+}
+
+.quoteCardList p {
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 500;
+    margin: 0 0 14px 0;
+}
+
+.quoteCardList ul li p {
+    margin: 0;
+}
+
+.quoteCardList p small {
+    color: var(--vt-c-grayLight3);
+}
+
+.quoteCardList p strong {
+    display: block;
+    font-size: 14px;
+    color: var(--vt-c-blueSkyLight2);
+    font-weight: 500;
+}
+
+.quoteCardInfo {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.quoteCardInfo p {
+    font-size: 15px;
+    color: var(--vt-c-blueSkyLight2);
+    font-weight: 500;
+    margin: 16px 0 0 0;
+}
+
+@media (max-width:1699px) {
+    .quoteCardCol {
+        padding: 24px;
+    }
+
+    .quoteCardTtl h3 {
+        font-size: 20px;
+    }
+
+    .quoteCardTtl h4 {
+        font-size: 15px;
+    }
+
+    .quoteStatus {
+        font-size: 14px;
+    }
+    
+    .quoteStatus span {
+        font-size: 14px;
+    }
+
+    .quoteCardList p {
+        font-size: 16px;
+    }
+
+    .quoteCardInfo p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:991px) {
+    .quoteCardCol {
+        padding: 20px;
+    }
+
+}
+
+@media (max-width:767px) {
+    .quoteCardCol {
+        padding: 16px;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);
+        margin: 0 10px 10px 10px;
+    }
+
+    .mblQuoteCardInfo {
+        /*display: none;*/
+    }
+
+    .mblQuoteCardInfo.show {
+        /*display: block;*/
+    }
+    
+    .quoteCardTtl h3 {
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .quoteCardTtl h5 {
+        font-size: 13px;
+        margin: 8px 0;
+    }
+
+    .quoteStatus {
+        font-size: 12px;
+    }
+    
+    .quoteStatus span {
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+    .quoteCardList p {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .quoteCardList p strong {
+        font-size: 13px;
+        font-weight: 400;
+        color: var(--vt-c-gray);
+        display: block;
+    }
+}

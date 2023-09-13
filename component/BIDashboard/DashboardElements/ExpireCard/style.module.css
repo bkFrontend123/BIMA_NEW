@@ -1,0 +1,13 @@
+.reminderTtl h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--vt-c-yellow);
+    margin: 8px 0 0 0;
+    text-align: center;
+}
+
+@media (max-width:1699px) {
+    .reminderTtl h4 {
+        font-size: 15px;
+    }
+}

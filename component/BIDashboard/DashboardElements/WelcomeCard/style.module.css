@@ -1,0 +1,93 @@
+.welcomeCard {
+    position: relative;
+    padding: 32px;
+    border: 1px solid var(--disable);
+    text-align: center;
+}
+.welcomeCard > h5 {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 500;
+    margin: 0;
+}
+.welcomeCardMedia {
+    margin: 40px 0;
+}
+.welcomeCardIcon {
+
+}
+.welcomeCardBtm {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    justify-content: space-between;
+    border: 1px solid var(--vt-c-gray);
+    padding: 10px 20px;
+}
+.welcomeCardInfo {
+    text-align: left;
+}
+.welcomeCardInfo h3 {
+    font-size: 32px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 6px;
+}
+.welcomeCardInfo p {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+    margin: 0;
+}
+.welcomeCardBtn {
+
+}
+.welcomeCardBtnLink {
+    width: 46px;
+    height: 46px;
+    color: var(--vt-c-yellow);
+    border: 1px solid var(--vt-c-yellow);
+    display: inline-block;
+    line-height: 39px;
+    transition: all 0.4s ease 0s;
+}
+.welcomeCardBtnLink svg path {
+    fill: var(--vt-c-yellow);
+    transition: all 0.4s ease 0s;
+}
+.welcomeCardBtnLink:hover {
+    background-color: var(--vt-c-yellow);
+    color: var(--black);
+    border: 1px solid var(--vt-c-yellow);
+}
+.welcomeCardBtnLink:hover svg path {
+    fill: var(--black);
+}
+
+@media (max-width: 1699px) {
+    .welcomeCard {
+        padding: 24px;
+    }
+    .welcomeCard > h5 {
+        font-size: 18px;
+    }
+    .welcomeCardMedia {
+        margin: 30px 0;
+    }
+    .welcomeCardBtm {
+        padding: 8px 16px;
+    }
+    .welcomeCardInfo h3 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .welcomeCardInfo p {
+        font-size: 15px;
+    }
+    .welcomeCardBtnLink {
+        width: 40px;
+        height: 40px;
+        line-height: 34px;
+    }
+}

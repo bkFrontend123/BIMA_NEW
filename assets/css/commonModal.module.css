@@ -1,0 +1,30 @@
+.commonMdlOuter > div > div {
+    border-radius: 10px;
+    border: 0;
+}
+.commonMdlBody {
+    padding: 32px;
+}
+.welcomeMdlTtl h3 {
+    font-size: 40px;
+    color: var(--vt-c-blue);
+    line-height: 46px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.welcomeMdlTtl p {
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (max-width: 1699px) {
+    .welcomeMdlTtl h3 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .welcomeMdlTtl p {
+        font-size: 16px;
+    }
+}
