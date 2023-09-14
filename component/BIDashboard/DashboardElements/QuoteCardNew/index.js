@@ -19,7 +19,7 @@ export default function QuoteCardNew(props) {
           <div className={`d-flex align-items-start`}>
             <span className={`d-none me-2 ${style.quoteCardArrow} ${!isActive ? style.active : ''}`}><DropdownArrowIcon /></span>
             <div>
-              <span><i><Image src={icon} width={70} height={70} alt={title} /></i></span>
+              <span><i><Image src={icon} width={40} height={40} alt={title} /></i></span>
               <h3>{title}</h3>
               <h4>BimaKavach Technologies Pvt Ltd</h4>
               <h5>Last updated: {dateTime}</h5>

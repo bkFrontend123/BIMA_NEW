@@ -17,8 +17,8 @@
 }
 
 .mblLogo .mblLogoLink svg {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 .mblMenu svg {
@@ -32,9 +32,12 @@
     top: 90px;
     bottom: 0;
     width: 320px;
-    padding: 40px 0 156px 0;
+    padding: 40px 0;
     border-right: 1px solid var(--vt-c-gray1);
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     z-index: 99;
     transition: all 0.3s ease 0s;
 }
@@ -225,6 +228,10 @@
     height: 56px;
 }
 
+.sdbrLnksList {
+    margin-bottom: 40px;
+}
+
 .sdbrLnksItem {
     position: relative;
 }
@@ -241,7 +248,7 @@
     color: var(--gray);
     transition: all 0.3s ease 0s;
     border-left: 3px solid transparent;
-    padding: 0 40px;
+    padding: 0 34px;
 }
 
 .sdbrLnksItem .sdbrLnksAnchor:hover,
@@ -260,7 +267,7 @@
 }
 
 .sdbrLnksItem h4 {
-    font-size: 18px;
+    font-size: 17px;
     color: inherit;
     margin: 0 0 0 18px;
     transition: all 0.3s ease 0s;
@@ -290,11 +297,13 @@
 
 .sdbrHelpBox {
     border: 1px solid var(--vt-c-grayLight3);
-    position: absolute;
+    /*position: absolute;
     left: 40px;
     right: 40px;
-    bottom: 40px;
+    bottom: 40px;*/
     padding: 16px;
+    width: calc(100% - 68px);
+    margin-left: 34px;
 }
 
 .sdbrHelpBox > p {
@@ -382,13 +391,13 @@
 
 @media (max-width:1699px) {
     .dashSidebar {
-        width: 270px;
-        padding: 24px 0 140px 0;
+        width: 250px;
+        padding: 24px 0;
         top: 74px;
     }
 
     .dashboardOuterSmall .dashSidebar {
-        padding: 24px;
+        padding: 24px 0 140px 0;
     }
 
     .sdbrLnksItem .sdbrLnksAnchor {
@@ -396,7 +405,7 @@
     }
 
     .dashboardMainCard {
-        margin-left: 270px;
+        margin-left: 250px;
         padding: 24px;
         margin-top: 74px;
     }
@@ -419,15 +428,14 @@
     }
 
     .sdbrLnksItem h4 {
-        font-size: 16px;
+        font-size: 15px;
         margin: 0 0 0 16px;
     }
 
     .sdbrHelpBox {
-        left: 24px;
-        right: 24px;
-        bottom: 24px;
         padding: 12px;
+        width: calc(100% - 48px);
+        margin-left: 24px;
     }
     
     .sdbrHelpBox > p {
@@ -552,30 +560,30 @@
         font-size: 16px;
     }
     .dashUserProCol > span {
-        min-width: 55px;
-        height: 55px;
-        border-radius: 55px;
-        margin-right: 12px;
-        font-size: 30px;
+        font-size: 16px;
     }
 }
 
 @media (max-width:991px) {
+    .dashboardOuterSmall {
+
+    }
     .dashboardOuterSmall::before {
         background: rgba(21, 3, 48, 0.7);
-        position: absolute;
+        position: fixed;
         content: "";
         right: 0;
         bottom: 0;
         top: 0;
         left: 0;
         opacity: 0.8;
-        z-index: 92;
+        z-index: 99;
     }
 
     .dashSidebar {
         left: -300px;
-        padding: 40px 24px;
+        top: 0;
+        padding: 24px 0 140px 0;
     }
 
     .dashboardOuterSmall .dashSidebar {
@@ -589,7 +597,7 @@
 
     .dashboardMainCard {
         margin-left: 0;
-        padding: 104px 20px 20px 20px;
+        padding: 20px;
     }
 
     .dashboardOuterSmall .dashboardMainCard {
@@ -599,7 +607,8 @@
     }
 
     .dashboardHeader {
-        padding: 20px;
+        background-color: var(--whiteBg);
+        padding: 16.6px 20px;
     }
 
     .dashboardMobileHeader {
@@ -622,10 +631,6 @@
     .dashboardOuterSmall .sdbrLogo span svg {
         width: 60px;
         height: 60px;
-    }
-
-    .sdbrLnksList {
-        margin-top: 32px;
     }
 
     .sdbrLnksItem+.sdbrLnksItem {
@@ -655,7 +660,7 @@
     }
 
     .dashboardMainCard {
-        padding: 0 16px 120px 16px;
+        padding: 16px;
     }
 
     .dashboardOuterSmall .dashSidebar {
@@ -669,16 +674,17 @@
     }
 
     .dashboardHeader {
-        padding: 16px;
-        margin: 0 -16px;
+        background-color: var(--whiteBg);
+        padding: 12px 16px;
+        box-shadow: 0px -4px 20px 0px rgba(5, 15, 40, 0.10);
+        border: 0;
     }
 
     .dashUserProCol > span {
-        min-width: 54px;
-        height: 54px;
-        border-radius: 54px;
-        margin-right: 12px;
-        font-size: 22px;
+        width: 36px;
+        height: 36px;
+        border-radius: 36px;
+        margin-right: 0;
     }
 
     .dashUserProCol h4,

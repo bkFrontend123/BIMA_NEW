@@ -19,7 +19,7 @@
     position: absolute;
     left: 50%;
     bottom: 32px;
-    max-width: 160px;
+    width: 160px;
     margin-left: -80px;
 }
 
@@ -38,9 +38,17 @@
     }
 }
 
+@media (max-width:991px) {
+    .noItemDiv {
+        padding: 46px 20px 20px 20px;
+        min-height: 300px;
+    }
+}
+
 @media (max-width:767px) {
     .noItemDiv {
-        min-height: 180px;
+        padding: 40px 16px 16px 16px;
+        min-height: 260px;
     }
 
     .noItemDiv h3 {

@@ -22,7 +22,7 @@ import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
-export default function YourPoliciesOld() {
+export default function YourPolicies() {
 
   const [filterStatusValue, setFilterStatusValue] = useState(1);
   const filterStatusOptions = [

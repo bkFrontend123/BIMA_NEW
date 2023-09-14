@@ -22,7 +22,7 @@ import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
-export default function YourQuotes() {
+export default function Quotes() {
 
   const [filterYearValue, setFilterYearValue] = useState();
   const filterYearOptions = [
@@ -130,12 +130,12 @@ export default function YourQuotes() {
           title="Your Quotes"
         />
         <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4">
-          <Col md>
+          <Col lg>
             <DashboardHeadingItem
               title="Liability Insurance"
             />
           </Col>
-          <Col md="auto">
+          <Col lg="auto">
             <FilterDropdownCard
               title="Filters"
             >
@@ -229,12 +229,12 @@ export default function YourQuotes() {
           )}
         </Row>
         <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4 mt-0">
-          <Col md>
+          <Col lg>
             <DashboardHeadingItem
               title="Asset Insurance"
             />
           </Col>
-          <Col md="auto"></Col>
+          <Col lg="auto"></Col>
         </Row>
         <Row className='g-3 g-md-4'>
           {assetQuoteData.map((item) =>

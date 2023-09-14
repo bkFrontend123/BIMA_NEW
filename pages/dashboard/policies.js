@@ -17,7 +17,7 @@ import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
-export default function YourPolicies() {
+export default function Policies() {
 
   const [filterYearValue, setFilterYearValue] = useState();
   const filterYearOptions = [
@@ -132,7 +132,7 @@ export default function YourPolicies() {
   return (
     <>
       <Head>
-        <title>Policies | BimaKavach</title>
+        <title>Your Policies | BimaKavach</title>
         <meta name="description" content="" />
         <link rel="canonical" href="" />
       </Head>
@@ -141,15 +141,15 @@ export default function YourPolicies() {
         activeMenu="2"
       >
         <DashboardPageTitle
-          title="Policies"
+          title="Your Policies"
         />
         <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4">
-          <Col md>
+          <Col lg>
             <DashboardHeadingItem
               title="Liability Insurance"
             />
           </Col>
-          <Col md="auto">
+          <Col lg="auto">
             <FilterDropdownCard
               title="Filters"
             >
@@ -242,12 +242,12 @@ export default function YourPolicies() {
           )}
         </Row>
         <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4 mt-0">
-          <Col md>
+          <Col lg>
             <DashboardHeadingItem
               title="Asset Insurance"
             />
           </Col>
-          <Col md="auto"></Col>
+          <Col lg="auto"></Col>
         </Row>
         <Row className='g-3 g-md-4'>
           {assetPolicyData.map((item) =>

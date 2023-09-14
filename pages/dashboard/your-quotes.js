@@ -25,7 +25,7 @@ import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
-export default function YourQuotesOld() {
+export default function YourQuotes() {
 
   const [filterYearValue, setFilterYearValue] = useState(3);
   const filterYearOptions = [

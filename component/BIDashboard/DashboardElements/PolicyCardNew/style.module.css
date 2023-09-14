@@ -56,7 +56,7 @@
 
 .policyCardCat {
     background-color: var(--vt-c-gray);
-    padding: 5px 10px;
+    padding: 5px 8px;
     border-radius: 5px;
     font-size: 11px;
     color: var(--vt-c-black);
@@ -201,7 +201,7 @@
 }
 
 .policyCardList p strong {
-    font-size: 20px;
+    font-size: 19px;
     display: block;
     font-weight: 500;
     line-height: 28px;
@@ -268,7 +268,7 @@
     }
 
     .policyCardList p strong {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .policyCardList ul li:last-child p strong {
@@ -289,8 +289,7 @@
 @media (max-width:767px) {
     .policyCardCol {
         padding: 16px;
-        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);
-        margin: 0 10px 10px 10px;
+        margin: 0;
     }
 
     .mblPolicyCardInfo {
@@ -301,20 +300,24 @@
         /*display: block;*/
     }
     
-    .policyCardTtl {
+    /*.policyCardTtl {
         display: grid;
     }
 
     .policyCardTtl > div:first-child {
         order :2;
-    }
+    }*/
     
     .policyCardTtl h3 {
-        font-size: 16px;
+        font-size: 17px;
         line-height: 22px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .policyCardTtl h4 {
+        font-size: 14px;
     }
 
     .policyCardTtl h5 {
@@ -330,28 +333,21 @@
     .policyStatus span {
         font-size: 12px;
         line-height: 26px;
-        padding: 0 6px;
-        margin: 0;
+    }
+
+    .policyStatusTtl span {
+        font-size: 12px;
     }
 
     .policyCardList ul li {
-        margin-left: 12px;
-        margin-top: 12px;
-        width: calc(100% - 12px);
-        vertical-align: top;
-    }
-    .policyCardList ul li + li {
-        padding-left: 0;
-        border-left: 0;
     }
     .policyCardList p {
-        font-size: 14px;
-        font-weight: 600;
+        font-size: 13px;
     }
     .policyCardList p strong {
+        font-size: 15px;
+    }
+    .policyCardList ul li:last-child p strong {
         font-size: 14px;
-        font-weight: 400;
-        color: var(--vt-c-gray);
-        display: block;
     }
 }

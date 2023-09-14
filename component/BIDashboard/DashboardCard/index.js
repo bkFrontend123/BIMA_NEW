@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-import DashboardMobileHeader from '@/component/BIDashboard/DashboardMobileHeader';
 import DashboardSidebar from "@/component/BIDashboard/DashboardSidebar";
 import DashboardHeader from "@/component/BIDashboard/DashboardHeader";
 import HideArrowIcon from "@/component/BIDashboard/Icons/IconHideArrow";
@@ -18,8 +17,7 @@ export default function DashboardCard(props) {
   return (
     <>
       <section className={`${dashLayoutStyle.dashboardOuter} ${dashLayoutStyle.dashboardOuterMedium} ${isActive ? dashLayoutStyle.dashboardOuterSmall : ''}`}>
-        <DashboardHeader />
-        <DashboardMobileHeader
+        <DashboardHeader
           click={handleClick}
         />
         <div className={`${dashLayoutStyle.dashSidebar}`}>

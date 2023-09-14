@@ -24,6 +24,11 @@
     }
 }
 
+@media (max-width:991px) {
+    .fltrDropCard > div {
+        margin-left: 10px;
+    }
+}
 @media (max-width:767px) {
     .fltrDropCard span {
         font-size: 14px;

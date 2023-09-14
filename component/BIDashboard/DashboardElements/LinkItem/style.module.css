@@ -16,8 +16,8 @@
 .linkBtn span {
     margin-right: 7px;
     display: inline-block;
-    vertical-align: text-bottom;
-    margin-top: -4px;
+    position: relative;
+    top: -3px;
 }
 
 .linkBigBtn.linkBtn span {
@@ -30,7 +30,7 @@
 
 @media (max-width:1699px) {
     .linkBtn {
-        font-size: 14px;
+        font-size: 15px;
     }
     .linkBigBtn.linkBtn {
         font-size: 17px;
