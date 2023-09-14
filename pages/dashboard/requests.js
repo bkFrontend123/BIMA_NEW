@@ -6,7 +6,6 @@ import {Row, Col} from 'react-bootstrap';
 import DashboardCard from '@/component/BIDashboard/DashboardCard'
 import DashboardPageTitle from '@/component/BIDashboard/DashboardPageTitle'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
-import ClaimFileCard from "@/component/BIDashboard/DashboardElements/ClaimCard/claimFile";
 import ClaimRequestCard from "@/component/BIDashboard/DashboardElements/ClaimCard/claimRequest";
 
 export default function Requests() {
@@ -35,17 +34,10 @@ export default function Requests() {
         
         <Row className="g-3 g-md-4">
           <Col md>
-            <ClaimFileCard />
-          </Col>
-          <Col lg={1} className='d-none d-lg-block'></Col>
-          <Col md>
-            <div className="d-md-none mb-4">
-              <DashboardHeadingItem
-                title="Requests"
-              />
-            </div>
             <ClaimRequestCard />
           </Col>
+          <Col lg={1} className='d-none d-lg-block'></Col>
+          <Col md></Col>
         </Row>
       </DashboardCard>
     </>

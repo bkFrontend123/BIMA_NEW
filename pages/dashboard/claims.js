@@ -7,7 +7,6 @@ import DashboardCard from '@/component/BIDashboard/DashboardCard'
 import DashboardPageTitle from '@/component/BIDashboard/DashboardPageTitle'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
 import ClaimFileCard from "@/component/BIDashboard/DashboardElements/ClaimCard/claimFile";
-import ClaimRequestCard from "@/component/BIDashboard/DashboardElements/ClaimCard/claimRequest";
 
 export default function Claims() {
 
@@ -38,14 +37,7 @@ export default function Claims() {
             <ClaimFileCard />
           </Col>
           <Col lg={1} className='d-none d-lg-block'></Col>
-          <Col md>
-            <div className="d-md-none mb-4">
-              <DashboardHeadingItem
-                title="Requests"
-              />
-            </div>
-            <ClaimRequestCard />
-          </Col>
+          <Col md></Col>
         </Row>
       </DashboardCard>
     </>
