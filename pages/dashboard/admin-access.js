@@ -33,35 +33,7 @@ export default function AdminAccess() {
         <Row>
           <Col md={6}>
             <div className={`greyForm ${form.commonForm} ${form.greyForm}`}>
-              <Form>
-                <Form.Group className="floatFormGroup mb-4">
-                    <FloatingLabel controlId="companyName" label="Your Company Name">
-                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
-                    </FloatingLabel>
-                </Form.Group>
-                <Form.Group className="floatFormGroup mb-4">
-                    <FloatingLabel controlId="name" label="Your Name">
-                        <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
-                    </FloatingLabel>
-                </Form.Group>
-                <Form.Group className="floatFormGroup mb-4">
-                    <FloatingLabel controlId="phoneNumber" label="Your Phone Number">
-                        <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" />
-                    </FloatingLabel>
-                </Form.Group>
-                <Form.Group className="floatFormGroup mb-4">
-                    <FloatingLabel controlId="workEmail" label="Your Work Email Address">
-                        <Form.Control className={`${form.formInput}`} type="email" placeholder="&nbsp;" />
-                    </FloatingLabel>
-                </Form.Group>
-                <div className={`${form.fromButtonDiv}`}>
-                    <ButtonItem
-                      title="Update Details"
-                      type="submit"
-                      customClass={`m-0 px-2 ${buttonStyle.minWidth3} ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
-                    />
-                </div>
-              </Form>
+              
             </div>
           </Col>
         </Row>
