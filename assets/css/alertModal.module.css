@@ -14,7 +14,7 @@
     font-size: 22px;
     font-weight: 600;
     color: var(--black);
-    line-height: 36px;
+    line-height: 32px;
     margin: 0;
 }
 .alertMdlInfo {
@@ -56,4 +56,18 @@
 .alertMdlCloseBtn:active:focus, .alertMdlCloseBtn.active:focus,
 .alertMdlCloseBtn.dropdown-toggle:focus {
     box-shadow: 0 5px 25px 0 rgba(0,0,0,0.2);
+}
+
+@media (max-width:1699px) {
+    .alertMdlInfo {
+        margin: 24px 0;
+    }
+    .alertMdlHdr h5 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .alertMdlInfo p {
+        font-size: 16px;
+        line-height: 26px;
+    }
 }

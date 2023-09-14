@@ -22,14 +22,9 @@ export default function ClaimFileThankModal(props) {
                     </div>
                     <div className={alertModal.alertMdlBtn}>
                         <ButtonItem
-                            title="File New Claim"
-                            type="submit"
-                            customClass={`m-0 px-2 ${buttonStyle.minWidth3} ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
-                        />
-                        <ButtonItem
                             title="Close"
                             type="button"
-                            customClass={`ms-4 me-0 px-2 ${buttonStyle.minWidth} ${buttonStyle.btnBorder} ${buttonStyle.border2} ${buttonStyle.btnBig}`}
+                            customClass={`${buttonStyle.minWidth} ${buttonStyle.btnBorder} ${buttonStyle.border2} ${buttonStyle.btnBig}`}
                             onClick={handleClose}
                         />
                     </div>

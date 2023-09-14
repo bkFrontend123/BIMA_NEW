@@ -127,8 +127,6 @@ export default function Policies() {
     },
   ])
 
-  
-
   return (
     <>
       <Head>

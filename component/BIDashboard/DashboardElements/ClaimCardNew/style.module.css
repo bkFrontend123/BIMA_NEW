@@ -1,0 +1,17 @@
+.claimCardCol {
+    background: var(--whiteBg);
+    padding: 32px;
+    border: 1px solid var(--vt-c-gray1);
+}
+
+@media (max-width:1699px) {
+    .claimCardCol {
+        padding: 24px;
+    }
+}
+
+@media (max-width:767px) {
+    .claimCardCol {
+        padding: 16px;
+    }
+}
