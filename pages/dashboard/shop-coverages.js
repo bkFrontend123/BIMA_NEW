@@ -67,7 +67,6 @@ export default function ShopCoverages() {
         <link rel="canonical" href="" />
       </Head>
       <DashboardCard
-        talkExpert="himani"
         activeMenu="5"
       >
         <DashboardPageTitle

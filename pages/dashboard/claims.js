@@ -18,7 +18,6 @@ export default function Claims() {
         <link rel="canonical" href="" />
       </Head>
       <DashboardCard
-        talkExpert="himani"
         activeMenu="3"
       >
         <DashboardPageTitle
@@ -30,6 +29,7 @@ export default function Claims() {
               title="Claims"
             />
           </Col>
+          <Col md="auto"></Col>
         </Row>
         
         <Row className="g-3 g-md-4">

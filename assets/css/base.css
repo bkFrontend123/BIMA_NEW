@@ -788,6 +788,9 @@ h2.font-secondary {
   background-color: var(--vt-c-yellow);
   height: 2px;
 }
+.blankHeight {
+  min-height: 36px;
+}
 .dwnldDropdown .dropdown-toggle::after {
   display: none;
 }

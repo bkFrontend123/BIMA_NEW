@@ -172,10 +172,22 @@
     white-space: nowrap;
 }
 
+.btnYellowBorder.btnCommon i svg {
+    width: 16px;
+}
+
+.btnYellowBorder.btnCommon i svg path {
+    fill: var(--vt-c-yellow);
+}
+
 .btnYellowBorder.btnCommon:hover {
     background: var(--vt-c-yellow);
     border: 1px solid var(--vt-c-yellow);
     color: var(--black);
+}
+
+.btnYellowBorder.btnCommon:hover i svg path {
+    fill: var(--black);
 }
 
 .btnBig.btnBorder.btnCommon,

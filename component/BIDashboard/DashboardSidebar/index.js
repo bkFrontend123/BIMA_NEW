@@ -1,12 +1,8 @@
-import React, {useState, useEffect} from 'react'
-import { useRouter } from 'next/router';
-import Link from 'next/link'
+import React, {useState} from 'react'
 
 import LogoIcon from "@/component/BIDashboard/Icons/IconLogo";
 import SwapIcon from "@/component/BIDashboard/Icons/IconSwap";
 import SidebarLinkItem from "@/component/BIDashboard/DashboardSidebarLink";
-import AlertModal from '@/component/BIDashboard/DashboardElements/Modal/AlertModal'
-import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
 
 import HomeIcon from '@/component/BIDashboard/Icons/IconHome';
 import ShopIcon from '@/component/BIDashboard/Icons/IconShop';
@@ -15,27 +11,15 @@ import ClaimIcon from '@/component/BIDashboard/Icons/IconClaim';
 import RequestIcon from '@/component/BIDashboard/Icons/IconRequest';
 import SupportIcon from '@/component/BIDashboard/Icons/IconSupport';
 import ProfileIcon from '@/component/BIDashboard/Icons/IconProfile';
-import LogoutIcon from '@/component/BIDashboard/Icons/IconLogout';
 import TalkExpert from '@/component/TalkExpert'
 
 import dashLayoutStyle from '@/assets/css/dashboardLayout.module.css'
-import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 import talkExpert from '@/component/TalkExpert/style.module.css'
 
 import expertImg from '@/public/himaniImg.png'
 
 export default function DashboardSidebar(props) {
   const { activeMenu } = props;
-
-  const router = useRouter();
-  const goToLogout = () => {
-    router.push('/dashboard/login');
-  };
-
-  const [showLogout, setShowLogout] = useState(false);
-  const handleCloseLogout = () => setShowLogout(false);
-  const handleShowLogout = () => setShowLogout(true);
-
   return (
     <>
       {/*<div className={`mt-4 ${dashLayoutStyle.sdbrDropOuter}`}>
@@ -91,12 +75,6 @@ export default function DashboardSidebar(props) {
           href="/dashboard/admin-access"
           customClass={activeMenu === '7' ? dashLayoutStyle.active : null}
         />
-        <SidebarLinkItem
-          title="Logout"
-          icon={<LogoutIcon/>}
-          href=""
-          onClick={handleShowLogout}
-        />
       </div>
       <div className={`${dashLayoutStyle.sdbrHelpBox}`}>
         <p>Need Help?</p>
@@ -107,18 +85,6 @@ export default function DashboardSidebar(props) {
           designation="Insurance Expert"
         />
       </div>
-      <AlertModal
-        title="Are you sure you want to logout?"
-        show={showLogout}
-        handleClose={handleCloseLogout}
-      >
-        <ButtonItem
-          title="Yes"
-          type="button"
-          customClass={`m-0 px-2 ${buttonStyle.minWidth} ${buttonStyle.btnYellowBorder}`}
-          onClick={goToLogout}
-        />
-      </AlertModal>
     </>
   )
 }

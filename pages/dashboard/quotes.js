@@ -16,8 +16,6 @@ import ExpireCard from "@/component/BIDashboard/DashboardElements/ExpireCard";
 import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
 import NoItemCard from "@/component/BIDashboard/DashboardElements/NoItemCard";
 
-import WelcomeModal from '@/component/BIDashboard/DashboardElements/Modal/WelcomeModal'
-
 import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
@@ -188,42 +186,62 @@ export default function Quotes() {
                 statusType={item.statusType}
                 dateTime={item.dateTime}
               >
-                <Row className='g-3 justify-content-center'>
-                  <Col xxl={9} xl={9} lg={12}>
-                    <ExpireCard
-                      days="39"
-                    >
-                      <ProgressBar now={80} />
-                    </ExpireCard>
-                  </Col>
-                  <Col xxl={10} xl={10} lg={12}>
-                    {item.statusType === "offline" && (
-                      <>
-                        <ButtonItem
-                          title="Go to quote"
-                          type="button"
-                          iconPosition="right"
-                          customClass={`w-100 m-0 px-2 ${buttonStyle.btnGray} ${buttonStyle.btnBig}`}
-                          onClick={goToNextPage}
-                        >
-                          <ArrowPrimaryIcon />
-                        </ButtonItem>
-                        <p>Your proposal is in under discussion with insurance companies. We are trying to get the best possible quote for you. Once receive will be uploaded here soon.</p>
-                      </>
-                    )}
-                    {item.statusType === "progress" && (
-                    <ButtonItem
-                      title="Go to quote"
-                      type="button"
-                      iconPosition="right"
-                      customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
-                      onClick={goToNextPage}
-                    >
-                      <ArrowPrimaryIcon />
-                    </ButtonItem>
-                    )}
-                  </Col>
-                </Row>
+                {item.statusType === "offline" && (
+                  <Row className='g-3 justify-content-center'>
+                    <Col xxl={9} xl={9} lg={12}>
+                      <div className='blankHeight'></div>
+                    </Col>
+                    <Col xxl={10} xl={10} lg={12}>
+                      {item.statusType === "offline" && (
+                        <>
+                          <ButtonItem
+                            title="Go to quote"
+                            type="button"
+                            iconPosition="right"
+                            customClass={`w-100 m-0 px-2 ${buttonStyle.btnGray} ${buttonStyle.btnBig}`}
+                            onClick={goToNextPage}
+                          >
+                            <ArrowPrimaryIcon />
+                          </ButtonItem>
+                          <p>Your proposal is in under discussion with insurance companies. We are trying to get the best possible quote for you. Once receive will be uploaded here soon.</p>
+                        </>
+                      )}
+                      {item.statusType === "progress" && (
+                      <ButtonItem
+                        title="Go to quote"
+                        type="button"
+                        iconPosition="right"
+                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                        onClick={goToNextPage}
+                      >
+                        <ArrowPrimaryIcon />
+                      </ButtonItem>
+                      )}
+                    </Col>
+                  </Row>
+                )}
+                {item.statusType === "progress" && (
+                  <Row className='g-3 justify-content-center'>
+                    <Col xxl={9} xl={9} lg={12}>
+                      <ExpireCard
+                        days="39"
+                      >
+                        <ProgressBar now={80} />
+                      </ExpireCard>
+                    </Col>
+                    <Col xxl={10} xl={10} lg={12}>
+                      <ButtonItem
+                        title="Go to quote"
+                        type="button"
+                        iconPosition="right"
+                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                        onClick={goToNextPage}
+                      >
+                        <ArrowPrimaryIcon />
+                      </ButtonItem>
+                    </Col>
+                  </Row>
+                )}
               </QuoteCardItem>
             </Col>
           )}
@@ -300,7 +318,6 @@ export default function Quotes() {
           </Col>
         </Row>
       </DashboardCard>
-      <WelcomeModal />
     </>
   )
 }

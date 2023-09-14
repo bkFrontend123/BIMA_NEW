@@ -20,7 +20,6 @@ export default function AdminAccess() {
         <link rel="canonical" href="" />
       </Head>
       <DashboardCard
-        talkExpert="himani"
         activeMenu="7"
       >
         <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
@@ -29,9 +28,7 @@ export default function AdminAccess() {
               title="Admin Access"
             />
           </Col>
-          <Col md="auto">
-            
-          </Col>
+          <Col md="auto"></Col>
         </Row>
         <Row>
           <Col md={6}>

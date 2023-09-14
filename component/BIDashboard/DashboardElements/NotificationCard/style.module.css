@@ -1,0 +1,86 @@
+.notiCard {
+    position: relative;
+    padding: 20px 20px 20px 40px;
+}
+.notiCard + .notiCard {
+    border-top: 1px solid var(--vt-c-grayLight);
+}
+.notiCard::before {
+    background: var(--vt-c-yellow);
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    left: 20px;
+    top: 24px;
+}
+.notiCard span {
+    font-size: 15px;
+    color: var(--border-mute1);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.notiCard h5 {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--black);
+    margin: 0;
+}
+.notiCard h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+    margin: 4px 0;
+}
+.notiCard p {
+    font-size: 15px;
+    color: var(--border-mute1);
+    margin: 0;
+}
+.notiCardBtn {
+    max-width: 220px;
+    margin-top: 1rem;
+}
+.notiCardBtn button {
+    font-size: 15px !important;
+    line-height: 44.4px !important;
+    padding: 0 16px !important;
+}
+
+@media (max-width:1699px) {
+    .notiCard {
+        padding: 16px 16px 16px 40px;
+    }
+    .notiCard::before {
+       width: 6px;
+        height: 6px;
+        border-radius: 6px;
+        left: 16px;
+        top: 22px;
+    }
+    .notiCard span {
+        font-size: 14px;
+        right: 16px;
+        top: 16px;
+    }
+    .notiCard h5 {
+        font-size: 16px;
+    }
+    .notiCard h6 {
+        font-size: 15px;
+        margin: 4px 0;
+    }
+    .notiCard p {
+        font-size: 14px;
+    }
+    .notiCardBtn {
+        max-width: 200px;
+    }
+    .notiCardBtn button {
+        font-size: 14px !important;
+        line-height: 40.4px !important;
+        padding: 0 12px !important;
+    }
+}

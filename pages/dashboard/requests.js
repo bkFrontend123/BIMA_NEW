@@ -18,7 +18,6 @@ export default function Requests() {
         <link rel="canonical" href="" />
       </Head>
       <DashboardCard
-        talkExpert="himani"
         activeMenu="4"
       >
         <DashboardPageTitle
@@ -30,6 +29,7 @@ export default function Requests() {
               title="Requests/Endorsements"
             />
           </Col>
+          <Col md="auto"></Col>
         </Row>
         
         <Row className="g-3 g-md-4">

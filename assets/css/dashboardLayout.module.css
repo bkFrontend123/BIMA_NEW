@@ -372,7 +372,7 @@
     margin: 6px 0 0 0;
 }
 
-.dashboardHeader h5,
+/*.dashboardHeader h5,*/
 .dashboardHeader .dashUserTtl p  {
     font-size: 14px;
     color: var(--black);
@@ -384,6 +384,95 @@
 .dashUserInfoCol {
     text-align: right;
 }
+
+/***Header Dropdown Css Start***/
+.dHdrDrop {
+    position: relative;
+}
+.dashHdrDropBtn {
+    background: var(--vt-c-blueSkyLight1);
+    display: flex;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    margin-right: 0;
+    text-align: center;
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.dashHdrDropBtn:hover,
+.dashHdrDropBtn:focus {
+    color: var(--vt-c-blue);
+    box-shadow: none;
+}
+.dashHdrDropBtn:after {
+    display: none;
+}
+
+.dHdrDropMenuDiv {
+    padding: 0.8rem 1rem;
+    min-width: 170px;
+    border: 0;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.07);
+    margin-top: 15px;
+    right: 0 !important;
+    top: 100% !important;
+    border-radius: 5px;
+    transform: inherit !important;
+}
+.dHdrDropMenuDiv:before {
+    background: var(--whiteBg);
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.07);
+    right: 12px;
+    top: -7px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.dHdrDropMenuDiv:after {
+    background: var(--whiteBg);
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 16px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.dHdrDropMenu {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0.35rem 0;
+    color: var(--black);
+}
+.dHdrDropMenu:hover,
+.dHdrDropMenu:focus {
+    background-color: transparent;
+    color: var(--vt-c-blue);
+}
+.dHdrDropDvdr {
+    border-color: var(--vt-c-grayLight);
+}
+
+/***Header Notification Dropdown Css Start***/
+.dHdrNotiDrop .dHdrDropMenuDiv {
+    min-width: 335px;
+    padding: 0;
+}
+/***Header Notification Dropdown Css End***/
+/***Header Dropdown Css End***/
 
 .dashboardBody {
     //padding-right: 60px;
@@ -417,6 +506,10 @@
 
     .dashboardHeader {
         padding: 16.6px 24px;
+    }
+
+    .dHdrDropMenu {
+        font-size: 14px;
     }
 
     .sdbrLogo span svg {

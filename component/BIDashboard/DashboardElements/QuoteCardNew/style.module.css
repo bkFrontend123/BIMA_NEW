@@ -41,14 +41,14 @@
 
 .quoteCardTtl h4 {
     font-size: 16px;
-    color: #99B1CE;
+    color: var(--border-mute1);
     font-weight: 500;
     margin: 6px 0 0;
 }
 
 .quoteCardTtl h5 {
     font-size: 13px;
-    color: #99B1CE;
+    color: var(--border-mute1);
     font-weight: 400;
     margin: 6px 0 0;
 }

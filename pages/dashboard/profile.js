@@ -21,7 +21,7 @@ export default function Profile() {
       </Head>
       <DashboardCard
         talkExpert="himani"
-        activeMenu="6"
+        activeMenu="7"
       >
         <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
@@ -29,9 +29,7 @@ export default function Profile() {
               title="Profile"
             />
           </Col>
-          <Col md="auto">
-            
-          </Col>
+          <Col md="auto"></Col>
         </Row>
         <Row>
           <Col md={6}>

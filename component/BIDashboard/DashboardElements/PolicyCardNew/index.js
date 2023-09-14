@@ -100,15 +100,19 @@ export default function PolicyCardNew(props) {
                 <p><strong>INR {limitLiability}</strong> Limit of Liability</p>
               </li>
               <li>
-                <p><strong>₹{policyPremium}</strong> Policy Premium</p>
-              </li>
-              <li>
-                <p><strong>{policyNumber} <span onClick={copyToClipboard}><CopyIcon /></span></strong> Policy Number</p>
-                <input type="hidden" value={copyText} onChange={handleCopyText} />
-              </li>
-              <li>
                 <p><strong>{policyPeriod}</strong> Policy Period</p>
               </li>
+              <li>
+                <p><strong>₹{policyPremium}</strong> Policy Premium</p>
+              </li>
+              {statusType === 'pending' ? (
+                null
+              ):(
+                <li>
+                  <p><strong>{policyNumber} <span onClick={copyToClipboard}><CopyIcon /></span></strong> Policy Number</p>
+                  <input type="hidden" value={copyText} onChange={handleCopyText} />
+                </li>
+              )}
             </ul>
           </div>
           <div className={`${style.policyCardDwnload}`}>
@@ -121,11 +125,16 @@ export default function PolicyCardNew(props) {
                   <Dropdown.Menu className={`${downloadStyle.dwnldDropMenu}`}>
                     <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Quote</Dropdown.Item>
                     <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Risk Held Letter</Dropdown.Item>
-                    <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Proposal Form</Dropdown.Item>
-                    <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Mandate Letter</Dropdown.Item>
-                    <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Policy Copy</Dropdown.Item>
-                    <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Tax Invoice</Dropdown.Item>
-                    <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Endorsement Copy</Dropdown.Item>
+
+                    {statusType === 'expiring' || statusType === 'expired' || statusType === 'expired' || statusType === 'confirm' ? (
+                      <>
+                        <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Policy Copy</Dropdown.Item>
+                        <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Tax Invoice</Dropdown.Item>
+                        <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Endorsement Copy</Dropdown.Item>
+                      </>
+                    ):(
+                      null
+                    )}
                   </Dropdown.Menu>
                 </Dropdown>
               </Col>

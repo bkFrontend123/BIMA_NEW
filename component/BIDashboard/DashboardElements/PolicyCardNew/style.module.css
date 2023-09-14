@@ -42,14 +42,14 @@
 
 .policyCardTtl h4 {
     font-size: 16px;
-    color: #99B1CE;
+    color: var(--border-mute1);
     font-weight: 500;
     margin: 2px 0 0;
 }
 
 .policyCardTtl h5 {
     font-size: 15px;
-    color: #99B1CE;
+    color: var(--border-mute1);
     font-weight: 500;
     margin: 6px 0 0;
 }
@@ -214,7 +214,7 @@
     top: -4px;
 }
 
-.policyCardList ul li:last-child p strong {
+.policyCardList ul li:nth-child(2) p strong {
     font-size: 16px;
 }
 
@@ -271,7 +271,7 @@
         font-size: 17px;
     }
 
-    .policyCardList ul li:last-child p strong {
+    .policyCardList ul li:nth-child(2) p strong {
         font-size: 15px;
     }
 

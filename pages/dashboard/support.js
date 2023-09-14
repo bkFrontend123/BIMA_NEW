@@ -24,7 +24,6 @@ export default function Support() {
         <link rel="canonical" href="" />
       </Head>
       <DashboardCard
-        talkExpert="himani"
         activeMenu="6"
       >
         <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
@@ -33,6 +32,7 @@ export default function Support() {
               title="Support"
             />
           </Col>
+          <Col md="auto"></Col>
         </Row>
         <Text
           color={textStyle.black}
