@@ -18,14 +18,14 @@
   transform: rotate(90deg);
 }
 .shopCovrgTtl span i {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     margin-bottom: 12px;
 }
 .shopCovrgTtl h3 {
-  font-size: 26px;
+  font-size: 22px;
   color: var(--black);
   font-weight: 600;
   margin: 0;
@@ -55,7 +55,10 @@
     padding: 24px;
   }
   .shopCovrgTtl h3 {
-    font-size: 22px;
+    font-size: 20px;
+  }
+  .shopCovrgCol p {
+    font-size: 15px;
   }
 }
 

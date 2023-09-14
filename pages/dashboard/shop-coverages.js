@@ -1,7 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import "swiper/css";
 
 import {Row, Col} from 'react-bootstrap';
 
@@ -75,59 +73,33 @@ export default function ShopCoverages() {
         <DashboardPageTitle
           title="Shop Coverages"
         />
-        <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
+        <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
             <DashboardHeadingItem
               title="Insurance Coverages"
             />
           </Col>
-          <Col md="auto">
-            
-          </Col>
+          <Col md="auto"></Col>
         </Row>
 
-        <div className='cardsSliderOuter'>
-          <Swiper              
-            className={`cardsSlider cardsSliderItemTwo`}
-            spaceBetween={0}
-            slidesPerView={100}
-            loop="false"
-            breakpoints={{
-              1399: {
-                slidesPerView: 100,
-              },
-              1200: {
-                slidesPerView: 100,
-              },
-              992: {
-                slidesPerView: 100,
-              },
-              768: {
-                slidesPerView: 100,
-              },
-              320: {
-                slidesPerView: 1.3,
-              },
-            }}
-          >
-            {coverageData.map((item) =>
-              <SwiperSlide key={item.id}>
-                <CoverageCardItem
-                  icon={item.icon}
-                  title={item.title}
-                  description={item.description}
-                  link={item.link}
-                >
-                  <ButtonItem
-                    title="Buy Now"
-                    type="button"
-                    customClass={`w-100 m-0 px-2 ${buttonStyle.btnYellowBorder}`}
-                  />
-                </CoverageCardItem>
-              </SwiperSlide>
-            )}
-          </Swiper>
-        </div>
+        <Row className='g-3 g-md-4'>
+          {coverageData.map((item) =>
+            <Col lg={6} xl={4} key={item.id}>
+              <CoverageCardItem
+                icon={item.icon}
+                title={item.title}
+                description={item.description}
+                link={item.link}
+              >
+                <ButtonItem
+                  title="Buy Now"
+                  type="button"
+                  customClass={`w-100 m-0 px-2 ${buttonStyle.btnYellowBorder}`}
+                />
+              </CoverageCardItem>
+            </Col>
+          )}
+        </Row>
       </DashboardCard>
     </>
   )

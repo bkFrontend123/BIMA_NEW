@@ -23,7 +23,7 @@ export default function CoverageCard(props) {
           <div className={`d-md-flex align-items-start`}>
             <div className={`d-none me-2 ${style.shopCovrgArrow} ${!isActive ? style.active : ''}`}><DropdownArrowIcon /></div>
             <div className={`d-flex d-md-block gap-2 align-items-start`}>
-              <span><i><Image src={icon} width={70} height={70} alt={title} /></i></span>
+              <span><i><Image src={icon} width={60} height={60} alt={title} /></i></span>
               <h3 onClick={handleClick}>{title}</h3>
             </div>
           </div>
@@ -35,7 +35,7 @@ export default function CoverageCard(props) {
           <p>{description}</p>
           <div className={`d-none d-md-block ${style.shopCovrgBtns}`}>
             <LinkItem
-              title={<>Learn more about {title} <span className='ms-1'><InfoIcon /></span></>}
+              title={<>Learn more <span className='ms-1'><InfoIcon /></span></>}
               href={link}
               customClass={style.shopCovrgLink}
             />
