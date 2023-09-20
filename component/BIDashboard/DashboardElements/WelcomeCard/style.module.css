@@ -1,6 +1,6 @@
 .welcomeCard {
     position: relative;
-    padding: 32px;
+    padding: 24px;
     border: 1px solid var(--disable);
     text-align: center;
 }
@@ -22,7 +22,7 @@
     gap: 1.5em;
     justify-content: space-between;
     border: 1px solid var(--vt-c-gray);
-    padding: 10px 20px;
+    padding: 10px 16px;
 }
 .welcomeCardInfo {
     text-align: left;
@@ -35,7 +35,7 @@
     margin-bottom: 6px;
 }
 .welcomeCardInfo p {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--vt-c-blue);
     font-weight: 500;
     margin: 0;
@@ -89,5 +89,56 @@
         width: 40px;
         height: 40px;
         line-height: 34px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1300px) {
+    .welcomeCard {
+        padding: 20px;
+    }
+    .welcomeCard > h5 {
+        font-size: 17px;
+    }
+    .welcomeCardMedia {
+        margin: 24px 0;
+    }
+    .welcomeCardBtm {
+        padding: 8px 12px;
+    }
+    .welcomeCardInfo h3 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .welcomeCardInfo p {
+        font-size: 14px;
+    }
+    .welcomeCardBtnLink {
+        width: 36px;
+        height: 36px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .welcomeCard {
+        padding: 16px;
+    }
+    .welcomeCard > h5 {
+        font-size: 16px;
+    }
+    .welcomeCardMedia {
+        margin: 20px 0;
+    }
+    .welcomeCardBtm {
+        padding: 6px 10px;
+    }
+    .welcomeCardInfo h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .welcomeCardBtnLink {
+        width: 32px;
+        height: 32px;
+        line-height: 26px;
     }
 }

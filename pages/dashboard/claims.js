@@ -9,10 +9,10 @@ import 'react-select-search/style.css'
 import DashboardCard from '@/component/BIDashboard/DashboardCard'
 import DashboardPageTitle from '@/component/BIDashboard/DashboardPageTitle'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
-import ClaimFileCard from "@/component/BIDashboard/DashboardElements/ClaimCard/claimFile";
-import ClaimCardItem from "@/component/BIDashboard/DashboardElements/ClaimCardNew";
+import ClaimFormCardItem from "@/component/BIDashboard/DashboardElements/ClaimRequestFormCard";
 import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
 import ClaimFileThankModal from '@/component/BIDashboard/DashboardElements/Modal/ClaimFileThankModal'
+import ClaimCard from '@/component/BIDashboard/DashboardElements/ClaimRequestCard'
 
 import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 
@@ -36,40 +36,24 @@ export default function Claims() {
   const initimatedClaimData = ([
     {
       id: "1",
-      icon: "/productIcons/asset/fire_icon.svg",
-      title: "Fire Insurance",
-      insurerLogo: "/policyLogos/icici_logo.png",
-      insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
-      policyPremium: "30,304",
+      icon: "/productIcons/liability/dAndO_icon.svg",
+      title: "Directors & Officers",
+      category: 'liability',
       policyNumber: "BKX42787",
-      policyPeriod: "14 Aug 23/13 Aug 24",
-      statusType: "pending"
     },
     {
       id: "2",
-      icon: "/productIcons/asset/fire_icon.svg",
-      title: "Fire Insurance",
-      insurerLogo: "/policyLogos/icici_logo.png",
-      insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
-      policyPremium: "30,304",
+      icon: "/productIcons/liability/eAndO_icon.svg",
+      title: "Errors & Omissions quote",
+      category: 'liability',
       policyNumber: "BKX42787",
-      policyPeriod: "14 Aug 23/13 Aug 24",
-      statusType: "expiring",
-      expireDays: "45"
     },
     {
       id: "3",
       icon: "/productIcons/asset/fire_icon.svg",
       title: "Fire Insurance",
-      insurerLogo: "/policyLogos/icici_logo.png",
-      insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
-      policyPremium: "30,304",
+      category: 'asset',
       policyNumber: "BKX42787",
-      policyPeriod: "14 Aug 23/13 Aug 24",
-      statusType: "expired"
     },
   ])
 
@@ -82,22 +66,22 @@ export default function Claims() {
       </Head>
       <DashboardCard
         activeMenu="3"
+        rightSidebar="true"
       >
         <DashboardPageTitle
           title="Claims"
         />
-        <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
-          <Col md>
+        <Row className="g-0 g-xl-4 align-items-center justify-space-between mb-4">
+          <Col xl>
             <DashboardHeadingItem
               title="Claims"
             />
           </Col>
-          <Col md="auto"></Col>
         </Row>
 
-        <Row className="g-3 g-md-4">
-          <Col md>
-            <ClaimCardItem>
+        <Row className="g-4 g-lg-4">
+          <Col lg>
+            <ClaimFormCardItem>
               <div className={`${form.commonForm}`}>
                 <Form>
                   <Form.Group className={`selectDropDiv searchDropDiv selectDropDivSmall mb-4 ${!policyValue == '' ? 'selectedDropDiv' : null}`}>
@@ -130,25 +114,28 @@ export default function Claims() {
                   </div>
                 </Form>
               </div>
-            </ClaimCardItem>
+            </ClaimFormCardItem>
           </Col>
-          <Col lg={1} className='d-none d-lg-block'></Col>
-          <Col md></Col>
+          <Col lg></Col>
         </Row>
 
-        <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4 mt-0">
-          <Col md>
+        <Row className="g-0 g-xl-4 align-items-center justify-space-between mb-4 mt-0">
+          <Col xl>
             <DashboardHeadingItem
               title="Initimated Claim List"
             />
           </Col>
-          <Col md="auto"></Col>
         </Row>
 
-        <Row className='g-3 g-md-4'>
+        <Row className='g-3 g-lg-4'>
           {initimatedClaimData.map((item) =>
             <Col lg={6} xl={4} key={item.id}>
-            
+              <ClaimCard
+                icon={item.icon}
+                title={item.title}
+                category={item.category}
+                policyNumber={item.policyNumber}
+              />
             </Col>
           )}
         </Row>

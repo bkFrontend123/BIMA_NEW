@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import Head from 'next/head'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import "swiper/css";
 
 import {Row, Col, Form} from 'react-bootstrap';
 import SelectSearch from 'react-select-search';
@@ -12,58 +10,120 @@ import DashboardPageTitle from '@/component/BIDashboard/DashboardPageTitle'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
 import FilterDropdownCard from '@/component/BIDashboard/DashboardElements/FilterDropdown'
 import PolicyCardItem from "@/component/BIDashboard/DashboardElements/PolicyCard";
-import PremiumFieldItem from '@/component/BIDashboard/DashboardElements/PremiumField';
-import LinkItem from '@/component/BIDashboard/DashboardElements/LinkItem';
 import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
 import NoItemCard from "@/component/BIDashboard/DashboardElements/NoItemCard";
 
-import EmailIcon from '@/component/BIDashboard/Icons/IconEmail';
 import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
-export default function YourPolicies() {
+export default function Policies() {
 
-  const [filterStatusValue, setFilterStatusValue] = useState(1);
-  const filterStatusOptions = [
-      {name: 'Active', value: '1'},
-      {name: 'Inactive', value: '2'},
-  ];
-
-  const [filterYearValue, setFilterYearValue] = useState(3);
+  const [filterYearValue, setFilterYearValue] = useState();
   const filterYearOptions = [
-      {name: '2021', value: '1'},
-      {name: '2022', value: '2'},
-      {name: '2023', value: '3'},
+      {name: '2021-2022', value: '1'},
+      {name: '2022-2023', value: '2'},
+      {name: '2023-2024', value: '3'},
   ];
 
-  const policyData = ([
+  const [filterPolicyStatusValue, setFilterPolicyStatusValue] = useState();
+  const filterPolicyStatusOptions = [
+      {name: 'Active', value: '1'},
+      {name: 'Expired', value: '2'},
+  ];
+
+  const [filterCategoryProductValue, setFilterCategoryProductValue] = useState();
+  const filterCategoryProductOptions = [
+      {name: 'Liability Insurance', value: '1'},
+      {name: 'Asset Insurance', value: '2'},
+      {name: 'Engineering Insurance', value: '3'},
+      {name: 'Marine', value: '4'},
+  ];
+
+  const [filterInsurerNameValue, setFilterInsurerNameValue] = useState();
+  const filterInsurerNameOptions = [
+      {name: 'ICICI Lombard', value: '1'},
+      {name: 'Bajaj Allianz', value: '2'},
+      {name: 'Tata AIG', value: '3'},
+  ];
+
+  const liabilityPolicyData = ([
     {
       id: "1",
-      title: "Fire Insurance",
-      purchaseDate: "24 April 2023",
+      icon: "/productIcons/liability/dAndO_icon.svg",
+      title: "Directors & Officers",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
-      policyPeriod: "29 April 2023 to 28 April 2024",
+      limitLiability: "1 Crore",
+      policyPremium: "30,304",
+      policyNumber: "BKX42787",
+      policyPeriod: "14 Aug 23/13 Aug 24",
       statusType: "pending"
     },
     {
       id: "2",
-      title: "Shopkeeper's Insurance",
-      purchaseDate: "24 April 2023",
-      insurerLogo: "/policyLogos/tataAIG_logo.png",
-      insurerName: "Bajaj Allianz",
-      policyPeriod: "29 April 2023 to 28 April 2024",
-      statusType: "process"
+      icon: "/productIcons/liability/eAndO_icon.svg",
+      title: "Errors & Omissions quote",
+      insurerLogo: "/policyLogos/icici_logo.png",
+      insurerName: "ICICI Lombard",
+      limitLiability: "1 Crore",
+      policyPremium: "30,304",
+      policyNumber: "BKX42787",
+      policyPeriod: "14 Aug 23/13 Aug 24",
+      statusType: "expiring",
+      expireDays: "45"
     },
     {
       id: "3",
-      title: "Office Insurance",
-      purchaseDate: "24 April 2023",
-      insurerLogo: "/policyLogos/tataAIG_logo.png",
-      insurerName: "Tata AIG",
-      policyPeriod: "29 April 2023 to 28 April 2024",
+      icon: "/productIcons/liability/productLiability_icon.svg",
+      title: "Product Liability quote",
+      insurerLogo: "/policyLogos/icici_logo.png",
+      insurerName: "ICICI Lombard",
+      limitLiability: "1 Crore",
+      policyPremium: "30,304",
+      policyNumber: "BKX42787",
+      policyPeriod: "14 Aug 23/13 Aug 24",
       statusType: "confirm"
+    },
+  ])
+
+  const assetPolicyData = ([
+    {
+      id: "1",
+      icon: "/productIcons/asset/fire_icon.svg",
+      title: "Fire Insurance",
+      insurerLogo: "/policyLogos/icici_logo.png",
+      insurerName: "ICICI Lombard",
+      limitLiability: "1 Crore",
+      policyPremium: "30,304",
+      policyNumber: "BKX42787",
+      policyPeriod: "14 Aug 23/13 Aug 24",
+      statusType: "pending"
+    },
+    {
+      id: "2",
+      icon: "/productIcons/asset/fire_icon.svg",
+      title: "Fire Insurance",
+      insurerLogo: "/policyLogos/icici_logo.png",
+      insurerName: "ICICI Lombard",
+      limitLiability: "1 Crore",
+      policyPremium: "30,304",
+      policyNumber: "BKX42787",
+      policyPeriod: "14 Aug 23/13 Aug 24",
+      statusType: "expiring",
+      expireDays: "45"
+    },
+    {
+      id: "3",
+      icon: "/productIcons/asset/fire_icon.svg",
+      title: "Fire Insurance",
+      insurerLogo: "/policyLogos/icici_logo.png",
+      insurerName: "ICICI Lombard",
+      limitLiability: "1 Crore",
+      policyPremium: "30,304",
+      policyNumber: "BKX42787",
+      policyPeriod: "14 Aug 23/13 Aug 24",
+      statusType: "expired"
     },
   ])
 
@@ -75,132 +135,174 @@ export default function YourPolicies() {
         <link rel="canonical" href="" />
       </Head>
       <DashboardCard
-        talkExpert="himani"
         activeMenu="2"
       >
         <DashboardPageTitle
           title="Your Policies"
         />
-        <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4">
-          <Col md>
+        <Row className="g-4 g-xl-4 align-items-center justify-space-between mb-4">
+          <Col xl>
             <DashboardHeadingItem
-              title="Your Policies"
+              title="Liability Insurance"
             />
           </Col>
-          <Col md="auto">
+          <Col xl="auto">
             <FilterDropdownCard
-              title="View"
-            >
-              <Form.Group className={`selectDropDiv selectDropFilterDiv ${!filterStatusValue == '' ? 'selectedDropDiv' : null}`}>
-                <SelectSearch
-                  options={filterStatusOptions}
-                  name="filterStatus"
-                  placeholder="&nbsp;"
-                  onChange={setFilterStatusValue}
-                  value={filterStatusValue}
-                />
-              </Form.Group>
-            </FilterDropdownCard>
-            <FilterDropdownCard
-              title="Year"
+              title="Filters"
             >
               <Form.Group className={`selectDropDiv selectDropFilterDiv ${!filterYearValue == '' ? 'selectedDropDiv' : null}`}>
                 <SelectSearch
                   options={filterYearOptions}
                   name="filterYear"
-                  placeholder="&nbsp;"
+                  placeholder="Year 2023"
                   onChange={setFilterYearValue}
                   value={filterYearValue}
+                />
+              </Form.Group>
+              <Form.Group className={`selectDropDiv selectDropFilterDiv ${!filterPolicyStatusValue == '' ? 'selectedDropDiv' : null}`}>
+                <SelectSearch
+                  options={filterPolicyStatusOptions}
+                  name="filterPolicyStatus"
+                  placeholder="Policy Status"
+                  onChange={setFilterPolicyStatusValue}
+                  value={filterPolicyStatusValue}
+                />
+              </Form.Group>
+              <Form.Group className={`selectDropDiv selectDropFilterDiv selectDropFilterLargeDiv ${!filterCategoryProductValue == '' ? 'selectedDropDiv' : null}`}>
+                <SelectSearch
+                  options={filterCategoryProductOptions}
+                  name="filterCategoryProduct"
+                  placeholder="Category/Products"
+                  onChange={setFilterCategoryProductValue}
+                  value={filterCategoryProductValue}
+                />
+              </Form.Group>
+              <Form.Group className={`selectDropDiv selectDropFilterDiv selectDropFilterMediumDiv ${!filterInsurerNameValue == '' ? 'selectedDropDiv' : null}`}>
+                <SelectSearch
+                  options={filterInsurerNameOptions}
+                  name="filterInsurerName"
+                  placeholder="Insurer Name"
+                  onChange={setFilterInsurerNameValue}
+                  value={filterInsurerNameValue}
                 />
               </Form.Group>
             </FilterDropdownCard>
           </Col>
         </Row>
-        
-        <div className='cardsSliderOuter'>
-          <Swiper            
-            className={`cardsSlider`}
-            spaceBetween={0}
-            slidesPerView={100}
-            loop="false"
-            breakpoints={{
-              1399: {
-                slidesPerView: 100,
-              },
-              1200: {
-                slidesPerView: 100,
-              },
-              992: {
-                slidesPerView: 100,
-              },
-              768: {
-                slidesPerView: 100,
-              },
-              320: {
-                slidesPerView: 1.3,
-              },
-            }}
-          >
-            {policyData.map((item) =>
-              <SwiperSlide key={item.id}>
-                <PolicyCardItem
-                  title={item.title}
-                  purchaseDate={item.purchaseDate}
-                  insurerLogo={item.insurerLogo}
-                  insurerName={item.insurerName}
-                  policyPeriod={item.policyPeriod}
-                  statusType={item.statusType}
-                >
-                  <Row className="g-3 align-items-center">
-                    <Col xxl={9} xl={10}>
-                      <Row className="g-3 align-items-center">
-                        <Col md>
-                          <hr className="mt-0 mb-3 d-md-none" />
-                          <PremiumFieldItem
-                            title="Sum insured"
-                            cost="1500 Cr"
-                          />
-                        </Col>
-                        <Col md>
-                          <PremiumFieldItem
-                            title="Premium"
-                            cost="50,000"
-                          />
-                          <hr className="mt-3 mb-0 d-md-none" />
-                        </Col>
-                        <Col md={4}>
-                          <LinkItem
-                            title="Email Policy"
-                            icon="true"
-                            href=""
-                          >
-                            <EmailIcon />
-                          </LinkItem>
-                        </Col>
-                      </Row>
-                    </Col>
-                    <Col xxl={3} xl={4} md={4}>
-                      <Row className="g-3 align-items-center">
-                        <Col md={12}>
-                          <ButtonItem
-                            title="Fill Proposal Form"
-                            type="submit"
-                            iconPosition="right"
-                            customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
-                          >
-                            <ArrowPrimaryIcon />
-                          </ButtonItem>
-                        </Col>
-                      </Row>
+        <Row className='g-4 g-lg-4'>
+          {liabilityPolicyData.map((item) =>
+            <Col lg={6} xl={4} key={item.id}>
+              <PolicyCardItem
+                icon={item.icon}
+                title={item.title}
+                category="liability"
+                insurerLogo={item.insurerLogo}
+                insurerName={item.insurerName}
+                limitLiability={item.limitLiability}
+                policyPremium={item.policyPremium}
+                policyNumber={item.policyNumber}
+                policyPeriod={item.policyPeriod}
+                statusType={item.statusType}
+                expireDays={item.expireDays}
+              >
+                {item.statusType === "pending" && (
+                  <Row className="g-3 justify-content-center">
+                    <Col xxl={10} xl={10} lg={12}>
+                      <ButtonItem
+                        title="Fill Proposal Form"
+                        type="submit"
+                        iconPosition="right"
+                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                      >
+                        <ArrowPrimaryIcon />
+                      </ButtonItem>
                     </Col>
                   </Row>
-                </PolicyCardItem>
-              </SwiperSlide>
-            )}
-          </Swiper>
-        </div>
-
-        <NoItemCard customClass="mt-4">No Policies Found</NoItemCard>
+                )}
+                {item.statusType === "expiring" && (
+                  <Row className="g-3 justify-content-center">
+                    <Col xxl={10} xl={10} lg={12}>
+                      <ButtonItem
+                        title="Renew Policy"
+                        type="submit"
+                        iconPosition="right"
+                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                      >
+                        <ArrowPrimaryIcon />
+                      </ButtonItem>
+                      <p>Make sure to renew your policy before it gets lapse. Talk to an expert of any help.</p>
+                    </Col>
+                  </Row>
+                )}
+              </PolicyCardItem>
+            </Col>
+          )}
+        </Row>
+        <Row className="g-4 g-xl-4 align-items-center justify-space-between mb-4 mt-0">
+          <Col xl>
+            <DashboardHeadingItem
+              title="Asset Insurance"
+            />
+          </Col>
+        </Row>
+        <Row className='g-4 g-lg-4'>
+          {assetPolicyData.map((item) =>
+            <Col lg={6} xl={4} key={item.id}>
+              <PolicyCardItem
+                icon={item.icon}
+                title={item.title}
+                category="asset"
+                insurerLogo={item.insurerLogo}
+                insurerName={item.insurerName}
+                limitLiability={item.limitLiability}
+                policyPremium={item.policyPremium}
+                policyNumber={item.policyNumber}
+                policyPeriod={item.policyPeriod}
+                statusType={item.statusType}
+                expireDays={item.expireDays}
+              >
+                {item.statusType === "pending" && (
+                  <Row className="g-3 justify-content-center">
+                    <Col xxl={10} xl={10} lg={12}>
+                      <ButtonItem
+                        title="Fill Proposal Form"
+                        type="submit"
+                        iconPosition="right"
+                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                      >
+                        <ArrowPrimaryIcon />
+                      </ButtonItem>
+                    </Col>
+                  </Row>
+                )}
+                {item.statusType === "expiring" && (
+                  <Row className="g-3 justify-content-center">
+                    <Col xxl={10} xl={10} lg={12}>
+                      <ButtonItem
+                        title="Renew Policy"
+                        type="submit"
+                        iconPosition="right"
+                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                      >
+                        <ArrowPrimaryIcon />
+                      </ButtonItem>
+                      <p>Make sure to renew your policy before it gets lapse. Talk to an expert of any help.</p>
+                    </Col>
+                  </Row>
+                )}
+              </PolicyCardItem>
+            </Col>
+          )}
+        </Row>
+        <Row>
+          <Col lg={6} xl={4}>
+            <NoItemCard
+              title="No Policies Found"
+              button="true"
+              customClass="mt-4"
+            />
+          </Col>
+        </Row>
       </DashboardCard>
     </>
   )

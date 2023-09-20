@@ -1,0 +1,210 @@
+.quoteCardCol {
+    background: var(--whiteBg);
+    padding: 32px;
+    border-radius: 0;
+    /*border: 1px solid var(--color-border-white);
+    box-shadow: 0 0 20px rgb(0 0 0 / 4%);*/
+}
+
+.quoteCardCol.active {
+    border-color: var(--vt-c-blueSky);
+}
+
+.quoteCardTtl {
+    position: relative;
+}
+
+.quoteCardTtl h3 {
+    font-size: 28px;
+    color: var(--black);
+    font-weight: 600;
+    margin: 0;
+}
+
+.quoteCardTtl .quoteCardArrow {
+    width: 10px;
+    position: relative;
+    z-index: 2;
+    top: -1px;
+    transition: all 0.3s ease;
+}
+
+.quoteCardTtl .quoteCardArrow.active {
+    transform: rotate(90deg);
+}
+
+.quoteCardTtl h5 {
+    font-size: 15px;
+    color: #99B1CE;
+    font-weight: 500;
+    margin: 6px 0 0;
+}
+
+.quoteStatus {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.quoteStatus i {
+    font-style: normal;
+}
+
+.quoteStatus span {
+    background-color: var(--vt-c-gray);
+    font-size: 15px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 12px;
+    margin-left: 6px;
+    white-space: nowrap;
+}
+
+.offlineStatus span {
+    background-color: var(--vt-c-gray);
+}
+
+.progressStatus span {
+    background-color: var(--statusGreenBg);
+    color: var(--statusGreenColor);
+}
+
+.quoteCardList {
+    margin-top: 18px;
+}
+
+.quoteCardList ul {
+    margin: -12px 0 0 -12px;
+}
+
+.quoteCardList ul li {
+    display: inline-block;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.quoteCardList ul li + li {
+    padding-left: 12px;
+    border-left: 1px solid var(--border-mute1);
+}
+
+.quoteCardCol ul li p {
+    font-size: 18px;
+    color: var(--black);
+    margin: 0;
+}
+
+.quoteCardCol ul li p small {
+    color: var(--vt-c-grayLight3);
+}
+
+.quoteCardCol ul li p strong {
+    font-weight: 600;
+}
+
+.quoteCardInfo {
+    margin-top: 20px;
+}
+
+.quoteCardBtn {
+    margin-top: 34px;
+}
+
+@media (max-width:1699px) {
+    .quoteCardCol {
+        padding: 24px;
+    }
+
+    .quoteCardTtl h3 {
+        font-size: 24px;
+    }
+
+    .quoteStatus {
+        font-size: 14px;
+    }
+    
+    .quoteStatus span {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .quoteCardList {
+        margin-top: 16px;
+    }
+
+    .quoteCardCol ul li p {
+        font-size: 16px;
+    }
+
+    .quoteCardBtn {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width:991px) {
+    .quoteCardCol {
+        padding: 20px;
+    }
+
+}
+
+@media (max-width:767px) {
+    .quoteCardCol {
+        padding: 16px;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);
+        margin: 0 10px 10px 10px;
+    }
+
+    .mblQuoteCardInfo {
+        /*display: none;*/
+    }
+
+    .mblQuoteCardInfo.show {
+        /*display: block;*/
+    }
+    
+    .quoteCardTtl h3 {
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .quoteCardTtl h5 {
+        font-size: 13px;
+        margin: 8px 0;
+    }
+
+    .quoteStatus {
+        font-size: 12px;
+    }
+    
+    .quoteStatus span {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 6px;
+        margin: 0;
+    }
+
+    .quoteCardList ul li {
+        margin-left: 12px;
+        margin-top: 12px;
+        width: calc(50% - 12px);
+        vertical-align: top;
+    }
+    .quoteCardList ul li + li {
+        padding-left: 0;
+        border-left: 0;
+    }
+    .quoteCardCol ul li p {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .quoteCardCol ul li p strong {
+        font-size: 13px;
+        font-weight: 400;
+        color: var(--vt-c-gray);
+        display: block;
+    }
+}

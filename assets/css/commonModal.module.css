@@ -28,3 +28,35 @@
         font-size: 16px;
     }
 }
+
+@media (min-width:992px) and (max-width:1300px) {
+    .commonMdlBody {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 991px) {
+    .commonMdlBody {
+        padding: 24px;
+    }
+    .welcomeMdlTtl h3 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .welcomeMdlTtl p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .commonMdlBody {
+        padding: 16px;
+    }
+    .welcomeMdlTtl h3 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .welcomeMdlTtl p {
+        font-size: 14px;
+    }
+}

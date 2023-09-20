@@ -37,5 +37,7 @@
     .fltrBtn {
         font-size: 13px;
         padding: 0 10px;
+        margin-left: 0 !important;
+        margin-top: 10px;
     }
 }

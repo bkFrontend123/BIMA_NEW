@@ -1,9 +1,7 @@
 .policyCardCol {
     background: var(--whiteBg);
     padding: 32px;
-    border-radius: 0;
-    /*border: 1px solid var(--color-border-white);
-    box-shadow: 0 0 20px rgb(0 0 0 / 4%);*/
+    border: 1px solid var(--vt-c-gray1);
 }
 
 .policyCardCol.active {
@@ -14,10 +12,19 @@
     position: relative;
 }
 
+.policyTitle {
+    margin: 20px 0;
+}
+
+.expirePolicyCardCol .policyLogoIcon {
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
 .policyCardTtl h3 {
-    font-size: 28px;
+    font-size: 22px;
     color: var(--black);
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -33,20 +40,59 @@
     transform: rotate(90deg);
 }
 
+.policyCardTtl h4 {
+    font-size: 16px;
+    color: var(--border-mute1);
+    font-weight: 500;
+    margin: 2px 0 0;
+}
+
 .policyCardTtl h5 {
     font-size: 15px;
-    color: #99B1CE;
+    color: var(--border-mute1);
     font-weight: 500;
     margin: 6px 0 0;
 }
 
-.policyStatus {
+.policyCardCat {
+    background-color: var(--vt-c-gray);
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 11px;
+    color: var(--vt-c-black);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid var(--vt-c-gray);
     display: inline-block;
-    font-size: 16px;
+}
+
+.liabilityCat.policyCardCat {
+    background-color: var(--liabilityBg);
+    color: var(--liabilityColor);
+    border-color: var(--liabilityColor);
+}
+
+.assetCat.policyCardCat {
+    background-color: var(--assetBg);
+    color: var(--assetColor);
+    border-color: var(--assetColor);
+}
+
+.expirePolicyCardCol .liabilityCat.policyCardCat,
+.expirePolicyCardCol .assetCat.policyCardCat {
+    background-color: var(--vt-c-gray);
+    color: var(--gray);
+    border-color: var(--gray);
+}
+
+
+.policyStatus {
+    font-size: 15px;
     color: var(--black);
     font-weight: 500;
-    vertical-align: middle;
-    margin-left: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .policyStatus i {
@@ -54,72 +100,138 @@
 }
 
 .policyStatus span {
-    background-color: var(--vt-c-gray);
+    position: relative;
     font-size: 15px;
-    line-height: 30px;
+    line-height: 24px;
     display: inline-block;
-    padding: 0 12px;
-    margin-left: 4px;
+    padding-left: 14px;
     white-space: nowrap;
 }
 
-.pendingStatus span {
-    background-color: var(--statusRedBg);
-    color: var(--statusRedColor);
+.policyStatus span::before {
+    background-color: var(--vt-c-gray);
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
 }
 
-.processStatus span {
-    background-color: var(--statusOrangeBg);
-    color: var(--statusOrangeColor);
+.policyStatus.activeStatus span {
+    color: var(--success);
+}
+.policyStatus.activeStatus span::before {
+    background-color: var(--success);
 }
 
-.confirmStatus span {
-    background-color: var(--statusGreenBg);
-    color: var(--statusGreenColor);
+.policyStatus.expiredStatus span {
+    color: var(--error);
+}
+.policyStatus.expiredStatus span::before {
+    background-color: var(--error);
 }
 
-.policyLogo .policyLogoIcon {
+.policyStatusTtl span {
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'Galano Grotesque Alt', sans-serif;
+    color: var(--black);
+    display: inline-block;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.policyStatusTtl.pendingStatus span {
+    color: var(--vt-c-blueSky);
+}
+
+.policyStatusTtl.expiringStatus span {
+    color: var(--error);
+}
+
+.policyStatusTtl.confirmStatus span {
+    color: var(--vt-c-blueSky);
+}
+
+.insurerLogo {
+    display: inline-block;
+    border: 1px solid var(--greyDark2);
+    border-radius: 10px;
+    padding: 14px 10px;
+}
+
+.insurerLogo .insurerLogoIcon {
     max-height: 100%;
     max-width: 100%;
     width: auto;
-    height: 40px;
+    height: 30;
+}
+.expirePolicyCardCol .insurerLogo .insurerLogoIcon {
+    filter: grayscale(100%);
+    opacity: 0.7;
 }
 
 .policyCardList {
-    margin-top: 18px;
+    margin-top: 1rem;
 }
 
 .policyCardList ul {
-    margin: -12px 0 0 -12px;
+    margin: -16px -6px 0 -6px;
+    overflow: hidden;
 }
 
 .policyCardList ul li {
-    display: inline-block;
-    margin-left: 12px;
-    margin-top: 12px;
+    float: left;
+    width: 50%;
+    padding: 0 6px;
+    margin-top: 16px;
 }
 
-.policyCardList ul li + li {
-    padding-left: 12px;
-    border-left: 1px solid var(--border-mute1);
-}
-
-.policyCardCol ul li p {
-    font-size: 18px;
-    color: var(--black);
+.policyCardList p {
+    font-size: 16px;
+    color: var(--vt-c-blueSkyLight2);
+    font-weight: 500;
     margin: 0;
 }
 
-.policyCardCol ul li p small {
+.policyCardList p small {
     color: var(--vt-c-grayLight3);
 }
 
-.policyCardCol ul li p strong {
-    font-weight: 600;
+.policyCardList p strong {
+    font-size: 19px;
+    display: block;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--black);
+}
+
+.policyCardList p strong span {
+    cursor: pointer;
+    position: relative;
+    top: -4px;
+}
+
+.policyCardList ul li:nth-child(2) p strong {
+    font-size: 16px;
+}
+
+.policyCardDwnload {
+    margin-top: 1rem;
 }
 
 .policyCardInfo {
-    margin-top: 20px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.policyCardInfo p {
+    font-size: 15px;
+    color: var(--vt-c-blueSkyLight2);
+    font-weight: 500;
+    margin: 16px 0 0 0;
 }
 
 @media (max-width:1699px) {
@@ -127,30 +239,45 @@
         padding: 24px;
     }
 
+    .policyTitle {
+        margin: 16px 0;
+    }
+
     .policyCardTtl h3 {
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    .policyCardTtl h4 {
+        font-size: 14px;
     }
 
     .policyStatus {
-        font-size: 15px;
+        font-size: 14px;
     }
     
     .policyStatus span {
         font-size: 14px;
-        padding: 0 10px;
-    }
-    
-    .policyCardList {
-        margin-top: 16px;
     }
 
-    .policyCardCol ul li p {
-        font-size: 16px;
+    .policyStatusTtl span {
+        font-size: 13px;
     }
 
-    .policyCardBtn {
-        margin-top: 24px;
+    .policyCardList p {
+        font-size: 14px;
     }
+
+    .policyCardList p strong {
+        font-size: 17px;
+    }
+
+    .policyCardList ul li:nth-child(2) p strong {
+        font-size: 15px;
+    }
+
+    .policyCardInfo p {
+        font-size: 14px;
+    }    
 }
 
 @media (max-width:991px) {
@@ -162,8 +289,7 @@
 @media (max-width:767px) {
     .policyCardCol {
         padding: 16px;
-        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);
-        margin: 0 10px 10px 10px;
+        margin: 0;
     }
 
     .mblPolicyCardInfo {
@@ -174,20 +300,24 @@
         /*display: block;*/
     }
     
-    .policyCardTtl {
+    /*.policyCardTtl {
         display: grid;
     }
 
     .policyCardTtl > div:first-child {
         order :2;
-    }
+    }*/
     
     .policyCardTtl h3 {
-        font-size: 16px;
+        font-size: 17px;
         line-height: 22px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .policyCardTtl h4 {
+        font-size: 14px;
     }
 
     .policyCardTtl h5 {
@@ -203,28 +333,21 @@
     .policyStatus span {
         font-size: 12px;
         line-height: 26px;
-        padding: 0 6px;
-        margin: 0;
+    }
+
+    .policyStatusTtl span {
+        font-size: 12px;
     }
 
     .policyCardList ul li {
-        margin-left: 12px;
-        margin-top: 12px;
-        width: calc(100% - 12px);
-        vertical-align: top;
     }
-    .policyCardList ul li + li {
-        padding-left: 0;
-        border-left: 0;
-    }
-    .policyCardCol ul li p {
-        font-size: 14px;
-        font-weight: 600;
-    }
-    .policyCardCol ul li p strong {
+    .policyCardList p {
         font-size: 13px;
-        font-weight: 400;
-        color: var(--vt-c-gray);
-        display: block;
+    }
+    .policyCardList p strong {
+        font-size: 15px;
+    }
+    .policyCardList ul li:last-child p strong {
+        font-size: 14px;
     }
 }

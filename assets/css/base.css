@@ -852,4 +852,7 @@ h2.font-secondary {
   .cardsSliderOuter .cardsSlider {
     margin-left: -10px;
   }
+  .blankHeight {
+    min-height: auto;
+  }
 }

@@ -26,13 +26,12 @@ export default function Support() {
       <DashboardCard
         activeMenu="6"
       >
-        <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
-          <Col md>
+        <Row className="g-0 g-xl-4 align-items-center justify-space-between mb-4">
+          <Col xl>
             <DashboardHeadingItem
               title="Support"
             />
           </Col>
-          <Col md="auto"></Col>
         </Row>
         <Text
           color={textStyle.black}

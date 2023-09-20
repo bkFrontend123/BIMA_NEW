@@ -51,7 +51,7 @@
 
 @media (max-width:1699px) {
     .notiCard {
-        padding: 16px 16px 16px 40px;
+        padding: 16px 16px 16px 34px;
     }
     .notiCard::before {
        width: 6px;

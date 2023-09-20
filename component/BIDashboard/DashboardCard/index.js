@@ -3,11 +3,14 @@ import React, { useState } from 'react'
 import DashboardSidebar from "@/component/BIDashboard/DashboardSidebar";
 import DashboardHeader from "@/component/BIDashboard/DashboardHeader";
 import HideArrowIcon from "@/component/BIDashboard/Icons/IconHideArrow";
+import DashboardRightSidebar from "@/component/BIDashboard/DashboardRightSidebar";
+import ClaimFaq from '@/component/BIDashboard/DashboardElements/ClaimFaq'
+import RequestFaq from '@/component/BIDashboard/DashboardElements/RequestFaq'
 
 import dashLayoutStyle from '@/assets/css/dashboardLayout.module.css'
 
 export default function DashboardCard(props) {
-  const { activeMenu, children } = props;
+  const { activeMenu, rightSidebar, children } = props;
 
   const [isActive, setIsActive] = useState(false);
 
@@ -16,7 +19,7 @@ export default function DashboardCard(props) {
   };
   return (
     <>
-      <section className={`${dashLayoutStyle.dashboardOuter} ${dashLayoutStyle.dashboardOuterMedium} ${isActive ? dashLayoutStyle.dashboardOuterSmall : ''}`}>
+      <section className={`${dashLayoutStyle.dashboardOuter} ${dashLayoutStyle.dashboardOuterMedium} ${isActive ? dashLayoutStyle.dashboardOuterSmall : ''} ${rightSidebar == 'true' ? dashLayoutStyle.dashboardOuterRight : ''}`}>
         <DashboardHeader
           click={handleClick}
         />
@@ -40,6 +43,24 @@ export default function DashboardCard(props) {
             {children}
           </div>
         </div>
+        {rightSidebar === 'true' ? (
+          <div className={`${dashLayoutStyle.dashRghtSidebar}`}>
+            <DashboardRightSidebar>
+              {activeMenu === '3' ? (
+                <ClaimFaq />
+              ):(
+                null
+              )}
+              {activeMenu === '4' ? (
+                <RequestFaq />
+              ):(
+                null
+              )}
+            </DashboardRightSidebar>
+          </div>
+        ):(
+          null
+        )}
       </section>
     </>
   )

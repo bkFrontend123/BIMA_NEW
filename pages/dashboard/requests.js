@@ -9,10 +9,10 @@ import 'react-select-search/style.css'
 import DashboardCard from '@/component/BIDashboard/DashboardCard'
 import DashboardPageTitle from '@/component/BIDashboard/DashboardPageTitle'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
-import ClaimRequestCard from "@/component/BIDashboard/DashboardElements/ClaimCard/claimRequest";
-import ClaimCardItem from "@/component/BIDashboard/DashboardElements/ClaimCardNew";
+import RequestFormCardItem from "@/component/BIDashboard/DashboardElements/ClaimRequestFormCard";
 import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
-import ClaimRequestThankModal from '@/component/BIDashboard/DashboardElements/Modal/ClaimRequestThankModal'
+import RequestFileThankModal from '@/component/BIDashboard/DashboardElements/Modal/ClaimRequestThankModal'
+import RequestCard from '@/component/BIDashboard/DashboardElements/ClaimRequestCard'
 
 import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 
@@ -23,7 +23,7 @@ export default function Requests() {
 
   const [policyValue, setPolicyValue] = useState();
   const policyOptions = [
-    { name: 'Directors & Officers (BKX42787)', value: '1' },
+    { name: 'Directors & Officers <span>(BKX42787)', value: '1' },
     { name: 'Errors & Omissions quote (BKX42787)', value: '2' },
     { name: 'Product Liability quote (BKX42787)', value: '3' },
   ];
@@ -43,43 +43,27 @@ export default function Requests() {
   const handleCloseClaimRequestThank = () => setShowClaimRequestThank(false);
   const handleShowClaimRequestThank = () => setShowClaimRequestThank(true);
 
-  const initimatedClaimData = ([
+  const requestData = ([
     {
       id: "1",
-      icon: "/productIcons/asset/fire_icon.svg",
-      title: "Fire Insurance",
-      insurerLogo: "/policyLogos/icici_logo.png",
-      insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
-      policyPremium: "30,304",
+      icon: "/productIcons/liability/dAndO_icon.svg",
+      title: "Directors & Officers",
+      category: 'liability',
       policyNumber: "BKX42787",
-      policyPeriod: "14 Aug 23/13 Aug 24",
-      statusType: "pending"
     },
     {
       id: "2",
-      icon: "/productIcons/asset/fire_icon.svg",
-      title: "Fire Insurance",
-      insurerLogo: "/policyLogos/icici_logo.png",
-      insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
-      policyPremium: "30,304",
+      icon: "/productIcons/liability/eAndO_icon.svg",
+      title: "Errors & Omissions quote",
+      category: 'liability',
       policyNumber: "BKX42787",
-      policyPeriod: "14 Aug 23/13 Aug 24",
-      statusType: "expiring",
-      expireDays: "45"
     },
     {
       id: "3",
       icon: "/productIcons/asset/fire_icon.svg",
       title: "Fire Insurance",
-      insurerLogo: "/policyLogos/icici_logo.png",
-      insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
-      policyPremium: "30,304",
+      category: 'asset',
       policyNumber: "BKX42787",
-      policyPeriod: "14 Aug 23/13 Aug 24",
-      statusType: "expired"
     },
   ])
 
@@ -92,23 +76,23 @@ export default function Requests() {
       </Head>
       <DashboardCard
         activeMenu="4"
+        rightSidebar="true"
       >
         <DashboardPageTitle
           title="Requests/Endorsements"
         />
 
-        <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
-          <Col md>
+        <Row className="g-0 g-xl-4 align-items-center justify-space-between mb-4">
+          <Col xl>
             <DashboardHeadingItem
               title="Requests/Endorsements"
             />
           </Col>
-          <Col md="auto"></Col>
         </Row>
 
-        <Row className="g-3 g-md-4">
-          <Col md>
-            <ClaimCardItem>
+        <Row className="g-4 g-lg-4">
+          <Col lg>
+            <RequestFormCardItem>
               <div className={`${form.commonForm}`}>
                 <Form>
                   <Form.Group className={`selectDropDiv searchDropDiv selectDropDivSmall mb-4 ${!policyValue == '' ? 'selectedDropDiv' : null}`}>
@@ -148,30 +132,33 @@ export default function Requests() {
                   </div>
                 </Form>
               </div>
-            </ClaimCardItem>
+            </RequestFormCardItem>
           </Col>
-          <Col lg={1} className='d-none d-lg-block'></Col>
-          <Col md></Col>
+          <Col lg></Col>
         </Row>
 
-        <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4 mt-0">
-          <Col md>
+        <Row className="g-4 g-xl-4 align-items-center justify-space-between mb-4 mt-0">
+          <Col xl>
             <DashboardHeadingItem
               title="Requests List"
             />
           </Col>
-          <Col md="auto"></Col>
         </Row>
 
-        <Row className='g-3 g-md-4'>
-          {initimatedClaimData.map((item) =>
+        <Row className='g-3 g-lg-4'>
+          {requestData.map((item) =>
             <Col lg={6} xl={4} key={item.id}>
-
+              <RequestCard
+                icon={item.icon}
+                title={item.title}
+                category={item.category}
+                policyNumber={item.policyNumber}
+              />
             </Col>
           )}
         </Row>
       </DashboardCard>
-      <ClaimRequestThankModal
+      <RequestFileThankModal
         show={showClaimRequestThank}
         handleClose={handleCloseClaimRequestThank}
       />

@@ -46,6 +46,13 @@
     font-size: 18px;
     line-height: 22px;
 }
+.commonOffcanvasHdrTtl h4 {
+    font-size: 26px;
+    color: var(--whiteText);
+    font-weight: 500;
+    line-height: 34px;
+    margin: 0;
+}
 .commonOffcanvasBodyDiv {
     background-color: var(--whiteBg);
     padding: 50px;
@@ -97,6 +104,10 @@
     .commonOffcanvasHeaderDiv,
     .commonOffcanvasBodyDiv {
         padding: 40px;
+    }
+    .commonOffcanvasHdrTtl h4 {
+        font-size: 24px;
+        line-height: 32px;
     }
     .commonOffcanvasData p {
         font-size: 18px;

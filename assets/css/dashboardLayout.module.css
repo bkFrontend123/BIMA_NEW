@@ -62,8 +62,8 @@
 
 .sdbrClosebtn {
     position: absolute;
-    right: 16px;
-    top: 16px;
+    right: 8px;
+    top: 5px;
     display: none;
 }
 
@@ -87,6 +87,10 @@
 
 .dashboardOuterSmall .dashboardMainCard {
     margin-left: 109px;
+}
+
+.dashboardOuterRight .dashboardMainCard {
+    margin-right: 350px;
 }
 
 .hideSidebarBtn {
@@ -313,6 +317,65 @@
     margin: 0 0 16px 0;
 }
 
+.dashRghtSidebar {
+    background: var(--mute3);
+    position: fixed;
+    right: 0;
+    top: 90px;
+    bottom: 0;
+    width: 350px;
+    padding: 40px;
+    border-left: 1px solid var(--vt-c-gray1);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 8;
+    transition: all 0.3s ease 0s;
+}
+
+.rghtSdbrWidget + .rghtSdbrWidget {
+    margin-top: 30px;
+}
+
+.rghtSdbrWidget h5 {
+    font-size: 20px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.rghtSdbrWidget p {
+    font-size: 15px;
+    color: var(--vt-c-blueSkyLight2);
+    font-weight: 500;
+    margin: 0;
+}
+
+.rghtSdbrWidget ul li {
+    font-size: 15px;
+    color: var(--vt-c-blueSkyLight2);
+    font-weight: 500;
+    margin: 0;
+}
+
+.rghtSdbrWidget ul li + li {
+    margin-top: 16px;
+}
+
+.rghtSdbrWidget ul li span {
+    background-color: var(--vt-c-blueSkyLight2);
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    display: inline-block;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+    text-align: center;
+    margin-right: 8px;
+}
+
 .dashboardHeader {
     background: var(--mute3);
     position: fixed;
@@ -464,6 +527,7 @@
 }
 .dHdrDropDvdr {
     border-color: var(--vt-c-grayLight);
+    opacity: 1;
 }
 
 /***Header Notification Dropdown Css Start***/
@@ -499,6 +563,10 @@
         margin-top: 74px;
     }
 
+    .dashboardOuterRight .dashboardMainCard {
+        margin-right: 300px;
+    }
+
     .hideSidebarBtn {
         left: 258px;
         top: 135px;
@@ -510,6 +578,10 @@
 
     .dHdrDropMenu {
         font-size: 14px;
+    }
+
+    .sdbrLnksList {
+        margin-bottom: 32px;
     }
 
     .sdbrLogo span svg {
@@ -535,6 +607,33 @@
         font-size: 15px;
         margin: 0 0 12px 0;
     }
+
+    .dashRghtSidebar {
+        width: 300px;
+        padding: 24px;
+        top: 74px;
+    }
+
+    .rghtSdbrWidget + .rghtSdbrWidget {
+        margin-top: 20px;
+    }
+    
+    .rghtSdbrWidget h5 {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    
+    .rghtSdbrWidget p {
+        font-size: 14px;
+    }
+
+    .rghtSdbrWidget ul li {
+        font-size: 14px;
+    }
+
+    .rghtSdbrWidget ul li + li {
+        margin-top: 12px;
+    }
 }
 
 @media (min-width:992px) and (max-width:1300px) {
@@ -547,13 +646,27 @@
     }
 
     .dashboardOuterMedium .dashSidebar {
-        width: 109px;
-        padding: 24px;
+        width: 80px;
+        padding: 24px 0;
     }
 
     .dashboardOuterMedium.dashboardOuterSmall .dashSidebar {
-        width: 270px;
-        padding: 32px 24px;
+        width: 250px;
+        padding: 20px 0;
+    }
+
+    .sdbrLnksItem .sdbrLnksAnchor {
+        padding: 0 20px;
+    }
+
+    .sdbrHelpBox {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        display: none;
+    }
+
+    .dashboardOuterSmall .sdbrHelpBox {
+        display: block;
     }
 
     .dashboardOuterMedium .dashboardMainCard {
@@ -565,14 +678,15 @@
     }
 
     .dashboardOuterMedium.dashboardOuterSmall .dashboardMainCard {
-        margin-right: -191px;
+        margin-right: -250px;
         overflow: hidden;
         height: 100vh;
-        margin-left: 270px;
+        margin-left: 250px;
     }
 
     .dashboardOuterMedium .dashboardMainCard {
-        margin-left: 109px;
+        margin-left: 80px;
+        padding: 20px;
     }
 
     .hideSidebarBtn {
@@ -580,11 +694,11 @@
     }
 
     .dashboardOuterMedium .hideSidebarBtn {
-        left: 97px;
+        left: 68px;
     }
 
     .dashboardOuterMedium.dashboardOuterSmall .hideSidebarBtn {
-        left: 258px;
+        left: 238px;
     }
 
     .dashboardOuterMedium .sdbrDrop {
@@ -621,7 +735,7 @@
     }
     
     .sdbrLnksItem + .sdbrLnksItem {
-        margin-top: 30px;
+        margin-top: 20px;
     }
     
     .dashboardOuterMedium .sdbrLnksItem .sdbrLnksAnchor {
@@ -646,7 +760,7 @@
         display: block;
     }
     .dashboardHeader {
-        padding: 20px 12px;
+        padding: 16.6px 20px;
     }
     .dashUserProCol h4,
     .dashUserInfoCol h4 {
@@ -674,7 +788,7 @@
     }
 
     .dashSidebar {
-        left: -300px;
+        left: -260px;
         top: 0;
         padding: 24px 0 140px 0;
     }
@@ -726,8 +840,8 @@
         height: 60px;
     }
 
-    .sdbrLnksItem+.sdbrLnksItem {
-        margin-top: 30px;
+    .sdbrLnksItem + .sdbrLnksItem {
+        margin-top: 20px;
     }
 
     .dashboardOuterSmall .sdbrLnksItem .sdbrLnksAnchor {
@@ -753,17 +867,33 @@
     }
 
     .dashboardMainCard {
-        padding: 16px;
+        padding: 24px 16px 16px 16px;
+    }
+
+    .dashboardOuterRight .dashboardMainCard {
+        margin-right: 0;
+    }
+
+    .dashSidebar {
+        padding: 0;
     }
 
     .dashboardOuterSmall .dashSidebar {
-        width: 320px;
-        padding: 40px 16px;
+        width: 260px;
+        padding: 0;
+    }
+
+    .sdbrLnksItem + .sdbrLnksItem {
+        margin-top: 16px;
     }
 
     .sdbrClosebtn {
-        right: 12px;
-        top: 12px;
+        right: 8px;
+        top: 8px;
+    }
+
+    .dashRghtSidebar {
+        display: none;
     }
 
     .dashboardHeader {
@@ -798,6 +928,6 @@
     }
 
     .sdbrLnksList {
-        margin-top: 24px;
+        margin-top: 36px;
     }
 }

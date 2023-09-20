@@ -7,7 +7,7 @@ import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 import style from './style.module.css'
 
 export default function WelcomeCard(props) {
-  const {title, icon, count, subtitle, link} = props;
+  const {title, icon, count, subtitle, onClick} = props;
 
   return (
     <>
@@ -22,7 +22,7 @@ export default function WelcomeCard(props) {
             <p>{subtitle}</p>
           </div>
           <div className={`${style.welcomeCardBtn}`}>
-              <Link href={link} className={`${style.welcomeCardBtnLink}`}>
+              <Link href="#" onClick={onClick} className={`${style.welcomeCardBtnLink}`}>
                 <ArrowPrimaryIcon />
               </Link>
           </div>

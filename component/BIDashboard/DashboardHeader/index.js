@@ -40,11 +40,19 @@ export default function DashboardHeader(props) {
     },
   ])
 
+  const router = useRouter();
+  const goToProfile = () => {
+    router.push('/dashboard/profile');
+  };
+
+  const goToSettings = () => {
+    router.push('/dashboard/settings');
+  };
+
   const [showLogout, setShowLogout] = useState(false);
   const handleCloseLogout = () => setShowLogout(false);
   const handleShowLogout = () => setShowLogout(true);
 
-  const router = useRouter();
   const goToLogout = () => {
     router.push('/dashboard/login');
   };
@@ -97,8 +105,8 @@ export default function DashboardHeader(props) {
                   <span>TJ</span>
                 </Dropdown.Toggle>
                 <Dropdown.Menu className={`${dashLayoutStyle.dHdrDropMenuDiv}`}>
-                  <Dropdown.Item href="/dashboard/profile" className={`${dashLayoutStyle.dHdrDropMenu}`}>Company Profile</Dropdown.Item>
-                  <Dropdown.Item href="#/settings" className={`${dashLayoutStyle.dHdrDropMenu}`}>Settings</Dropdown.Item>
+                  <Dropdown.Item href="#" onClick={goToProfile} className={`${dashLayoutStyle.dHdrDropMenu}`}>Company Profile</Dropdown.Item>
+                  <Dropdown.Item href="#" onClick={goToSettings} className={`${dashLayoutStyle.dHdrDropMenu}`}>Settings</Dropdown.Item>
                   <Dropdown.Divider className={`${dashLayoutStyle.dHdrDropDvdr}`} />
                   <Dropdown.Item href="#" onClick={handleShowLogout} className={`${dashLayoutStyle.dHdrDropMenu}`}>Logout</Dropdown.Item>
                 </Dropdown.Menu>

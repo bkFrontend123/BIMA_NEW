@@ -1,0 +1,180 @@
+.claimReqstCardCol {
+    background: var(--whiteBg);
+    padding: 24px;
+    border: 1px solid var(--vt-c-gray1);
+}
+
+.claimReqstCardTtl {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.claimReqstCardTtl h3 {
+    font-size: 19px;
+    color: var(--black);
+    font-weight: 600;
+    margin: 0;
+}
+
+.claimReqstCardTtl h4 {
+    font-size: 15px;
+    color: var(--border-mute1);
+    font-weight: 500;
+    margin: 2px 0 0;
+}
+
+.claimReqstCardTtl h5 {
+    font-size: 15px;
+    color: var(--border-mute1);
+    font-weight: 500;
+    margin: 6px 0 0;
+}
+
+.claimReqstCardCat {
+    background-color: var(--vt-c-gray);
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 11px;
+    color: var(--vt-c-black);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid var(--vt-c-gray);
+    display: inline-block;
+}
+
+.liabilityCat.claimReqstCardCat {
+    background-color: var(--liabilityBg);
+    color: var(--liabilityColor);
+    border-color: var(--liabilityColor);
+}
+
+.assetCat.claimReqstCardCat {
+    background-color: var(--assetBg);
+    color: var(--assetColor);
+    border-color: var(--assetColor);
+}
+
+.claimReqstCardList {
+    margin-top: 1rem;
+}
+
+.claimReqstCardList p {
+    font-size: 16px;
+    color: var(--vt-c-blueSkyLight2);
+    font-weight: 500;
+    margin: 0;
+}
+
+.claimReqstCardList p small {
+    color: var(--vt-c-grayLight3);
+}
+
+.claimReqstCardList p strong {
+    font-size: 19px;
+    display: block;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--black);
+}
+
+.claimReqstCardList p strong span {
+    cursor: pointer;
+    position: relative;
+    top: -4px;
+}
+
+.claimReqstLink {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--vt-c-blueSky);
+    display: inline-block;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.claimReqstCardInfo {
+    margin-top: 1rem;
+}
+
+.claimReqstCardInfo p {
+    font-size: 15px;
+    color: var(--vt-c-blueSkyLight2);
+    font-weight: 500;
+    margin: 16px 0 0 0;
+}
+
+@media (max-width:1699px) {
+    .claimReqstCardCol {
+        padding: 16px;
+    }
+
+    .claimReqstCardTtl {
+        margin-bottom: 16px;
+    }
+
+    .claimReqstCardTtl h3 {
+        font-size: 17px;
+    }
+
+    .claimReqstCardTtl h4 {
+        font-size: 13px;
+    }
+
+    .claimReqstCardList p {
+        font-size: 14px;
+    }
+
+    .claimReqstCardList p strong {
+        font-size: 17px;
+    }
+
+    .claimReqstLink {
+        font-size: 13px;
+    }
+
+    .claimReqstCardInfo p {
+        font-size: 14px;
+    }    
+}
+
+@media (max-width:991px) {
+    .claimReqstCardCol {
+        padding: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .claimReqstCardCol {
+        padding: 16px;
+        margin: 0;
+    }
+    
+    .claimReqstCardTtl h3 {
+        font-size: 17px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .claimReqstCardTtl h4 {
+        font-size: 14px;
+    }
+
+    .claimReqstCardTtl h5 {
+        font-size: 13px;
+        margin: 8px 0;
+    }
+
+    .claimReqstLink {
+        font-size: 12px;
+    }
+
+    .claimReqstCardList p {
+        font-size: 13px;
+    }
+
+    .claimReqstCardList p strong {
+        font-size: 15px;
+    }
+}

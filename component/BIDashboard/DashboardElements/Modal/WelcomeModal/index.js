@@ -19,7 +19,7 @@ export default function WelcomeModal(props) {
             title: "Quotes",
             count: "02",
             subtitle: "Pending Quotes",
-            link: "/dashboard/quotes"
+            link: "/dashboard/your-quotes"
         },
         {
             id: "2",
@@ -27,7 +27,7 @@ export default function WelcomeModal(props) {
             title: "Open Policies",
             count: "00",
             subtitle: "Open Policies",
-            link: "/dashboard/policies"
+            link: "/dashboard/your-policies"
         },
         {
             id: "3",
@@ -35,7 +35,7 @@ export default function WelcomeModal(props) {
             title: "Open Proposal Form",
             count: "02",
             subtitle: "Open Proposal Forms",
-            link: "/dashboard/policies"
+            link: "/dashboard/your-policies"
         },
     ])
   
@@ -56,14 +56,18 @@ export default function WelcomeModal(props) {
     const router = useRouter();
     const goToNextPage = () => {
         setShowWelcome(false);
-        router.push('/dashboard/quotes');
+        router.push('/dashboard/your-quotes');
     };
+
+    const pageRouting = (link) =>{
+        router.push(link);
+    }
 
     return (
         <>
             <Modal show={showWelcome} size="xl" onHide={handleClose} centered backdrop="static" keyboard={false} className={commonModal.commonMdlOuter}>
                 <Modal.Body className={commonModal.commonMdlBody}>
-                    <div className={`mb-3 mb-xl-4 mb-xx-5 pb-xl-2 pb-xxl-3 ${commonModal.welcomeHdr}`}>
+                    <div className={`mb-4 mb-xl-5 pb-xl-1 pb-xxl-2 ${commonModal.welcomeHdr}`}>
                         <Row className="g-3 g-xl-4 g-xxl-5 justify-content-between">
                             <Col lg={7} xl={6}>
                                 <div className={commonModal.welcomeMdlTtl}>
@@ -93,7 +97,7 @@ export default function WelcomeModal(props) {
                                         title={item.title}
                                         count={item.count}
                                         subtitle={item.subtitle}
-                                        link={item.link}
+                                        onClick={()=> pageRouting(item.link)}
                                     />
                                 </Col>
                             )}

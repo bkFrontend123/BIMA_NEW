@@ -270,6 +270,9 @@
 }
 
 @media (max-width:767px) {
+    .selectDropFilterDiv.selectDropDiv {
+        display: block;
+    }
     .selectDropDiv label {
         left: 6px;
         top: 16px;
@@ -307,7 +310,11 @@
     }
     .selectDropFilterDiv.selectDropDiv .select-search-input {
         font-size: 14px;
-        max-width: 110px;
+        max-width: 100%;
+    }
+    .selectDropFilterDiv.selectDropFilterMediumDiv.selectDropDiv .select-search-input,
+    .selectDropFilterDiv.selectDropFilterLargeDiv.selectDropDiv .select-search-input {
+        max-width: 100%;
     }
     .searchDropDiv.selectDropDiv .select-search-input,
     .searchDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus .select-search-input {

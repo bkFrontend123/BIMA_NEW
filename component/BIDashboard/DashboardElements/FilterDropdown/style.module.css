@@ -30,7 +30,14 @@
     }
 }
 @media (max-width:767px) {
+    .fltrDropCard {
+        display: block;
+    }    
     .fltrDropCard span {
         font-size: 14px;
+    }
+    .fltrDropCard > div {
+        margin-left: 0;
+        margin-top: 10px;
     }
 }

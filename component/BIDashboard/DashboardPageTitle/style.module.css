@@ -21,7 +21,7 @@
 
 @media only screen and (max-width:767px) {
     .dashTtlDiv {
-        display: block;
+        /*display: block;*/
     }
     .dashTtlDiv h2 {
         font-size: 28px;

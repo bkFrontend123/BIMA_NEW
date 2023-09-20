@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import LogoIcon from "@/component/BIDashboard/Icons/IconLogo";
 import SwapIcon from "@/component/BIDashboard/Icons/IconSwap";
@@ -36,13 +36,13 @@ export default function DashboardSidebar(props) {
           title="Your Quotes"
           icon={<HomeIcon/>}
           hot="true"
-          href="/dashboard/quotes"
+          href="/dashboard/your-quotes"
           customClass={activeMenu === '1' ? dashLayoutStyle.active : null}
         />
         <SidebarLinkItem
           title="Policies"
           icon={<PolicyIcon/>}
-          href="/dashboard/policies"
+          href="/dashboard/your-policies"
           customClass={activeMenu === '2' ? dashLayoutStyle.active : null}
         />
         <SidebarLinkItem
