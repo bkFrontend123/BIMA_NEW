@@ -13,8 +13,8 @@ import FooterPlain from '@/component/FooterPlain'
 import ProductFormContent from '@/component/GHI/ProductContent/ProductFormContent'
 import ProductFormFooter from '@/component/GHI/ProductContent/ProductFormFooter'
 
-import RaioIconRow from '../component/GHI/FormElements/RadioIconCombo/RadioIconRow'
-import RaioIconCard from '../component/GHI/FormElements/RadioIconCombo/RadioIconCard'
+import RadioIconRow from '../component/GHI/FormElements/RadioIconCombo/RadioIconRow'
+import RadioIconCard from '../component/GHI/FormElements/RadioIconCombo/RadioIconCard'
 
 import productStyle from '@/assets/css/eBnftProduct.module.css'
 import form from '@/assets/css/form.module.css'
@@ -263,8 +263,8 @@ export default function GroupHealth_Flow() {
                                                                         )}
                                                                     </OverlayTrigger>
                                                                 </Form.Label>
-                                                                <RaioIconRow>
-                                                                    <RaioIconCard
+                                                                <RadioIconRow>
+                                                                    <RadioIconCard
                                                                         icon={coverDetailIcon1}
                                                                         alt="Employees Only"
                                                                         activeClass={coverDetailsValue === '1' ? radioIconStyle.active : null}
@@ -280,8 +280,8 @@ export default function GroupHealth_Flow() {
                                                                             required
                                                                             className={`${radioIconStyle.radioIconCheckox}`}
                                                                         />
-                                                                    </RaioIconCard>
-                                                                    <RaioIconCard
+                                                                    </RadioIconCard>
+                                                                    <RadioIconCard
                                                                         icon={coverDetailIcon2}
                                                                         alt="Employee with Spouse & Kids"
                                                                         activeClass={coverDetailsValue === '2' ? radioIconStyle.active : null}
@@ -297,8 +297,8 @@ export default function GroupHealth_Flow() {
                                                                             required
                                                                             className={`${radioIconStyle.radioIconCheckox}`}
                                                                         />
-                                                                    </RaioIconCard>
-                                                                    <RaioIconCard
+                                                                    </RadioIconCard>
+                                                                    <RadioIconCard
                                                                         icon={coverDetailIcon3}
                                                                         alt="Employee with  Spouse, Kids & Dependant parents"
                                                                         activeClass={coverDetailsValue === '3' ? radioIconStyle.active : null}
@@ -314,8 +314,8 @@ export default function GroupHealth_Flow() {
                                                                             required
                                                                             className={`${radioIconStyle.radioIconCheckox}`}
                                                                         />
-                                                                    </RaioIconCard>
-                                                                </RaioIconRow>
+                                                                    </RadioIconCard>
+                                                                </RadioIconRow>
                                                             </Form.Group>
                                                             <div className={`${form.fromButtonDiv}`}>
                                                                 <Row className="g-4">
@@ -456,8 +456,8 @@ export default function GroupHealth_Flow() {
                                                                                         )}
                                                                                     </OverlayTrigger>
                                                                                 </Form.Label>
-                                                                                <RaioIconRow>
-                                                                                    <RaioIconCard
+                                                                                <RadioIconRow>
+                                                                                    <RadioIconCard
                                                                                         icon={sumInsuredIcon1}
                                                                                         alt="2 Lakhs"
                                                                                         activeClass={sumInsuredValue === '1' ? radioIconStyle.active : null}
@@ -473,8 +473,8 @@ export default function GroupHealth_Flow() {
                                                                                             required
                                                                                             className={`${radioIconStyle.radioIconCheckox}`}
                                                                                         />
-                                                                                    </RaioIconCard>
-                                                                                    <RaioIconCard
+                                                                                    </RadioIconCard>
+                                                                                    <RadioIconCard
                                                                                         icon={sumInsuredIcon2}
                                                                                         alt="3 Lakhs"
                                                                                         activeClass={sumInsuredValue === '2' ? radioIconStyle.active : null}
@@ -490,8 +490,8 @@ export default function GroupHealth_Flow() {
                                                                                             required
                                                                                             className={`${radioIconStyle.radioIconCheckox}`}
                                                                                         />
-                                                                                    </RaioIconCard>
-                                                                                    <RaioIconCard
+                                                                                    </RadioIconCard>
+                                                                                    <RadioIconCard
                                                                                         icon={sumInsuredIcon3}
                                                                                         alt="5 Lakhs"
                                                                                         activeClass={sumInsuredValue === '3' ? radioIconStyle.active : null}
@@ -507,8 +507,8 @@ export default function GroupHealth_Flow() {
                                                                                             required
                                                                                             className={`${radioIconStyle.radioIconCheckox}`}
                                                                                         />
-                                                                                    </RaioIconCard>
-                                                                                    <RaioIconCard
+                                                                                    </RadioIconCard>
+                                                                                    <RadioIconCard
                                                                                         icon={sumInsuredIcon4}
                                                                                         alt="10 Lakhs"
                                                                                         activeClass={sumInsuredValue === '4' ? radioIconStyle.active : null}
@@ -524,8 +524,8 @@ export default function GroupHealth_Flow() {
                                                                                             required
                                                                                             className={`${radioIconStyle.radioIconCheckox}`}
                                                                                         />
-                                                                                    </RaioIconCard>
-                                                                                </RaioIconRow>
+                                                                                    </RadioIconCard>
+                                                                                </RadioIconRow>
                                                                             </Form.Group>
                                                                             <div className={`${form.fromButtonDiv}`}>
                                                                                 <Row className="g-4">
@@ -601,8 +601,8 @@ export default function GroupHealth_Flow() {
                                                                                                 )}
                                                                                             </OverlayTrigger>
                                                                                         </Form.Label>
-                                                                                        <RaioIconRow>
-                                                                                            <RaioIconCard
+                                                                                        <RadioIconRow>
+                                                                                            <RadioIconCard
                                                                                                 icon={maternityBenefitIcon1}
                                                                                                 alt="No Maternity Benefits"
                                                                                                 activeClass={maternityBenefitValue === '1' ? radioIconStyle.active : null}
@@ -618,8 +618,8 @@ export default function GroupHealth_Flow() {
                                                                                                     required
                                                                                                     className={`${radioIconStyle.radioIconCheckox}`}
                                                                                                 />
-                                                                                            </RaioIconCard>
-                                                                                            <RaioIconCard
+                                                                                            </RadioIconCard>
+                                                                                            <RadioIconCard
                                                                                                 icon={maternityBenefitIcon2}
                                                                                                 alt="25,000 for Normal & 35,000 for C- Section"
                                                                                                 activeClass={maternityBenefitValue === '2' ? radioIconStyle.active : null}
@@ -635,8 +635,8 @@ export default function GroupHealth_Flow() {
                                                                                                     required
                                                                                                     className={`${radioIconStyle.radioIconCheckox}`}
                                                                                                 />
-                                                                                            </RaioIconCard>
-                                                                                            <RaioIconCard
+                                                                                            </RadioIconCard>
+                                                                                            <RadioIconCard
                                                                                                 icon={maternityBenefitIcon3}
                                                                                                 alt="35,000 for Normal & 50,000 for C- Section"
                                                                                                 activeClass={maternityBenefitValue === '3' ? radioIconStyle.active : null}
@@ -652,8 +652,8 @@ export default function GroupHealth_Flow() {
                                                                                                     required
                                                                                                     className={`${radioIconStyle.radioIconCheckox}`}
                                                                                                 />
-                                                                                            </RaioIconCard>
-                                                                                            <RaioIconCard
+                                                                                            </RadioIconCard>
+                                                                                            <RadioIconCard
                                                                                                 icon={maternityBenefitIcon4}
                                                                                                 alt="50,000 for both Normal & C- Section"
                                                                                                 activeClass={maternityBenefitValue === '4' ? radioIconStyle.active : null}
@@ -669,8 +669,8 @@ export default function GroupHealth_Flow() {
                                                                                                     required
                                                                                                     className={`${radioIconStyle.radioIconCheckox}`}
                                                                                                 />
-                                                                                            </RaioIconCard>
-                                                                                        </RaioIconRow>
+                                                                                            </RadioIconCard>
+                                                                                        </RadioIconRow>
                                                                                     </Form.Group>
                                                                                     <div className={`${form.fromButtonDiv}`}>
                                                                                         <Row className="g-4">
@@ -746,8 +746,8 @@ export default function GroupHealth_Flow() {
                                                                                                         )}
                                                                                                     </OverlayTrigger>
                                                                                                 </Form.Label>
-                                                                                                <RaioIconRow>
-                                                                                                    <RaioIconCard
+                                                                                                <RadioIconRow>
+                                                                                                    <RadioIconCard
                                                                                                         icon={roomRentIcon1}
                                                                                                         alt="2% of Rs 5 Lac for Normal & 4% of Rs 5 Lac for ICU"
                                                                                                         activeClass={roomRentValue === '1' ? radioIconStyle.active : null}
@@ -763,8 +763,8 @@ export default function GroupHealth_Flow() {
                                                                                                             required
                                                                                                             className={`${radioIconStyle.radioIconCheckox}`}
                                                                                                         />
-                                                                                                    </RaioIconCard>
-                                                                                                    <RaioIconCard
+                                                                                                    </RadioIconCard>
+                                                                                                    <RadioIconCard
                                                                                                         icon={roomRentIcon2}
                                                                                                         alt="1% of Rs 5 Lac for Normal & 2% of Rs 5 Lac for ICU"
                                                                                                         activeClass={roomRentValue === '2' ? radioIconStyle.active : null}
@@ -780,8 +780,8 @@ export default function GroupHealth_Flow() {
                                                                                                             required
                                                                                                             className={`${radioIconStyle.radioIconCheckox}`}
                                                                                                         />
-                                                                                                    </RaioIconCard>
-                                                                                                    <RaioIconCard
+                                                                                                    </RadioIconCard>
+                                                                                                    <RadioIconCard
                                                                                                         icon={roomRentIcon3}
                                                                                                         alt="No Room Rent Capping"
                                                                                                         activeClass={roomRentValue === '3' ? radioIconStyle.active : null}
@@ -797,8 +797,8 @@ export default function GroupHealth_Flow() {
                                                                                                             required
                                                                                                             className={`${radioIconStyle.radioIconCheckox}`}
                                                                                                         />
-                                                                                                    </RaioIconCard>
-                                                                                                </RaioIconRow>
+                                                                                                    </RadioIconCard>
+                                                                                                </RadioIconRow>
                                                                                             </Form.Group>
                                                                                             <div className={`${form.fromButtonDiv}`}>
                                                                                                 <Row className="g-4">
@@ -871,10 +871,10 @@ export default function GroupHealth_Flow() {
                                                                                                         )}
                                                                                                     </OverlayTrigger>
                                                                                                 </Form.Label>
-                                                                                                <RaioIconRow>
+                                                                                                <RadioIconRow>
                                                                                                     <Row className="g-4">
                                                                                                         <Col md={6}>
-                                                                                                            <RaioIconCard
+                                                                                                            <RadioIconCard
                                                                                                                 activeClass={buyingPoilicyValue === 'Yes' ? radioIconStyle.active : null}
                                                                                                             >
                                                                                                                 <Form.Check
@@ -888,10 +888,10 @@ export default function GroupHealth_Flow() {
                                                                                                                     required
                                                                                                                     className={`${radioIconStyle.radioIconCheckox}`}
                                                                                                                 />
-                                                                                                            </RaioIconCard>
+                                                                                                            </RadioIconCard>
                                                                                                         </Col>
                                                                                                         <Col md={6}>
-                                                                                                            <RaioIconCard
+                                                                                                            <RadioIconCard
                                                                                                                 activeClass={buyingPoilicyValue === 'No' ? radioIconStyle.active : null}
                                                                                                             >
                                                                                                                 <Form.Check
@@ -905,10 +905,10 @@ export default function GroupHealth_Flow() {
                                                                                                                     required
                                                                                                                     className={`${radioIconStyle.radioIconCheckox}`}
                                                                                                                 />
-                                                                                                            </RaioIconCard>
+                                                                                                            </RadioIconCard>
                                                                                                         </Col>
                                                                                                     </Row>
-                                                                                                </RaioIconRow>
+                                                                                                </RadioIconRow>
                                                                                             </Form.Group>
                                                                                             {buyingPoilicyValue === 'No' ? (
                                                                                                 <Form.Group className="mb-4">
@@ -932,7 +932,7 @@ export default function GroupHealth_Flow() {
                                                                                                     </Form.Label>
                                                                                                     <Row className="g-4">
                                                                                                         <Col md={6}>
-                                                                                                            <RaioIconCard
+                                                                                                            <RadioIconCard
                                                                                                                 activeClass={claimPolicyValue === 'Yes' ? radioIconStyle.active : null}
                                                                                                             >
                                                                                                                 <Form.Check
@@ -946,10 +946,10 @@ export default function GroupHealth_Flow() {
                                                                                                                     required
                                                                                                                     className={`${radioIconStyle.radioIconCheckox}`}
                                                                                                                 />
-                                                                                                            </RaioIconCard>
+                                                                                                            </RadioIconCard>
                                                                                                         </Col>
                                                                                                         <Col md={6}>
-                                                                                                            <RaioIconCard
+                                                                                                            <RadioIconCard
                                                                                                                 activeClass={claimPolicyValue === 'No' ? radioIconStyle.active : null}
                                                                                                             >
                                                                                                                 <Form.Check
@@ -963,7 +963,7 @@ export default function GroupHealth_Flow() {
                                                                                                                     required
                                                                                                                     className={`${radioIconStyle.radioIconCheckox}`}
                                                                                                                 />
-                                                                                                            </RaioIconCard>
+                                                                                                            </RadioIconCard>
                                                                                                         </Col>
                                                                                                     </Row>
                                                                                                 </Form.Group>
