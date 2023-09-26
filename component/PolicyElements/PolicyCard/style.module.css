@@ -1,10 +1,16 @@
 .policyCol {
-    background-color: var(--white);
+    background-color: var(--whiteBg);
     position: relative;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
     padding: 55px 40px 166px 40px;
     padding: 40px 40px 166px 40px;
     height: 100%;
+}
+.policySimpleCol {
+    box-shadow: none;
+    padding: 24px 24px 140px 24px;
+    border: 1px solid var(--vt-c-grayLight3);
+    border-radius: 10px;
 }
 .policyInstant {
     background-color: var(--vt-c-blue);
@@ -28,6 +34,9 @@
     height: 80px;
     align-items: center;
 }
+.policySimpleCol .policyCardHdr i {
+    height: 70px;
+}
 .policyCardLogoLink {
     display: inline-block;
 }
@@ -35,7 +44,11 @@
     max-height: 100%;
     max-width: 100%;
     width: auto;
-    height: 50px;
+    height: auto;
+    max-height: 50px;
+}
+.policySimpleCol .policyCardLogo {
+    max-height: 36px;
 }
 .policyCardHdr h4 {
     font-size: 24px;
@@ -43,6 +56,11 @@
     font-weight: 600;
     color: var(--vt-c-blue);
     margin: 12px 0;
+}
+.policySimpleCol .policyCardHdr h4 {
+    font-size: 22px;
+    line-height: 30px;
+    margin: 10px 0;
 }
 .policyCardHdr p {
     font-size: 16px;
@@ -52,6 +70,10 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+.policySimpleCol .policyCardHdr p {
+    font-size: 15px;
+    line-height: 20px;
 }
 .policyFeaBtn {
     margin-top: 16px;
@@ -71,11 +93,21 @@
     right: 40px;
     bottom: 110px;
 }
+.policySimpleCol .policyPrice {
+    margin-top: 12px;
+    left: 24px;
+    right: 24px;
+    bottom: 90px;
+}
 .policyPrice span {
     font-size: 32px;
     line-height: 43px;
     color: var(--vt-c-blue);
     font-weight: 600;
+}
+.policySimpleCol .policyPrice span {
+    font-size: 30px;
+    line-height: 40px;
 }
 .policyPrice small {
     font-size: 20px;
@@ -84,17 +116,39 @@
     font-weight: 600;
     margin-left: 9px;
 }
+.policySimpleCol .policyPrice small {
+    font-size: 17px;
+    line-height: 26px;
+    margin-left: 8px;
+}
 .policyCardFtr {
     margin-top: 16px;
     left: 40px;
     right: 40px;
     bottom: 40px;
 }
+.policySimpleCol .policyCardFtr {
+    margin-top: 12px;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+}
+.policyCompareCheck {
+    margin: 0;
+}
+.policySimpleCol .policyCompareCheck {
+    padding-left: 1.2em;
+}
 .policyCompareCheck input {
     background-color: var(--vt-c-gray);
     border-radius: 16px !important;
     cursor: pointer;
     border: 0;
+}
+.policySimpleCol .policyCompareCheck input {
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: -1.2em;
 }
 .policyCompareCheck input:checked {
     background-color: var(--vt-c-blueSky);
@@ -105,6 +159,10 @@
     line-height: 22px;
     color: var(--vt-c-blueSky);
     cursor: pointer;
+}
+.policySimpleCol .policyCompareCheck label {
+    font-size: 15px;
+    line-height: 20px;
 }
 
 .policyOffcanvasHdrTop {
@@ -155,6 +213,9 @@
         padding: 60px 32px 156px 32px;
         padding: 32px 32px 156px 32px;
     }
+    .policySimpleCol {
+        padding: 20px 20px 130px 20px;
+    }
     .policyInstant {
         font-size: 18px;
         line-height: 24px;
@@ -162,18 +223,34 @@
     .policyCardHdr i {
         height: 70px;
     }
+    .policySimpleCol .policyCardHdr i {
+        height: 60px;
+    }
     .policyCardHdr h4 {
         font-size: 22px;
         line-height: 30px;
+    }
+    .policySimpleCol .policyCardHdr h4 {
+        font-size: 20px;
+        line-height: 28px;
     }
     .policyPrice {
         left: 32px;
         right: 32px;
         bottom: 100px;
     }
+    .policySimpleCol .policyPrice {
+        left: 20px;
+        right: 20px;
+        bottom: 80px;
+    }
     .policyPrice span {
         font-size: 28px;
         line-height: 40px;
+    }
+    .policySimpleCol .policyPrice span {
+        font-size: 25px;
+        line-height: 34px;
     }
     .policyFeaBtn a {
         font-size: 15px;
@@ -183,6 +260,11 @@
         left: 32px;
         right: 32px;
         bottom: 32px;
+    }
+    .policySimpleCol .policyCardFtr {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
     }
 }
 

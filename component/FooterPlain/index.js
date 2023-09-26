@@ -7,10 +7,10 @@ import {Container,Row, Col} from 'react-bootstrap';
 import style from './style.module.css'
 
 export default function FooterPlain(props) {
-    const {customClass, starContent } = props;
+    const {customClass, insuranceType, starContent } = props;
     return (
         <>
-            <footer className={`sectionPadding ${style.ftrBlock} ${customClass}`}>
+            <footer className={`sectionPadding ${style.ftrBlock} ${customClass} ${insuranceType === 'employeeBenefit' ? style.eBnftFtrBlock : null}`}>
                 <Container>
                     <Row className='justify-content-center'>
                         <Col xl={11}>

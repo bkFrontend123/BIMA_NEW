@@ -31,6 +31,20 @@
     line-height: 24px;
 }
 
+.list.exSmallList ul {
+    margin-top: -12px;
+    margin-left: -12px;
+}
+.list.exSmallList ul li {
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.list.exSmallList ul li span {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
 @media (max-width:1699px) {
     .list {
         margin-top: 25px;
@@ -46,6 +60,14 @@
     .list.smallList ul li span {
         font-size: 16px;
         line-height: 22px;
+    }
+    .list.exSmallList ul li svg {
+        width: 18px;
+        height: 18px;
+    }
+    .list.exSmallList ul li span {
+        font-size: 15px;
+        line-height: 20px;
     }
 }
 

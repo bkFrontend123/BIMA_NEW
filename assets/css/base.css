@@ -14,11 +14,14 @@
   --vt-c-yellow: #FFB400;
   --vt-c-yellow2: #e9a708;
   --vt-c-yellow3: #956B05;
+  --vt-c-yellowActive: #CC9000;
   --vt-c-green: #00916E;
   --vt-c-yellowLight: #FFFBF3;
   --vt-c-yellowLight2: #FFFAEF;
   --vt-c-yellowLight3: #fffbf1;
   --vt-c-black: #000000;
+  --vt-c-black1: #1C1C1C;
+  --vt-c-black2: #2E2E2E;
   --vt-c-white: #ffffff;
   --vt-c-gray: #D9D9D9;
   --vt-c-gray1: #D3D3D3;
@@ -59,6 +62,7 @@
   --border-mute: #B4BDD3;
   --border-mute1: #99B1CE;
   --whiteText: #ffffff;
+  --darkText: #30404F;
   --formBorderColor: #A9A9A9;
   --mute: #F8F8F8;
   --yellowBg: #FFFBF1;
@@ -66,6 +70,8 @@
   --mute2: #FFE8B0;
   --mute3: #F5F5F5;
   --mute4: #f0f0f0;
+  --mute5: #FFFDFA;
+  --mute6: #FAFAFA;
   --gray: #575757;
   --gray1: #9A9A9A;
   --disable: #B0B0B0;
@@ -399,6 +405,35 @@ p {
   color: var(--whiteText) !important;
 }
 .btnCommon.greyBtn:hover .primary {
+  fill: var(--whiteText);
+}
+
+.employeeBenefitForm .btnCommon {
+  border-radius: 10px;
+  box-shadow: none;
+}
+.employeeBenefitForm .btnCommon:hover {
+  opacity: 1;
+  box-shadow: 0px 8px 32px 0 rgba(0,0,0,0.15);
+}
+.employeeBenefitForm .btnCommon.yellowBtn:hover {
+  box-shadow: 0px 8px 32px rgba(255, 81, 0, 0.2);
+}
+.btnCommon.btnBack,
+.btnCommon.btnBack.active:focus,
+.btnCommon.btnBack.active:focus,
+.btnCommon.btnBack.btn-primary:active:focus,
+.btnCommon.btnBack.btn-primary.active:focus {
+  background: transparent;
+  color: var(--gray);
+  border: 2px solid var(--gray);
+}
+.btnCommon.btnBack:hover {
+  background: transparent;
+  border-color: var(--gray) !important;
+  color: var(--gray) !important;
+}
+.btnCommon.btnBack:hover .primary {
   fill: var(--whiteText);
 }
 
@@ -805,6 +840,22 @@ h2.font-secondary {
 }
 .dwnldDropdown.show .dropdown-toggle::before {
   transform: rotate(30deg);
+}
+.eBnftHdrBlock .dropdown-toggle.show,
+.eBnftHdrBlock .dropdown-toggle.show:hover {
+  background-color: var(--vt-c-yellow) !important;
+  border-radius: 0 !important;
+}
+.eBnftAllPolicyBlock .btnCommon {
+  background: transparent;
+  font-size: 15px;
+  padding: 14px 22px;
+  border-radius: 4px;
+  border: 1px solid var(--darkText);
+  box-shadow: none;
+}
+.eBnftAllPolicyBlock .btnCommon:hover {
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,0.2);
 }
 /***Frontend Custom Css End***/
 

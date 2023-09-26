@@ -162,7 +162,9 @@ export default function DAndO_Flow() {
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain
-                scheduleCall="true"
+                emailQuote
+                talkExpert
+                scheduleCall
             />
             <section className={`productFormBlock sectionPadding ${form.prdctFrmHeight}`}>
                 <Container>

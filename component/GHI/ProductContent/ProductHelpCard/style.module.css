@@ -1,0 +1,55 @@
+.prdctHelpCol {
+    background-color: var(--mute5);
+    border: 1px solid var(--brown);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.prdctHelpCol:hover {
+    background-color: var(--mute1);
+}
+.prdctHelpInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 16px;
+}
+.prdctHelpIcon {
+    min-width: 56px;
+    height: 56px;
+}
+.prdctHelpImg {
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--activeColor);
+    border-radius: 52px;
+}
+.prdctHelpIcon svg {
+    width: 56px;
+    height: 56px;
+}
+.prdctHelpInfo h4 {
+    font-size: 17px;
+    color: var(--darkText);
+    font-weight: 600;
+}
+.prdctHelpInfo p {
+    font-size: 15px;
+    color: var(--darkText);
+    line-height: 22px;
+    margin: 0;
+}
+.prdctHelpBtm {
+    padding: 16px;
+    border-top: 1px solid var(--brown);
+    text-align: center;
+}
+.prdctHelpBtm span {
+    font-size: 15px;
+    color: var(--vt-c-yellow);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}

@@ -13,6 +13,10 @@
 .greyForm .floatFormGroup .form-floating > label {
     background: var(--mute3);
 }
+.employeeBenefitForm .floatFormGroup .form-floating > label {
+    background: var(--mute5);
+    color: var(--vt-c-grayLight3);
+}
 .floatFormGroup .form-floating > .form-control:focus ~ label,
 .floatFormGroup .form-floating > .form-control:not(:placeholder-shown) ~ label,
 .floatFormGroup .form-floating > .form-select ~ label {
@@ -21,6 +25,15 @@
     width: auto;    
     color: var(--vt-c-blue);
 }
+.employeeBenefitForm .floatFormGroup .form-floating > .form-control:focus ~ label,
+.employeeBenefitForm .floatFormGroup .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.employeeBenefitForm .floatFormGroup .form-floating > .form-select ~ label {
+    color: var(--vt-c-yellowActive);
+}
+.employeeBenefitForm .floatFormGroup .form-floating:hover label {
+    color: var(--gray);
+}
+
 .floatFormGroup .form-floating > .form-control:focus,
 .floatFormGroup .form-floating > .form-control:not(:placeholder-shown) {
     padding-top: 12px;

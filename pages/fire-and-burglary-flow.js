@@ -44,7 +44,7 @@ import tooltipIcon from '../public/icons/tooltipIcon.svg'
 
 import expertImg from '../public/ravikantImg.png'
 
-export default function WorkmensCompensation_Flow() {
+export default function FireAndBurglary_Flow() {
     const navbarExample2Ref = useRef(null);
     useEffect(() => {
         //document.body.classList.add("userFlowBody")
@@ -261,7 +261,7 @@ export default function WorkmensCompensation_Flow() {
                     <Row className='justify-content-center'>
                         <Col xl={11}>
                             <Row className='g-4'>
-                                <Col xl={6} xxl={7}>
+                                <Col xl={6} xxl={6}>
                                     <div className='pe-lg-2 pe-xxl-4'>
                                         <ProductFormContent
                                             icon={productIcon}
@@ -273,7 +273,7 @@ export default function WorkmensCompensation_Flow() {
                                         />
                                     </div>
                                 </Col>
-                                <Col xl={6} xxl={5}>
+                                <Col xl={6} xxl={6}>
                                     <div className={`${form.whiteFormBox} ${form.commonForm}`}>
                                         {isOtpActive ? (
                                             <div className={`${form.otpForm}`}>

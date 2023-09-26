@@ -14,7 +14,7 @@ import star from '../../../public/icons/star.svg'
 import arrowRight_white from '../../../public/icons/arrowRight-white.svg'
 
 export default function PolicyCard(props) {
-    const {customClass, policyLogo, logoWidth, logoHeight, title, listText1, listText2, listText3, price, priceAmount, children, policyName, policyCover, policyPremium, featuresIncluded, exclusions } = props;
+    const {customClass, policyLogo, logoWidth, logoHeight, title, listText1, listText2, listText3, price, priceAmount, children, policyName, policyCover, policyPremium, featuresIncluded, exclusions, variant } = props;
 
     const [show, setShow] = useState(false);
 
@@ -23,7 +23,7 @@ export default function PolicyCard(props) {
 
     return (
         <>
-            <div className={`${style.policyCol} ${customClass}`}>
+            <div className={`${style.policyCol} ${customClass} ${variant ? style.policySimpleCol : null}`}>
                 {/*<div className={`${style.policyInstant}`}>
                     <i><Image src={instantIcon} width={15} height={15} alt="Instant Policy" /></i> Instant Policy
                 </div>*/}
@@ -39,7 +39,7 @@ export default function PolicyCard(props) {
                     <p><Image src={star} alt="star" /> Star Features</p>
                 </div>
                 <div className={`${style.policyCardList}`}>
-                    <div className={`${list.list} ${list.smallList}`}>
+                    <div className={`${list.list} ${list.smallList} ${variant ? list.exSmallList : null}`}>
                         <ul>
                             <li className='d-flex'>
                                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">

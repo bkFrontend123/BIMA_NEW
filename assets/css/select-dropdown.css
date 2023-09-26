@@ -1,5 +1,6 @@
 .selectDropDiv {
     position: relative;
+    transition: all 0.3s ease 0s;
 }
 .selectDropFilterDiv.selectDropDiv {
     display: inline-block;
@@ -11,10 +12,16 @@
     top: 19px;
     font-size: 16px;
     color: var(--vt-c-grayLight3);
-    padding: 0 10px;
+    padding: 0 50px 0 10px;
     pointer-events: none;
     transition: opacity .1s ease-in-out,transform .1s ease-in-out;
     z-index: 1;
+}
+.employeeBenefitForm .selectDropDiv label {
+    background: var(--mute5);
+}
+.employeeBenefitForm .selectDropDiv:hover label {
+    color: var(--gray);
 }
 .selectDropDivSmall.selectDropDiv label {
     top: 18px;  
@@ -29,6 +36,10 @@
 .selectDropDiv.selectedDropDiv label {
     transform: translateY(-30px);
     color: var(--vt-c-blue);
+}
+.employeeBenefitForm .selectDropDiv .select-search-has-focus ~ label,
+.employeeBenefitForm .selectDropDiv.selectedDropDiv label {
+    color: var(--vt-c-yellowActive);
 }
 .selectDropDivSmall.selectDropDiv .select-search-has-focus ~ label,
 .selectDropDivSmall.selectDropDiv.selectedDropDiv label {
@@ -47,14 +58,19 @@
 }
 .searchDropDiv .select-search-value::before {
     background-image: url('/icons/searchIcon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     content: "";
     width: 14px;
     height: 14px;
-    top: 25px;
+    top: 24px;
     left: 20px;
     pointer-events: none;
     z-index: 2;
+}
+.employeeBenefitForm  .searchDropDiv .select-search-value::before {
+    background-image: url('/icons/searchYellowIcon.svg');
 }
 .selectDropDivSmall.searchDropDiv .select-search-value::before {
     top: 20px;
@@ -85,12 +101,20 @@
     pointer-events: none;
     z-index: 2;
 }
+.employeeBenefitForm .selectDropDiv .select-search-value::after {
+    background-image: url('/ghi/icons/selectArrowIcon.svg');
+    width: 17px;
+    height: 16px;
+}
 .selectDropDiv .select-search-has-focus .select-search-value::after {
     background-image: url('/icons/selectArrowDownIcon.svg');
     background-size: contain;
     background-repeat: no-repeat;
     top: 20px;
     right: 12px;
+}
+.employeeBenefitForm .selectDropDiv .select-search-has-focus .select-search-value::after {
+    background-image: url('/ghi/icons/selectArrowDownIcon.svg');
 }
 .selectDropDivSmall.selectDropDiv .select-search-value::after {
     top: 20px;
@@ -128,6 +152,11 @@
     border-width: 1px;
     cursor: pointer;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.employeeBenefitForm .selectDropDiv .select-search-input {
+    background-color: var(--mute5);
+    color: var(--darkText);
+    border-radius: 10px !important;
 }
 .selectDropDivSmall.selectDropDiv .select-search-input {
     height: 58px;
@@ -173,11 +202,27 @@
 .selectDropDiv .select-search-has-focus .select-search-input::placeholder {
     color: var(--vt-c-grayLight3);
 }
+.employeeBenefitForm .selectDropDiv .select-search-input::placeholder,
+.employeeBenefitForm .selectDropDiv.selectedDropDiv .select-search-input::placeholder,
+.employeeBenefitForm .selectDropDiv .select-search-has-focus .select-search-input::placeholder {
+    color: var(--vt-c-yellowActive);
+}
 .selectDropDiv .select-search-input:hover,
 .selectDropDiv .select-search-has-focus .select-search-input,
 .selectDropDiv .select-search-has-focus .select-search-input:hover,
 .selectDropDiv.selectedDropDiv .select-search-input {
     border-color: var(--vt-c-blue) !important;
+}
+.employeeBenefitForm .selectDropDiv .select-search-input:hover {
+    border-color: var(--vt-c-black2) !important;
+}
+.employeeBenefitForm .selectDropDiv .select-search-has-focus .select-search-input,
+.employeeBenefitForm .selectDropDiv .select-search-has-focus .select-search-input:hover,
+.employeeBenefitForm .selectDropDiv.selectedDropDiv .select-search-input {
+    border-color: var(--vt-c-yellow) !important;
+}
+.employeeBenefitForm .selectDropDiv .select-search-has-focus .select-search-input {
+    border-radius: 10px 10px 0 0 !important;
 }
 .selectDropDiv .select-search-is-disabled .select-search-input:hover {
     border-color: var(--formBorderColor) !important;
@@ -191,6 +236,10 @@
 }
 .selectDropDiv .select-search-has-focus .select-search-select {
     border-color: var(--vt-c-blue);
+}
+.employeeBenefitForm .selectDropDiv .select-search-has-focus .select-search-select {
+    border-color: var(--vt-c-yellow) !important;
+    border-radius: 0 0 10px 10px !important;
 }
 .selectDropDiv .select-search-container .select-search-select {
     border-radius: 0 !important;
@@ -216,6 +265,11 @@
     font-weight: 500;
     color: var(--gray);
 }
+.employeeBenefitForm .selectDropDiv .select-search-option,
+.employeeBenefitForm .selectDropDiv .select-search-not-found {
+    background-color: var(--mute5);
+    color: var(--darkText);
+}
 .selectDropFilterDiv.selectDropDiv .select-search-option,
 .selectDropFilterDiv.selectDropDiv .select-search-not-found {
     font-size: 15px;
@@ -228,6 +282,9 @@
 .selectDropDiv .select-search-is-selected {
     color: var(--vt-c-blue) !important;
     font-weight: 600;
+}
+.employeeBenefitForm .selectDropDiv .select-search-is-selected {
+    color: var(--darkText) !important;
 }
 
 @media (max-width:1699px) {

@@ -16,6 +16,9 @@
     height: 1.6rem;
     background-size: 1.6rem;
   }
+  .eBnftAllPolicyBlock .btnCommon {
+    padding: 12px 18px;
+  }
 }
 
 @media (max-width: 1399px) {

@@ -1,0 +1,71 @@
+.prdctInfoCol {
+    display: flex;
+    border: 1px solid var(--brown);
+    border-bottom: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+.prdctInfoCol:first-child {
+    border-radius: 40px 40px 0 0;
+}
+.prdctInfoCol:last-child {
+    border-bottom: 1px solid var(--brown);
+    border-radius: 0 0 40px 40px;
+}
+.prdctInfoCol > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0;
+    padding: 24px;
+    text-align: center;
+}
+.prdctInfoText {
+    background-color: var(--mute-5);
+    border-right: 1px solid var(--brown);
+    transition: all 0.3s ease 0s;
+}
+.prdctInfoText:hover {
+    background-color: var(--mute1);
+}
+.prdctInfoText h3 {
+    font-size: 22px;
+    color: var(--darkText);
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+.prdctInfoText p {
+    font-size: 16px;
+    color: var(--vt-c-yellow);
+    font-weight: 500;
+    line-height: 22px;
+    margin: 0;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+.prdctInfoText p span {
+    position: relative;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease 0s;
+}
+.prdctInfoText p span::before {
+    background-color: var(--vt-c-yellow);
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.prdctInfoText:hover p span::before {
+    opacity: 1;
+}
+.prdctInfoMedia {
+    min-height: 257px;
+}

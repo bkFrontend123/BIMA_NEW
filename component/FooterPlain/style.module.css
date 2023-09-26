@@ -2,14 +2,23 @@
     position: relative;
     background-color: var(--vt-c-blue);
 }
+.eBnftFtrBlock.ftrBlock {
+    background-color: var(--vt-c-black1);
+}
 .ftrCntnt {
     text-align: center;
+}
+.eBnftFtrBlock .ftrCntnt {
+    text-align: left;
 }
 .ftrCntnt p {
     font-size: 14px;
     line-height: 22px;
     color: var(--vt-c-blueSkyLight2);
     margin-bottom: 6px;
+}
+.eBnftFtrBlock .ftrCntnt p {
+    color: var(--mute1);
 }
 .ftrCntnt .yellow {
     color: var(--vt-c-yellow);

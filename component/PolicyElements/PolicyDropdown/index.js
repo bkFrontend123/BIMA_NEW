@@ -12,7 +12,7 @@ const Icon = () => {
     );
 };
 
-const PolicyDropdown = ({ customClass, label, icon, placeHolder, options }) => {
+const PolicyDropdown = ({ customClass, variant, label, icon, placeHolder, options }) => {
     const [showMenu, setShowMenu] = useState(false);
     const [selectedValue, setSelectedValue] = useState(null);
     useEffect(() => {
@@ -46,7 +46,7 @@ const PolicyDropdown = ({ customClass, label, icon, placeHolder, options }) => {
     }
   
     return (
-      <div className={`${style.dropdownContainer} ${customClass}`}>
+      <div className={`${style.dropdownContainer} ${customClass} ${variant ? style.dropdownSmpleContainer : null}`}>
         <label>{label}</label>
         <div onClick={handleInputCick} className={`${style.dropdownInput}`}>
           <div className='d-flex align-items-center'>

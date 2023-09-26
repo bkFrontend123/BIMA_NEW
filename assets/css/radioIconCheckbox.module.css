@@ -1,0 +1,132 @@
+.radioIconRow {
+
+}
+.radioIconCol {
+    position: relative;
+    background-color: var(--mute5);
+    border: 1px solid var(--vt-c-grayLight3);
+    border-radius: 20px;
+    outline: 1px;
+    outline-style: solid;
+    outline-color: transparent;
+    transition: all 0.3s ease 0s;
+}
+.radioIconCol + .radioIconCol {
+    margin-top: 1.5rem;
+}
+.radioIconCol:hover {
+    background-color: var(--mute6);
+}
+.radioIconCol.active,
+.radioIconCol.active:hover {
+    background-color: var(--mute1);
+    border: 1px solid var(--vt-c-yellow);
+    outline-color: var(--vt-c-yellow);
+}
+.radioIconCol span {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--vt-c-black2);
+    border-radius: 8px;
+    left: 24px;
+    top: 50%;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+}
+.radioNoIconCol.radioIconCol span {
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+}
+.radioIconCol span::before {
+    background-color: var(--vt-c-yellow);
+    position: absolute;
+    content: "";
+    left: 7px;
+    top: 7px;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.radioIconCol span::after {
+    background-color: var(--vt-c-yellowActive);
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    transform: scale(0);
+    transition: all 0.3s ease 0s;
+    z-index: -1;
+}
+.radioIconCol:hover span::before {
+    opacity: 1;
+}
+.radioIconCol.active span::before {
+    opacity: 0;
+}
+.radioIconCol.active span::after {
+    transform: scale(1);
+}
+.radioIconCol span img {
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.radioIconCol.active span img {
+    opacity: 1;
+}
+.radioIconCheckox {
+    padding: 0;
+    margin: 0;
+}
+.radioIconCheckox input {
+    display: none;
+}
+.radioIconCheckox label {
+    font-size: 16px;
+    color: var(--vt-c-grayLight3);
+    font-weight: 500;
+    height: 128px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 24px 160px 24px 88px;
+    transition: all 0.3s ease 0s;
+}
+.radioNoIconCol .radioIconCheckox label {
+    height: 100px;
+    padding: 24px 24px 24px 68px;
+    justify-content: center;
+}
+.radioIconCol:hover .radioIconCheckox label {
+    color: var(--gray);
+}
+.radioIconCol.active .radioIconCheckox label,
+.radioIconCol.active:hover .radioIconCheckox label {
+    color: var(--darkText);
+}
+.radioIconCol i {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.radioIconCol i img {
+    width: 80px;
+    height: 80px;
+}

@@ -25,6 +25,18 @@
 .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow:before,.bs-tooltip-start .tooltip-arrow:before {
     border-left-color: var(--vt-c-blueExtraLight1);
 }
+.eBnftTooltip .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow:before,.bs-tooltip-top .tooltip-arrow:before {
+    border-top-color: var(--mute1);
+}
+.eBnftTooltip .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow:before,.bs-tooltip-end .tooltip-arrow:before {
+    border-right-color: var(--mute1);
+}
+.eBnftTooltip .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow:before,.bs-tooltip-bottom .tooltip-arrow:before {
+    border-bottom-color: var(--mute1);
+}
+.eBnftTooltip .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow:before,.bs-tooltip-start .tooltip-arrow:before {
+    border-left-color: var(--mute1);
+}
 
 .tooltip-inner {
     background-color: var(--vt-c-blueExtraLight1);
@@ -34,6 +46,10 @@
     color: var(--vt-c-blue);
     font-weight: 500;
     opacity: 1 !important;
+}
+.eBnftTooltip .tooltip-inner {
+    background-color: var(--mute1);
+    color: var(--darkText);
 }
 
 @media (max-width:767px) {

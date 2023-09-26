@@ -2,8 +2,98 @@
     padding: 30px 0;
     border-bottom: 1px solid var(--vt-c-grayLight);
 }
+.eBnftHdrBlock.hdrBlock {
+    background-color: var(--mute5);
+    padding: 0;
+    border-bottom: 0;
+}
 .logo a {
     display: inline-block;
+}
+.eBnftLogo {
+    border: 1px solid var(--brown);
+    border-top: 0;
+    border-radius: 0 0 40px 40px;
+    padding: 20px 24px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoLink {
+    position: relative;
+    display: flex;
+    height: 41px;
+    width: 222px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out 0s;
+}
+.grpHlthLogo,
+.grpAcdntLogo {
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease-in-out 0s;
+}
+.grpHlthLogo {
+    left: 12px;
+}
+.grpAcdntLogo {
+    left: 0;
+}
+.bimaLogo {
+    position: absolute;
+    left: 10px;
+    top: 41px;
+    transition: all 0.5s ease-in-out 0s;
+}
+.logoLink:hover .bimaLogo {
+    top: 10px;
+}
+.logoLink:hover .grpHlthLogo,
+.logoLink:hover .grpAcdntLogo {
+    top: 41px;
+}
+/*.eBnftHdrBlock .hdrBtnDiv {
+    border: 1px solid var(--brown);
+    border-top: 0;
+    border-radius: 0 0 40px 40px;
+}*/
+.eBnftHdrBlock .hdrBtnDiv > div {
+    flex: 1 0;
+    transition: all 0.3s ease 0s;
+}
+/*.eBnftHdrBlock .hdrBtnDiv > div + div {
+    border-left: 1px solid var(--brown);
+}
+.eBnftHdrBlock .hdrBtnDiv > div:first-child {
+    border-radius: 0 0 0 40px;
+}
+.eBnftHdrBlock .hdrBtnDiv > div:last-child {
+    border-radius: 0 0 40px 0;
+}*/
+.eBnftHdrBlock .hdrBtnDiv > div > div .hdrDrpdwnBtn,
+.eBnftHdrBlock .hdrBtnDiv > div > button,
+.eBnftHdrBlock .hdrBtnDiv > div > .hdrBtnLink {
+    border-left: 1px solid var(--brown);
+    border-bottom: 1px solid var(--brown);
+}
+.eBnftHdrBlock .hdrBtnDiv > div:first-child > div .hdrDrpdwnBtn,
+.eBnftHdrBlock .hdrBtnDiv > div:first-child > .hdrBtnLink {
+    border-radius: 0 0 0 40px;
+}
+.eBnftHdrBlock .hdrBtnDiv > div:last-child > .hdrBtnLink {
+    border-right: 1px solid var(--brown);
+    border-radius: 0 0 40px 0;
+}
+.eBnftHdrBlock .hdrBtnDiv > div > div .hdrDrpdwnBtn:hover,
+.eBnftHdrBlock .hdrBtnDiv > div > button:hover,
+.eBnftHdrBlock .hdrBtnDiv > div > .hdrBtnLink:hover {
+    background-color: var(--mute1);
+}
+.eBnftHdrBlock .hdrBtnDiv > div > div .hdrDrpdwnBtn:focus,
+.eBnftHdrBlock .hdrBtnDiv > div > button:focus,
+.eBnftHdrBlock .hdrBtnDiv > div > .hdrBtnLink:focus {
+    background-color: var(--vt-c-yellow);
 }
 .hdrBtn a {
     justify-content: center;
@@ -22,15 +112,44 @@ button.btnSmall {
     line-height: 58px;
     padding: 0 20px;
 }
+.hdrBtn button:focus {
+    box-shadow: none;
+}
+.eBnftHdrBlock .hdrDrpdwnBtn,
+.eBnftHdrBlock .hdrBtnLink {
+    font-size: 15px;
+    color: var(--darkText);
+    font-weight: 500;
+    line-height: 15px;
+    padding: 32.5px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0;
+}
+.eBnftHdrBlock .hdrBtnLink svg path {
+    fill: var(--darkText);
+}
 .hdrDrpdwn button::after {
     display: none;
 }
 .hdrDrpdwn button i {
     transition: all 0.3s ease 0s;
 }
+.eBnftHdrBlock .hdrDrpdwn button i svg {
+    position: relative;
+    top: -2px;
+}
 .hdrDrpdwn button:focus + button,
 .hdrDrpdwn button:focus {
     box-shadow: none;
+}
+.eBnftHdrBlock .hdrDrpdwn button > svg path {
+    fill: var(--darkText);
+}
+.eBnftHdrBlock .hdrDrpdwn button i svg path {
+    stroke: var(--darkText);
 }
 .hdrDrpMenu {
     padding: 0;
@@ -43,6 +162,9 @@ button.btnSmall {
     font-weight: 500;
     color: var(--vt-c-blue);
     padding: 0.65rem 1rem;
+}
+.eBnftHdrBlock .hdrDrpMenu > a {
+    color: var(--darkText);
 }
 .hdrDrpMenu > a + a {
     border-top: 1px solid var(--vt-c-grayLight);
@@ -57,6 +179,10 @@ button.btnSmall {
     left: inherit !important;
     min-width: 240px;
     border-radius: 0;
+}
+.eBnftHdrBlock .hdrTalkDrpdwn .hdrDrpMenu {
+    min-width: 100%;
+    border-radius: 0 0 40px 40px;
 }
 .hdrDrpMenu p {
     font-size: 16px;
@@ -89,6 +215,9 @@ button.btnSmall {
     color: #4B5979;
     font-family: var(--GalanoGrotesqueMedium);
     display: block
+}
+.eBnftHdrBlock .hdrTalkDrpdwn ul li span {
+    color: var(--darkText);
 }
 .hdrTalkDrpdwn ul li a {
     font-size: 16px;

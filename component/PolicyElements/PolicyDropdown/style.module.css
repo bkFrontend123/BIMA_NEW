@@ -4,6 +4,13 @@
     padding: 0;
     z-index: 1;
 }
+.dropdownSmpleContainer.dropdownContainer {
+    flex: 0 0 auto;
+    width: 50%;
+    border-left: 1px solid var(--brown);
+    padding: 20px 24px;
+    margin-left: 0 !important;
+}
 .dropdownInput {
     display: flex;
     align-items: center;
@@ -24,6 +31,9 @@
     font-weight: 600;
     line-height: 28px;
 }
+.dropdownSmpleContainer .dropdownSelectedValue {
+    font-size: 19px;
+}
 .dropdownTool {
     display: flex;
     color: var(--vt-c-blue);
@@ -43,6 +53,10 @@
     margin-top: 8px;
     max-height: 171px;
     overflow: auto;
+}
+.dropdownSmpleContainer .dropdownMenu {
+    transform: translateY(13px);
+    left: 0;
 }
 .dropdownMenu i {
     position: absolute;
