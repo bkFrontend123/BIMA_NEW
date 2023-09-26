@@ -1,7 +1,7 @@
 import React from "react";
 import Image from 'next/image'
 
-import radioCheckIcon from '@/public/GHI/icons/radioCheckIcon.svg'
+import radioCheckIcon from '@/public/ghi/icons/radioCheckIcon.svg'
 
 import radioIconStyle from '@/assets/css/radioIconCheckbox.module.css'
 

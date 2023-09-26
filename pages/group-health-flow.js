@@ -23,25 +23,25 @@ import radioIconStyle from '@/assets/css/radioIconCheckbox.module.css'
 
 import LeftIcon from '@/component/GHI/Icons/IconLeft';
 import RightIcon from '@/component/GHI/Icons/IconRight';
-import tooltipIcon from '@/public/GHI/icons/tooltipIcon.svg'
+import tooltipIcon from '@/public/ghi/icons/tooltipIcon.svg'
 
-import coverDetailIcon1 from '@/public/GHI/flowIcons/coverDetailIcon1.svg'
-import coverDetailIcon2 from '@/public/GHI/flowIcons/coverDetailIcon2.svg'
-import coverDetailIcon3 from '@/public/GHI/flowIcons/coverDetailIcon3.svg'
+import coverDetailIcon1 from '@/public/ghi/flowIcons/coverDetailIcon1.svg'
+import coverDetailIcon2 from '@/public/ghi/flowIcons/coverDetailIcon2.svg'
+import coverDetailIcon3 from '@/public/ghi/flowIcons/coverDetailIcon3.svg'
 
-import sumInsuredIcon1 from '@/public/GHI/flowIcons/sumInsuredIcon1.svg'
-import sumInsuredIcon2 from '@/public/GHI/flowIcons/sumInsuredIcon2.svg'
-import sumInsuredIcon3 from '@/public/GHI/flowIcons/sumInsuredIcon3.svg'
-import sumInsuredIcon4 from '@/public/GHI/flowIcons/sumInsuredIcon4.svg'
+import sumInsuredIcon1 from '@/public/ghi/flowIcons/sumInsuredIcon1.svg'
+import sumInsuredIcon2 from '@/public/ghi/flowIcons/sumInsuredIcon2.svg'
+import sumInsuredIcon3 from '@/public/ghi/flowIcons/sumInsuredIcon3.svg'
+import sumInsuredIcon4 from '@/public/ghi/flowIcons/sumInsuredIcon4.svg'
 
-import maternityBenefitIcon1 from '@/public/GHI/flowIcons/maternityBenefitIcon1.svg'
-import maternityBenefitIcon2 from '@/public/GHI/flowIcons/maternityBenefitIcon2.svg'
-import maternityBenefitIcon3 from '@/public/GHI/flowIcons/maternityBenefitIcon3.svg'
-import maternityBenefitIcon4 from '@/public/GHI/flowIcons/maternityBenefitIcon4.svg'
+import maternityBenefitIcon1 from '@/public/ghi/flowIcons/maternityBenefitIcon1.svg'
+import maternityBenefitIcon2 from '@/public/ghi/flowIcons/maternityBenefitIcon2.svg'
+import maternityBenefitIcon3 from '@/public/ghi/flowIcons/maternityBenefitIcon3.svg'
+import maternityBenefitIcon4 from '@/public/ghi/flowIcons/maternityBenefitIcon4.svg'
 
-import roomRentIcon1 from '@/public/GHI/flowIcons/roomRentIcon1.svg'
-import roomRentIcon2 from '@/public/GHI/flowIcons/roomRentIcon2.svg'
-import roomRentIcon3 from '@/public/GHI/flowIcons/roomRentIcon3.svg'
+import roomRentIcon1 from '@/public/ghi/flowIcons/roomRentIcon1.svg'
+import roomRentIcon2 from '@/public/ghi/flowIcons/roomRentIcon2.svg'
+import roomRentIcon3 from '@/public/ghi/flowIcons/roomRentIcon3.svg'
 
 export default function GroupHealth_Flow() {
     const navbarExample2Ref = useRef(null);
