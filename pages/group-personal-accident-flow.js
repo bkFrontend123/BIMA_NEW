@@ -46,21 +46,6 @@ export default function GroupPersonalAccident_Flow() {
         setEnterDetailsThirdActive(!isEnterDetailsThirdActive);
     };
 
-    const [isEnterDetailsFourthActive, setEnterDetailsFourthActive] = useState(true);
-    const handleEnterDetailsFourthToggle = () => {
-        setEnterDetailsFourthActive(!isEnterDetailsFourthActive);
-    };
-
-    const [isEnterDetailsFiveActive, setEnterDetailsFiveActive] = useState(true);
-    const handleEnterDetailsFiveToggle = () => {
-        setEnterDetailsFiveActive(!isEnterDetailsFiveActive);
-    };
-
-    const [isEnterDetailsSixActive, setEnterDetailsSixActive] = useState(true);
-    const handleEnterDetailsSixToggle = () => {
-        setEnterDetailsSixActive(!isEnterDetailsSixActive);
-    };
-
     const [indValue, setIndValue] = useState();
     const indCategoryOptions = [
         { name: 'Banking Finance and Insurance', value: '1' },
@@ -73,12 +58,21 @@ export default function GroupPersonalAccident_Flow() {
 
     const [natureWorkValue, setNatureWorkValue] = useState();
     const natureWorkOptions = [
-        { name: 'Banking Finance and Insurance', value: '1' },
-        { name: 'Computers, IT Services, Technology and Telecommunication', value: '2' },
-        { name: 'Construction and Real Estate', value: '3' },
-        { name: 'Manufacturing', value: '4' },
-        { name: 'Advertising', value: '5' },
-        { name: 'Medical & Pharmaceuticals', value: '6' },
+        { name: 'Accountant/Admin Staff', value: '1' },
+        { name: 'Cook', value: '2' },
+        { name: 'Consumer', value: '3' },
+        { name: 'BFSI', value: '4' },
+        { name: 'Enterprise Technology', value: '5' },
+        { name: 'B2B Consulting', value: '6' },
+    ];
+
+    const [sumInsuredValue, setSumInsuredValue] = useState();
+    const sumInsuredOptions = [
+        {name: '1 Cr', value: '1'},
+        {name: '2 Cr', value: '2'},
+        {name: '3 Cr', value: '3'},
+        {name: '4 Cr', value: '4'},
+        {name: '5 Cr', value: '5'},
     ];
 
     const [buyingPoilicyValue, setBuyingPoilicyValue] = useState();
@@ -96,7 +90,7 @@ export default function GroupPersonalAccident_Flow() {
         router.push('/group-personal-accident-insurance');
     };
     const goToNextPage = () => {
-        router.push('/all_policies?insuranceType=employeeBenefit&logo=gpa');
+        router.push('/thank-you');
     };
 
     return (
@@ -135,12 +129,12 @@ export default function GroupPersonalAccident_Flow() {
                                                         </Col>
                                                         <Col md="auto">
                                                             <div className={`${progress.progressDiv} ${progress.smallProgress} ${progress.noLabel} ${progress.warning} ${progress.newProgress}`}>
-                                                                <ProgressBar now={13} />
+                                                                <ProgressBar now={20} />
                                                             </div>
                                                         </Col>
                                                     </Row>
                                                 </div>
-                                                <div className={`${form.frmTtl}`}>
+                                                <div className={`mb-3 ${form.frmTtl}`}>
                                                     <h3>1. Initial Details</h3>
                                                 </div>
                                                 <Form>
@@ -206,7 +200,7 @@ export default function GroupPersonalAccident_Flow() {
                                                                 </Col>
                                                                 <Col md="auto">
                                                                     <div className={`${progress.progressDiv} ${progress.smallProgress} ${progress.noLabel} ${progress.warning} ${progress.newProgress}`}>
-                                                                        <ProgressBar now={26} />
+                                                                        <ProgressBar now={40} />
                                                                     </div>
                                                                 </Col>
                                                             </Row>
@@ -216,24 +210,8 @@ export default function GroupPersonalAccident_Flow() {
                                                         </div>
                                                         <Form>
                                                             <Form.Group className="mb-4">
-                                                                <Form.Label htmlFor="coverDetails" className={`mb-4 ${form.formLabel}`}>
+                                                                <Form.Label htmlFor="coverDetails" className={`mb-0 ${form.formLabel}`}>
                                                                     <span>What is the nature of work?</span>
-                                                                    <OverlayTrigger
-                                                                        placement="top"
-                                                                        overlay={<Tooltip>Maximum amount the insurance company will pay you in case of loss due to defined liability.</Tooltip>}
-                                                                    >
-                                                                        {({ ref, ...triggerHandler }) => (
-                                                                            <i className='tooltipIcon' {...triggerHandler}>
-                                                                                <Image
-                                                                                    ref={ref}
-                                                                                    src={tooltipIcon}
-                                                                                    width="20"
-                                                                                    height="20"
-                                                                                    alt="Remark Icon"
-                                                                                />
-                                                                            </i>
-                                                                        )}
-                                                                    </OverlayTrigger>
                                                                 </Form.Label>
                                                             </Form.Group>
                                                             <Form.Group className={`selectDropDiv searchDropDiv mb-4 ${!natureWorkValue == '' ? 'selectedDropDiv' : null}`}>
@@ -293,43 +271,35 @@ export default function GroupPersonalAccident_Flow() {
                                                                         </Col>
                                                                         <Col md="auto">
                                                                             <div className={`${progress.progressDiv} ${progress.smallProgress} ${progress.noLabel} ${progress.warning} ${progress.newProgress}`}>
-                                                                                <ProgressBar now={39} />
+                                                                                <ProgressBar now={60} />
                                                                             </div>
                                                                         </Col>
                                                                     </Row>
                                                                 </div>
-                                                                <div className={`${form.frmTtl}`}>
+                                                                <div className={`mb-3 ${form.frmTtl}`}>
                                                                     <h3>3. Employee Details</h3>
                                                                 </div>
                                                                 <Form>
-                                                                    <Form.Group className="floatFormGroup mb-4">
-                                                                        <Form.Label htmlFor="coverDetails" className={`mb-4 ${form.formLabel}`}>
+                                                                    <Form.Group className="mb-4">
+                                                                        <Form.Label htmlFor="employeeDetails" className={`${form.formLabel}`}>
                                                                             <span>Whom do you want to cover, and for how much?</span>
-                                                                            <OverlayTrigger
-                                                                                placement="top"
-                                                                                overlay={<Tooltip>Maximum amount the insurance company will pay you in case of loss due to defined liability.</Tooltip>}
-                                                                            >
-                                                                                {({ ref, ...triggerHandler }) => (
-                                                                                    <i className='tooltipIcon' {...triggerHandler}>
-                                                                                        <Image
-                                                                                            ref={ref}
-                                                                                            src={tooltipIcon}
-                                                                                            width="20"
-                                                                                            height="20"
-                                                                                            alt="Remark Icon"
-                                                                                        />
-                                                                                    </i>
-                                                                                )}
-                                                                            </OverlayTrigger>
                                                                         </Form.Label>
-                                                                        <FloatingLabel controlId="employees" label="Total Number of Employees" >
-                                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder="Eg: 10" required />
-                                                                        </FloatingLabel>
                                                                     </Form.Group>
                                                                     <Form.Group className="floatFormGroup mb-4">
-                                                                        <FloatingLabel controlId="sumInsuredPerson" label="Sum Insured per Person" >
-                                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder="Eg: 10" required />
+                                                                        <FloatingLabel controlId="employees" label="Total Number of Employees" >
+                                                                            <Form.Control className={`${form.formInput}`} type="number" placeholder="Eg: 10" required />
                                                                         </FloatingLabel>
+                                                                    </Form.Group>
+                                                                    <Form.Group className={`selectDropDiv mb-4 ${!sumInsuredValue == '' ? 'selectedDropDiv' : null}`}>
+                                                                        <SelectSearch
+                                                                            options={sumInsuredOptions}
+                                                                            name="sumInsuredValue"
+                                                                            placeholder="&nbsp;"
+                                                                            onChange={setSumInsuredValue}
+                                                                            value={sumInsuredValue}
+                                                                            required
+                                                                        />
+                                                                        <label>Sum Insured per Person</label>
                                                                     </Form.Group>
                                                                     <div className={`${form.fromButtonDiv}`}>
                                                                         <Row className="g-4">
@@ -374,7 +344,7 @@ export default function GroupPersonalAccident_Flow() {
                                                                         </Col>
                                                                         <Col md="auto">
                                                                             <div className={`${progress.progressDiv} ${progress.smallProgress} ${progress.noLabel} ${progress.warning} ${progress.newProgress}`}>
-                                                                                <ProgressBar now={52} />
+                                                                                <ProgressBar now={80} />
                                                                             </div>
                                                                         </Col>
                                                                     </Row>
@@ -384,18 +354,11 @@ export default function GroupPersonalAccident_Flow() {
                                                                 </div>
                                                                 <Form>
                                                                     <Form.Group className="mb-4">
-                                                                        <Form.Label htmlFor="existingPolicy" className={`mb-4 ${form.formLabel}`}>Buying poilicy for the first
-                                                                            time?
-                                                                            <OverlayTrigger placement="top" overlay={<Tooltip>Maximum amount the insurance company will pay you
-                                                                                in case of loss due to defined liability.</Tooltip>}
-                                                                            >
-                                                                                {({ ref, ...triggerHandler }) => (
-                                                                                    <i className='tooltipIcon' {...triggerHandler}>
-                                                                                        <Image ref={ref} src={tooltipIcon} width="20" height="20" alt="Remark Icon" />
-                                                                                    </i>
-                                                                                )}
-                                                                            </OverlayTrigger>
+                                                                        <Form.Label htmlFor="existingPolicy" className={`${form.formLabel}`}>
+                                                                            <span>Buying poilicy for the first time?</span>
                                                                         </Form.Label>
+                                                                    </Form.Group>
+                                                                    <Form.Group className="mb-4">
                                                                         <RadioIconRow>
                                                                             <Row className="g-4">
                                                                                 <Col md={6}>
@@ -416,36 +379,30 @@ export default function GroupPersonalAccident_Flow() {
                                                                         </RadioIconRow>
                                                                     </Form.Group>
                                                                     {buyingPoilicyValue === 'No' ? (
-                                                                        <Form.Group className="mb-4">
-                                                                            <Form.Label htmlFor="existingPolicy" className={`mb-4 ${form.formLabel}`}>Is there any claim in existing
-                                                                                policy?
-                                                                                <OverlayTrigger placement="top" overlay={<Tooltip>Maximum amount the insurance company will pay you
-                                                                                    in case of loss due to defined liability.</Tooltip>}
-                                                                                >
-                                                                                    {({ ref, ...triggerHandler }) => (
-                                                                                        <i className='tooltipIcon' {...triggerHandler}>
-                                                                                            <Image ref={ref} src={tooltipIcon} width="20" height="20" alt="Remark Icon" />
-                                                                                        </i>
-                                                                                    )}
-                                                                                </OverlayTrigger>
-                                                                            </Form.Label>
-                                                                            <Row className="g-4">
-                                                                                <Col md={6}>
-                                                                                    <RadioIconCard activeClass={claimPolicyValue === 'Yes' ? radioIconStyle.active : null}>
-                                                                                        <Form.Check type="radio" id="claimPolicy-1" name="claimPolicy" label="Yes" value="Yes"
-                                                                                            checked={claimPolicyValue === 'Yes'} onChange={handleChangeClaimPolicy} required
-                                                                                            className={`${radioIconStyle.radioIconCheckox}`} />
-                                                                                    </RadioIconCard>
-                                                                                </Col>
-                                                                                <Col md={6}>
-                                                                                    <RadioIconCard activeClass={claimPolicyValue === 'No' ? radioIconStyle.active : null}>
-                                                                                        <Form.Check type="radio" id="claimPolicy-2" name="claimPolicy" label="No" value="No"
-                                                                                            checked={claimPolicyValue === 'No'} onChange={handleChangeClaimPolicy} required
-                                                                                            className={`${radioIconStyle.radioIconCheckox}`} />
-                                                                                    </RadioIconCard>
-                                                                                </Col>
-                                                                            </Row>
-                                                                        </Form.Group>
+                                                                        <>
+                                                                            <Form.Group className="mb-4">
+                                                                                <Form.Label htmlFor="existingPolicy" className={`mb-4 ${form.formLabel}`}>Is there any claim in existing
+                                                                                    policy?</Form.Label>
+                                                                            </Form.Group>
+                                                                            <Form.Group className="mb-4">
+                                                                                <Row className="g-4">
+                                                                                    <Col md={6}>
+                                                                                        <RadioIconCard activeClass={claimPolicyValue === 'Yes' ? radioIconStyle.active : null}>
+                                                                                            <Form.Check type="radio" id="claimPolicy-1" name="claimPolicy" label="Yes" value="Yes"
+                                                                                                checked={claimPolicyValue === 'Yes'} onChange={handleChangeClaimPolicy} required
+                                                                                                className={`${radioIconStyle.radioIconCheckox}`} />
+                                                                                        </RadioIconCard>
+                                                                                    </Col>
+                                                                                    <Col md={6}>
+                                                                                        <RadioIconCard activeClass={claimPolicyValue === 'No' ? radioIconStyle.active : null}>
+                                                                                            <Form.Check type="radio" id="claimPolicy-2" name="claimPolicy" label="No" value="No"
+                                                                                                checked={claimPolicyValue === 'No'} onChange={handleChangeClaimPolicy} required
+                                                                                                className={`${radioIconStyle.radioIconCheckox}`} />
+                                                                                        </RadioIconCard>
+                                                                                    </Col>
+                                                                                </Row>
+                                                                            </Form.Group>
+                                                                        </>
                                                                     ) : (
                                                                         null
                                                                     )}
