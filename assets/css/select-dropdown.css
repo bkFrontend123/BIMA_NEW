@@ -12,7 +12,7 @@
     top: 19px;
     font-size: 16px;
     color: var(--vt-c-grayLight3);
-    padding: 0 50px 0 10px;
+    padding: 0 60px 0 10px;
     pointer-events: none;
     transition: opacity .1s ease-in-out,transform .1s ease-in-out;
     z-index: 1;

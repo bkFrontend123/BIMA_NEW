@@ -94,6 +94,7 @@
 .eBnftHdrBlock .hdrBtnDiv > div > button:focus,
 .eBnftHdrBlock .hdrBtnDiv > div > .hdrBtnLink:focus {
     background-color: var(--vt-c-yellow);
+    border-radius: 0;
 }
 .hdrBtn a {
     justify-content: center;
