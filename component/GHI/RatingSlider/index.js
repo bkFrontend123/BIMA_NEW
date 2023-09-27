@@ -31,13 +31,13 @@ export default function RatingSlider() {
             slidesPerView: 3,
           },
           1200: {
-            slidesPerView: 3,
-          },
-          992: {
             slidesPerView: 2.5,
           },
-          0: {
+          992: {
             slidesPerView: 2,
+          },
+          0: {
+            slidesPerView: 1,
           },
         }}
       >

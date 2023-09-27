@@ -37,6 +37,14 @@
         font-size: 30px;
         line-height: 36px;
     }
+    .prdctCntntLftBtm {
+        margin-top: 32px;
+        padding-top: 32px;
+    }
+    .prdctCntntLftInfo p {
+        font-size: 17px;
+        line-height: 26px;
+    }
 }
 
 @media (max-width:1199px) {
@@ -44,8 +52,12 @@
         font-size: 28px;
     }
     .prdctCntntLftInfo p {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 24px;
+    }
+    .prdctCntntLftBtm {
+        margin-top: 24px;
+        padding-top: 24px;
     }
 }
 
@@ -54,6 +66,9 @@
         display: flex;
         gap: 1rem;
         align-items: center;
+    }
+    .prdctCntntLftHdr i img {
+        width: 46px;
     }
     .prdctCntntLftHdr h2 {
         font-size: 24px;

@@ -120,3 +120,36 @@
     width: 90px;
     height: 90px;
 }
+
+@media (max-width: 1399px) {
+    .prdctFrmHelpCol:last-child {
+        border-radius: 0 0 32px 32px;
+    }
+    .prdctFrmHelpCol > div {
+        padding: 20px;
+    }
+    .prdctFrmHelpText h3 {
+        font-size: 20px;
+    }
+    .prdctFrmHelpSmallCol .prdctFrmHelpText h3 {
+        font-size: 18px;
+    }
+    .prdctFrmHelpText h4 {
+        font-size: 16px;
+    }
+    .prdctFrmHelpMedia {
+        min-height: 230px;
+    }
+    .prdctFrmHelpSmallCol .prdctFrmHelpMedia {
+        min-height: 200px;
+    }
+    .prdctFrmHelpIcon {
+        min-width: 90px;
+        height: 90px;
+    }
+    .prdctFrmHelpImg {
+        width: 90px;
+        height: 90px;
+        border-radius: 90px;
+    }
+}

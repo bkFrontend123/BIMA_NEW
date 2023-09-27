@@ -53,3 +53,16 @@
     justify-content: center;
     gap: 0.5rem;
 }
+
+@media (max-width: 1399px) {
+    .prdctHelpInfo {
+        padding: 12px;
+    }
+    .prdctHelpInfo p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .prdctHelpInfo {
+        padding: 12px;
+    }
+}

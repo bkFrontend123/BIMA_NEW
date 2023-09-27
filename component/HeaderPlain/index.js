@@ -143,8 +143,8 @@ export default function HeaderPlain(props) {
         <Container fluid={isFluid}>
           <Row className='justify-content-center'>
             <Col xl={insuranceType === 'employeeBenefit' ? 12 : 11}>
-              <Row className={`g-4 ${insuranceType === 'employeeBenefit' ? 'g-xxl-5' : 'align-items-center justify-content-between'}`}>
-                <Col md={insuranceType === 'employeeBenefit' ? (emailQuote ? 4 : 6) : null}>
+              <Row className={`g-3 g-md-4 ${insuranceType === 'employeeBenefit' ? 'g-xxl-5' : 'align-items-center justify-content-between'}`}>
+                <Col md={insuranceType === 'employeeBenefit' ? (emailQuote ? 4 : 6) : null} className={'col'}>
                   {insuranceType === 'employeeBenefit' ? (
                     <>
                       <div className={style.eBnftLogo}>
@@ -171,7 +171,7 @@ export default function HeaderPlain(props) {
                     </div>
                   )}
                 </Col>
-                <Col md={insuranceType === 'employeeBenefit' ? (emailQuote ? 8 : 6) : null} className={insuranceType === 'employeeBenefit' ? null : 'col-auto'}>
+                <Col md={insuranceType === 'employeeBenefit' ? (emailQuote ? 8 : 6) : null} className={'col-auto'}>
                   <div className={insuranceType === 'employeeBenefit' ? null : 'd-flex align-items-center gap-3'}>
                     <div className={`d-flex align-items-center ${insuranceType === 'employeeBenefit' ? 'justify-content-center' : 'gap-2 gap-md-3'} ${style.hdrBtnDiv}`}>
                       {emailQuote ? (

@@ -348,21 +348,19 @@ export default function GroupPersonalAccident_Flow() {
                                                                 </div>
                                                                 <Form>
                                                                     <Form.Group className="mb-4">
-                                                                        <Form.Label htmlFor="existingPolicy" className={`${form.formLabel}`}>
+                                                                        <Form.Label htmlFor="existingPolicy" className={`mb-4 ${form.formLabel}`}>
                                                                             <span>Buying poilicy for the first time?</span>
                                                                         </Form.Label>
-                                                                    </Form.Group>
-                                                                    <Form.Group className="mb-4">
                                                                         <RadioIconRow>
                                                                             <Row className="g-4">
-                                                                                <Col md={6}>
+                                                                                <Col xs={6}>
                                                                                     <RadioIconCard activeClass={buyingPoilicyValue === 'Yes' ? radioIconStyle.active : null}>
                                                                                         <Form.Check type="radio" id="buyingPoilicy-1" name="buyingPoilicy" label="Yes" value="Yes"
                                                                                             checked={buyingPoilicyValue === 'Yes'} onChange={handleChangeBuyingPolicy} required
                                                                                             className={`${radioIconStyle.radioIconCheckox}`} />
                                                                                     </RadioIconCard>
                                                                                 </Col>
-                                                                                <Col md={6}>
+                                                                                <Col xs={6}>
                                                                                     <RadioIconCard activeClass={buyingPoilicyValue === 'No' ? radioIconStyle.active : null}>
                                                                                         <Form.Check type="radio" id="buyingPoilicy-2" name="buyingPoilicy" label="No" value="No"
                                                                                             checked={buyingPoilicyValue === 'No'} onChange={handleChangeBuyingPolicy} required
@@ -377,24 +375,24 @@ export default function GroupPersonalAccident_Flow() {
                                                                             <Form.Group className="mb-4">
                                                                                 <Form.Label htmlFor="existingPolicy" className={`mb-4 ${form.formLabel}`}>Is there any claim in existing
                                                                                     policy?</Form.Label>
-                                                                            </Form.Group>
-                                                                            <Form.Group className="mb-4">
-                                                                                <Row className="g-4">
-                                                                                    <Col md={6}>
-                                                                                        <RadioIconCard activeClass={claimPolicyValue === 'Yes' ? radioIconStyle.active : null}>
-                                                                                            <Form.Check type="radio" id="claimPolicy-1" name="claimPolicy" label="Yes" value="Yes"
-                                                                                                checked={claimPolicyValue === 'Yes'} onChange={handleChangeClaimPolicy} required
-                                                                                                className={`${radioIconStyle.radioIconCheckox}`} />
-                                                                                        </RadioIconCard>
-                                                                                    </Col>
-                                                                                    <Col md={6}>
-                                                                                        <RadioIconCard activeClass={claimPolicyValue === 'No' ? radioIconStyle.active : null}>
-                                                                                            <Form.Check type="radio" id="claimPolicy-2" name="claimPolicy" label="No" value="No"
-                                                                                                checked={claimPolicyValue === 'No'} onChange={handleChangeClaimPolicy} required
-                                                                                                className={`${radioIconStyle.radioIconCheckox}`} />
-                                                                                        </RadioIconCard>
-                                                                                    </Col>
-                                                                                </Row>
+                                                                                <RadioIconRow>
+                                                                                    <Row className="g-4">
+                                                                                        <Col xs={6}>
+                                                                                            <RadioIconCard activeClass={claimPolicyValue === 'Yes' ? radioIconStyle.active : null}>
+                                                                                                <Form.Check type="radio" id="claimPolicy-1" name="claimPolicy" label="Yes" value="Yes"
+                                                                                                    checked={claimPolicyValue === 'Yes'} onChange={handleChangeClaimPolicy} required
+                                                                                                    className={`${radioIconStyle.radioIconCheckox}`} />
+                                                                                            </RadioIconCard>
+                                                                                        </Col>
+                                                                                        <Col xs={6}>
+                                                                                            <RadioIconCard activeClass={claimPolicyValue === 'No' ? radioIconStyle.active : null}>
+                                                                                                <Form.Check type="radio" id="claimPolicy-2" name="claimPolicy" label="No" value="No"
+                                                                                                    checked={claimPolicyValue === 'No'} onChange={handleChangeClaimPolicy} required
+                                                                                                    className={`${radioIconStyle.radioIconCheckox}`} />
+                                                                                            </RadioIconCard>
+                                                                                        </Col>
+                                                                                    </Row>
+                                                                                </RadioIconRow>
                                                                             </Form.Group>
                                                                         </>
                                                                     ) : (

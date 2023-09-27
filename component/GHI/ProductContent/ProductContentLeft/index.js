@@ -63,7 +63,7 @@ export default function ProductContentLeft(props) {
                     <p>{description}</p>
                 </div>
                 <div className={`${style.prdctCntntLftBtm}`}>
-                    <Row>
+                    <Row className='g-4'>
                         {expertCards.map((card) => {
                             if (talkExpert === card.expert || card.expert === 'general') {
                                 const handleShowCalendyModal = () => {

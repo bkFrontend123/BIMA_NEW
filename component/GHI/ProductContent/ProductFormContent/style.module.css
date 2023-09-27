@@ -39,9 +39,19 @@
 }
 
 @media (max-width:1399px) {
+    .prdctFrmCntntCol > div:first-child {
+        border-radius: 32px 32px 0 0;
+    }
+    .prdctFrmCntntHdr {
+        padding: 40px 32px;
+    }
     .prdctFrmCntntHdr h2 {
         font-size: 30px;
         line-height: 36px;
+    }
+    .prdctFrmCntntHdr h4 {
+        font-size: 20px;
+        line-height: 28px;
     }
 }
 
@@ -57,9 +67,15 @@
 
 @media (max-width:767px) {
     .prdctFrmCntntHdr {
-        display: flex;
-        gap: 1rem;
-        align-items: center;
+        padding: 20px 16px;
+    }
+    .prdctFrmCntntHdr span {
+        right: 16px;
+        top: 20px;
+    }
+    .prdctFrmCntntHdr span img {
+        width: 24px;
+        height: 24px;
     }
     .prdctFrmCntntCol h2 {
         font-size: 24px;

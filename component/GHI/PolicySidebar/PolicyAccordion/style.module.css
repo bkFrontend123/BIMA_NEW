@@ -48,3 +48,22 @@
     font-weight: 500;
     margin: 0;
 }
+
+@media (max-width:1399px) {
+    .accrdnHdr {
+        padding: 20px;
+        gap: 4rem;
+    }
+    .accrdnHdr h4 {
+        font-size: 22px;
+    }
+    .accrdnCntnt {
+        padding: 20px;
+    }
+    .accrdnItemCol {
+        padding: 10px 0;
+    }
+    .accrdnItemCol p {
+        font-size: 15px;
+    }
+}

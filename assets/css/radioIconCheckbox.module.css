@@ -130,3 +130,49 @@
     width: 80px;
     height: 80px;
 }
+
+@media (max-width: 1399px) {
+    .radioIconCheckox label {
+        height: 108px;
+        padding: 20px 120px 20px 84px;
+    }
+    .radioNoIconCol .radioIconCheckox label {
+        height: 90px;
+        padding: 20px 20px 20px 68px;
+    }
+    .radioIconCol i {
+        right: 20px;
+        top: 16px;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .radioIconCol {
+        border-radius: 16px;
+    }
+    .radioIconCol span {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        left: 16px;
+        margin-top: -15px;
+    }
+    .radioIconCheckox label {
+        font-size: 15px;
+        line-height: 20px;
+        height: 80px;
+        padding: 16px 72px 16px 56px;
+    }
+    .radioNoIconCol .radioIconCheckox label {
+        height: 60px;
+        padding: 16px 16px 16px 36px;
+    }
+    .radioIconCol i {
+        right: 16px;
+        top: 16px;
+        width: 50px;
+        height: 50px;
+    }
+}

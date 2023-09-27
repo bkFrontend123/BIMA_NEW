@@ -306,14 +306,52 @@ button.btnSmall {
     }
 }
 
+@media (max-width:1399px) {
+    .eBnftLogo {
+        border-radius: 0 0 32px 32px;
+        padding: 16px 20px;
+    }
+    .eBnftHdrBlock .hdrDrpdwnBtn,
+    .eBnftHdrBlock .hdrBtnLink {
+        padding: 28.5px 16px;
+    }
+    .eBnftHdrBlock .hdrBtnDiv > div:first-child > div .hdrDrpdwnBtn,
+    .eBnftHdrBlock .hdrBtnDiv > div:first-child > .hdrBtnLink {
+        border-radius: 0 0 0 32px;
+    }
+    .eBnftHdrBlock .hdrBtnDiv > div:last-child > .hdrBtnLink {
+        border-radius: 0 0 32px 0;
+    }
+}
+
 @media (max-width:767px) {
     .hdrBlock {
         padding: 16px 0;
+    }
+    .eBnftLogo {
+        padding: 9px 16px;
+    }
+    .logoLink {
+        width: 192px;
+    }
+    .grpHlthLogo {
+        width: 170px;
+    }
+    .bimaLogo {
+        left: 12px;
+        width: 170px;
+    }
+    .logoLink:hover .bimaLogo {
+        top: 12px;
     }
     .btnSmall {
         padding: 10px;
     }
     button.btnSmall {
         padding: 10px;
+    }
+    .eBnftHdrBlock .hdrDrpdwnBtn,
+    .eBnftHdrBlock .hdrBtnLink {
+        padding: 20.5px 12px;
     }
 }

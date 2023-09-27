@@ -32,3 +32,41 @@
     font-weight: 700;
     font-style: italic;
 }
+
+.rateComboCol > div:nth-child(2) {
+    min-width: 20px;
+}
+
+@media (max-width: 1699px) {
+    .rateComboCol {
+        gap: 1rem;
+    }   
+}
+
+@media (max-width: 1199px) {
+    .rateComboCol {
+        gap: 0.7rem;
+    }  
+    .rateComboCol h4 {
+        font-size: 20px;
+    }
+    .rateComboCol > div i svg {
+        width: 28px;
+        height: 28px;
+    }
+    .rateComboCol p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .rateComboCol p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 767px) {
+    .rateComboCol h4 {
+        font-size: 18px;
+    }
+}

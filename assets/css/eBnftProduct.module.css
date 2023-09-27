@@ -12,3 +12,18 @@
     background-color: var(--mute5);
     padding: 0 40px;
 }
+
+@media (max-width: 1399px) {
+    .eBnftAllPolicyPage {
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .eBnftPrdctCntntBlock {
+        padding-top: 30px !important;
+    }
+    .eBnftRatingBlock {
+        padding: 0 0 30px 0;
+    }
+}
