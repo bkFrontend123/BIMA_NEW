@@ -121,7 +121,7 @@ export default function GroupHealth_Flow() {
 
     const router = useRouter();
     const goToBackPage = () => {
-        router.push('/directors-and-officers-insurance');
+        router.push('/group-health-insurance');
     };
     const goToNextPage = () => {
         router.push('/all_policies?insuranceType=employeeBenefit&logo=ghi');
@@ -244,7 +244,7 @@ export default function GroupHealth_Flow() {
                                                         </div>
                                                         <Form>
                                                             <Form.Group className="mb-4">
-                                                                <Form.Label htmlFor="coverDetails" className={`mb-4 ${form.formLabel}`}>
+                                                                <Form.Label htmlFor="coverDetails" className={`${form.formLabel}`}>
                                                                     <span>Whom do you want to cover?</span>
                                                                     <OverlayTrigger
                                                                         placement="top"
@@ -372,6 +372,25 @@ export default function GroupHealth_Flow() {
                                                                 </div>
                                                                 <Form>
                                                                     <Form.Group className="floatFormGroup mb-4">
+                                                                        <Form.Label htmlFor="coverDetails" className={`mb-4 ${form.formLabel}`}>
+                                                                            <span>Whom do you want to cover?</span>
+                                                                            <OverlayTrigger
+                                                                                placement="top"
+                                                                                overlay={<Tooltip>Maximum amount the insurance company will pay you in case of loss due to defined liability.</Tooltip>}
+                                                                            >
+                                                                                {({ ref, ...triggerHandler }) => (
+                                                                                    <i className='tooltipIcon' {...triggerHandler}>
+                                                                                        <Image
+                                                                                            ref={ref}
+                                                                                            src={tooltipIcon}
+                                                                                            width="20"
+                                                                                            height="20"
+                                                                                            alt="Remark Icon"
+                                                                                        />
+                                                                                    </i>
+                                                                                )}
+                                                                            </OverlayTrigger>
+                                                                        </Form.Label>
                                                                         <FloatingLabel controlId="employees" label="Total Number of Employees" >
                                                                             <Form.Control className={`${form.formInput}`} type="text" placeholder="Eg: 10" required />
                                                                         </FloatingLabel>

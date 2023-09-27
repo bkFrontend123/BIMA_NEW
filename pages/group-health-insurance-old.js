@@ -30,7 +30,7 @@ import talkExpert from '../component/TalkExpert/style.module.css'
 import productImage from '@/public/productImages/productImg1.png'
 import expertImg from '../public/himaniImg.png'
 
-export default function GroupHealth_Insurance() {
+export default function GroupHealth_InsuranceOld() {
     const navbarExample2Ref = useRef(null);
     const [activeC, setActiveC] = useState(1);
     useEffect(() => {
