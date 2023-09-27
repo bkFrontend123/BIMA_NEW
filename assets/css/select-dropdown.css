@@ -36,6 +36,7 @@
 .selectDropDiv.selectedDropDiv label {
     transform: translateY(-30px);
     color: var(--vt-c-blue);
+    padding: 0 10px;
 }
 .employeeBenefitForm .selectDropDiv .select-search-has-focus ~ label,
 .employeeBenefitForm .selectDropDiv.selectedDropDiv label {
