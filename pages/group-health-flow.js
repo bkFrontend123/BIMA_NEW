@@ -216,13 +216,11 @@ export default function GroupHealth_Flow() {
                                     {isEnterDetailsSecondActive ? (
                                         <Row className='g-4 g-xxl-5'>
                                             <Col xl={6} xxl={6}>
-                                                <div className='pe-lg-2 pe-xxl-4'>
-                                                    <ProductFormContent
-                                                        title="Coverage for Everyone"
-                                                        description="You can cover employee, their spouse, kids and dependent parents all in one policy."
-                                                        talkExpert="himani"
-                                                    />
-                                                </div>
+                                                <ProductFormContent
+                                                    title="Coverage for Everyone"
+                                                    description="You can cover employee, their spouse, kids and dependent parents all in one policy."
+                                                    talkExpert="himani"
+                                                />
                                             </Col>
                                             <Col xl={6} xxl={6}>
                                                 <div className={`employeeBenefitForm ${form.commonForm} ${form.employeeBenefitForm}`}>
@@ -344,13 +342,11 @@ export default function GroupHealth_Flow() {
                                             {isEnterDetailsThirdActive ? (
                                                 <Row className='g-4 g-xxl-5'>
                                                     <Col xl={6} xxl={6}>
-                                                        <div className='pe-lg-2 pe-xxl-4'>
-                                                            <ProductFormContent
-                                                                title="Space for All"
-                                                                description="You can accommodate as many employees as you want"
-                                                                talkExpert="himani"
-                                                            />
-                                                        </div>
+                                                        <ProductFormContent
+                                                            title="Space for All"
+                                                            description="You can accommodate as many employees as you want"
+                                                            talkExpert="himani"
+                                                        />
                                                     </Col>
                                                     <Col xl={6} xxl={6}>
                                                         <div className={`employeeBenefitForm ${form.commonForm} ${form.employeeBenefitForm}`}>
@@ -427,14 +423,11 @@ export default function GroupHealth_Flow() {
                                                     {isEnterDetailsFourthActive ? (
                                                         <Row className='g-4 g-xxl-5'>
                                                             <Col xl={6} xxl={6}>
-                                                                <div className='pe-lg-2 pe-xxl-4'>
-                                                                    <ProductFormContent
-                                                                        title="Individual Coverage,
-                                                                Tailored Protection"
-                                                                        description="Ensure every individual's well-being with personalised policy package"
-                                                                        talkExpert="himani"
-                                                                    />
-                                                                </div>
+                                                                <ProductFormContent
+                                                                    title="Individual Coverage, Tailored Protection"
+                                                                    description="Ensure every individual's well-being with personalised policy package"
+                                                                    talkExpert="himani"
+                                                                />
                                                             </Col>
                                                             <Col xl={6} xxl={6}>
                                                                 <div className={`employeeBenefitForm ${form.commonForm} ${form.employeeBenefitForm}`}>
@@ -573,13 +566,11 @@ export default function GroupHealth_Flow() {
                                                             {isEnterDetailsFiveActive ? (
                                                                 <Row className='g-4 g-xxl-5'>
                                                                     <Col xl={6} xxl={6}>
-                                                                        <div className='pe-lg-2 pe-xxl-4'>
-                                                                            <ProductFormContent
-                                                                                title="Excellent Maternity  Benefits"
-                                                                                description="Avail considerable maternity package for your female employees"
-                                                                                talkExpert="himani"
-                                                                            />
-                                                                        </div>
+                                                                        <ProductFormContent
+                                                                            title="Excellent Maternity  Benefits"
+                                                                            description="Avail considerable maternity package for your female employees"
+                                                                            talkExpert="himani"
+                                                                        />
                                                                     </Col>
                                                                     <Col xl={6} xxl={6}>
                                                                         <div className={`employeeBenefitForm ${form.commonForm} ${form.employeeBenefitForm}`}>
@@ -718,13 +709,11 @@ export default function GroupHealth_Flow() {
                                                                     {isEnterDetailsSixActive ? (
                                                                         <Row className='g-4 g-xxl-5'>
                                                                             <Col xl={6} xxl={6}>
-                                                                                <div className='pe-lg-2 pe-xxl-4'>
-                                                                                    <ProductFormContent
-                                                                                        title="Optimal Hospitalization Charges"
-                                                                                        description="Experience worry-free care with our all-inclusive hospital room package"
-                                                                                        talkExpert="himani"
-                                                                                    />
-                                                                                </div>
+                                                                                <ProductFormContent
+                                                                                    title="Optimal Hospitalization Charges"
+                                                                                    description="Experience worry-free care with our all-inclusive hospital room package"
+                                                                                    talkExpert="himani"
+                                                                                />
                                                                             </Col>
                                                                             <Col xl={6} xxl={6}>
                                                                                 <div className={`employeeBenefitForm ${form.commonForm} ${form.employeeBenefitForm}`}>
@@ -844,13 +833,11 @@ export default function GroupHealth_Flow() {
                                                                     ) : (
                                                                         <Row className='g-4 g-xxl-5'>
                                                                             <Col xl={6} xxl={6}>
-                                                                                <div className='pe-lg-2 pe-xxl-4'>
-                                                                                    <ProductFormContent
-                                                                                        title="First-time Policy Buyer?"
-                                                                                        description="Get complete assistance throughout the process from insurance experts"
-                                                                                        talkExpert="himani"
-                                                                                    />
-                                                                                </div>
+                                                                                <ProductFormContent
+                                                                                    title="First-time Policy Buyer?"
+                                                                                    description="Get complete assistance throughout the process from insurance experts"
+                                                                                    talkExpert="himani"
+                                                                                />
                                                                             </Col>
                                                                             <Col xl={6} xxl={6}>
                                                                                 <div className={`employeeBenefitForm ${form.commonForm} ${form.employeeBenefitForm}`}>

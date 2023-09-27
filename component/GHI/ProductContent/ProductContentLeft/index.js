@@ -14,6 +14,29 @@ import style from './style.module.css'
 export default function ProductContentLeft(props) {
     const { icon, title, description, talkExpert } = props;
 
+    const expertCards = [
+        {
+          expert: 'himani',
+          title: 'We are here for you!',
+          description: 'We can help you pick the right insurance plan for your team',
+          imgSrc: himaniImg,
+          type: 'schedule',
+        },
+        {
+          expert: 'ravikant',
+          title: 'We are here for you!',
+          description: 'We can help you pick the right insurance plan for your team',
+          imgSrc: ravikantImg,
+          type: 'schedule',
+        },
+        {
+          expert: 'general',
+          title: 'Still have questions?',
+          description: 'Feel free to reach out to us with your concerns and queries',
+          type: 'call',
+        },
+    ];
+
     const [showHimaniCalendy, setShowHimaniCalendy] = useState(false);
     const handleCloseHimaniCalendy = () => setShowHimaniCalendy(false);
     const handleShowHimaniCalendy = () => setShowHimaniCalendy(true);
@@ -41,37 +64,29 @@ export default function ProductContentLeft(props) {
                 </div>
                 <div className={`${style.prdctCntntLftBtm}`}>
                     <Row>
-                        <Col md={6}>
-                            {talkExpert === 'himani' ? (
-                                <ProductHelpCard
-                                    title="We are here for you!"
-                                    description="We can help you pick the right insurance plan for your team"
-                                    type="schedule"
-                                    imgSrc={himaniImg}
-                                    onClick={handleShowHimaniCalendy}
-                                />
-                            ) : (
-                                null
-                            )}
-                            {talkExpert === 'ravikant' ? (
-                                <ProductHelpCard
-                                    title="We are here for you!"
-                                    description="We can help you pick the right insurance plan for your team"
-                                    type="schedule"
-                                    imgSrc={ravikantImg}
-                                    onClick={handleShowRaviCalendy}
-                                />
-                            ) : (
-                                null
-                            )}
-                        </Col>
-                        <Col md={6}>
-                            <ProductHelpCard
-                                title="Still have questions?"
-                                description="Feel free to reach out to us with your concerns and quarries"
-                                type="call"
-                            />
-                        </Col>
+                        {expertCards.map((card) => {
+                            if (talkExpert === card.expert || card.expert === 'general') {
+                                const handleShowCalendyModal = () => {
+                                    if (card.expert === 'himani') {
+                                    setShowHimaniCalendy(true);
+                                    } else if (card.expert === 'ravikant') {
+                                    setShowRaviCalendy(true);
+                                    }
+                                };
+                                return (
+                                    <Col md={6} key={card.expert}>
+                                        <ProductHelpCard
+                                            title={card.title}
+                                            description={card.description}
+                                            imgSrc={card.imgSrc}
+                                            type={card.type}
+                                            onClick={handleShowCalendyModal}
+                                        />
+                                    </Col>
+                                );
+                            }
+                            return null;
+                        })}
                     </Row>
                 </div>
             </div>
