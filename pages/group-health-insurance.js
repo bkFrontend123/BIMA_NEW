@@ -13,7 +13,7 @@ import RatingSlider from '@/component/GHI/RatingSlider'
 
 import productStyle from '@/assets/css/eBnftProduct.module.css'
 
-import productIcon from '@/public/GHI/productIcons/groupHealthIcon.svg'
+import productIcon from '@/public/ghi/productIcons/groupHealthIcon.svg'
 
 export default function GroupHealth_Insurance() {
 
