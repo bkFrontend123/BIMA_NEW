@@ -249,8 +249,8 @@ export default function HeaderPlain(props) {
                           <Dropdown>
                               <Dropdown.Toggle variant="" id="talk-expert" className={` ${insuranceType === 'employeeBenefit' ? style.hdrDrpdwnBtn : 'btnCommon btnBorder greyBtn ' + style.btnSmall}`}>
                                 <span className='d-none d-lg-block'>Talk to an expert</span>
-                                <i className="d-block d-lg-none">
-                                  <WhatsApp iconColor="primary" width="14" height="14" />
+                                <i className={`d-block d-lg-none ${style.whtsApp}`}>
+                                  <WhatsApp iconColor="primary" width="14" height="15" />
                                 </i>
                                 <i className='ms-2 d-none d-lg-block'>
                                   <DropdownArrow width="11" height="7" />

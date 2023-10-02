@@ -1,29 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import Image from 'next/image'
 
-import { Container, Row, Col, Form, FloatingLabel, Button, ProgressBar, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import SelectSearch from 'react-select-search';
-import 'react-select-search/style.css'
+import { Container, Row, Col } from 'react-bootstrap';
 
 import HeaderPlain from '@/component/HeaderPlain'
 import FooterPlain from '@/component/FooterPlain'
 
 import ProductFormContent from '@/component/GHI/ProductContent/ProductFormContent'
-import ProductFormFooter from '@/component/GHI/ProductContent/ProductFormFooter'
-
-import RadioIconRow from '../component/GHI/FormElements/RadioIconCombo/RadioIconRow'
-import RadioIconCard from '../component/GHI/FormElements/RadioIconCombo/RadioIconCard'
+import FormLayout from '@/component/GHI/FormElements/FormLayout'
+import FormSelect from '@/component/GHI/FormElements/FormSelect'
+import FormInput from '@/component/GHI/FormElements/FormInput'
+import FormRadio from '@/component/GHI/FormElements/FormRadio'
+import FormButton from '@/component/GHI/FormElements/FormButton'
 
 import productStyle from '@/assets/css/eBnftProduct.module.css'
-import form from '@/assets/css/form.module.css'
-import progress from '@/assets/css/progress.module.css'
-import radioIconStyle from '@/assets/css/radioIconCheckbox.module.css'
-
-import LeftIcon from '@/component/GHI/Icons/IconLeft';
-import RightIcon from '@/component/GHI/Icons/IconRight';
-import tooltipIcon from '@/public/ghi/icons/tooltipIcon.svg'
 
 export default function GroupPersonalAccident_Flow() {
     const navbarExample2Ref = useRef(null);
@@ -46,7 +37,7 @@ export default function GroupPersonalAccident_Flow() {
         setEnterDetailsThirdActive(!isEnterDetailsThirdActive);
     };
 
-    const [indValue, setIndValue] = useState();
+    const [indCategryValue, setIndCategryValue ] = useState();
     const indCategoryOptions = [
         { name: 'Banking Finance and Insurance', value: '1' },
         { name: 'Computers, IT Services, Technology and Telecommunication', value: '2' },
@@ -75,15 +66,7 @@ export default function GroupPersonalAccident_Flow() {
         {name: '5 Cr', value: '5'},
     ];
 
-    const [buyingPoilicyValue, setBuyingPoilicyValue] = useState();
-    const handleChangeBuyingPolicy = event => {
-        setBuyingPoilicyValue(event.target.value);
-    };
-
-    const [claimPolicyValue, setClaimPolicyValue] = useState();
-    const handleChangeClaimPolicy = event => {
-        setClaimPolicyValue(event.target.value);
-    };
+    const [buyingPoilicyValue] = useState();
 
     const router = useRouter();
     const goToBackPage = () => {
@@ -120,61 +103,30 @@ export default function GroupPersonalAccident_Flow() {
                                         />
                                     </Col>
                                     <Col xl={6} xxl={6}>
-                                        <div className={`employeeBenefitForm ${form.commonForm} ${form.employeeBenefitForm}`}>
-                                            <div className={`${form.entrDtlsFormFirst}`}>
-                                                <div className={`${form.frmBack}`}>
-                                                    <Row className='align-items-center gap-4 gap-lg-2'>
-                                                        <Col>
-                                                            <span className={`${form.frmBackText}`}>Enter your details</span>
-                                                        </Col>
-                                                        <Col md="auto">
-                                                            <div className={`${progress.progressDiv} ${progress.smallProgress} ${progress.noLabel} ${progress.warning} ${progress.newProgress}`}>
-                                                                <ProgressBar now={20} />
-                                                            </div>
-                                                        </Col>
-                                                    </Row>
-                                                </div>
-                                                <div className={`mb-3 ${form.frmTtl}`}>
-                                                    <h3>1. Initial Details</h3>
-                                                </div>
-                                                <Form>
-                                                    <Form.Group className={`selectDropDiv searchDropDiv mb-4 ${!indValue == '' ? 'selectedDropDiv' : null}`}>
-                                                        <SelectSearch
-                                                            options={indCategoryOptions}
-                                                            name="industry"
-                                                            placeholder="Search by keyword"
-                                                            onChange={setIndValue}
-                                                            search
-                                                            value={indValue}
-                                                            required
-                                                        />
-                                                        <label>Industry Category</label>
-                                                    </Form.Group>
-                                                    <Form.Group className="floatFormGroup mb-4">
-                                                        <FloatingLabel controlId="location" label="Location" >
-                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" required />
-                                                        </FloatingLabel>
-                                                    </Form.Group>
-                                                    <div className={`${form.fromButtonDiv}`}>
-                                                        <Row className="g-4">
-                                                            <Col md={6}>
-                                                                <Button variant="" className={`w-100 btnCommon btnBack justify-content-center ${form.formBtn}`} type="button" onClick={goToBackPage}>
-                                                                    <LeftIcon />
-                                                                    <span className='ms-2'>Go Back</span>
-                                                                </Button>
-                                                            </Col>
-                                                            <Col md={6}>
-                                                                <Button variant="primary" className={`w-100 btnCommon yellowBtn justify-content-center ${form.formBtn}`} type="button" onClick={handleEnterDetailsFirstToggle}>
-                                                                    <span className='me-2'>Continue</span>
-                                                                    <RightIcon />
-                                                                </Button>
-                                                            </Col>
-                                                        </Row>
-                                                    </div>
-                                                </Form>
-                                            </div>
-                                            <ProductFormFooter />
-                                        </div>
+                                        <FormLayout
+                                            title="1. Initial Details"
+                                            progressValue="20"
+                                        >
+                                            <FormSelect
+                                                label="Industry Category"
+                                                name="indCategory"
+                                                options={indCategoryOptions}
+                                                onChange={setIndCategryValue}
+                                                search="true"
+                                                value={indCategryValue}
+                                                required="true"
+                                            />
+                                            <FormInput
+                                                label="Location"
+                                                type="Text"
+                                                placeholder=""
+                                                required="true"
+                                            />
+                                            <FormButton
+                                                onClickBack={goToBackPage}
+                                                onClickNext={handleEnterDetailsFirstToggle}
+                                            />
+                                        </FormLayout>
                                     </Col>
                                 </Row>
                             ) : (
@@ -189,61 +141,25 @@ export default function GroupPersonalAccident_Flow() {
                                                 />
                                             </Col>
                                             <Col xl={6} xxl={6}>
-                                                <div className={`employeeBenefitForm ${form.commonForm} ${form.employeeBenefitForm}`}>
-                                                    <div className={`${form.entrDtlsFormSecond}`}>
-                                                        <div className={`${form.frmBack}`}>
-                                                            <Row className='align-items-center gap-4 gap-lg-2'>
-                                                                <Col>
-                                                                    <span className={`${form.frmBackText}`}>Enter your details</span>
-                                                                </Col>
-                                                                <Col md="auto">
-                                                                    <div className={`${progress.progressDiv} ${progress.smallProgress} ${progress.noLabel} ${progress.warning} ${progress.newProgress}`}>
-                                                                        <ProgressBar now={40} />
-                                                                    </div>
-                                                                </Col>
-                                                            </Row>
-                                                        </div>
-                                                        <div className={`mb-3 ${form.frmTtl}`}>
-                                                            <h3>2. Work Details</h3>
-                                                        </div>
-                                                        <Form>
-                                                            <Form.Group className="mb-4">
-                                                                <Form.Label htmlFor="coverDetails" className={`mb-0 ${form.formLabel}`}>
-                                                                    <span>What is the nature of work?</span>
-                                                                </Form.Label>
-                                                            </Form.Group>
-                                                            <Form.Group className={`selectDropDiv searchDropDiv mb-4 ${!natureWorkValue == '' ? 'selectedDropDiv' : null}`}>
-                                                                <SelectSearch
-                                                                    options={natureWorkOptions}
-                                                                    name="natureWork"
-                                                                    placeholder="Search by keyword"
-                                                                    onChange={setNatureWorkValue}
-                                                                    search
-                                                                    value={natureWorkValue}
-                                                                    required
-                                                                />
-                                                                <label>Nature of Work</label>
-                                                            </Form.Group>
-                                                            <div className={`${form.fromButtonDiv}`}>
-                                                                <Row className="g-4">
-                                                                    <Col md={6}>
-                                                                        <Button variant="" className={`w-100 btnCommon btnBack justify-content-center ${form.formBtn}`} type="button" onClick={handleEnterDetailsFirstToggle}>
-                                                                            <LeftIcon />
-                                                                            <span className='ms-2'>Go Back</span>
-                                                                        </Button>
-                                                                    </Col>
-                                                                    <Col>
-                                                                        <Button onClick={handleEnterDetailsSecondToggle} variant="primary" className={`w-100 btnCommon yellowBtn justify-content-center ${form.formBtn}`} type="button">
-                                                                            <span className='me-2'>Continue</span>
-                                                                            <RightIcon />
-                                                                        </Button>
-                                                                    </Col>
-                                                                </Row>
-                                                            </div>
-                                                        </Form>
-                                                    </div>
-                                                    <ProductFormFooter />
-                                                </div>
+                                                <FormLayout
+                                                    title="2. Work Details"
+                                                    progressValue="40"
+                                                >
+                                                    <FormSelect
+                                                        title="What is the nature of work?<"
+                                                        label="Nature of Work"
+                                                        name="natureWork"
+                                                        options={natureWorkOptions}
+                                                        onChange={setNatureWorkValue}
+                                                        search="true"
+                                                        value={natureWorkValue}
+                                                        required="true"
+                                                    />
+                                                    <FormButton
+                                                        onClickBack={handleEnterDetailsFirstToggle}
+                                                        onClickNext={handleEnterDetailsSecondToggle}
+                                                    />
+                                                </FormLayout>
                                             </Col>
                                         </Row>
                                     ) : (
@@ -258,65 +174,31 @@ export default function GroupPersonalAccident_Flow() {
                                                         />
                                                     </Col>
                                                     <Col xl={6} xxl={6}>
-                                                        <div className={`employeeBenefitForm ${form.commonForm} ${form.employeeBenefitForm}`}>
-                                                            <div className={`${form.entrDtlsFormThird}`}>
-                                                                <div className={`${form.frmBack}`}>
-                                                                    <Row className='align-items-center gap-4 gap-lg-2'>
-                                                                        <Col>
-                                                                            <span className={`${form.frmBackText}`}>Enter your details</span>
-                                                                        </Col>
-                                                                        <Col md="auto">
-                                                                            <div className={`${progress.progressDiv} ${progress.smallProgress} ${progress.noLabel} ${progress.warning} ${progress.newProgress}`}>
-                                                                                <ProgressBar now={60} />
-                                                                            </div>
-                                                                        </Col>
-                                                                    </Row>
-                                                                </div>
-                                                                <div className={`mb-3 ${form.frmTtl}`}>
-                                                                    <h3>3. Employee Details</h3>
-                                                                </div>
-                                                                <Form>
-                                                                    <Form.Group className="mb-4">
-                                                                        <Form.Label htmlFor="employeeDetails" className={`${form.formLabel}`}>
-                                                                            <span>Whom do you want to cover, and for how much?</span>
-                                                                        </Form.Label>
-                                                                    </Form.Group>
-                                                                    <Form.Group className="floatFormGroup mb-4">
-                                                                        <FloatingLabel controlId="employees" label="Total Number of Employees" >
-                                                                            <Form.Control className={`${form.formInput}`} type="number" placeholder="Eg: 10" required />
-                                                                        </FloatingLabel>
-                                                                    </Form.Group>
-                                                                    <Form.Group className={`selectDropDiv mb-4 ${!sumInsuredValue == '' ? 'selectedDropDiv' : null}`}>
-                                                                        <SelectSearch
-                                                                            options={sumInsuredOptions}
-                                                                            name="sumInsuredValue"
-                                                                            placeholder="&nbsp;"
-                                                                            onChange={setSumInsuredValue}
-                                                                            value={sumInsuredValue}
-                                                                            required
-                                                                        />
-                                                                        <label>Sum Insured per Person</label>
-                                                                    </Form.Group>
-                                                                    <div className={`${form.fromButtonDiv}`}>
-                                                                        <Row className="g-4">
-                                                                            <Col md={6}>
-                                                                                <Button variant="" className={`w-100 btnCommon btnBack justify-content-center ${form.formBtn}`} type="button" onClick={handleEnterDetailsSecondToggle}>
-                                                                                    <LeftIcon />
-                                                                                    <span className='ms-2'>Go Back</span>
-                                                                                </Button>
-                                                                            </Col>
-                                                                            <Col>
-                                                                                <Button onClick={handleEnterDetailsThirdToggle} variant="primary" className={`w-100 btnCommon yellowBtn justify-content-center ${form.formBtn}`} type="button">
-                                                                                    <span className='me-2'>Continue</span>
-                                                                                    <RightIcon />
-                                                                                </Button>
-                                                                            </Col>
-                                                                        </Row>
-                                                                    </div>
-                                                                </Form>
-                                                            </div>
-                                                            <ProductFormFooter />
-                                                        </div>
+                                                        <FormLayout
+                                                            title="3. Employee Details"
+                                                            progressValue="60"
+                                                        >
+                                                            <FormInput
+                                                                title="Whom do you want to cover, and for how much?"
+                                                                label="Total Number of Employees"
+                                                                type="number"
+                                                                placeholder="Eg: 10"
+                                                                required="true"
+                                                            />
+                                                            <FormSelect
+                                                                label="Sum Insured per Person"
+                                                                name="sumInsured"
+                                                                options={sumInsuredOptions}
+                                                                onChange={setSumInsuredValue}
+                                                                search="true"
+                                                                value={sumInsuredValue}
+                                                                required="true"
+                                                            />
+                                                            <FormButton
+                                                                onClickBack={handleEnterDetailsSecondToggle}
+                                                                onClickNext={handleEnterDetailsThirdToggle}
+                                                            />
+                                                        </FormLayout>
                                                     </Col>
                                                 </Row>
                                             ) : (
@@ -329,97 +211,35 @@ export default function GroupPersonalAccident_Flow() {
                                                         />
                                                     </Col>
                                                     <Col xl={6} xxl={6}>
-                                                        <div className={`employeeBenefitForm ${form.commonForm} ${form.employeeBenefitForm}`}>
-                                                            <div className={`${form.entrDtlsFormFourth}`}>
-                                                                <div className={`${form.frmBack}`}>
-                                                                    <Row className='align-items-center gap-4 gap-lg-2'>
-                                                                        <Col>
-                                                                            <span className={`${form.frmBackText}`}>Enter your details</span>
-                                                                        </Col>
-                                                                        <Col md="auto">
-                                                                            <div className={`${progress.progressDiv} ${progress.smallProgress} ${progress.noLabel} ${progress.warning} ${progress.newProgress}`}>
-                                                                                <ProgressBar now={80} />
-                                                                            </div>
-                                                                        </Col>
-                                                                    </Row>
-                                                                </div>
-                                                                <div className={`mb-3 ${form.frmTtl}`}>
-                                                                    <h3>4. Existing Policy Details</h3>
-                                                                </div>
-                                                                <Form>
-                                                                    <Form.Group className="mb-4">
-                                                                        <Form.Label htmlFor="existingPolicy" className={`mb-4 ${form.formLabel}`}>
-                                                                            <span>Buying poilicy for the first time?</span>
-                                                                        </Form.Label>
-                                                                        <RadioIconRow>
-                                                                            <Row className="g-4">
-                                                                                <Col xs={6}>
-                                                                                    <RadioIconCard activeClass={buyingPoilicyValue === 'Yes' ? radioIconStyle.active : null}>
-                                                                                        <Form.Check type="radio" id="buyingPoilicy-1" name="buyingPoilicy" label="Yes" value="Yes"
-                                                                                            checked={buyingPoilicyValue === 'Yes'} onChange={handleChangeBuyingPolicy} required
-                                                                                            className={`${radioIconStyle.radioIconCheckox}`} />
-                                                                                    </RadioIconCard>
-                                                                                </Col>
-                                                                                <Col xs={6}>
-                                                                                    <RadioIconCard activeClass={buyingPoilicyValue === 'No' ? radioIconStyle.active : null}>
-                                                                                        <Form.Check type="radio" id="buyingPoilicy-2" name="buyingPoilicy" label="No" value="No"
-                                                                                            checked={buyingPoilicyValue === 'No'} onChange={handleChangeBuyingPolicy} required
-                                                                                            className={`${radioIconStyle.radioIconCheckox}`} />
-                                                                                    </RadioIconCard>
-                                                                                </Col>
-                                                                            </Row>
-                                                                        </RadioIconRow>
-                                                                    </Form.Group>
-                                                                    {buyingPoilicyValue === 'No' ? (
-                                                                        <>
-                                                                            <Form.Group className="mb-4">
-                                                                                <Form.Label htmlFor="existingPolicy" className={`mb-4 ${form.formLabel}`}>Is there any claim in existing
-                                                                                    policy?</Form.Label>
-                                                                                <RadioIconRow>
-                                                                                    <Row className="g-4">
-                                                                                        <Col xs={6}>
-                                                                                            <RadioIconCard activeClass={claimPolicyValue === 'Yes' ? radioIconStyle.active : null}>
-                                                                                                <Form.Check type="radio" id="claimPolicy-1" name="claimPolicy" label="Yes" value="Yes"
-                                                                                                    checked={claimPolicyValue === 'Yes'} onChange={handleChangeClaimPolicy} required
-                                                                                                    className={`${radioIconStyle.radioIconCheckox}`} />
-                                                                                            </RadioIconCard>
-                                                                                        </Col>
-                                                                                        <Col xs={6}>
-                                                                                            <RadioIconCard activeClass={claimPolicyValue === 'No' ? radioIconStyle.active : null}>
-                                                                                                <Form.Check type="radio" id="claimPolicy-2" name="claimPolicy" label="No" value="No"
-                                                                                                    checked={claimPolicyValue === 'No'} onChange={handleChangeClaimPolicy} required
-                                                                                                    className={`${radioIconStyle.radioIconCheckox}`} />
-                                                                                            </RadioIconCard>
-                                                                                        </Col>
-                                                                                    </Row>
-                                                                                </RadioIconRow>
-                                                                            </Form.Group>
-                                                                        </>
-                                                                    ) : (
-                                                                        null
-                                                                    )}
-                                                                    <div className={`${form.fromButtonDiv}`}>
-                                                                        <Row className="g-4">
-                                                                            <Col md={6}>
-                                                                                <Button variant="" className={`w-100 btnCommon btnBack justify-content-center ${form.formBtn}`}
-                                                                                    type="button" onClick={handleEnterDetailsThirdToggle}>
-                                                                                    <LeftIcon />
-                                                                                    <span className='ms-2'>Go Back</span>
-                                                                                </Button>
-                                                                            </Col>
-                                                                            <Col>
-                                                                                <Button onClick={goToNextPage} variant="primary" className={`w-100 btnCommon yellowBtn
-                                                                                        justify-content-center ${form.formBtn}`} type="button">
-                                                                                    <span className='me-2'>Continue</span>
-                                                                                    <RightIcon />
-                                                                                </Button>
-                                                                            </Col>
-                                                                        </Row>
-                                                                    </div>
-                                                                </Form>
-                                                            </div>
-                                                            <ProductFormFooter />
-                                                        </div>
+                                                        <FormLayout
+                                                            title="4. Existing Policy Details"
+                                                            progressValue="91"
+                                                        >
+                                                            <FormRadio
+                                                                label="Buying poilicy for the first time?"
+                                                                option={[
+                                                                    {id: 1, label: 'Yes', name: 'buyingPoilicy'},
+                                                                    {id: 2, label: 'No', name: 'buyingPoilicy'}
+                                                                ]}
+                                                                tooltip="Maximum amount the insurance company will pay you in case of loss due to defined liability."
+                                                            />
+                                                            {buyingPoilicyValue === '2' ? (
+                                                                <FormRadio
+                                                                    label="Is there any claim in existing policy?"
+                                                                    option={[
+                                                                        {id: 1, label: 'Yes', name: 'claimPolicy'},
+                                                                        {id: 2, label: 'No', name: 'claimPolicy'}
+                                                                    ]}
+                                                                    tooltip="Maximum amount the insurance company will pay you in case of loss due to defined liability."
+                                                                />
+                                                            ) : (
+                                                                null
+                                                            )}
+                                                            <FormButton
+                                                                onClickBack={handleEnterDetailsThirdToggle}
+                                                                onClickNext={goToNextPage}
+                                                            />
+                                                        </FormLayout>
                                                     </Col>
                                                 </Row>
                                             )}

@@ -153,3 +153,22 @@
         border-radius: 90px;
     }
 }
+
+@media (max-width: 767px) {
+    .prdctFrmHelpCol > div {
+        padding: 16px;
+    }
+    .prdctFrmHelpCol:last-child {
+        border-radius: 0 0 24px 24px;
+    }
+    .prdctFrmHelpText h3 {
+        font-size: 18px;
+    }
+    .prdctFrmHelpSmallCol .prdctFrmHelpText h3 {
+        font-size: 17px;
+    }
+    .prdctFrmHelpText h4 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}

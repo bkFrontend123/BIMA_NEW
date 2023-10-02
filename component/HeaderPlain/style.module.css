@@ -152,6 +152,10 @@ button.btnSmall {
 .eBnftHdrBlock .hdrDrpdwn button i svg path {
     stroke: var(--darkText);
 }
+.eBnftHdrBlock .hdrDrpdwn button i.whtsApp svg path {
+    stroke: inherit;
+    fill: var(--darkText);
+}
 .hdrDrpMenu {
     padding: 0;
     min-width: 100%;
@@ -329,7 +333,8 @@ button.btnSmall {
         padding: 16px 0;
     }
     .eBnftLogo {
-        padding: 9px 16px;
+        border-radius: 0 0 24px 24px;
+        padding: 9px;
     }
     .logoLink {
         width: 192px;
@@ -353,5 +358,13 @@ button.btnSmall {
     .eBnftHdrBlock .hdrDrpdwnBtn,
     .eBnftHdrBlock .hdrBtnLink {
         padding: 20.5px 12px;
+        height: 59.8px;
+    }
+    .eBnftHdrBlock .hdrBtnDiv > div:first-child > div .hdrDrpdwnBtn,
+    .eBnftHdrBlock .hdrBtnDiv > div:first-child > .hdrBtnLink {
+        border-radius: 0 0 0 24px;
+    }
+    .eBnftHdrBlock .hdrBtnDiv > div:last-child > .hdrBtnLink {
+        border-radius: 0 0 24px 0;
     }
 }
