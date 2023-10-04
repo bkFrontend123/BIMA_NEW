@@ -80,8 +80,12 @@
   --warningMute: #FFF8D4;
   --errorMute: #FFCDCA;
   --success: #00AB82;
+  --successBg: #E6F7F3;
+  --successBorder: #B0E5D8;
   --warning: #FFB400;
   --error: #FE5F55;
+  --errorBg: #FFEFEE;
+  --errorBorder: #FFCDCA;
 }
 
 *,

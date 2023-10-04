@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import { Form } from 'react-bootstrap';
 
-import radioCheckIcon from '@/public/ghi/icons/radioCheckIcon.svg'
+import radioCheckIcon from '@/public/icons/radioCheckIcon.svg'
 
 import radioStyle from '@/assets/css/radioCheckbox.module.css'
 

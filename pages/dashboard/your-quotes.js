@@ -111,7 +111,7 @@ export default function Quotes() {
   };
 
   const goToNextPage = () => {
-    router.push('/dashboard/all_policies');
+    router.push('/all_policies');
   };
 
   return (

@@ -107,14 +107,21 @@
     padding-right: 24px;
 }
 
-.listData li {
+.listData li,
+.listData_One li,
+.listData_ABC li,
+.listData_Dot li {
     position: relative;
     padding-left: 20px; 
 }
-.listData li + li {
+.listData li + li,
+.listData_One li + li,
+.listData_ABC li + li,
+.listData_Dot li + li {
     margin-top: 12px;
 }
-.listData li::before {
+.listData li::before,
+.listData_Dot li::before {
     background-color: var(--black);
     position: absolute;
     content: "";
@@ -123,6 +130,22 @@
     width: 8px;
     height: 8px;
     border-radius: 8px;
+}
+.listData_One li,
+.listData_ABC li {
+    counter-increment: item;
+}
+.listData_One li::before,
+.listData_ABC li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.listData_One li::before {
+    content: counter(item);
+}
+.listData_ABC li::before {
+    content: counter(item, upper-alpha);
 }
 
 .listOrderData {

@@ -12,9 +12,10 @@
     top: 19px;
     font-size: 16px;
     color: var(--vt-c-grayLight3);
-    padding: 0 60px 0 10px;
+    padding: 0 10px;
     pointer-events: none;
     transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+    min-width: 80%;
     z-index: 1;
 }
 .employeeBenefitForm .selectDropDiv label {
@@ -36,7 +37,7 @@
 .selectDropDiv.selectedDropDiv label {
     transform: translateY(-30px);
     color: var(--vt-c-blue);
-    padding: 0 10px;
+    min-width: auto;
 }
 .employeeBenefitForm .selectDropDiv .select-search-has-focus ~ label,
 .employeeBenefitForm .selectDropDiv.selectedDropDiv label {

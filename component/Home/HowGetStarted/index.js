@@ -163,9 +163,6 @@ export default function HowGetStarted(props) {
                     display: block;
                     z-index: -1;
                 }
-                .getStarted-left:before {
-                    background-image: url(/cta_patt.png);
-                }
                 .getStarted-left:after {
                     background-image: url(/cta_grid.png);
                 }
