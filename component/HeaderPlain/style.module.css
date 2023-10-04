@@ -337,14 +337,14 @@ button.btnSmall {
         padding: 9px;
     }
     .logoLink {
-        width: 192px;
+        width: 152px;
     }
     .grpHlthLogo {
-        width: 170px;
+        width: 130px;
     }
     .bimaLogo {
         left: 12px;
-        width: 170px;
+        width: 130px;
     }
     .logoLink:hover .bimaLogo {
         top: 12px;

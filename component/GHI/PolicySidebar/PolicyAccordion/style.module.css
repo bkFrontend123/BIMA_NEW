@@ -68,7 +68,14 @@
     }
 }
 
-@media (max-width:1399px) {
+@media (max-width:767px) {
+    .accrdnHdr {
+        padding: 20px 16px;
+        gap: 2rem;
+    }
+    .accrdnHdr h4 {
+        font-size: 20px;
+    }
     .accrdnCntnt {
         padding: 16px;
     }
