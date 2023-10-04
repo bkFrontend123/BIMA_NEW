@@ -155,7 +155,7 @@ export default function AllPolicies() {
                     <Container fluid={isFluid}>
                         <Row className='justify-content-center'>
                             <Col xl={insuranceTypeValue === 'employeeBenefit' ? 12 : 11}>
-                                <Row className={`${insuranceTypeValue === 'employeeBenefit' ? 'g-xxl-5' : ''}`}>
+                                <Row className={`${insuranceTypeValue === 'employeeBenefit' ? 'g-4 g-xxl-5' : ''}`}>
                                     {insuranceTypeValue === 'employeeBenefit' ? (
                                         <Col xl={4}>
                                             <PolicySidebar
@@ -186,9 +186,13 @@ export default function AllPolicies() {
                                                                 variant={isVariant}
                                                             />
                                                         </PolicyHeader>
-                                                        <SupportMobile
-                                                            customClass="d-lg-none"
-                                                        />
+                                                        {insuranceTypeValue === 'employeeBenefit' ? (
+                                                            null
+                                                        ):(
+                                                            <SupportMobile
+                                                                customClass="d-lg-none"
+                                                            />
+                                                        )}
                                                     </div>
                                                 </Col>
                                                 {insuranceTypeValue === 'employeeBenefit' ? (
