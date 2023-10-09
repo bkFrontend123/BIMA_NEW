@@ -812,7 +812,7 @@ export default function FireAndBurglary_Insurance() {
                         <Row>
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Insurance Claim for Small Business</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Fire Insurance Examples</h3>
                                 </div>
                             </Col>
                         </Row>

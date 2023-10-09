@@ -24,7 +24,7 @@ import TalkExpert from '@/component/TalkExpert'
 import policyCompare from '@/component/PolicyElements/PolicyCompare/style.module.css'
 import talkExpert from '@/component/TalkExpert/style.module.css'
 import policy from '@/component/PolicyElements/PolicyCard/style.module.css'
-import productStyle from '@/assets/css/eBnftProduct.module.css'
+import productStyle from '@/assets/css/productNew.module.css'
 
 import RuppeeIcon from '@/component/Icons/Ruppee'
 
@@ -76,10 +76,10 @@ export default function AllPolicies() {
     const [showToastError, setShowToastError] = useState(true);
 
     const router = useRouter();
-    const insuranceTypeValue = router.query.insuranceType || "";
+    const isNewDesign = router.query.newDesign || "";
     const logoValue = router.query.logo || "";
-    const isFluid = insuranceTypeValue === "employeeBenefit";
-    const isVariant = insuranceTypeValue === "employeeBenefit";
+    const isFluid = isNewDesign === "true";
+    const isVariant = isNewDesign === "true";
 
     const goToPayment = () => {
         router.push('/payment');
@@ -92,9 +92,9 @@ export default function AllPolicies() {
                 <meta name="description" content="We offer the best option customized exclusively for your business. 20+ insurers from India." />
                 <link rel="canonical" href="" />
             </Head>
-            <section className={`${insuranceTypeValue === 'employeeBenefit' ? productStyle.eBnftAllPolicyPage : null}`}>
+            <section className={`${isNewDesign === 'true' ? productStyle.allPolicyNewPage : null}`}>
                 <HeaderPlain
-                    insuranceType={insuranceTypeValue}
+                    newDesign={isNewDesign}
                     logo={logoValue}
                     emailQuote
                     scheduleCall
@@ -151,12 +151,12 @@ export default function AllPolicies() {
                         href="/quote_comparison"
                     />
                 </PolicyCompare>
-                <div className={`allPolicyBlock sectionPadding pt-4 pt-md-5 ${insuranceTypeValue === 'employeeBenefit' ? 'eBnftAllPolicyBlock' : null}`}>
+                <div className={`allPolicyBlock sectionPadding pt-4 pt-md-5 ${isNewDesign === 'true' ? 'allPolicyNewBlock' : null}`}>
                     <Container fluid={isFluid}>
                         <Row className='justify-content-center'>
-                            <Col xl={insuranceTypeValue === 'employeeBenefit' ? 12 : 11}>
-                                <Row className={`${insuranceTypeValue === 'employeeBenefit' ? 'g-4 g-xxl-5' : ''}`}>
-                                    {insuranceTypeValue === 'employeeBenefit' ? (
+                            <Col xl={isNewDesign === 'true' ? 12 : 11}>
+                                <Row className={`${isNewDesign === 'true' ? 'g-4 g-xxl-5' : ''}`}>
+                                    {isNewDesign === 'true' ? (
                                         <Col xl={4}>
                                             <PolicySidebar
                                                 talkExpert="himani"
@@ -167,7 +167,7 @@ export default function AllPolicies() {
                                     ) : (
                                         null
                                     )}
-                                    <Col xl={insuranceTypeValue === 'employeeBenefit' ? 8 : 12}>
+                                    <Col xl={isNewDesign === 'true' ? 8 : 12}>
                                         <div className='mb-4 mb-lg-5'>
                                             <Row className='align-items-center g-4'>
                                                 <Col lg>
@@ -186,7 +186,7 @@ export default function AllPolicies() {
                                                                 variant={isVariant}
                                                             />
                                                         </PolicyHeader>
-                                                        {insuranceTypeValue === 'employeeBenefit' ? (
+                                                        {isNewDesign === 'true' ? (
                                                             null
                                                         ):(
                                                             <SupportMobile
@@ -195,7 +195,7 @@ export default function AllPolicies() {
                                                         )}
                                                     </div>
                                                 </Col>
-                                                {insuranceTypeValue === 'employeeBenefit' ? (
+                                                {isNewDesign === 'true' ? (
                                                     null
                                                 ) : (
                                                     <Col sm="auto" className='d-none d-lg-block'>
@@ -225,7 +225,7 @@ export default function AllPolicies() {
                                             </Row>
                                         </div>
                                         <Row className='g-4'>
-                                            <Col xxl={4} xl={insuranceTypeValue === 'employeeBenefit' ? 6 : 4 } lg={6}>
+                                            <Col xxl={4} xl={isNewDesign === 'true' ? 6 : 4 } lg={6}>
                                                 <PolicyCard
                                                     policyLogo={bajajAllianz_logo}
                                                     title="Bajaj Allianz"
@@ -267,7 +267,7 @@ export default function AllPolicies() {
                                                     </div>
                                                 </PolicyCard>
                                             </Col>
-                                            <Col xxl={4} xl={insuranceTypeValue === 'employeeBenefit' ? 6 : 4 } lg={6}>
+                                            <Col xxl={4} xl={isNewDesign === 'true' ? 6 : 4 } lg={6}>
                                                 <PolicyCard
                                                     policyLogo={icici_logo}
                                                     title="ICICI Lombard"
@@ -309,7 +309,7 @@ export default function AllPolicies() {
                                                     </div>
                                                 </PolicyCard>
                                             </Col>
-                                            <Col xxl={4} xl={insuranceTypeValue === 'employeeBenefit' ? 6 : 4 } lg={6}>
+                                            <Col xxl={4} xl={isNewDesign === 'true' ? 6 : 4 } lg={6}>
                                                 <PolicyCard
                                                     policyLogo={tataAIG_logo}
                                                     title="TATA AIG"
@@ -351,7 +351,7 @@ export default function AllPolicies() {
                                                     </div>
                                                 </PolicyCard>
                                             </Col>
-                                            <Col xxl={4} xl={insuranceTypeValue === 'employeeBenefit' ? 6 : 4 } lg={6}>
+                                            <Col xxl={4} xl={isNewDesign === 'true' ? 6 : 4 } lg={6}>
                                                 <PolicyCard
                                                     policyLogo={newIndiaAssurance_logo}
                                                     title="New India Assurance Co. Ltd."
@@ -393,7 +393,7 @@ export default function AllPolicies() {
                                                     </div>
                                                 </PolicyCard>
                                             </Col>
-                                            <Col xxl={4} xl={insuranceTypeValue === 'employeeBenefit' ? 6 : 4 } lg={6}>
+                                            <Col xxl={4} xl={isNewDesign === 'true' ? 6 : 4 } lg={6}>
                                                 <PolicyCard
                                                     policyLogo={hdfcErgo_logo}
                                                     title="HDFC Ergo"
@@ -425,7 +425,7 @@ export default function AllPolicies() {
                                                     </Button>
                                                 </PolicyCard>
                                             </Col>
-                                            <Col xxl={4} xl={insuranceTypeValue === 'employeeBenefit' ? 6 : 4 } lg={6}>
+                                            <Col xxl={4} xl={isNewDesign === 'true' ? 6 : 4 } lg={6}>
                                                 <PolicyCard
                                                     policyLogo={bajajAllianz_logo}
                                                     title="Bajaj Allianz"
@@ -457,7 +457,7 @@ export default function AllPolicies() {
                                                     </Button>
                                                 </PolicyCard>
                                             </Col>
-                                            <Col xxl={4} xl={insuranceTypeValue === 'employeeBenefit' ? 6 : 4 } lg={6}>
+                                            <Col xxl={4} xl={isNewDesign === 'true' ? 6 : 4 } lg={6}>
                                                 <PolicyCard
                                                     policyLogo={newIndiaAssurance_logo}
                                                     title="New India Assurance Co. Ltd."
@@ -499,7 +499,7 @@ export default function AllPolicies() {
                                                     </div>
                                                 </PolicyCard>
                                             </Col>
-                                            <Col xxl={4} xl={insuranceTypeValue === 'employeeBenefit' ? 6 : 4 } lg={6}>
+                                            <Col xxl={4} xl={isNewDesign === 'true' ? 6 : 4 } lg={6}>
                                                 <PolicyCard
                                                     policyLogo={hdfcErgo_logo}
                                                     title="HDFC Ergo"
@@ -531,7 +531,7 @@ export default function AllPolicies() {
                                                     </Button>
                                                 </PolicyCard>
                                             </Col>
-                                            <Col xxl={4} xl={insuranceTypeValue === 'employeeBenefit' ? 6 : 4 } lg={6}>
+                                            <Col xxl={4} xl={isNewDesign === 'true' ? 6 : 4 } lg={6}>
                                                 <PolicyCard
                                                     policyLogo={bajajAllianz_logo}
                                                     title="Bajaj Allianz"
@@ -572,7 +572,7 @@ export default function AllPolicies() {
                 </div>
             </section>
             <FooterPlain
-                insuranceType={insuranceTypeValue}            
+                insuranceType={isNewDesign}            
             />
         </>
     )

@@ -574,7 +574,7 @@ export default function ProductLiability_Insurance() {
                         <Row>
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Product Liability Insurance Claims Example</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Product Liability Insurance Claims Examples</h3>
                                 </div>
                             </Col>
                         </Row>

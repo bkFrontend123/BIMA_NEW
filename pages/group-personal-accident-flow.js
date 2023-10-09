@@ -14,7 +14,7 @@ import FormInput from '@/component/GHI/FormElements/FormInput'
 import FormRadio from '@/component/GHI/FormElements/FormRadio'
 import FormButton from '@/component/GHI/FormElements/FormButton'
 
-import productStyle from '@/assets/css/eBnftProduct.module.css'
+import productStyle from '@/assets/css/productNew.module.css'
 
 export default function GroupPersonalAccident_Flow() {
     const navbarExample2Ref = useRef(null);
@@ -73,7 +73,7 @@ export default function GroupPersonalAccident_Flow() {
         router.push('/group-personal-accident-insurance');
     };
     const goToNextPage = () => {
-        router.push('/thank-you');
+        router.push('/all_policies?newDesign=true&logo=gpa');
     };
 
     return (
@@ -84,12 +84,12 @@ export default function GroupPersonalAccident_Flow() {
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain
-                insuranceType="employeeBenefit"
+                newDesign="true"
                 logo="gpa"
                 talkExpert
                 scheduleCall
             />
-            <section className={`sectionPadding ${productStyle.eBnftPrdctFrmBlock}`}>
+            <section className={`sectionPadding ${productStyle.prdctFrmNewBlock}`}>
                 <Container>
                     <Row className='justify-content-center'>
                         <Col xl={12} xxl={12}>
@@ -146,7 +146,7 @@ export default function GroupPersonalAccident_Flow() {
                                                     progressValue="40"
                                                 >
                                                     <FormSelect
-                                                        title="What is the nature of work?<"
+                                                        title="What is the nature of work?"
                                                         label="Nature of Work"
                                                         name="natureWork"
                                                         options={natureWorkOptions}
@@ -252,7 +252,7 @@ export default function GroupPersonalAccident_Flow() {
                 </Container>
             </section >
             <FooterPlain
-                insuranceType="employeeBenefit"
+                newDesign="true"
             />
         </>
     )

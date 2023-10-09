@@ -14,7 +14,7 @@ import FormInput from '@/component/GHI/FormElements/FormInput'
 import FormRadio from '@/component/GHI/FormElements/FormRadio'
 import FormButton from '@/component/GHI/FormElements/FormButton'
 
-import productStyle from '@/assets/css/eBnftProduct.module.css'
+import productStyle from '@/assets/css/productNew.module.css'
 
 import coverDetailIcon1 from '@/public/ghi/flowIcons/coverDetailIcon1.svg'
 import coverDetailIcon2 from '@/public/ghi/flowIcons/coverDetailIcon2.svg'
@@ -87,7 +87,7 @@ export default function GroupHealth_Flow() {
         router.push('/group-health-insurance');
     };
     const goToNextPage = () => {
-        router.push('/all_policies?insuranceType=employeeBenefit&logo=ghi');
+        router.push('/all_policies?newDesign=true&logo=ghi');
     };
 
     return (
@@ -98,12 +98,12 @@ export default function GroupHealth_Flow() {
                 <link rel="canonical" href="" />
             </Head>
             <HeaderPlain
-                insuranceType="employeeBenefit"
+                newDesign="true"
                 logo="ghi"
                 talkExpert
                 scheduleCall
             />
-            <section className={`sectionPadding ${productStyle.eBnftPrdctFrmBlock}`}>
+            <section className={`sectionPadding ${productStyle.prdctFrmNewBlock}`}>
                 <Container>
                     <Row className='justify-content-center'>
                         <Col xl={12} xxl={12}>
@@ -367,7 +367,7 @@ export default function GroupHealth_Flow() {
                 </Container>
             </section >
             <FooterPlain
-                insuranceType="employeeBenefit"
+                newDesign="true"
             />
         </>
     )

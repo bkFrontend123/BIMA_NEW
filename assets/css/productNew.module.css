@@ -1,0 +1,29 @@
+
+.prdctCntntNewBlock {
+    background-color: var(--mute5);
+}
+.ratingNewBlock {
+    padding: 20px 0 40px 0;
+}
+.prdctFrmNewBlock {
+    background-color: var(--mute5);
+}
+.allPolicyNewPage {
+    background-color: var(--mute5);
+    padding: 0 40px;
+}
+
+@media (max-width: 1399px) {
+    .allPolicyNewPage {
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .prdctCntntNewBlock {
+        padding-top: 30px !important;
+    }
+    .ratingNewBlock {
+        padding: 0 0 30px 0;
+    }
+}

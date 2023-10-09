@@ -237,6 +237,10 @@ body .text-primary{
   color: var(--vt-c-yellow3);
 }
 
+.text-dark {
+  color: var(--darkText);
+}
+
 .text-gray {
   color: var(--vt-c-grayText);
 }
@@ -845,12 +849,12 @@ h2.font-secondary {
 .dwnldDropdown.show .dropdown-toggle::before {
   transform: rotate(30deg);
 }
-.eBnftHdrBlock .dropdown-toggle.show,
-.eBnftHdrBlock .dropdown-toggle.show:hover {
+.hdrNewBlock .dropdown-toggle.show,
+.hdrNewBlock .dropdown-toggle.show:hover {
   background-color: var(--vt-c-yellow) !important;
   border-radius: 0 !important;
 }
-.eBnftAllPolicyBlock .btnCommon {
+.allPolicyNewBlock .btnCommon {
   background: transparent;
   font-size: 15px;
   padding: 14px 22px;
@@ -858,7 +862,7 @@ h2.font-secondary {
   border: 1px solid var(--darkText);
   box-shadow: none;
 }
-.eBnftAllPolicyBlock .btnCommon:hover {
+.allPolicyNewBlock .btnCommon:hover {
   box-shadow: 0 5px 20px 0 rgba(0,0,0,0.2);
 }
 /***Frontend Custom Css End***/

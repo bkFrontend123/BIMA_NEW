@@ -2,7 +2,7 @@
     padding: 30px 0;
     border-bottom: 1px solid var(--vt-c-grayLight);
 }
-.eBnftHdrBlock.hdrBlock {
+.hdrNewBlock.hdrBlock {
     background-color: var(--mute5);
     padding: 0;
     border-bottom: 0;
@@ -10,7 +10,7 @@
 .logo a {
     display: inline-block;
 }
-.eBnftLogo {
+.logoNew {
     border: 1px solid var(--brown);
     border-top: 0;
     border-radius: 0 0 40px 40px;
@@ -53,46 +53,46 @@
 .logoLink:hover .grpAcdntLogo {
     top: 41px;
 }
-/*.eBnftHdrBlock .hdrBtnDiv {
+/*.hdrNewBlock .hdrBtnDiv {
     border: 1px solid var(--brown);
     border-top: 0;
     border-radius: 0 0 40px 40px;
 }*/
-.eBnftHdrBlock .hdrBtnDiv > div {
+.hdrNewBlock .hdrBtnDiv > div {
     flex: 1 0;
     transition: all 0.3s ease 0s;
 }
-/*.eBnftHdrBlock .hdrBtnDiv > div + div {
+/*.hdrNewBlock .hdrBtnDiv > div + div {
     border-left: 1px solid var(--brown);
 }
-.eBnftHdrBlock .hdrBtnDiv > div:first-child {
+.hdrNewBlock .hdrBtnDiv > div:first-child {
     border-radius: 0 0 0 40px;
 }
-.eBnftHdrBlock .hdrBtnDiv > div:last-child {
+.hdrNewBlock .hdrBtnDiv > div:last-child {
     border-radius: 0 0 40px 0;
 }*/
-.eBnftHdrBlock .hdrBtnDiv > div > div .hdrDrpdwnBtn,
-.eBnftHdrBlock .hdrBtnDiv > div > button,
-.eBnftHdrBlock .hdrBtnDiv > div > .hdrBtnLink {
+.hdrNewBlock .hdrBtnDiv > div > div .hdrDrpdwnBtn,
+.hdrNewBlock .hdrBtnDiv > div > button,
+.hdrNewBlock .hdrBtnDiv > div > .hdrBtnLink {
     border-left: 1px solid var(--brown);
     border-bottom: 1px solid var(--brown);
 }
-.eBnftHdrBlock .hdrBtnDiv > div:first-child > div .hdrDrpdwnBtn,
-.eBnftHdrBlock .hdrBtnDiv > div:first-child > .hdrBtnLink {
+.hdrNewBlock .hdrBtnDiv > div:first-child > div .hdrDrpdwnBtn,
+.hdrNewBlock .hdrBtnDiv > div:first-child > .hdrBtnLink {
     border-radius: 0 0 0 40px;
 }
-.eBnftHdrBlock .hdrBtnDiv > div:last-child > .hdrBtnLink {
+.hdrNewBlock .hdrBtnDiv > div:last-child > .hdrBtnLink {
     border-right: 1px solid var(--brown);
     border-radius: 0 0 40px 0;
 }
-.eBnftHdrBlock .hdrBtnDiv > div > div .hdrDrpdwnBtn:hover,
-.eBnftHdrBlock .hdrBtnDiv > div > button:hover,
-.eBnftHdrBlock .hdrBtnDiv > div > .hdrBtnLink:hover {
+.hdrNewBlock .hdrBtnDiv > div > div .hdrDrpdwnBtn:hover,
+.hdrNewBlock .hdrBtnDiv > div > button:hover,
+.hdrNewBlock .hdrBtnDiv > div > .hdrBtnLink:hover {
     background-color: var(--mute1);
 }
-.eBnftHdrBlock .hdrBtnDiv > div > div .hdrDrpdwnBtn:focus,
-.eBnftHdrBlock .hdrBtnDiv > div > button:focus,
-.eBnftHdrBlock .hdrBtnDiv > div > .hdrBtnLink:focus {
+.hdrNewBlock .hdrBtnDiv > div > div .hdrDrpdwnBtn:focus,
+.hdrNewBlock .hdrBtnDiv > div > button:focus,
+.hdrNewBlock .hdrBtnDiv > div > .hdrBtnLink:focus {
     background-color: var(--vt-c-yellow);
     border-radius: 0;
 }
@@ -116,8 +116,8 @@ button.btnSmall {
 .hdrBtn button:focus {
     box-shadow: none;
 }
-.eBnftHdrBlock .hdrDrpdwnBtn,
-.eBnftHdrBlock .hdrBtnLink {
+.hdrNewBlock .hdrDrpdwnBtn,
+.hdrNewBlock .hdrBtnLink {
     font-size: 15px;
     color: var(--darkText);
     font-weight: 500;
@@ -129,7 +129,7 @@ button.btnSmall {
     width: 100%;
     border-radius: 0;
 }
-.eBnftHdrBlock .hdrBtnLink svg path {
+.hdrNewBlock .hdrBtnLink svg path {
     fill: var(--darkText);
 }
 .hdrDrpdwn button::after {
@@ -138,7 +138,7 @@ button.btnSmall {
 .hdrDrpdwn button i {
     transition: all 0.3s ease 0s;
 }
-.eBnftHdrBlock .hdrDrpdwn button i svg {
+.hdrNewBlock .hdrDrpdwn button i svg {
     position: relative;
     top: -2px;
 }
@@ -146,13 +146,13 @@ button.btnSmall {
 .hdrDrpdwn button:focus {
     box-shadow: none;
 }
-.eBnftHdrBlock .hdrDrpdwn button > svg path {
+.hdrNewBlock .hdrDrpdwn button > svg path {
     fill: var(--darkText);
 }
-.eBnftHdrBlock .hdrDrpdwn button i svg path {
+.hdrNewBlock .hdrDrpdwn button i svg path {
     stroke: var(--darkText);
 }
-.eBnftHdrBlock .hdrDrpdwn button i.whtsApp svg path {
+.hdrNewBlock .hdrDrpdwn button i.whtsApp svg path {
     stroke: inherit;
     fill: var(--darkText);
 }
@@ -168,7 +168,7 @@ button.btnSmall {
     color: var(--vt-c-blue);
     padding: 0.65rem 1rem;
 }
-.eBnftHdrBlock .hdrDrpMenu > a {
+.hdrNewBlock .hdrDrpMenu > a {
     color: var(--darkText);
 }
 .hdrDrpMenu > a + a {
@@ -185,7 +185,7 @@ button.btnSmall {
     min-width: 240px;
     border-radius: 0;
 }
-.eBnftHdrBlock .hdrTalkDrpdwn .hdrDrpMenu {
+.hdrNewBlock .hdrTalkDrpdwn .hdrDrpMenu {
     min-width: 100%;
     border-radius: 0 0 40px 40px;
 }
@@ -221,7 +221,7 @@ button.btnSmall {
     font-family: var(--GalanoGrotesqueMedium);
     display: block
 }
-.eBnftHdrBlock .hdrTalkDrpdwn ul li span {
+.hdrNewBlock .hdrTalkDrpdwn ul li span {
     color: var(--darkText);
 }
 .hdrTalkDrpdwn ul li a {
@@ -311,19 +311,19 @@ button.btnSmall {
 }
 
 @media (max-width:1399px) {
-    .eBnftLogo {
+    .logoNew {
         border-radius: 0 0 32px 32px;
         padding: 16px 20px;
     }
-    .eBnftHdrBlock .hdrDrpdwnBtn,
-    .eBnftHdrBlock .hdrBtnLink {
+    .hdrNewBlock .hdrDrpdwnBtn,
+    .hdrNewBlock .hdrBtnLink {
         padding: 28.5px 16px;
     }
-    .eBnftHdrBlock .hdrBtnDiv > div:first-child > div .hdrDrpdwnBtn,
-    .eBnftHdrBlock .hdrBtnDiv > div:first-child > .hdrBtnLink {
+    .hdrNewBlock .hdrBtnDiv > div:first-child > div .hdrDrpdwnBtn,
+    .hdrNewBlock .hdrBtnDiv > div:first-child > .hdrBtnLink {
         border-radius: 0 0 0 32px;
     }
-    .eBnftHdrBlock .hdrBtnDiv > div:last-child > .hdrBtnLink {
+    .hdrNewBlock .hdrBtnDiv > div:last-child > .hdrBtnLink {
         border-radius: 0 0 32px 0;
     }
 }
@@ -332,7 +332,7 @@ button.btnSmall {
     .hdrBlock {
         padding: 16px 0;
     }
-    .eBnftLogo {
+    .logoNew {
         border-radius: 0 0 24px 24px;
         padding: 9px;
     }
@@ -355,16 +355,16 @@ button.btnSmall {
     button.btnSmall {
         padding: 10px;
     }
-    .eBnftHdrBlock .hdrDrpdwnBtn,
-    .eBnftHdrBlock .hdrBtnLink {
+    .hdrNewBlock .hdrDrpdwnBtn,
+    .hdrNewBlock .hdrBtnLink {
         padding: 20.5px 12px;
         height: 59.8px;
     }
-    .eBnftHdrBlock .hdrBtnDiv > div:first-child > div .hdrDrpdwnBtn,
-    .eBnftHdrBlock .hdrBtnDiv > div:first-child > .hdrBtnLink {
+    .hdrNewBlock .hdrBtnDiv > div:first-child > div .hdrDrpdwnBtn,
+    .hdrNewBlock .hdrBtnDiv > div:first-child > .hdrBtnLink {
         border-radius: 0 0 0 24px;
     }
-    .eBnftHdrBlock .hdrBtnDiv > div:last-child > .hdrBtnLink {
+    .hdrNewBlock .hdrBtnDiv > div:last-child > .hdrBtnLink {
         border-radius: 0 0 24px 0;
     }
 }
