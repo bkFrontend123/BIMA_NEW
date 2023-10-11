@@ -45,7 +45,7 @@ export default function GroupPersonalAccident_Insurance() {
                                         icon={productIcon}
                                         title="Group Personal Accident"
                                         description="Give employees and their families a shield against accidental disablement at just ₹1,453 per year"
-                                        talkExpert="himani"
+                                        talkExpert="shruti"
                                     />
                                 </Col>
                                 <Col xl={6} xxl={6}>

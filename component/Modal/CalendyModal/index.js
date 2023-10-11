@@ -45,6 +45,11 @@ export default function CalendyModal(props) {
                             ) : (
                                 null
                             )}
+                            {calendyLink == 'shruti' ? (
+                                <InlineWidget url="https://calendly.com/shruti-vishnoi?hide_gdpr_banner=1" />
+                            ) : (
+                                null
+                            )}
                         </div>
                     </div>
                 </div>

@@ -113,7 +113,7 @@ export default function GroupHealth_Flow() {
                                         <ProductFormContent
                                             title="Namaste, Shruti"
                                             description="Help us know more about yourself"
-                                            talkExpert="himani"
+                                            talkExpert="shruti"
                                         />
                                     </Col>
                                     <Col xl={6} xxl={6}>

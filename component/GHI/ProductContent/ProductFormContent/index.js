@@ -5,6 +5,7 @@ import ProductFormHelpCard from '@/component/GHI/ProductContent/ProductFormHelpC
 import CalendyModal from '@/component/Modal/CalendyModal'
 
 import starIcon from '@/public/icons/starYellow.svg'
+import shrutiImg from '@/public/shrutiImg.png'
 import himaniImg from '@/public/himaniImg.png'
 import ravikantImg from '@/public/ravikantImg.png'
 
@@ -15,6 +16,13 @@ export default function ProductFormContent(props) {
 
     const expertCards = [
         {
+          expert: 'shruti',
+          title: 'We are here for you!',
+          description: 'We can help you pick the right insurance plan for your team',
+          imgSrc: shrutiImg,
+          type: 'schedule',
+        },
+        {
           expert: 'himani',
           title: 'We are here for you!',
           description: 'We can help you pick the right insurance plan for your team',
@@ -22,11 +30,11 @@ export default function ProductFormContent(props) {
           type: 'schedule',
         },
         {
-          expert: 'ravikant',
-          title: 'We are here for you!',
-          description: 'We can help you pick the right insurance plan for your team',
-          imgSrc: ravikantImg,
-          type: 'schedule',
+            expert: 'ravikant',
+            title: 'We are here for you!',
+            description: 'We can help you pick the right insurance plan for your team',
+            imgSrc: ravikantImg,
+            type: 'schedule',
         },
         {
           expert: 'general',
@@ -36,6 +44,10 @@ export default function ProductFormContent(props) {
         },
     ];
 
+    const [showShrutiCalendy, setShowShrutiCalendy] = useState(false);
+    const handleCloseShrutiCalendy = () => setShowShrutiCalendy(false);
+    const handleShowShrutiCalendy = () => setShowShrutiCalendy(true);
+    
     const [showHimaniCalendy, setShowHimaniCalendy] = useState(false);
     const handleCloseHimaniCalendy = () => setShowHimaniCalendy(false);
     const handleShowHimaniCalendy = () => setShowHimaniCalendy(true);
@@ -43,6 +55,12 @@ export default function ProductFormContent(props) {
     const [showRaviCalendy, setShowRaviCalendy] = useState(false);
     const handleCloseRaviCalendy = () => setShowRaviCalendy(false);
     const handleShowRaviCalendy = () => setShowRaviCalendy(true);
+
+    const generalExpertPhoneNumber = '+1-555-123-4567';
+    const handleCallGeneralExpert = () => {
+        window.location.href = `tel:${generalExpertPhoneNumber}`;
+    };
+
     return (
         <>
             <div className={`${style.prdctFrmCntntCol}`}>
@@ -63,10 +81,14 @@ export default function ProductFormContent(props) {
                     {expertCards.map((card) => {
                         if (talkExpert === card.expert || card.expert === 'general') {
                             const handleShowCalendyModal = () => {
-                                if (card.expert === 'himani') {
-                                setShowHimaniCalendy(true);
+                                if (card.expert === 'shruti') {
+                                    setShowShrutiCalendy(true);
+                                } else if (card.expert === 'himani') {
+                                    setShowHimaniCalendy(true);
                                 } else if (card.expert === 'ravikant') {
-                                setShowRaviCalendy(true);
+                                    setShowRaviCalendy(true);
+                                } else if (card.expert === 'general') {
+                                    handleCallGeneralExpert();
                                 }
                             };
                             return (
@@ -86,14 +108,14 @@ export default function ProductFormContent(props) {
                 </div>
             </div>
             <CalendyModal
+                calendyLink="shruti"
+                show={showShrutiCalendy}
+                handleClose={handleCloseShrutiCalendy}
+            />
+            <CalendyModal
                 calendyLink="himani"
                 show={showHimaniCalendy}
                 handleClose={handleCloseHimaniCalendy}
-            />
-            <CalendyModal
-                calendyLink="ravi"
-                show={showRaviCalendy}
-                handleClose={handleCloseRaviCalendy}
             />
         </>
     )

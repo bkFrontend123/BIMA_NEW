@@ -45,7 +45,7 @@ export default function GroupHealth_Insurance() {
                                         icon={productIcon}
                                         title="Group Health Insurance"
                                         description="Give your employees a healthier and happier  tomorrow at just ₹1,453 per year"
-                                        talkExpert="himani"
+                                        talkExpert="shruti"
                                     />
                                 </Col>
                                 <Col xl={6} xxl={6}>

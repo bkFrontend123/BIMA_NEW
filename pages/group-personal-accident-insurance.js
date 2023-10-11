@@ -28,7 +28,7 @@ import productStyle from '@/assets/css/product.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 
 import productImage from '@/public/productImages/productImg2.png'
-import expertImg from '../public/himaniImg.png'
+import expertImg from '../public/shrutiImg.png'
 
 export default function GroupPersonalAccident_InsuranceOld() {
     const navbarExample2Ref = useRef(null);
@@ -239,7 +239,7 @@ export default function GroupPersonalAccident_InsuranceOld() {
                                     <TalkExpert
                                         size={`${talkExpert.extraSmall}`}
                                         imgSrc={expertImg}
-                                        name="Himani Doshi"
+                                        name="Shruti Vishnoi"
                                         designation="Insurance Expert"
                                     />
                                 </div>
@@ -257,7 +257,7 @@ export default function GroupPersonalAccident_InsuranceOld() {
                                 background={`${talkExpert.yellow}`}
                                 size={`${talkExpert.extraSmall}`}
                                 imgSrc={expertImg}
-                                name="Himani Doshi"
+                                name="Shruti Vishnoi"
                                 designation="Insurance Expert"
                                 customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
                             />

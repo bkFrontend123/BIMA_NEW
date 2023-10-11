@@ -27,7 +27,7 @@ import PlusIcon from '../component/Icons/Plus';
 import arrowBack from '../public/icons/arrowBack.svg';
 import tooltipIcon from '../public/icons/tooltipIcon.svg';
 
-import expertImg from '../public/himaniImg.png'
+import expertImg from '../public/ravikantImg.png'
 
 export default function WorkmensCompensation_Flow() {
     const navbarExample2Ref = useRef(null);
@@ -279,7 +279,7 @@ export default function WorkmensCompensation_Flow() {
                                                             <TalkExpert
                                                                 size={`${talkExpert.extraSmall}`}
                                                                 imgSrc={expertImg}
-                                                                name="Himani Doshi"
+                                                                name="Ravikant Sawant"
                                                                 designation="Insurance Expert"
                                                             />
                                                         </div>
@@ -824,7 +824,7 @@ export default function WorkmensCompensation_Flow() {
                                                                         <TalkExpert
                                                                             size={`${talkExpert.extraSmall}`}
                                                                             imgSrc={expertImg}
-                                                                            name="Himani Doshi"
+                                                                            name="Ravikant Sawant"
                                                                             designation="Insurance Expert"
                                                                         />
                                                                     </div>
@@ -851,7 +851,7 @@ export default function WorkmensCompensation_Flow() {
                                         background={`${talkExpert.yellow}`}
                                         size={`${talkExpert.extraSmall}`}
                                         imgSrc={expertImg}
-                                        name="Himani Doshi"
+                                        name="Ravikant Sawant"
                                         designation="Insurance Expert"
                                         customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
                                     />
