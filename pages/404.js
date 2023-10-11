@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { useRouter } from 'next/router';
 import Head from 'next/head'
 import Link from 'next/link'
 
@@ -10,7 +11,33 @@ import ArrowRightSmall from '../component/Icons/ArrowRightSmall'
 
 export default function Custom404() {
 
+  const router = useRouter();
+
   useEffect(() => {
+    const redirects = {
+      '/commercial-crime': '/blog/commercial-crime-insurance-in-india/',
+      '/director-and-officials': '/directors-and-officers-insurance',
+      '/content/Other/privacypol.htm': '/privacy-policy',
+      '/privacy-and-policy': '/privacy-policy',
+      '/errors-and-omissions': '/errors-and-omissions-insurance',
+      '/general-liability': '/general-liability-insurance',
+      '/product-liability': '/product-liability-insurance',
+      '/about-us': '/about',
+      '/errors-and-omission': '/errors-and-omissions-insurance',
+      '/contractor-all-risk-policy': '/contractor-all-risk-policy',
+      '/contractor-plant-and-machinery-insurance': '/contractor-plant-and-machinery-insurance',
+      '/erection-all-risk-insurance': '/erection-all-risk-insurance',
+      '/workmens-compensation-insurance': '/workmens-compensation-insurance',
+      '/blog/page/7': '/blog/understanding-the-doctrine-of-subrogation-in-fire-insurance/',
+      '/blog-1': '/blog/',
+    };
+
+    const currentUrl = router.asPath;
+
+    if (redirects[currentUrl]) {
+      router.push(redirects[currentUrl]);
+    }
+
     document.body.classList.add("homePageBody")
   }, []);
 

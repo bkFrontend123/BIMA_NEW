@@ -2,9 +2,9 @@ import React from 'react'
 
 import ProductInfoCard from '@/component/GHI/ProductContent/ProductInfoCard';
 
-import icon1 from '@/public/ghi/icons/answersIcon.svg';
-import icon2 from '@/public/ghi/icons/quotesIcon.svg';
-import icon3 from '@/public/ghi/icons/healthIcon.svg';
+import icon1 from '@/public/ghi/icons/answersIcon.webp';
+import icon2 from '@/public/ghi/icons/quotesIcon.webp';
+import icon3 from '@/public/ghi/icons/healthIcon.webp';
 
 import style from './style.module.css'
 
