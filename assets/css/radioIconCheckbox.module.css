@@ -131,6 +131,21 @@
     height: 80px;
 }
 
+@media (max-width: 1699px) {
+    .radioIconCheckox label {
+        height: 108px;
+    }
+    .radioIconCol i {
+        right: 20px;
+        top: 18px;
+        width: 70px;
+        height: 70px;
+    }
+    .radioNoIconCol .radioIconCheckox label {
+        height: 90px;
+    }
+}
+
 @media (max-width: 1399px) {
     .radioIconCheckox label {
         height: 108px;

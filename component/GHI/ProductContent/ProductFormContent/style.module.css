@@ -28,6 +28,9 @@
 }
 
 @media (max-width:1699px) {
+    .prdctFrmCntntHdr {
+        padding: 36px 32px;
+    }
     .prdctFrmCntntHdr h2 {
         font-size: 36px;
         line-height: 44px;

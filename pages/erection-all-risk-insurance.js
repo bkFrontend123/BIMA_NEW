@@ -328,21 +328,24 @@ export default function ErectionAllRisk_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It offers comprehensive insurance for the erection of projects and provides cover during storage, erection, and testing of heavy plant & machinery at the insured site.</p>
+                                                            <Image src='/icons/comprehensiveInsuranceIcon.svg' width="80" height="80" alt="Comprehensive Insurance Icon" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>It offers comprehensive insurance for the erection of projects and provides cover during storage, erection, and testing of heavy plant & machinery at the insured site.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It provides coverage for the entire period of the project rather than on a yearly basis.</p>
+                                                            <Image src='/icons/coverageYearlyIcon.svg' width="80" height="80" alt="Coverage Yearly Icon" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>It provides coverage for the entire period of the project rather than on a yearly basis.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Customers can add various features as needed.</p>
+                                                            <Image src='/icons/customerFeaturesIcon.svg' width="80" height="80" alt="Customer Features Icon" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Customers can add various features as needed.</p>
                                                         </div>
                                                     </div>
                                                 </Col>

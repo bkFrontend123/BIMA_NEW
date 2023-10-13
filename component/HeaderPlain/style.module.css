@@ -308,6 +308,13 @@ button.btnSmall {
     .btnBig {
         line-height: 52px;
     }
+    .logoNew {
+        padding: 16px 20px;
+    }
+    .hdrNewBlock .hdrDrpdwnBtn,
+    .hdrNewBlock .hdrBtnLink {
+        padding: 28.5px 16px;
+    }
 }
 
 @media (max-width:1399px) {

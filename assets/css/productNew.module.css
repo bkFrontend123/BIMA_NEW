@@ -3,6 +3,7 @@
     background-color: var(--mute5);
 }
 .ratingNewBlock {
+    background-color: var(--mute5);
     padding: 20px 0 40px 0;
 }
 .prdctFrmNewBlock {
@@ -11,6 +12,12 @@
 .allPolicyNewPage {
     background-color: var(--mute5);
     padding: 0 40px;
+}
+
+@media (max-width: 1699px) {
+    .prdctCntntNewBlock {
+        padding: 50px 0;
+    }
 }
 
 @media (max-width: 1399px) {

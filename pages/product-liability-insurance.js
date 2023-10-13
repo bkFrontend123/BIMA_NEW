@@ -369,45 +369,45 @@ export default function ProductLiability_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>Product Liability Insurance is necessary for various kinds of businesses:</div>
                                         <Row>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Manufacturers</p>
+                                                <div className={`d-flex align-items-center mt-4 ${productStyle.tabChecklistIconCard}`}>
+                                                    <Image src='/icons/manufacturersNewIcon.svg' width="46" height="46" alt="Manufacturers" />
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Manufacturers</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Distributors</p>
+                                                <div className={`d-flex align-items-center mt-4 ${productStyle.tabChecklistIconCard}`}>
+                                                    <Image src='/icons/distributorsNewIcon.svg' width="46" height="46" alt="Distributors" />
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Distributors</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Retailers</p>
+                                                <div className={`d-flex align-items-center mt-4 ${productStyle.tabChecklistIconCard}`}>
+                                                    <Image src='/icons/retailersIcon.svg' width="46" height="46" alt="Retailers" />
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Retailers</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Online sellers</p>
+                                                <div className={`d-flex align-items-center mt-4 ${productStyle.tabChecklistIconCard}`}>
+                                                    <Image src='/icons/onlineSellersIcon.svg' width="46" height="46" alt="Online sellers" />
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Online sellers</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Pet supply shops</p>
+                                                <div className={`d-flex align-items-center mt-4 ${productStyle.tabChecklistIconCard}`}>
+                                                    <Image src='/icons/petSupplyShopsIcon.svg' width="46" height="46" alt="Pet supply shops" />
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Pet supply shops</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Restaurants, cloud kitchens</p>
+                                                <div className={`d-flex align-items-center mt-4 ${productStyle.tabChecklistIconCard}`}>
+                                                    <Image src='/icons/restaurantsCloudKitchensIcon.svg' width="46" height="46" alt="Restaurants, cloud kitchens" />
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Restaurants, cloud kitchens</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Print shops</p>
+                                                <div className={`d-flex align-items-center mt-4 ${productStyle.tabChecklistIconCard}`}>
+                                                    <Image src='/icons/printShopsIcon.svg' width="46" height="46" alt="Print shops" />
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Print shops</p>
                                                 </div>
                                             </Col>
                                         </Row>

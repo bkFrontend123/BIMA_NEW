@@ -31,8 +31,8 @@ export default function ProductContentRight(props) {
             <div className={`${style.prdctCntntRghtCol}`}>
                 {productInfoData.map((data, index) =>
                     <ProductInfoCard
-                        width={165}
-                        height={196}
+                        width={118}
+                        height={140}
                         key={index}
                         {...data}
                         onClick={onClick}

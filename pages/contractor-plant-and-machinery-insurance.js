@@ -383,21 +383,24 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It is designed for covering loss or damage to various plants and machinery used on construction sites</p>
+                                                            <Image src='/icons/coveringLossIcon.svg' width="80" height="80" alt="Covering Loss Icon" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>It is designed for covering loss or damage to various plants and machinery used on construction sites</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Most of the policies have the option to cover only selected machinery under the policy</p>
+                                                            <Image src='/icons/policiesMachineryIcon.svg' width="80" height="80" alt="Policies Machinery Icon" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Most of the policies have the option to cover only selected machinery under the policy</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>The insurance premium depends on the type of equipment, use of equipment, location, and risk you are entailing</p>
+                                                            <Image src='/icons/insurancePremiumIcon.svg' width="80" height="80" alt="Insurance Premium Icon" />
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>The insurance premium depends on the type of equipment, use of equipment, location, and risk you are entailing</p>
                                                         </div>
                                                     </div>
                                                 </Col>

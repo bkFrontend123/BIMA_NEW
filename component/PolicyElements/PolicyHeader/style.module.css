@@ -91,6 +91,9 @@
     .policyHdrSmplInfo .policyCovName span {
         font-size: 18px;
     }
+    .policyHdrSmplInfo .policyEditBtn a {
+        padding: 30px 20px;
+    }
 }
 
 @media (max-width:1399px) {

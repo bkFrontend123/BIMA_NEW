@@ -121,6 +121,15 @@
     height: 90px;
 }
 
+@media (max-width: 1699px) {
+    .prdctFrmHelpMedia {
+        min-height: 210px;
+    }
+    .prdctFrmHelpSmallCol .prdctFrmHelpMedia {
+        min-height: 200px;
+    }
+}
+
 @media (max-width: 1399px) {
     .prdctFrmHelpCol:last-child {
         border-radius: 0 0 32px 32px;

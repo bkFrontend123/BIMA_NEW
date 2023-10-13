@@ -321,38 +321,46 @@ export default function ContractorAllRisk_Policy() {
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
                                     <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Contractor’s All Risk Policy</h3>
-                                        <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='g-3 g-lg-5'>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Insurance coverage is applicable for civil engineering projects where the value of civil works is more than 50% of the total contract value.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It operates during storage, erection/construction till completion.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Loss, damage,  or destruction of property incurred due to any cause other than those excluded in the policy is covered.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It is widely demanded by construction firms and financiers involved in construction projects.</p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
+                                        <Row className='justify-content-center'>
+                                            <Col xl={9}>
+                                                <div className={`${productStyle.lightYellowSecCards}`}>
+                                                    <Row className='g-3 g-lg-5'>
+                                                        <Col lg={6}>
+                                                            <div className={`${productStyle.lightYellowSecCardCol}`}>
+                                                                <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                                    <Image src='/icons/insuranceCoverageIcon.svg' width="80" height="80" alt="Insurance Coverage Icon" />
+                                                                    <p className='title-18 font-weight-500 text-black m-0 mt-2'>Insurance coverage is applicable for civil engineering projects where the value of civil works is more than 50% of the total contract value.</p>
+                                                                </div>
+                                                            </div>
+                                                        </Col>
+                                                        <Col lg={6}>
+                                                            <div className={`${productStyle.lightYellowSecCardCol}`}>
+                                                                <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                                    <Image src='/icons/operatesIcon.svg' width="80" height="80" alt="Operates Icon" />
+                                                                    <p className='title-18 font-weight-500 text-black m-0 mt-2'>It operates during storage, erection/construction till completion.</p>
+                                                                </div>
+                                                            </div>
+                                                        </Col>
+                                                        <Col lg={6}>
+                                                            <div className={`${productStyle.lightYellowSecCardCol}`}>
+                                                                <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                                    <Image src='/icons/lossDamageIcon.svg' width="80" height="80" alt="Loss Damage Icon" />
+                                                                    <p className='title-18 font-weight-500 text-black m-0 mt-2'>Loss, damage, or destruction of property incurred due to any cause other than those excluded in the policy is covered.</p>
+                                                                </div>
+                                                            </div>
+                                                        </Col>
+                                                        <Col lg={6}>
+                                                            <div className={`${productStyle.lightYellowSecCardCol}`}>
+                                                                <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                                    <Image src='/icons/constructionFirmIcon.svg' width="80" height="80" alt="Construction Firm Icon" />
+                                                                    <p className='title-18 font-weight-500 text-black m-0 mt-2'>It is widely demanded by construction firms and financiers involved in construction projects.</p>
+                                                                </div>
+                                                            </div>
+                                                        </Col>
+                                                    </Row>
+                                                </div>
+                                            </Col>
+                                        </Row>
                                     </Container>
                                 </div>
                             </div>
