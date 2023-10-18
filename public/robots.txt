@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+Disallow: /blog/a-milestone-four-generations-in-the-making-bimakavach-secures-its-direct-insurance-broking-license/
+Disallow: /Content/information/insurancenews_details.asp?NewsCode=6276
+Disallow: /Content/information/insurancenews_details.asp?NewsCode=6262
+Disallow: /_frog
+Disallow: /content/miscellaneous/onlinepayment.asp
+Disallow: /content/Information/pension_plans.asp
+Disallow: /content/tools/search.asp
+Disallow: /content/profile/contactus.asp
+Disallow: /share-wa
+Disallow: /content/miscellaneous/egreetings.asp
+Disallow: /Content/information/insurancenews_details.asp?NewsCode=6292
+Disallow: /share-fb
+Disallow: /book-online
+Disallow: /content/Miscellaneous/forms.asp
+Disallow: /startover
+Disallow: /Content/Information/insurancenews_archives.asp
+Disallow: /contact
+Disallow: /early-stage
+Disallow: /Content/information/insurancenews_details.asp?NewsCode=6265
+Disallow: /content/Information/Healthplan.asp
+Disallow: /late-stage
+Disallow: /blog/signup/
+Disallow: /content/Information/pi_insurerinfo.asp?InsuCateCode=10
+Disallow: /growth-stage
+Disallow: /blog/signin/
+
+# Host
+Host: https://www.bimakavach.com/
+
+# Sitemaps
+Sitemap: https://www.bimakavach.com/sitemap.xml
