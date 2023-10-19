@@ -69,6 +69,7 @@ export default function AllPolicies() {
 
     const AddCompareClick = () => setShowCompare(true);
 
+    const HandleShow = () => setShowCompare(true);
     const HandleClose = () => setShowCompare(false);
 
     const [showToastSuccess, setShowToastSuccess] = useState(true);
@@ -133,6 +134,7 @@ export default function AllPolicies() {
                 </ToastContainer>
                 <PolicyCompare
                     customClass={showCompare ? policyCompare.show : policyCompare.hide}
+                    handleShow={HandleShow}
                     handleClose={HandleClose}
                 >
                     <PolicySelected

@@ -16,6 +16,10 @@
     pointer-events: none;
     transition: opacity .1s ease-in-out,transform .1s ease-in-out;
     min-width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 90%;
     z-index: 1;
 }
 .employeeBenefitForm .selectDropDiv label {
@@ -333,21 +337,24 @@
         display: block;
     }
     .selectDropDiv label {
-        left: 6px;
-        top: 16px;
-        font-size: 15px;
+        left: 4px;
+        top: 19px;
+        font-size: 13.5px;
+        padding: 0 0 0 8px;
     }
     .searchDropDiv .select-search-value::before {
         top: 21px;
-        left: 16px;
+        left: 14px;
     }
     .selectDropDiv .select-search-value::after {
-        top: 18px;
-        right: 12px;
+        top: 20px;
+        right: 10px;
+        width: 16px;
+        height: 15px;
     }
     .selectDropDiv .select-search-has-focus .select-search-value::after {
-        top: 14px;
-        right: 8px;
+        top: 18px;
+        right: 4px
     }
     .selectDropDivSmall.selectDropDiv .select-search-value::after {
         top: 14px;
@@ -358,9 +365,8 @@
         right: 10px;
     }
     .selectDropDiv .select-search-input {
-        font-size: 15px;
-        height: 54px;
-        padding: 8px 30px 8px 16px;
+        font-size: 14px;
+        padding: 8px 20px 8px 12px;
         height: 54px;
     }
     .selectDropDivSmall.selectDropDiv .select-search-input {
@@ -379,8 +385,13 @@
     .searchDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus .select-search-input {
         padding-left: 36px;
     }
+    .searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,
+    .selectDropDivSmall.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,
+    .selectDropFilterDiv.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input {
+        padding-left: 12px;
+    }
     .tooltipDiv.selectDropDiv .select-search-input {
-        padding-right: 60px;
+        padding-right: 50px;
     }
     .selectDropDiv .select-search-container:not(.select-search-is-multiple) .select-search-select {
         top: 53px;
@@ -390,8 +401,8 @@
     }
     .selectDropDiv .select-search-option,
     .selectDropDiv .select-search-not-found {
-        padding: 8px 16px;
-        font-size: 15px;
+        padding: 8px 12px;
+        font-size: 14px;
     }
     .selectDropDivSmall.selectDropDiv label {
         font-size: 13px;

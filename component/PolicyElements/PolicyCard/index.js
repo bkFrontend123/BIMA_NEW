@@ -62,9 +62,9 @@ export default function PolicyCard(props) {
                         </ul>
                     </div>
                 </div>
-                {/*<div className={`${style.policyFeaBtn}`}>
+                <div className={`${style.policyFeaBtn}`}>
                     <Link href="" onClick={handleShow}>View all features</Link>
-                </div>*/}
+                </div>
                 <div className={`${style.policyPrice} ${`d-${price}`}`}>
                     <span>₹ {priceAmount}</span> <small>+ GST</small>
                 </div>

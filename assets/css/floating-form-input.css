@@ -8,6 +8,10 @@
     height: auto;
     pointer-events: none;
     width: 80%;
+    max-width: 95%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     z-index: 1;
 }
 .greyForm .floatFormGroup .form-floating > label {
@@ -83,7 +87,7 @@
     .floatFormGroup .form-floating > label {
         left: 6px;
         top: 16px;
-        font-size: 15px;
+        font-size: 14px;
     }
     .floatFormGroup .form-floating > .form-control:focus ~ label,
     .floatFormGroup .form-floating > .form-control:not(:placeholder-shown) ~ label,
