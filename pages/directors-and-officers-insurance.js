@@ -397,7 +397,7 @@ export default function DAndO_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Any private or public company with corporate boards or advisory committees should have a D&O policy to protect their C-suite executives. Today, company owners are vulnerable to lawsuits from regulators, shareholders, vendors, customers, competitors, employees, and government bodies. <span className='d-none d-lg-block'></span>It's one of those "must-have" policies for every company because it protects them in the event of an expensive lawsuit.</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>What can influence the reasonable level of D&O coverage?</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>What factors can affect coverage for a D&O policy?</div>
                                         <Row>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>

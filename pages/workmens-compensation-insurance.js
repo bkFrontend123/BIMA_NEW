@@ -368,7 +368,7 @@ export default function WorkmensCompensation_Insurance() {
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/implementationAssuranceIcon.svg' width="80" height="80" alt="Implementation Assurance" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Implementation Assurance</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Each state government appoints Compensation Commissioners dedicated to the effective implementation of this assurance policy.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Each state government appoints Compensation Commissioners dedicated to the effective implementation of this insurance policy.</p>
                                                         </div>
                                                     </div>
                                                 </Col>

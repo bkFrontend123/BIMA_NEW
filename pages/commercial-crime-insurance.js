@@ -314,7 +314,7 @@ export default function CommercialCrime_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black'>Commercial Crime Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>There is a persistent issue of employee fraud across all industries. Whether it's an employee who has succumbed to temptation, a fraudulent scheme from a supplier, or even cybercriminals looking to exploit your trust, these threats can cause significant financial harm to your business. That's where crime insurance comes in.</p>
 
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Also known as commercial crime insurance, this policy provides a comprehensive coverage for criminal acts like employee dishonesty, computer fraud, identity theft, wire transfer fraud, or crimes committed by third-party.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Also known as commercial crime insurance, this policy provides a comprehensive coverage for criminal acts like employee dishonesty, computer fraud, identity theft, wire transfer fraud, or crimes committed by a third-party.</p>
 
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Apart from financial compensation, a crime insurance policy provides you the ability to respond promptly to criminal incidents, ensuring that your business's reputation remains intact.</p>
                                     </div>
@@ -363,7 +363,7 @@ export default function CommercialCrime_Insurance() {
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/employeesNewIcon.svg' width="80" height="80" alt="Basic security" />
-                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Number of employees in your business have an effect on your crime insurance premium</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>The number of employees in your business affects your crime insurance premium</p>
                                                         </div>
                                                     </div>
                                                 </Col>

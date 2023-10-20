@@ -132,6 +132,15 @@
         left: 16px;
         margin-top: -15px;
     }
+    .radioIconCol.active span img {
+        width: 12px;
+    }
+    .radioIconCol span::before {
+        left: 6px;
+        top: 6px;
+        width: 16px;
+        height: 16px;
+    }
     .radioIconCheckox label {
         font-size: 15px;
         line-height: 20px;

@@ -388,7 +388,7 @@ export default function GroupPersonalAccident_InsuranceOld() {
                                                                 </div>
                                                                 <div className={`${productStyle.bnftCardInfo}`}>
                                                                     <div className='title-26 text-dark font-weight-600 mb-2 font-secondry'>Employee Retention</div>
-                                                                    <div className={`title-18 text-dark`}>In an age where companies are extending myriad  benefits, retaining talent poses a formidable challenge. Group Health Insurance acts as a strong incentive, enhancing employee loyalty.</div>
+                                                                    <div className={`title-18 text-dark`}>In an age where companies are extending myriad  benefits, retaining talent poses a formidable challenge. Group Personal Accident Insurance acts as a strong incentive, enhancing employee loyalty.</div>
                                                                 </div>
                                                             </div>
                                                         </Col>

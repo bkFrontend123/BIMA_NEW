@@ -430,7 +430,7 @@ export default function EAndO_Insurance() {
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/mitigationCostsIcon.svg' width="80" height="80" alt="Mitigation Costs" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Mitigation Costs</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>In case of errors and omissions, you might need to take steps to reduce or prevent further damage or loss. The policy can help cover the cost of repairs, replacements, and other expenses incurred in such cases</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>In case of errors and omissions, you might need to take steps to reduce or prevent further damage or loss. The policy can help cover the cost of repairs, replacements, and other expenses incurred in such cases.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -446,9 +446,9 @@ export default function EAndO_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <Image src='/icons/courtFeesIcon.svg' width="80" height="80" alt="Loss of Document" />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Loss of Document</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>In case of a lawsuit alleging loss or destruction of important documents, this policy will cover the legal and claim charges</p>
+                                                            <Image src='/icons/courtFeesIcon.svg' width="80" height="80" alt="Loss of Documents" />
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Loss of Documents</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>In case of a lawsuit alleging loss or destruction of important documents, this policy will cover the legal and claim charges.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -511,7 +511,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Mitigation Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>In case of errors and omissions, you might need to take steps to reduce or prevent further damage or loss. The policy can help cover the cost of repairs, replacements, and other expenses incurred in such cases</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>In case of errors and omissions, you might need to take steps to reduce or prevent further damage or loss. The policy can help cover the cost of repairs, replacements, and other expenses incurred in such cases.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
@@ -523,7 +523,7 @@ export default function EAndO_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Loss of Documents</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>In case of a lawsuit alleging loss or destruction of important documents, this policy will cover the legal and claim charges</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>In case of a lawsuit alleging loss or destruction of important documents, this policy will cover the legal and claim charges.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>

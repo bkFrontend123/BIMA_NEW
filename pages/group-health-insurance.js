@@ -415,7 +415,7 @@ export default function GroupHealth_InsuranceOld() {
                                                                 </div>
                                                                 <div className={`${productStyle.bnftCardInfo}`}>
                                                                     <div className='title-26 text-dark font-weight-600 mb-2 font-secondry'>Fostering a Healthy Workplace Culture & Amplifying Productivity</div>
-                                                                    <div className={`title-18 text-dark`}>A comprehensive insurance plan underscores your commitment to your employees' health and welfare. The more palpable your care, the healthier and more efficient your workforce becomes</div>
+                                                                    <div className={`title-18 text-dark`}>A comprehensive insurance plan underscores your commitment to your employees' health and welfare. The more palpable your care, the healthier and more efficient your workforce becomes.</div>
                                                                 </div>
                                                             </div>
                                                         </Col>

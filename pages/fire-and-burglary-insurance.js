@@ -562,7 +562,7 @@ export default function FireAndBurglary_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                         <Image src='/icons/medicalIcon.svg' width="80" height="80" alt="Medical Clinics" />
                                                         <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Medical Clinics</h3>
-                                                        <p className='title-18 font-weight-500 text-black m-0 mt-2'>Protect your medical facility, equipment, and patient records from fire damage</p>
+                                                        <p className='title-18 font-weight-500 text-black m-0 mt-2'>Protect your medical facility, equipment, and patient records from fire damage.</p>
                                                     </div>
                                                 </div>
                                             </Col>
@@ -588,7 +588,7 @@ export default function FireAndBurglary_Insurance() {
 
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Securing your assets is critical to your company's growth and stability. Fire & Burglary Insurance protects your property and its contents from a variety of occurrences, including fire, theft, natural disasters, and man-made events such as riots and terrorism.</p>
 
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The Insurance offers tailored protection options to suit your business requirements. You can select from specialized coverage choices such as Sookshma Udyam Suraksha, Laghu Udyam Suraksha, and Standard Fire Special Peril (SFSP)</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The Insurance offers tailored protection options to suit your business requirements. You can select from specialized coverage choices such as Sookshma Udyam Suraksha, Laghu Udyam Suraksha, and Standard Fire Special Perils (SFSP).</p>
                                     </div>
                                 </Container>
 

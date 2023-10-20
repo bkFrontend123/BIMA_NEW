@@ -374,4 +374,15 @@ button.btnSmall {
     .hdrNewBlock .hdrBtnDiv > div:last-child > .hdrBtnLink {
         border-radius: 0 0 24px 0;
     }
+    .hdrTlkExprt > div > div:first-child {
+        margin: 0 !important;
+    }
+    .hdrTlkExprt > div > div:first-child img {
+        width: 40px !important;
+        height: 40px !important;
+        border-width: 2px;
+    }
+    .hdrTlkExprt > div > div:last-child {
+        display: none;
+    }
 }

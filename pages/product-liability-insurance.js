@@ -363,7 +363,7 @@ export default function ProductLiability_Insurance() {
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Product Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Businesses involved in manufacturing or selling goods, as well as distributors, importers, retailers, and others interacting with products, require product liability insurance. <span className='d-none d-lg-block'></span>Clients may also need this policy to safeguard against design flaws and other risks associated to the product. This insurance protects your business from claims or lawsuits resulting from bodily harm or property damage caused to any third party by defective items that your business has manufactured, distributed, or sold.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Businesses involved in manufacturing or selling goods, as well as distributors, importers, retailers, and others interacting with products, require product liability insurance. <span className='d-none d-lg-block'></span>Clients may also need this policy to safeguard against design flaws and other risks associated with the product. This insurance protects your business from claims or lawsuits resulting from bodily harm or property damage caused to any third party by defective items that your business has manufactured, distributed, or sold.</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>Product Liability Insurance is necessary for various kinds of businesses:</div>
@@ -525,7 +525,7 @@ export default function ProductLiability_Insurance() {
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Product guarantees</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Insurance coverage would not apply if an insured provides a warranty or guarantee to their customers regarding the products they are selling. And then the product fails to perform as promised, resulting in a claim for damages.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Insurance coverage will be inapplicable if the policyholder makes explicit warranties or guarantees to customers concerning the performance or quality of the products being sold. In the event that such products fail to meet the stated standards, resulting in a damages claim, the insurance policy will not provide coverage.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>

@@ -270,6 +270,7 @@
     letter-spacing: 0;
     font-weight: 500;
     color: var(--gray);
+    word-wrap: break-word;
 }
 .employeeBenefitForm .selectDropDiv .select-search-option,
 .employeeBenefitForm .selectDropDiv .select-search-not-found {

@@ -18,8 +18,8 @@ export default function HowDo() {
 
   const tinderRef = useRef(null);
   const data = [
-    { title: "Select from the products", description: "Choose the policy for you business requirements", imgSrc: "/howWorks/howWorkImg1.png", btnText: 'Next: Digital' },
-    { title: "Tell us about business", description: " Answer a few simple questions about your business ", imgSrc: "/howWorks/howWorkImg2.png", btnText: 'Next: Digital'},
+    { title: "Select from the products", description: "Choose the policy for your business requirements.", imgSrc: "/howWorks/howWorkImg1.png", btnText: 'Next: Digital' },
+    { title: "Tell us about the business.", description: "Answer a few simple questions about your business ", imgSrc: "/howWorks/howWorkImg2.png", btnText: 'Next: Digital'},
     { title: "Compare quotes", description: "Get instant quotes from top insurance companies", imgSrc: "/howWorks/howWorkImg3.png", btnText: 'Next: Digital' },
     { title: "Talk to an expert", description: "Consult with our experts and make payment", imgSrc: "/howWorks/howWorkImg4.png", btnText: 'Next: Digital' },
     { title: "All-in-one digital platform", description: "Manage everything on a single dashboard", imgSrc: "/howWorks/howWorkImg5.png", btnText: 'Next: Digital' },
@@ -109,7 +109,7 @@ export default function HowDo() {
           <div className={`row text-center `}>
             <div className={`col-md-12 mx-auto`}>
               <div className='commnHeading'>
-                <div className='howDoTitle title-36 font-secondary text-primary font-weight-700'><span className="text-yellow fst-italic">How</span> it Works</div>
+                <div className='howDoTitle title-36 font-secondary text-primary font-weight-700'><span className="text-yellow fst-italic">How</span> it works</div>
                 <p className='howDoSubTitle title-22 text-primary font-weight-500 mb-0'>Simple 5-step process to get your comprehensive business insurance</p>
               </div>
             </div>
@@ -180,7 +180,7 @@ export default function HowDo() {
                           <div className="howDo-sliderBoxText text-white">
                             <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">01</div>
                             <div className="title60 font-secondary font-weight-600">Select from the products</div>
-                            <div className="title20 font-weight-500 mt-2 mt-md-0">Choose the policy for you business requirements</div>
+                            <div className="title20 font-weight-500 mt-2 mt-md-0">Choose the policy for your business requirements.</div>
                           </div>
                         </div>
                       </div>
@@ -203,7 +203,7 @@ export default function HowDo() {
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
                             <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">02</div>
-                            <div className="title60 font-secondary font-weight-600">Tell us about business</div>
+                            <div className="title60 font-secondary font-weight-600">Tell us about the business.</div>
                             <div className="title20 font-weight-500 mt-2 mt-md-0">Answer a few simple questions about your business</div>
                           </div>
                         </div>

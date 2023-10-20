@@ -489,7 +489,7 @@ export default function Cyber_Insurance() {
                                         </ul>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Such statistics push cyber security and insurance to the forefront of every business’s priorities.</p>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Mitigating financial losses caused by cyber threats such as data breaches, system intrusions, and ransomware attacks is crucial for corporations to safeguard their operations and reputation.</p>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Cyber risk provides covers for a range of costs associated with cybercrimes, including investigative charges, data restoration costs, and crisis management fees. By purchasing cyber risk insurance, corporations can ensure continued success in the face of ever-evolving cyber threats.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Cyber insurance provides coverage for a range of costs associated with cybercrimes, including investigative charges, data restoration costs, and crisis management fees. By purchasing cyber risk insurance, corporations can ensure continued success in the face of ever-evolving cyber threats.</p>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
@@ -570,7 +570,7 @@ export default function Cyber_Insurance() {
                                         <div data-tab className="place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>Cyber insurance covers a wide range of cost that may occur in cyber-attack. Here are some of the key coverages offered by cyber insurance policies:</div>
+                                                    <div className='title-20 text-black mb-4'>Cyber insurance covers a wide range of costs that may occur in a cyber-attack. Here are some of the key coverages offered by cyber insurance policies:</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>

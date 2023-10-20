@@ -406,6 +406,7 @@ p {
   border-color: var(--vt-c-gray) !important;
   background: var(--vt-c-gray);
   color: var(--vt-c-blue);
+  box-shadow: none;
 }
 .btnCommon.greyBtn:hover {
   border-color: var(--vt-c-blue) !important;
@@ -414,6 +415,14 @@ p {
 }
 .btnCommon.greyBtn:hover .primary {
   fill: var(--whiteText);
+}
+
+.btnCommon.greyBtn.border-primary,
+.btnCommon.greyBtn.border-primary.active:focus,
+.btnCommon.greyBtn.border-primary.active:focus,
+.btnCommon.greyBtn.border-primary.btn-primary:active:focus,
+.btnCommon.greyBtn.border-primary.btn-primary.active:focus {
+  border-color: var(--vt-c-blue) !important;
 }
 
 .employeeBenefitForm .btnCommon {
@@ -749,6 +758,11 @@ h2.font-secondary {
 .commonTabs.nav-tabs .nav-item.show .nav-link {
   color: var(--vt-c-green) !important;
   border-color: var(--vt-c-green) !important;
+}
+.blueTabs.commonTabs.nav-tabs .nav-link.active,
+.blueTabs.commonTabs.nav-tabs .nav-item.show .nav-link {
+  color: var(--vt-c-blue) !important;
+  border-color: var(--vt-c-blue) !important;
 }
 .whiteCol {
   background-color: var(--white);

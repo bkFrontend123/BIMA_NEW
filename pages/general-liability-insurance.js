@@ -331,7 +331,7 @@ export default function GeneralLiability_Insurance() {
                                                 <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                         <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Start Date</h3>
-                                                        <p className='title-18 font-weight-500 text-black m-0'>Claims cannot be filed for any incidents that occured prior to the date when the coverage of the policy begins.</p>
+                                                        <p className='title-18 font-weight-500 text-black m-0'>Claims cannot be filed for any incidents that occurred prior to the date when the coverage of the policy begins.</p>
                                                     </div>
                                                 </div>
                                             </Col>
@@ -339,7 +339,7 @@ export default function GeneralLiability_Insurance() {
                                                 <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                         <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Insurance Period</h3>
-                                                        <p className='title-18 font-weight-500 text-black m-0'>Any incident that happens between the policy's effective date to the policy's expiration date are covered. Renewal before expiration date is essential to maintain coverage.</p>
+                                                        <p className='title-18 font-weight-500 text-black m-0'>Any incident that happens between the policy's effective date to the policy's expiration date is covered. Renewal before expiration date is essential to maintain coverage.</p>
                                                     </div>
                                                 </div>
                                             </Col>
@@ -483,7 +483,7 @@ export default function GeneralLiability_Insurance() {
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/bodilyInjuryIcon.svg' width="80" height="80" alt="Bodily injury" />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Bodily injury</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It protects your business from claims related to bodily injuries resulting from accidents on your premises or due to your business operations</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>It protects your business from claims related to bodily injuries resulting from accidents on your premises or due to your business operations.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
