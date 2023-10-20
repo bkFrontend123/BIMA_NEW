@@ -14,7 +14,7 @@ import star from '../../../public/icons/star.svg'
 import arrowRight_white from '../../../public/icons/arrowRight-white.svg'
 
 export default function PolicyCard(props) {
-    const {customClass, policyLogo, logoWidth, logoHeight, title, listText1, listText2, listText3, price, priceAmount, children, policyName, policyCover, policyPremium, featuresIncluded, exclusions, variant } = props;
+    const {customClass, policyLogo, logoWidth, logoHeight, title, listText1, listText2, listText3, price, priceAmount, children, policyName, policyCover, policyPremium, coveragesExtensions, exclusions, deductibles, variant } = props;
 
     const [show, setShow] = useState(false);
 
@@ -89,6 +89,13 @@ export default function PolicyCard(props) {
                                     />
                                 </i>
                                 <div>
+                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
+                                        <span>Download Policy Wordings</span>
+                                    </Button>
+                                </div>
+                            </div>
+                            <div className={`${style.policyOffcanvasHdrTop}`}>
+                                <div>
                                     <p>Plan name <span>{policyName}</span></p>
                                 </div>
                             </div>
@@ -98,13 +105,8 @@ export default function PolicyCard(props) {
                                         <p>Cover <span>{policyCover}</span></p>
                                     </div>
                                     <div>
-                                        <p>Premium Rs. <span>{policyPremium}</span></p>
+                                        <p>Premium Rs. <span>{policyPremium} <small>+ GST</small></span></p>
                                     </div>
-                                </div>
-                                <div>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
-                                        <span>Download quote</span>
-                                    </Button>
                                 </div>
                             </div>
                         </div>
@@ -112,21 +114,28 @@ export default function PolicyCard(props) {
                     <Offcanvas.Body className={`${offcanvas.commonOffcanvasBodyDiv}`}>
                         <div className={`${offcanvas.commonOffcanvasBody}`}>
                             <Tabs
-                                defaultActiveKey="featuresIncluded"
+                                defaultActiveKey="coveragesExtensions"
                                 id="policyOffcanvasFeatures"
-                                className={`${commonTabs.commonTabs} commonTabs`}
+                                className={`${commonTabs.commonTabs} ${commonTabs.blueTabs} commonTabs blueTabs`}
                             >
-                                <Tab eventKey="featuresIncluded" title="Features Included">
-                                    <div className={`${offcanvas.commonOffcanvasFeaList}`}>
+                                <Tab eventKey="coveragesExtensions" title="Coverages/Extensions">
+                                    <div className={`${offcanvas.commonOffcanvasFeaList} ${offcanvas.commonOffcanvasBlueFeaList}`}>
                                         <ol>
-                                            {featuresIncluded}
+                                            {coveragesExtensions}
                                         </ol>
                                     </div>
                                 </Tab>
                                 <Tab eventKey="exclusions" title="Exclusions">
-                                    <div className={`${offcanvas.commonOffcanvasFeaList}`}>
+                                    <div className={`${offcanvas.commonOffcanvasFeaList} ${offcanvas.commonOffcanvasBlueFeaList}`}>
                                         <ol>
                                             {exclusions}
+                                        </ol>
+                                    </div>
+                                </Tab>
+                                <Tab eventKey="deductibles" title="Deductibles">
+                                    <div className={`${offcanvas.commonOffcanvasFeaList} ${offcanvas.commonOffcanvasBlueFeaList}`}>
+                                        <ol>
+                                            {deductibles}
                                         </ol>
                                     </div>
                                 </Tab>

@@ -266,6 +266,9 @@
         right: 20px;
         bottom: 20px;
     }
+    .policyOffcanvasHdrTop {
+        margin: 24px 0;
+    }
 }
 
 @media (max-width:1399px) {

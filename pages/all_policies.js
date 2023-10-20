@@ -238,18 +238,44 @@ export default function AllPolicies() {
                                                     policyName="Directors & Officers Liability"
                                                     policyCover="1.5 Crore"
                                                     policyPremium="35,000"
-                                                    featuresIncluded={[
+                                                    coveragesExtensions={[
                                                         <>
-                                                            <li>Pension Trustee Liability</li>
-                                                            <li>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</li>
-                                                            <li>Pecuniary Penalties Cover</li>
-                                                            <li>Bail Bond and Civil Bond Expenses: Full Limit</li>
-                                                            <li>Lawful Spouse, Domestic Partner or Family member liability</li>
-                                                            <li>Legal Representation Expenses (not tied to Wrongful Act)</li>
-                                                            <li>Protected Excess Limit for Non-Executive Directors</li>
-                                                            <li>Public Relations Expenses Extension</li>
-                                                            <li>Extradition Costs Extension: Full Limit</li>
-                                                            <li>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</li>
+                                                            <li>
+                                                                <h4>Pension Trustee Liability</h4>
+                                                                <p>Definition of Subsidiary includes  any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                <div>
+                                                                    <h5>What is pension trustee liability</h5>
+                                                                    <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <h4>Pecuniary Penalties Cover</h4>
+                                                                <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Pecuniary Penalties Cover</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Bail Bond and Civil Bond Expenses: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Lawful Spouse, Domestic Partner or Family member liability</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Legal Representation Expenses (not tied to Wrongful Act)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Protected Excess Limit for Non-Executive Directors</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Public Relations Expenses Extension</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Extradition Costs Extension: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</p>
+                                                            </li>
                                                         </>
                                                     ]}
                                                     variant={isVariant}
@@ -280,18 +306,44 @@ export default function AllPolicies() {
                                                     policyName="Directors & Officers Liability"
                                                     policyCover="1.5 Crore"
                                                     policyPremium="35,000"
-                                                    featuresIncluded={[
+                                                    coveragesExtensions={[
                                                         <>
-                                                            <li>Pension Trustee Liability</li>
-                                                            <li>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</li>
-                                                            <li>Pecuniary Penalties Cover</li>
-                                                            <li>Bail Bond and Civil Bond Expenses: Full Limit</li>
-                                                            <li>Lawful Spouse, Domestic Partner or Family member liability</li>
-                                                            <li>Legal Representation Expenses (not tied to Wrongful Act)</li>
-                                                            <li>Protected Excess Limit for Non-Executive Directors</li>
-                                                            <li>Public Relations Expenses Extension</li>
-                                                            <li>Extradition Costs Extension: Full Limit</li>
-                                                            <li>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</li>
+                                                            <li>
+                                                                <h4>Pension Trustee Liability</h4>
+                                                                <p>Definition of Subsidiary includes  any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                <div>
+                                                                    <h5>What is pension trustee liability</h5>
+                                                                    <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <h4>Pecuniary Penalties Cover</h4>
+                                                                <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Pecuniary Penalties Cover</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Bail Bond and Civil Bond Expenses: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Lawful Spouse, Domestic Partner or Family member liability</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Legal Representation Expenses (not tied to Wrongful Act)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Protected Excess Limit for Non-Executive Directors</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Public Relations Expenses Extension</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Extradition Costs Extension: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</p>
+                                                            </li>
                                                         </>
                                                     ]}
                                                     variant={isVariant}
@@ -322,18 +374,44 @@ export default function AllPolicies() {
                                                     policyName="Directors & Officers Liability"
                                                     policyCover="1.5 Crore"
                                                     policyPremium="35,000"
-                                                    featuresIncluded={[
+                                                    coveragesExtensions={[
                                                         <>
-                                                            <li>Pension Trustee Liability</li>
-                                                            <li>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</li>
-                                                            <li>Pecuniary Penalties Cover</li>
-                                                            <li>Bail Bond and Civil Bond Expenses: Full Limit</li>
-                                                            <li>Lawful Spouse, Domestic Partner or Family member liability</li>
-                                                            <li>Legal Representation Expenses (not tied to Wrongful Act)</li>
-                                                            <li>Protected Excess Limit for Non-Executive Directors</li>
-                                                            <li>Public Relations Expenses Extension</li>
-                                                            <li>Extradition Costs Extension: Full Limit</li>
-                                                            <li>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</li>
+                                                            <li>
+                                                                <h4>Pension Trustee Liability</h4>
+                                                                <p>Definition of Subsidiary includes  any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                <div>
+                                                                    <h5>What is pension trustee liability</h5>
+                                                                    <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <h4>Pecuniary Penalties Cover</h4>
+                                                                <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Pecuniary Penalties Cover</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Bail Bond and Civil Bond Expenses: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Lawful Spouse, Domestic Partner or Family member liability</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Legal Representation Expenses (not tied to Wrongful Act)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Protected Excess Limit for Non-Executive Directors</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Public Relations Expenses Extension</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Extradition Costs Extension: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</p>
+                                                            </li>
                                                         </>
                                                     ]}
                                                     variant={isVariant}
@@ -364,18 +442,44 @@ export default function AllPolicies() {
                                                     policyName="Directors & Officers Liability"
                                                     policyCover="1.5 Crore"
                                                     policyPremium="13,537"
-                                                    featuresIncluded={[
+                                                    coveragesExtensions={[
                                                         <>
-                                                            <li>Pension Trustee Liability</li>
-                                                            <li>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</li>
-                                                            <li>Pecuniary Penalties Cover</li>
-                                                            <li>Bail Bond and Civil Bond Expenses: Full Limit</li>
-                                                            <li>Lawful Spouse, Domestic Partner or Family member liability</li>
-                                                            <li>Legal Representation Expenses (not tied to Wrongful Act)</li>
-                                                            <li>Protected Excess Limit for Non-Executive Directors</li>
-                                                            <li>Public Relations Expenses Extension</li>
-                                                            <li>Extradition Costs Extension: Full Limit</li>
-                                                            <li>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</li>
+                                                            <li>
+                                                                <h4>Pension Trustee Liability</h4>
+                                                                <p>Definition of Subsidiary includes  any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                <div>
+                                                                    <h5>What is pension trustee liability</h5>
+                                                                    <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <h4>Pecuniary Penalties Cover</h4>
+                                                                <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Pecuniary Penalties Cover</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Bail Bond and Civil Bond Expenses: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Lawful Spouse, Domestic Partner or Family member liability</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Legal Representation Expenses (not tied to Wrongful Act)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Protected Excess Limit for Non-Executive Directors</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Public Relations Expenses Extension</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Extradition Costs Extension: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</p>
+                                                            </li>
                                                         </>
                                                     ]}
                                                     variant={isVariant}
@@ -406,18 +510,44 @@ export default function AllPolicies() {
                                                     policyName="Directors & Officers Liability"
                                                     policyCover="1.5 Crore"
                                                     policyPremium="13,537"
-                                                    featuresIncluded={[
+                                                    coveragesExtensions={[
                                                         <>
-                                                            <li>Pension Trustee Liability</li>
-                                                            <li>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</li>
-                                                            <li>Pecuniary Penalties Cover</li>
-                                                            <li>Bail Bond and Civil Bond Expenses: Full Limit</li>
-                                                            <li>Lawful Spouse, Domestic Partner or Family member liability</li>
-                                                            <li>Legal Representation Expenses (not tied to Wrongful Act)</li>
-                                                            <li>Protected Excess Limit for Non-Executive Directors</li>
-                                                            <li>Public Relations Expenses Extension</li>
-                                                            <li>Extradition Costs Extension: Full Limit</li>
-                                                            <li>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</li>
+                                                            <li>
+                                                                <h4>Pension Trustee Liability</h4>
+                                                                <p>Definition of Subsidiary includes  any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                <div>
+                                                                    <h5>What is pension trustee liability</h5>
+                                                                    <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <h4>Pecuniary Penalties Cover</h4>
+                                                                <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Pecuniary Penalties Cover</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Bail Bond and Civil Bond Expenses: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Lawful Spouse, Domestic Partner or Family member liability</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Legal Representation Expenses (not tied to Wrongful Act)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Protected Excess Limit for Non-Executive Directors</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Public Relations Expenses Extension</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Extradition Costs Extension: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</p>
+                                                            </li>
                                                         </>
                                                     ]}
                                                     variant={isVariant}
@@ -438,18 +568,44 @@ export default function AllPolicies() {
                                                     policyName="Directors & Officers Liability"
                                                     policyCover="1.5 Crore"
                                                     policyPremium="13,537"
-                                                    featuresIncluded={[
+                                                    coveragesExtensions={[
                                                         <>
-                                                            <li>Pension Trustee Liability</li>
-                                                            <li>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</li>
-                                                            <li>Pecuniary Penalties Cover</li>
-                                                            <li>Bail Bond and Civil Bond Expenses: Full Limit</li>
-                                                            <li>Lawful Spouse, Domestic Partner or Family member liability</li>
-                                                            <li>Legal Representation Expenses (not tied to Wrongful Act)</li>
-                                                            <li>Protected Excess Limit for Non-Executive Directors</li>
-                                                            <li>Public Relations Expenses Extension</li>
-                                                            <li>Extradition Costs Extension: Full Limit</li>
-                                                            <li>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</li>
+                                                            <li>
+                                                                <h4>Pension Trustee Liability</h4>
+                                                                <p>Definition of Subsidiary includes  any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                <div>
+                                                                    <h5>What is pension trustee liability</h5>
+                                                                    <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <h4>Pecuniary Penalties Cover</h4>
+                                                                <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Pecuniary Penalties Cover</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Bail Bond and Civil Bond Expenses: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Lawful Spouse, Domestic Partner or Family member liability</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Legal Representation Expenses (not tied to Wrongful Act)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Protected Excess Limit for Non-Executive Directors</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Public Relations Expenses Extension</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Extradition Costs Extension: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</p>
+                                                            </li>
                                                         </>
                                                     ]}
                                                     variant={isVariant}
@@ -470,18 +626,44 @@ export default function AllPolicies() {
                                                     policyName="Directors & Officers Liability"
                                                     policyCover="1.5 Crore"
                                                     policyPremium="13,537"
-                                                    featuresIncluded={[
+                                                    coveragesExtensions={[
                                                         <>
-                                                            <li>Pension Trustee Liability</li>
-                                                            <li>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</li>
-                                                            <li>Pecuniary Penalties Cover</li>
-                                                            <li>Bail Bond and Civil Bond Expenses: Full Limit</li>
-                                                            <li>Lawful Spouse, Domestic Partner or Family member liability</li>
-                                                            <li>Legal Representation Expenses (not tied to Wrongful Act)</li>
-                                                            <li>Protected Excess Limit for Non-Executive Directors</li>
-                                                            <li>Public Relations Expenses Extension</li>
-                                                            <li>Extradition Costs Extension: Full Limit</li>
-                                                            <li>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</li>
+                                                            <li>
+                                                                <h4>Pension Trustee Liability</h4>
+                                                                <p>Definition of Subsidiary includes  any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                <div>
+                                                                    <h5>What is pension trustee liability</h5>
+                                                                    <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <h4>Pecuniary Penalties Cover</h4>
+                                                                <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Pecuniary Penalties Cover</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Bail Bond and Civil Bond Expenses: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Lawful Spouse, Domestic Partner or Family member liability</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Legal Representation Expenses (not tied to Wrongful Act)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Protected Excess Limit for Non-Executive Directors</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Public Relations Expenses Extension</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Extradition Costs Extension: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</p>
+                                                            </li>
                                                         </>
                                                     ]}
                                                     variant={isVariant}
@@ -512,18 +694,44 @@ export default function AllPolicies() {
                                                     policyName="Directors & Officers Liability"
                                                     policyCover="1.5 Crore"
                                                     policyPremium="13,537"
-                                                    featuresIncluded={[
+                                                    coveragesExtensions={[
                                                         <>
-                                                            <li>Pension Trustee Liability</li>
-                                                            <li>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</li>
-                                                            <li>Pecuniary Penalties Cover</li>
-                                                            <li>Bail Bond and Civil Bond Expenses: Full Limit</li>
-                                                            <li>Lawful Spouse, Domestic Partner or Family member liability</li>
-                                                            <li>Legal Representation Expenses (not tied to Wrongful Act)</li>
-                                                            <li>Protected Excess Limit for Non-Executive Directors</li>
-                                                            <li>Public Relations Expenses Extension</li>
-                                                            <li>Extradition Costs Extension: Full Limit</li>
-                                                            <li>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</li>
+                                                            <li>
+                                                                <h4>Pension Trustee Liability</h4>
+                                                                <p>Definition of Subsidiary includes  any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                <div>
+                                                                    <h5>What is pension trustee liability</h5>
+                                                                    <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <h4>Pecuniary Penalties Cover</h4>
+                                                                <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Pecuniary Penalties Cover</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Bail Bond and Civil Bond Expenses: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Lawful Spouse, Domestic Partner or Family member liability</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Legal Representation Expenses (not tied to Wrongful Act)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Protected Excess Limit for Non-Executive Directors</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Public Relations Expenses Extension</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Extradition Costs Extension: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</p>
+                                                            </li>
                                                         </>
                                                     ]}
                                                     variant={isVariant}
@@ -544,18 +752,44 @@ export default function AllPolicies() {
                                                     policyName="Directors & Officers Liability"
                                                     policyCover="1.5 Crore"
                                                     policyPremium="13,537"
-                                                    featuresIncluded={[
+                                                    coveragesExtensions={[
                                                         <>
-                                                            <li>Pension Trustee Liability</li>
-                                                            <li>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</li>
-                                                            <li>Pecuniary Penalties Cover</li>
-                                                            <li>Bail Bond and Civil Bond Expenses: Full Limit</li>
-                                                            <li>Lawful Spouse, Domestic Partner or Family member liability</li>
-                                                            <li>Legal Representation Expenses (not tied to Wrongful Act)</li>
-                                                            <li>Protected Excess Limit for Non-Executive Directors</li>
-                                                            <li>Public Relations Expenses Extension</li>
-                                                            <li>Extradition Costs Extension: Full Limit</li>
-                                                            <li>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</li>
+                                                            <li>
+                                                                <h4>Pension Trustee Liability</h4>
+                                                                <p>Definition of Subsidiary includes  any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                <div>
+                                                                    <h5>What is pension trustee liability</h5>
+                                                                    <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <h4>Pecuniary Penalties Cover</h4>
+                                                                <p>Definition of Subsidiary includes any entity where the Company exercises effective control of management, including of any joint venture (as per policy)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Pecuniary Penalties Cover</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Bail Bond and Civil Bond Expenses: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Lawful Spouse, Domestic Partner or Family member liability</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Legal Representation Expenses (not tied to Wrongful Act)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Protected Excess Limit for Non-Executive Directors</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Public Relations Expenses Extension</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Extradition Costs Extension: Full Limit</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Occupational Health and Safety Costs- Defence Costs and Legal Representation Expenses: Full Limit</p>
+                                                            </li>
                                                         </>
                                                     ]}
                                                     variant={isVariant}

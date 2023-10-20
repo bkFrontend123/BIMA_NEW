@@ -17,7 +17,9 @@ import progress from '@/assets/css/progress.module.css'
 import UploadIcon from '../component/Icons/Upload';
 import CheckIcon from '../component/Icons/Check';
 import CloseIcon from '../component/Icons/Close';
+import BackArrow from '../component/Icons/BackArrow';
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
+import BackBtnArrow from '../component/Icons/BackBtnArrow';
 import paymentIcon from '../public/payment/bajajFinserv.png';
 
 export default function CommercialCrime_Flow_Payment() {
@@ -76,13 +78,27 @@ export default function CommercialCrime_Flow_Payment() {
             </Head>
             <HeaderPlain
                 talkExpert="true"
+                talkExpertIcon="true"
             />
             <section className='paymentBlock sectionPadding py-4 py-md-5'>
                 <Container>
                     <Row className='justify-content-center'>
-                        <Col xl={11} xxl={10}>
+                        <Col xl={11} xxl={11}>
                             <Row className='g-4 g-xl-5'>
-                                <Col lg className='order2'>
+                                <Col lg={8} className='order2'>
+                                    <div className="d-flex mb-4">
+                                        <Link
+                                            href={"/all_policies"}
+                                            className="btnCommon btnSmall btnBorder border-primary d-flex justify-content-center"
+                                        >
+                                            <BackArrow
+                                                iconColor="primary"
+                                                width="22"
+                                                height="8"
+                                            />
+                                            <span className="ms-2">Back to Quotes</span>
+                                        </Link>
+                                    </div>
                                     <div className={`mb-4 ${progress.pymntPrgrsDiv}`}>
                                         <span>20% Complete</span>
                                         <p>Shield your business with certainty! Complete your profile now to unlock personalized coverage that fits your requirements.</p>
@@ -191,20 +207,20 @@ export default function CommercialCrime_Flow_Payment() {
                                                             </Col>
                                                         </Row>
                                                     </div>
-                                                    <Row className='align-items-center'>
-                                                        <Col>
-                                                            <div className={`${form.fromButtonDiv}`}>
+                                                    <div className={`${form.fromButtonDiv}`}>
+                                                        <div className='d-flex align-items-center justify-content-between gap-2'>
+                                                            <Col sm></Col>
+                                                            <Col sm="auto">
                                                                 <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={handleBusinessDetailsToggle}>
-                                                                    <span className='me-2'>Continue</span>
+                                                                    <span className='me-2'>Submit</span>
                                                                     <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                                                 </Button>
-                                                            </div>
-                                                            <div className={`${form.frmftr} ${form.brownText} mt-4`}>
-                                                                <p>Please Continue to complete your payment, fill your Proposal form, upload your documents so the issuing of policy can be initiated</p>
-                                                            </div>
-                                                        </Col>
-                                                        <Col lg={4}></Col>
-                                                    </Row>
+                                                            </Col>
+                                                        </div>
+                                                    </div>
+                                                    <div className={`${form.frmftr} ${form.brownText} mt-4`}>
+                                                        <p>Please Continue to complete your payment, fill your Proposal form, upload your documents so the issuing of policy can be initiated</p>
+                                                    </div>
                                                 </Form>
                                             </div>
                                         ): (
@@ -310,27 +326,31 @@ export default function CommercialCrime_Flow_Payment() {
                                                                 </Col>
                                                             </Row>
                                                         </div>
-                                                        <Row className='align-items-center'>
-                                                            <Col>
-                                                                <div className={`${form.fromButtonDiv}`}>
+                                                        <div className={`${form.fromButtonDiv}`}>
+                                                            <div className='d-flex align-items-center justify-content-between gap-2'>
+                                                                <Col sm>
+                                                                    <Button variant="primary" className={`btnCommon greyBtn btnBorder border-primary ${form.formBtn}`} type="button" onClick={handleBusinessDetailsToggle}>
+                                                                        <BackBtnArrow iconColor="primary" width="27" height="16" />
+                                                                    </Button>
+                                                                </Col>
+                                                                <Col sm="auto">
                                                                     <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToNextPage}>
                                                                         <span className='me-2'>Submit</span>
                                                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                                                     </Button>
-                                                                </div>
-                                                                <div className={`${form.frmftr} ${form.brownText} mt-4`}>
-                                                                    <p>Please Continue to complete your payment, fill your Proposal form, upload your documents so the issuing of policy can be initiated</p>
-                                                                </div>
-                                                            </Col>
-                                                            <Col lg={4}></Col>
-                                                        </Row>
+                                                                </Col>
+                                                            </div>
+                                                        </div>
+                                                        <div className={`${form.frmftr} ${form.brownText} mt-4`}>
+                                                            <p>Please Continue to complete your payment, fill your Proposal form, upload your documents so the issuing of policy can be initiated</p>
+                                                        </div>
                                                     </Form>
                                                 </div>
                                             </>
                                         )}
                                     </div>
                                 </Col>
-                                <Col lg="auto">
+                                <Col lg={4}>
                                     <PaymentCard
                                         paymentIcon={paymentIcon}
                                         policyName="Commercial Crime Insurance"
