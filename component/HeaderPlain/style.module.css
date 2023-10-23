@@ -382,7 +382,7 @@ button.btnSmall {
         height: 40px !important;
         border-width: 2px;
     }
-    .hdrTlkExprt > div > div:last-child {
+    .hdrTlkExprt > div:first-child > div:last-child {
         display: none;
     }
 }
