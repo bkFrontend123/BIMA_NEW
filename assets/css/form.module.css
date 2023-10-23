@@ -586,12 +586,12 @@
         display: block;
     }
     .commonForm .formLabel {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 22px;
     }
     .commonForm .formInput,
     .commonForm .formSelect {
-        font-size: 15px;
+        font-size: 14px;
         height: 54px;
         padding: 8px 16px;
     }
@@ -601,32 +601,36 @@
     }
     .formLabel,
     .formCheckLabel {
-        font-size: 15px;
+        font-size: 14px;
     }
     .formCheckRadio {
         margin-right: 8px;
     }
     .formCheckRadio label {
-        font-size: 14.5px;
-        padding: 8px 10px 8px 35px;
+        font-size: 14px;
+        padding: 8px 8px 8px 30px;
     }
     .formCheckRadio label::before {
-        width: 18px;
-        height: 18px;
-        left: 8px;
-        top: 11px;
+        width: 16px;
+        height: 16px;
+        left: 7px;
+        top: 12px;
     }
     .formCheckRadio label::after {
-        width: 10px;
-        height: 10px;
-        left: 12px;
-        top: 15px;
+        width: 8px;
+        height: 8px;
+        left: 11px;
+        top: 16px;
+    }
+    .formCheckFillRadio label {
+        font-size: 14px;
+        padding: 8px 16px 8px 16px;
     }
     .formEditField {
         padding: 13px 16px;
     }
     .formEditField span {
-        font-size: 15px;
+        font-size: 14px;
     }
     .fromButtonDiv button {
         width: 100%;

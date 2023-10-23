@@ -1,3 +1,6 @@
+.floatFormGroup .form-floating {
+    display: grid;
+}
 .floatFormGroup .form-floating > label {
     background: var(--whiteBg);
     left: 10px;
@@ -88,11 +91,23 @@
         left: 6px;
         top: 16px;
         font-size: 14px;
+        position: static;
+        text-overflow: unset;
+        overflow: visible;
+        white-space: unset;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+        color: var(--vt-c-blue);
     }
     .floatFormGroup .form-floating > .form-control:focus ~ label,
     .floatFormGroup .form-floating > .form-control:not(:placeholder-shown) ~ label,
     .floatFormGroup .form-floating > .form-select ~ label {
-        transform: scale(1) translateY(-27px) translateX(0);
+        transform: scale(1) translateY(0) translateX(0);
+    }
+    .floatFormGroup input {
+        order: 2;
     }
     .floatFormGroup.tooltipDiv input {
         padding-right: 50px;
@@ -102,16 +117,18 @@
     }
     .floatRuppeIconGroup .form-floating::before {
         left: 18px;
-        top: 15px;
+        top: inherit;
         font-size: 16px;
         padding-right: 12px;
+        bottom: 15px;
     }
     .floatPhoneIconGroup .form-floating input {
         padding-left: 60px;
     }
     .floatPhoneIconGroup .form-floating::before {
         left: 18px;
-        top: 16px;
+        top: inherit;
         font-size: 16px;
+        bottom: 16px;
     }
 }

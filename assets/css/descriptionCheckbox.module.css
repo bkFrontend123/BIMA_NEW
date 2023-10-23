@@ -168,3 +168,17 @@
     min-width: 24px;
 }
 /***Description Checkbox Without Icon Css End***/
+
+
+@media (max-width:767px) {
+    .desCheckNewBtn label {
+        padding-left: 30px;
+    }
+    .desCheckNewBtn label h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .desCheckNewBottom {
+        padding-left: 30px;
+    }
+}

@@ -55,7 +55,9 @@
 @media (max-width:767px) {
     .tooltipDiv .tooltipIcon {
         right: 27px;
-        top: 14px;
+        top: inherit;
+        bottom: 16px;
+        z-index: 3;
     }
     .floatFormGroup.tooltipDiv .tooltipIcon {
         right: 16px;

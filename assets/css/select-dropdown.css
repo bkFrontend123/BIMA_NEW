@@ -334,14 +334,43 @@
 }
 
 @media (max-width:767px) {
+    .selectDropDiv {
+        display: grid;
+    }
     .selectDropFilterDiv.selectDropDiv {
         display: block;
+    }
+    .selectDropDiv .select-search-container {
+        order: 2;
+    }
+    .selectDropDiv .select-search-container::before {
+        background: var(--whiteBg);
+        position: absolute;
+        content: "Select";
+        font-size: 14px;
+        color: var(--vt-c-grayLight3);
+        font-family: 'Galano Grotesque', sans-serif;
+        font-weight: 500;
+        top: 18px;
+        left: 12px;
+        width: 80%;
+        pointer-events: none;
+        z-index: 2;
+    }
+    .selectDropDiv .select-search-container.select-search-has-focus::before {
+        display: none;
     }
     .selectDropDiv label {
         left: 4px;
         top: 19px;
-        font-size: 13.5px;
+        font-size: 14px;
         padding: 0 0 0 8px;
+        position: static;
+        padding: 0;
+        max-width: 100%;
+        margin-bottom: 10px;
+        white-space: unset;
+        color: var(--vt-c-blue);
     }
     .searchDropDiv .select-search-value::before {
         top: 21px;
@@ -396,6 +425,7 @@
     }
     .selectDropDiv .select-search-container:not(.select-search-is-multiple) .select-search-select {
         top: 53px;
+        z-index: 3;
     }
     .selectDropDiv .select-search-select {
         max-height: 180px;
