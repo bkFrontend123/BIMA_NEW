@@ -95,6 +95,9 @@
 }
 
 @media (max-width:767px) {
+    .plcyCompShow {
+        display: none;
+    }
     .plcyCompCol {
         background: var(--whiteBg);
         left: 0;
