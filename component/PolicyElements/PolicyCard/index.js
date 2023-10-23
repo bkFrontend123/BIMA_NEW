@@ -9,6 +9,8 @@ import list from '@/assets/css/list.module.css'
 import offcanvas from '@/assets/css/offcanvas.module.css'
 import commonTabs from '@/assets/css/commonTabs.module.css'
 
+import Download from '@/component/Icons/Download';
+
 import instantIcon from '../../../public/icons/instantIcon.png'
 import star from '../../../public/icons/star.svg'
 import arrowRight_white from '../../../public/icons/arrowRight-white.svg'
@@ -88,11 +90,6 @@ export default function PolicyCard(props) {
                                         height={logoHeight}
                                     />
                                 </i>
-                                <div>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
-                                        <span>Download Policy Wordings</span>
-                                    </Button>
-                                </div>
                             </div>
                             <div className={`${style.policyOffcanvasHdrTop}`}>
                                 <div>
@@ -107,6 +104,12 @@ export default function PolicyCard(props) {
                                     <div>
                                         <p>Premium Rs. <span>{policyPremium} <small>+ GST</small></span></p>
                                     </div>
+                                </div>
+                                <div>
+                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
+                                        <Download iconColor="black" width="21" height="16" />
+                                        <span className='ms-2'>Policy Wordings</span>
+                                    </Button>
                                 </div>
                             </div>
                         </div>
