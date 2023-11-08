@@ -54,7 +54,8 @@ export default function Policies() {
       title: "Directors & Officers",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
+      sumInsured: "1 Crore",
+      valueOfSumInsured: "1,00,00,000.00",
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
@@ -66,7 +67,8 @@ export default function Policies() {
       title: "Errors & Omissions",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
+      sumInsured: "1 Crore",
+      valueOfSumInsured: "1,00,00,000.00",
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
@@ -79,7 +81,8 @@ export default function Policies() {
       title: "Product Liability",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
+      sumInsured: "1 Crore",
+      valueOfSumInsured: "1,00,00,000.00",
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
@@ -94,7 +97,8 @@ export default function Policies() {
       title: "Fire Insurance",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
+      sumInsured: "1 Crore",
+      valueOfSumInsured: "1,00,00,000.00",
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
@@ -106,7 +110,8 @@ export default function Policies() {
       title: "Machinery Breakdown",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
+      sumInsured: "1 Crore",
+      valueOfSumInsured: "1,00,00,000.00",
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
@@ -118,7 +123,8 @@ export default function Policies() {
       title: "FLOP",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
+      sumInsured: "1 Crore",
+      valueOfSumInsured: "1,00,00,000.00",
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
@@ -134,7 +140,8 @@ export default function Policies() {
       title: "Marine Transit Policy",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
+      sumInsured: "1 Crore",
+      valueOfSumInsured: "1,00,00,000.00",
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
@@ -151,7 +158,8 @@ export default function Policies() {
       title: "Single Transit Policy",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
+      sumInsured: "1 Crore",
+      valueOfSumInsured: "1,00,00,000.00",
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
@@ -168,7 +176,8 @@ export default function Policies() {
       title: "Single Transit Policy",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
+      sumInsured: "1 Crore",
+      valueOfSumInsured: "1,00,00,000.00",
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
@@ -185,7 +194,8 @@ export default function Policies() {
       title: "Sales Turnover Policy",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
-      limitLiability: "1 Crore",
+      sumInsured: "1 Crore",
+      valueOfSumInsured: "1,00,00,000.00",
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
@@ -269,7 +279,8 @@ export default function Policies() {
                 productGroupName="Liability Insurance"
                 insurerLogo={item.insurerLogo}
                 insurerName={item.insurerName}
-                limitLiability={item.limitLiability}
+                sumInsured={item.sumInsured}
+                valueOfSumInsured={item.valueOfSumInsured}
                 policyPremium={item.policyPremium}
                 policyNumber={item.policyNumber}
                 policyPeriod={item.policyPeriod}
@@ -326,7 +337,8 @@ export default function Policies() {
                 productGroupName="Asset Insurance"
                 insurerLogo={item.insurerLogo}
                 insurerName={item.insurerName}
-                limitLiability={item.limitLiability}
+                sumInsured={item.sumInsured}
+                valueOfSumInsured={item.valueOfSumInsured}
                 policyPremium={item.policyPremium}
                 policyNumber={item.policyNumber}
                 policyPeriod={item.policyPeriod}
@@ -383,7 +395,8 @@ export default function Policies() {
                 productGroupName="Marine Insurance"
                 insurerLogo={item.insurerLogo}
                 insurerName={item.insurerName}
-                limitLiability={item.limitLiability}
+                sumInsured={item.sumInsured}
+                valueOfSumInsured={item.valueOfSumInsured}
                 policyPremium={item.policyPremium}
                 policyNumber={item.policyNumber}
                 policyPeriod={item.policyPeriod}
