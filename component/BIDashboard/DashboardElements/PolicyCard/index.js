@@ -9,6 +9,7 @@ import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
 import GetHelp from '@/component/BIDashboard/DashboardElements/GetHelp';
 
 import DropdownArrowIcon from "@/component/BIDashboard/Icons/IconDropdownArrow";
+import TooltipIcon from "@/component/BIDashboard/Icons/IconTooltip";
 import CopyIcon from "@/component/BIDashboard/Icons/IconCopy";
 import UploadIcon from "@/component/BIDashboard/Icons/IconUpload";
 import ClockIcon from "@/component/BIDashboard/Icons/IconClock";
@@ -19,7 +20,7 @@ import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/st
 import downloadStyle from '@/assets/css/downloadDropdown.module.css';
 
 export default function PolicyCard(props) {
-  const {icon, title, statusType, expireDays, insurerLogo, insurerName, productGroupName, limitLiability, policyPremium, policyNumber, policyPeriod, decalrationType, valueOfDecalration, statusOfDecalration, valueOfCD, statusOfCD, children} = props;
+  const {icon, title, statusType, expireDays, insurerLogo, insurerName, productGroupName, sumInsured, valueOfSumInsured, policyPremium, policyNumber, policyPeriod, decalrationType, valueOfDecalration, statusOfDecalration, valueOfCD, statusOfCD, children} = props;
 
   const [isActive, setActive] = useState(true);
   const handleClick = () => {
@@ -98,7 +99,7 @@ export default function PolicyCard(props) {
               <Col xs={6}>
                 <ul>
                   <li>
-                    <p><strong>₹{limitLiability}</strong> Limit of Liability</p>
+                    <p><strong>₹{sumInsured} <i><TooltipIcon /> <em>₹{valueOfSumInsured}</em></i></strong> Sum Insured</p>
                   </li>
                   <li>
                     <p><strong>{policyNumber} <span onClick={copyToClipboard}><CopyIcon /></span></strong> Policy Number</p>

@@ -207,6 +207,51 @@
     margin: 0;
 }
 
+.policyCardList p i {
+    color: var(--vt-c-grayLight3);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.policyCardList p i em {
+    position: absolute;
+    background-color: var(--mute1);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--vt-c-yellowActive);
+    font-style: normal;
+    line-height: 20px;
+    padding: 0 8px;
+    border: 1px solid var(--vt-c-yellowActive);
+    border-radius: 2px;
+    margin-left: 9px;
+    margin-top: 6px;
+    display: none;
+}
+
+.policyCardList p i em::before {
+    position: absolute;
+    background-color: var(--mute1);
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--vt-c-yellowActive);
+    border-right: 0;
+    border-top: 0;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    margin-left: -13px;
+    margin-top: 6px;
+}
+
+.policyCardList p i:hover {
+    color: var(--vt-c-yellowActive);
+}
+
+.policyCardList p i:hover em {
+    display: inline;
+}
+
 .policyCardList p small {
     color: var(--vt-c-grayLight3);
 }
