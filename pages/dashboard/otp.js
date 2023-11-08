@@ -43,16 +43,16 @@ export default function OTP() {
             </Form.Group>
           </Form>
           <div className={`${loginLayoutStyle.loginButton}`}>
-            <Row className='align-items-center'>
-              <Col md>
+            <Row className='align-items-center g-2 g-sm-4'>
+              <Col xs md={6}>
                 <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button" onClick={goToDashboardPage}>
                   <span className='me-2'>Confirm OTP</span>
                   <SubscribeArrow iconColor="black stroke" width="21" height="16" />
                 </Button>
               </Col>
-              <Col md>
+              <Col xs="auto" md={6}>
                 <LinkItem
-                  title="Change email"
+                  title="Edit email"
                   href="/dashboard/login"
                   center="true"
                 />

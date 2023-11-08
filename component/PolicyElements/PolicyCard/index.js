@@ -31,11 +31,13 @@ export default function PolicyCard(props) {
                 </div>*/}
                 <div className={`${style.policyCardHdr}`}>
                     <i>
-                        <Image
-                            src={policyLogo}
-                            alt={title}
-                            className={`${style.policyCardLogo}`}
-                        />
+                        <Link href={policyLogo} className={`${style.policyCardLogoLink}`}>
+                            <Image
+                                src={policyLogo}
+                                alt={title}
+                                className={`${style.policyCardLogo}`}
+                            />
+                        </Link>
                     </i>
                     <h4>{title}</h4>
                     <p><Image src={star} alt="star" /> Star Features</p>

@@ -2,7 +2,7 @@
   --vt-c-blue: #0E2B72;
   --vt-c-blueDark: #071639;
   --vt-c-blueDark1: #050F28;
-  --vt-c-blueSky: #1869f6;
+  --vt-c-blueSky: #1869F4;
   --vt-c-blueSkyHover: #4287FF;
   --vt-c-blueSkyLight: #5177D4;
   --vt-c-blueSkyLight1: #DBDFEA;
@@ -35,11 +35,14 @@
   --clr-border: #0E2B72;
   --AnimationLength: 0px;
 
-  --liabilityColor: #00AB82;
-  --liabilityBg: #E6F7F3;
+  --liabilityColor: #1869F4;
+  --liabilityBg: #E8F0FE;
 
-  --assetColor: #55D5FE;
-  --assetBg: #E5F9FF;
+  --assetColor: #1869F4;
+  --assetBg: #E8F0FE;
+
+  --marineColor: #00AB82;
+  --marineBg: #E6F7F3;
 
   --statusGreenColor: #0FB600;
   --statusGreenBg: #DDF7E2;

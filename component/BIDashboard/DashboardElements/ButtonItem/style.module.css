@@ -23,6 +23,9 @@
     line-height: 58px;
 }
 
+.smallWidth.btnCommon {
+    width: 140px !important;
+}
 .minWidth.btnCommon {
     min-width: 160px;
 }
@@ -58,6 +61,23 @@
     color: var(--black);
 }
 
+.btnBlue.btnCommon {
+    background: var(--vt-c-blue);
+    color: var(--whiteText);
+}
+
+.btnSky.btnCommon {
+    background: var(--vt-c-blueExtraLight1);
+    color: var(--vt-c-blue);
+}
+
+.btnDashCard.btnCommon {
+    font-size: 14px;
+    line-height: 42px;
+    border: 1px solid var(--vt-c-blueSkyLight2);
+    border-radius: 4px;
+}
+
 .btnCommon .iconRight {
     margin-left: 6px;
     transition: all 0.4s ease 0s;
@@ -90,6 +110,17 @@
     background: var(--vt-c-yellow);
     color: var(--black);
     box-shadow: 0px 8px 30px rgba(255, 81, 0, 0.2);
+}
+
+.btnBlue.btnCommon:hover {
+    background: var(--vt-c-blue);
+    color: var(--whiteText);
+    box-shadow: 0 8px 30px 0 rgba(0,0,0,0.2);
+}
+
+.btnSky.btnCommon:hover {
+    background: var(--vt-c-blue);
+    color: var(--whiteText);
 }
 
 .btnGray.btnCommon {
@@ -285,6 +316,9 @@
         padding: 0 !important;
     }
 
+    .smallWidth.btnCommon {
+        width: 130px !important;
+    }
     .minWidth.btnCommon {
         min-width: 140px;
     }

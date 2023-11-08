@@ -63,7 +63,7 @@ export default function Policies() {
     {
       id: "2",
       icon: "/productIcons/liability/eAndO_icon.svg",
-      title: "Errors & Omissions quote",
+      title: "Errors & Omissions",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
       limitLiability: "1 Crore",
@@ -76,14 +76,14 @@ export default function Policies() {
     {
       id: "3",
       icon: "/productIcons/liability/productLiability_icon.svg",
-      title: "Product Liability quote",
+      title: "Product Liability",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
       limitLiability: "1 Crore",
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
-      statusType: "confirm"
+      statusType: "expired"
     },
   ])
 
@@ -98,12 +98,24 @@ export default function Policies() {
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
-      statusType: "pending"
+      statusType: "expired"
     },
     {
       id: "2",
       icon: "/productIcons/asset/fire_icon.svg",
-      title: "Fire Insurance",
+      title: "Machinery Breakdown",
+      insurerLogo: "/policyLogos/icici_logo.png",
+      insurerName: "ICICI Lombard",
+      limitLiability: "1 Crore",
+      policyPremium: "30,304",
+      policyNumber: "BKX42787",
+      policyPeriod: "14 Aug 23/13 Aug 24",
+      statusType: "pending",
+    },
+    {
+      id: "3",
+      icon: "/productIcons/asset/fire_icon.svg",
+      title: "FLOP",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
       limitLiability: "1 Crore",
@@ -113,17 +125,76 @@ export default function Policies() {
       statusType: "expiring",
       expireDays: "45"
     },
+  ])
+
+  const marinePolicyData = ([
     {
-      id: "3",
-      icon: "/productIcons/asset/fire_icon.svg",
-      title: "Fire Insurance",
+      id: "1",
+      icon: "/productIcons/marine/marine_icon.svg",
+      title: "Marine Transit Policy",
       insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
       limitLiability: "1 Crore",
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
-      statusType: "expired"
+      decalrationType: "Monthly",
+      valueOfDecalration: "30,304",
+      statusOfDecalration: "upload",
+      valueOfCD: "10,30,304",
+      statusOfCD: "normal",
+      statusType: "pending"
+    },
+    {
+      id: "2",
+      icon: "/productIcons/marine/marine_icon.svg",
+      title: "Single Transit Policy",
+      insurerLogo: "/policyLogos/icici_logo.png",
+      insurerName: "ICICI Lombard",
+      limitLiability: "1 Crore",
+      policyPremium: "30,304",
+      policyNumber: "BKX42787",
+      policyPeriod: "14 Aug 23/13 Aug 24",
+      decalrationType: "Monthly",
+      valueOfDecalration: "30,304",
+      statusOfDecalration: "normal",
+      valueOfCD: "10,30,304",
+      statusOfCD: "topup",
+      statusType: "pending",
+    },
+    {
+      id: "3",
+      icon: "/productIcons/marine/marine_icon.svg",
+      title: "Single Transit Policy",
+      insurerLogo: "/policyLogos/icici_logo.png",
+      insurerName: "ICICI Lombard",
+      limitLiability: "1 Crore",
+      policyPremium: "30,304",
+      policyNumber: "BKX42787",
+      policyPeriod: "14 Aug 23/13 Aug 24",
+      decalrationType: "Monthly",
+      valueOfDecalration: "30,304",
+      statusOfDecalration: "pending",
+      valueOfCD: "10,30,304",
+      statusOfCD: "pending",
+      statusType: "expired",
+    },
+    {
+      id: "4",
+      icon: "/productIcons/marine/marine_icon.svg",
+      title: "Sales Turnover Policy",
+      insurerLogo: "/policyLogos/icici_logo.png",
+      insurerName: "ICICI Lombard",
+      limitLiability: "1 Crore",
+      policyPremium: "30,304",
+      policyNumber: "BKX42787",
+      policyPeriod: "14 Aug 23/13 Aug 24",
+      decalrationType: "Monthly",
+      valueOfDecalration: "30,304",
+      statusOfDecalration: "success",
+      valueOfCD: "10,30,304",
+      statusOfCD: "success",
+      statusType: "pending",
     },
   ])
 
@@ -195,7 +266,7 @@ export default function Policies() {
               <PolicyCardItem
                 icon={item.icon}
                 title={item.title}
-                category="liability"
+                productGroupName="Liability Insurance"
                 insurerLogo={item.insurerLogo}
                 insurerName={item.insurerName}
                 limitLiability={item.limitLiability}
@@ -238,6 +309,7 @@ export default function Policies() {
             </Col>
           )}
         </Row>
+
         <Row className="g-4 g-xl-4 align-items-center justify-space-between mb-4 mt-0">
           <Col xl>
             <DashboardHeadingItem
@@ -251,7 +323,7 @@ export default function Policies() {
               <PolicyCardItem
                 icon={item.icon}
                 title={item.title}
-                category="asset"
+                productGroupName="Asset Insurance"
                 insurerLogo={item.insurerLogo}
                 insurerName={item.insurerName}
                 limitLiability={item.limitLiability}
@@ -294,6 +366,69 @@ export default function Policies() {
             </Col>
           )}
         </Row>
+
+        <Row className="g-4 g-xl-4 align-items-center justify-space-between mb-4 mt-0">
+          <Col xl>
+            <DashboardHeadingItem
+              title="Marine Insurance"
+            />
+          </Col>
+        </Row>
+        <Row className='g-4 g-lg-4'>
+          {marinePolicyData.map((item) =>
+            <Col lg={6} xl={4} key={item.id}>
+              <PolicyCardItem
+                icon={item.icon}
+                title={item.title}
+                productGroupName="Marine Insurance"
+                insurerLogo={item.insurerLogo}
+                insurerName={item.insurerName}
+                limitLiability={item.limitLiability}
+                policyPremium={item.policyPremium}
+                policyNumber={item.policyNumber}
+                policyPeriod={item.policyPeriod}
+                decalrationType={item.decalrationType}
+                valueOfDecalration={item.valueOfDecalration}
+                statusOfDecalration={item.statusOfDecalration}
+                valueOfCD={item.valueOfCD}
+                statusOfCD={item.statusOfCD}
+                statusType={item.statusType}
+                expireDays={item.expireDays}
+              >
+                {item.statusType === "pending" && (
+                  <Row className="g-3 justify-content-center">
+                    <Col xxl={10} xl={10} lg={12}>
+                      <ButtonItem
+                        title="Fill Proposal Form"
+                        type="submit"
+                        iconPosition="right"
+                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                      >
+                        <ArrowPrimaryIcon />
+                      </ButtonItem>
+                    </Col>
+                  </Row>
+                )}
+                {item.statusType === "expiring" && (
+                  <Row className="g-3 justify-content-center">
+                    <Col xxl={10} xl={10} lg={12}>
+                      <ButtonItem
+                        title="Renew Policy"
+                        type="submit"
+                        iconPosition="right"
+                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                      >
+                        <ArrowPrimaryIcon />
+                      </ButtonItem>
+                      <p>Make sure to renew your policy before it gets lapse. Talk to an expert of any help.</p>
+                    </Col>
+                  </Row>
+                )}
+              </PolicyCardItem>
+            </Col>
+          )}
+        </Row>
+
         <Row>
           <Col lg={6} xl={4}>
             <NoItemCard

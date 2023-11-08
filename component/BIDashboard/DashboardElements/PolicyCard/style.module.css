@@ -8,6 +8,10 @@
     border-color: var(--vt-c-blueSky);
 }
 
+.policyCardCol.expirePolicyCardCol {
+    background: transparent;
+}
+
 .policyCardTtl {
     position: relative;
 }
@@ -62,7 +66,7 @@
     color: var(--vt-c-black);
     font-weight: 600;
     text-transform: uppercase;
-    border: 1px solid var(--vt-c-gray);
+    border: 1px solid var(--vt-c-grayLight3);
     display: inline-block;
 }
 
@@ -78,8 +82,15 @@
     border-color: var(--assetColor);
 }
 
+.marineCat.policyCardCat {
+    background-color: var(--marineBg);
+    color: var(--marineColor);
+    border-color: var(--marineColor);
+}
+
 .expirePolicyCardCol .liabilityCat.policyCardCat,
-.expirePolicyCardCol .assetCat.policyCardCat {
+.expirePolicyCardCol .assetCat.policyCardCat,
+.expirePolicyCardCol .marineCat.policyCardCat {
     background-color: var(--vt-c-gray);
     color: var(--gray);
     border-color: var(--gray);
@@ -183,14 +194,14 @@
 }
 
 .policyCardList ul li {
-    float: left;
-    width: 50%;
+    /*float: left;
+    width: 50%;*/
     padding: 0 6px;
     margin-top: 16px;
 }
 
 .policyCardList p {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--vt-c-blueSkyLight2);
     font-weight: 500;
     margin: 0;
@@ -208,18 +219,33 @@
     color: var(--black);
 }
 
+.policyCardList p strong.redText {
+    color: var(--error);
+}
+.policyCardList p strong.greenText {
+    color: var(--success);
+}
+.policyCardList p strong.grayText {
+    color: var(--gray);
+}
+
 .policyCardList p strong span {
     cursor: pointer;
     position: relative;
     top: -4px;
 }
 
-.policyCardList ul li:nth-child(2) p strong {
+.policyCardList > div > div:nth-child(2) ul li:nth-child(2) p strong {
     font-size: 16px;
 }
 
 .policyCardDwnload {
     margin-top: 1rem;
+}
+
+.expirePolicyCardCol .policyCardDwnload button {
+    background-color: var(--vt-c-gray);
+    pointer-events: none;
 }
 
 .policyCardInfo {
@@ -264,14 +290,14 @@
     }
 
     .policyCardList p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .policyCardList p strong {
         font-size: 17px;
     }
 
-    .policyCardList ul li:nth-child(2) p strong {
+    .policyCardList ul li:nth-child(4) p strong {
         font-size: 15px;
     }
 
