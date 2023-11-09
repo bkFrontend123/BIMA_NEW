@@ -1,0 +1,51 @@
+.fileUploadTabs {
+    border: 0;
+    border-bottom: 1px solid var(--border-mute);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+.fileUploadTabs li {
+    border: 0;
+}
+.fileUploadTabs li button {
+    font-size: 14px;
+    line-height: 34px;
+    color: var(--vt-c-blue) !important;
+    font-weight: 500;
+    background: var(--mute3) !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: transparent !important;
+    padding: 0 24px;
+    border-radius: 2px !important;
+    margin-bottom: 0 !important;
+}
+@media (max-width:1699px) {
+    
+}
+
+@media (max-width:1399px) {
+    .fileUploadTabs li button {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width:1199px) {
+    
+}
+
+@media (max-width:991px) {
+    
+}
+
+@media (max-width:767px) {
+    .fileUploadTabs li button {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}

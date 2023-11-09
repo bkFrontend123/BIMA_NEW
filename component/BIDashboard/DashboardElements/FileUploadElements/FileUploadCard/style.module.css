@@ -1,0 +1,58 @@
+.fileUpldCol {
+    padding: 36px;
+    border: 2px solid var(--vt-c-grayLight3);
+    border-radius: 10px;
+    min-height: 100%;
+}
+.fileUpldCol.fileUpldSuccessCol {
+    background-color: var(--successBg);
+    border-color: var(--success);
+}
+.fileUpldCol.fileUpldErrorCol {
+    background-color: var(--errorBg);
+    border-color: var(--error);
+}
+.fileUpldHdr h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--vt-c-blue);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 12px;
+}
+.fileUpldSuccessCol .fileUpldHdr h4 {
+    color: var(--success);
+}
+.fileUpldErrorCol .fileUpldHdr h4 {
+    color: var(--error);
+}
+.fileUpldHdr p {
+    font-size: 13px;
+    color: var(--gray);
+    font-weight: 500;
+    margin: 0;
+}
+.fileUpldBody {
+    margin-top: 20px;
+}
+.fileUpldInfo + .fileUpldInfo {
+    margin-top: 20px;
+}
+.fileUpldInfo p {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+}
+.fileUpldInfo h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--vt-c-blue);
+    margin: 0;
+}
+
+@media (max-width: 1699px) {
+    .fileUpldCol {
+        padding: 32px;
+    }
+}

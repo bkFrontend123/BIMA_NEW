@@ -1,0 +1,15 @@
+.fileUpldText {
+    border-top: 1px solid var(--border-mute);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.fileUpldText p {
+    font-size: 16px;
+    color: var(--disable);
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0;
+}
+.fileUpldText p span {
+    color: var(--vt-c-blueSky);
+}

@@ -1,0 +1,45 @@
+.fileUpldBtn {
+    background-color: var(--mute3);
+    font-size: 14px;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+    padding: 5px 12px;
+    cursor: pointer;
+    border: 1px solid var(--mute3);
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
+    align-items: center;
+    display: inline-flex;
+    gap: 0.4rem;
+}
+
+.fileUpldBtn:focus,
+.fileUpldBtn:active:focus {
+    box-shadow: none;
+}
+
+.fileUpldBtn:hover {
+    background-color: var(--mute3);
+    color: var(--vt-c-blue);
+    border-color: var(--mute3);
+}
+
+.fileUpldBtn.filled,
+.fileUpldBtn.filled:hover {
+    background-color: var(--whiteBg);
+    border-color: var(--successBorder);
+    color: var(--activeColor);
+}
+
+.fileUpldBtn.active,
+.fileUpldBtn.active:hover {
+    background-color: var(--mute1);
+    border-color: var(--warning);
+    color: var(--warning);
+}
+
+.fileUpldBtn i {
+    position: relative;
+    top: -2px;
+}
