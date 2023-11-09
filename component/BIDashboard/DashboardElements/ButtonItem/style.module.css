@@ -247,6 +247,17 @@
     left: 0;
 }
 
+.btnDisabled1.btnCommon,
+.btnDisabled1.btnCommon:hover {
+    background-color: var(--vt-c-gray);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btnDisabled1.btnCommon:hover .iconRight {
+    left: 0;
+}
+
 .noIcon i {
     display: none !important;
 }

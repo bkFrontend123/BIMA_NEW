@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { useRouter } from 'next/router';
 import Head from 'next/head'
 
 import {Row, Col, Form} from 'react-bootstrap';
@@ -18,13 +19,8 @@ import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
 export default function Policies() {
-
-  const [filterYearValue, setFilterYearValue] = useState();
-  const filterYearOptions = [
-      {name: '2021-2022', value: '1'},
-      {name: '2022-2023', value: '2'},
-      {name: '2023-2024', value: '3'},
-  ];
+  
+  const router = useRouter();
 
   const [filterPolicyStatusValue, setFilterPolicyStatusValue] = useState();
   const filterPolicyStatusOptions = [
@@ -204,9 +200,13 @@ export default function Policies() {
       statusOfDecalration: "success",
       valueOfCD: "10,30,304",
       statusOfCD: "success",
-      statusType: "pending",
+      statusType: "confirm",
     },
   ])
+
+  const goToFlowPage = () => {
+    router.push('/errors-and-omissions-flow');
+};
 
   return (
     <>
@@ -231,15 +231,6 @@ export default function Policies() {
             <FilterDropdownCard
               title="Filters"
             >
-              <Form.Group className={`selectDropDiv selectDropFilterDiv ${!filterYearValue == '' ? 'selectedDropDiv' : null}`}>
-                <SelectSearch
-                  options={filterYearOptions}
-                  name="filterYear"
-                  placeholder="Year 2023"
-                  onChange={setFilterYearValue}
-                  value={filterYearValue}
-                />
-              </Form.Group>
               <Form.Group className={`selectDropDiv selectDropFilterDiv ${!filterPolicyStatusValue == '' ? 'selectedDropDiv' : null}`}>
                 <SelectSearch
                   options={filterPolicyStatusOptions}
@@ -291,10 +282,10 @@ export default function Policies() {
                   <Row className="g-3 justify-content-center">
                     <Col xxl={10} xl={10} lg={12}>
                       <ButtonItem
-                        title="Fill Proposal Form"
+                        title="Proposal Form Unavailable"
                         type="submit"
                         iconPosition="right"
-                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                        customClass={`w-100 m-0 px-2  ${buttonStyle.btnGray} ${buttonStyle.btnBig} ${buttonStyle.noIcon} ${buttonStyle.btnDisabled1}`}
                       >
                         <ArrowPrimaryIcon />
                       </ButtonItem>
@@ -309,6 +300,7 @@ export default function Policies() {
                         type="submit"
                         iconPosition="right"
                         customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                        onClick={goToFlowPage}
                       >
                         <ArrowPrimaryIcon />
                       </ButtonItem>
@@ -349,10 +341,10 @@ export default function Policies() {
                   <Row className="g-3 justify-content-center">
                     <Col xxl={10} xl={10} lg={12}>
                       <ButtonItem
-                        title="Fill Proposal Form"
+                        title="Proposal Form Unavailable"
                         type="submit"
                         iconPosition="right"
-                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                        customClass={`w-100 m-0 px-2  ${buttonStyle.btnGray} ${buttonStyle.btnBig} ${buttonStyle.noIcon} ${buttonStyle.btnDisabled1}`}
                       >
                         <ArrowPrimaryIcon />
                       </ButtonItem>
@@ -367,6 +359,7 @@ export default function Policies() {
                         type="submit"
                         iconPosition="right"
                         customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                        onClick={goToFlowPage}
                       >
                         <ArrowPrimaryIcon />
                       </ButtonItem>
@@ -412,10 +405,10 @@ export default function Policies() {
                   <Row className="g-3 justify-content-center">
                     <Col xxl={10} xl={10} lg={12}>
                       <ButtonItem
-                        title="Fill Proposal Form"
+                        title="Proposal Form Unavailable"
                         type="submit"
                         iconPosition="right"
-                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                        customClass={`w-100 m-0 px-2  ${buttonStyle.btnGray} ${buttonStyle.btnBig} ${buttonStyle.noIcon} ${buttonStyle.btnDisabled1}`}
                       >
                         <ArrowPrimaryIcon />
                       </ButtonItem>
@@ -430,6 +423,7 @@ export default function Policies() {
                         type="submit"
                         iconPosition="right"
                         customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                        onClick={goToFlowPage}
                       >
                         <ArrowPrimaryIcon />
                       </ButtonItem>

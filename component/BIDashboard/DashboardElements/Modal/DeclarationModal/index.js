@@ -66,7 +66,7 @@ export default function DeclarationModal(props) {
                                     description="Please select weather you want to upload annually, bi-annually, or monthly. Then, select the option from the drop down."
                                 >
                                     <Tabs
-                                        defaultActiveKey="monthly"
+                                        defaultActiveKey=""
                                         id="fileUploadTabs"
                                         className={`${fileUploadTabs.fileUploadTabs} fileUploadTabs`}
                                     >
@@ -130,11 +130,11 @@ export default function DeclarationModal(props) {
                                                 />
                                                 <FileUploadButton
                                                     title="October"
-                                                    status="active"
+                                                    status="filled"
                                                 />
                                                 <FileUploadButton
                                                     title="November"
-                                                    status=""
+                                                    status="active"
                                                 />
                                                 <FileUploadButton
                                                     title="December"
@@ -157,6 +157,8 @@ export default function DeclarationModal(props) {
                                 <FileUploadCard
                                     title="File Uploaded!"
                                     description="You have successfully uploaded your declaration!"
+                                    typeOfDeclaration="Monthly"
+                                    uploadedFor="November"
                                     fileName="BK_Template(1).xls"
                                     uploadTime="20 August 2023; 10:21 PM"
                                     status="sucess"

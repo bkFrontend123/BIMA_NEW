@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { useRouter } from 'next/router';
 import Image from 'next/image'
 
 import {Row, Col, Dropdown} from 'react-bootstrap';
@@ -25,6 +26,8 @@ import downloadStyle from '@/assets/css/downloadDropdown.module.css';
 export default function PolicyCard(props) {
   const {icon, title, statusType, expireDays, insurerLogo, insurerName, productGroupName, sumInsured, valueOfSumInsured, policyPremium, policyNumber, policyPeriod, decalrationType, valueOfDecalration, statusOfDecalration, valueOfCD, statusOfCD, children} = props;
 
+  const router = useRouter();
+  
   const [isActive, setActive] = useState(true);
   const handleClick = () => {
     setActive(!isActive);
@@ -44,6 +47,10 @@ export default function PolicyCard(props) {
   const [showDeclaration, setShowDeclaration] = useState(false);
   const handleCloseDeclaration = () => setShowDeclaration(false);
   const handleShowDeclaration = () => setShowDeclaration(true);
+
+  const goToRequestsPage = () => {
+      router.push('/dashboard/requests');
+  };
 
   const [showEndorsement, setShowEndorsement] = useState(false);
   const handleCloseEndorsement = () => setShowEndorsement(false);
@@ -337,6 +344,7 @@ export default function PolicyCard(props) {
                               type="button"
                               iconPosition="right"
                               customClass={`m-0 mt-2 ${buttonStyle.btnSky} ${buttonStyle.btnDashCard} ${buttonStyle.minWidth}`}
+                              onClick={goToRequestsPage}
                             >
                               <ClockIcon />
                             </ButtonItem>
@@ -383,6 +391,7 @@ export default function PolicyCard(props) {
                             type="button"
                             iconPosition="right"
                             customClass={`m-0 mt-2 ${buttonStyle.btnBlue} ${buttonStyle.btnDashCard} ${buttonStyle.minWidth}`}
+                            onClick={goToRequestsPage}
                           >
                             <ClockIcon />
                           </ButtonItem>
@@ -398,6 +407,7 @@ export default function PolicyCard(props) {
                             type="button"
                             iconPosition="right"
                             customClass={`m-0 mt-2 ${buttonStyle.btnSky} ${buttonStyle.btnDashCard} ${buttonStyle.minWidth}`}
+                            onClick={goToRequestsPage}
                           >
                             <ClockIcon />
                           </ButtonItem>

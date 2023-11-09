@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 
-import excelIcon from '@/public/Icons/excel_icon.png';
+import excelIcon from '../../../../../public/Icons/excel_icon.png';
 
 import style from './style.module.css'
 
 export default function FileUploadCard(props) {
-  const {title, fileName, uploadTime, description, status, children} = props;
+  const {title, typeOfDeclaration, uploadedFor, fileName, uploadTime, description, status, children} = props;
 
   return (
     <>
@@ -16,6 +16,22 @@ export default function FileUploadCard(props) {
             <p>{description}</p>
         </div>
         <div className={style.fileUpldBody}>
+          {typeOfDeclaration ? (
+            <div className={style.fileUpldInfo}>
+              <p>Declaration Type</p>
+              <h6>{typeOfDeclaration}</h6>
+            </div>
+          ):(
+            null
+          )}
+          {uploadedFor ? (
+            <div className={style.fileUpldInfo}>
+              <p>Uploaded for</p>
+              <h6>{uploadedFor}</h6>
+            </div>
+          ):(
+            null
+          )}
           {fileName ? (
             <div className={style.fileUpldInfo}>
               <p>File Name</p>
