@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import excelIcon from '../../../../../public/Icons/excel_icon.png';
+import excelIcon from '@/public/icons/excel_icon.png';
 
 import style from './style.module.css'
 
