@@ -18,6 +18,77 @@
     font-weight: 500;
     margin: 0;
 }
+.dclrtnMdlTtl h4 {
+    font-size: 30px;
+    color: var(--vt-c-blue);
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.dclrtnMdlRule {
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid var(--disable);
+}
+.dclrtnMdlRule h5 {
+    font-size: 16px;
+    color: var(--gray);
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.dclrtnMdlRule ul li {
+    font-size: 14px;
+    color: var(--gray);
+    font-weight: 500;
+    line-height: 20px;
+}
+.dclrtnMdlRule ul li + li {
+    margin-top: 12px;
+}
+.crtfctMdlTtl {
+    margin-bottom: 16px;
+}
+.crtfctMdlTtl h3 {
+    font-size: 36px;
+    color: var(--vt-c-blue);
+    line-height: 42px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.crtfctMdlTtl p {
+    font-size: 16px;
+    color: var(--vt-c-blueSkyLight2);
+    font-weight: 400;
+    margin: 0;
+}
+.crtfctMdlListOuter {
+    padding: 12px;
+    border: 2px solid var(--mute3);
+}
+.crtfctMdlList {
+    max-height: 250px;
+    overflow: auto;
+    padding-right: 15px;
+}
+/* width */
+.crtfctMdlList::-webkit-scrollbar {
+    width: 6px;
+}
+/* Track */
+.crtfctMdlList::-webkit-scrollbar-track {
+    background: var(--vt-c-gray);
+    border-radius: 12px;
+}
+/* Handle */
+.crtfctMdlList::-webkit-scrollbar-thumb {
+    background: var(--vt-c-grayLight3);
+    border-radius: 12px;
+}
+/* Handle on hover */
+.crtfctMdlList::-webkit-scrollbar-thumb:hover {
+    background: var(--greyDark2); 
+}
 
 @media (max-width: 1699px) {
     .welcomeMdlTtl h3 {
@@ -26,6 +97,17 @@
     }
     .welcomeMdlTtl p {
         font-size: 16px;
+    }
+    .dclrtnMdlTtl h4 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .crtfctMdlTtl h3 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .crtfctMdlTtl p {
+        font-size: 14px;
     }
 }
 

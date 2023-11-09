@@ -31,15 +31,14 @@ function handleFormSubmission(dataLayer) {
     lastName: "",
     email: email,
     phone: number,
-    companyname: companyname,
-    product : product,
+    company_name: companyname,
+    product_name : product,
 
     // ...
   };
-  console.log(requestData)
 
   // Make a POST request to the API endpoint
-  fetch('https://api.bimakavach.com/rest/leadsquare/getquote', {
+  fetch('https://api.bimakavach.com/lead-square/lp', {
     method: 'POST',
     mode: "cors",
     Accept : "*/*",
@@ -50,19 +49,13 @@ function handleFormSubmission(dataLayer) {
   })
     .then(async function(response) {
       // Handle the API response
-      if (response.ok && response.status === 200) {
+      if (response.status == 200) {
         thankyou.style.display='block';
         getQuoteForm.style.display='none';
         dataLayer.push({"event": "getQuote"})
-        // Request succeeded, handle the successful response
-        return response.json().then(function(data) {
-          // Process the data returned by the API
-          console.log(data);
-          // You can perform any additional actions here, such as displaying a success message
-        });
       } else {
         // Request failed, handle the error
-        alert('Error: ' + response.status + ' ' + response.statusText);
+        alert("Request failed, Please try again");
       }
     })
     .catch(function(error) {

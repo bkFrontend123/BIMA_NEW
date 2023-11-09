@@ -7,6 +7,9 @@ import copy from "copy-to-clipboard";
 
 import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
 import GetHelp from '@/component/BIDashboard/DashboardElements/GetHelp';
+import DeclarationModal from '@/component/BIDashboard/DashboardElements/Modal/DeclarationModal';
+import CertificateModal from '@/component/BIDashboard/DashboardElements/Modal/CertificateModal';
+import CertificateRadio from '@/component/BIDashboard/DashboardElements/CertificateRadio';
 
 import DropdownArrowIcon from "@/component/BIDashboard/Icons/IconDropdownArrow";
 import TooltipIcon from "@/component/BIDashboard/Icons/IconTooltip";
@@ -36,7 +39,195 @@ export default function PolicyCard(props) {
   const copyToClipboard = () => {
     copy(policyNumber);
     alert(`You have copied policy number "${policyNumber}"`);
-}
+  }
+
+  const [showDeclaration, setShowDeclaration] = useState(false);
+  const handleCloseDeclaration = () => setShowDeclaration(false);
+  const handleShowDeclaration = () => setShowDeclaration(true);
+
+  const [showEndorsement, setShowEndorsement] = useState(false);
+  const handleCloseEndorsement = () => setShowEndorsement(false);
+  const handleShowEndorsement = () => setShowEndorsement(true);
+
+  const [showCertificate, setShowCertificate] = useState(false);
+  const handleCloseCertificate = () => setShowCertificate(false);
+  const handleShowCertificate = () => setShowCertificate(true);
+
+  const endorsementData = ([
+    {
+      id: "1",
+      label: "Endorsement 1; 27 August 2023",
+    },
+    {
+      id: "2",
+      label: "Endorsement 2; 20 August 2023",
+    },
+    {
+      id: "3",
+      label: "Endorsement 3; 12 August 2023",
+    },
+    {
+      id: "4",
+      label: "Endorsement 4; 04 August 2023",
+    },
+    {
+      id: "5",
+      label: "Endorsement 5; 30 July 2023",
+    },
+    {
+      id: "6",
+      label: "Endorsement 6; 21 July 2023",
+    },
+    {
+      id: "7",
+      label: "Endorsement 7; 12 July 2023",
+    },
+    {
+      id: "8",
+      label: "Endorsement 8; 04 July 2023",
+    },
+    {
+      id: "9",
+      label: "Endorsement 9; 30 June 2023",
+    },
+    {
+      id: "10",
+      label: "Endorsement 10; 21 June 2023",
+    },
+    {
+      id: "11",
+      label: "Endorsement 1; 12 June 2023",
+    },
+    {
+      id: "12",
+      label: "Endorsement 2; 04 June 2023",
+    },
+    {
+      id: "13",
+      label: "Endorsement 3; 30 May 2023",
+    },
+    {
+      id: "14",
+      label: "Endorsement 4; 21 May 2023",
+    },
+    {
+      id: "15",
+      label: "Endorsement 5; 12 May 2023",
+    },
+    {
+      id: "16",
+      label: "Endorsement 6; 04 May 2023",
+    },
+    {
+      id: "17",
+      label: "Endorsement 7; 30 April 2023",
+    },
+    {
+      id: "18",
+      label: "Endorsement 8; 21 April 2023",
+    },
+    {
+      id: "19",
+      label: "Endorsement 9; 12 April 2023",
+    },
+    {
+      id: "20",
+      label: "Endorsement 10; 04 April 2023",
+    },
+  ])
+
+  const [endorsementRadioValue, setEndorsementRadioValue] = useState();
+  const handleChangeEndorsementRadio = event => {
+    setEndorsementRadioValue(event.target.value);
+  };
+
+  const certificateData = ([
+    {
+      id: "1",
+      label: "Certificate 1; 27 August 2023",
+    },
+    {
+      id: "2",
+      label: "Certificate 2; 20 August 2023",
+    },
+    {
+      id: "3",
+      label: "Certificate 3; 12 August 2023",
+    },
+    {
+      id: "4",
+      label: "Certificate 4; 04 August 2023",
+    },
+    {
+      id: "5",
+      label: "Certificate 5; 30 July 2023",
+    },
+    {
+      id: "6",
+      label: "Certificate 6; 21 July 2023",
+    },
+    {
+      id: "7",
+      label: "Certificate 7; 12 July 2023",
+    },
+    {
+      id: "8",
+      label: "Certificate 8; 04 July 2023",
+    },
+    {
+      id: "9",
+      label: "Certificate 9; 30 June 2023",
+    },
+    {
+      id: "10",
+      label: "Certificate 10; 21 June 2023",
+    },
+    {
+      id: "11",
+      label: "Certificate 1; 12 June 2023",
+    },
+    {
+      id: "12",
+      label: "Certificate 2; 04 June 2023",
+    },
+    {
+      id: "13",
+      label: "Certificate 3; 30 May 2023",
+    },
+    {
+      id: "14",
+      label: "Certificate 4; 21 May 2023",
+    },
+    {
+      id: "15",
+      label: "Certificate 5; 12 May 2023",
+    },
+    {
+      id: "16",
+      label: "Certificate 6; 04 May 2023",
+    },
+    {
+      id: "17",
+      label: "Certificate 7; 30 April 2023",
+    },
+    {
+      id: "18",
+      label: "Certificate 8; 21 April 2023",
+    },
+    {
+      id: "19",
+      label: "Certificate 9; 12 April 2023",
+    },
+    {
+      id: "20",
+      label: "Certificate 10; 04 April 2023",
+    },
+  ])
+
+  const [certificateRadioValue, setCertificateRadioValue] = useState();
+  const handleChangeCertificateRadio = event => {
+    setCertificateRadioValue(event.target.value);
+  };
 
   return (
     <>
@@ -130,6 +321,7 @@ export default function PolicyCard(props) {
                               type="button"
                               iconPosition="right"
                               customClass={`m-0 mt-2 ${buttonStyle.btnBlue} ${buttonStyle.btnDashCard} ${buttonStyle.smallWidth}`}
+                              onClick={handleShowDeclaration}
                             >
                               <UploadIcon />
                             </ButtonItem>
@@ -246,16 +438,10 @@ export default function PolicyCard(props) {
                   <Dropdown.Menu className={`${downloadStyle.dwnldDropMenu}`}>
                     <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Quote</Dropdown.Item>
                     <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Risk Held Letter</Dropdown.Item>
-
-                    {statusType === 'expiring' || statusType === 'expired' || statusType === 'expired' || statusType === 'confirm' ? (
-                      <>
-                        <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Policy Copy</Dropdown.Item>
-                        <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Tax Invoice</Dropdown.Item>
-                        <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Endorsement Copy</Dropdown.Item>
-                      </>
-                    ):(
-                      null
-                    )}
+                    <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Policy Copy</Dropdown.Item>
+                    <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`}>Tax Invoice</Dropdown.Item>
+                    <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`} onClick={handleShowEndorsement}>Endorsement Copy</Dropdown.Item>
+                    <Dropdown.Item href="" className={`${downloadStyle.dwnldDropMenuItem}`} onClick={handleShowCertificate}>Certificate of Insurance</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
                 )}
@@ -275,6 +461,44 @@ export default function PolicyCard(props) {
           )}
         </div>
       </div>
+      <DeclarationModal
+        show={showDeclaration}
+        handleClose={handleCloseDeclaration}
+      />
+      <CertificateModal
+        title="Endorsement Copy"
+        show={showEndorsement}
+        handleClose={handleCloseEndorsement}
+      >
+        {endorsementData.map(data=>
+          <CertificateRadio
+            id={data.id}
+            name="endorsement"
+            label={data.label}
+            value={data.id}
+            checked={endorsementRadioValue === data.id}
+            onChange={handleChangeEndorsementRadio}
+            key={data.id}
+          />
+        )}
+      </CertificateModal>
+      <CertificateModal
+        title="Certificate of Insurance"
+        show={showCertificate}
+        handleClose={handleCloseCertificate}
+      >
+        {certificateData.map(data=>
+          <CertificateRadio
+            id={data.id}
+            name="certificate"
+            label={data.label}
+            value={data.id}
+            checked={certificateRadioValue === data.id}
+            onChange={handleChangeCertificateRadio}
+            key={data.id}
+          />
+        )}
+      </CertificateModal>
     </>
   )
 }

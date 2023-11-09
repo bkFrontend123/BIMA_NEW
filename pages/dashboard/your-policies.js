@@ -168,7 +168,7 @@ export default function Policies() {
       statusOfDecalration: "normal",
       valueOfCD: "10,30,304",
       statusOfCD: "topup",
-      statusType: "pending",
+      statusType: "expiring",
     },
     {
       id: "3",

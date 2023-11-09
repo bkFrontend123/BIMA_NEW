@@ -32,7 +32,53 @@ jQuery(function($) {
 });
 
 /*************************
-  Cpmpanies Slider
+  Partner Slider
+*************************/
+var swiper = new Swiper('.partnerSlider', {
+  slidesPerView: 8,
+  spaceBetween: 30,
+  centeredSlides: true,
+  speed: 2500,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+// Responsive breakpoints
+  breakpoints: {
+      // when window width is <= 320px
+      320: {
+          slidesPerView: 4,
+          spaceBetween: 30
+      },
+      // when window width is <= 500px
+      500: {
+          slidesPerView: 5,
+          spaceBetween: 30
+      },
+      // when window width is <= 768px
+      768: {
+          slidesPerView: 5,
+          spaceBetween: 30
+      },
+      // when window width is <= 992px
+      992: {
+          slidesPerView: 6,
+          spaceBetween: 30
+      },
+      // when window width is <= 1200px
+      1200: {
+          slidesPerView: 8,
+          spaceBetween: 30
+      }
+  }
+});
+
+/*************************
+  Companies Slider
 *************************/
 var swiper = new Swiper('.companySlider', {
   slidesPerView: 8,

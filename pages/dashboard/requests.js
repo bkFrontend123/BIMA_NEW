@@ -23,9 +23,9 @@ export default function Requests() {
 
   const [policyValue, setPolicyValue] = useState();
   const policyOptions = [
-    { name: 'Directors & Officers <span>(BKX42787)', value: '1' },
-    { name: 'Errors & Omissions quote (BKX42787)', value: '2' },
-    { name: 'Product Liability quote (BKX42787)', value: '3' },
+    { name: 'Directors & Officers (BKX42787)', value: '1' },
+    { name: 'Errors & Omissions (BKX42787)', value: '2' },
+    { name: 'Product Liability (BKX42787)', value: '3' },
   ];
 
   const [requestTypeValue, setRequestTypeValue] = useState();

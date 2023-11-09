@@ -1,1 +1,621 @@
-@media (min-width:576px){.modal-dialog{max-width: 750px}}@media (min-width: 1200px){.animatable{visibility: hidden;-webkit-animation-play-state: paused;-moz-animation-play-state: paused;-ms-animation-play-state: paused;-o-animation-play-state: paused;animation-play-state: paused}.animated{visibility: visible;-webkit-animation-fill-mode: both;-moz-animation-fill-mode: both;-ms-animation-fill-mode: both;-o-animation-fill-mode: both;animation-fill-mode: both;-webkit-animation-duration: 1s;-moz-animation-duration: 1s;-ms-animation-duration: 1s;-o-animation-duration: 1s;animation-duration: 1s;-webkit-animation-play-state: running;-moz-animation-play-state: running;-ms-animation-play-state: running;-o-animation-play-state: running;animation-play-state: running}.proCntntOuter .accordion-button{pointer-events: none}.proCntntOuter .accordion-button::before{display: none}.collapse:not(.show){display: block}.proCntntOuter .accordion-body{padding-left: 0}}@media (max-width: 1199px){.secPadding{padding: 50px 0}.mainHeading h1,.mainHeading h2{font-size: 42px;line-height: 56px}.mainHeading h3{font-size: 30px;line-height: 38px}.contForm{padding: 32px}.thankCntnt{padding: 32px}.proanrRbonCol{padding: 0 20px}.proanrRbonLeft{padding-left: 40px}.proanrRbonRight{padding-right: 50px}.ProductBannerRibbonBox i{width: 30px;height: 30px}.ProductBannerRibbonBox p{font-size: 18px;line-height: 20px}.ProductBannerRibbonBox h4{font-size: 28px;line-height: 40px}.ProductBannerRibbonBox span{font-size: 18px;line-height: 24px}.ProductBannerRibbonBox h3{font-size: 38px;line-height: 54px;top: -8px}.rateBgCol{padding: 8px}.getCoveredBlock,.testiBlock{padding-top: 0}.bakedBlock{padding-top: 40px}.callActionBlock{padding-top: 30px}.callActnDiv{padding-left: 30px;margin: 30px auto 0}}@media (max-width: 767px){li, p{font-size: 16px;line-height: 24px}.main-top.is-show{bottom: 20px !important}.form-floating>label{padding: .75rem .75rem}.form-control{font-size: 15px}.form-floating>.form-control,.form-floating>.form-control-plaintext,.form-floating>.form-select{height: calc(3rem + 2px);line-height: 1.25}.form-floating>.form-control,.form-floating>.form-control-plaintext{padding: 1rem 0.6rem}.mainBnrBlock{padding-top: 0 !important;padding-bottom: 260px !important;background-position: left bottom}.dAndoBnr{background-position: -832px;padding-bottom: 320px !important}.gnrlBnr{background-position: -740px;padding-bottom: 320px !important}.eAndoBnr{background-position: -755px;padding-bottom: 300px !important}.prdctLlbtyBnr{background-position: -570px;padding-bottom: 350px !important}.cybrBnr{background-position: -720px;padding-bottom: 320px !important}.fireBnr{background-position: -650px;padding-bottom: 300px !important}.marineBnr{background-position: -620px;padding-bottom: 300px !important}.cmrclGnrlBnr{background-position: -760px;padding-bottom: 320px !important}.publcLlbtyBnr{background-position: -760px;padding-bottom: 320px !important}.cmrclCrimeBnr{background-position: -640px;padding-bottom: 320px !important}.shopBnr{background-position: -505px;padding-bottom: 300px !important}.cnstrnBnr{background-position: -500px;padding-bottom: 300px !important}.cntrctrBnr{background-position: -880px;padding-bottom: 300px !important}.ofcPckgBnr{background-position: -50px;padding-bottom: 300px !important}.hdrBlock{background-color: var(--white);padding: 20px 0}.hdrRow{padding: 0}.mainLogo{text-align: center}.hdrBtns .btnCommon{font-size: 14px;line-height: 42px;padding: 0 10px;min-width: 150px}.callActnMedia,.pltfrmMeta{position: static}.callActnDiv,.cpyrght,.ftrLinks{text-align: center}.container{//padding: 0 20px}.secPadding{padding: 40px 0}.mb-5{margin-bottom: 2rem !important}.btnCommon{font-size: 17px;line-height: 48px;min-width: 175px;padding: 0 16px}.mainHeading h4{font-size: 20px}.mainHeading h1{font-size: 33px;line-height: 42px;margin: 0}.mainHeading p{font-size: 18px;line-height: 28px}.mainHeading h2{font-size: 32px;line-height: 48px}.mainHeading h2 span,.mainHeading h2 span.big{width: 62px}.mainHeading h3{font-size: 26px;line-height: 34px}.rateBgCol{padding: 6px;max-width: 350px;border-width: 2px}.rateTextDiv{padding-top: 4px;padding-right: 10px;padding-bottom: 4px;margin-right: 10px}.rateTextDiv span{font-size: 30px}.rateCol p{font-size: 14px;line-height: 24px}.rateStars{gap: 0.1rem}.rateStars i img{width: 24px;height: 24px}.proanrRbon{position: relative;height: 78px;display: flex;align-items: center}.proanrRbonCol{padding: 0 16px;height: 100%;display: flex;align-items: center}.proanrRbonLeft{background-color: var(--white);padding-left: 30px;border: 2px dashed}.proanrRbonRight{background: var(--primaryDark);padding-right: 35px;-webkit-clip-path: polygon(100%0%,89%49%,100%100%,0 100%,0%50%,0 0);clip-path: polygon(100%0%,89%49%,100%100%,0 100%,0%50%,0 0)}.ProductBannerRibbonBox i{position: absolute;left: 0;top: 0;width: 22px;height: 22px}.ProductBannerRibbonBox i img{height: 22px}.ProductBannerRibbonBox p{font-size: 16px;line-height: 20px}.ProductBannerRibbonBox h4{font-size: 24px;line-height: 32px}.ProductBannerRibbonBox span{font-size: 16px;line-height: 26px}.ProductBannerRibbonBox h3{font-size: 28px;line-height: 40px}.bsnsInsrdOuter{display: block;margin: 32px 0}.bsnsInsrdDiv,.contForm > p{margin-bottom: 20px}.ayraIcon{margin: 0}.contForm{padding: 20px}.contForm > p{font-size: 18px;line-height: 24px}.thankCntnt{padding: 20px}.thankCntnt > span img{width: 80px;height: 80px}.thankCntnt > p{font-size: 18px;line-height: 24px}.cmpnySlideCol{height: 50px}.cmpnySlideCol img{max-width: 100% !important;max-height: 30px !important}.pltfrmCol{text-align: left}.pltfrmIcon span{width: 52px;height: 52px;text-align: center;display: inline-block}.pltfrmIcon span img{height: 52px}.pltfrmInfo h4{color: var(--textColor);margin: 12px 0 5px 0}.proCntntHdng > i img{height: 60px}.proCntntHdng h3 > i img{width: 20px !important}.proCntntHdng h3{font-size: 24px}.proCntntOuter .accordion-header{margin-bottom: 16px}.proCntntOuter .accordion-button{font-size: 20px;line-height: 28px;font-weight: 600}.testiColOuter{margin: 0 0 80px 0}.testiCol{padding: 20px;box-shadow: none}.testiAuthor{margin-bottom: 24px}.testiAuthor span{width: 60px;height: 60px;margin-right: 10px}.testiAuthor span img{width: 60px;height: 60px}.tInfo h5{font-size: 20px}.tInfo h6{font-size: 16px}.testiCol p{font-size: 16px;line-height: 24px}.testimonialSlider .swiper-scrollbar{width: 100%}.testiOuter .sliderArrows .swiper-button-next,.testiOuter .sliderArrows .swiper-button-prev{top: 100%;margin-top: -63px}.testiOuter .swiper-button-next,.testiOuter .swiper-rtl .swiper-button-prev{right: calc(50% - 45px)}.testiOuter .swiper-button-prev,.testiOuter .swiper-rtl .swiper-button-next{left: calc(50% - 45px)}.bakedBlock{padding-top: 40px}.bakedCol img{position: absolute;width: auto;height: auto;max-width: calc(100% - 40px);max-height: calc(100% - 40px);margin: auto}.callActionBlock,.getCoveredBlock{padding-top: 0}.callActnDiv{background-image: url('../img/CTA_MBL_BG_BimaKavach.png');min-height: auto;padding: 20px;margin: 40px auto 0}.callActnMedia{margin-top: 32px}}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 750px
+    }
+}
+
+@media (min-width: 1200px) {
+    .animatable {
+        visibility: hidden;
+        -webkit-animation-play-state: paused;
+        -moz-animation-play-state: paused;
+        -ms-animation-play-state: paused;
+        -o-animation-play-state: paused;
+        animation-play-state: paused
+    }
+
+    .animated {
+        visibility: visible;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-play-state: running;
+        -moz-animation-play-state: running;
+        -ms-animation-play-state: running;
+        -o-animation-play-state: running;
+        animation-play-state: running
+    }
+
+    .contForm {
+        max-width: 540px;
+        float: right;
+    }
+
+    .proCntntOuter .accordion-button {
+        pointer-events: none
+    }
+
+    .proCntntOuter .accordion-button::before {
+        display: none
+    }
+
+    .collapse:not(.show) {
+        display: block
+    }
+
+    .proCntntOuter .accordion-body {
+        padding-left: 0
+    }
+}
+
+@media (max-width: 1699px) {
+    .contForm,
+    .thankCntnt {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .secPadding {
+        padding: 50px 0
+    }
+
+    .mainHeading h1,.mainHeading h2 {
+        font-size: 30px;
+        line-height: 40px
+    }
+
+    .mainHeading h3 {
+        font-size: 30px;
+        line-height: 38px
+    }
+
+    .contForm {
+        padding: 32px
+    }
+
+    .thankCntnt {
+        padding: 32px
+    }
+
+    .ProductBannerRibbonBox i {
+        width: 30px;
+        height: 30px
+    }
+
+    .rateTextDiv {
+        gap: 1rem;
+    }
+    .rateTextDiv p > span {
+        font-size: 28px;
+    }
+
+    .getCoveredBlock,.testiBlock {
+        padding-top: 0
+    }
+
+    .bakedBlock {
+        padding-top: 40px
+    }
+
+    .callActionBlock {
+        padding-top: 30px
+    }
+
+    .callActnDiv {
+        padding-left: 30px;
+        margin: 30px auto 0
+    }
+}
+
+@media (max-width: 991px) {
+    .hdrRow {
+        padding: 16px 20px;
+    }
+    .rateTextDiv {
+        display: block;
+        text-align: center;
+    }
+    .rateTextDiv i {
+        display: none;
+    }
+    .rateTextDiv p:last-child {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    li, p {
+        font-size: 16px;
+        line-height: 24px
+    }
+
+    .main-top.is-show {
+        bottom: 20px !important
+    }
+
+    .form-floating>label {
+        font-size: 15px;
+        padding: 0.75rem 0.75rem;
+    }
+
+    .form-control {
+        font-size: 15px
+    }
+
+    .form-floating>.form-control,.form-floating>.form-control-plaintext,.form-floating>.form-select {
+        height: calc(3rem + 2px);
+        line-height: 1.25
+    }
+
+    .form-floating>.form-control,.form-floating>.form-control-plaintext {
+        padding: 1rem 0.6rem
+    }
+
+    .mainBnrBlock {
+        padding-top: 0 !important;
+        /*padding-bottom: 260px !important;*/
+        background-position: left bottom
+    }
+
+    /*.dAndoBnr {
+        background-position: -832px;
+        padding-bottom: 320px !important
+    }
+
+    .gnrlBnr {
+        background-position: -740px;
+        padding-bottom: 320px !important
+    }
+
+    .eAndoBnr {
+        background-position: -755px;
+        padding-bottom: 300px !important
+    }
+
+    .prdctLlbtyBnr {
+        background-position: -570px;
+        padding-bottom: 350px !important
+    }
+
+    .cybrBnr {
+        background-position: -720px;
+        padding-bottom: 320px !important
+    }
+
+    .fireBnr {
+        background-position: -650px;
+        padding-bottom: 300px !important
+    }
+
+    .marineBnr {
+        background-position: -620px;
+        padding-bottom: 300px !important
+    }
+
+    .cmrclGnrlBnr {
+        background-position: -760px;
+        padding-bottom: 320px !important
+    }
+
+    .publcLlbtyBnr {
+        background-position: -760px;
+        padding-bottom: 320px !important
+    }
+
+    .cmrclCrimeBnr {
+        background-position: -640px;
+        padding-bottom: 320px !important
+    }
+
+    .shopBnr {
+        background-position: -505px;
+        padding-bottom: 300px !important
+    }
+
+    .cnstrnBnr {
+        background-position: -500px;
+        padding-bottom: 300px !important
+    }
+
+    .cntrctrBnr {
+        background-position: -880px;
+        padding-bottom: 300px !important
+    }
+
+    .ofcPckgBnr {
+        background-position: -50px;
+        padding-bottom: 300px !important
+    }*/
+
+    .hdrBlock {
+        background-color: var(--white);
+        padding: 20px 0;
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+        top: 0;
+        position: relative;
+    }
+
+    .hdrRow {
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .mainLogo {
+        text-align: center
+    }
+
+    .hdrBtns .btnCommon {
+        font-size: 14px;
+        line-height: 42px;
+        padding: 0 10px;
+        min-width: 150px
+    }
+
+    .callActnMedia,.pltfrmMeta {
+        position: static
+    }
+
+    .callActnDiv,.cpyrght,.ftrLinks {
+        text-align: center
+    }
+
+    .container {
+        //padding: 0 20px
+    }
+
+    .secPadding {
+        padding: 40px 0
+    }
+
+    .mb-5 {
+        margin-bottom: 2rem !important
+    }
+
+    .btnCommon {
+        font-size: 16px;
+        line-height: 48px;
+        min-width: 175px;
+        padding: 0 16px
+    }
+
+    .mainHeading h4 {
+        font-size: 20px
+    }
+
+    .mainHeading h1 {
+        font-size: 26px;
+        line-height: 36px;
+        margin: 0
+    }
+
+    .mainHeading p {
+        font-size: 16px;
+        line-height: 26px
+    }
+
+    .mainHeading h2 {
+        font-size: 32px;
+        line-height: 48px
+    }
+
+    .mainHeading h2 span,.mainHeading h2 span.big {
+        width: 62px
+    }
+
+    .mainHeading h3 {
+        font-size: 26px;
+        line-height: 34px
+    }
+
+    .rateBgCol {
+        padding: 10px;
+        border-width: 2px;
+    }
+    .rateTextDiv {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .rateTextDiv span {
+        font-size: 30px;
+    }
+    .rateTextDiv span span {
+        font-size: 26px;
+    }
+    .rateCol p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .rateTextDiv p {
+        display: block;
+    }
+    .rateTextDiv p > span {
+        font-size: 22px;
+        display: block;
+    }
+    .rateStars {
+        gap: 0.1rem;
+    }
+    .rateStars i img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .proanrRbonInner {
+        transform: skew(0);
+    }
+
+    .proanrRbonImg span i {
+        transform: skew(0);
+    }
+
+    .proanrRbonImg img {
+        height: auto;
+    }
+
+    .proanrRbon {
+        position: relative;
+        height: 78px;
+        display: flex;
+        align-items: center
+    }
+
+    .proanrRbonCol {
+        padding: 0 16px;
+        height: 100%;
+        display: flex;
+        align-items: center
+    }
+
+    .proanrRbonLeft {
+        padding-left: 20px;
+    }
+
+    .proanrRbonRight {
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+
+    .proanrRbonRight::before {
+        width: 15px;
+        left: -4px;
+        bottom: 1px;
+        transform: skew(0);
+    }
+
+    .ProductBannerRibbonBox {
+        transform: skew(0);
+    }
+
+    .ribbonProduct {
+        width: 24px;
+        right: -49px;
+        bottom: -8px;
+    }
+    .wrkmnBnr .ribbonProduct,
+    .fireBnr .ribbonProduct,
+    .marineBnr .ribbonProduct,
+    .ofcPckgBnr .ribbonProduct,
+    .prdctLlbtyBnr .ribbonProduct {
+        right: -49px;
+        bottom: -8px;
+    }
+
+    .tnstBnr .ribbonProduct {
+        right: -69px;
+    }
+
+    .ProductBannerRibbonBox i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 22px;
+        height: 22px
+    }
+
+    .ProductBannerRibbonBox i img {
+        height: 22px
+    }
+
+    .ProductBannerRibbonBox p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .ProductBannerRibbonBox h4 {
+        font-size: 22px;
+    }
+
+    .ProductBannerRibbonBox span {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .ProductBannerRibbonBox h3 {
+        font-size: 26px;
+        line-height: 30px;
+        display: inline-block;
+        top: -4px;
+    }
+
+    .bsnsInsrdOuter {
+        display: block;
+        margin: 32px 0
+    }
+
+    .bsnsInsrdDiv,.contForm > p {
+        margin-bottom: 20px
+    }
+
+    .ayraIcon {
+        margin: 0
+    }
+
+    .contForm {
+        padding: 20px
+    }
+
+    .contForm > p {
+        font-size: 18px;
+        line-height: 24px
+    }
+
+    .thankCntnt {
+        padding: 20px
+    }
+
+    .thankCntnt > span img {
+        width: 80px;
+        height: 80px
+    }
+
+    .thankCntnt > p {
+        font-size: 16px;
+        line-height: 26px
+    }
+
+    .cmpnySlideCol {
+        height: 50px
+    }
+
+    .cmpnySlideCol img {
+        max-width: 100% !important;
+        max-height: 30px !important
+    }
+
+    .pltfrmCol {
+        text-align: left
+    }
+
+    .pltfrmIcon span {
+        width: 52px;
+        height: 52px;
+        text-align: center;
+        display: inline-block
+    }
+
+    .pltfrmIcon span img {
+        height: 52px
+    }
+
+    .pltfrmInfo h4 {
+        color: var(--textColor);
+        margin: 12px 0 5px 0
+    }
+
+    .proCntntHdng > i img {
+        height: 60px
+    }
+
+    .proCntntHdng h3 > i img {
+        width: 20px !important
+    }
+
+    .proCntntHdng h3 {
+        font-size: 24px
+    }
+
+    .proCntntOuter .accordion-header {
+        margin-bottom: 16px
+    }
+
+    .proCntntOuter .accordion-button {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600
+    }
+
+    .testiColOuter {
+        margin: 0 0 80px 0
+    }
+
+    .testiCol {
+        padding: 20px;
+        box-shadow: none
+    }
+
+    .testiAuthor {
+        margin-bottom: 24px
+    }
+
+    .testiAuthor span {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px
+    }
+
+    .testiAuthor span img {
+        width: 60px;
+        height: 60px
+    }
+
+    .tInfo h5 {
+        font-size: 20px
+    }
+
+    .tInfo h6 {
+        font-size: 16px
+    }
+
+    .testiCol p {
+        font-size: 16px;
+        line-height: 24px
+    }
+
+    .testimonialSlider .swiper-scrollbar {
+        width: 100%
+    }
+
+    .testiOuter .sliderArrows .swiper-button-next,.testiOuter .sliderArrows .swiper-button-prev {
+        top: 100%;
+        margin-top: -63px
+    }
+
+    .testiOuter .swiper-button-next,.testiOuter .swiper-rtl .swiper-button-prev {
+        right: calc(50% - 45px)
+    }
+
+    .testiOuter .swiper-button-prev,.testiOuter .swiper-rtl .swiper-button-next {
+        left: calc(50% - 45px)
+    }
+
+    .bakedBlock {
+        padding-top: 40px
+    }
+
+    .bakedCol img {
+        position: absolute;
+        width: auto;
+        height: auto;
+        max-width: calc(100% - 40px);
+        max-height: calc(100% - 40px);
+        margin: auto
+    }
+
+    .callActionBlock,.getCoveredBlock {
+        padding-top: 0
+    }
+
+    .callActnDiv {
+        background-image: url('../img/CTA_MBL_BG_BimaKavach.png');
+        min-height: auto;
+        padding: 20px;
+        margin: 40px auto 0
+    }
+
+    .callActnMedia {
+        margin-top: 32px
+    }
+
+    .ftrLogo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}

@@ -45,22 +45,22 @@ export default function FormRadio(props) {
                 </Form.Label>
                 <div className={`${radioIconStyle.radioIconRow} ${customClass}`}>
                     <Row className="g-4">
-                            {props.option.map(data=>
-                                <Col xs={data.icon ? 12 : 6}>
-                                    <RadioIconCard
-                                        icon={data.icon}
-                                        label={data.label}
-                                        name={data.name}
-                                        id={data.id}
-                                        value={data.id}
-                                        checked={radioValue === data.id}
-                                        onChange={handleChangeRadio}
-                                        required="true"
-                                        activeClass={radioValue === data.id ? radioIconStyle.active : null}
-                                        key={data.id}
-                                    />
-                                </Col>
-                            )}
+                        {props.option.map(data=>
+                            <Col xs={data.icon ? 12 : 6}>
+                                <RadioIconCard
+                                    icon={data.icon}
+                                    label={data.label}
+                                    name={data.name}
+                                    id={data.id}
+                                    value={data.id}
+                                    checked={radioValue === data.id}
+                                    onChange={handleChangeRadio}
+                                    required="true"
+                                    activeClass={radioValue === data.id ? radioIconStyle.active : null}
+                                    key={data.id}
+                                />
+                            </Col>
+                        )}
                     </Row>
                 </div>
             </Form.Group>

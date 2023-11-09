@@ -767,6 +767,12 @@ h2.font-secondary {
   color: var(--vt-c-blue) !important;
   border-color: var(--vt-c-blue) !important;
 }
+.fileUploadTabs.nav-tabs .nav-link.active,
+.fileUploadTabs.nav-tabs .nav-item.show .nav-link {
+  background-color: var(--mute1) !important;
+  color: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
 .whiteCol {
   background-color: var(--white);
   position: relative;
