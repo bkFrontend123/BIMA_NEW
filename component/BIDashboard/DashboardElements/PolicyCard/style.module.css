@@ -284,6 +284,18 @@
     font-size: 16px;
 }
 
+.policyCardUpld {
+    margin-top: 1rem;
+}
+
+.policyCardUpld p {
+    font-size: 15px;
+    color: var(--error);
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
 .policyCardDwnload {
     margin-top: 1rem;
 }
@@ -349,6 +361,10 @@
     .policyCardInfo p {
         font-size: 14px;
     }    
+
+    .policyCardUpld p {
+        font-size: 14px;   
+    }
 }
 
 @media (max-width:991px) {

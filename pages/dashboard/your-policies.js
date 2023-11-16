@@ -180,12 +180,12 @@ export default function Policies() {
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
-      decalrationType: "Monthly",
+      declarationType: "Monthly",
       valueOfDecalration: "30,304",
       statusOfDecalration: "upload",
       valueOfCD: "10,30,304",
       statusOfCD: "normal",
-      statusType: "pending"
+      statusType: "pending",
     },
     {
       id: "2",
@@ -198,7 +198,7 @@ export default function Policies() {
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
-      decalrationType: "Monthly",
+      declarationType: "Monthly",
       valueOfDecalration: "30,304",
       statusOfDecalration: "normal",
       valueOfCD: "10,30,304",
@@ -216,7 +216,7 @@ export default function Policies() {
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
-      decalrationType: "Monthly",
+      declarationType: "Monthly",
       valueOfDecalration: "30,304",
       statusOfDecalration: "pending",
       valueOfCD: "10,30,304",
@@ -234,7 +234,7 @@ export default function Policies() {
       policyPremium: "30,304",
       policyNumber: "BKX42787",
       policyPeriod: "14 Aug 23/13 Aug 24",
-      decalrationType: "Monthly",
+      declarationType: "Monthly",
       valueOfDecalration: "30,304",
       statusOfDecalration: "success",
       valueOfCD: "10,30,304",
@@ -426,9 +426,10 @@ export default function Policies() {
                 policyPremium={item.policyPremium}
                 policyNumber={item.policyNumber}
                 policyPeriod={item.policyPeriod}
-                decalrationType={item.decalrationType}
+                declarationType={item.declarationType}
                 valueOfDecalration={item.valueOfDecalration}
                 statusOfDecalration={item.statusOfDecalration}
+                showDeclarationUpload
                 valueOfCD={item.valueOfCD}
                 statusOfCD={item.statusOfCD}
                 statusType={item.statusType}

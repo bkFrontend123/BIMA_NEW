@@ -24,7 +24,7 @@ import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/st
 import downloadStyle from '@/assets/css/downloadDropdown.module.css';
 
 export default function PolicyCard(props) {
-  const {icon, title, statusType, expireDays, insurerLogo, insurerName, productGroupName, sumInsured, valueOfSumInsured, policyPremium, policyNumber, policyPeriod, decalrationType, valueOfDecalration, statusOfDecalration, valueOfCD, statusOfCD, children} = props;
+  const {icon, title, statusType, expireDays, insurerLogo, insurerName, productGroupName, sumInsured, valueOfSumInsured, policyPremium, policyNumber, policyPeriod, declarationType, valueOfDecalration, statusOfDecalration, showDeclarationUpload, valueOfCD, statusOfCD, children} = props;
 
   const router = useRouter();
   
@@ -303,14 +303,14 @@ export default function PolicyCard(props) {
                     <p><strong>{policyNumber} <span onClick={copyToClipboard}><CopyIcon /></span></strong> Policy Number</p>
                     <input type="hidden" value={copyText} onChange={handleCopyText} />
                   </li>
-                  {decalrationType ? (
+                  {declarationType ? (
                     <li>
-                      <p><strong>{decalrationType}</strong> Declaration</p>
+                      <p><strong>{declarationType}</strong> Declaration</p>
                     </li>
                   ):(
                     null
                   )}
-                  {valueOfDecalration ? (
+                  {/* {valueOfDecalration ? (
                     <>
                       <li>
                         {statusOfDecalration === 'normal' ? (
@@ -363,7 +363,7 @@ export default function PolicyCard(props) {
                     </>
                   ):(
                     null
-                  )}
+                  )} */}
                 </ul>
               </Col>
               <Col xs={6}>
@@ -430,6 +430,29 @@ export default function PolicyCard(props) {
               </Col>
             </Row>
           </div>
+          {statusType == "expired" ? (
+            null
+          ):(
+            <>
+              {showDeclarationUpload ? (
+                <div className={`${style.policyCardUpld}`}>
+                  <hr className="mt-0 mb-3" />
+                  <p>Its time to upload your declaration value</p>
+                  <ButtonItem
+                    title="Upload"
+                    type="button"
+                    iconPosition="right"
+                    customClass={`m-0 mt-2 w-100 ${buttonStyle.btnBlue} ${buttonStyle.btnDashCard}`}
+                    onClick={handleShowDeclaration}
+                  >
+                    <UploadIcon />
+                  </ButtonItem>
+                </div>
+              ):(
+                null
+              )}
+            </>
+          )}
           <div className={`${style.policyCardDwnload}`}>
             <hr className="mt-0 mb-3" />
             <Row className='g-3'>
