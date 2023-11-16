@@ -76,6 +76,7 @@
     line-height: 42px;
     border: 1px solid var(--vt-c-blueSkyLight2);
     border-radius: 4px;
+    padding: 0 12px!important;
 }
 
 .btnCommon .iconRight {

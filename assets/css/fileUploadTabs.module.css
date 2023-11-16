@@ -28,13 +28,6 @@
     
 }
 
-@media (max-width:1399px) {
-    .fileUploadTabs li button {
-        font-size: 18px;
-        line-height: 26px;
-    }
-}
-
 @media (max-width:1199px) {
     
 }
@@ -45,7 +38,6 @@
 
 @media (max-width:767px) {
     .fileUploadTabs li button {
-        font-size: 16px;
-        line-height: 26px;
+        line-height: 30px;
     }
 }
