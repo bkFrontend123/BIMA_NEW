@@ -10,6 +10,7 @@ import DashboardCard from '@/component/BIDashboard/DashboardCard'
 import DashboardPageTitle from '@/component/BIDashboard/DashboardPageTitle'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
 import FilterDropdownCard from '@/component/BIDashboard/DashboardElements/FilterDropdown'
+import FilterCheckboxDropdown from '@/component/BIDashboard/DashboardElements/FilterCheckboxDropdown'
 import PolicyCardItem from "@/component/BIDashboard/DashboardElements/PolicyCard";
 import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
 import NoItemCard from "@/component/BIDashboard/DashboardElements/NoItemCard";
@@ -28,13 +29,51 @@ export default function Policies() {
       {name: 'Expired', value: '2'},
   ];
 
-  const [filterCategoryProductValue, setFilterCategoryProductValue] = useState();
-  const filterCategoryProductOptions = [
-      {name: 'Liability Insurance', value: '1'},
-      {name: 'Asset Insurance', value: '2'},
-      {name: 'Engineering Insurance', value: '3'},
-      {name: 'Marine', value: '4'},
-  ];
+
+  const filterCategoryProductOptions = ([
+    {
+      "label": "Liability Insurance",
+      "children": [
+        {
+          "label": "Directors & Officers",
+        },
+        {
+          "label": "Errors & Omissions",
+        },
+        {
+          "label": "Product Liability",
+        },
+      ]
+    },
+    {
+      "label": "Asset Insurance",
+      "children": [
+        {
+          "label": "Fire Insurance",
+        },
+        {
+          "label": "Machinery Breakdown",
+        },
+        {
+          "label": "FLOP",
+        },
+      ]
+    },
+    {
+      "label": "Assistant Manager",
+      "children": [
+        {
+          "label": "Marine Transit Policy",
+        },
+        {
+          "label": "Single Transit Policy",
+        },
+        {
+          "label": "Sales Turnover Policy",
+        }
+      ]
+    }
+  ])
 
   const [filterInsurerNameValue, setFilterInsurerNameValue] = useState();
   const filterInsurerNameOptions = [
@@ -206,7 +245,7 @@ export default function Policies() {
 
   const goToFlowPage = () => {
     router.push('/errors-and-omissions-flow');
-};
+  };
 
   return (
     <>
@@ -240,15 +279,9 @@ export default function Policies() {
                   value={filterPolicyStatusValue}
                 />
               </Form.Group>
-              <Form.Group className={`selectDropDiv selectDropFilterDiv selectDropFilterLargeDiv ${!filterCategoryProductValue == '' ? 'selectedDropDiv' : null}`}>
-                <SelectSearch
-                  options={filterCategoryProductOptions}
-                  name="filterCategoryProduct"
-                  placeholder="Category/Products"
-                  onChange={setFilterCategoryProductValue}
-                  value={filterCategoryProductValue}
-                />
-              </Form.Group>
+              <FilterCheckboxDropdown
+                data={filterCategoryProductOptions}
+              />
               <Form.Group className={`selectDropDiv selectDropFilterDiv selectDropFilterMediumDiv ${!filterInsurerNameValue == '' ? 'selectedDropDiv' : null}`}>
                 <SelectSearch
                   options={filterInsurerNameOptions}

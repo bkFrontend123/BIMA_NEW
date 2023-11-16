@@ -1,0 +1,235 @@
+.selectDropdown {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+}
+
+.selectDropdown>div>div,
+.selectDropdown>div>div a {
+    display: block !important;
+}
+
+.selectDropdown .react-dropdown-tree-select .dropdown .dropdown-trigger {
+    height: 36px;
+    border-color: var(--formBorderColor);
+}
+
+.selectDropdown .tag-list {
+    display: block !important;
+    padding-right: 20px !important;
+}
+
+.selectDropdown .tag-item {
+    display: block !important;
+}
+
+.selectDropdown .react-dropdown-tree-select .dropdown .dropdown-trigger.arrow.top:after {
+    background-image: url(/icons/selectedFilterArrowIcon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    top: 16px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    transform: rotate(30deg);
+    z-index: 2;
+}
+
+.selectDropdown .react-dropdown-tree-select .dropdown .dropdown-trigger.arrow.bottom:after {
+    background-image: url(/icons/selectFilterArrowIcon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    top: 16px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.selectDropdown .tag-list li {
+    position: relative;
+    visibility: hidden;
+    position: absolute;
+    font-size: 15px;
+    height: 40px;
+    color: var(--vt-c-grayLight3);
+}
+
+.selectDropdown .tag-list li:last-child {
+    display: block !important;
+    visibility: visible;
+}
+
+/*.selectDropdown .tag-list {
+    counter-reset: list;
+  }
+  .selectDropdown .tag-list li {
+    position: relative;
+    counter-increment: list;
+    padding-left: 30px;
+    visibility: hidden;
+    position: absolute;
+}
+.selectDropdown .tag-list li:last-child {
+    display: block !important;
+    visibility: visible;
+}
+.selectDropdown .tag-list li:before {
+    background-color: var(--vt-c-green);
+    position: absolute;
+    content: counters(list, ".");
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    color: var(--whiteText);
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+    left: 0;
+    top: 0;
+}
+  .selectDropdown .tag-list li:nth-last-child(2):before {
+    display: block !important;
+}*/
+
+.selectDropdown .react-dropdown-tree-select .dropdown .dropdown-content {
+    padding: 0;
+    width: 100%;
+}
+
+.selectDropdown .react-dropdown-tree-select .dropdown .dropdown-content .search {
+    border-color: var(--formBorderColor);
+    padding: 6.8px 10px !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.selectDropdown .react-dropdown-tree-select .dropdown .dropdown-content ul {
+    max-height: 230px;
+    overflow: auto;
+}
+
+.selectDropdown .react-dropdown-tree-select .dropdown .dropdown-content .no-matches {
+    padding: 6.8px 10px !important;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+}
+
+.selectDropdown .node,
+.selectDropdown .node.leaf.select-all {
+    padding: 0 !important;
+}
+
+.selectDropdown .node label,
+.selectDropdown .node.leaf.select-all label {
+    padding: 8.8px 10px !important;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.selectDropdown .node.tree label {
+    padding-left: 16px !important;
+}
+
+.selectDropdown .node.leaf  label {
+    padding-left: 32px !important;
+}
+
+.selectDropdown .node i {
+    display: none;
+}
+
+.selectDropdown .checkbox-item {
+    display: none;
+}
+
+.selectDropdown .node-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    padding-left: 24px;
+}
+
+.selectDropdown .node .node-label::before {
+    background-color: transparent;
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    left: 0;
+    top: 1px;
+    border: 1px solid var(--formBorderColor);
+    z-index: 1;
+}
+
+.selectDropdown .node.focused .checkbox-item:checked ~ .node-label::before,
+.selectDropdown .node .checkbox-item:checked ~ .node-label::before {
+    background-color: var(--vt-c-blue);
+    border-color: var(--vt-c-blue);
+}
+
+.selectDropdown .node .node-label::after {
+    background-image: url(/icons/radioCheckIcon.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    left: 4px;
+    top: 4px;
+    z-index: 1;
+}
+
+@media (max-width: 1699px) {
+    .selectDropdown .tag-list li {
+        font-size: 14px;
+        height: 36px;
+    }
+
+    .selectDropdown .react-dropdown-tree-select .dropdown .dropdown-content .search {
+        padding: 6.8px 10px !important;
+        font-size: 14px;
+    }
+
+    .selectDropdown .react-dropdown-tree-select .dropdown .dropdown-content .no-matches {
+        padding: 6.8px 10px !important;
+        font-size: 14px;
+    }
+
+    .selectDropdown .react-dropdown-tree-select .dropdown .dropdown-trigger.arrow.top:after {
+        top: 13px;
+    }
+
+    .selectDropdown .react-dropdown-tree-select .dropdown .dropdown-trigger.arrow.bottom:after {
+        top: 13px;
+    }
+
+    .selectDropdown .node label,
+    .selectDropdown .node.leaf.select-all label {
+        padding: 6.8px 10px !important;
+    }
+
+    .selectDropdown .node.tree label {
+        padding-left: 16px !important;
+    }
+
+    .selectDropdown .node.leaf  label {
+        padding-left: 32px !important;
+    }
+    .selectDropdown .node-label {
+        font-size: 14px;
+    }  
+}

@@ -29,6 +29,7 @@
     "react-calendly": "^4.1.1",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
+    "react-dropdown-tree-select": "^2.8.0",
     "react-indiana-drag-scroll": "^2.2.0",
     "react-paginate": "^8.1.4",
     "react-player": "^2.12.0",
