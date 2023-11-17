@@ -101,6 +101,7 @@
 .selectDropdown .react-dropdown-tree-select .dropdown .dropdown-content {
     padding: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .selectDropdown .react-dropdown-tree-select .dropdown .dropdown-content .search {
@@ -232,4 +233,12 @@
     .selectDropdown .node-label {
         font-size: 14px;
     }  
+}
+
+@media (max-width: 767px) {
+    .selectDropdown {
+        display: block;
+        vertical-align: top;
+        width: 100%;
+    }
 }

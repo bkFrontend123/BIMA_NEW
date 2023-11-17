@@ -56,3 +56,9 @@
         padding: 32px;
     }
 }
+
+@media (max-width: 1199px) {
+    .fileUpldCol {
+        padding: 20px;
+    }
+}

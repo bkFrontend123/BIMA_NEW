@@ -13,3 +13,30 @@
 .fileUpldText p span {
     color: var(--vt-c-blueSky);
 }
+.fileSlctBtn {
+    margin-top: 1rem !important
+}
+.fileSlctBtn label {
+    background: var(--vt-c-blue);
+    font-size: 14px;
+    color: var(--whiteText);
+    line-height: 42px;
+    border: 1px solid var(--vt-c-blueSkyLight2);
+    border-radius: 4px;
+    padding: 0 20px!important;
+    text-align: center;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+.fileSlctBtn input {
+    display: none
+}
+
+@media (max-width: 1699px) {
+    .fileSlctBtn label {
+        padding: 0 16px !important;
+    }
+}

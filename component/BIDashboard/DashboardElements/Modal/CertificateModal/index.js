@@ -16,12 +16,12 @@ export default function EndorsementModal(props) {
             <Modal show={show} size="xl" onHide={handleClose} centered backdrop="static" keyboard={false} className={commonModal.commonMdlOuter}>
                 <Modal.Body className={commonModal.commonMdlBody}>
                     <Row className="g-3 g-xl-4 g-xxl-5 justify-content-between">
-                        <Col lg={7} xl={7}>
+                        <Col lg={6} xl={7}>
                             <div className={`${commonModal.crtfctMdlLft}`}>
                                 
                             </div>
                         </Col>
-                        <Col lg={5} xl={5}>
+                        <Col lg={6} xl={5}>
                             <div className={`${commonModal.crtfctMdlRght}`}>
                                 <div className={commonModal.crtfctMdlTtl}>
                                     <h3>{title}</h3>

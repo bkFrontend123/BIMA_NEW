@@ -26,12 +26,12 @@ export default function DeclarationModal(props) {
                         <Col lg={7} xl={7}>
                             <div className={`${commonModal.dclrtnMdlLft}`}>
                                 <Row className="g-3 g-xl-4 g-xxl-5 align-items-center justify-content-between">
-                                    <Col lg={6} xl={6}>
+                                    <Col lg={5} xl={6}>
                                         <div className={commonModal.dclrtnMdlTtl}>
                                             <h4>Add Your Declaration</h4>
                                         </div>
                                     </Col>
-                                    <Col lg={6} xl={6}>
+                                    <Col lg={7} xl={6}>
                                         <ButtonItem
                                             title="Download Template File"
                                             type="button"
@@ -143,16 +143,7 @@ export default function DeclarationModal(props) {
                                             </FileUploadButtonRow>
                                         </Tab>
                                     </Tabs>
-                                    <FileUploadText>
-                                        <ButtonItem
-                                            title="Upload"
-                                            type="button"
-                                            iconPosition="right"
-                                            customClass={`m-0 mt-3 ${buttonStyle.btnBlue} ${buttonStyle.btnDashCard} ${buttonStyle.smallWidth}`}
-                                            >
-                                            <UploadIcon />
-                                        </ButtonItem>
-                                    </FileUploadText>
+                                    <FileUploadText />
                                 </FileUploadCard>
                                 <FileUploadCard
                                     title="File Uploaded!"
