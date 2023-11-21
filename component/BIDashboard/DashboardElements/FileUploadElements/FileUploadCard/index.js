@@ -6,7 +6,7 @@ import excelIcon from '@/public/icons/excel_icon.png';
 import style from './style.module.css'
 
 export default function FileUploadCard(props) {
-  const {title, typeOfDeclaration, uploadedFor, fileName, uploadTime, description, status, children} = props;
+  const {title, typeOfDeclaration, uploadedFor, fileName, valueOfDeclaration, uploadTime, description, status, children} = props;
 
   return (
     <>
@@ -36,6 +36,14 @@ export default function FileUploadCard(props) {
             <div className={style.fileUpldInfo}>
               <p>File Name</p>
               <h6>{fileName}</h6>
+            </div>
+          ):(
+            null
+          )}
+          {valueOfDeclaration ? (
+            <div className={style.fileUpldInfo}>
+              <p>Declaration Value</p>
+              <h6>{valueOfDeclaration}</h6>
             </div>
           ):(
             null

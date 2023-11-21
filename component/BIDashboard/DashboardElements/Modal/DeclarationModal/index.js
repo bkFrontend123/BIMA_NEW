@@ -151,6 +151,7 @@ export default function DeclarationModal(props) {
                                     typeOfDeclaration="Monthly"
                                     uploadedFor="November"
                                     fileName="BK_Template(1).xls"
+                                    valueOfDeclaration="10,000,00.00"
                                     uploadTime="20 August 2023; 10:21 PM"
                                     status="sucess"
                                 >
