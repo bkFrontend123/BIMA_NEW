@@ -313,11 +313,6 @@
     margin-top: 1rem;
 }
 
-.expirePolicyCardCol .policyCardDwnload button {
-    background-color: var(--vt-c-gray);
-    pointer-events: none;
-}
-
 .policyCardInfo {
     margin-top: 1rem;
     text-align: center;

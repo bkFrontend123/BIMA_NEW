@@ -30,13 +30,15 @@ export default function ClaimRequestCard(props) {
 
   return (
     <>
-      <div className={`${style.claimReqstCardCol}`}>
-        <div className={`d-flex gap-2 align-items-start ${style.claimReqstCardTtl}`}>
+      <div className={`${style.claimReqstCardCol}`} title={title}>
+        <div className={`d-flex gap-2 align-items-center ${style.claimReqstCardTtl}`}>
           <span><i><Image className={`${style.policyLogoIcon}`} src={icon} width={32} height={32} alt={title} /></i></span>
           <div>
             <h3>{title}</h3>
-            <h4>BimaKavach Technologies Pvt Ltd</h4>
           </div>
+        </div>
+        <div className={`${style.claimReqstCardCmpny}`}>
+          <h4>BimaKavach Technologies Pvt Ltd</h4>
         </div>
         <div className={`${style.claimReqstCardInfo}`}>
           {category === 'liability' ? (

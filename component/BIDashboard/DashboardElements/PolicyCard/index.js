@@ -458,7 +458,7 @@ export default function PolicyCard(props) {
             <Row className='g-3'>
               <Col>
                 {statusType === 'expired' ? (
-                  <Dropdown className={`dwnldDropdown ${downloadStyle.dwnldDropdown}`}>
+                  <Dropdown className={`dwnldDropdown ${downloadStyle.dwnldDropdown} ${downloadStyle.dwnldDropdownExpired}`}>
                     <Dropdown.Toggle variant="" id="dropdown-download" className={`${downloadStyle.dwnldDropButton}`}>
                       <DownloadIcon /> Download Unavailable
                     </Dropdown.Toggle>
