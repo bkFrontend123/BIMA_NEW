@@ -1,0 +1,25 @@
+.qustnInfo {
+    margin-bottom: 1.5rem !important;
+}
+.qustnInfo,
+.qustnInfo p,
+.qustnInfo ul li,
+.qustnInfo ol li {
+    font-size: 14px;
+    color: var(--disable);
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.qustnInfo ol li {
+    list-style: decimal;
+    list-style-position: inside;
+}
+.qustnInfo ul li {
+    list-style: disc;
+    list-style-position: inside;
+}
+.qustnInfo ol:last-child li:last-child,
+.qustnInfo ul:last-child li:last-child,
+.qustnInfo p:last-child {
+    margin-bottom: 0;
+}

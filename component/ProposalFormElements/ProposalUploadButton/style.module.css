@@ -1,0 +1,64 @@
+.prpslFileUpldDiv {
+    
+}
+.prpslFileUpldDiv p {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+.prpslFileUpldBtn {
+    margin-top: 20px;
+}
+.prpslFileUpldBtn label {
+    background-color: transparent;
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+    line-height: 56.23px;
+    border: 1px solid var(--vt-c-gray);
+    padding: 0 16px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+.prpslFileUpldBtn.inActive label {
+    background: var(--mute3);
+    color: var(--vt-c-gray);
+    cursor: no-drop;
+}
+.prpslFileUpldBtn input {
+    display: none
+}
+
+@media (max-width: 1699px) {
+    .prpslFileUpldBtn label {
+        font-size: 15px;
+        line-height: 50.4px;
+    }
+    .prpslFileUpldBtn label svg {
+        width: 22px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .prpslFileUpldDiv p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .prpslFileUpldBtn {
+        margin-top: 16px;
+    }
+    .prpslFileUpldBtn label {
+        line-height: 43.4px;
+    }
+    .prpslFileUpldBtn label svg {
+        width: 20px;
+        height: 14px;
+    }
+}

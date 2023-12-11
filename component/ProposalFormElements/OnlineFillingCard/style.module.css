@@ -1,0 +1,120 @@
+.onlineFlngFrmCol {
+    background-color: var(--mute6);
+    padding: 24px;
+    height: 100%;
+    position: relative;
+    border: 1px solid var(--vt-c-gray);
+}
+.faster {
+    background-color: var(--vt-c-yellow);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 15px;
+    color: var(--vt-c-black);
+    font-weight: 500;
+    padding: 6px;
+    right: -13px;
+    top: 20px;
+    z-index: 1;
+}
+.faster::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    border-width: 0 11px 11px 11px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--vt-c-yellow);
+    right: -10px;
+    bottom: -11px;
+    z-index: -1;
+}
+.faster i {
+    margin-top: -4px;
+}
+.onlineFlngFrmHdr {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 16px;
+}
+.onlineFlngFrmHdr i {
+    display: inline-block;
+}
+.onlineFlngFrmHdr h4 {
+    font-size: 26px;
+    color: var(--vt-c-blue);
+    font-weight: 700;
+    margin: 0;
+}
+.onlineFlngFrmBody {
+    margin-top: 24px;
+}
+.onlineFlngFrmBody p {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+.onlineFlngFrmList {
+    margin: 20px 0;
+}
+.onlineFlngFrmList ul {
+
+}
+.onlineFlngFrmList ul li {
+    font-size: 14px;
+    color: var(--vt-c-green);
+    font-weight: 500;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.onlineFlngFrmList ul li + li {
+    margin-top: 8px;
+}
+
+@media (max-width: 1699px) {
+    .onlineFlngFrmCol {
+        padding: 20px;
+    }
+    .onlineFlngFrmHdr h4 {
+        font-size: 24px;
+    }
+    .onlineFlngFrmBody {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .onlineFlngFrmCol {
+        padding: 16px;
+    }
+    .faster {
+        font-size: 13px;
+        padding: 5px;
+        right: 0;
+        top: 10px;
+        gap: 0.2rem;
+    }
+    .faster::before {
+        right: 0;
+        bottom: -10px;
+    }
+    .onlineFlngFrmHdr h4 {
+        font-size: 22px;
+    }
+    .onlineFlngFrmBody {
+        margin-top: 16px;
+    }
+    .onlineFlngFrmBody p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .onlineFlngFrmList {
+        margin: 16px 0;
+    }
+}

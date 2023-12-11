@@ -16,6 +16,7 @@ import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
 import NoItemCard from "@/component/BIDashboard/DashboardElements/NoItemCard";
 
 import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
+import noPolicyImg from '@/public/emptyCard/noPolicyIcon.svg';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
@@ -243,6 +244,10 @@ export default function Policies() {
     },
   ])
 
+  const goToProposalPage = () => {
+    router.push('/proposal-form?page=dashboard');
+  };
+
   const goToFlowPage = () => {
     router.push('/errors-and-omissions-flow');
   };
@@ -315,10 +320,11 @@ export default function Policies() {
                   <Row className="g-3 justify-content-center">
                     <Col xxl={10} xl={10} lg={12}>
                       <ButtonItem
-                        title="Proposal Form Unavailable"
+                        title="Fill Proposal Form"
                         type="submit"
                         iconPosition="right"
-                        customClass={`w-100 m-0 px-2  ${buttonStyle.btnGray} ${buttonStyle.btnBig} ${buttonStyle.noIcon} ${buttonStyle.btnDisabled1}`}
+                        customClass={`w-100 m-0 px-2  ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                        onClick={goToProposalPage}
                       >
                         <ArrowPrimaryIcon />
                       </ButtonItem>
@@ -474,6 +480,9 @@ export default function Policies() {
           <Col lg={6} xl={4}>
             <NoItemCard
               title="No Policies Found"
+              imgSrc={noPolicyImg}
+              width={312}
+              height={312}
               button="true"
               customClass="mt-4"
             />

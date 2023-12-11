@@ -1,0 +1,149 @@
+.textImgCol {
+
+}
+.textRghtImgCol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+}
+.textRghtImgCol .textImgInfo {
+    flex: 1 0;
+}
+.textImgTtl h3 {
+    font-size: 40px;
+    color: var(--vt-c-yellow);
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0;
+}
+.textImgBlueCol h3 {
+    color: var(--vt-c-blue);
+}
+.textImgTtl h3 span {
+    display: block;
+}
+.textImgTtl h3 i {
+    display: inline-block;
+    margin-right: 12px;
+}
+.textTopIconCol .textImgTtl h3 i {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 12px;
+}
+.textImgTtl h3 i svg {
+    width: 32px;
+    height: 32px;
+}
+.textTopIconCol .textImgTtl h3 i svg {
+    width: 40px;
+    height: 40px;
+}
+.textImgDes {
+    margin-top: 32px;
+}
+.textImgDes p {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.textImgDes p + p {
+    margin-top: 24px;
+}
+.textImgBtns {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 24px;
+}
+.textRghtImgCol .textImgMedia {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+@media (max-width: 1699px) {
+    .textRghtImgCol {
+        gap: 6rem;
+    }
+    .textImgTtl h3 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .textTopIconCol .textImgTtl h3 i {
+        margin-bottom: 10px;
+    }
+    .textImgTtl h3 i svg {
+        width: 29px;
+        height: 29px;
+    }
+    .textTopIconCol .textImgTtl h3 i svg {
+        width: 36px;
+        height: 36px;
+    }
+    .textImgDes {
+        margin-top: 24px;
+    }
+    .textImgDes p + p {
+        margin-top: 20px;
+    }
+    .textImgBtns {
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .textImgCol,
+    .textRghtImgCol {
+        display: grid;
+        gap: 1.5rem;
+    }
+    .textImgInfo,
+    .textRghtImgCol .textImgInfo {
+        order: 1;
+    }
+    .textImgTtl h3 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .textImgTtl h3 i {
+        margin-right: 8px;
+    }
+    .textTopIconCol .textImgTtl h3 i {
+        margin-bottom: 6px;
+    }
+    .textImgTtl h3 i svg {
+        width: 24px;
+        height: 24px;
+    }
+    .textTopIconCol .textImgTtl h3 i svg {
+        width: 30px;
+        height: 30px;
+    }
+    .textImgDes {
+        margin-top: 16px;
+    }
+    .textImgDes p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .textImgDes p + p {
+        margin-top: 16px;
+    }
+    .textImgMedia,
+    .textRghtImgCol .textImgMedia {
+        margin-top: 0 !important;
+    }
+    .textImgMedia img {
+        width: auto;
+        height: auto;
+    }
+    .textImgBtns {
+        gap: 1rem;
+    }
+    .textImgBtns button {
+        min-width: auto !important;
+    }
+}

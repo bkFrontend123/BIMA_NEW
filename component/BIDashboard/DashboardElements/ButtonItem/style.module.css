@@ -222,6 +222,33 @@
     fill: var(--black);
 }
 
+.btnBlueDarkBorder.btnCommon {
+    background: var(--whiteBg);
+    border: 1px solid var(--vt-c-blueDark1);
+    color: var(--vt-c-blueDark1);
+    line-height: 48.4px;
+    white-space: nowrap;
+}
+
+.btnBlueDarkBorder.btnCommon i svg {
+    width: 16px;
+}
+
+.btnBlueDarkBorder.btnCommon i svg path {
+    fill: var(--vt-c-blueDark1);
+}
+
+.btnBlueDarkBorder.btnCommon:hover {
+    background: var(--vt-c-blueDark1);
+    border: 1px solid var(--vt-c-blueDark1);
+    color: var(--whiteText);
+    box-shadow: 0 8px 30px 0 rgba(0,0,0,0.2);
+}
+
+.btnBlueDarkBorder.btnCommon:hover i svg path {
+    fill: var(--whiteText);
+}
+
 .btnBig.btnBorder.btnCommon,
 .btnBig.border2.btnCommon {
     line-height: 54.45px;
@@ -300,6 +327,22 @@
     fill: var(--black);
 }
 
+.btnBlue.btnCommon i svg path {
+    fill: var(--whiteText);
+}
+
+.btnBlue.btnCommon:hover i svg path {
+    fill: var(--whiteText);
+}
+
+.btnBlue.btnBorder.btnCommon i svg path {
+    fill: var(--vt-c-blue);
+}
+
+.btnBlue.btnBorder.btnCommon:hover i svg path {
+    fill: var(--whiteText);
+}
+
 @media (max-width:1699px) {
     .btnCommon {
         padding: 0 20px !important;
@@ -320,7 +363,7 @@
     }
     .btnBig.btnBorder.btnCommon,
     .btnBig.border2.btnCommon {
-        line-height: 48.8px;
+        line-height: 50.4px;
     }
 
     .btnBig.btnIcon.btnCommon {

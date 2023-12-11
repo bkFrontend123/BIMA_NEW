@@ -1,0 +1,229 @@
+.prpslFrmFlngRow {
+    background-color: var(--mute6);
+    padding: 48px;
+    position: relative;
+}
+.prpslFrmFlngRow > p {
+    font-size: 14px;
+    color: var(--disable);
+    font-weight: 500;
+    line-height: 20px;
+    margin: 56px 0 0 0;
+}
+.prpslFrmFlngCol {
+    background-color: var(--whiteBg);
+    padding: 32px;
+    height: 100%;
+    position: relative;
+    border: 2px solid var(--mute3);
+}
+.faster {
+    background-color: var(--marineBg);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 16px;
+    color: var(--fasterColor);
+    font-weight: 500;
+    padding: 6px;
+    right: -13px;
+    top: 36px;
+    border: 1px solid var(--fasterBg);
+    z-index: 1;
+}
+.faster::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    border-width: 0 11px 11px 11px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--fasterBg);
+    right: -12px;
+    bottom: -11px;
+    z-index: -1;
+}
+.faster i {
+    margin-top: -4px;
+}
+.prpslFrmFlngHdr {
+
+}
+.prpslFrmFlngHdr i {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.prpslFrmFlngHdr h3 {
+    font-size: 32px;
+    color: var(--vt-c-blue);
+    font-weight: 700;
+    line-height: 40px;
+}
+.prpslFrmFlngHdr > p {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+    line-height: 24px;
+    margin: 20px 0 0 0;
+}
+.prpslFrmFlngBody {
+
+}
+.prpslFrmFlngList {
+    border-top: 1px solid var(--vt-c-gray);
+    border-bottom: 1px solid var(--vt-c-gray);
+    margin: 16px 0;
+    padding: 16px 0;
+}
+.prpslFrmFlngList ul {
+
+}
+.prpslFrmFlngList ul li {
+    font-size: 15px;
+    color: var(--vt-c-green);
+    font-weight: 500;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.prpslFrmFlngList ul li + li {
+    margin-top: 8px;
+}
+.prpslFrmFlngHow {
+
+}
+.prpslFrmFlngHow h5 {
+    font-size: 16px;
+    color: var(--gray);
+    font-weight: 600;
+    line-height: 24px;
+}
+.prpslFrmFlngHow {
+    margin-bottom: 32px;
+}
+.prpslFrmFlngHow ul {
+    list-style: auto;
+    list-style-position: inside;
+}
+.prpslFrmFlngHow ul li {
+    font-size: 15px;
+    color: var(--gray);
+    font-weight: 500;
+    line-height: 22px;
+}
+.prpslFrmFlngHow ul li + li {
+    margin-top: 8px;
+}
+.prpslFrmFlngFtr {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid var(--vt-c-gray);
+}
+.prpslFrmFlngFtr > p {
+    font-size: 16px;
+    color: var(--gray);
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+.prpslFrmFlngFtrBtn {
+    margin: 32px 0 20px 0;
+}
+
+@media (max-width:1699px) {
+    .prpslFrmFlngRow {
+        padding: 36px;
+    }
+    .prpslFrmFlngRow > p {
+        margin: 48px 0 0 0;
+    }
+    .prpslFrmFlngCol {
+        padding: 24px;
+    }
+    .prpslFrmFlngHdr h3 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .prpslFrmFlngHdr > p {
+        font-size: 15px;
+        line-height: 22px;
+        margin: 16px 0 0 0;
+    }
+    .prpslFrmFlngHow {
+        margin-bottom: 24px;
+    }
+    .prpslFrmFlngFtr {
+        margin-top: 24px;
+        padding-top: 24px;
+    }
+    .prpslFrmFlngFtr > p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .prpslFrmFlngFtrBtn {
+        margin: 24px 0 20px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .prpslFrmFlngRow {
+        padding: 16px;
+    }
+    .prpslFrmFlngRow > p {
+        font-size: 13px;
+        margin: 20px 0 0 0;
+    }
+    .prpslFrmFlngCol {
+        padding: 16px;
+    }
+    .faster {
+        font-size: 13px;
+        padding: 5px;
+        right: -11px;
+        top: 14px;
+    }
+    .prpslFrmFlngHdr i img {
+        width: 32px;
+        height: 32px;
+    }
+    .prpslFrmFlngHdr h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .prpslFrmFlngHdr > p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 12px 0 0 0;
+    }
+    .prpslFrmFlngList {
+        margin: 12px 0;
+        padding: 12px 0;
+    }
+    .prpslFrmFlngList ul li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .prpslFrmFlngHow {
+        margin-bottom: 20px;
+    }
+    .prpslFrmFlngHow h5 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .prpslFrmFlngHow ul li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .prpslFrmFlngFtr {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    .prpslFrmFlngFtr > p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .prpslFrmFlngFtrBtn {
+        margin: 20px 0 16px 0;
+    }
+}

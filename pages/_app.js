@@ -6,6 +6,7 @@
   import '@/assets/webfont/stylesheet.css'
   import '@/assets/css/icons.css'
   import '@/assets/css/select-dropdown.css'
+  import '@/assets/css/datepicker.css'
   import '@/assets/css/select-checkbox-dropdown.css'
   import '@/assets/css/floating-form-input.css'
   import '@/assets/css/tooltip.css'

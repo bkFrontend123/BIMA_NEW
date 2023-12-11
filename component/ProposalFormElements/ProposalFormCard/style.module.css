@@ -1,0 +1,9 @@
+.qstnForm + .qstnForm {
+    margin-top: 32px;
+}
+
+@media (max-width: 1699px) {
+    .qstnForm + .qstnForm {
+        margin-top: 24px;
+    }
+}

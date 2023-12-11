@@ -1,0 +1,39 @@
+.qustnAlrt {
+    position: relative;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--vt-c-gray);
+    margin-bottom: 1.5rem;
+}
+.qustnAlrtSuccess {
+    background-color: var(--successBg);
+    border-color: var(--successBorder);
+}
+.qustnAlrtError {
+    background-color: var(--errorBg);
+    border-color: var(--errorBorder);
+}
+.qustnAlrt span {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.qustnAlrtSuccess.qustnAlrt span {
+    color: var(--success);
+}
+.qustnAlrtError.qustnAlrt span {
+    color: var(--error);
+}
+.qustnAlrt span svg {
+    margin-right: 6px;
+}
+.qustnAlrt p {
+    font-size: 14px;
+    color: var(--vt-c-grayLight3);
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0;
+}

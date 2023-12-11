@@ -17,6 +17,7 @@ import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
 import NoItemCard from "@/component/BIDashboard/DashboardElements/NoItemCard";
 
 import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
+import noQuoteImg from '@/public/emptyCard/noQuoteIcon.svg';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
@@ -311,6 +312,9 @@ export default function Quotes() {
           <Col lg={6} xl={4}>
             <NoItemCard
               title="No Quotes Found"
+              imgSrc={noQuoteImg}
+              width={312}
+              height={312}
               button="true"
               customClass="mt-4"
             />

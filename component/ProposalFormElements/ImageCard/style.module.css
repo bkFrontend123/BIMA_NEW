@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+    .imgItemCol img {
+        width: auto;
+        height: auto;
+    }
+}

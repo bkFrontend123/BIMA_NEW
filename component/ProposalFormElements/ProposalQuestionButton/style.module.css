@@ -1,0 +1,22 @@
+.qstnFormBtns {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 24px;
+}
+
+@media (max-width: 1699px) {
+    .qstnFormBtns {
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .qstnFormBtns {
+        gap: 1rem;
+        margin-top: 20px;
+    }
+    .qstnFormBtns button {
+        min-width: auto !important;
+    }
+}

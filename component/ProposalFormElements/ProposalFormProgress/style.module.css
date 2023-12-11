@@ -1,0 +1,51 @@
+.prpslPrgrsCol {
+
+}
+.prpslPrgrsCol > p {
+    font-size: 14px;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0 0 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.prpslPrgrsCol > p:last-child {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 6px 0 0 0;
+}
+.prpslPrgrsCol > p svg {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+}
+.prpslPrgrs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--vt-c-blue);
+}
+.prpslPrgrs > div {
+    width: 100%;
+}
+
+@media (max-width: 1699px) {
+    .prpslPrgrsCol > p:last-child {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .prpslPrgrsCol > p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .prpslPrgrsCol > p:last-child {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

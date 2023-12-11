@@ -106,7 +106,8 @@
     .floatFormGroup .form-floating > .form-select ~ label {
         transform: scale(1) translateY(0) translateX(0);
     }
-    .floatFormGroup input {
+    .floatFormGroup input,
+    .floatFormGroup textarea {
         order: 2;
     }
     .floatFormGroup.tooltipDiv input {

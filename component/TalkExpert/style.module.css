@@ -112,6 +112,10 @@
         margin-bottom: 16px;
         margin-right: 0;
     }
+    .tlkExprtCol.extraSmall .tlkExprtImg {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
     .tlkExprtCol h4 {
         font-size: 16px;
     }

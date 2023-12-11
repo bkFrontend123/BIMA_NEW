@@ -28,6 +28,10 @@
 .employeeBenefitForm .selectDropDiv:hover label {
     color: var(--gray);
 }
+.proposalForm .selectDropDiv label {
+    background: var(--mute6);
+    color: var(--gray);
+}
 .selectDropDivSmall.selectDropDiv label {
     top: 18px;  
 }
@@ -163,6 +167,10 @@
     background-color: var(--mute5);
     color: var(--darkText);
     border-radius: 10px !important;
+}
+.proposalForm .selectDropDiv .select-search-input {
+    background-color: var(--mute6);
+    border-color: var(--gray);
 }
 .selectDropDivSmall.selectDropDiv .select-search-input {
     height: 58px;
@@ -357,6 +365,9 @@
         pointer-events: none;
         z-index: 2;
     }
+    .selectDropDivSmall.selectDropDiv .select-search-container::before {
+        top: 14px;
+    }
     .selectDropDiv .select-search-container.select-search-has-focus::before,
     .selectDropDiv.selectedDropDiv .select-search-container::before {
         display: none;
@@ -383,6 +394,9 @@
     .searchDropDiv .select-search-value::before {
         top: 21px;
         left: 14px;
+    }
+    .selectDropDivSmall.searchDropDiv .select-search-value::before {
+        top: 17px;
     }
     .selectDropDiv .select-search-value::after {
         top: 20px;
@@ -435,6 +449,9 @@
         top: 53px;
         z-index: 3;
     }
+    .selectDropDivSmall.selectDropDiv .select-search-container .select-search-select {
+        top: 47px !important;
+    }
     .selectDropDiv .select-search-select {
         max-height: 180px;
     }
@@ -444,12 +461,12 @@
         font-size: 14px;
     }
     .selectDropDivSmall.selectDropDiv label {
-        font-size: 13px;
+        font-size: 14px;
         top: 15px;
-        padding: 0 6px;
+        padding: 0;
     }
     .selectDropDivSmall.selectDropDiv .select-search-has-focus ~ label,
     .selectDropDivSmall.selectDropDiv.selectedDropDiv label {
-        transform: translateY(-26px);
+        transform: translateY(0);
     }
 }

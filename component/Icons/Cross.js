@@ -2,8 +2,6 @@ import React from 'react'
 // import '../icons/style.css'
 // import '../../../assets/css/icons.css'
 
-
-
 export default function Cross(props) {
   const { iconColor, height, width, customClass } = props 
   return (

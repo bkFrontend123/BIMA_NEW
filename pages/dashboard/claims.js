@@ -6,6 +6,13 @@ import { Row, Col, Form, FloatingLabel } from 'react-bootstrap';
 import SelectSearch from 'react-select-search';
 import 'react-select-search/style.css'
 
+import dayjs from 'dayjs';
+import 'dayjs/locale/en-gb';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import TextField from '@mui/material/TextField';
+
 import DashboardCard from '@/component/BIDashboard/DashboardCard'
 import DashboardPageTitle from '@/component/BIDashboard/DashboardPageTitle'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
@@ -57,6 +64,8 @@ export default function Claims() {
     },
   ])
 
+  const [incidentValue, setIncidentValue] = useState(null);
+
   return (
     <>
       <Head>
@@ -95,6 +104,15 @@ export default function Claims() {
                       required
                     />
                     <label>Select Policy</label>
+                  </Form.Group>
+                  <Form.Group className="dateFormGroup mb-4">
+                    <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale="en-gb">
+                      <DatePicker
+                        label="Incident Date"
+                        value={incidentValue}
+                        renderInput={(params) => <TextField {...params} />}
+                      />
+                    </LocalizationProvider>
                   </Form.Group>
                   <Form.Group className="floatFormGroup mb-4">
                     <FloatingLabel controlId="briefly" label="Brief Description">
