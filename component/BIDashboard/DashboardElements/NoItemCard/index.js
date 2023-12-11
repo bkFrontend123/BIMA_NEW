@@ -32,9 +32,9 @@ export default function NoItemCard(props) {
           <p>{description}</p>
           {button === 'true' ? (
             <Row className="g-3 justify-content-center">
-              <Col xxl={10} xl={10} lg={12}>
+              <Col xxl={12} xl={12} lg={12}>
                 <ButtonItem
-                  title="Add New Quotes"
+                  title="Explore Now"
                   type="button"
                   iconPosition="right"
                   customClass={`w-100 m-0 px-2 ${buttonStyle.btnBlue} ${buttonStyle.btnBig}`}

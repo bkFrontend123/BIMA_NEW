@@ -481,8 +481,9 @@ export default function Policies() {
             <NoItemCard
               title="No Policies Found"
               imgSrc={noPolicyImg}
-              width={312}
-              height={312}
+              width={332}
+              height={332}
+              description="Imagine what you can do when you're completely shielded. Add a Policy now, and take control of your business."
               button="true"
               customClass="mt-4"
             />

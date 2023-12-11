@@ -2,36 +2,82 @@
     background: var(--mute1);
     padding: 32px;
     border: 1px solid var(--vt-c-gray1);
-    text-align: center;
     position: relative;
 }
 
 .noItemDiv h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--black);
-    line-height: 34px;
-    margin-bottom: 36px;
-}--vt-c-gray
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--vt-c-blue);
+    line-height: 38px;
+    border-bottom: 1px solid var(--vt-c-gray);
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.noItemDiv h3 i {
+    margin-top: -5px;
+}
+
+.noItemDiv h3 i svg {
+    width: 36px;
+    height: 36px;
+}
+
+.noItemBody {
+    text-align: center;
+}
 
 .noItemFtr {
-    border: 1px solid var(--vt-c-gray1);   
+    border-top: 1px solid var(--vt-c-gray);
+    margin-top: 16px;
+}
+
+.noItemFtr p {
+    font-size: 16px;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+    margin: 16px 0;
 }
 
 @media (max-width:1699px) {
     .noItemDiv {
-        padding: 24px 24px 24px;
+        padding: 24px;
     }
     .noItemDiv h3 {
-        font-size: 22px;
-        line-height: 32px;
-        margin-bottom: 30px;
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 12px;
+        gap: 0.8rem;
+    }
+    .noItemDiv h3 i svg {
+        width: 32px;
+        height: 32px;
+    }
+    .noItemFtr {
+        margin-top: 12px;
+    }
+    .noItemFtr p {
+        font-size: 15px;
+        margin: 12px 0;
     }
 }
 
 @media (max-width:991px) {
     .noItemDiv {
         padding: 20px;
+    }
+    .noItemDiv h3 {
+        font-size: 24px;
+        line-height: 32px;
+        gap: 0.6rem;
+    }
+    .noItemDiv h3 i svg {
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -40,6 +86,19 @@
         padding: 16px;
     }
     .noItemDiv h3 {
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 28px;
+        gap: 0.5rem;
+    }
+    .noItemDiv h3 i svg {
+        width: 22px;
+        height: 22px;
+    }
+    .noItemFtr {
+        margin-top: 10px;
+    }
+    .noItemFtr p {
+        font-size: 14px;
+        margin: 10px 0;
     }
 }

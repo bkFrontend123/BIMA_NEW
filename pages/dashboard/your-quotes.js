@@ -313,8 +313,9 @@ export default function Quotes() {
             <NoItemCard
               title="No Quotes Found"
               imgSrc={noQuoteImg}
-              width={312}
-              height={312}
+              width={332}
+              height={332}
+              description="Imagine what you can do when you're completely shielded. Add a Quote now, and take control of your business."
               button="true"
               customClass="mt-4"
             />
