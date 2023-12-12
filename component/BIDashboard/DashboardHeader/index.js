@@ -3,7 +3,9 @@ import { useRouter } from 'next/router';
 import Link from 'next/link'
 import Image from 'next/image'
 
-import {Row, Col, Dropdown} from 'react-bootstrap';
+import {Row, Col, Form, Dropdown} from 'react-bootstrap';
+import SelectSearch from 'react-select-search';
+import 'react-select-search/style.css'
 
 import NotificationItem from "@/component/BIDashboard/DashboardElements/NotificationCard";
 import ButtonItem from "@/component/BIDashboard/DashboardElements/ButtonItem";
@@ -11,6 +13,7 @@ import WelcomeModal from '@/component/BIDashboard/DashboardElements/Modal/Welcom
 import AlertModal from '@/component/BIDashboard/DashboardElements/Modal/AlertModal'
 
 import LogoIcon from "@/component/BIDashboard/Icons/IconLogo";
+import BusinessIcon from '@/component/BIDashboard/Icons/IconBusiness';
 import BellIcon from '@/component/BIDashboard/Icons/IconBell';
 import MenuIcon from "@/component/BIDashboard/Icons/IconMenu";
 import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
@@ -22,6 +25,15 @@ import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/st
 
 export default function DashboardHeader(props) {
   const {click} = props;
+
+  const [businessSelectValue, setBusinessSelectValue] = useState('3');
+  const businessSelectOptions = [
+      {name: 'View All Businesses', value: '1'},
+      {name: 'BimaKavach Bengaluru', value: '2'},
+      {name: 'BimaKavach Indore', value: '3'},
+      {name: 'BimaKavach Mumbai', value: '4'},
+      {name: 'BimaKavach Varodhara', value: '5'},
+  ];
 
   const notificationData = ([
     {
@@ -75,6 +87,17 @@ export default function DashboardHeader(props) {
           </Col>
           <Col xs="auto">
             <div className='d-flex align-items-center gap-3'>
+              <Form.Group className={`selectDropDiv selectBusinessDropDiv ${!businessSelectValue == '' ? 'selectedDropDiv' : null}`}>
+                <SelectSearch
+                  options={businessSelectOptions}
+                  name="businessSelect"
+                  placeholder="&nbsp;"
+                  onChange={setBusinessSelectValue}
+                  value={businessSelectValue}
+                />
+                <label>Select your Business</label>
+                <i><BusinessIcon /></i>
+              </Form.Group>
               <Dropdown className={`${dashLayoutStyle.dHdrDrop} ${dashLayoutStyle.dHdrNotiDrop}`}>
                 <Dropdown.Toggle variant="" id="notification-dropdown" className={`${dashLayoutStyle.dashHdrDropBtn}`}>
                   <BellIcon />

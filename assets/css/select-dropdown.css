@@ -41,6 +41,36 @@
     top: 10px;
     padding: 0 6px;
 }
+.selectBusinessDropDiv.selectDropDiv label {
+    background: var(--vt-c-blue);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 15px;
+    color: var(--whiteText);
+    padding: 0 16px 0 40px;
+    line-height: 40px;
+    opacity: 1;
+    min-width: 85%;
+    max-width: 85%;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    z-index: 1;
+}
+.selectBusinessDropDiv.selectDropDiv i {
+    position: absolute;
+    left: 12px;
+    top: 6px;
+    color: var(--whiteText);
+    z-index: 2;
+    pointer-events: none;
+}
+.selectBusinessDropDiv.selectDropDiv.selectedDropDiv i {
+    color: var(--vt-c-blue);
+}
+.selectBusinessDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus ~ i {
+    color: var(--whiteText);
+}
 .selectDropDiv .select-search-has-focus ~ label,
 .selectDropDiv.selectedDropDiv label {
     transform: translateY(-30px);
@@ -50,6 +80,18 @@
 .employeeBenefitForm .selectDropDiv .select-search-has-focus ~ label,
 .employeeBenefitForm .selectDropDiv.selectedDropDiv label {
     color: var(--vt-c-yellowActive);
+}
+.selectBusinessDropDiv.selectDropDiv .select-search-has-focus ~ label,
+.selectBusinessDropDiv.selectDropDiv.selectedDropDiv label {
+    transform: translateY(0);
+}
+.selectBusinessDropDiv.selectDropDiv.selectedDropDiv label {
+    opacity: 0;
+}
+.selectBusinessDropDiv.selectDropDiv .select-search-has-focus ~ label,
+.selectBusinessDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus ~ label {
+    color: var(--whiteText);
+    opacity: 1;
 }
 .selectDropDivSmall.selectDropDiv .select-search-has-focus ~ label,
 .selectDropDivSmall.selectDropDiv.selectedDropDiv label {
@@ -116,6 +158,16 @@
     width: 17px;
     height: 16px;
 }
+.selectBusinessDropDiv.selectDropDiv .select-search-value::after {
+    background-image: url('/icons/arrowWhiteUp.svg');
+    width: 12px;
+    height: 12px;
+    top: 18px;
+    right: 12px;
+}
+.selectBusinessDropDiv.selectDropDiv.selectedDropDiv .select-search-value::after {
+    background-image: url('/icons/arrowBlueDown.svg');
+}
 .selectDropDiv .select-search-has-focus .select-search-value::after {
     background-image: url('/icons/selectArrowDownIcon.svg');
     background-size: contain;
@@ -125,6 +177,11 @@
 }
 .employeeBenefitForm .selectDropDiv .select-search-has-focus .select-search-value::after {
     background-image: url('/ghi/icons/selectArrowDownIcon.svg');
+}
+.selectBusinessDropDiv.selectDropDiv .select-search-has-focus .select-search-value::after {
+    background-image: url('/icons/arrowWhiteUp.svg');
+    top: 17px;
+    right: 12px;
 }
 .selectDropDivSmall.selectDropDiv .select-search-value::after {
     top: 20px;
@@ -171,6 +228,14 @@
 .proposalForm .selectDropDiv .select-search-input {
     background-color: var(--mute6);
     border-color: var(--gray);
+}
+.selectBusinessDropDiv.selectDropDiv .select-search-input {
+    background-color: var(--vt-c-blue);
+    font-size: 15px;
+    height: 40px;
+    padding: 10px 35px 10px 40px;
+    border: 0;
+    width: 264px;
 }
 .selectDropDivSmall.selectDropDiv .select-search-input {
     height: 58px;
@@ -238,15 +303,26 @@
 .employeeBenefitForm .selectDropDiv .select-search-has-focus .select-search-input {
     border-radius: 10px 10px 0 0 !important;
 }
+
+.selectBusinessDropDiv.selectDropDiv .select-search-has-focus .select-search-input,
+.selectBusinessDropDiv.selectDropDiv .select-search-has-focus .select-search-input:hover,
+.selectBusinessDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus .select-search-input {
+    background-color: var(--vt-c-blue);
+}
+.selectBusinessDropDiv.selectDropDiv.selectedDropDiv .select-search-input {
+    background-color: var(--vt-c-blueExtraLight1);
+}
 .selectDropDiv .select-search-is-disabled .select-search-input:hover {
     border-color: var(--formBorderColor) !important;
 }
-
 
 .selectDropDiv .select-search-select {
     box-shadow: none;
     border: 1px solid var(--formBorderColor);
     max-height: 230px;
+}
+.selectBusinessDropDiv.selectDropDiv .select-search-select {
+    border: 0;
 }
 .selectDropDiv .select-search-has-focus .select-search-select {
     border-color: var(--vt-c-blue);
@@ -265,8 +341,14 @@
 .selectDropFilterDiv.selectDropDiv .select-search-container .select-search-select {
     top: 39px !important;
 }
+.selectBusinessDropDiv.selectDropDiv .select-search-container .select-search-select {
+    top: 100%;
+}
 .select-search-container.select-search-has-focus .select-search-select {
     display: block !important;
+}
+.selectBusinessDropDiv.selectDropDiv .select-search-row {
+    border-bottom: 1px solid var(--vt-c-gray);
 }
 .selectDropDiv .select-search-option,
 .selectDropDiv .select-search-not-found {
@@ -290,9 +372,22 @@
     font-size: 15px;
     padding: 8.8px 10px;
 }
+.selectBusinessDropDiv.selectDropDiv .select-search-option,
+.selectBusinessDropDiv.selectDropDiv .select-search-not-found {
+    background-color: var(--mute3);
+    padding: 9.8px 16px;
+    font-size: 14px;
+    color: var(--black);
+    transition: all 0.3s ease 0s;
+}
 .selectDropDiv .select-search-is-highlighted,
 .selectDropDiv .select-search-option:not(.select-search-is-selected):hover {
     background-color: var(--vt-c-grayLight2);
+}
+.selectBusinessDropDiv.selectDropDiv .select-search-is-highlighted,
+.selectBusinessDropDiv.selectDropDiv .select-search-option:not(.select-search-is-selected):hover {
+    background-color: var(--whiteBg);
+    color: var(--vt-c-yellow);
 }
 .selectDropDiv .select-search-is-selected {
     color: var(--vt-c-blue) !important;
@@ -348,6 +443,9 @@
     .selectDropFilterDiv.selectDropDiv {
         display: block;
     }
+    .selectBusinessDropDiv.selectDropDiv {
+        display: block;
+    }
     .selectDropDiv .select-search-container {
         order: 2;
     }
@@ -386,6 +484,10 @@
         margin-bottom: 10px;
         white-space: unset;
         color: var(--vt-c-blue);
+    }
+    .selectBusinessDropDiv.selectDropDiv label {
+        position: absolute;
+        margin: 0;
     }
     .selectDropDiv .select-search-has-focus~label,
     .selectDropDiv.selectedDropDiv label {
@@ -428,6 +530,9 @@
     .selectDropFilterDiv.selectDropDiv .select-search-input {
         font-size: 14px;
         max-width: 100%;
+    }
+    .selectBusinessDropDiv.selectDropDiv .select-search-input {
+        width: 224px;
     }
     .selectDropFilterDiv.selectDropFilterMediumDiv.selectDropDiv .select-search-input,
     .selectDropFilterDiv.selectDropFilterLargeDiv.selectDropDiv .select-search-input {
