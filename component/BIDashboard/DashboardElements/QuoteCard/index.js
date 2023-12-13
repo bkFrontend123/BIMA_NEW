@@ -14,7 +14,7 @@ export default function QuoteCard(props) {
 
   return (
     <>
-      <div className={`${style.quoteCardCol}`}>
+      <div className={`${style.quoteCardCol} ${statusType == 'expired' ? style.expireQuoteCardCol : ''}`}>
         <div className={`d-md-flex gap-2 align-items-start justify-content-between ${style.quoteCardTtl}`} onClick={handleClick}>
           <div className={`d-flex align-items-start`}>
             <span className={`d-none me-2 ${style.quoteCardArrow} ${!isActive ? style.active : ''}`}><DropdownArrowIcon /></span>
@@ -35,10 +35,15 @@ export default function QuoteCard(props) {
               )}
             </div>
           </div>
-          <div className={`${style.quoteStatus} ${statusType == 'progress' ? style.progressStatus : ''} ${statusType == 'offline' ? style.progressStatus : ''}`}>
+          <div className={`${style.quoteStatus} ${statusType == 'progress' ? style.progressStatus : ''} ${statusType === 'offline' ? style.progressStatus : ''} ${statusType === 'expired' ? style.expiredStatus : ''}`}>
             {statusType === 'progress' || statusType === 'offline' ? (
-              <span>In Progress</span>
-            ):(
+              <span>Active</span>
+            ) : (
+              null
+            )}
+            {statusType === 'expired' ? (
+              <span>Expired</span>
+            ) : (
               null
             )}
           </div>
@@ -57,10 +62,14 @@ export default function QuoteCard(props) {
               </li>
             </ul>
           </div>
-          <div className={`${style.quoteCardInfo}`}>
-            <hr className="mt-0 mb-3" />
-            {children}
-          </div>
+          {statusType === 'expired' ? (
+            null
+          ) : (
+            <div className={`${style.quoteCardInfo}`}>
+              <hr className="mt-0 mb-3" />
+              {children}
+            </div>
+          )}
         </div>
       </div>
     </>

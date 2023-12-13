@@ -76,7 +76,7 @@ export default function Quotes() {
       industry: "Clubs and Organisations NonProfit",
       turnover: "Upto 100 Cr",
       employees: "234",
-      statusType: "progress",
+      statusType: "expired",
       dateTime: "24 April 2023"
     },
   ])

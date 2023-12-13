@@ -1,15 +1,16 @@
 .noItemDiv {
-    background: var(--mute1);
-    padding: 32px;
-    border: 1px solid var(--vt-c-gray1);
+    background: var(--whiteBg);
+    padding: 20px;
+    border: 1px solid var(--vt-c-yellow);
     position: relative;
+    box-shadow: 2px 2px 40px 0px #0000000D;
 }
 
 .noItemDiv h3 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--vt-c-blue);
-    line-height: 34px;
+    line-height: 28px;
     border-bottom: 1px solid var(--vt-c-gray);
     padding-bottom: 12px;
     margin-bottom: 16px;
@@ -23,8 +24,8 @@
 }
 
 .noItemDiv h3 i svg {
-    width: 36px;
-    height: 36px;
+    width: 24px;
+    height: 24px;
 }
 
 .noItemBody {
@@ -37,42 +38,42 @@
 }
 
 .noItemFtr p {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--vt-c-blue);
     font-weight: 500;
-    margin: 16px 0;
+    margin: 16px 0 0 0;
 }
 
 @media (max-width:1699px) {
     .noItemDiv {
-        padding: 24px;
+        padding: 16px;
     }
     .noItemDiv h3 {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 18px;
+        line-height: 26px;
         margin-bottom: 12px;
         gap: 0.8rem;
     }
     .noItemDiv h3 i svg {
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
     }
     .noItemFtr {
         margin-top: 12px;
     }
     .noItemFtr p {
-        font-size: 15px;
-        margin: 12px 0;
+        font-size: 13px;
+        margin: 12px 0 0 0;
     }
 }
 
 @media (max-width:991px) {
     .noItemDiv {
-        padding: 20px;
+        padding: 16px;
     }
     .noItemDiv h3 {
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 24px;
         gap: 0.6rem;
     }
     .noItemDiv h3 i svg {
@@ -86,8 +87,8 @@
         padding: 16px;
     }
     .noItemDiv h3 {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 24px;
         gap: 0.5rem;
     }
     .noItemDiv h3 i svg {
@@ -99,6 +100,6 @@
     }
     .noItemFtr p {
         font-size: 14px;
-        margin: 10px 0;
+        margin: 10px 0 0 0;
     }
 }

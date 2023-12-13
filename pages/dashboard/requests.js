@@ -18,13 +18,18 @@ import DashboardPageTitle from '@/component/BIDashboard/DashboardPageTitle'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
 import RequestFormCardItem from "@/component/BIDashboard/DashboardElements/ClaimRequestFormCard";
 import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
+import FaqCardItem from '@/component/BIDashboard/DashboardElements/ClaimRequestFaqCard'
+import RequestFaq from '@/component/BIDashboard/DashboardElements/RequestFaq'
 import RequestFileThankModal from '@/component/BIDashboard/DashboardElements/Modal/ClaimRequestThankModal'
 import RequestCard from '@/component/BIDashboard/DashboardElements/ClaimRequestCard'
+import NoItemCard from "@/component/BIDashboard/DashboardElements/NoItemClaimRequestCard";
 
 import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
+import noRequestImg from '@/public/emptyCard/noRequestIcon.svg';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 import form from '@/assets/css/form.module.css'
+import dashLayoutStyle from '@/assets/css/dashboardLayout.module.css'
 
 export default function Requests() {
 
@@ -55,22 +60,34 @@ export default function Requests() {
       id: "1",
       icon: "/productIcons/liability/dAndO_icon.svg",
       title: "Directors & Officers",
-      category: 'liability',
+      companyName: "BimaKavach Technologies Pvt Ltd",
+      productGroupName: 'Liability Insurance',
+      status: "Active",
       policyNumber: "BKX42787",
+      requestNumber: "BKX42787",
+      requestType: "BKX42787",
     },
     {
       id: "2",
       icon: "/productIcons/liability/eAndO_icon.svg",
       title: "Errors & Omissions quote",
-      category: 'liability',
+      companyName: "BimaKavach Technologies Pvt Ltd",
+      productGroupName: 'Asset Insurance',
+      status: "In Progress",
       policyNumber: "BKX42787",
+      requestNumber: "BKX42787",
+      requestType: "BKX42787",
     },
     {
       id: "3",
       icon: "/productIcons/asset/fire_icon.svg",
       title: "Fire Insurance",
-      category: 'asset',
+      companyName: "BimaKavach Technologies Pvt Ltd",
+      productGroupName: 'Marine Insurance',
+      status: "Expired",
       policyNumber: "BKX42787",
+      requestNumber: "BKX42787",
+      requestType: "BKX42787",
     },
   ])
 
@@ -85,7 +102,7 @@ export default function Requests() {
       </Head>
       <DashboardCard
         activeMenu="4"
-        rightSidebar="true"
+        rightSidebar="false"
       >
         <DashboardPageTitle
           title="Requests/Endorsements"
@@ -100,7 +117,7 @@ export default function Requests() {
         </Row>
 
         <Row className="g-4 g-lg-4">
-          <Col lg>
+          <Col lg={5}>
             <RequestFormCardItem>
               <div className={`${form.commonForm}`}>
                 <Form>
@@ -128,7 +145,7 @@ export default function Requests() {
                     />
                     <label>Request type</label>
                   </Form.Group>
-                  <Form.Group className="dateFormGroup mb-4">
+                  <Form.Group className="dateFormGroup dateFormSmallGroup mb-4">
                     <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale="en-gb">
                       <DatePicker
                         label="Incident Date"
@@ -152,7 +169,28 @@ export default function Requests() {
               </div>
             </RequestFormCardItem>
           </Col>
-          <Col lg></Col>
+          <Col lg={7}>
+            <Row className="g-4 g-lg-4">
+              <Col lg>
+                <div className={`${dashLayoutStyle.rghtSdbrWidget}`}>
+                  <h5>What is intimate claim?</h5>
+                  <p>A claim intimation is the first step of any notification of the claim to the insurer. It consists of basic information such as policy number, name of the insured, cause & and place of incident, and name of the claimant, etc. This helps insurers investigate the claim and initiate the claim settlement process quicker.</p>
+                </div>
+                <div className={`${dashLayoutStyle.rghtSdbrWidget}`}>
+                  <h5>Process of claim Intimation.</h5>
+                  <ul>
+                    <li><span>1</span> Select the Policy</li>
+                    <li><span>2</span> Select the reason</li>
+                  </ul>
+                </div>
+              </Col>
+              <Col lg>
+                <FaqCardItem>
+                  <RequestFaq />
+                </FaqCardItem>
+              </Col>
+            </Row>
+          </Col>
         </Row>
 
         <Row className="g-4 g-xl-4 align-items-center justify-space-between mb-4 mt-0">
@@ -165,15 +203,28 @@ export default function Requests() {
 
         <Row className='g-3 g-lg-4'>
           {requestData.map((item) =>
-            <Col lg={6} xl={4} key={item.id}>
+            <Col lg={4} xl={3} key={item.id}>
               <RequestCard
                 icon={item.icon}
                 title={item.title}
-                category={item.category}
+                productGroupName={item.productGroupName}
+                companyName={item.companyName}
+                status={item.status}
                 policyNumber={item.policyNumber}
+                requestNumber={item.requestNumber}
+                requestType={item.requestType}
               />
             </Col>
           )}
+          <Col lg={4} xl={3}>
+            <NoItemCard
+              title="No Requests Found"
+              imgSrc={noRequestImg}
+              width={171}
+              height={120}
+              description="Imagine what you can do when you're completely shielded. Add a Claim now, and take control of your business."
+            />
+          </Col>
         </Row>
       </DashboardCard>
       <RequestFileThankModal

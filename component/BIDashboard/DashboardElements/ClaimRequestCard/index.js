@@ -5,12 +5,16 @@ import Link from 'next/link'
 
 import copy from "copy-to-clipboard";
 
-import CopyIcon from "@/component/BIDashboard/Icons/IconCopy";
+import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
 
+import CopyIcon from "@/component/BIDashboard/Icons/IconCopy";
+import ArrowPrimaryIcon from "@/component/BIDashboard/Icons/IconArrowPrimary";
+
+import buttonStyle from "@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css";
 import style from './style.module.css'
 
 export default function ClaimRequestCard(props) {
-  const { icon, title, category, policyNumber } = props;
+  const { icon, title, productGroupName, category, policyNumber, companyName, status, requestType, type, requestNumber, claimNumber } = props;
 
   const [copyText, setCopyText] = useState('');
 
@@ -20,7 +24,7 @@ export default function ClaimRequestCard(props) {
 
   const copyToClipboard = () => {
     copy(policyNumber);
-    alert(`You have copied policy number "${policyNumber}"`);
+    //alert(`You have copied policy number "${policyNumber}"`);
   }
 
   const router = useRouter();
@@ -30,36 +34,91 @@ export default function ClaimRequestCard(props) {
 
   return (
     <>
-      <div className={`${style.claimReqstCardCol}`} title={title}>
+      <div className={`${style.claimReqstCardCol} ${status == 'Expired' ? style.expireClaimReqstCardCol : ''}`} title={title}>
+        <div className={`${style.claimReqstStatus} ${status == 'Active' ? style.activeStatus : ''} ${status == 'In Progress' ? style.progressStatus : ''} ${status == 'Expired' ? style.expiredStatus : ''}`}>
+          <span>{status}</span>
+        </div>
         <div className={`d-flex gap-2 align-items-center ${style.claimReqstCardTtl}`}>
-          <span><i><Image className={`${style.policyLogoIcon}`} src={icon} width={32} height={32} alt={title} /></i></span>
+          <span>
+            <i>
+              <Image className={`${style.policyLogoIcon}`} src={icon} width={32} height={32} alt={title} />
+            </i>
+          </span>
           <div>
             <h3>{title}</h3>
           </div>
         </div>
         <div className={`${style.claimReqstCardCmpny}`}>
-          <h4>BimaKavach Technologies Pvt Ltd</h4>
+          <h4>{companyName}</h4>
         </div>
         <div className={`${style.claimReqstCardInfo}`}>
-          {category === 'liability' ? (
-            <div className={`${style.claimReqstCardCat} ${style.liabilityCat}`}>Liability Insurance</div>
+          <div className={`${style.claimReqstCardCat} ${productGroupName == "Liability Insurance"
+            ? style.liabilityCat
+            : null
+            } ${productGroupName == "Asset Insurance" ? style.assetCat : null
+            } ${productGroupName == "Marine Insurance"
+              ? style.marineCat
+              : null
+            }
+
+            }`}
+          >
+            {productGroupName}
+          </div>
+          <div className={`${style.claimReqstCardList}`}>
+            <p>
+              <strong>{policyNumber} <span style={{ cursor: "pointer" }} onClick={() => copyToClipboard(policyNumber)}>
+                <CopyIcon />
+              </span></strong>
+              {"Policy Number"}
+            </p>
+            {type == "claim" ? (
+              <p>
+                <strong>{claimNumber} <span style={{ cursor: "pointer" }} onClick={() => copyToClipboard(claimNumber)}>
+                  <CopyIcon />
+                </span></strong>
+                {"Claim Id"}
+              </p>
+            ) : (
+              <p>
+                <strong>{requestNumber} <span style={{ cursor: "pointer" }} onClick={() => copyToClipboard(requestNumber)}>
+                  <CopyIcon />
+                </span></strong>
+                {"Request Id"}
+              </p>
+            )}
+            {type != "claim" ? (
+              <p>
+                <strong>{requestType}</strong>
+                Request Type
+              </p>
+            ) : (
+              null
+            )}
+          </div>
+          {status == 'Active' || status == 'In Progress' ? (
+            <div className={`${style.claimReqstCardBtn}`}>
+              <ButtonItem
+                title="See Policy Details"
+                type="button"
+                iconPosition="right"
+                customClass={`m-0 ${buttonStyle.btnDark} ${buttonStyle.minWidth3} w-100`}
+                onClick={() => {
+                  router.push("/dashboard/your-policies");
+                }}
+              >
+                <ArrowPrimaryIcon />
+              </ButtonItem>
+            </div>
           ) : (
             null
           )}
-          {category === 'asset' ? (
-            <div className={`${style.claimReqstCardCat} ${style.assetCat}`}>Asset Insurance</div>
-          ) : (
-            null
+          {type != "claim" ? null : (
+            <div className={`${style.claimReqstCardInfo}`}>
+              <hr className="mt-0 mb-3" />
+              <p>Your claim Intimation request is filed. In case of any queries reach out to support@bimakavach.com</p>
+            </div>
           )}
-          <div className={`d-flex gap-2 align-items-center justify-content-between ${style.claimReqstCardList}`}>
-            <p><strong>{policyNumber} <span onClick={copyToClipboard}><CopyIcon /></span></strong> Policy Number</p>
-            <input type="hidden" value={copyText} onChange={handleCopyText} />
-            <Link className={`${style.claimReqstLink}`} href="#" onClick={goToPolicies}>See policy details</Link>
-          </div>
-          <div className={`${style.claimReqstCardInfo}`}>
-            <hr className="mt-0 mb-3" />
-            <p>Your claim Intimation request is filed. In case of any queries reach out to support@bimakavach.com</p>
-          </div>
         </div>
       </div>
     </>

@@ -25,22 +25,25 @@ export default function ClaimRequestFaqCard(props) {
   return (
     <>
       <div className={`${style.faqCardCol}`}>
-        <div className={`d-flex align-items-center gap-2`}>
+        <div className={`d-flex align-items-center gap-2 ${style.faqCardTtl}`}>
           <i>
-            <Image src={faqIcon} width={40} height={30} alt="Faq Icon" />
+            <Image src={faqIcon} width={45} height={35} alt="Faq Icon" />
           </i>
-          <p>Frequently Asked Questions</p>
+          <h4>Frequently Asked Questions</h4>
         </div>
-        <div className={`text-end ${style.faqCardBtn}`}>
-        <ButtonItem
-          title="View FAQ's"
-          type="button"
-          iconPosition="right"
-          customClass={`m-0 ${buttonStyle.btnDark} ${buttonStyle.minWidth3}`}
-          onClick={handleKnowMoreShow}
-        >
-          <ArrowPrimaryIcon />
-        </ButtonItem>
+        <div className={`${style.faqCardInfo}`}>
+          <p>Have any doubts regarding Claims & Requests. Click on the button below to see all the Frequently Asked Questions.</p>
+        </div>
+        <div className={`${style.faqCardBtn}`}>
+          <ButtonItem
+            title="View FAQ's"
+            type="button"
+            iconPosition="right"
+            customClass={`m-0 ${buttonStyle.btnDark} ${buttonStyle.minWidth2}`}
+            onClick={handleKnowMoreShow}
+          >
+            <ArrowPrimaryIcon />
+          </ButtonItem>
         </div>
       </div>
       <Offcanvas show={showKnowMore} onHide={handleKnowMoreClose} placement="end" className={`${style.qCmprOffcanvasDiv} ${offcanvas.commonOffcanvasDiv}`}>

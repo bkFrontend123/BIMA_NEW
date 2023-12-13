@@ -18,13 +18,18 @@ import DashboardPageTitle from '@/component/BIDashboard/DashboardPageTitle'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
 import ClaimFormCardItem from "@/component/BIDashboard/DashboardElements/ClaimRequestFormCard";
 import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
+import FaqCardItem from '@/component/BIDashboard/DashboardElements/ClaimRequestFaqCard'
+import ClaimFaq from '@/component/BIDashboard/DashboardElements/ClaimFaq'
 import ClaimFileThankModal from '@/component/BIDashboard/DashboardElements/Modal/ClaimFileThankModal'
 import ClaimCard from '@/component/BIDashboard/DashboardElements/ClaimRequestCard'
+import NoItemCard from "@/component/BIDashboard/DashboardElements/NoItemClaimRequestCard";
 
 import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
+import noClaimImg from '@/public/emptyCard/noClaimIcon.svg';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 import form from '@/assets/css/form.module.css'
+import dashLayoutStyle from '@/assets/css/dashboardLayout.module.css'
 
 export default function Claims() {
 
@@ -45,22 +50,31 @@ export default function Claims() {
       id: "1",
       icon: "/productIcons/liability/dAndO_icon.svg",
       title: "Directors & Officers",
-      category: 'liability',
+      companyName: "BimaKavach Technologies Pvt Ltd",
+      productGroupName: 'Liability Insurance',
+      status: "Active",
       policyNumber: "BKX42787",
+      claimNumber: "BKX42787",
     },
     {
       id: "2",
       icon: "/productIcons/liability/eAndO_icon.svg",
       title: "Errors & Omissions quote",
-      category: 'liability',
+      companyName: "BimaKavach Technologies Pvt Ltd",
+      productGroupName: 'Asset Insurance',
+      status: "In Progress",
       policyNumber: "BKX42787",
+      claimNumber: "BKX42787",
     },
     {
       id: "3",
       icon: "/productIcons/asset/fire_icon.svg",
       title: "Fire Insurance",
-      category: 'asset',
+      companyName: "BimaKavach Technologies Pvt Ltd",
+      productGroupName: 'Marine Insurance',
+      status: "Expired",
       policyNumber: "BKX42787",
+      claimNumber: "BKX42787",
     },
   ])
 
@@ -75,7 +89,7 @@ export default function Claims() {
       </Head>
       <DashboardCard
         activeMenu="3"
-        rightSidebar="true"
+        rightSidebar="false"
       >
         <DashboardPageTitle
           title="Claims"
@@ -87,9 +101,8 @@ export default function Claims() {
             />
           </Col>
         </Row>
-
         <Row className="g-4 g-lg-4">
-          <Col lg>
+          <Col lg={5}>
             <ClaimFormCardItem>
               <div className={`${form.commonForm}`}>
                 <Form>
@@ -105,7 +118,7 @@ export default function Claims() {
                     />
                     <label>Select Policy</label>
                   </Form.Group>
-                  <Form.Group className="dateFormGroup mb-4">
+                  <Form.Group className="dateFormGroup dateFormSmallGroup mb-4">
                     <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale="en-gb">
                       <DatePicker
                         label="Incident Date"
@@ -134,10 +147,31 @@ export default function Claims() {
               </div>
             </ClaimFormCardItem>
           </Col>
-          <Col lg></Col>
+          <Col lg={7}>
+            <Row className="g-4 g-lg-4">
+              <Col lg>
+                <div className={`${dashLayoutStyle.rghtSdbrWidget}`}>
+                  <h5>What is intimate claim?</h5>
+                  <p>A claim intimation is the first step of any notification of the claim to the insurer. It consists of basic information such as policy number, name of the insured, cause & and place of incident, and name of the claimant, etc. This helps insurers investigate the claim and initiate the claim settlement process quicker.</p>
+                </div>
+                <div className={`${dashLayoutStyle.rghtSdbrWidget}`}>
+                  <h5>Process of claim Intimation.</h5>
+                  <ul>
+                    <li><span>1</span> Select the Policy</li>
+                    <li><span>2</span> Select the reason</li>
+                  </ul>
+                </div>
+              </Col>
+              <Col lg>
+                <FaqCardItem>
+                  <ClaimFaq />
+                </FaqCardItem>
+              </Col>
+            </Row>
+          </Col>
         </Row>
 
-        <Row className="g-0 g-xl-4 align-items-center justify-space-between mb-4 mt-0">
+        <Row className="g-4 g-xl-4 align-items-center justify-space-between mb-4 mt-0">
           <Col xl>
             <DashboardHeadingItem
               title="Initimated Claim List"
@@ -147,15 +181,28 @@ export default function Claims() {
 
         <Row className='g-3 g-lg-4'>
           {initimatedClaimData.map((item) =>
-            <Col lg={6} xl={4} key={item.id}>
+            <Col lg={4} xl={3} key={item.id}>
               <ClaimCard
+                type="claim"
                 icon={item.icon}
                 title={item.title}
-                category={item.category}
+                productGroupName={item.productGroupName}
+                companyName={item.companyName}
+                status={item.status}
                 policyNumber={item.policyNumber}
+                claimNumber={item.claimNumber}
               />
             </Col>
           )}
+          <Col lg={4} xl={3}>
+            <NoItemCard
+              title="No Claims Found"
+              imgSrc={noClaimImg}
+              width={171}
+              height={120}
+              description="Imagine what you can do when you're completely shielded. Add a Claim now, and take control of your business."
+            />
+          </Col>
         </Row>
       </DashboardCard>
       <ClaimFileThankModal

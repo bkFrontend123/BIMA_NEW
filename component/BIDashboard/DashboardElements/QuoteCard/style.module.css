@@ -1,11 +1,15 @@
 .quoteCardCol {
-    background: var(--whiteBg);
+    background-color: var(--whiteBg);
     padding: 32px;
     border: 1px solid var(--vt-c-gray1);
 }
 
 .quoteCardCol.active {
     border-color: var(--vt-c-blueSky);
+}
+
+.expireQuoteCardCol.quoteCardCol {
+    background-color: transparent;
 }
 
 .quoteCardTtl {
@@ -18,6 +22,11 @@
     display: flex;
     align-items: center;
     margin-bottom: 8px;
+}
+
+.expireQuoteCardCol .quoteCardTtl span i {
+    filter: grayscale(100%);
+    opacity: 0.7;
 }
 
 .quoteCardTtl h3 {
@@ -78,6 +87,12 @@
     border-color: var(--assetColor);
 }
 
+.expireQuoteCardCol .quoteCardCat {
+    background-color: var(--vt-c-gray);
+    color: var(--gray);
+    border-color: var(--gray);
+}
+
 .quoteStatus {
     font-size: 15px;
     color: var(--black);
@@ -125,6 +140,14 @@
 
 .progressStatus span::before {
     background-color: var(--statusGreenColor);
+}
+
+.expiredStatus span {
+    color: var(--error);
+}
+
+.expiredStatus span::before {
+    background-color: var(--error);
 }
 
 .quoteCardList {

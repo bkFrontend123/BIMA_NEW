@@ -1,13 +1,28 @@
 .faqCardCol {
     position: relative;
     background-color: var(--whiteBg);
-    padding: 20px;
-    border-radius: 6px;
+    padding: 32px;
+    border: 1px solid var(--vt-c-yellow);
 }
-.faqCardCol p {
-    font-size: 16px;
+.faqCardTtl {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--mute2);
+}
+.faqCardTtl h4 {
+    font-size: 20px;
     color: var(--vt-c-blue);
-    font-weight: 600;
+    font-weight: 700;
+    margin: 0;
+}
+.faqCardInfo {
+    margin-bottom: 20px;
+}
+.faqCardInfo p {
+    font-size: 15px;
+    color: var(--vt-c-blueSkyLight2);
+    font-weight: 500;
+    line-height: 24px;
     margin: 0;
 }
 .faqCardBtn {
@@ -16,9 +31,13 @@
 
 @media (max-width:1699px) {
     .faqCardCol {
-        padding: 12px;
+        padding: 24px;
     }
-    .faqCardCol p {
+    .faqCardTtl h4 {
+        font-size: 18px;
+    }
+    .faqCardInfo p {
         font-size: 14px;
+        line-height: 22px;
     }
 }
