@@ -102,13 +102,17 @@ export default function ProposalFormHeader(props) {
                                     <ArrowBackwardIcon />
                                 </ButtonItem>
                             </Col>
-                            <Col xs="auto">
-                                <ButtonItem
-                                    title="Download"
-                                    type="button"
-                                    customClass={`m-0 px-2 ${buttonStyle.btnBlue}`}
-                                />
-                            </Col>
+                            {cardType === 'Offline' ? (
+                                <Col xs="auto">
+                                    <ButtonItem
+                                        title="Download"
+                                        type="button"
+                                        customClass={`m-0 px-2 ${buttonStyle.btnBlue}`}
+                                    />
+                                </Col>
+                            ) : (
+                                null
+                            )}
                         </Row>
                         <div className={`my-4 py-xl-2 ${offcanvas.commonOffcanvasHdrTtl}`}>
                             <h3>{cardType === 'Online' ? 'Online' : ( cardType === 'Offline' && ( 'Offline' ))} Proposal Form Guideline</h3>

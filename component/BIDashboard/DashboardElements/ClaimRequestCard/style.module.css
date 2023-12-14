@@ -11,6 +11,7 @@
 
 .claimReqstStatus {
     text-align: right;
+    margin-bottom: 12px;
 }
 
 .claimReqstStatus span {

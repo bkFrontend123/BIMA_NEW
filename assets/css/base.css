@@ -407,6 +407,22 @@ p {
   box-shadow: 0px 8px 40px rgba(255, 81, 0, 0.3);
 }
 
+.btnCommon.blueBtn,
+.btnCommon.blueBtn.active:focus,
+.btnCommon.blueBtn.active:focus,
+.btnCommon.blueBtn.btn-primary:active:focus,
+.btnCommon.blueBtn.btn-primary.active:focus {
+  background: var(--vt-c-blue);
+  box-shadow: none;
+  color: var(--whiteText);
+  border: 1px solid var(--vt-c-blueSkyLight2);
+}
+.btnCommon.blueBtn:hover {
+  background: var(--whiteBg);
+  opacity: 0.9;
+  box-shadow: 0 5px 25px 0 rgba(0,0,0,0.2);
+}
+
 .btnCommon.greyBtn,
 .btnCommon.greyBtn.active:focus,
 .btnCommon.greyBtn.active:focus,

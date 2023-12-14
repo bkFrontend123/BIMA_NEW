@@ -8,6 +8,7 @@ import TalkExpert from '../TalkExpert';
 import CalendyModal from '@/component/Modal/CalendyModal'
 import EmailSentModal from '@/component/Modal/EmailSentModal'
 
+import HomeIcon from '@/component/Icons/Home'
 import EmailIcon from '@/component/Icons/Email'
 import CalenderIcon from '@/component/Icons/Calender'
 import DropdownArrow from '@/component/Icons/DropdownArrow'
@@ -92,6 +93,7 @@ export default function HeaderPlain(props) {
             ): (
               null
             )}
+
             {talkExpertIcon ? (
               <div className={`${style.hdrTlkExprt}`}>
                 <TalkExpert
@@ -188,6 +190,12 @@ export default function HeaderPlain(props) {
                 <Col md={newDesign === 'true' ? (emailQuote ? 8 : 6) : null} className={'col-auto'}>
                   <div className={newDesign === 'true' ? null : 'd-flex align-items-center gap-3'}>
                     <div className={`d-flex align-items-center ${newDesign === 'true' ? 'justify-content-center' : 'gap-2 gap-md-3'} ${style.hdrBtnDiv}`}>
+                      <div className={`${style.hdrBtn}`}>
+                        <Link href={"/dashboard/your-quotes"} className={`${newDesign === 'true' ? style.hdrBtnLink : 'btnCommon blueBtn ' + style.btnSmall}`} onClick={handleShowCalendy}>
+                          <HomeIcon width="14" height="15" />
+                            <span className='ms-2 d-none d-lg-block'>Go to Dashboard</span>
+                        </Link>
+                      </div>
                       {emailQuote ? (
                         <>
                           {/*<div className={`hdrDrpdwn ${style.hdrDrpdwn} ${style.hdrEmailDrpdwn}`}>

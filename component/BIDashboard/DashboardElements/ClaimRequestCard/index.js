@@ -38,7 +38,7 @@ export default function ClaimRequestCard(props) {
         <div className={`${style.claimReqstStatus} ${status == 'Active' ? style.activeStatus : ''} ${status == 'In Progress' ? style.progressStatus : ''} ${status == 'Expired' ? style.expiredStatus : ''}`}>
           <span>{status}</span>
         </div>
-        <div className={`d-flex gap-2 align-items-center ${style.claimReqstCardTtl}`}>
+        <div className={`d-flex gap-2 align-items-start ${style.claimReqstCardTtl}`}>
           <span>
             <i>
               <Image className={`${style.policyLogoIcon}`} src={icon} width={32} height={32} alt={title} />

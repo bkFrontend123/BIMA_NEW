@@ -16,7 +16,7 @@ export default function OnlineFillingCard(props) {
     const { customClass } = props;
     const router = useRouter();
     const goToOnlineProposalPage = () => {
-        router.push('/dashboard/your-quotes');
+        router.push('/proposal-form/online');
     };
     return (
         <>
