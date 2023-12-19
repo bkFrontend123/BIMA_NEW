@@ -272,6 +272,12 @@ body .text-primary{
 .text-primarySkyLight2 {
   color: var(--vt-c-blueSkyLight2) !important;
 }
+.text-blueExtraLight1 {
+  color: var(--vt-c-blueExtraLight1) !important;
+}
+.text-blueSkyLight2 {
+  color: var(--vt-c-blueSkyLight2) !important;
+}
 .text-primary:hover {
   color: var(--vt-c-blue) !important;
 }
@@ -776,6 +782,34 @@ h2.font-secondary {
 /***Frontend Bootstrap Css End***/
 
 /***Frontend Custom Css Start***/
+/***Hero Text Slider Css Start***/
+.textSlider {
+  height: 50px;
+  color: var(--color-text-active);
+  display: inline-block;
+  vertical-align: top;
+}
+.textSlider .swiper {
+  width: 100%;
+  height: 100%;
+}
+.textSlider .swiper-container,
+.textSlider .swiper-wrapper,
+.textSlider .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.textSlider .swiper-slide.swiper-slide-active {
+  z-index: 2;
+}
+
+@media (max-width:767px) {
+  .textSlider {
+    height: 40px;
+    text-align: left;
+  }
+}
+/***Hero Text Slider Css End***/
 .hdrDrpdwn .show.dropdown button i:last-child {
   transform: rotate(180deg);
 }

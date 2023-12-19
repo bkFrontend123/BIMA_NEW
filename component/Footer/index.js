@@ -3,8 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/script'
-import { Form, Button } from 'react-bootstrap';
-
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import Youtube from '../Icons/Youtube'
 import Insta from '../Icons/Insta'
 import Twitter from '../Icons/Twitter'
@@ -17,7 +16,7 @@ export default function Footer(props) {
       <Head>
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" />
       </Head>
-      <div className="footer ">
+      <div className="footer">
         <div className="container">
           <div className="row">
             {/* <div className="col-auto d-none d-md-block">
@@ -25,43 +24,96 @@ export default function Footer(props) {
           </div> */}
             <div className="col-xl-11 mx-auto pe-xl-5">
               <div className=''>
-                <div className="row">
-                  <div className="col-md footerLogo">
-                    <Link href="/">
-                      <Image
-                        // loader={myLoader}
-                        src="/logo-white.svg"
-                        alt="Picture of the author"
-                        width={400}
-                        height={68}
-                        loading="lazy"
-                      />
-                    </Link>
-                  </div>
-                  <div className="col-md-auto">
-                    <p className='title18 text-primarySkyLight2 font-weight-400 mb-3'>Subscribe to our Newsletter</p>
-                    <div className='ftrNwsltr'>
-                      <Form>
-                        <Form.Control
-                          type="email"
-                          id="inputEmail"
-                          aria-describedby="emailHelpBlock"
-                          placeholder='Your Mail Address'
-                          required
-                        />
-                        <Button type='submit'>Subscribe</Button>
-                      </Form>
+                <Row>
+                  <Col md={5} lg={6} xl={6}>
+                    <div className='ftrLogoOuter'>
+                      <div className='ftrLogoDiv'>
+                      <div className='footerLogo'>
+                        <Link href="/">
+                          <Image
+                            // loader={myLoader}
+                            src="/logo-main.svg"
+                            alt="Picture of the author"
+                            width={346}
+                            height={43}
+                            loading="lazy"
+                          />
+                        </Link>
+                      </div>
+                      <div className='ftrStartupIcon'>
+                        <div className='ftrBadgeIconCol'>
+                          <img className='ftrBadgeIcon' src="/icons/badgeIcon.svg" alt="Simple Digital & Transparent" />
+                          <img className='ftrBadgeActiveIcon' src="/icons/badgeActiveIcon.svg" alt="Simple Digital & Transparent" />
+                        </div>
+                      </div>
+                      </div>
+                      <div className='ftrnwsltrDiv mt-2'>
+                        <p className='title18 font-weight-500 mb-2'>Subscribe to our Newsletter</p>
+                        <div className='ftrNwsltr'>
+                          <Form>
+                            <Form.Control
+                              type="email"
+                              id="inputEmail"
+                              aria-describedby="emailHelpBlock"
+                              placeholder='Your Mail Address'
+                              required
+                            />
+                            <Button type='submit'>Subscribe</Button>
+                          </Form>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className='d-none d-md-block' style={{ height: "90px" }}></div>
-                <div className='d-block d-md-none' style={{ height: "0" }}></div>
-                <div className="text-white title-30 font-weight-600 mt-4 mt-md-0 mb-2 mb-md-4 text-start">Our Products</div>
-                <div className="row footer-listMenu">
-                  <div className="col-md-4">
+                  </Col>
+                  <Col xl={1} className='d-xl-flex d-none'></Col>
+                  <Col md={4} lg={3} xl={3}>
+                    <div className="footer-listMenu-list border-0">
+                      <ul className="list-group list-group-borderless bg-transparent ">
+                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">Get in Touch</li>
+                        <li className="list-group-item">
+                          <Link href="mailto:Info@bimakavach.com" className='title18 font-weight-400'>Info@bimakavach.com</Link>
+                        </li>
+                        <li className="list-group-item text-blueExtraLight1 title18 font-weight-600">Liability Insurance</li>
+                        <li className="list-group-item">
+                          <Link href="tel:9036554785" className='title18 font-weight-400'>+91-90365-54785</Link>
+                        </li>
+                        <li className="list-group-item text-blueExtraLight1 title18 font-weight-600">P&C Insurance</li>
+                        <li className="list-group-item">
+                          <Link href="tel:9035492594" className='title18 font-weight-400'>+91-90354-92594</Link>
+                        </li>
+                        <li className="list-group-item text-blueExtraLight1 title18 font-weight-600">P&C Insurance</li>
+                        <li className="list-group-item">
+                          <Link href="tel:8792930364" className='title18 font-weight-400'>+91-87929-30364</Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </Col>
+                  <Col md={3} lg={3} xl={2}>
+                    <div className="footer-listMenu-list border-0">
+                      <ul className="list-group list-group-borderless bg-transparent ">
+                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">Company</li>
+                        <li className="list-group-item">
+                          <Link href="/about" className='title18 font-weight-400'>About Us</Link>
+                        </li>
+                        <li className="list-group-item">
+                          <Link target='_blank' href="https://www.bimakavach.com/blog/" className='title18 font-weight-400'>Blog</Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </Col>
+                </Row>
+                <div className='d-none d-xxl-block' style={{ height: "40px" }}></div>
+                <div className='d-none d-md-block' style={{ height: "30px" }}></div>
+                <div className='d-block d-md-none' style={{ height: "20px" }}></div>
+                <hr></hr>
+                <div className='d-none d-xxl-block' style={{ height: "30px" }}></div>
+                <div className='d-none d-md-block' style={{ height: "20px" }}></div>
+                <div className='d-block d-md-none' style={{ height: "20px" }}></div>
+                <div className="text-blueSkyLight2 title-30 font-weight-600 mb-2 mb-md-4 text-start">Our Products</div>
+                <Row className="footer-listMenu">
+                  <Col md={6} lg={3}>
                     <div className="footer-listMenu-list border-0">
                       <ul className="list-group list-group-borderless bg-transparent">
-                        <li className="list-group-item text-yellow title20 font-weight-600">Liability</li>
+                        <li className="list-group-item text-blueExtraLight1 title20 font-weight-600">Liability</li>
                         <li className="list-group-item">
                           <Link href="/directors-and-officers-insurance" className='title18 font-weight-400'>Directors & Officers Insurance</Link>
                         </li>
@@ -72,64 +124,52 @@ export default function Footer(props) {
                           <Link href="/general-liability-insurance" className='title18 font-weight-400'>General Liability Insurance</Link>
                         </li>
                         <li className="list-group-item">
-                          <Link href="/product-liability-insurance" className='title18 font-weight-400'>Product Liability Insurance</Link>
+                          <Link href="#" className='title18 font-weight-400'>Fidelity Insurance</Link>
                         </li>
                         <li className="list-group-item">
-                          <Link href="/cyber-insurance" className='title18 font-weight-400'>Cyber Insurance</Link>
+                          <Link href="/product-liability-insurance" className='title18 font-weight-400'>Product Liability Insurance</Link>
                         </li>
                         <li className="list-group-item">
                           <Link href="/commercial-crime-insurance" className='title18 font-weight-400'>Crime Insurance</Link>
                         </li>
                         <li className="list-group-item">
-                          <Link href="/workmens-compensation-insurance" className='title18 font-weight-400'>Workmen’s Compensation</Link>
+                          <Link href="/workmens-compensation-insurance" className='title18 font-weight-400'>Workmen's Compensation</Link>
                         </li>
-                        {/*<li className="list-group-item">
-                        <span className='title18 font-weight-400'>Fidelity Insurance</span>
-                      </li>
-                      <li className="list-group-item">
-                        <span className='title18 font-weight-400'>Workman's Compensation</span>
-                      </li>*/}
+                        <li className="list-group-item">
+                          <Link href="/cyber-insurance" className='title18 font-weight-400'>Cyber Insurance</Link>
+                        </li>
                       </ul>
                     </div>
-                  </div>
-                  <div className="col-md-4">
+                  </Col>
+                  <Col md={6} lg={3}>
                     <div className="footer-listMenu-list footer-listMenu-listALign">
                       <ul className="list-group list-group-borderless bg-transparent">
-                        <li className="list-group-item text-yellow title20 font-weight-600">Asset</li>
+                        <li className="list-group-item text-blueExtraLight1 title20 font-weight-600">Asset</li>
                         <li className="list-group-item">
                           <Link href="/fire-and-burglary-insurance" className='title18 font-weight-400'>Fire Insurance</Link>
                         </li>
-                        {/*<li className="list-group-item">
-                        <span className='title18 font-weight-400'>Office Package</span>
-                      </li>
-                      <li className="list-group-item">
-                        <span className='title18 font-weight-400'>Shop Owner’s</span>
-                      </li>
-                      <li className="list-group-item">
-                        <span className='title18 font-weight-400'>Restaurant Hotels & Cafes</span>
-                      </li>
-                      <li className="list-group-item">
-                        <span className='title18 font-weight-400'>Educational Institutes</span>
-                      </li>
-                      <li className="list-group-item">
-                        <span className='title18 font-weight-400'>Hospitals & Clinics</span>
-                      </li>*/}
-                      </ul>
-                      <ul className="list-group list-group-borderless bg-transparent">
-                        {/*<li className="list-group-item text-yellow title20 font-weight-600">For Employees</li>
-                      <li className="list-group-item">
-                        <span className='title18 font-weight-400'>Group Health Insurance</span>
-                      </li>
-                      <li className="list-group-item">
-                        <span className='title18 font-weight-400'>Group Personal Accident</span>
-                      </li>*/}
-                        <li className="list-group-item text-yellow title20 font-weight-600 mt-3">Marine</li>
                         <li className="list-group-item">
-                          <Link href="/marine-cargo-insurance" className='title18 font-weight-400'>Marine Transit</Link>
+                          <Link href="#" className='title18 font-weight-400'>Office Package</Link>
+                        </li>
+                        <li className="list-group-item">
+                          <Link href="#" className='title18 font-weight-400'>Shop Owner's</Link>
+                        </li>
+                        <li className="list-group-item">
+                          <Link href="#" className='title18 font-weight-400'>Restaurant Hotels & Cafes</Link>
+                        </li>
+                        <li className="list-group-item">
+                          <Link href="#" className='title18 font-weight-400'>Educational Institutes</Link>
+                        </li>
+                        <li className="list-group-item">
+                          <Link href="#" className='title18 font-weight-400'>Hospitals & Clinics</Link>
                         </li>
                       </ul>
+                    </div>
+                  </Col>
+                  <Col md={6} lg={3}>
+                    <div className="footer-listMenu-list footer-listMenu-listALign">
                       <ul className="list-group list-group-borderless bg-transparent">
-                        <li className="list-group-item text-yellow title20 font-weight-600 mt-3">Engineering</li>
+                        <li className="list-group-item text-blueExtraLight1 title20 font-weight-600">Engineering</li>
                         <li className="list-group-item">
                           <Link href="/contractor-all-risk-policy" className='title18 font-weight-400'>Contractor's All Risk</Link>
                         </li>
@@ -141,62 +181,28 @@ export default function Footer(props) {
                         </li>
                       </ul>
                     </div>
-                  </div>
-                  {/*<div className="col-md-4">
-                  <div className="footer-listMenu-list footer-listMenu-listALign">
-                    <ul className="list-group list-group-borderless bg-transparent ">
-                      <li className="list-group-item text-yellow title20 font-weight-600">Engineering</li>
-                      <li className="list-group-item">
-                        <span className='title18 font-weight-400'>Contractors All Risk</span>
-                      </li>
-                      <li className="list-group-item">
-                        <span className='title18 font-weight-400'>Erection All Risk</span>
-                      </li>
-                      <li className="list-group-item">
-                        <span className='title18 font-weight-400'>Contractors Plant & Machinery</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>*/}
-                  <div className="col-md-4">
-                    <div className="footer-listMenu-list border-0">
-                      <ul className="list-group list-group-borderless bg-transparent ">
-                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">Company</li>
+                  </Col>
+                  <Col md={6} lg={3}>
+                    <div className="footer-listMenu-list footer-listMenu-listALign">
+                      <ul className="list-group list-group-borderless bg-transparent">
+                        <li className="list-group-item text-blueExtraLight1 title20 font-weight-600">For Employees</li>
                         <li className="list-group-item">
-                          <Link href="/about" className='title18 font-weight-400'>About Us</Link>
+                          <Link href="/group-health-insurance" className='title18 font-weight-400'>Group Health Insurance</Link>
                         </li>
                         <li className="list-group-item">
-                          <Link target='_blank' href="https://www.bimakavach.com/blog/" className='title18 font-weight-400'>Blog</Link>
+                          <Link href="/group-personal-accident-insurance" className='title18 font-weight-400'>Group Personal Accident</Link>
                         </li>
-                        {/*<li className="list-group-item">
-                          <Link href="/" className='title18 font-weight-400'>Resource Hub</Link>
-                        </li>
-                        <li className="list-group-item">
-                          <Link href="/" className='title18 font-weight-400'>White Papers</Link>
-                        </li>
-                        <li className="list-group-item">
-                          <Link href="/career" className='title18 font-weight-400'>Careers at BimaKavach</Link>
-                        </li>*/}
                       </ul>
-                      <ul className="list-group list-group-borderless bg-transparent ">
-                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">Get in Touch</li>
+                      <ul className="list-group list-group-borderless bg-transparent">
+                        <li className="list-group-item text-blueExtraLight1 title20 font-weight-600 mt-3">Marine</li>
                         <li className="list-group-item">
-                          <Link href="mailto:support@bimakavach.co" className='title18 font-weight-400'>support@bimakavach.com</Link>
-                        </li>
-                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">For Liability Insurance</li>
-                        <li className="list-group-item">
-                          <Link href="tel:+91 9036554785" className='title18 font-weight-400'>+91 9036554785</Link>
-                        </li>
-                        <li className="list-group-item text-primarySkyLight2 title20 font-weight-600">For P&C Insurance</li>
-                        <li className="list-group-item">
-                          <Link href="tel:+91 9035492594" className='title18 font-weight-400'>+91 9035492594</Link>
+                          <Link href="/marine-cargo-insurance" className='title18 font-weight-400'>Marine Transit</Link>
                         </li>
                       </ul>
                     </div>
-                  </div>
-                </div>
-                <div className='d-none d-md-block' style={{ height: "90px" }}></div>
-
+                  </Col>
+                </Row>
+                <div className='d-none d-md-block' style={{ height: "140px" }}></div>
                 {starContent == 'true' ? (
                   <div className="row footer-note">
                     <div className="col-md-12">
@@ -209,12 +215,12 @@ export default function Footer(props) {
                 }
                 <div className="row footer-note mt-4">
                   <div className="col-md-12">
-                    <p className='title14 text-primarySkyLight1 font-weight-600 mb-2'>Disclaimer:</p>
-                    <p className='title14 text-primarySkyLight2 font-weight-500 mb-2'>BimaKavach Insurance Broking Pvt. Ltd. | CIN- U66010MP2022PTC059393 | Registered  Office- Flat No 201, Classic Avenue, 184 Shrinagar Main, Indore Madhya Pradesh India- 452018 | Phone No.- 9036554785 | Email- support@bimakavach.com </p>
+                    <p className='title14 text-blueExtraLight1 font-weight-600 mb-2'>Disclaimer:</p>
+                    <p className='title14 text-blueExtraLight1 font-weight-500 mb-2'>BimaKavach Insurance Broking Pvt. Ltd. | CIN- U66010MP2022PTC059393 | Registered  Office- Flat No 201, Classic Avenue, 184 Shrinagar Main, Indore Madhya Pradesh India- 452018 | Phone No.- 9036554785 | Email- support@bimakavach.com </p>
 
-                    <p className='title14 text-primarySkyLight2 font-weight-500 mb-2'>BimaKavach is registered as a Direct Broker | Registration No. 901, Registration Code No.  IRDAI / DB 985/ 2022, Valid till 25/06/2026, License category- Direct Broker (General).</p>
+                    <p className='title14 text-blueExtraLight1 font-weight-500 mb-2'>BimaKavach is registered as a Direct Broker | Registration No. 901, Registration Code No.  IRDAI / DB 985/ 2022, Valid till 25/06/2026, License category- Direct Broker (General).</p>
 
-                    <p className='title14 text-primarySkyLight2 font-weight-500 mb-0'>Visitors are being informed that BimaKavach Insurance Broking Pvt. Ltd. holds the right to share the information submitted by you on the website with Insurers. Product information is genuine and exclusively based on information obtained from insurers.</p>
+                    <p className='title14 text-blueExtraLight1 font-weight-500 mb-0'>Visitors are being informed that BimaKavach Insurance Broking Pvt. Ltd. holds the right to share the information submitted by you on the website with Insurers. Product information is genuine and exclusively based on information obtained from insurers.</p>
                   </div>
                 </div>
               </div>

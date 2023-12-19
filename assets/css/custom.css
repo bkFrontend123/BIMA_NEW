@@ -760,12 +760,88 @@ body .swiper-scrollbar {
    z-index: -1;
 }
 
+.footer hr {
+   background-color: var(--vt-c-yellow);
+   opacity: 1;
+}
+
+.ftrLogoOuter {
+   background-color: var(--whiteBg);
+   padding: 40px;
+   height: 100%;
+   border-radius: 6px;
+   border: 3px solid var(--mute3);
+}
+
+.ftrLogoDiv {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1rem;
+}
+
 .footerLogo a {
    display: inline-block;
 }
 
+.ftrBadgeIconCol {
+   position: relative;
+   transition: all .4s ease 0s;
+   width: 105px;
+   height: 105px;
+   padding: 30px;
+ }
+ .ftrBadgeIconCol::before {
+   background-image: url(/icons/badgeBg.svg);
+   position: absolute;
+   content: "";
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center center;
+   transition: all 5s ease 0s;
+   animation: rotate infinite 15s linear;
+ }
+ @keyframes rotate {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+ }
+ .ftrBadgeIcon,
+ .ftrBadgeActiveIcon {
+   position: absolute;
+   left: 30px;
+   top: 26px;
+   right: 0;
+   bottom: 0;
+   width: 44px;
+   transition: all 0.8s ease 0s;
+ }
+ .ftrBadgeActiveIcon {
+   opacity: 0;
+ }
+ .ftrBadgeIconCol:hover::before {
+   //transform: rotate(180deg);
+ }
+ .ftrBadgeIconCol:hover .ftrBadgeIcon {
+   opacity: 0;
+ }
+ .ftrBadgeIconCol:hover .ftrBadgeActiveIcon {
+   opacity: 1;
+ }
+
+.ftrnwsltrDiv p {
+   color: var(--vt-c-grayLight3);
+}
+
 .ftrNwsltr {
-   max-width: 450px;
+   max-width: 100%;
 }
 
 .ftrNwsltr form {
@@ -777,18 +853,24 @@ body .swiper-scrollbar {
    border: 0;
    border-radius: 0;
    height: 60px;
-   padding: 0 24px;
+   padding: 0 20px;
    font-size: 17px;
+   color: var(--vt-c-grayLight3);
    font-weight: 500;
 }
 
+.ftrNwsltr .form-control::placeholder {
+   color: var(--vt-c-grayLight3);
+}
+
 .ftrNwsltr .btn {
-   background-color: transparent;
-   border-color: var(--white);
+   background-color: var(--vt-c-yellow);
+   border: 0;
    border-radius: 0;
    min-width: 175px;
    font-size: 17px;
-   font-weight: 500;
+   color: var(--vt-c-blue);
+   font-weight: 600;
    transition: all 0.3s ease 0s;
 }
 .ftrNwsltr .btn:hover,
@@ -826,6 +908,9 @@ body .swiper-scrollbar {
    height: 100%;
 }
 
+.footer-listMenu-listALign ul {
+   padding-left: 40px;
+}
 
 .ftrLinks a {
    font-size: 16px;

@@ -1,6 +1,18 @@
+@media (min-width: 1400px) {
+  .textSlider {
+    height: 66px;
+  }
+}
+
 @media (min-width: 1300px) {
   .productPage .container{
     //max-width: 74.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .textSlider {
+    height: 60px;
   }
 }
 

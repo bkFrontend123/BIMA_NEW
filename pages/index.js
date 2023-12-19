@@ -41,11 +41,7 @@ export default function Home() {
       <Navbar />
       <main>
         <div className=''>
-          <HeroBanner
-            title="Business Insurance matlab"
-            subtitle="BimaKavach"
-            description="Quick questions. Instant quotes. Top insurers."
-          />
+          <HeroBanner />
           <TrustedBusiness />
           {/* <Startup id="PRODUCT" /> */}
           <Partner />

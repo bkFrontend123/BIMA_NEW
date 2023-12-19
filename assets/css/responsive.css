@@ -1,5 +1,3 @@
-
-
 @media only screen and (min-width: 768px) {
   .abcFilterBox:hover span,
   .abcFilterBox.active span,
@@ -7,6 +5,19 @@
       font-size: 24px;
       line-height: 24px;
       color:  var(--vt-c-yellow);
+  }
+}
+
+@media only screen and (max-width: 1699px) {
+  .ftrLogoOuter {
+    padding: 32px;
+  }
+  .footer-listMenu-listALign ul {
+    padding-left: 20px;
+  }
+  .footer .list-group li a {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -136,6 +147,9 @@
     width: 1140px;
   }
 
+  .ftrLogoOuter {
+    padding: 24px;
+  }
 }
 
 @media only screen and (max-width: 1399px) {
@@ -223,6 +237,9 @@
   .tinder,
   .tinder > div {
     max-width: 100% !important;
+  }
+  .ftrLogoOuter {
+    padding: 20px;
   }
 }
 
@@ -697,9 +714,28 @@
   }
 
   /** footer**/
-
+  .ftrLogoOuter {
+    padding: 16px;
+  }
+  .ftrBadgeIconCol {
+    position: relative;
+    transition: all .4s ease 0s;
+    width: 80px;
+    height: 80px;
+    padding: 30px;
+  }
+  .ftrBadgeIcon,
+  .ftrBadgeActiveIcon {
+    left: 22px;
+    top: 22px;
+    width: 34px;
+  }
   .ftrNwsltr form {
     display: block;
+  }
+  .ftrnwsltrDiv p {
+    font-size: 16px;
+    line-height: 24px;
   }
   .ftrNwsltr .form-control {
     height: 54px;

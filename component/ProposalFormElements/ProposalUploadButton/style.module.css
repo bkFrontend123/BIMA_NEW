@@ -9,10 +9,10 @@
     margin: 0;
 }
 .prpslFileUpldBtn {
-    margin-top: 20px;
+    margin-top: 16px;
 }
 .prpslFileUpldBtn label {
-    background-color: transparent;
+    background-color: var(--whiteBg);
     font-size: 16px;
     color: var(--vt-c-blue);
     font-weight: 600;

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import {Container, Row, Col} from 'react-bootstrap';
 
 import IndustryBlock from '../../IndustryBlock'
+import HeroTextSlider from '../HeroTextSlider';
 
 export default function HeroBanner(props) {
   const { title, subtitle, description } = props
@@ -16,9 +17,12 @@ export default function HeroBanner(props) {
               <Row>
                 <Col lg={6}>
                   <div className={`homeBannerLeft`}>
-                    <h1 className='homeBannerTextTitle title60 font-secondary text-primary font-weight-700 mb-0'>{title} <span className='text-yellow'>{subtitle}</span>
+                    <h1 className='homeBannerTextTitle title60 font-secondary text-primary font-weight-700 mb-0'>
+                      <HeroTextSlider />
                     </h1>
-                    <p className={`BannerDescription font-primaryNormal font-weight-500 text-black`}>{description}</p>
+                    <h1 className='homeBannerTextTitle title60 font-secondary text-primary font-weight-700 mb-0'>matlab <span className='text-yellow'>BimaKavach</span>
+                    </h1>
+                    <p className={`BannerDescription font-primaryNormal font-weight-500 text-black`}>Quick questions. Instant quotes. Top insurers.</p>
                     <div className='homeBannerText-bottom'>
                       <div className='homeBannerText-bottomCard'>
                         <i>

@@ -5,10 +5,10 @@ import UploadIcon from "@/component/Icons/FileUpload";
 import style from './style.module.css'
 
 export default function ProposalUploadButton(props) {
-  const { title, disable, btnText } = props;
+  const { customClass, title, disable, btnText } = props;
   return (
     <>
-      <div className={`${style.prpslFileUpldDiv}`}>
+      <div className={`${style.prpslFileUpldDiv} ${customClass}`}>
         {title ? (
           <p>{title}</p>
         ) : (

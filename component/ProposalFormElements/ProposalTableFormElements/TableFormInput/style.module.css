@@ -1,0 +1,140 @@
+.prpslTblFrmInputDiv {
+
+}
+.activePrpslTblFrmInputDiv {
+    border-top: 1px solid var(--disable);
+    margin-top: 16px;
+    padding-top: 16px;
+    margin-bottom: 16px !important;
+}
+.prpslTblFrmInputDiv label {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 23px;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin-bottom: 5px;
+}
+.prpslTblFrmInputDiv label.prcntLbl {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.prpslTblFrmInputDiv label.prcntLbl::after {
+    content: "";
+    border-bottom: 1px dashed var(--vt-c-grayLight3);
+    height: 1px;
+    width: 100%;
+    margin: 0 12px;
+}
+.activePrpslTblFrmInputDiv.prpslTblFrmInputDiv label.prcntLbl::after{
+    display: none;
+}
+.prpslTblFrmInputDiv label span {
+    background-color: var(--vt-c-gray);
+    font-size: 15px;
+    columns: var(--gray);
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    line-height: 23px;
+    border: 1px solid var(--vt-c-gray);
+    display: inline-block;
+    padding: 0 8px;
+    order: 2;
+}
+.activePrpslTblFrmInputDiv.prpslTblFrmInputDiv label span {
+    background-color: var(--mute1);
+    border-color: var(--mute2);
+    color: var(--vt-c-yellow);
+}
+.prpslTblFrmInput {
+    border: 1px solid var(--gray);
+    display: flex;
+    padding: 9px 16px;
+    align-items: center;
+}
+.activePrpslTblFrmInputDiv .prpslTblFrmInput {
+    border-color: var(--vt-c-blue);
+}
+.prpslTblFrmInput input {
+    background: transparent;
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: 500;
+    border: 0;
+    padding: 0;
+    order: 2;
+    width: 100%;
+    height: 38px;
+}
+.prpslTblFrmGrpInput.prpslTblFrmInput input {
+    border-left: 1px solid var(--gray);
+    padding-left: 16px;
+    margin-left: 10px;
+}
+.activePrpslTblFrmInputDiv .prpslTblFrmInput input {
+    color: var(--vt-c-blue);
+    font-weight: 600;
+}
+.prpslTblFrmInput textarea {
+    background: transparent;
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: 500;
+    border: 0;
+    padding: 6px 0;
+    order: 2;
+    width: 100%;
+    height: 38px;
+}
+.prpslTblFrmGrpInput.prpslTblFrmInput textarea {
+    border-left: 1px solid var(--gray);
+    padding-left: 16px;
+    margin-left: 10px;
+}
+.activePrpslTblFrmInputDiv .prpslTblFrmInput textarea {
+    color: var(--vt-c-blue);
+    font-weight: 600;
+}
+.prpslTblFrmInput input::-webkit-outer-spin-button,
+.prpslTblFrmInput input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.prpslTblFrmInput input[type=number] {
+  -moz-appearance: textfield;
+}
+.prpslTblFrmInput span {
+    font-size: 18px;
+    color: var(--gray);
+}
+.activePrpslTblFrmInputDiv .prpslTblFrmInput span {
+    color: var(--vt-c-blue);
+    font-weight: 600;
+}
+
+@media (max-width:1699px) {
+    .prpslTblFrmInput input,
+    .prpslTblFrmInput textarea {
+        font-size: 16px;
+        height: 34px;
+    }
+    .prpslTblFrmInput span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1199px) {
+
+}
+
+@media (max-width:991px) {
+
+}
+
+@media (max-width:767px) {
+
+}

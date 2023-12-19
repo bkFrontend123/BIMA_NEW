@@ -15,7 +15,7 @@ import radioStyle from '@/component/ProposalFormElements/ProposalQuestionRadio/s
 import style from './style.module.css'
 
 export default function ProposalQuestionCard(props) {
-    const { questionName, isUploadMode, isEditMode, isNoMore, knowMoreTitle, knowMoreContent, isHint, hintTitle, children } = props;
+    const { questionName, isUploadMode, isEditMode, isNoMore, knowMoreTitle, knowMoreContent, isHint, hintTitle, isTableForm, children } = props;
 
     const [radioValue, setRadioValue] = useState();
 
@@ -50,17 +50,23 @@ export default function ProposalQuestionCard(props) {
                                 <div className={`${style.qstnUpldDiv}`}>
                                     {children}
                                 </div>
-                            ): (
+                            ) : (
                                 <>
-                                    {isHint == 'true' ? (
-                                        <div className={`${style.qstnHint}`}>
-                                            <p>{hintTitle}</p>
-                                            <div className={`${style.qstnHintInner}`}>
-                                                {children}
-                                            </div>
-                                        </div>
-                                    ) : (
+                                    {isTableForm == 'true' ? (
                                         null
+                                    ) : (
+                                        <>
+                                            {isHint == 'true' ? (
+                                                <div className={`${style.qstnHint}`}>
+                                                    {hintTitle ? <p>{hintTitle}</p> : ( null )}
+                                                    <div className={`${style.qstnHintInner}`}>
+                                                        {children}
+                                                    </div>
+                                                </div>
+                                            ) : (
+                                                null
+                                            )}
+                                        </>
                                     )}
                                 </>
                             )}
@@ -96,6 +102,18 @@ export default function ProposalQuestionCard(props) {
                             null
                         )}
                     </Row>
+                    {isTableForm == 'true' ? (
+                        <Row className="g-4 g-xl-5">
+                            <Col lg={12}>
+                                <div className={`${style.tblFrmOuter}`}>
+                                    {children}
+                                </div>
+                            </Col>
+                        </Row>
+                    ) : (
+                        null
+                    )}
+                    
                 </div>
                 {isEditMode == 'true' ? (
                     <div className={`${style.qstnEditBtn}`}>
