@@ -15,7 +15,7 @@ import radioStyle from '@/component/ProposalFormElements/ProposalQuestionRadio/s
 import style from './style.module.css'
 
 export default function ProposalQuestionCard(props) {
-    const { questionName, isUploadMode, isEditMode, isNoMore, knowMoreTitle, knowMoreContent, isHint, hintTitle, isTableForm, children } = props;
+    const { questionName, isUploadMode, isEditMode, isNoMore, knowMoreTitle, knowMoreContent, isHint, hintTitle, isError, errorText, isTableForm, children } = props;
 
     const [radioValue, setRadioValue] = useState();
 
@@ -39,7 +39,7 @@ export default function ProposalQuestionCard(props) {
             ) : (
                 null
             )}
-            <div className={`${style.qstnCol} ${isEditMode == 'true' ? style.disable : ''} ${isEditValue ? '' : style.NoDisable} ${isUploadMode == 'true' ? style.qstnUpldCol : ''}`}>
+            <div className={`${style.qstnCol} ${isEditMode == 'true' ? style.disable : ''} ${isEditValue ? '' : style.NoDisable} ${isUploadMode == 'true' ? style.qstnUpldCol : ''} ${isError == 'true' ? style.qstnErrorCol : ''}`}>
                 <div className={`${style.qstnColInner}`}>
                     <Row className="g-4 g-xl-5 align-items-start">
                         <Col lg={7}>
@@ -125,6 +125,13 @@ export default function ProposalQuestionCard(props) {
                     null
                 )}
             </div>
+            {errorText ? (
+                <div className={`${style.qstnErrText}`}>
+                    <p>{errorText}</p>
+                </div>
+             ) : ( 
+                null
+            )}
             <Offcanvas show={show} onHide={handleClose} placement="end" className={`${offcanvas.commonOffcanvasDiv} ${offcanvas.commonOffcanvasWhiteDiv}`}>
                 {/*<Offcanvas.Header className={`${offcanvas.commonOffcanvasHeaderDiv}`}>
                     <div className={`${offcanvas.commonOffcanvasHeader} ${style.commonOffcanvasHeader}`}>

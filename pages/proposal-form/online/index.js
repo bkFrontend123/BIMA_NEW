@@ -208,7 +208,9 @@ export default function ProposalFormOnline() {
                                                             {id: 2, label: 'No', name: 'question6'},
                                                         ]}
                                                         isNoMore="true"
-                                                        isEditMode="false"
+                                                        isEditMode="true"
+                                                        isError="true"
+                                                        errorText="Please fill the following mandatory question to continue."
                                                         knowMoreTitle="Network Protection"
                                                         knowMoreContent={[
                                                             "Thank you for your payment! Your policy is now active. To receive your policy documents, please complete our quick proposal form.",

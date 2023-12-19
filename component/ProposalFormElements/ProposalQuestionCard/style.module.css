@@ -14,6 +14,14 @@
     border: 1px solid var(--gray);
 }
 
+.qstnErrorCol.qstnCol,
+.qstnErrorCol.qstnCol.disable.NoDisable,
+.qstnErrorCol.qstnUpldCol.qstnCol.disable,
+.qstnErrorCol.qstnUpldCol.qstnCol.disable.NoDisable {
+    background: var(--errorBg);
+    border-color: var(--error);
+}
+
 .qstnCol.disable::before {
     background: var(--vt-c-gray);
     position: absolute;
@@ -33,6 +41,14 @@
 
 .qstnCol.disable.NoDisable::before {
     display: none;
+}
+
+.qstnErrorCol.qstnCol::before,
+.qstnErrorCol.qstnCol.disable.NoDisable::before,
+.qstnErrorCol.qstnUpldCol.qstnCol.disable::before,
+.qstnErrorCol.qstnUpldCol.qstnCol.disable.NoDisable::before {
+    background: var(--errorBg);
+    border-color: var(--error);
 }
 
 .qstnCol + .qstnCol {
@@ -62,6 +78,10 @@
 .disable .qstnName p {
     color: var(--vt-c-grayLight3);
     pointer-events: none;
+}
+
+.qstnErrorCol.disable .qstnName p {
+    color: var(--black);
 }
 
 .qstnName p + p {
@@ -235,6 +255,16 @@
     display: none;
 }
 
+.qstnErrText {
+    margin: 12px 0 24px 0;
+}
+.qstnErrText p {
+    font-size: 16px;
+    color: var(--error);
+    font-weight: 500;
+    margin: 0;
+}
+
 @media (max-width:1699px) {
     .qstnCol,
     .qstnCol.disable.NoDisable,
@@ -251,6 +281,12 @@
     .qstnUpldCol.qstnCol.disable.NoDisable .qstnName p {
         font-size: 15px;
         line-height: 22px;
+    }
+    .qstnErrText {
+        margin: 12px 0 20px 0;
+    }
+    .qstnErrText p {
+        font-size: 15px;
     }
 }
 
@@ -303,5 +339,13 @@
         margin-top: 0;
         position: relative;
         top: -2px;
+    }
+
+    .qstnErrText {
+        margin: 8px 0 16px 0;
+    }
+
+    .qstnErrText p {
+        font-size: 14px;
     }
 }
