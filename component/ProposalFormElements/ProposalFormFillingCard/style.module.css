@@ -59,6 +59,24 @@
     font-weight: 700;
     line-height: 40px;
 }
+.prpslFrmFlngHdr > h5 {
+    background-color: var(--vt-c-blueExtraLight1);
+    font-size: 13px;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+    padding: 8px;
+    border: 1px solid (--border-mute);
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+}
+.prpslFrmFlngHdr > h5  svg {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+}
 .prpslFrmFlngHdr > p {
     font-size: 16px;
     color: var(--vt-c-blue);
@@ -91,7 +109,8 @@
     margin-top: 8px;
 }
 .prpslFrmFlngHow {
-
+    margin-bottom: 32px;
+    min-height: 150px;
 }
 .prpslFrmFlngHow h5 {
     font-size: 16px;
@@ -99,15 +118,12 @@
     font-weight: 600;
     line-height: 24px;
 }
-.prpslFrmFlngHow {
-    margin-bottom: 32px;
-}
 .prpslFrmFlngHow ul {
     list-style: auto;
     list-style-position: inside;
 }
 .prpslFrmFlngHow ul li {
-    font-size: 15px;
+    font-size: 14px;
     color: var(--gray);
     font-weight: 500;
     line-height: 22px;
@@ -149,9 +165,11 @@
         font-size: 15px;
         line-height: 22px;
         margin: 16px 0 0 0;
+        min-height: 44px;
     }
     .prpslFrmFlngHow {
         margin-bottom: 24px;
+        min-height: 170px;
     }
     .prpslFrmFlngFtr {
         margin-top: 24px;
@@ -163,6 +181,21 @@
     }
     .prpslFrmFlngFtrBtn {
         margin: 24px 0 20px 0;
+    }
+}
+
+@media (max-width: 1399px) {
+    .prpslFrmFlngHow {
+        min-height: 188px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .prpslFrmFlngRow {
+        padding: 24px;
+    }
+    .prpslFrmFlngCol {
+        padding: 20px;
     }
 }
 

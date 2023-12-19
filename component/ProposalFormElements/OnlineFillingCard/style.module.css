@@ -48,6 +48,24 @@
     font-weight: 700;
     margin: 0;
 }
+.onlineFlngFrmPrgrss > h5 {
+    background-color: var(--vt-c-blueExtraLight1);
+    font-size: 13px;
+    color: var(--vt-c-blue);
+    font-weight: 500;
+    padding: 8px;
+    border: 1px solid (--border-mute);
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+}
+.onlineFlngFrmPrgrss > h5  svg {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+}
 .onlineFlngFrmBody {
     margin-top: 24px;
 }

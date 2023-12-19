@@ -2,12 +2,12 @@ import React from 'react'
 import { useRouter } from 'next/router';
 import Image from 'next/image'
 
-import ProposalFormProgress from '@/component/ProposalFormElements/ProposalFormProgress'
 import ButtonItem from "@/component/BIDashboard/DashboardElements/ButtonItem";
 import TalkExpert from '@/component/TalkExpert';
 
 import ArrowForwardIcon from '@/component/Icons/ArrowForward';
 import FasterIcon from '@/component/Icons/Faster';
+import ProgressIcon from '@/component/Icons/Progress';
 
 import onlineIcon from '@/public/proposalForm/onlineIcon.svg'
 import offlineIcon from '@/public/proposalForm/offlineIcon.svg'
@@ -70,19 +70,13 @@ export default function ProposalFormFillingCard(props) {
                     <h3 className='font-secondary'>{cardType == 'Online' ? 'Online' : null} {cardType == 'Offline' ? 'Offline' : null} Form Filling</h3>
                     {cardType === 'Online' ? (
                         <>
-                            <ProposalFormProgress
-                                title="Filled, Submitted and Approved in: 1 Hour"
-                                now={40}
-                            />
+                            <h5><ProgressIcon /> Filled, Submitted and Approved in: <strong>1 Hour</strong></h5>
                             <p>Open, fill and submit the form digitally in a swift and efficient manner.</p>
                         </>
                     ) : (
                         cardType === 'Offline' && (
                         <>
-                            <ProposalFormProgress
-                                title="Filled, Submitted and Approved in: 2-3 Days"
-                                now={10}
-                            />
+                            <h5><ProgressIcon /> Filled, Submitted and Approved in: <strong>2 - 3 Business Days</strong></h5>
                             <p>Easily complete your form offline at your own convenience.</p>
                         </>
                         )

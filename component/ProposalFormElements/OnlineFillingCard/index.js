@@ -8,6 +8,7 @@ import ButtonItem from "@/component/BIDashboard/DashboardElements/ButtonItem";
 import ArrowForwardIcon from '@/component/Icons/ArrowForward';
 import onlineIcon from '@/public/proposalForm/onlineIcon.svg'
 import FasterIcon from '@/component/Icons/Faster';
+import ProgressIcon from '@/component/Icons/Progress';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 import style from './style.module.css'
@@ -30,10 +31,9 @@ export default function OnlineFillingCard(props) {
                     </i>
                     <h4 className='font-secondary'>Online Form Filling</h4>
                 </div>
-                <ProposalFormProgress
-                    title="Filled, Submitted and Approved in: 1 Hour"
-                    now={40}
-                />
+                <div className={`${style.onlineFlngFrmPrgrss}`}>
+                    <h5><ProgressIcon /> Filled, Submitted and Approved in: <strong>1 Hour</strong></h5>
+                </div>
                 <div className={`${style.onlineFlngFrmBody}`}>
                     <p>Open, fill and submit the form digitally in a swift and efficient manner.</p>
                     <div className={`${style.onlineFlngFrmList}`}>
