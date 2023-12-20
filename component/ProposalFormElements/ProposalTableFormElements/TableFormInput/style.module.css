@@ -30,7 +30,7 @@
     width: 100%;
     margin: 0 12px;
 }
-.activePrpslTblFrmInputDiv.prpslTblFrmInputDiv label.prcntLbl::after{
+.activePrpslTblFrmInputDiv.prpslTblFrmInputDiv label.prcntLbl::after {
     display: none;
 }
 .prpslTblFrmInputDiv label span {
@@ -56,7 +56,9 @@
     padding: 9px 16px;
     align-items: center;
 }
-.activePrpslTblFrmInputDiv .prpslTblFrmInput {
+.activePrpslTblFrmInputDiv .prpslTblFrmInput,
+.filledPrpslTblFrmInputDiv .prpslTblFrmInput,
+.prpslTblFrmInput:hover {
     border-color: var(--vt-c-blue);
 }
 .prpslTblFrmInput input {
@@ -75,7 +77,9 @@
     padding-left: 16px;
     margin-left: 10px;
 }
-.activePrpslTblFrmInputDiv .prpslTblFrmInput input {
+.activePrpslTblFrmInputDiv .prpslTblFrmInput input,
+.filledPrpslTblFrmInputDiv .prpslTblFrmInput input,
+.prpslTblFrmInput:hover input {
     color: var(--vt-c-blue);
     font-weight: 600;
 }
@@ -95,7 +99,9 @@
     padding-left: 16px;
     margin-left: 10px;
 }
-.activePrpslTblFrmInputDiv .prpslTblFrmInput textarea {
+.activePrpslTblFrmInputDiv .prpslTblFrmInput textarea,
+.filledPrpslTblFrmInputDiv .prpslTblFrmInput textarea,
+.prpslTblFrmInput:hover textarea {
     color: var(--vt-c-blue);
     font-weight: 600;
 }
@@ -111,7 +117,9 @@
     font-size: 18px;
     color: var(--gray);
 }
-.activePrpslTblFrmInputDiv .prpslTblFrmInput span {
+.activePrpslTblFrmInputDiv .prpslTblFrmInput span,
+.filledPrpslTblFrmInputDiv .prpslTblFrmInput span,
+.prpslTblFrmInput:hover span {
     color: var(--vt-c-blue);
     font-weight: 600;
 }

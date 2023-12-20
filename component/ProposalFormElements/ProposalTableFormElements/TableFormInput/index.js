@@ -13,7 +13,7 @@ export default function TableFormInput(props) {
 
     return (
         <>
-            <div className={`mb-2 ${style.prpslTblFrmInputDiv} ${isTotal == 'true' ? style.activePrpslTblFrmInputDiv : ''}`}>
+            <div className={`mb-2 ${style.prpslTblFrmInputDiv} ${isTotal === 'true' ? style.activePrpslTblFrmInputDiv : ''} ${value ? style.filledPrpslTblFrmInputDiv : ''}`}>
                 <label className={`${isPercentage == 'true' ? style.prcntLbl : ''}`}>{label} {isPercentage == 'true' ? ( <span>{valueOfPercentage}%</span> ) : ( null)}</label>
                 <div className={`${style.prpslTblFrmInput} ${inputTitle ? style.prpslTblFrmGrpInput : ''}`}>
                     {multiline == 'true' ? (
