@@ -24,6 +24,8 @@ export default function HeroTextSlider() {
           loop
         >
           <SwiperSlide>Business Insurance</SwiperSlide>
+          <SwiperSlide>Personal Insurance</SwiperSlide>
+          <SwiperSlide>Group Insurance</SwiperSlide>
         </Swiper>
       </div>
     </>
