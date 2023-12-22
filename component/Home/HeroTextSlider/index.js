@@ -19,7 +19,7 @@ export default function HeroTextSlider() {
           slidesPerView={1}
           spaceBetween={0}
           speed={300}
-          autoplay={{ delay: 1000 }}
+          autoplay={{ delay: 3000 }}
           direction="vertical"
           loop
         >
