@@ -25,12 +25,19 @@ export default function FileUploadText(props) {
         )}
         <div className={`${style.fileInputBtnDiv}`}>
           <div className={`${style.fileInputField}`}>
-            <input
-              type="number"
-              placeholder="Enter Declaration Value"
-              value={declarationValue}
-              onChange={handleInputChange}
-            />
+            <label>Enter Declaration Value</label>
+            <div className={`${style.fileInputDiv} ${declarationValue ? style.fileInputFillDiv : null}`}>
+              <input
+                type="number"
+                placeholder=""
+                value={declarationValue}
+                onChange={handleInputChange}
+              />
+              <span>INR</span>
+            </div>
+          </div>
+          <div className={`${style.fileInputInfo}`}>
+            <p>Please enter your total declaration value to upload</p>
           </div>
           <div className={`${style.fileSlctBtn} ${declarationValue ? null : style.inActive}`}>
             {declarationValue ? (

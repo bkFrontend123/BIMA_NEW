@@ -1,8 +1,12 @@
 .noItemDiv {
-    background: var(--mute1);
+    background: var(--whiteBg);
     padding: 32px;
-    border: 1px solid var(--vt-c-gray1);
+    border: 1px solid var(--vt-c-yellow);
     position: relative;
+    box-shadow: 2px 2px 40px 0px #0000000D;
+}
+.noItemClaimRequestDiv {
+    height: 100%;
 }
 
 .noItemDiv h3 {
@@ -31,9 +35,28 @@
     text-align: center;
 }
 
+.noItemBody > img {
+    max-width: 200px;
+    height: auto;
+}
+
+.noItemBody > p {
+    font-size: 15px;
+    color: var(--disable);
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+}
+
 .noItemFtr {
     border-top: 1px solid var(--vt-c-gray);
     margin-top: 16px;
+}
+
+.noItemClaimRequestDiv .noItemFtr {
+    border-top: 0;
+    margin-top: 32px;
 }
 
 .noItemFtr p {
@@ -57,8 +80,18 @@
         width: 32px;
         height: 32px;
     }
+    .noItemBody > img {
+        max-width: 172px;
+    }
+    .noItemBody > p {
+        font-size: 14px;
+        line-height: 22px;
+    }
     .noItemFtr {
         margin-top: 12px;
+    }
+    .noItemClaimRequestDiv .noItemFtr {
+        margin-top: 24px;
     }
     .noItemFtr p {
         font-size: 15px;
@@ -96,6 +129,9 @@
     }
     .noItemFtr {
         margin-top: 10px;
+    }
+    .noItemClaimRequestDiv .noItemFtr {
+        margin-top: 16px;
     }
     .noItemFtr p {
         font-size: 14px;

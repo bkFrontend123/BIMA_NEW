@@ -35,7 +35,7 @@ export default function DeclarationModal(props) {
                                         <ButtonItem
                                             title="Download Template File"
                                             type="button"
-                                            customClass={`m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig} ${buttonStyle.minWidth4}`}
+                                            customClass={`m-0 px-2 ${buttonStyle.btnBlue} ${buttonStyle.btnBig} ${buttonStyle.minWidth4}`}
                                         >
                                             <ArrowPrimaryIcon />
                                         </ButtonItem>

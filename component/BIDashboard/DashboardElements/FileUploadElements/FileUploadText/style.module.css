@@ -21,7 +21,7 @@
     margin: 8px 0;
 }
 .fileInputBtnDiv {
-    display: flex;
+    display: block;
     border-top: 1px solid var(--border-mute);
     padding-top: 20px;
     margin-top: 20px;
@@ -30,33 +30,74 @@
     gap: 1rem;
 }
 .fileInputField {
-    width: 100%;
+    width: auto;
+    display: inline-block;
 }
-.fileInputField input {
-    width: 100%;
-    height: 43.6px;
-    background-color: var(--mute3);
-    border: 0;
-    padding: 6px 12px;
-    box-sizing: border-box;
-    text-align: center;
+.fileInputField label {
     font-size: 15px;
-    color: var(--vt-c-blue);
-    font-weight: 500;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 23px;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin-bottom: 5px;
 }
-.fileInputField input::placeholder {
+.fileInputDiv {
+    border: 1px solid var(--gray);
+    display: flex;
+    padding: 9px 16px;
+    align-items: center;
+}
+.fileInputFillDiv.fileInputDiv {
+    border-color: var(--vt-c-blue);
+}
+.fileInputDiv input {
+    background: transparent;
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: 500;
+    border: 0;
+    padding: 0;
+    order: 2;
+    width: 100%;
+    height: 38px;
+    border-left: 1px solid var(--gray);
+    padding-left: 16px;
+    margin-left: 10px;
+}
+.fileInputDiv input::placeholder {
     color: var(--vt-c-blue);
 }
 /* Chrome, Safari, Edge, Opera */
-.fileInputField input::-webkit-outer-spin-button,
-.fileInputField input::-webkit-inner-spin-button {
+.fileInputDiv input::-webkit-outer-spin-button,
+.fileInputDiv input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 /* Firefox */
-.fileInputField input[type=number] {
+.fileInputDiv input[type=number] {
   -moz-appearance: textfield;
+}
+.fileInputFillDiv.fileInputDiv input {
+    color: var(--vt-c-blue);
+    border-color: var(--vt-c-blue);
+}
+.fileInputDiv span {
+    font-size: 18px;
+    color: var(--gray);
+}
+.fileInputFillDiv span {
+    color: var(--vt-c-blue);
+}
+.fileInputInfo {
+    margin: 8px 0 16px 0;
+}
+.fileInputInfo p {
+    font-size: 16px;
+    color: var(--disable);
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0;
 }
 .fileSlctBtn label {
     background: var(--vt-c-blue);
@@ -88,6 +129,16 @@
         font-size: 15px;
     }
     .fileUpldText h5 {
+        font-size: 15px;
+    }
+    .fileInputDiv input {
+        font-size: 16px;
+        height: 34px;
+    }
+    .fileInputDiv span {
+        font-size: 16px;
+    }
+    .fileInputInfo p {
         font-size: 15px;
     }
     .fileSlctBtn label {

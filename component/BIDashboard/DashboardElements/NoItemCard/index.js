@@ -14,7 +14,7 @@ import style from './style.module.css'
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
 export default function NoItemCard(props) {
-  const {customClass, title, imgSrc, width, height, description, button} = props;
+  const {customClass, title, imgSrc, subTitle, width, height, description, button, buttonColor} = props;
 
   const router = useRouter();
   const goToShopCoveragePage = () => {
@@ -23,13 +23,26 @@ export default function NoItemCard(props) {
 
   return (
     <>
-      <div className={`${style.noItemDiv} ${customClass}`}>
+      <div className={`${style.noItemDiv} ${customClass} ${subTitle ? style.noItemClaimRequestDiv : ''}`}>
         <h3><i><NoItemIcon /></i>{title}</h3>
         <div className={`${style.noItemBody}`}>
-          <Image src={imgSrc} width={width} height={height} alt={title} />
+          {imgSrc ? (
+            <Image src={imgSrc} width={width} height={height} alt={title} />
+          ) : (
+            null
+          )}
+          {subTitle ? (
+            <p>{subTitle}</p>
+          ) : (
+            null
+          )}
         </div>
         <div className={`${style.noItemFtr}`}>
-          <p>{description}</p>
+          {description ? (
+            <p>{description}</p>
+          ) : (
+            null
+          )}
           {button === 'true' ? (
             <Row className="g-3 justify-content-center">
               <Col xxl={12} xl={12} lg={12}>
@@ -37,7 +50,7 @@ export default function NoItemCard(props) {
                   title="Explore Now"
                   type="button"
                   iconPosition="right"
-                  customClass={`w-100 m-0 px-2 ${buttonStyle.btnBlue} ${buttonStyle.btnBig}`}
+                  customClass={`m-0 px-2 ${buttonColor ? buttonStyle.btnDark + ' ' + buttonStyle.minWidth3 : buttonStyle.btnBlue + ' w-100'} ${buttonStyle.btnBig}`}
                   onClick={goToShopCoveragePage}
                 >
                   <ArrowPrimaryIcon />

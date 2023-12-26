@@ -372,7 +372,7 @@ export default function PolicyCard(props) {
                     <p><strong>₹{policyPremium} <small>+GST</small></strong> Policy Premium</p>
                   </li>
                   <li>
-                    <p><strong>{policyPeriod}</strong> Policy Period</p>
+                    <p><strong className={`${style.policyDate}`}>{policyPeriod}</strong> Policy Period</p>
                   </li>
                   {valueOfCD ? (
                     <li>

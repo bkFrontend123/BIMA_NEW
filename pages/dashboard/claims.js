@@ -22,6 +22,7 @@ import FaqCardItem from '@/component/BIDashboard/DashboardElements/ClaimRequestF
 import ClaimFaq from '@/component/BIDashboard/DashboardElements/ClaimFaq'
 import ClaimFileThankModal from '@/component/BIDashboard/DashboardElements/Modal/ClaimFileThankModal'
 import ClaimCard from '@/component/BIDashboard/DashboardElements/ClaimRequestCard'
+import NoItemFormCard from "@/component/BIDashboard/DashboardElements/NoItemCard";
 import NoItemCard from "@/component/BIDashboard/DashboardElements/NoItemClaimRequestCard";
 
 import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
@@ -103,6 +104,13 @@ export default function Claims() {
         </Row>
         <Row className="g-4 g-lg-4">
           <Col lg={5}>
+            <NoItemFormCard
+              title="Please Purchase a Policy first"
+              subTitle="In order to raise any claims or requests, you will need to purchase a policy from us first. Choose from a variety of Products from our Shop, and get shielded today."
+              button="true"
+              buttonColor="yellow"
+              customClass="h-auto mb-4"
+            />
             <ClaimFormCardItem>
               <div className={`${form.commonForm}`}>
                 <Form>

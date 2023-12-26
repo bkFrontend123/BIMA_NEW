@@ -224,6 +224,9 @@
     color: var(--vt-c-grayLight3);
     cursor: pointer;
     display: inline-block;
+    position: relative;
+    top: -3px;
+    margin-left: 4px;
 }
 
 .policyCardList p i em {
@@ -270,7 +273,7 @@
 }
 
 .policyCardList p strong {
-    font-size: 19px;
+    font-size: 18px;
     display: block;
     font-weight: 500;
     line-height: 28px;
@@ -293,8 +296,8 @@
     top: -4px;
 }
 
-.policyCardList > div > div:nth-child(2) ul li:nth-child(2) p strong {
-    font-size: 16px;
+.policyCardList p strong.policyDate {
+    font-size: 15px;
 }
 
 .policyCardUpld {
@@ -359,11 +362,11 @@
     }
 
     .policyCardList p strong {
-        font-size: 17px;
+        font-size: 16px;
     }
 
-    .policyCardList > div > div:nth-child(2) ul li:nth-child(2) p strong {
-        font-size: 15px;
+    .policyCardList p strong.policyDate {
+        font-size: 14px;
     }
 
     .policyCardInfo p {
