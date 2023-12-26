@@ -96,6 +96,9 @@
   .copyright {
     text-align: center;
   }
+  .ftrLogoOuter {
+    margin-bottom: 24px;
+  }
   .ftrLinks a:last-child {
     margin-right: 0;
   }
