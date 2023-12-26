@@ -97,6 +97,7 @@
     text-align: center;
   }
   .ftrLogoOuter {
+    height: auto;
     margin-bottom: 24px;
   }
   .ftrLinks a:last-child {
