@@ -1,52 +1,53 @@
 import React from 'react'
+import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
-import styles from "./trustedBusiness.module.css";
+import style from "./trustedBusiness.module.css";
 function TrustedBusiness() {
   const businesses = [
-    { id: "b1", img: "/clients/client1.png" },
-    { id: "b2", img: "/clients/client2.png" },
-    { id: "b3", img: "/clients/client3.png" },
-    { id: "b4", img: "/clients/client4.png" },
-    { id: "b5", img: "/clients/client5.png" },
-    { id: "b6", img: "/clients/client6.png" },
-    { id: "b7", img: "/clients/client7.png" },
-    { id: "b8", img: "/clients/client8.png" },
-    { id: "b9", img: "/clients/client9.png" },
-    { id: "b10", img: "/clients/client10.png" },
-    { id: "b11", img: "/clients/client11.png" },
-    { id: "b12", img: "/clients/client12.svg" },
-    { id: "b13", img: "/clients/client13.svg" },
-    { id: "b14", img: "/clients/client14.svg" },
-    { id: "b15", img: "/clients/client15.svg" },
-    { id: "b16", img: "/clients/client16.svg" },
-    { id: "b17", img: "/clients/client17.svg" },
-    { id: "b18", img: "/clients/client18.svg" },
-    { id: "b19", img: "/clients/client19.svg" },
-    { id: "b20", img: "/clients/client20.svg" },
-    { id: "b21", img: "/clients/client21.svg" },
-    { id: "b22", img: "/clients/client1.png" },
-    { id: "b23", img: "/clients/client2.png" },
-    { id: "b24", img: "/clients/client3.png" },
-    { id: "b25", img: "/clients/client4.png" },
-    { id: "b26", img: "/clients/client5.png" },
-    { id: "b27", img: "/clients/client6.png" },
-    { id: "b28", img: "/clients/client7.png" },
-    { id: "b29", img: "/clients/client8.png" },
-    { id: "b30", img: "/clients/client9.png" },
-    { id: "b31", img: "/clients/client10.png" },
-    { id: "b32", img: "/clients/client11.png" },
-    { id: "b33", img: "/clients/client12.svg" },
-    { id: "b34", img: "/clients/client13.svg" },
-    { id: "b35", img: "/clients/client14.svg" },
-    { id: "b36", img: "/clients/client15.svg" },
-    { id: "b37", img: "/clients/client16.svg" },
-    { id: "b38", img: "/clients/client17.svg" },
-    { id: "b39", img: "/clients/client18.svg" },
-    { id: "b40", img: "/clients/client19.svg" },
-    { id: "b41", img: "/clients/client20.svg" },
-    { id: "b42", img: "/clients/client21.svg" },
+    { id: "b1", img: "/clients/client1.png", width: "231", height: "41" },
+    { id: "b2", img: "/clients/client2.png", width: "87", height: "36" },
+    { id: "b3", img: "/clients/client3.png", width: "188", height: "41" },
+    { id: "b4", img: "/clients/client4.png", width: "121", height: "61" },
+    { id: "b5", img: "/clients/client5.png", width: "52", height: "73" },
+    { id: "b6", img: "/clients/client6.png", width: "168", height: "49" },
+    { id: "b7", img: "/clients/client7.png", width: "163", height: "39" },
+    { id: "b8", img: "/clients/client8.png", width: "174", height: "71" },
+    { id: "b9", img: "/clients/client9.png", width: "198", height: "43" },
+    { id: "b10", img: "/clients/client10.png", width: "126", height: "65" },
+    { id: "b11", img: "/clients/client11.png", width: "240", height: "63" },
+    { id: "b12", img: "/clients/client12.svg", width: "133", height: "15" },
+    { id: "b13", img: "/clients/client13.svg", width: "101", height: "68" },
+    { id: "b14", img: "/clients/client14.svg", width: "133", height: "46" },
+    { id: "b15", img: "/clients/client15.svg", width: "133", height: "43" },
+    { id: "b16", img: "/clients/client16.svg", width: "133", height: "28" },
+    { id: "b17", img: "/clients/client17.svg", width: "133", height: "58" },
+    { id: "b18", img: "/clients/client18.svg", width: "133", height: "35" },
+    { id: "b19", img: "/clients/client19.svg", width: "74", height: "68" },
+    { id: "b20", img: "/clients/client20.svg", width: "133", height: "18" },
+    { id: "b21", img: "/clients/client21.svg", width: "133", height: "29" },
+    /*{ id: "b22", img: "/clients/client1.png", width: "231", height: "41" },
+    { id: "b23", img: "/clients/client2.png", width: "87", height: "36" },
+    { id: "b24", img: "/clients/client3.png", width: "188", height: "41" },
+    { id: "b25", img: "/clients/client4.png", width: "121", height: "61" },
+    { id: "b26", img: "/clients/client5.png", width: "52", height: "73" },
+    { id: "b27", img: "/clients/client6.png", width: "168", height: "49" },
+    { id: "b28", img: "/clients/client7.png", width: "163", height: "39" },
+    { id: "b29", img: "/clients/client8.png", width: "174", height: "71" },
+    { id: "b30", img: "/clients/client9.png", width: "198", height: "43" },
+    { id: "b31", img: "/clients/client10.png", width: "126", height: "65" },
+    { id: "b32", img: "/clients/client11.png", width: "240", height: "63" },
+    { id: "b33", img: "/clients/client12.svg", width: "133", height: "15" },
+    { id: "b34", img: "/clients/client13.svg", width: "101", height: "68" },
+    { id: "b35", img: "/clients/client14.svg", width: "133", height: "46" },
+    { id: "b36", img: "/clients/client15.svg", width: "133", height: "43" },
+    { id: "b37", img: "/clients/client16.svg", width: "133", height: "28" },
+    { id: "b38", img: "/clients/client17.svg", width: "133", height: "58" },
+    { id: "b39", img: "/clients/client18.svg", width: "133", height: "35" },
+    { id: "b40", img: "/clients/client19.svg", width: "74", height: "68" },
+    { id: "b41", img: "/clients/client20.svg", width: "133", height: "18" },
+    { id: "b42", img: "/clients/client21.svg", width: "133", height: "29" },*/
   ]
   const params = {
     // direction: 'horizontal',
@@ -58,14 +59,14 @@ function TrustedBusiness() {
   return (
     <div className='container-fluid p-0'>
       <div className='row m-0'>
-        <div className={`col-lg-12 p-0 mx-auto text-center trusted-business ${styles.trustedBusiness}`}>
+        <div className={`col-lg-12 p-0 mx-auto text-center trusted-business ${style.trustedBusiness}`}>
           <h2 className='title24 mb-3 font-weight-500 text-primary px-sm-0 px-5'>Trusted by 500+ businesses across India</h2>
           <div className='pt-2'>
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, Autoplay]}
               // arrows={true}
               navigation
-              className={`smoothSwiper ${styles.fadeSlider} ${styles.fadeSliderLeft} ${styles.fadeSliderRight}`}
+              className={`smoothSwiper ${style.fadeSlider} ${style.fadeSliderLeft} ${style.fadeSliderRight}`}
               spaceBetween={50}
               infinite="true"
               loop="true"
@@ -92,8 +93,8 @@ function TrustedBusiness() {
             >
               {businesses.map((item) =>
                 <SwiperSlide key={item.id}>
-                    <div className="cmpnySlideCol">
-                      <img src={item.img} width="" height="" alt="Bimakavach" />
+                    <div className={style.cmpnySlideCol}>
+                      <Image className={style.cmpnySlideImg} src={item.img} width={item.width} height={item.height} alt="Bimakavach" loading="lazy" />
                     </div>
                 </SwiperSlide>
               )}
@@ -160,54 +161,24 @@ function TrustedBusiness() {
 
       <style jsx scope>
         {` 
-          .cmpnySlideCol {
-            position: relative;
-            height: 75px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.4s ease 0s;
-          }
-          .cmpnySlideCol img {
-            position: absolute;
-            width: auto !important;
-            height: auto !important;
-            max-width: 90% !important;
-            max-height: 90% !important;
-            margin: auto;
-            filter: grayscale(1);
-            opacity: 0.5;
-            transition: all 0.4s ease 0s;
-          }
-          .cmpnySlideCol:hover img {
-            filter: grayscale(0);
-            opacity: 1;
-          }
           @media only screen and (max-width: 575px) {
               .trusted-business {
-                  margin-top: 70px;
+                margin-top: 70px;
               }
-              .container{
+              .container {
                 padding: 0;
               }
-              .row{
+              .row {
                 margin-left: 0;
                 margin-right: 0;
               }
-              .swiper-slide{
+              .swiper-slide {
                 width: auto !important;
-              }
-              .cmpnySlideCol {
-                height: 50px;
-              }
-              .cmpnySlideCol img {
-                max-width: 100% !important;
-                max-height: 50px !important;
               }
               .startupCols-cardBox{
                 margin-bottom: 30px;
               }
-          }
+            }
         `}
       </style>
     </div>

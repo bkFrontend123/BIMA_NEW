@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
@@ -109,7 +110,9 @@ function Business() {
                                 <thead>
                                     <tr>
                                         <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col"></th>
-                                        <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col"><img width="195px" src='/logo-white.svg' /></th>
+                                        <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">
+                                            <Image src="/logo-white.svg" width={195} height={25} alt='Bimakavach Logo' loading="lazy" />
+                                        </th>
                                         <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Offline Brokers</th>
                                         <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital Brokers</th>
                                     </tr>
@@ -125,7 +128,7 @@ function Business() {
                                             {item.checkBoxData.map((obj) => (
                                                 <td className='text-center businessInsurance-col' key={obj.id}>
                                                     <div className='businessInsurance-colBox'>
-                                                        <img src={obj.isCheckbox ? "/tickTrans.svg" : "/crossTrans.svg"} />
+                                                        <Image src={obj.isCheckbox ? "/tickTrans.svg" : "/crossTrans.svg"} width={43} height={44} alt={obj.isCheckbox ? "Check Icon" : "Cross Icon"} loading="lazy" />
                                                     </div>
                                                 </td>
                                             ))}
@@ -143,7 +146,7 @@ function Business() {
                                 <tr>
                                     <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col"></th>
                                     <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">
-                                        <img width="195px" src='/logoTextWhite.svg' />
+                                        <Image src="/logoTextWhite.svg" width={195} height={25} alt='Bimakavach Logo' loading="lazy" />
                                     </th>
                                     <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Offline Brokers</th>
                                     <th className='title24 pb-4 font-weight-600 text-primary text-center' scope="col">Digital Brokers</th>
@@ -158,15 +161,15 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/tickWhiteTrans.svg' width={43} height={44} alt="Check Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/crossTrans.svg' width={43} height={44} alt="Cross Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/crossTrans.svg' width={43} height={44} alt="Cross Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                 </tr>
@@ -177,15 +180,15 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/tickWhiteTrans.svg' width={43} height={44} alt="Check Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/tickTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/tickTrans.svg' width={43} height={44} alt="Check Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/crossTrans.svg' width={43} height={44} alt="Cross Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                 </tr>
@@ -196,15 +199,15 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/tickWhiteTrans.svg' width={43} height={44} alt="Check Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/crossTrans.svg' width={43} height={44} alt="Cross Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/crossTrans.svg' width={43} height={44} alt="Cross Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                 </tr>
@@ -215,15 +218,15 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/tickWhiteTrans.svg' width={43} height={44} alt="Check Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/crossTrans.svg' width={43} height={44} alt="Cross Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/crossTrans.svg' width={43} height={44} alt="Cross Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                 </tr>
@@ -234,15 +237,15 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/tickWhiteTrans.svg' width={43} height={44} alt="Check Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/crossTrans.svg' width={43} height={44} alt="Cross Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/tickTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/tickTrans.svg' width={43} height={44} alt="Check Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                 </tr>
@@ -253,15 +256,15 @@ function Business() {
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/tickWhiteTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/tickWhiteTrans.svg' width={43} height={44} alt="Check Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/crossTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/crossTrans.svg' width={43} height={44} alt="Cross Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                     <td className='businessInsurance-col title24 font-weight-500 text-center'>
-                                        <div className='businessInsurance-colBox'><img src='/tickTrans.svg' /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
+                                        <div className='businessInsurance-colBox'><Image src='/tickTrans.svg' width={43} height={44} alt="Check Icon" loading="lazy" /><span className='opacity-0 d-inline d-md-none height-0'>businessInsurance-col</span>
                                         </div>
                                     </td>
                                 </tr>

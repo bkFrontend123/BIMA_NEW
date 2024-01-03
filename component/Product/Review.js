@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import "swiper/css";
@@ -9,8 +10,8 @@ import "swiper/css/navigation";
 
 export default function Companies(props) {
   const review = ([
-    { id: "r1", text: `BimaKavach understood the intricacies of our business and ensured we were covered adequately for our risks. We were run through in detail about the policy and got our policy the very next day of reaching out. Totally hassle free!`, name: "Vivek Prakash", position: "Codingal", img: "codingal.png" },
-    { id: "r2", text: `BimaKavach understood our risk exposure analysing all the complexities of our products. They ran us through the possible risk exposures and helped us cover the gaps. Our recommended policy is precise for our fintech offering and understands its differences from other businesses.`, name: "Naman Paithankar", position: "FinBox", img: "finBox.png" },
+    { id: "r1", text: `BimaKavach understood the intricacies of our business and ensured we were covered adequately for our risks. We were run through in detail about the policy and got our policy the very next day of reaching out. Totally hassle free!`, name: "Vivek Prakash", position: "Codingal", img: "/codingal.png" },
+    { id: "r2", text: `BimaKavach understood our risk exposure analysing all the complexities of our products. They ran us through the possible risk exposures and helped us cover the gaps. Our recommended policy is precise for our fintech offering and understands its differences from other businesses.`, name: "Naman Paithankar", position: "FinBox", img: "/finBox.png" },
   ])
   // const reviewImg = ([
   //   { id: "s1", img: "/backBest1.png" },
@@ -69,7 +70,7 @@ export default function Companies(props) {
                     <div className='companyReview-card'>
                       <div className='d-flex align-items-center mb-4 mb-xl-5'>
                         <div className='me-3 me-lg-4'>
-                          <img src={item.img} />
+                          <Image src={item.img} width={78} height={78} alt={item.name} loading="lazy" />
                         </div>
                         <div className='text-start'>
                           <p className='title-30 companyReview-cardName text-black font-weight-700 mb-0'>{item.name}</p>

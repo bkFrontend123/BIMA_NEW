@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
@@ -49,113 +50,60 @@ function BusinessRisk() {
 
     ])
     const businessConsequences = ([
-        {id: "bc1", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc2", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc3", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc4", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc5", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc6", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc7", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc8", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc9", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc10", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc11", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc12", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc13", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc14", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc15", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc16", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc17", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc18", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc19", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc20", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc21", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc22", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc23", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc24", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc25", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc26", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc27", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc28", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc29", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc30", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc31", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc32", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc33", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc34", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc35", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc36", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc37", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc38", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc39", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc40", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc41", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc42", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc43", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc44", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc45", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc46", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc47", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc48", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc49", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc50", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc51", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc52", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc53", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc54", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc55", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc56", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc57", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc58", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc59", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc60", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc61", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc62", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc63", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc64", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc65", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc66", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc67", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc68", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc69", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc70", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc71", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc72", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc73", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc74", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc75", title: "Large Fines", img: "/icons/risk5.svg" },
-        {id: "bc76", title: "Business Insolvency", img: "/icons/risk1.svg" },
-        {id: "bc77", title: "Business Closure", img: "/icons/risk2.svg" },
-        {id: "bc78", title: "Personal Bankruptcy", img: "/icons/risk3.svg" },
-        {id: "bc79", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg" },
-        {id: "bc80", title: "Large Fines", img: "/icons/risk5.svg" },
-
+        {id: "bc1", title: "Business Insolvency", img: "/icons/risk1.svg", width: "34", height: "30" },
+        {id: "bc2", title: "Business Closure", img: "/icons/risk2.svg", width: "34", height: "30" },
+        {id: "bc3", title: "Personal Bankruptcy", img: "/icons/risk3.svg", width: "33", height: "30" },
+        {id: "bc4", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg", width: "31", height: "30" },
+        {id: "bc5", title: "Large Fines", img: "/icons/risk5.svg", width: "42", height: "34" },
+        {id: "bc6", title: "Business Insolvency", img: "/icons/risk1.svg", width: "34", height: "30" },
+        {id: "bc7", title: "Business Closure", img: "/icons/risk2.svg", width: "34", height: "30" },
+        {id: "bc8", title: "Personal Bankruptcy", img: "/icons/risk3.svg", width: "33", height: "30" },
+        {id: "bc9", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg", width: "31", height: "30" },
+        {id: "bc10", title: "Large Fines", img: "/icons/risk5.svg", width: "42", height: "34" },
+        {id: "bc11", title: "Business Insolvency", img: "/icons/risk1.svg", width: "34", height: "30" },
+        {id: "bc12", title: "Business Closure", img: "/icons/risk2.svg", width: "34", height: "30" },
+        {id: "bc13", title: "Personal Bankruptcy", img: "/icons/risk3.svg", width: "33", height: "30" },
+        {id: "bc14", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg", width: "31", height: "30" },
+        {id: "bc15", title: "Large Fines", img: "/icons/risk5.svg", width: "42", height: "34" },
+        {id: "bc16", title: "Business Insolvency", img: "/icons/risk1.svg", width: "34", height: "30" },
+        {id: "bc17", title: "Business Closure", img: "/icons/risk2.svg", width: "34", height: "30" },
+        {id: "bc18", title: "Personal Bankruptcy", img: "/icons/risk3.svg", width: "33", height: "30" },
+        {id: "bc19", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg", width: "31", height: "30" },
+        {id: "bc20", title: "Large Fines", img: "/icons/risk5.svg", width: "42", height: "34" },
+        {id: "bc21", title: "Business Insolvency", img: "/icons/risk1.svg", width: "34", height: "30" },
+        {id: "bc22", title: "Business Closure", img: "/icons/risk2.svg", width: "34", height: "30" },
+        {id: "bc23", title: "Personal Bankruptcy", img: "/icons/risk3.svg", width: "33", height: "30" },
+        {id: "bc24", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg", width: "31", height: "30" },
+        {id: "bc25", title: "Large Fines", img: "/icons/risk5.svg", width: "42", height: "34" },
+        {id: "bc26", title: "Business Insolvency", img: "/icons/risk1.svg", width: "34", height: "30" },
+        {id: "bc27", title: "Business Closure", img: "/icons/risk2.svg", width: "34", height: "30" },
+        {id: "bc28", title: "Personal Bankruptcy", img: "/icons/risk3.svg", width: "33", height: "30" },
+        {id: "bc29", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg", width: "31", height: "30" },
+        {id: "bc30", title: "Large Fines", img: "/icons/risk5.svg", width: "42", height: "34" },
+        {id: "bc31", title: "Business Insolvency", img: "/icons/risk1.svg", width: "34", height: "30" },
+        {id: "bc32", title: "Business Closure", img: "/icons/risk2.svg", width: "34", height: "30" },
+        {id: "bc33", title: "Personal Bankruptcy", img: "/icons/risk3.svg", width: "33", height: "30" },
+        {id: "bc34", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg", width: "31", height: "30" },
+        {id: "bc35", title: "Large Fines", img: "/icons/risk5.svg", width: "42", height: "34" },
+        {id: "bc36", title: "Business Insolvency", img: "/icons/risk1.svg", width: "34", height: "30" },
+        {id: "bc37", title: "Business Closure", img: "/icons/risk2.svg", width: "34", height: "30" },
+        {id: "bc38", title: "Personal Bankruptcy", img: "/icons/risk3.svg", width: "33", height: "30" },
+        {id: "bc39", title: "Unsustainable Legal Fees", img: "/icons/risk4.svg", width: "31", height: "30" },
+        {id: "bc40", title: "Large Fines", img: "/icons/risk5.svg", width: "42", height: "34" },
     ])
     const businessSolutions = ([
-        {id: "bs1", title: "Directors & Officers Insurance", img: "/productIcons/liability/dAndO_icon.svg" },
-        {id: "bs2", title: "Errors & Omissions Insurance", img: "/productIcons/liability/eAndO_icon.svg" },
-        {id: "bs3", title: "General Liability Insurance", img: "/productIcons/liability/generalLiability_icon.svg" },
-        {id: "bs4", title: "Product Liability Insurance", img: "/productIcons/liability/productLiability_icon.svg" },
-        {id: "bs5", title: "Cyber Insurance", img: "/productIcons/liability/cyber_icon.svg" },
-        {id: "bs6", title: "Crime Insurance", img: "/productIcons/liability/crime_icon.svg" },
-        {id: "bs7", title: "Workmen's Compensation", img: "/productIcons/liability/workman_icon.svg" },
-        {id: "bs8", title: "Fire Insurance", img: "/productIcons/asset/fire_icon.svg" },
-        {id: "bs9", title: "Contractor's All Risk", img: "/productIcons/engineering/contractorsAllRisk_icon.svg" },
-        {id: "bs10", title: "Erection All Risk", img: "/productIcons/engineering/erectionAllRisk_icon.svg" },
-        {id: "bs11", title: "Contractor's Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.svg" },
-        {id: "bs12", title: "Marine Transit Policy", img: "/productIcons/marine/marine_icon.svg" },
-        {id: "bs13", title: "Directors & Officers Insurance", img: "/productIcons/liability/dAndO_icon.svg" },
-        {id: "bs14", title: "Errors & Omissions Insurance", img: "/productIcons/liability/eAndO_icon.svg" },
-        {id: "bs15", title: "General Liability Insurance", img: "/productIcons/liability/generalLiability_icon.svg" },
-        {id: "bs16", title: "Product Liability Insurance", img: "/productIcons/liability/productLiability_icon.svg" },
-        {id: "bs17", title: "Cyber Insurance", img: "/productIcons/liability/cyber_icon.svg" },
-        {id: "bs18", title: "Crime Insurance", img: "/productIcons/liability/crime_icon.svg" },
-        {id: "bs19", title: "Workmen's Compensation", img: "/productIcons/liability/workman_icon.svg" },
-        {id: "bs20", title: "Fire Insurance", img: "/productIcons/asset/fire_icon.svg" },
-        {id: "bs21", title: "Contractor's All Risk", img: "/productIcons/engineering/contractorsAllRisk_icon.svg" },
-        {id: "bs22", title: "Erection All Risk", img: "/productIcons/engineering/erectionAllRisk_icon.svg" },
-        {id: "bs23", title: "Contractor's Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.svg" },
-        {id: "bs24", title: "Marine Transit Policy", img: "/productIcons/marine/marine_icon.svg" },
+        {id: "bs1", title: "Directors & Officers Insurance", img: "/productIcons/liability/dAndO_icon.svg", width: "34", height: "34" },
+        {id: "bs2", title: "Errors & Omissions Insurance", img: "/productIcons/liability/eAndO_icon.svg", width: "34", height: "34" },
+        {id: "bs3", title: "General Liability Insurance", img: "/productIcons/liability/generalLiability_icon.svg", width: "34", height: "34" },
+        {id: "bs4", title: "Product Liability Insurance", img: "/productIcons/liability/productLiability_icon.svg", width: "34", height: "34" },
+        {id: "bs5", title: "Cyber Insurance", img: "/productIcons/liability/cyber_icon.svg", width: "34", height: "34" },
+        {id: "bs6", title: "Crime Insurance", img: "/productIcons/liability/crime_icon.svg", width: "34", height: "34" },
+        {id: "bs7", title: "Workmen's Compensation", img: "/productIcons/liability/workman_icon.svg", width: "34", height: "34" },
+        {id: "bs8", title: "Fire Insurance", img: "/productIcons/asset/fire_icon.svg", width: "34", height: "34" },
+        {id: "bs9", title: "Contractor's All Risk", img: "/productIcons/engineering/contractorsAllRisk_icon.svg", width: "34", height: "34" },
+        {id: "bs10", title: "Erection All Risk", img: "/productIcons/engineering/erectionAllRisk_icon.svg", width: "34", height: "34" },
+        {id: "bs11", title: "Contractor's Plant & Machinery", img: "/productIcons/engineering/contractorsPlant_icon.svg", width: "34", height: "34" },
+        {id: "bs12", title: "Marine Transit Policy", img: "/productIcons/marine/marine_icon.svg", width: "34", height: "34" },
     ])
 
     return (
@@ -242,7 +190,8 @@ function BusinessRisk() {
                             slidesPerView={4.5}
                             autowidth="true"
                             infinite="true"
-                            loop="true"
+                            loop={true}
+                            loopedSlides={50}
                             speed={5000}
                             autoplay={{
                                 delay: 0,
@@ -275,7 +224,7 @@ function BusinessRisk() {
                             {businessConsequences.map((item) =>
                                 <SwiperSlide className="text-start" key={item.id}>
                                     <div className='title20 font-weight-500 businessRisk-sliderItem text-white'>
-                                        <img src={item.img} className="text-start" />
+                                        <Image src={item.img} className="text-start mb-2" width={item.width} height={item.height} alt={item.title} loading="lazy" />
                                         <span className='text-center'>{item.title}</span>
                                     </div>
                                 </SwiperSlide>
@@ -328,7 +277,7 @@ function BusinessRisk() {
                             {businessSolutions.map((item) =>
                                 <SwiperSlide className="text-start" key={item.id}>
                                     <div className='title18 font-weight-500 businessRisk-sliderItem border-primary text-black'>
-                                        <img src={item.img} className="text-start" />
+                                        <Image src={item.img} className="text-start mb-2" width={item.width} height={item.height} alt={item.title} loading="lazy" />
                                         <span className='text-center'>{item.title}</span>
                                     </div>
                                 </SwiperSlide>

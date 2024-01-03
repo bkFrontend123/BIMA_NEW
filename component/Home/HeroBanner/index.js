@@ -6,6 +6,8 @@ import {Container, Row, Col} from 'react-bootstrap';
 import IndustryBlock from '../../IndustryBlock'
 import HeroTextSlider from '../HeroTextSlider';
 
+import style from './style.module.css'
+
 export default function HeroBanner(props) {
   const { title, subtitle, description } = props
   return (
@@ -69,10 +71,22 @@ export default function HeroBanner(props) {
                         <img src="/icons/homeShield.svg" alt="Shield" />
                       </div>
                       <div className="homeHeroImg d-none d-lg-block">
-                        <img src="/homeHero_Img.png" alt="Dilip Joshi" />
+                        <Image
+                          src="/homeHero_Img.png"
+                          alt="Dilip Joshi"
+                          width={597}
+                          height={615}
+                          className={style.homeHeroImgPath}
+                        />
                       </div>
                       <div className="homeHeroImg d-lg-none">
-                        <img src="/homeHeroMbl_Img.png" alt="Dilip Joshi" />
+                        <Image
+                          src="/homeHeroMbl_Img.webp"
+                          alt="Dilip Joshi"
+                          width={516}
+                          height={430}
+                          className={style.homeHeroImgPath}
+                        />
                       </div>
                   </div>
                 </Col>

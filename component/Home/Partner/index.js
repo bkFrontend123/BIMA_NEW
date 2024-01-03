@@ -1,31 +1,35 @@
 import React from 'react'
+import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
+
+import style from "./style.module.css";
+
 function Partner() {
 
     const partner = [
-        { id: "p1", img: "/partners/bajaj.svg" },
-        { id: "p2", img: "/partners/cholaMs.svg" },
-        { id: "p3", img: "/partners/digit.svg" },
-        { id: "p4", img: "/partners/futureGenerali.svg" },
-        { id: "p5", img: "/partners/hdfcErgo.svg" },
-        { id: "p6", img: "/partners/iciciLombard.svg" },
-        { id: "p7", img: "/partners/iffcoTokio.svg" },
-        { id: "p8", img: "/partners/magmaHDI.svg" },
-        { id: "p9", img: "/partners/nationalInsurance.svg" },
-        { id: "p10", img: "/partners/rahejaQBE.svg" },
-        { id: "p11", img: "/partners/reliance.svg" },
-        { id: "p12", img: "/partners/royalSundaram.svg" },
-        { id: "p13", img: "/partners/sbiGeneral.svg" },
-        { id: "p15", img: "/partners/indiaInsurance.svg" },
-        { id: "p16", img: "/partners/orientalInsurance.svg" },
-        { id: "p17", img: "/partners/unitedIndia.svg" },
+        { id: "p1", img: "/partners/bajaj.svg", width: "141", height: "17" },
+        { id: "p2", img: "/partners/cholaMs.svg", width: "141", height: "33" },
+        { id: "p3", img: "/partners/digit.svg", width: "121", height: "60" },
+        { id: "p4", img: "/partners/futureGenerali.svg", width: "141", height: "44" },
+        { id: "p5", img: "/partners/hdfcErgo.svg", width: "67", height: "60" },
+        { id: "p6", img: "/partners/iciciLombard.svg", width: "141", height: "37" },
+        { id: "p7", img: "/partners/iffcoTokio.svg", width: "125", height: "60" },
+        { id: "p8", img: "/partners/magmaHDI.svg", width: "141", height: "31" },
+        { id: "p9", img: "/partners/nationalInsurance.svg", width: "141", height: "54" },
+        { id: "p10", img: "/partners/rahejaQBE.svg", width: "141", height: "28" },
+        { id: "p11", img: "/partners/reliance.svg", width: "141", height: "39" },
+        { id: "p12", img: "/partners/royalSundaram.svg", width: "141", height: "43" },
+        { id: "p13", img: "/partners/sbiGeneral.svg", width: "141", height: "30" },
+        { id: "p15", img: "/partners/indiaInsurance.svg", width: "60", height: "60" },
+        { id: "p16", img: "/partners/orientalInsurance.svg", width: "141", height: "46" },
+        { id: "p17", img: "/partners/unitedIndia.svg", width: "141", height: "19" },
     ]
 
     return (
         <div className={`partner text-center container`}>
-            <h2 className='partnerTitle title-36 text-primary font-secondary font-weight-700 mb-4'>Partner General Insurance Companies</h2>
+            <h2 className={`title-36 text-primary font-secondary font-weight-700 mb-4 ${style.partnerTitle}`}>Partner General Insurance Companies</h2>
             <div className={`row `}>
                 <div className={`col-xl-7 mx-auto`}>
                     <Swiper
@@ -70,11 +74,8 @@ function Partner() {
                     >
                         {partner.map((item) =>
                             <SwiperSlide key={item.id}>
-                                <div className="prtnrSlideCol">
-                                    <img
-                                        src={item.img}
-                                        alt="Bimakavach"
-                                    />
+                                <div className={style.prtnrSlideCol}>
+                                    <Image className={style.prtnrSlideImg} src={item.img} width={item.width} height={item.height} alt="Bimakavach" loading="lazy" />
                                 </div>
                             </SwiperSlide>
                         )}

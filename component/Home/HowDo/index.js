@@ -18,11 +18,11 @@ export default function HowDo() {
 
   const tinderRef = useRef(null);
   const data = [
-    { title: "Select from the products", description: "Choose the policy for your business requirements.", imgSrc: "/howWorks/howWorkImg1.png", btnText: 'Next: Digital' },
-    { title: "Tell us about the business.", description: "Answer a few simple questions about your business ", imgSrc: "/howWorks/howWorkImg2.png", btnText: 'Next: Digital'},
-    { title: "Compare quotes", description: "Get instant quotes from top insurance companies", imgSrc: "/howWorks/howWorkImg3.png", btnText: 'Next: Digital' },
-    { title: "Talk to an expert", description: "Consult with our experts and make payment", imgSrc: "/howWorks/howWorkImg4.png", btnText: 'Next: Digital' },
-    { title: "All-in-one digital platform", description: "Manage everything on a single dashboard", imgSrc: "/howWorks/howWorkImg5.png", btnText: 'Next: Digital' },
+    { title: "Select from the products", description: "Choose the policy for your business requirements.", imgSrc: "/howWorks/howWorkImg1.webp", btnText: 'Next: Digital' },
+    { title: "Tell us about the business.", description: "Answer a few simple questions about your business ", imgSrc: "/howWorks/howWorkImg2.webp", btnText: 'Next: Digital'},
+    { title: "Compare quotes", description: "Get instant quotes from top insurance companies", imgSrc: "/howWorks/howWorkImg3.webp", btnText: 'Next: Digital' },
+    { title: "Talk to an expert", description: "Consult with our experts and make payment", imgSrc: "/howWorks/howWorkImg4.webp", btnText: 'Next: Digital' },
+    { title: "All-in-one digital platform", description: "Manage everything on a single dashboard", imgSrc: "/howWorks/howWorkImg5.webp", btnText: 'Next: Digital' },
   ]
   const onSwipeDown = (e) => {
     console.log("e  eeeeee",e)
@@ -32,14 +32,6 @@ export default function HowDo() {
     }
   }; 
   const getCards = (i) => {
-    const first =
-      "https://www.worldatlas.com/r/w728-h425-c728x425/upload/46/cb/e1/shutterstock-252338818.jpg";
-    const second =
-      "https://draxe.com/wp-content/uploads/2018/12/KetoFruitHeader.jpg";
-    const third =
-      "https://media.mnn.com/assets/images/2017/03/strawberries-basket.jpg.653x0_q80_crop-smart.jpg";
-    const fourth =
-      "https://cdn.pixabay.com/photo/2017/05/06/21/19/strawberry-2290969_960_720.jpg";
     const arr = []
 
     let arr1 = []
@@ -62,7 +54,7 @@ export default function HowDo() {
     return (
       <>
         <div className={`bg-primary howDo-sliderBox @radius-15 position-relative d-flex flex-column justify-content-md-between active`}>
-          <Image className="howDo-sliderBoxImg position-absolute" src={imgSrc} width={549} height={616} alt={title} />
+          <Image className="howDo-sliderBoxImg position-absolute" src={imgSrc} width={549} height={616} alt={title} loading="lazy" />
           <div className="row mb-5">
             <div className="col-md-7">
               <div className="howDo-sliderBoxText text-white">
@@ -174,7 +166,7 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg1.png" />
+                      <Image className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg1.webp" width={301} height={278} alt="Select from the products" loading="lazy" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
@@ -198,7 +190,7 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg2.png" />
+                      <Image className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg2.webp" width={301} height={278} alt="Tell us about the business." loading="lazy" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
@@ -222,7 +214,7 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg3.png" />
+                      <Image className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg3.webp" width={301} height={278} alt="Compare quotes" loading="lazy" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
@@ -247,7 +239,7 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg4.png" />
+                      <Image className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg4.webp" width={301} height={278} alt="Talk to an expert" loading="lazy" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">
@@ -272,7 +264,7 @@ export default function HowDo() {
                 <SwiperSlide>
                   <>
                     <div className="bg-primary p-0 howDo-sliderBox howDo-sliderBox-mob @radius-15 position-relative d-flex flex-column justify-content-md-between">
-                      <img className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg5.png" />
+                      <Image className="howDo-sliderBoxImg position-absolute" src="/howWorks/howWorkMblImg5.webp" width={301} height={278} alt="All-in-one digital platform" loading="lazy" />
                       <div className="row mb-5">
                         <div className="col-md-4">
                           <div className="howDo-sliderBoxText text-white">

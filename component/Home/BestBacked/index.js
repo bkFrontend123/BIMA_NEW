@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import Image from 'next/image'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,10 +14,10 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function BestBacked(props) {
     const best = ([
-        { id: "b1", img: "/backBest1.png" },
-        { id: "b2", img: "/backBest2.png" },
-        { id: "b3", img: "/backBest3.png" },
-        { id: "b4", img: "/backBest4.png" },
+        { id: "b1", img: "/backBest1.png", width: "182", height: "93" },
+        { id: "b2", img: "/backBest2.png", width: "181", height: "58" },
+        { id: "b3", img: "/backBest3.png", width: "165", height: "73" },
+        { id: "b4", img: "/backBest4.png", width: "182", height: "75" },
     ]) 
     return (
         <>
@@ -69,7 +70,7 @@ export default function BestBacked(props) {
                             {best.map((item) =>
                                 <SwiperSlide key={item.id}>
                                     <div className='backedBest-card bg-blueExtraLight@'>
-                                        <img src={item.img} />
+                                        <Image src={item.img} width={item.width} height={item.height} alt="Bimakavach" loading="lazy" />
                                     </div>
                                 </SwiperSlide>
                             )}

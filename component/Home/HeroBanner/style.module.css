@@ -1,0 +1,13 @@
+.homeHeroImgPath {
+    width: 411px;
+    height: auto;
+}
+
+
+@media (max-width: 991px) {
+    .homeHeroImgPath {
+        width: auto;
+        max-width: 100%;
+        margin: auto;
+    }
+}

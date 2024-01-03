@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import "swiper/css";
@@ -9,16 +10,16 @@ import "swiper/swiper-bundle.css";
 
 export default function RecentActivity() {
     const recentActivity = ([
-        { id: "ra1", img: "/team/tejasJain.png", title: "Tejas Jain", date: "Founder & CEO" },
-        { id: "ra2", img: "/team/priyalataPatra.png", title: "Priyalata Patra", date: "VP Product, Insurance Expert" },
-        { id: "ra3", img: "/team/himaniDoshi.png", title: "Himani Doshi", date: "Liability Insurance Expert" },
-        { id: "ra4", img: "/team/ravikantSawant.png", title: "Ravikant Sawant", date: "P&C Insurance Expert" },
-        { id: "ra5", img: "/team/shrutiVishnoi.png", title: "Shruti Vishnoi", date: "Chief of Customer Success" },
-        { id: "ra6", img: "/team/tejasJain.png", title: "Tejas Jain", date: "Founder & CEO" },
+        { id: "ra1", img: "/team/tejasJain.webp", title: "Tejas Jain", date: "Founder & CEO" },
+        { id: "ra2", img: "/team/priyalataPatra.webp", title: "Priyalata Patra", date: "VP Product, Insurance Expert" },
+        { id: "ra3", img: "/team/himaniDoshi.webp", title: "Himani Doshi", date: "Liability Insurance Expert" },
+        { id: "ra4", img: "/team/ravikantSawant.webp", title: "Ravikant Sawant", date: "P&C Insurance Expert" },
+        { id: "ra5", img: "/team/shrutiVishnoi.webp", title: "Shruti Vishnoi", date: "Chief of Customer Success" },
+        /*{ id: "ra6", img: "/team/tejasJain.png", title: "Tejas Jain", date: "Founder & CEO" },
         { id: "ra7", img: "/team/priyalataPatra.png", title: "Priyalata Patra", date: "VP Product, Insurance Expert" },
         { id: "ra8", img: "/team/himaniDoshi.png", title: "Himani Doshi", date: "Liability Insurance Expert" },
         { id: "ra9", img: "/team/ravikantSawant.png", title: "Ravikant Sawant", date: "P&C Insurance Expert" },
-        { id: "ra10", img: "/team/shrutiVishnoi.png", title: "Shruti Vishnoi", date: "Chief of Customer Success" },
+        { id: "ra10", img: "/team/shrutiVishnoi.png", title: "Shruti Vishnoi", date: "Chief of Customer Success" },*/
     ])
 
     return (
@@ -76,7 +77,7 @@ export default function RecentActivity() {
                         {recentActivity.map((item) =>
                         <SwiperSlide key={item.id}>
                             <div className='RecentActivity-card border-primary p-xl-2'>
-                                <img className='img-fluid' src={item.img} />
+                                <Image className="img-fluid RecentActivityImg" src={item.img} width={478} height={478} alt="Bimakavach Team Image" loading="lazy" />
                                 <p className='title24 RecentActivity-cardTitle font-weight-600 mb-1 mt-2 text-primary'>{item.title}</p>
                                 <p className='title16 RecentActivity-cardDate text-yellow3'>{item.date}</p>
                             </div>
