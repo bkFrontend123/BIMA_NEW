@@ -1,15 +1,10 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import Image from 'next/image'
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/effect-cards";
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function BestBacked(props) {
@@ -18,7 +13,7 @@ export default function BestBacked(props) {
         { id: "b2", img: "/backBest2.png", width: "181", height: "58" },
         { id: "b3", img: "/backBest3.png", width: "165", height: "73" },
         { id: "b4", img: "/backBest4.png", width: "182", height: "75" },
-    ]) 
+    ])
     return (
         <>
             <div className="backedBest container bg-red-500">
@@ -34,7 +29,6 @@ export default function BestBacked(props) {
                         <Swiper
                             modules={[Navigation, Pagination, Autoplay]}
                             arrows="true"
-                            // navigation="true"
                             className={``}
                             slidesPerView={5}
                             loop="false"
@@ -42,30 +36,26 @@ export default function BestBacked(props) {
                             autoplay={{
                                 delay: 0,
                                 disableOnInteraction: false
-                            }} 
-                            
+                            }}
                             breakpoints={{
-                                // when window width is >= 640px
                                 1399: {
-                                  slidesPerView: 4,
-                                  spaceBetween: 50
+                                    slidesPerView: 4,
+                                    spaceBetween: 50
                                 },
                                 1200: {
-                                  slidesPerView: 4,
+                                    slidesPerView: 4,
                                 },
                                 992: {
-                                  slidesPerView: 2,
+                                    slidesPerView: 2,
                                 },
                                 768: {
                                     slidesPerView: 2,
                                 },
                                 0: {
-                                  slidesPerView: 2,
-                                  spaceBetween: 15
+                                    slidesPerView: 2,
+                                    spaceBetween: 15
                                 },
-                              
-                              }}
-
+                            }}
                         >
                             {best.map((item) =>
                                 <SwiperSlide key={item.id}>
@@ -77,9 +67,8 @@ export default function BestBacked(props) {
                         </Swiper>
                     </div>
                 </div>
-                <div className="d-none d-md-block" style={{height: "90px"}}></div>
-                <div className="d-blok d-md-none" style={{height: "40px"}}></div>
-               
+                <div className="d-none d-md-block" style={{ height: "90px" }}></div>
+                <div className="d-blok d-md-none" style={{ height: "40px" }}></div>
             </div>
             <style jsx scope>
                 {`

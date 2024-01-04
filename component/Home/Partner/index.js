@@ -1,13 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper';
 import 'swiper/css';
-
 import style from "./style.module.css";
 
 function Partner() {
-
     const partner = [
         { id: "p1", img: "/partners/bajaj.svg", width: "141", height: "17" },
         { id: "p2", img: "/partners/cholaMs.svg", width: "141", height: "33" },
@@ -26,7 +24,6 @@ function Partner() {
         { id: "p16", img: "/partners/orientalInsurance.svg", width: "141", height: "46" },
         { id: "p17", img: "/partners/unitedIndia.svg", width: "141", height: "19" },
     ]
-
     return (
         <div className={`partner text-center container`}>
             <h2 className={`title-36 text-primary font-secondary font-weight-700 mb-4 ${style.partnerTitle}`}>Partner General Insurance Companies</h2>
@@ -45,7 +42,6 @@ function Partner() {
                             disableOnInteraction: false
                         }}
                         breakpoints={{
-                            // when window width is >= 640px
                             1399: {
                               slidesPerView: 4,
                             },
@@ -130,5 +126,4 @@ function Partner() {
         </div>
     )
 }
-
 export default Partner

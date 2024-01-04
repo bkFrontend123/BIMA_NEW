@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper';
 import 'swiper/css';
 import style from "./trustedBusiness.module.css";
 function TrustedBusiness() {
@@ -49,13 +49,6 @@ function TrustedBusiness() {
     { id: "b41", img: "/clients/client20.svg", width: "133", height: "18" },
     { id: "b42", img: "/clients/client21.svg", width: "133", height: "29" },*/
   ]
-  const params = {
-    // direction: 'horizontal',
-    // loop: true,
-    // speed: 1000,
-    // spaceBetween: 30,
-
-  };
   return (
     <div className='container-fluid p-0'>
       <div className='row m-0'>
@@ -64,7 +57,6 @@ function TrustedBusiness() {
           <div className='pt-2'>
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-              // arrows={true}
               navigation
               className={`smoothSwiper ${style.fadeSlider} ${style.fadeSliderLeft} ${style.fadeSliderRight}`}
               spaceBetween={50}
@@ -100,65 +92,10 @@ function TrustedBusiness() {
               )}
             </Swiper>
           </div>
-          <div className='@d-block d-none mt-3'>
-
-            <Swiper
-              // {...params}
-              modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-              spaceBetween={50}
-
-              className={``}
-              infinite="true"
-              loop="true"
-              speed={3000}
-              autoplay={{
-                delay: 0,
-                disableOnInteraction: false
-              }}
-              breakpoints={{
-                1399: {
-                  slidesPerView: 7,
-                  spaceBetween: 40,
-                },
-                1200: {
-                  slidesPerView: 6,
-                  spaceBetween: 40,
-                },
-                992: {
-                  slidesPerView: 5,
-                  spaceBetween: 30,
-                },
-                768: {
-                  slidesPerView: 5,
-                  spaceBetween: 20,
-                },
-                576: {
-                  slidesPerView: 5,
-                  spaceBetween: 20,
-                },
-                320: {
-                  slidesPerView: 4,
-                  spaceBetween: 20,
-                },
-
-              }}
-            >
-
-              <SwiperSlide><img src='/trusted3.png' /></SwiperSlide>
-              <SwiperSlide><img src='/trusted2.png' /></SwiperSlide>
-              <SwiperSlide><img src='/trusted1.png' /></SwiperSlide>
-              <SwiperSlide><img src='/trusted2.png' /></SwiperSlide>
-              <SwiperSlide><img src='/trusted3.png' /></SwiperSlide>
-              <SwiperSlide><img src='/trusted2.png' /></SwiperSlide>
-              <SwiperSlide><img src='/trusted1.png' /></SwiperSlide>
-            </Swiper>
-          </div>
         </div>
       </div>
-
       <div className="d-none d-md-block" style={{ height: "90px" }}></div>
       <div className="d-blok d-md-none" style={{ height: "80px" }}></div>
-
       <style jsx scope>
         {` 
           @media only screen and (max-width: 575px) {
@@ -184,5 +121,4 @@ function TrustedBusiness() {
     </div>
   )
 }
-
 export default TrustedBusiness

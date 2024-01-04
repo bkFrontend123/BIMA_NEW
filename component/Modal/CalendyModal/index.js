@@ -1,27 +1,11 @@
 import React from "react";
-import { InlineWidget } from "react-calendly";
-
-import { Button, Modal } from "react-bootstrap";
-
+import { Button } from "react-bootstrap";
 import style from './style.module.css'
-
-import calendyModal from '@/assets/css/calendyModal.module.css'
 
 export default function CalendyModal(props) {
     const { show, handleClose, calendyLink } = props;
     return (
         <>
-            {/*<Modal show={show} onHide={handleClose} centered size="lg" className={calendyModal.calendyMdlOuter}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Free Consultation</Modal.Title>
-                </Modal.Header>
-                <Modal.Body className={calendyModal.calendyMdlBody}>
-                    <div className={calendyModal.calendyForm}>
-                        <iframe src="https://calendly.com/tejasjain?hide_gdpr_banner=1"></iframe>
-                        
-                    </div>
-                </Modal.Body>
-            </Modal>*/}
             <div className={`${style.caldendyPopOuter} ${show ? style.active : null}`}>
                 <div className={`${style.caldendyPopInner}`}>
                     <div className={`${style.caldendyPopContent}`}>
@@ -31,22 +15,22 @@ export default function CalendyModal(props) {
                         </div>
                         <div className={`${style.caldendyPopBody}`}>
                             {calendyLink == 'tejas' ? (
-                                <InlineWidget url="https://calendly.com/tejasjain?hide_gdpr_banner=1" />
+                                <iframe width="100%" height="600" frameborder="0" title="Calendly Scheduling Page" src="https://calendly.com/tejasjain?hide_gdpr_banner=1&amp;embed_type=Inline&amp;embed_domain=1"></iframe>
                             ) : (
                                 null
                             )}
                             {calendyLink == 'himani' ? (
-                                <InlineWidget url="https://calendly.com/himanidoshi-bk?hide_gdpr_banner=1" />
+                                <iframe width="100%" height="600" frameborder="0" title="Calendly Scheduling Page" src="https://calendly.com/himanidoshi-bk?hide_gdpr_banner=1&embed_type=Inline&embed_domain=1"></iframe>
                             ) : (
                                 null
                             )}
                             {calendyLink == 'ravi' ? (
-                                <InlineWidget url="https://calendly.com/ravikant-bk?hide_gdpr_banner=1" />
+                                <iframe width="100%" height="600" frameborder="0" title="Calendly Scheduling Page" src="https://calendly.com/ravikant-bk?hide_gdpr_banner=1&embed_type=Inline&embed_domain=1"></iframe>
                             ) : (
                                 null
                             )}
                             {calendyLink == 'shruti' ? (
-                                <InlineWidget url="https://calendly.com/shruti-vishnoi" />
+                                <iframe width="100%" height="600" frameborder="0" title="Calendly Scheduling Page" src="https://calendly.com/shruti-vishnoi?embed_type=Inline&embed_domain=1"></iframe>
                             ) : (
                                 null
                             )}

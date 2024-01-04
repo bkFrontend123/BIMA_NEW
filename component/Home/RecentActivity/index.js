@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import { Navigation, Pagination, Autoplay } from 'swiper';
 import "swiper/css";
 import "swiper/css/scrollbar";
 import 'swiper/css/pagination';
@@ -15,13 +15,7 @@ export default function RecentActivity() {
         { id: "ra3", img: "/team/himaniDoshi.webp", title: "Himani Doshi", date: "Liability Insurance Expert" },
         { id: "ra4", img: "/team/ravikantSawant.webp", title: "Ravikant Sawant", date: "P&C Insurance Expert" },
         { id: "ra5", img: "/team/shrutiVishnoi.webp", title: "Shruti Vishnoi", date: "Chief of Customer Success" },
-        /*{ id: "ra6", img: "/team/tejasJain.png", title: "Tejas Jain", date: "Founder & CEO" },
-        { id: "ra7", img: "/team/priyalataPatra.png", title: "Priyalata Patra", date: "VP Product, Insurance Expert" },
-        { id: "ra8", img: "/team/himaniDoshi.png", title: "Himani Doshi", date: "Liability Insurance Expert" },
-        { id: "ra9", img: "/team/ravikantSawant.png", title: "Ravikant Sawant", date: "P&C Insurance Expert" },
-        { id: "ra10", img: "/team/shrutiVishnoi.png", title: "Shruti Vishnoi", date: "Chief of Customer Success" },*/
     ])
-
     return (
         <div className='RecentActivity @container'>
             <div className="d-none d-md-block" style={{ height: "90px" }}></div>
@@ -53,9 +47,7 @@ export default function RecentActivity() {
                             delay: 5000,
                             disableOnInteraction: false
                         }}
-
                         breakpoints={{
-                            // when window width is >= 640px
                             1399: {
                                 slidesPerView: 3,
                                 spaceBetween: 50,
@@ -72,23 +64,21 @@ export default function RecentActivity() {
                                 slidesPerView: 1,
                             },
                         }}
-
                     >
                         {recentActivity.map((item) =>
-                        <SwiperSlide key={item.id}>
-                            <div className='RecentActivity-card border-primary p-xl-2'>
-                                <Image className="img-fluid RecentActivityImg" src={item.img} width={478} height={478} alt="Bimakavach Team Image" loading="lazy" />
-                                <p className='title24 RecentActivity-cardTitle font-weight-600 mb-1 mt-2 text-primary'>{item.title}</p>
-                                <p className='title16 RecentActivity-cardDate text-yellow3'>{item.date}</p>
-                            </div>
-                        </SwiperSlide>
+                            <SwiperSlide key={item.id}>
+                                <div className='RecentActivity-card border-primary p-xl-2'>
+                                    <Image className="img-fluid RecentActivityImg" src={item.img} width={478} height={478} alt="Bimakavach Team Image" loading="lazy" />
+                                    <p className='title24 RecentActivity-cardTitle font-weight-600 mb-1 mt-2 text-primary'>{item.title}</p>
+                                    <p className='title16 RecentActivity-cardDate text-yellow3'>{item.date}</p>
+                                </div>
+                            </SwiperSlide>
                         )}
                     </Swiper>
                     <div className='divider d-none @d-lg-block bg-yellow2 w-100'></div>
                     <div className='position-relative'>
-                        {/* <div className=' d-none d-lg-block' style={{ height: "20px" }}></div> */}
                         <div className="d-flex justify-content-center w-100 @RecentActivity-yellow-arrow mt-4">
-                            <div className='recent-swiper-button-prev'>                                                
+                            <div className='recent-swiper-button-prev'>
                                 <svg width="21" height="20" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.9648 6.41016L1.66173 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M6.50391 1.11572L1.65971 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

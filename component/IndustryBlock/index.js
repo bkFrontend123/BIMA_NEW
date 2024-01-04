@@ -7,19 +7,13 @@ export default function IndustryBlock() {
     { id: "l1", titleLink: "/directors-and-officers-insurance", img: "/productIcons/liability/dAndO_icon.svg", title: "Directors &", subtitle: "Officers Insurance" },
     { id: "l2", titleLink: "/errors-and-omissions-insurance", img: "/productIcons/liability/eAndO_icon.svg", title: "Errors & Omissions", subtitle: "Insurance" },
     { id: "l3", titleLink: "/general-liability-insurance", img: "/productIcons/liability/generalLiability_icon.svg", title: "General Liability", subtitle: "Insurance" },
-    //{ id: "l4", titleLink: "/fidelity-insurance", img: "/productIcons/liability/fidelity_icon.svg", title: "Fidelity", subtitle: "Insurance" },
     { id: "l5", titleLink: "/product-liability-insurance", img: "/productIcons/liability/productLiability_icon.svg", title: "Product Liability", subtitle: "Insurance" },
     { id: "l6", titleLink: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.svg", title: "Cyber", subtitle: "Insurance" },
     { id: "l7", titleLink: "/commercial-crime-insurance", img: "/productIcons/liability/crime_icon.svg", title: "Crime", subtitle: "Insurance" },
-    { id: "18", titleLink: "/workmens-compensation-insurance", img: "/productIcons/liability/workman_icon.svg", title: "Workmen’s", subtitle: "Compensation" },
+    { id: "18", titleLink: "/workmens-compensation-insurance", img: "/productIcons/liability/workman_icon.svg", title: "Workmen's", subtitle: "Compensation" },
   ]
   const assetInsurance = [
     { id: "a1", titleLink: "/fire-and-burglary-insurance", img: "/productIcons/asset/fire_icon.svg", title: "Fire", subtitle: "Insurance" },
-    //{ id: "a2", titleLink: "/", img: "/productIcons/asset/officePackage_icon.svg", title: "Office", subtitle: "Package" },
-    //{ id: "a3", titleLink: "/", img: "/productIcons/asset/shopOwner_icon.svg", title: "Shop", subtitle: "Owner’s" },
-    //{ id: "a4", titleLink: "/", img: "/productIcons/asset/restaurant_icon.svg", title: "Restaurant", subtitle: "Hotels & Cafes" },
-    //{ id: "a5", titleLink: "/", img: "/productIcons/asset/educational_icon.svg", title: "Educational", subtitle: "Institutes" },
-    //{ id: "a6", titleLink: "/", img: "/productIcons/asset/hospitals_icon.svg", title: "Hospitals", subtitle: "Clinics" },
   ]
   const engineeringInsurance = [
     { id: "e1", titleLink: "/contractor-all-risk-policy", img: "/productIcons/engineering/contractorsAllRisk_icon.svg", title: "Contractor's", subtitle: "All Risk" },
@@ -30,7 +24,6 @@ export default function IndustryBlock() {
     { id: "eb1", titleLink: "/group-personal-accident-insurance", img: "/productIcons/employeeBenefits/groupPersonal_icon.svg", title: "Group Personal", subtitle: "Accident" },
     { id: "eb2", titleLink: "/group-health-insurance", img: "/productIcons/employeeBenefits/groupHealth_icon.svg", title: "Group Health", subtitle: "Insurance" },
   ]
-  
   const marineInsurance = [
     { id: "m1", titleLink: "/marine-cargo-insurance", img: "/productIcons/marine/marine_icon.svg", title: "Marine Transit", subtitle: "Policy" },
   ]
@@ -64,7 +57,6 @@ export default function IndustryBlock() {
                   <Link className='text-decoration-none d-lg-flex align-items-center text-black' href={item.titleLink}>
                     <div>
                       <Image
-                      // loader={myLoader}
                       src={item.img}
                       alt="Bimakavach"
                       width={52}
@@ -81,7 +73,6 @@ export default function IndustryBlock() {
               </div>
             )}
           </div>
-
           <div className='row'>
             <div className={`col-12`}>
               <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
@@ -98,7 +89,6 @@ export default function IndustryBlock() {
                   <Link className='text-decoration-none d-lg-flex align-items-center text-black' href={item.titleLink}>
                     <div>
                     <Image
-                      // loader={myLoader}
                       src={item.img}
                       alt="Bimakavach"
                       width={52}
@@ -115,7 +105,6 @@ export default function IndustryBlock() {
               </div>
             )}
           </div>
-
           <div className='row'>
             <div className={`col-12`} >
               <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
@@ -148,35 +137,6 @@ export default function IndustryBlock() {
               </div>
             )}
           </div>
-
-          {/*<div className='row'>
-            <div className={`col-12`} >
-              <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
-                <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Employee Benefits</div>
-                <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
-              </div>
-            </div>
-          </div>
-          <div className='row g-4 g-lg-5 employeeBenefits'>
-            {employeeBenefits.map((item) =>
-              <div key={item.id} className="col-xl-3 col-lg-4 col-6">
-                <div className='onhoverAnimation'>
-                  <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
-                    <Image
-                      src={item.img}
-                      alt="Bimakavach"
-                      width={52}
-                      height={52}
-                      loading="lazy"
-                    />
-                    <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                      <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>*/}
           <div className='row'>
             <div className={`col-12`}>
               <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
@@ -193,7 +153,6 @@ export default function IndustryBlock() {
                   <Link className='text-decoration-none d-lg-flex align-items-center text-black' href={item.titleLink}>
                     <div>
                     <Image
-                      // loader={myLoader}
                       src={item.img}
                       alt="Bimakavach"
                       width={52}
@@ -210,7 +169,6 @@ export default function IndustryBlock() {
               </div>
             )}
           </div>
-
         </div>
       </div>
       <style jsx scope>

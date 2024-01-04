@@ -1,11 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
-import 'swiper/css';
 
 function Business() {
-
     const businessInsurance = ([
         {
             id: "b1", title: "Apply in 10 minutes or less", checkBoxData: [
@@ -89,7 +85,6 @@ function Business() {
         },
 
     ])
-
     return (
         <div className={`businessInsurance  `}>
             <div className={`container `}>
@@ -132,15 +127,11 @@ function Business() {
                                                     </div>
                                                 </td>
                                             ))}
-                                            {/* <td className='businessInsurance-colBox title24 font-weight-500'>Other insurance bazaar  f df</td>
-                                            <td className='businessInsurance-colBox title24 font-weight-500'>Other insurance bazaar222  f df</td>
-                                            <td className='businessInsurance-colBox title24 font-weight-500'>Other insurance bazaar333  f df</td> */}
                                         </tr>
                                     ))}
                                 </tbody>
                             </table>
                         </div>
-
                         <table className="table table-borderless align-middle">
                             <thead className='py-5'>
                                 <tr>
@@ -153,7 +144,6 @@ function Business() {
                                 </tr>
                             </thead>
                             <tbody>
-
                                 <tr>
                                     <td>
                                         <div className='businessInsurance-colBox title24 text-primary font-weight-500'>
@@ -270,40 +260,13 @@ function Business() {
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
-
                 </div>
             </div>
-                {/* <div className='d-none d-md-none'>
-            <div className={`row  text-center`}>
-                <div className='col-6 mb-5'>
-                    <img src='/industry-traditional.svg' />
-                    <p className='title14 font-weight-600 mt-2'>Apply in 10 minutes or less</p>
-                </div>
-                <div className='col-6 mb-5'>
-                    <img src='/industry-traditional.svg' />
-                    <p className='title14 font-weight-600 mt-2'>Same day policy delivery</p>
-                </div>
-                <div className='col-6 mb-5'>
-                    <img src='/industry-traditional.svg' />
-                    <p className='title14 font-weight-600 mt-2'>Exclusive coverages tailored for your business</p>
-                </div>
-                <div className='col-6 mb-5'>
-                    <img src='/industry-traditional.svg' />
-                    <p className='title14 font-weight-600 mt-2'>AM Best rating of A (Excellent)</p>
-                </div>
-                <div className='col-6 mb-5'>
-                    <img src='/industry-traditional.svg' />
-                    <p className='title14 font-weight-600 mt-2'>One on one claim support</p>
-                </div>
-            </div>
-            </div> */}
-                <div className="d-none d-xl-block" style={{ height: "160px" }}></div>
-                <div className="d-block d-xl-none" style={{ height: "70px" }}></div>
-
-                <style jsx scope>
-                    {`
+            <div className="d-none d-xl-block" style={{ height: "160px" }}></div>
+            <div className="d-block d-xl-none" style={{ height: "70px" }}></div>
+            <style jsx scope>
+                {`
                     .businessInsurance .businessInsurance-box{
                         padding: 75px 100px 50px 100px;    
                     }
@@ -325,7 +288,6 @@ function Business() {
                                 font-size: 22px;
                                 line-height: 30px;
                             }
-                            
                         }
                         @media (max-width:1450px) {
                             .businessInsurance .businessInsurance-box{
@@ -355,10 +317,7 @@ function Business() {
                                 font-size: 20px;
                                 line-height: 28px;
                             }
-                               
-                           }
-
-
+                        }
                     @media (min-width:1299px) {
                         .businessInsurance .businessInsurance-box{
                             overflow: visible;
@@ -384,19 +343,15 @@ function Business() {
                         .businessInsurance table th:nth-child(1) {
                             min-width: 160px;
                         }
-                        
                         .businessInsurance table th:nth-child(2) {
                             width: 25%;
                         }
-                        
                         .businessInsurance table th:nth-child(3) {
                             width: 25%;
                         }
-                        
                         .businessInsurance table th:nth-child(4) {
                             width: 25%;
                         }
- 
                         .businessInsurance .businessInsurance-box{
                             padding: 16px 12px;
                         }
@@ -412,11 +367,10 @@ function Business() {
                             font-size: 15px;
                             line-height: 22px;
                         }  
-                        }
+                    }
                 `}
-                </style>
-            </div>
-            )
+            </style>
+        </div>
+    )
 }
-
-            export default Business
+export default Business

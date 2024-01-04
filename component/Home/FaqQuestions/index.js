@@ -1,10 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react'
-import Link from 'next/link'
+import React from 'react'
 import productStyle from '@/assets/css/product.module.css'
 import Accordion from '../../Accordion'
 
 export default function FaqQuestions() {
-
     return (
         <div className='homeFaqBlock container'>
             <div className={`row text-center`}>
@@ -30,10 +28,6 @@ export default function FaqQuestions() {
                                     <li>Make sure that your broker has the right expertise and claims support available. A lot of claims are rejected because of mistakes that happen during the purchase process.</li>
                                     <li>Always ensure that the online platform has secure payment gateways and maintains strict data privacy standards.</li>
                                 </ul>
-
-                                {/* <div className='mt-3'>Always purchase from IRDAI-registered insurance brokers like BimaKavach</div>
-                                <div className='mt-3'>Make sure that your broker has the right expertise and claims support available. A lot of claims are rejected because of mistakes that happen during the purchase process.</div>
-                                <div className='mt-3'></div> */}
                             </>]}
                         />
                         <Accordion
@@ -60,7 +54,6 @@ export default function FaqQuestions() {
             </div>
             <div className="d-none d-md-block" style={{ height: "90px" }}></div>
             <div className="d-blok d-md-none" style={{ height: "70px" }}></div>
-
             <style jsx scope>
                 {`
                 @media (max-width:575px) {

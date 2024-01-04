@@ -1,29 +1,26 @@
-import React, { Children, useState } from 'react';
+import React, { useState } from 'react';
+import Image from 'next/image'
 
 const Accordion = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [accordionActive, setAccordionActive] = useState("");
-
-  const toggleAccordion = () => {
-    setIsOpen((prevState) => !prevState);
-  };
-
-  return (
-    <>
-        <div className={`accordion ProdFAQ-accordionBox ${isOpen ? "accordionActive" : "" }`}>
-        <div className="accordion-header title-24 text-primary font-weight-600 transition-all d-flex gap-1 justify-content-between" onClick={toggleAccordion}>
-            <span> {title} </span>
-            <img className='plusCross' src='/icons/plus.svg' />
-        </div>
-        {isOpen && (
-            <div className="accordion-content title-18 text-black">
-            <span> {content}</span>
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleAccordion = () => {
+        setIsOpen((prevState) => !prevState);
+    };
+    return (
+        <>
+            <div className={`accordion ProdFAQ-accordionBox ${isOpen ? "accordionActive" : ""}`}>
+                <div className="accordion-header title-24 text-primary font-weight-600 transition-all d-flex gap-1 justify-content-between" onClick={toggleAccordion}>
+                    <span> {title} </span>
+                    <Image className='plusCross' src='/icons/plus.svg' width={24} height={33} alt="Plus Icon" loading="lazy" />
+                </div>
+                {isOpen && (
+                    <div className="accordion-content title-18 text-black">
+                        <span> {content}</span>
+                    </div>
+                )}
             </div>
-        )}
-        </div>
-
-        <style jsx scope>
-            {`
+            <style jsx scope>
+                {`
                  img.plusCross{
                     width: 24px;
                  }
@@ -62,9 +59,9 @@ const Accordion = ({ title, content }) => {
                      }
                 }
             `}
-        </style>
-    </>
-  );
+            </style>
+        </>
+    );
 };
 
 export default Accordion;

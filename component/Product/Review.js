@@ -7,32 +7,22 @@ import "swiper/css/scrollbar";
 import 'swiper/css/pagination';
 import "swiper/css/navigation";
 
-
 export default function Companies(props) {
   const review = ([
     { id: "r1", text: `BimaKavach understood the intricacies of our business and ensured we were covered adequately for our risks. We were run through in detail about the policy and got our policy the very next day of reaching out. Totally hassle free!`, name: "Vivek Prakash", position: "Codingal", img: "/codingal.png" },
     { id: "r2", text: `BimaKavach understood our risk exposure analysing all the complexities of our products. They ran us through the possible risk exposures and helped us cover the gaps. Our recommended policy is precise for our fintech offering and understands its differences from other businesses.`, name: "Naman Paithankar", position: "FinBox", img: "/finBox.png" },
   ])
-  // const reviewImg = ([
-  //   { id: "s1", img: "/backBest1.png" },
-
-  // ])
-
   return (
     <>
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   
       <div className={`companyReview ${props.customClass}`}>
         <div className='container'>
           <div className={`row text-start text-center`}>
             <div className={`col-md-12 mx-auto`}>
               <div className='commnHeading'>
                 <div className='title-36 font-secondary mb-0 text-primary font-weight-700'>Hear it from our <span className='text-yellow fst-italic'>Clients</span></div>
-                {/* <div className=' text-primary font-weight-600 title16' >Our customers trust us.</div> */}
               </div>
             </div>
           </div>
-
           <div className={`row companyReview-slider align-items-center`}>
             <div className={`col-lg-2 d-none d-md-block`}>
               <div className='image-swiper-button-prev' >
@@ -41,15 +31,12 @@ export default function Companies(props) {
                   <path d="M7.74609 1.11572L12.5903 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M7.74609 11.7051L12.5903 6.41064" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-
               </div>
             </div>
             <div className={`col-lg-8  `}>
               <Swiper
-                modules={[Navigation, Pagination, Scrollbar, Autoplay]}                
-                scrollbar={{ draggable: true, dragSize: 118   }}
-                // arrows="true"
-                // navigation="true"
+                modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+                scrollbar={{ draggable: true, dragSize: 118 }}
                 navigation={{
                   nextEl: ".image-swiper-button-next",
                   prevEl: ".image-swiper-button-prev",
@@ -85,14 +72,13 @@ export default function Companies(props) {
             </div>
             <div className={`col-lg-2 `}>
               <div className='companyReview-sliderMobBtns d-flex justify-content-around justify-content-md-end' >
-              <div className='image-swiper-button-prev d-flex d-md-none' >
-                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.28516 6.41016L12.5883 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M7.74609 1.11572L12.5903 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M7.74609 11.7051L12.5903 6.41064" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-
-              </div>
+                <div className='image-swiper-button-prev d-flex d-md-none' >
+                  <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.28516 6.41016L12.5883 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M7.74609 1.11572L12.5903 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M7.74609 11.7051L12.5903 6.41064" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
                 <div className='image-swiper-button-next' >
                   <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.28516 6.41016L12.5883 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -104,7 +90,6 @@ export default function Companies(props) {
             </div>
           </div>
         </div>
-
         <div className="d-none d-md-block" style={{ height: "90px" }}></div>
         <div className="d-blok d-md-none" style={{ height: "70px" }}></div>
         <style jsx scope>
@@ -134,8 +119,6 @@ export default function Companies(props) {
                   .image-swiper-button-next{
                     float: right;
                   }
-                  
-                  
                   @media (min-width:1600px) {
                     .companyReview-slider {
                       // max-width: 1280px;
@@ -170,8 +153,6 @@ export default function Companies(props) {
                       font-size: 30px;
                       line-height: 36px;
                     }
-                  
-                   
                     .companyReview-card{
                       padding: 20px;
                     }
@@ -183,8 +164,6 @@ export default function Companies(props) {
                       margin-left: auto;
                       margin-right: auto;
                     }
-
-
                     .title-64{
                       font-size: 30px;
                       line-height: 36px;
@@ -205,7 +184,6 @@ export default function Companies(props) {
                       font-size: 18px;
                       line-height: 22px;
                       font-weight: 400;
-                      
                   }
                   .title-22 {
                     font-size: 18px;
@@ -214,10 +192,8 @@ export default function Companies(props) {
                   .title-16{
                       font-size: 16px;
                       line-height: 24px;
-                      
                   }
                   }
-
                 `}
         </style>
       </div>

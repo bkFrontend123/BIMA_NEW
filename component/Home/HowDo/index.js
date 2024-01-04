@@ -1,39 +1,28 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import Image from 'next/image'
-import { ToggleCard, TinderLikeCard, StackCard } from 'react-stack-cards'
+import { TinderLikeCard } from 'react-stack-cards'
 import { Swiper, SwiperSlide } from "swiper/react";
-// import Card from "../ThreeD/Card";
-// import Carousel from "../ThreeD/Carousel";
-import HowDoSlider from '../HowDoSlider'
 import "swiper/css";
-// import "swiper/css/scrollbar";
-// import 'swiper/css/pagination';
-// import "swiper/css/navigation";
-// import "swiper/css/effect-coverflow";
-// import "swiper/css/navigation";
-// import "swiper/css/effect-cards";
-import { Navigation, Pagination, EffectCards, Autoplay } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 
 export default function HowDo() {
-
   const tinderRef = useRef(null);
   const data = [
     { title: "Select from the products", description: "Choose the policy for your business requirements.", imgSrc: "/howWorks/howWorkImg1.webp", btnText: 'Next: Digital' },
-    { title: "Tell us about the business.", description: "Answer a few simple questions about your business ", imgSrc: "/howWorks/howWorkImg2.webp", btnText: 'Next: Digital'},
+    { title: "Tell us about the business.", description: "Answer a few simple questions about your business ", imgSrc: "/howWorks/howWorkImg2.webp", btnText: 'Next: Digital' },
     { title: "Compare quotes", description: "Get instant quotes from top insurance companies", imgSrc: "/howWorks/howWorkImg3.webp", btnText: 'Next: Digital' },
     { title: "Talk to an expert", description: "Consult with our experts and make payment", imgSrc: "/howWorks/howWorkImg4.webp", btnText: 'Next: Digital' },
     { title: "All-in-one digital platform", description: "Manage everything on a single dashboard", imgSrc: "/howWorks/howWorkImg5.webp", btnText: 'Next: Digital' },
   ]
   const onSwipeDown = (e) => {
-    console.log("e  eeeeee",e)
-    console.log("tinderRef.current",tinderRef)
+    console.log("e  eeeeee", e)
+    console.log("tinderRef.current", tinderRef)
     if (tinderRef.current) {
       tinderRef.current.swipe();
     }
-  }; 
+  };
   const getCards = (i) => {
     const arr = []
-
     let arr1 = []
     console.log(arr1)
     for (let i = 0; i < 50; i++) {
@@ -43,12 +32,9 @@ export default function HowDo() {
         arr1 = arr1.concat(div)
       }
     }
-
-
     return (
       arr1
     )
-
   }
   function card(title, description, imgSrc, btnText, index) {
     return (
@@ -65,35 +51,9 @@ export default function HowDo() {
             </div>
           </div>
         </div>
-
       </>
-      //   <>
-      //  {data.map((item,index) => <div className="bg-primary howDo-sliderBox @radius-15 position-relative d-flex flex-column justify-content-md-between">
-      //     <img className="howDo-sliderBoxImg position-absolute" src="/howdo.png" />
-      //     <div className="row mb-5">
-      //       <div className="col-md-12">
-      //         <div className="howDo-sliderBoxText text-white">
-      //           <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">02</div>
-      //           <div className="title64 font-secondary font-weight-500">{item.title}</div>
-      //           <div className="title20 font-weight-500 mt-2 mt-md-0">{item.direction}</div>
-      //         </div>
-      //       </div>
-      //     </div>
-      //     <div className='d-flex text-white howDo-sliderBox-btn howDoswiper-button-next'>
-      //       <a className='btnCommon ps-0 text-decoration-none '>
-      //         <span className="me-2 font-weight-500 d-md-inline "> {item.btnText} </span>
-      //         <img src="/icons/arrowRight-white.svg" />
-      //       </a>
-      //     </div>
-      //   </div>)}
-
-      //   </>
-
-
-
     )
   }
-
   return (
     <>
       <div className="my-0" style={{ margin: "250px 0" }}>
@@ -108,12 +68,10 @@ export default function HowDo() {
           </div>
           <div className={`row  `}>
             <div className={`@col-md-10 howDoDesktopSlider mx-auto position-relative`}>
-              {/* <button onClick={(e) => onSwipeDown(e)}>Swipe Down</button> */}
-
               <div className='d-flex text-white howDo-sliderBox-btn howDoswiper-button-next'>
                 <a className=' text-white d-flex align-items-center title20 font-weight-400 ps-0 text-decoration-none' onClick={(e) => onSwipeDown(e)} >
                   <span className="me-2  d-md-inline me-3">Next</span>
-                  <img src="/icons/arrowRight-white.svg" />
+                  <Image src="/icons/arrowRight-white.svg" width={37} height={18} alt="Arrow Right" loading="lazy" />
                 </a>
               </div>
               <TinderLikeCard
@@ -131,7 +89,6 @@ export default function HowDo() {
           </div>
         </div>
       </div>
-
       {/* ========= Mobile version ======== */}
       <div className="howDo d-lg-none d-block">
         <div className={`container `}>
@@ -139,13 +96,12 @@ export default function HowDo() {
             <div className={`col-md-11 mx-auto`}>
               <div className='commnHeading'>
                 <div className='howDoTitle title-36 font-secondary text-primary font-weight-600'><span className="text-yellow fst-italic">How</span> it works</div>
-                <p className='howDoSubTitle title-22 text-primary font-weight-500 mb-0'>Simple process to buy the most complex business insurance policies -<br/>developed by experts.</p>
+                <p className='howDoSubTitle title-22 text-primary font-weight-500 mb-0'>Simple process to buy the most complex business insurance policies -<br />developed by experts.</p>
               </div>
             </div>
           </div>
         </div>
         <div className={`container howDoSliderBox `}>
-          {/* <div className='howDoTitle title36 font-secondary text-primary font-weight-600 text-center bg-blueExtraLight py-5'>This Section is <span className="text-yellow d-block fst-italic">In Progress</span> </div> */}
           <div className="row howDoSliderBox-row">
             <div className="howDo-slider px-0 mt-0 col-12 mx-auto">
               <div className="my-5">
@@ -176,15 +132,13 @@ export default function HowDo() {
                           </div>
                         </div>
                       </div>
-                      {/* <button onClick={(e) => onSwipeDown(e)}>Swipe Down</button> */}
                       <div className='d-flex text-white howDo-sliderBox-btn howDoswiper-button-next' >
                         <a className='btnCommon ps-0 text-decoration-none ' >
                           <span className="me-2 font-weight-500 d-none d-md-inline ">  Next: Digital  </span>
-                          <img src="/icons/arrowRight-white.svg" />
+                          <Image src="/icons/arrowRight-white.svg" width={37} height={18} alt="Arrow Right" loading="lazy" />
                         </a>
                       </div>
                     </div>
-
                   </>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -200,15 +154,13 @@ export default function HowDo() {
                           </div>
                         </div>
                       </div>
-                      {/* <button onClick={(e) => onSwipeDown(e)}>Swipe Down</button> */}
                       <div className='d-flex text-white howDo-sliderBox-btn howDoswiper-button-next'>
                         <a className='btnCommon ps-0 text-decoration-none ' >
                           <span className="me-2 font-weight-500 d-none d-md-inline ">  Next: Digital  </span>
-                          <img src="/icons/arrowRight-white.svg" />
+                          <Image src="/icons/arrowRight-white.svg" width={37} height={18} alt="Arrow Right" loading="lazy" />
                         </a>
                       </div>
                     </div>
-
                   </>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -224,16 +176,13 @@ export default function HowDo() {
                           </div>
                         </div>
                       </div>
-                      {/* <button onClick={(e) => onSwipeDown(e)}>Swipe Down</button> */}
-                      
                       <div className='d-flex text-white howDo-sliderBox-btn howDoswiper-button-next' >
                         <a className='btnCommon ps-0 text-decoration-none ' >
                           <span className="me-2 font-weight-500 d-none d-md-inline ">  Next: Digital  </span>
-                          <img src="/icons/arrowRight-white.svg" />
+                          <Image src="/icons/arrowRight-white.svg" width={37} height={18} alt="Arrow Right" loading="lazy" />
                         </a>
                       </div>
                     </div>
-
                   </>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -249,16 +198,13 @@ export default function HowDo() {
                           </div>
                         </div>
                       </div>
-                      {/* <button onClick={(e) => onSwipeDown(e)}>Swipe Down</button> */}
-                      
                       <div className='d-flex text-white howDo-sliderBox-btn howDoswiper-button-next' >
                         <a className='btnCommon ps-0 text-decoration-none ' >
                           <span className="me-2 font-weight-500 d-none d-md-inline ">  Next: Digital  </span>
-                          <img src="/icons/arrowRight-white.svg" />
+                          <Image src="/icons/arrowRight-white.svg" width={37} height={18} alt="Arrow Right" loading="lazy" />
                         </a>
                       </div>
                     </div>
-
                   </>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -271,23 +217,19 @@ export default function HowDo() {
                             <div className="howDo-sliderBox-index d-flex align-items-center justify-content-center title16 mb-4 mb-md-0">05</div>
                             <div className="title60 font-secondary font-weight-600">All-in-one digital platform</div>
                             <div className="title20 font-weight-500 mt-2 mt-md-0">Manage everything on a single dashboard
-</div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      {/* <button onClick={(e) => onSwipeDown(e)}>Swipe Down</button> */}
-                      
                       <div className='d-flex text-white howDo-sliderBox-btn howDoswiper-button-next' >
                         <a className='btnCommon ps-0 text-decoration-none ' >
                           <span className="me-2 font-weight-500 d-none d-md-inline ">  Next: Digital  </span>
-                          <img src="/icons/arrowRight-white.svg" />
+                          <Image src="/icons/arrowRight-white.svg" width={37} height={18} alt="Arrow Right" loading="lazy" />
                         </a>
                       </div>
                     </div>
-
                   </>
                 </SwiperSlide>
-
               </Swiper>
             </div>
           </div>
@@ -295,7 +237,6 @@ export default function HowDo() {
           <div className="d-blok d-md-none" style={{ height: "0" }}></div>
           <style jsx scope>
             {`
-            
              .howDo-slider{
                   max-width: 1286px;
               }
@@ -334,8 +275,6 @@ export default function HowDo() {
           </style>
         </div>
       </div>
-
-
     </>
   );
 }

@@ -254,12 +254,12 @@ export default function Footer(props) {
                           <Twitter iconColor="white" width="20" height="20" />
                         </div>*/}
                       <div className='footerSocialIco'>
-                        <Link target='_blank' href="https://www.linkedin.com/company/bimakavach/">
+                        <Link target='_blank' href="https://www.linkedin.com/company/bimakavach/" aria-label="Linkedin Link">
                           <Linkdin iconColor="white" width="20" height="20" />
                         </Link>
                       </div>
                       <div className='footerSocialIco'>
-                        <Link target='_blank' href="https://www.youtube.com/@bimakavach">
+                        <Link target='_blank' href="https://www.youtube.com/@bimakavach" aria-label="Youtube Link">
                           <Youtube iconColor="white" width="20" height="20" />
                         </Link>
                       </div>

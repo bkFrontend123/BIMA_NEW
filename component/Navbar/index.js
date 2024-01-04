@@ -125,8 +125,10 @@ function Navbar() {
         <nav className={`navbar p-0 mainMenu  navbar-expand-xl bg-body-tertiary homeNavbar`}>
           <div className='container'>
             <div className="nabbarStrip position-relative">
-              <Link className="navbar-brand" href="/"><img src='/logo-main.svg' /></Link>
-              <button className="navbar-toggler p-0" type="button" onClick={menuToggleHandle}>
+              <Link className="navbar-brand" href="/" aria-label="Go to the homepage">
+                <Image src='/logo-main.svg' width={250} height={27} alt='Bimakavach Logo' />
+              </Link>
+              <button className="navbar-toggler p-0" type="button" onClick={menuToggleHandle} aria-label='Toggle Button'>
                 <span className="navbar-toggler-icon"><Toggle /></span>
               </button>
               <div className={`collapse navbar-collapse ${menuToggleList}`} >

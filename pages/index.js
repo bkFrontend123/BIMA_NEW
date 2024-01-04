@@ -1,11 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
-
 import HeroBanner from '../component/Home/HeroBanner'
 import TrustedBusiness from '../component/Home/TrustedBusiness'
 //import Startup from '../component/Home/Startup'
@@ -24,13 +20,11 @@ import FaqQuestions from '../component/Home/FaqQuestions'
 import { useEffect } from 'react'
 
 export default function Home() {
-
   // let homeBody = document.querySelector("body").classList.add("homePage")
   useEffect(() => {
     // document.body.classList.add = "homePage";
     document.body.classList.add("homePageBody")
   }, []);
-
   return (
     <>
       <Head>

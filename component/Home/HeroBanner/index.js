@@ -1,11 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-
 import {Container, Row, Col} from 'react-bootstrap';
-
 import IndustryBlock from '../../IndustryBlock'
 import HeroTextSlider from '../HeroTextSlider';
-
 import style from './style.module.css'
 
 export default function HeroBanner(props) {
@@ -68,7 +65,7 @@ export default function HeroBanner(props) {
                 <Col lg={6}>
                   <div className="homeHeroMediaOuter">
                       <div className="homeHeroShield">
-                        <img src="/icons/homeShield.svg" alt="Shield" />
+                        <Image src="/icons/homeShield.svg" width={536} height={523} alt="Shield" className={style.homeHeroShieldPath} />
                       </div>
                       <div className="homeHeroImg d-none d-lg-block">
                         <Image
@@ -97,7 +94,6 @@ export default function HeroBanner(props) {
             <IndustryBlock />
           </div>
         </div>
-
         <style jsx scope>
           {`
             .homeHero {
@@ -138,7 +134,6 @@ export default function HeroBanner(props) {
             .homeBannerText-bottomCard-descrip {
               font-size: 17px;
             }
-
             .homeHeroMediaOuter {
               position: relative;
               min-height: 460px;
@@ -181,16 +176,6 @@ export default function HeroBanner(props) {
                 font-size: 54px;
                 line-height: 66px;
               }
-            }
-            @media (min-width: 1700px) {
-
-            }
-            
-            @media (max-width:1699px) {
-              
-            }
-            @media (max-width:1399px) {
-              
             }
             @media only screen and (max-width: 1199px) {
               .homeBannerText {
@@ -282,6 +267,5 @@ export default function HeroBanner(props) {
         </style>
       </div>
     </>
-
   )
 }

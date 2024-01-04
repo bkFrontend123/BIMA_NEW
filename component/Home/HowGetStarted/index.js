@@ -1,14 +1,9 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-
 import {Dropdown} from 'react-bootstrap';
-
 import CalendyModal from '../../Modal/CalendyModal'
-
 import headerStyle from '../../HeaderPlain/style.module.css'
-
 import Calender from '../../Icons/Calender'
-import WhatsApp from '../../Icons/WhatsApp'
 import DropdownArrow from '../../Icons/DropdownArrow'
 
 export default function HowGetStarted(props) {
@@ -66,53 +61,53 @@ export default function HowGetStarted(props) {
                                                 </Dropdown.Toggle>
                                                 <Dropdown.Menu className={headerStyle.hdrDrpMenu}>
                                                     <div>
-                                                    <ul>
-                                                        <li>
-                                                        <i>
-                                                            <Image
-                                                            src="/icons/whatsapp_icon.svg"
-                                                            width={18}
-                                                            height={19}
-                                                            alt="Whatsapp"
-                                                            loading="lazy"
-                                                            />
-                                                        </i>
-                                                        <div>
-                                                            <span>WhatApp us:</span>
-                                                            <a href="https://wa.me/9036554785" target="_blank">+91 9036554785</a>
-                                                        </div>
-                                                        </li>
-                                                        <li>
-                                                        <i>
-                                                            <Image
-                                                            src="/icons/call_fill_icon.svg"
-                                                            width={13}
-                                                            height={13}
-                                                            alt="Call"
-                                                            loading="lazy"
-                                                            />
-                                                        </i>
-                                                        <div>
-                                                            <span>For Liability Insurance:</span>
-                                                            <a href="tel:9036554785">+91 9036554785</a>
-                                                        </div>
-                                                        </li>
-                                                        <li>
-                                                        <i>
-                                                            <Image
-                                                            src="/icons/call_fill_icon.svg"
-                                                            width={13}
-                                                            height={13}
-                                                            alt="Call"
-                                                            loading="lazy"
-                                                            />
-                                                        </i>
-                                                        <div>
-                                                            <span>For P&C Insurance:</span>
-                                                            <a href="tel:9035492594">+91 9035492594</a>
-                                                        </div>
-                                                        </li>
-                                                    </ul>
+                                                        <ul>
+                                                            <li>
+                                                            <i>
+                                                                <Image
+                                                                src="/icons/whatsapp_icon.svg"
+                                                                width={18}
+                                                                height={19}
+                                                                alt="Whatsapp"
+                                                                loading="lazy"
+                                                                />
+                                                            </i>
+                                                            <div>
+                                                                <span>WhatApp us:</span>
+                                                                <a href="https://wa.me/9036554785" target="_blank">+91 9036554785</a>
+                                                            </div>
+                                                            </li>
+                                                            <li>
+                                                            <i>
+                                                                <Image
+                                                                src="/icons/call_fill_icon.svg"
+                                                                width={13}
+                                                                height={13}
+                                                                alt="Call"
+                                                                loading="lazy"
+                                                                />
+                                                            </i>
+                                                            <div>
+                                                                <span>For Liability Insurance:</span>
+                                                                <a href="tel:9036554785">+91 9036554785</a>
+                                                            </div>
+                                                            </li>
+                                                            <li>
+                                                            <i>
+                                                                <Image
+                                                                src="/icons/call_fill_icon.svg"
+                                                                width={13}
+                                                                height={13}
+                                                                alt="Call"
+                                                                loading="lazy"
+                                                                />
+                                                            </i>
+                                                            <div>
+                                                                <span>For P&C Insurance:</span>
+                                                                <a href="tel:9035492594">+91 9035492594</a>
+                                                            </div>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </Dropdown.Menu>
                                             </Dropdown>
