@@ -193,7 +193,7 @@ export default function GroupPersonalAccident_InsuranceOld() {
         <>
             <Head>
                 <title>Group Personal Accident Insurance | BimaKavach Insurance for Group Personal Accident</title>
-                <meta name="description" content="" />
+                <meta name="description" content="It's easy to avail group personal accident insurance. Speak to experts at BimaKavach" />
                 <link rel="canonical" href="" />
             </Head>
             <div className={`productPage ${productStyle.productPage} ${productStyle.productPageNew}`}>

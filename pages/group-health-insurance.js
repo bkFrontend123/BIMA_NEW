@@ -225,7 +225,7 @@ export default function GroupHealth_InsuranceOld() {
         <>
             <Head>
                 <title>Group Health Insurance | BimaKavach Insurance for Group Health</title>
-                <meta name="description" content="" />
+                <meta name="description" content="Availing group health insurance is simple at BimaKavach. Get an expert consultation today." />
                 <link rel="canonical" href="" />
             </Head>
             <div className={`productPage ${productStyle.productPage} ${productStyle.productPageNew}`}>

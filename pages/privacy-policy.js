@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
                     <div className={`row `}>
                         <div className={`col-md-6 offset-md-1`}>
                             <div className='commnHeading text-start'>
-                                <div className='title-60 font-secondary mb-md-3 mb-2 text-primary font-weight-700'>BimaKavach Insurance Broking Pvt. Ltd. Privacy Policy</div>
+                                <h1 className='title-60 font-secondary mb-md-3 mb-2 text-primary font-weight-700'>BimaKavach Insurance Broking Pvt. Ltd. Privacy Policy</h1>
                                 <p className='title-16 font-weight-500 text-muted mb-0'>
                                     <span className='me-1'>
                                         <svg width="18" height="18" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
