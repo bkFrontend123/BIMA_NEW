@@ -22,14 +22,14 @@ import quoteCompareMobile from '@/assets/css/quoteCompareMobile.module.css'
 
 import BackArrow from '../component/Icons/BackArrow'
 
-import standardCharteredIcon from '@/public/payment/standardCharteredIcon.png'
-import stateBankIcon from '@/public/payment/stateBankIcon.png'
-import hdfcErgoIcon from '@/public/payment/hdfcErgoIcon.png'
-import iciciIcon from '@/public/payment/iciciIcon.png'
-import bajajFinservIcon from '@/public/payment/bajajFinserv.png'
+import standardCharteredIcon from '@/public/payment/standardCharteredIcon.webp'
+import stateBankIcon from '@/public/payment/stateBankIcon.webp'
+import hdfcErgoIcon from '@/public/payment/hdfcErgoIcon.webp'
+import iciciIcon from '@/public/payment/iciciIcon.webp'
+import bajajFinservIcon from '@/public/payment/bajajFinserv.webp'
 
-import iciciMobileIcon from '@/public/policyLogos/icici_logo.png'
-import bajajFinservMobileIcon from '@/public/policyLogos/bajajAllianz_logo.png'
+import iciciMobileIcon from '@/public/policyLogos/icici_logo.webp'
+import bajajFinservMobileIcon from '@/public/policyLogos/bajajAllianz_logo.webp'
 
 
 export default function QuoteComparison() {

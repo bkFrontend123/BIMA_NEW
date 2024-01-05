@@ -243,7 +243,7 @@ body .mainMenu.navbar .navbar-brand img{
 
 
 .homeHero::before {
-   /*background-image: url(/homeHero.jpg);
+   /*background-image: url(/homeHero.webp);
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;*/
@@ -392,12 +392,12 @@ body .mainMenu.navbar .navbar-brand img{
 }
 
 .trusted-business .swiper-button-next {
-   /* background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(/public/fadeLeft.png); */
+   /* background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(/public/fadeLeft.webp); */
    right: 0;
 }
 
 .trusted-business .swiper-button-prev {
-   /* background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(/public/fadeLeft.png); */
+   /* background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(/public/fadeLeft.webp); */
    /* transform: rotate(180deg); */
    left: 0;
 
@@ -718,11 +718,11 @@ body .swiper-scrollbar {
 }
 
 /* .RecentActivity .swiper-button-next {
-      background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(/public/fadeLeft.png);      
+      background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(/public/fadeLeft.webp);      
       right: 0;  
     }
    .RecentActivity .swiper-button-prev {
-      background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(/public/fadeLeft.png);
+      background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(/public/fadeLeft.webp);
       transform: rotate(180deg);
       left: 0;
     } */
@@ -751,7 +751,7 @@ body .swiper-scrollbar {
 }
 
 .footer::after {
-   background-image: url('/ftr_patt.png');
+   background-image: url('/ftr_patt.webp');
    position: absolute;
    content: "";
    left: 0;
@@ -1553,4 +1553,11 @@ body .aboutProductList li a.active::after {
 }
 .breadcrumb ul li a{
    text-decoration: none;
+}
+.abtCntntImg {
+   width: 100%;
+   height: auto;
+}
+.errorImg {
+   height: auto;
 }

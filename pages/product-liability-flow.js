@@ -29,7 +29,7 @@ import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import arrowBack from '../public/icons/arrowBack.svg'
 import tooltipIcon from '../public/icons/tooltipIcon.svg'
 
-import expertImg from '../public/himaniImg.png'
+import expertImg from '../public/himaniImg.webp'
 
 export default function ProductLiability_Flow() {
     const navbarExample2Ref = useRef(null);

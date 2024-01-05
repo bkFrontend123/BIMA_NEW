@@ -159,7 +159,7 @@ export default function HowGetStarted(props) {
                     z-index: -1;
                 }
                 .getStarted-left:after {
-                    background-image: url(/cta_grid.png);
+                    background-image: url(/cta_grid.webp);
                 }
                 .getStarted-left:hover::after {
                     filter: sepia(1);

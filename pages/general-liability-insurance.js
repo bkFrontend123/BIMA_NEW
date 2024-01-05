@@ -27,8 +27,8 @@ import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 
-import productImage from '@/public/productImages/productImg4.png'
-import expertImg from '../public/himaniImg.png'
+import productImage from '@/public/productImages/productImg4.webp'
+import expertImg from '../public/himaniImg.webp'
 
 export default function GeneralLiability_Insurance() {
     const navbarExample2Ref = useRef(null);
@@ -455,7 +455,7 @@ export default function GeneralLiability_Insurance() {
                                 </Container>
 
                                 <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
-                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
+                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.webp' />
                                     <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>A General Liability Insurance policy addresses claims related to</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
@@ -631,7 +631,7 @@ export default function GeneralLiability_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/gL_incident1.png' />
+                                                <img src='/incident/gL_incident1.webp' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -651,7 +651,7 @@ export default function GeneralLiability_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/gL_incident2.png' />
+                                                <img src='/incident/gL_incident2.webp' />
                                             </Col>
                                         </Row>
                                     </div>

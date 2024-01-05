@@ -27,8 +27,8 @@ import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 
-import productImage from '@/public/productImages/productImg1.png'
-import expertImg from '../public/ravikantImg.png'
+import productImage from '@/public/productImages/productImg1.webp'
+import expertImg from '../public/ravikantImg.webp'
 
 export default function ContractorAllRisk_Policy() {
     const navbarExample2Ref = useRef(null);
@@ -317,8 +317,8 @@ export default function ContractorAllRisk_Policy() {
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
-                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
-                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
+                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.webp' />
+                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.webp' />
                                     <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Contractor’s All Risk Policy</h3>
                                         <Row className='justify-content-center'>
@@ -533,7 +533,7 @@ export default function ContractorAllRisk_Policy() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/CAR_incident1.png' />
+                                                <img src='/incident/CAR_incident1.webp' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -553,7 +553,7 @@ export default function ContractorAllRisk_Policy() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <Image src='/sample.webp' width={490} height={490} alt='' loading='lazy' />
                                             </Col>
                                         </Row>
                                     </div>

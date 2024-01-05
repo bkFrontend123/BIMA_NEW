@@ -482,7 +482,7 @@ function Navbar() {
                                       <div className='col-md-9 '>
                                         <div className=' row  mb-md-2'>
                                           <div className='d-none d-md-block col-md-6'>
-                                            <img className='w-100  ' src="/ourBlogAds.jpg" />
+                                            <img className='w-100  ' src="/ourBlogAds.webp" />
                                           </div>
                                           <div className='d-none d-md-block col-md-6'>
                                             <h3 className='title-36 mt-3 mb-0 mb-md-1 text-primary font-secondary font-weight-600'>Different Types of Insured</h3>
@@ -495,7 +495,7 @@ function Navbar() {
                                             <div className=''>
                                               <div className='mb-md-5'>
                                                 <div className='me-4'>
-                                                  <img className='' src="/ourBlogSlide.jpg" />
+                                                  <img className='' src="/ourBlogSlide.webp" alt="Our Blog Slide Image" />
                                                 </div>
                                                 <div className='text-start mt-3'>
                                                   <p className='title-18 ourBlogsSlide-title text-primary font-weight-600 mb-0 '>What is an Insured in Business Insurance?</p>
@@ -508,7 +508,7 @@ function Navbar() {
                                             <div className=''>
                                               <div className='mb-md-5'>
                                                 <div className='me-4'>
-                                                  <img className='' src="/ourBlogSlide.jpg" />
+                                                  <img className='' src="/ourBlogSlide.webp" alt="Our Blog Slide Image" />
                                                 </div>
                                                 <div className='text-start mt-3'>
                                                   <p className='title-18 ourBlogsSlide-title text-primary font-weight-600 mb-0 '>What is an Insured in Business Insurance?</p>

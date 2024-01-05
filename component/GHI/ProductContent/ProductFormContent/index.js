@@ -5,9 +5,9 @@ import ProductFormHelpCard from '@/component/GHI/ProductContent/ProductFormHelpC
 import CalendyModal from '@/component/Modal/CalendyModal'
 
 import starIcon from '@/public/icons/starYellow.svg'
-import shrutiImg from '@/public/shrutiImg.png'
-import himaniImg from '@/public/himaniImg.png'
-import ravikantImg from '@/public/ravikantImg.png'
+import shrutiImg from '@/public/shrutiImg.webp'
+import himaniImg from '@/public/himaniImg.webp'
+import ravikantImg from '@/public/ravikantImg.webp'
 
 import style from './style.module.css'
 

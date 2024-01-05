@@ -26,7 +26,7 @@ export default function OurBlog() {
                     <div className='row mx-0'>
                         <div className='col-md-7 px-0'>
                             <div className='ourBlogsLeft mobContainer'>
-                                <img className='w-100 ourBlogsImg ' src="/ourBlogAds.jpg" />
+                                <img className='w-100 ourBlogsImg ' src="/ourBlogAds.webp" alt="Our Blog Ads" />
                                 <h3 className='title-48 mt-3 mb-0 mb-md-1 text-primary font-secondary font-weight-600'>Different Types of Insured</h3>
                                 <p className='title-20 ourBlogsSlide-descrip text-yellow3 font-weight-500 mb-md-0 mb-4'>April 4, 2023 • 5 MINS READ</p>
                             </div>
@@ -65,7 +65,7 @@ export default function OurBlog() {
                                         <div className=''>
                                             <div className='mb-md-5'>
                                                 <div className='me-4'>
-                                                    <img className='' src="/ourBlogSlide.jpg" />
+                                                    <img className='' src="/ourBlogSlide.webp" alt="Our Blog Slide Image" />
                                                 </div>
                                                 <div className='text-start mt-3'>
                                                     <p className='title-24 ourBlogsSlide-title text-primary font-weight-600 mb-0 '>What is an Insured in Business Insurance?</p>
@@ -79,7 +79,7 @@ export default function OurBlog() {
                                         <div className=''>
                                             <div className='mb-5'>
                                                 <div className='me-4'>
-                                                    <img className='' src="/ourBlogSlide.jpg" />
+                                                    <img className='' src="/ourBlogSlide.webp" alt="Our Blog Slide Image" />
                                                 </div>
                                                 <div className='text-start mt-3'>
                                                     <p className='title-24 ourBlogsSlide-title text-primary font-weight-600 mb-0 '>What is an Insured in Business Insurance?</p>
@@ -93,7 +93,7 @@ export default function OurBlog() {
                                         <div className=''>
                                             <div className='mb-5'>
                                                 <div className='me-4'>
-                                                    <img className='' src="/ourBlogSlide.jpg" />
+                                                    <img className='' src="/ourBlogSlide.webp" alt="Our Blog Slide Image" />
                                                 </div>
                                                 <div className='text-start mt-3'>
                                                     <p className='title-24 ourBlogsSlide-title text-primary font-weight-600 mb-0 '>What is an Insured in Business Insurance?</p>
@@ -107,7 +107,7 @@ export default function OurBlog() {
                                         <div className=''>
                                             <div className='mb-5'>
                                                 <div className='me-4'>
-                                                    <img className='' src="/ourBlogSlide.jpg" />
+                                                    <img className='' src="/ourBlogSlide.webp" alt="Our Blog Slide Image" />
                                                 </div>
                                                 <div className='text-start mt-3'>
                                                     <p className='title-24 ourBlogsSlide-title text-primary font-weight-600 mb-0 '>What is an Insured in Business Insurance?</p>

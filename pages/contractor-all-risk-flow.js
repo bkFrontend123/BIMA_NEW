@@ -37,7 +37,7 @@ import productIcon from '../public/productIcons/engineering/contractorsAllRisk_i
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import arrowBack from '../public/icons/arrowBack.svg'
 
-import expertImg from '../public/ravikantImg.png'
+import expertImg from '../public/ravikantImg.webp'
 
 export default function ContractorAllRisk_Flow() {
     const navbarExample2Ref = useRef(null);

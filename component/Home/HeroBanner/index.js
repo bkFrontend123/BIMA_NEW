@@ -69,7 +69,7 @@ export default function HeroBanner(props) {
                       </div>
                       <div className="homeHeroImg d-none d-lg-block">
                         <Image
-                          src="/homeHero_Img.png"
+                          src="/homeHero_Img.webp"
                           alt="Dilip Joshi"
                           width={597}
                           height={615}

@@ -15,15 +15,15 @@ import arrowIcon from '../public/icons/abtArrowIcon.svg';
 export default function About() {
 
     const TeamCardList = [
-        { id: "t1", img: "/team/ceo.png", name: "Tejas Jain", position: "Founder & CEO" },
-        { id: "t2", img: "/team/customer_chief.png", name: "Shruti Vishnoi", position: "Chief of Customer Success" },
-        { id: "t3", img: "/team/operating_officer.png", name: "R.K Jain", position: "Chief Operating Officer" },
-        { id: "t4", img: "/team/principle.png", name: "Milind Vitvekar", position: "Principal Officer" },
-        { id: "t5", img: "/team/creative_director.png", name: "Vishal Sharma", position: "Head of Design" },
-        { id: "t6", img: "/team/chief_marketing.png", name: "Ankit Mittal", position: "Chief of Marketing" },
-        { id: "t7", img: "/team/chief_staff.png", name: "Parthav Kidangoor", position: "Chief of Staff" },
-        { id: "t8", img: "/team/vp_product.png", name: "Priyalata Patra", position: "VP, Product" },
-        { id: "t9", img: "/team/marketing_officer.png", name: "Shravan Deshmukh", position: "Performance Marketing Officer" },
+        { id: "t1", img: "/team/ceo.webp", name: "Tejas Jain", position: "Founder & CEO" },
+        { id: "t2", img: "/team/customer_chief.webp", name: "Shruti Vishnoi", position: "Chief of Customer Success" },
+        { id: "t3", img: "/team/operating_officer.webp", name: "R.K Jain", position: "Chief Operating Officer" },
+        { id: "t4", img: "/team/principle.webp", name: "Milind Vitvekar", position: "Principal Officer" },
+        { id: "t5", img: "/team/creative_director.webp", name: "Vishal Sharma", position: "Head of Design" },
+        { id: "t6", img: "/team/chief_marketing.webp", name: "Ankit Mittal", position: "Chief of Marketing" },
+        { id: "t7", img: "/team/chief_staff.webp", name: "Parthav Kidangoor", position: "Chief of Staff" },
+        { id: "t8", img: "/team/vp_product.webp", name: "Priyalata Patra", position: "VP, Product" },
+        { id: "t9", img: "/team/marketing_officer.webp", name: "Shravan Deshmukh", position: "Performance Marketing Officer" },
     ]
     useEffect(() => {
         document.body.classList.add("homePageBody")
@@ -54,29 +54,29 @@ export default function About() {
                             <Col md={10} className={`mx-auto`}>
                                 <div className="abtCntntRow">
                                     <div className="abtCntntCol">
-                                        <h3 className='font-secondary'><span className='font-primary'>Before <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>How We Began</h3>
+                                        <h3 className='font-secondary'><span className='font-primary'>Before <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" loading='lazy' /></i></span>How We Began</h3>
                                         <p>With a clear aim, BimaKavach was established to simplify the complex process of business insurance. Our experience spanning four decades highlighted a significant issue - clients often felt overwhelmed by the extensive paperwork, confusing quote requirements, and the opaque nature of policy acquisition.</p>
                                         <p>In response, we devised a unique approach. We investigated various sectors, used our findings to create tailored insurance coverage, and developed standard policies that are customized to meet our client's specific needs. This ensures top-tier coverage for each client and allows us to leverage our partnerships with numerous insurance companies to secure the best prices.</p>
                                         <p>BimaKavach is built on trust. We have strong relationships with our clients and providers, underpinned by transparency and mutual respect. Our policies eliminate mis-spelling and streamline claims, establishing a trust-filled environment for all stakeholders.</p>
                                         <div className="abtCntntMedia">
                                             <i>
-                                                <img src="/abtBeforeImg.png" alt="Before Image" />
+                                                <Image className='abtCntntImg' src="/abtBeforeImg.webp" width={1071} height={557} alt="Before Image" loading='lazy' />
                                             </i>
                                         </div>
                                     </div>
                                     <div className="abtCntntCol">
-                                        <h3 className='font-secondary'><span className='font-primary'>Now <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>How We Are Going</h3>
+                                        <h3 className='font-secondary'><span className='font-primary'>Now <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" loading='lazy' /></i></span>How We Are Going</h3>
                                         <p>Today, BimaKavach proudly serves over 500 companies nationwide, offering them comprehensive 24x7 claims support. Our diversified client base spans multiple sectors, including but not limited to manufacturing, trading, software, contracting, real estate, consulting, energy, education, and HR. From dynamic startups and ambitious SMEs to established listed companies, we accommodate the unique needs of businesses at all stages.</p>
                                         <p>Our portfolio now encompasses more than 17 meticulously curated business insurance policies, each customizable to protect your business's assets, liabilities, directors, and employees.</p>
                                         <p>We have a team of insurance experts working tirelessly to present the best insurance options for our clients. Our key focus is on simplicity, speed, and clarity, ensuring a seamless insurance experience for all our clients.</p>
                                         <div className="abtCntntMedia">
                                             <i>
-                                                <img src="/abtNowImg.png" alt="Now" />
+                                                <Image className='abtCntntImg' src="/abtNowImg.webp" width={1071} height={557} alt="Now" loading='lazy' />
                                             </i>
                                         </div>
                                     </div>
                                     <div className="abtCntntCol">
-                                        <h3 className='font-secondary'><span className='font-primary'>After <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" /></i></span>What Is Our Goal</h3>
+                                        <h3 className='font-secondary'><span className='font-primary'>After <i><Image src={arrowIcon} width={6} height={11} alt="Arrow Icon" loading='lazy' /></i></span>What Is Our Goal</h3>
                                         <p>At BimaKavach, we are driven by the vision of securing every Indian business with precisely the insurance coverage they require. As India forges its path as a global economic contender, its foundation relies heavily on the stability and continuity of Indian businesses. Our insurance policies are designed to shield these businesses from unforeseen circumstances, ensuring they thrive even in the face of adversity. We believe in bolstering India's economic growth and stability through well-insured businesses. At the core of our ethos are Simplicity, Speed, and Transparency. These values permeate everything we do:</p>
                                         <div className="abtInfoRow mt-4">
                                             <Row className="g-4">
@@ -102,7 +102,7 @@ export default function About() {
                                         </div>
                                         <div className="abtCntntMedia">
                                             <i>
-                                                <img src="/abtAfterImg.png" alt="After Image" />
+                                                <Image className='abtCntntImg' src="/abtAfterImg.webp" width={1071} height={557} alt="After Image" loading='lazy' />
                                             </i>
                                         </div>
                                     </div>

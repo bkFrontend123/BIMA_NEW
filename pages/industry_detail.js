@@ -91,13 +91,13 @@ export default function IndustryDetail() {
                 <div className='row gx-5'>
                   <div className='col-md-6'>
                     <div className='industryHero-cardBox p-1 d-flex flex-md-row flex-column align-items-start align-items-md-center'>
-                      <img src='/industryRavenue.png' />
+                      <img src='/industryRavenue.webp' alt="Industry Revenue" />
                       <div className='industryHero-cardBoxTitle title-18  text-blueGray mt-2 mt-md-2'>Companies worldwide lose $3.5 trillion to fraudsters every year and the figures continue to devastate small and large businesses.</div>
                     </div>
                   </div>
                   <div className='col-md-6'>
                     <div className='industryHero-cardBox mt-4 mt-md-0  p-1 d-flex flex-md-row flex-column align-items-start align-items-md-center'>
-                      <img src='/industryData.png' />
+                      <img src='/industryData.webp' alt="Industry Data" />
                       <div className='industryHero-cardBoxTitle title-18  text-blueGray mt-2 mt-md-2'>The average total cost of a data breach in 2020 was $3.86 million and the average cost per individual record that was lost was $150 (IBM).</div>
                     </div>
                   </div>
@@ -124,7 +124,7 @@ export default function IndustryDetail() {
 
               </div>
               <div className='col-md-4 d-none d-md-block ps-md-5'>                
-                <img className='mt-md-4' src='/who-prod1.png' />
+                <img className='mt-md-4' src='/who-prod1.webp' alt='who production image' />
               </div>
             </div>
             <div className='row whyInsuranceCards '>

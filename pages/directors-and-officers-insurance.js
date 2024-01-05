@@ -27,8 +27,8 @@ import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 
-import productImage from '@/public/productImages/productImg1.png'
-import expertImg from '../public/himaniImg.png'
+import productImage from '@/public/productImages/productImg1.webp'
+import expertImg from '../public/himaniImg.webp'
 
 export default function DAndO_Insurance() {
     const navbarExample2Ref = useRef(null);
@@ -317,8 +317,8 @@ export default function DAndO_Insurance() {
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
-                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
-                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
+                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.webp' />
+                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.webp' />
                                     <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The 3 Categories of D&O Insurance</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
@@ -450,7 +450,7 @@ export default function DAndO_Insurance() {
                                 </Container>
 
                                 <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
-                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
+                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.webp' />
                                     <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Who can Sue the Directors or Officers of the Organisation?</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
@@ -717,7 +717,7 @@ export default function DAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/dAndO_incident1.png' />
+                                                <img src='/incident/dAndO_incident1.webp' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -737,7 +737,7 @@ export default function DAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='incident/dAndO_incident2.png' />
+                                                <img src='incident/dAndO_incident2.webp' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -757,7 +757,7 @@ export default function DAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/dAndO_incident3.png' />
+                                                <img src='/incident/dAndO_incident3.webp' />
                                             </Col>
                                         </Row>
                                     </div>*/}

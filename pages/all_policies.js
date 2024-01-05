@@ -28,15 +28,15 @@ import productStyle from '@/assets/css/productNew.module.css'
 
 import RuppeeIcon from '@/component/Icons/Ruppee'
 
-import expertImg1 from '@/public/himaniImg.png'
-import expertImg2 from '@/public/ravikantImg.png'
-import expertImg3 from '@/public/shrutiImg.png'
+import expertImg1 from '@/public/himaniImg.webp'
+import expertImg2 from '@/public/ravikantImg.webp'
+import expertImg3 from '@/public/shrutiImg.webp'
 
-import bajajAllianz_logo from '@/public/policyLogos/bajajAllianz_logo.png'
-import icici_logo from '@/public/policyLogos/icici_logo.png'
-import tataAIG_logo from '@/public/policyLogos/tataAIG_logo.png'
-import newIndiaAssurance_logo from '@/public/policyLogos/newIndiaAssurance_logo.png'
-import hdfcErgo_logo from '@/public/policyLogos/hdfcErgo_logo.png'
+import bajajAllianz_logo from '@/public/policyLogos/bajajAllianz_logo.webp'
+import icici_logo from '@/public/policyLogos/icici_logo.webp'
+import tataAIG_logo from '@/public/policyLogos/tataAIG_logo.webp'
+import newIndiaAssurance_logo from '@/public/policyLogos/newIndiaAssurance_logo.webp'
+import hdfcErgo_logo from '@/public/policyLogos/hdfcErgo_logo.webp'
 
 export default function AllPolicies() {
     const navbarExample2Ref = useRef(null);

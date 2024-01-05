@@ -42,7 +42,7 @@ import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import arrowBack from '../public/icons/arrowBack.svg'
 import tooltipIcon from '../public/icons/tooltipIcon.svg'
 
-import expertImg from '../public/ravikantImg.png'
+import expertImg from '../public/ravikantImg.webp'
 
 export default function FireAndBurglary_Flow() {
     const navbarExample2Ref = useRef(null);

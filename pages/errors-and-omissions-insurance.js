@@ -27,8 +27,8 @@ import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 
-import productImage from '@/public/productImages/productImg3.png'
-import expertImg from '../public/himaniImg.png'
+import productImage from '@/public/productImages/productImg3.webp'
+import expertImg from '../public/himaniImg.webp'
 
 export default function EAndO_Insurance() {
     const navbarExample2Ref = useRef(null);
@@ -320,8 +320,8 @@ export default function EAndO_Insurance() {
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
-                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
-                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
+                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.webp' />
+                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.webp' />
                                     <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>E&O Insurance provides coverage for errors such as:</h3>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
@@ -369,7 +369,7 @@ export default function EAndO_Insurance() {
                                 </Container>
 
                                 <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
-                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
+                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.webp' />
                                     <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Why is Errors & Omissions Insurance essential?</h3>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Cases involving allegations of copyright infringement, negligence in work, and defamation have increased by more than 50% in India in the recent years.</p>
@@ -633,7 +633,7 @@ export default function EAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/eAndO_incident1.png' />
+                                                <img src='/incident/eAndO_incident1.webp' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -653,7 +653,7 @@ export default function EAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/eAndO_incident2.png' />
+                                                <img src='/incident/eAndO_incident2.webp' />
                                             </Col>
                                         </Row>
                                     </div>

@@ -213,7 +213,7 @@ export default function Product() {
                                                 <div className='aboutProductSec-right whoNeedRight mt-md-0 mt-4'>
                                                     <Image
                                                         // loader={myLoader}
-                                                        src="/who-prod1.png"
+                                                        src="/who-prod1.webp"
                                                         alt="Bima"
                                                         width={462}
                                                         height={462}

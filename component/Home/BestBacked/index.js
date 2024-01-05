@@ -9,10 +9,10 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function BestBacked(props) {
     const best = ([
-        { id: "b1", img: "/backBest1.png", width: "182", height: "93" },
-        { id: "b2", img: "/backBest2.png", width: "181", height: "58" },
-        { id: "b3", img: "/backBest3.png", width: "165", height: "73" },
-        { id: "b4", img: "/backBest4.png", width: "182", height: "75" },
+        { id: "b1", img: "/backBest1.webp", width: "182", height: "93" },
+        { id: "b2", img: "/backBest2.webp", width: "181", height: "58" },
+        { id: "b3", img: "/backBest3.webp", width: "165", height: "73" },
+        { id: "b4", img: "/backBest4.webp", width: "182", height: "75" },
     ])
     return (
         <>

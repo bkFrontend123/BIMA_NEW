@@ -11,8 +11,8 @@ import ProgressIcon from '@/component/Icons/Progress';
 
 import onlineIcon from '@/public/proposalForm/onlineIcon.svg'
 import offlineIcon from '@/public/proposalForm/offlineIcon.svg'
-import expertImg from '@/public/himaniImg.png'
-import expertImg1 from '@/public/shrutiImg.png'
+import expertImg from '@/public/himaniImg.webp'
+import expertImg1 from '@/public/shrutiImg.webp'
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 import talkExpertStyle from '@/component/TalkExpert/style.module.css'

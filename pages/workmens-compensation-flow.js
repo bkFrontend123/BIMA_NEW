@@ -27,7 +27,7 @@ import PlusIcon from '../component/Icons/Plus';
 import arrowBack from '../public/icons/arrowBack.svg';
 import tooltipIcon from '../public/icons/tooltipIcon.svg';
 
-import expertImg from '../public/ravikantImg.png'
+import expertImg from '../public/ravikantImg.webp'
 
 export default function WorkmensCompensation_Flow() {
     const navbarExample2Ref = useRef(null);

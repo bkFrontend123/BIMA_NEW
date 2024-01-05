@@ -6,9 +6,9 @@ import { Row, Col } from 'react-bootstrap';
 import ProductHelpCard from '@/component/GHI/ProductContent/ProductHelpCard'
 import CalendyModal from '@/component/Modal/CalendyModal'
 
-import shrutiImg from '@/public/shrutiImg.png'
-import himaniImg from '@/public/himaniImg.png'
-import ravikantImg from '@/public/ravikantImg.png'
+import shrutiImg from '@/public/shrutiImg.webp'
+import himaniImg from '@/public/himaniImg.webp'
+import ravikantImg from '@/public/ravikantImg.webp'
 
 import style from './style.module.css'
 

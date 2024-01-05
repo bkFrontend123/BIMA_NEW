@@ -27,8 +27,8 @@ import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 
-import productImage from '@/public/productImages/productImg2.png'
-import expertImg from '../public/himaniImg.png'
+import productImage from '@/public/productImages/productImg2.webp'
+import expertImg from '../public/himaniImg.webp'
 
 export default function GroupPersonalAccident_InsuranceOld() {
     const navbarExample2Ref = useRef(null);
@@ -316,8 +316,8 @@ export default function GroupPersonalAccident_InsuranceOld() {
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
-                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
-                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
+                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.webp' />
+                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.webp' />
                                     <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Group Personal Accident (GPA)</h3>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
@@ -355,7 +355,7 @@ export default function GroupPersonalAccident_InsuranceOld() {
                                 </Container>
 
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
-                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
+                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.webp' />
                                     <Container className='position-relative'>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Group Personal Accident Insurance Benefits</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
@@ -510,7 +510,7 @@ export default function GroupPersonalAccident_InsuranceOld() {
                                 </div>
                             </Col>
                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                <img src='/sample.png' />
+                                <Image src='/sample.webp' width={490} height={490} alt='' loading='lazy' />
                             </Col>
                         </Row>
                     </Container>

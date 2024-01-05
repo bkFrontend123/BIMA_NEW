@@ -28,8 +28,8 @@ import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 
-import productImage from '@/public/productImages/productImg2.png'
-import expertImg from '../public/ravikantImg.png'
+import productImage from '@/public/productImages/productImg2.webp'
+import expertImg from '../public/ravikantImg.webp'
 
 export default function FireAndBurglary_Insurance() {
     const navbarExample2Ref = useRef(null);
@@ -463,7 +463,7 @@ export default function FireAndBurglary_Insurance() {
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
-                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
+                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.webp' />
                                     <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Fire & Burglary Insurance</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
@@ -593,7 +593,7 @@ export default function FireAndBurglary_Insurance() {
                                 </Container>
 
                                 <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
-                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
+                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.webp' />
                                     <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Benefits of a Fire Insurance Policy</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
@@ -839,7 +839,7 @@ export default function FireAndBurglary_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/fire_incident1.png' />
+                                                <img src='/incident/fire_incident1.webp' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -859,7 +859,7 @@ export default function FireAndBurglary_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/fire_incident2.png' />
+                                                <img src='/incident/fire_incident2.webp' />
                                             </Col>
                                         </Row>
                                     </div>

@@ -9,8 +9,8 @@ import "swiper/css/navigation";
 
 export default function Companies(props) {
   const review = ([
-    { id: "r1", text: `BimaKavach understood the intricacies of our business and ensured we were covered adequately for our risks. We were run through in detail about the policy and got our policy the very next day of reaching out. Totally hassle free!`, name: "Vivek Prakash", position: "Codingal", img: "/codingal.png" },
-    { id: "r2", text: `BimaKavach understood our risk exposure analysing all the complexities of our products. They ran us through the possible risk exposures and helped us cover the gaps. Our recommended policy is precise for our fintech offering and understands its differences from other businesses.`, name: "Naman Paithankar", position: "FinBox", img: "/finBox.png" },
+    { id: "r1", text: `BimaKavach understood the intricacies of our business and ensured we were covered adequately for our risks. We were run through in detail about the policy and got our policy the very next day of reaching out. Totally hassle free!`, name: "Vivek Prakash", position: "Codingal", img: "/codingal.webp" },
+    { id: "r2", text: `BimaKavach understood our risk exposure analysing all the complexities of our products. They ran us through the possible risk exposures and helped us cover the gaps. Our recommended policy is precise for our fintech offering and understands its differences from other businesses.`, name: "Naman Paithankar", position: "FinBox", img: "/finBox.webp" },
   ])
   return (
     <>

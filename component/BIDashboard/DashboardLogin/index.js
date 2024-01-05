@@ -20,10 +20,10 @@ export default function DashboardLogin(props) {
                   <div className={`${loginLayoutStyle.loginLeft}`}>
                     <div className={`${loginLayoutStyle.loginHeroMediaOuter}`}>
                       <div className={`${loginLayoutStyle.loginHeroShield}`}>
-                        <img src="/icons/loginShield.svg" alt="Shield" />
+                        <Image src="/icons/loginShield.svg" width={320} height={370} alt="Shield" />
                       </div>
                       <div className={`${loginLayoutStyle.loginHeroImg}`}>
-                        <img src="/loginImg.png" alt="Dilip Joshi" />
+                        <Image src="/loginImg.webp" width={411} height={343} alt="Dilip Joshi" />
                       </div>
                       <div className={`${loginLayoutStyle.loginHeroTextDiv}`}>
                         <div className={`${loginLayoutStyle.loginHeroText}`}>

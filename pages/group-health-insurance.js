@@ -30,8 +30,8 @@ import talkExpert from '../component/TalkExpert/style.module.css'
 import EmployerIcon from '@/component/Icons/Employer'
 import EmployeeIcon from '@/component/Icons/Employee'
 
-import productImage from '@/public/productImages/productImg1.png'
-import expertImg from '../public/shrutiImg.png'
+import productImage from '@/public/productImages/productImg1.webp'
+import expertImg from '../public/shrutiImg.webp'
 
 export default function GroupHealth_InsuranceOld() {
     const navbarExample2Ref = useRef(null);
@@ -615,7 +615,7 @@ export default function GroupHealth_InsuranceOld() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/ghi_incident1.png' />
+                                                <img src='/incident/ghi_incident1.webp' />
                                             </Col>
                                         </Row>
                                     </div>

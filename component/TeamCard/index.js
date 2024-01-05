@@ -11,9 +11,10 @@ export default function TeamCard(props) {
                 <Image
                     // loader={myLoader}
                     src={img}
-                    alt="CEO | Bimakavach"
+                    alt={name}
                     width={335}
                     height={336}
+                    loading='lazy'
                 />
                 <h3 className='title-22 mt-3 mb-0 font-weight-600 text-primary'>{name}</h3>
                 <h4 className='title-18 font-weight-500 text-black m-0'>{position}</h4>

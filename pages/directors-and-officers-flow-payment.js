@@ -16,7 +16,7 @@ import progress from '@/assets/css/progress.module.css'
 import BackArrow from '../component/Icons/BackArrow';
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import BackBtnArrow from '../component/Icons/BackBtnArrow';
-import paymentIcon from '../public/payment/bajajFinserv.png';
+import paymentIcon from '../public/payment/bajajFinserv.webp';
 
 export default function DAndO_Flow_Payment() {
     const navbarExample2Ref = useRef(null);

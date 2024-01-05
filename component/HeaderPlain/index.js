@@ -20,7 +20,7 @@ import BimakavachLogo from '@/public/ghi/icons/bimakavachLogo.svg'
 import GroupHealthLogo from '@/public/ghi/icons/groupHealthLogo.svg'
 import GroupPersonalAccidentLogo from '@/public/ghi/icons/groupPersonalAccidentLogo.svg'
 
-import expertImg from '../../public/himaniImg.png'
+import expertImg from '../../public/himaniImg.webp'
 
 import talkExpertStyle from '@/component/TalkExpert/style.module.css'
 import style from './style.module.css'

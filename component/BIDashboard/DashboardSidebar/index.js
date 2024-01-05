@@ -16,7 +16,7 @@ import TalkExpert from '@/component/TalkExpert'
 import dashLayoutStyle from '@/assets/css/dashboardLayout.module.css'
 import talkExpert from '@/component/TalkExpert/style.module.css'
 
-import expertImg from '@/public/himaniImg.png'
+import expertImg from '@/public/himaniImg.webp'
 
 export default function DashboardSidebar(props) {
   const { activeMenu } = props;

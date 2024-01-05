@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
@@ -8,11 +9,9 @@ import Search from '../component/Icons/Search'
 import ArrowRightSmall from '../component/Icons/ArrowRightSmall'
 
 export default function error() {
-
   useEffect(() => {
     document.body.classList.add("homePageBody")
   }, []);
-
   return (
     <>
       <Navbar />
@@ -20,7 +19,7 @@ export default function error() {
         <div className={`container `}>
           <div className={`row errorPage-row`}>
             <div className={`col-md-6 mt-5 mt-md-0`}>
-              <img src='/error.png' />
+              <Image className='errorImg' src='/error.webp' width={544} height={1005} alt='Error Image' loading='lazy' />
             </div>
             <div className={`col-md-6 pe-lg-5`}>
               <div className='commnHeading '>
@@ -28,7 +27,6 @@ export default function error() {
                 <div className='title-64 font-secondary mb-md-4 mb-2 text-primary font-weight-600'> Something doesn't seem <span className='d-none d-md-inline'> right  </span><span className='d-inline d-md-none text-gray fst-italic'> right  </span>.</div>
                 <p className='errorPage-commnHeadingDescrip title-24 font-weight-500 text-black mt-2 '>We can't seem to find the page you're looking for. <span className='d-block d-lg-none'></span> Please check the URL or return to our <Link className='text-primary' href="/" >homepage</Link> to continue browsing our site.</p>
               </div>
-
               <form className='errorForm'>
                 <div className="form-group errorForm-search px-md-4 px-md-0">
                   <div className="input-group border-primary border2" style={{ height: "50px" }}>
@@ -44,7 +42,6 @@ export default function error() {
                     />
                   </div>
                 </div>
-
                 <div className='errorForm-result'>
                   <div className='errorForm-resultCard mb-md-5 mb-3'>
                     <div>
@@ -82,19 +79,13 @@ export default function error() {
                     </div>
                     <div className=' title-18 font-weight-500 mt-3'>Contact Our Experts about anything related to our Products</div>
                   </div>
-
                 </div>
               </form>
             </div>
           </div>
         </div>
-
-
-
-
       </div>
       <Footer />
-
       <style jsx scope>
         {`
             .errorPage{
@@ -106,14 +97,10 @@ export default function error() {
             .errorForm-result{
               margin-top: 70px;
             }
-            .errorForm-resultCard{
-
-            }
             .title-64 {
                 font-size: 64px;
                 line-height: 68px;
             }
-
             @media (min-width:1600px) {
               .container {
                 max-width: 1400px;
@@ -145,15 +132,10 @@ export default function error() {
                 font-size: 12px;
                 line-height: 16px;
               }
-
               .errorPage .commnHeading p{
                 margin-bottom: 25px;
               }
-              
-
-              
             }
-            
         `}
       </style>
     </>

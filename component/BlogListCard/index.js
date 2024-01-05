@@ -10,7 +10,7 @@ function BlogListCard(props) {
         <div className='BlogList-card '>
             <div className='BlogList-cardBox row align-items-center flex-column flex-row-reverse@ gx-3'>
                 <div className='col-md-12 col' onClick={handleChildClick}>
-                    <div className={`position-relative p-4 pt-4  BlogListCardBox ${Style.ListCardBox}`} style={{ background: "url(/blog1.jpg) no-repeat center center/cover" }}>
+                    <div className={`position-relative p-4 pt-4  BlogListCardBox ${Style.ListCardBox}`} style={{ background: "url(/blog1.webp) no-repeat center center/cover" }}>
                         <div className='BlogList-cardOverlay d-none'></div>
                         <div className='polyBox border-primary bg-blueLight text-primary  title16 font-weight-600 d-none'>{label}</div>
                         <div className='BlogList-cardLink  mt-2 title-30 d-block BlogList-cardTitle font-secondary text-capitalize  font-weight-600 @w-75'>
@@ -19,10 +19,11 @@ function BlogListCard(props) {
                         <div className='blogBy position-absolute d-md-flex d-none  align-items-center '>
                             <Image
                                 // loader={myLoader}
-                                src="/blogBy.png"
+                                src="/blogBy.webp"
                                 alt="Picture of the author"
                                 width={40}
                                 height={40}
+                                loading="lazy"
                             />
                             <div className='ms-2'>
                                 <div className='text-black title-12 font-weight-600' >{blogByName}</div>
@@ -50,10 +51,11 @@ function BlogListCard(props) {
                             <div className='blogBy blogByBottom mt-3 d-md-none d-flex  align-items-center '>
                                 <Image
                                     // loader={myLoader}
-                                    src="/blogBy.png"
+                                    src="/blogBy.webp"
                                     alt="Picture of the author"
                                     width={40}
                                     height={40}
+                                    loading="lazy"
                                 />
                                 <div className='ms-2'>
                                     <div className='text-black' style={{ fontSize: "10px" }}>{blogByName}</div>

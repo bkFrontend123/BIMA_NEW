@@ -27,8 +27,8 @@ import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 
-import productImage from '@/public/productImages/productImg2.png'
-import expertImg from '../public/ravikantImg.png'
+import productImage from '@/public/productImages/productImg2.webp'
+import expertImg from '../public/ravikantImg.webp'
 
 export default function ContractorPlantAndMachinery_Insurance() {
     const navbarExample2Ref = useRef(null);
@@ -374,8 +374,8 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                     <p className='title-20 mb-0 text-black font-weight-500 mt-4'>It also covers third-party claims against property damage and bodily injury caused at the insured construction site during the tenure of the policy.</p>
                                 </Container>
                                 <div className={`bg-yellowLight3 ${productStyle.lightYellowSec}`}>
-                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
-                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
+                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.webp' />
+                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.webp' />
                                     <Container>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Contractor’s Plant and Machinery Insurance</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
@@ -573,7 +573,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/CPM_incident1.png' />
+                                                <img src='/incident/CPM_incident1.webp' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -588,7 +588,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/CPM_incident2.png' />
+                                                <img src='/incident/CPM_incident2.webp' />
                                             </Col>
                                         </Row>
                                     </div>

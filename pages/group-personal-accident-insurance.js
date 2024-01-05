@@ -27,8 +27,8 @@ import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
 import talkExpert from '../component/TalkExpert/style.module.css'
 
-import productImage from '@/public/productImages/productImg2.png'
-import expertImg from '../public/shrutiImg.png'
+import productImage from '@/public/productImages/productImg2.webp'
+import expertImg from '../public/shrutiImg.webp'
 
 export default function GroupPersonalAccident_InsuranceOld() {
     const navbarExample2Ref = useRef(null);
@@ -526,7 +526,7 @@ export default function GroupPersonalAccident_InsuranceOld() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/gpa_incident1.png' />
+                                                <img src='/incident/gpa_incident1.webp' />
                                             </Col>
                                         </Row>
                                     </div>

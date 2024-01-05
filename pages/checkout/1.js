@@ -15,7 +15,7 @@ import PaymentCard from '@/component/PolicyElements/PaymentCard'
 import BackArrow from '@/component/Icons/BackArrow'
 import ArrowForwardIcon from '@/component/Icons/ArrowForward'
 
-import paymentIcon from '@/public/payment/bajajFinserv.png'
+import paymentIcon from '@/public/payment/bajajFinserv.webp'
 
 import form from '@/assets/css/form.module.css'
 import progress from '@/assets/css/progress.module.css'

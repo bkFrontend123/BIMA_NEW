@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Calender from '../Icons/Calender'
 import WhatsApp from '../Icons/WhatsApp'
 
@@ -12,7 +13,7 @@ export default function HowGetStarted(props) {
                     <div className={`row text-center getStarted`}>
                         <div className={`col-xl-6 `}>
                             <div className='bg-gray getStarted-left  overflow-hidden h-100'>
-                                <img className="img-fluid h-100 object-fit-cover" src="/how-we-started.jpg" />
+                                <Image className="img-fluid h-100 object-fit-cover" src="/how-we-started.webp" width={800} height={800} alt="How Get Started" loading='lazy' />
                             </div>
                         </div>
                         <div className={`col-xl-6`}>

@@ -130,10 +130,11 @@ export default function BlogDetail() {
                                 <div className='blogDetailMediaCards-top col col-md-5 mb-md-4 mb-5  text-center text-md-start align-items-center justify-content-md-center d-flex flex-column flex-md-row'>
                                     <Image
                                         // loader={myLoader}
-                                        src="/blogBy.png"
+                                        src="/blogBy.webp"
                                         alt="Picture of the author"
                                         width={80}
                                         height={80}
+                                        loading="lazy"
                                     />
                                     <div className='mt-2 mt-md-0 ms-md-2 '>
                                         <div className='text-black title12 font-weight-400'>Written by</div>
@@ -145,10 +146,11 @@ export default function BlogDetail() {
                                 <div className='blogDetailMediaCards-top col col-md-5 mb-md-4 mb-5  text-center text-md-start align-items-center justify-content-md-center d-flex flex-column flex-md-row'>
                                     <Image
                                         // loader={myLoader}
-                                        src="/blogBy2.png"
+                                        src="/blogBy2.webp"
                                         alt="Picture of the author"
                                         width={80}
                                         height={80}
+                                        loading="lazy"
                                     />
                                     <div className='mt-2 mt-md-0 ms-md-2'>
                                         <div className='text-black title12 font-weight-400' >Technically reviewed by</div>
@@ -202,7 +204,7 @@ export default function BlogDetail() {
                 <div className='container mt-0 mt-md-5'>
                     <div className="row">
                         <div className='col-12'>
-                            {/* <img src="/blogImg1.png" /> */}
+                            {/* <img src="/blogImg1.webp" /> */}
                             <img className="w-100" src={`${process.env.NEXT_PUBLIC_File_Url}/${blog?.imageDocOne}`} />
                         </div>
                     </div>
@@ -241,7 +243,7 @@ export default function BlogDetail() {
                         <div className="row align-items-end">
                             {/* image 2 */}
                             <div className='col-lg-10'>
-                                {/* <div className='blogImg2 position-relative' style={{ background: `url(/blogImg2.png) no-repeat center top/cover` }}> */}
+                                {/* <div className='blogImg2 position-relative' style={{ background: `url(/blogImg2.webp) no-repeat center top/cover` }}> */}
                                 <div className='blogImg2 position-relative' style={{ background: `url(${process.env.NEXT_PUBLIC_File_Url}/${blog?.imageDocTwo}) no-repeat center top/cover` }}>
                                     {/* ${process.env.NEXT_PUBLIC_File_Url}/${blog?.imageDocTwo} */}
                                     {/* <div className='blogImg2-img' ></div> */}
@@ -280,7 +282,7 @@ export default function BlogDetail() {
 
                             {/* image 3 */}
                             <div className='col-12 mt-5'>
-                                {/* <img src="/blogImg3.png" /> */}
+                                {/* <img src="/blogImg3.webp" /> */}
                                 <img className='w-100' src={`${process.env.NEXT_PUBLIC_File_Url}/${blog?.imageDocThree}`} />
                             </div>
 

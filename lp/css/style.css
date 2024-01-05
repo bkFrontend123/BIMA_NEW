@@ -1412,7 +1412,7 @@ textarea.form-control {
 }
 
 .footerHomeBlock::before {
-    background-image: url('../img/ftr_bg.png');
+    background-image: url('../img/ftr_bg.webp');
     background-position: center center;
     background-size: cover;
     position: absolute;

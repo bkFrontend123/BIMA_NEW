@@ -18,7 +18,7 @@ import thankStyle from '../component/PolicyElements/ThankPolicyCard/style.module
 import insuranceStyle from '../component/InsuranceCard/style.module.css'
 
 import BackArrow from '../component/Icons/BackArrow'
-import bajajAllianz_logo from '../public/policyLogos/bajajAllianz_logo.png'
+import bajajAllianz_logo from '../public/policyLogos/bajajAllianz_logo.webp'
 import dAndO_insuanceIcon from '../public/startup1.svg'
 import gL_insuanceIcon from '../public/startup2.svg'
 import eAndO_insuanceIcon from '../public/startup3.svg'

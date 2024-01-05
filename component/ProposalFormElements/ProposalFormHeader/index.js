@@ -8,8 +8,8 @@ import TalkExpert from '@/component/TalkExpert';
 import ArrowForwardIcon from '@/component/Icons/ArrowForward';
 import ArrowBackwardIcon from '@/component/Icons/ArrowBackward';
 
-import expertImg from '@/public/himaniImg.png'
-import expertImg1 from '@/public/shrutiImg.png'
+import expertImg from '@/public/himaniImg.webp'
+import expertImg1 from '@/public/shrutiImg.webp'
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 import offcanvas from '@/assets/css/offcanvas.module.css'

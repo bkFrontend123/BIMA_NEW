@@ -17,7 +17,7 @@ import UploadIcon from '../component/Icons/Upload';
 import CheckIcon from '../component/Icons/Check';
 import CloseIcon from '../component/Icons/Close';
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
-import paymentIcon from '../public/payment/bajajFinserv.png';
+import paymentIcon from '../public/payment/bajajFinserv.webp';
 
 export default function PaymentOld() {
     const navbarExample2Ref = useRef(null);

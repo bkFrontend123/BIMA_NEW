@@ -27,11 +27,11 @@ import brdcrmbArrow from '@/public/icons/brdcrmbArrow.svg'
 import downloadIcon from '@/public/icons/downloadIcon.svg'
 import shareIcon from '@/public/icons/shareIcon.svg'
 
-import bajajAllianz_logo from '@/public/policyLogos/bajajAllianz_logo.png'
-import icici_logo from '@/public/policyLogos/icici_logo.png'
-import tataAIG_logo from '@/public/policyLogos/tataAIG_logo.png'
-import newIndiaAssurance_logo from '@/public/policyLogos/newIndiaAssurance_logo.png'
-import hdfcErgo_logo from '@/public/policyLogos/hdfcErgo_logo.png'
+import bajajAllianz_logo from '@/public/policyLogos/bajajAllianz_logo.webp'
+import icici_logo from '@/public/policyLogos/icici_logo.webp'
+import tataAIG_logo from '@/public/policyLogos/tataAIG_logo.webp'
+import newIndiaAssurance_logo from '@/public/policyLogos/newIndiaAssurance_logo.webp'
+import hdfcErgo_logo from '@/public/policyLogos/hdfcErgo_logo.webp'
 
 export default function YourQuoteDetail() {
 

@@ -1,18 +1,13 @@
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import Link from 'next/link'
+import Image from 'next/image'
 
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
-import Search from '../component/Icons/Search'
-import ArrowRightSmall from '../component/Icons/ArrowRightSmall'
-
 export default function Custom404() {
-
   const router = useRouter();
-
   useEffect(() => {
     const redirects = {
       '/commercial-crime': '/blog/commercial-crime-insurance-in-india/',
@@ -31,16 +26,12 @@ export default function Custom404() {
       '/blog/page/7': '/blog/understanding-the-doctrine-of-subrogation-in-fire-insurance/',
       '/blog-1': '/blog/',
     };
-
     const currentUrl = router.asPath;
-
     if (redirects[currentUrl]) {
       router.push(redirects[currentUrl]);
     }
-
     document.body.classList.add("homePageBody")
   }, []);
-
   return (
     <>
       <Head>
@@ -53,7 +44,7 @@ export default function Custom404() {
         <div className={`container `}>
           <div className={`row errorPage-row`}>
             <div className={`col-md-6 mt-5 mt-md-0`}>
-              <img src='/error.png' />
+            <Image className='errorImg' src='/error.webp' width={544} height={1005} alt='Error Image' loading='lazy' />
             </div>
             <div className={`col-md-6 pe-lg-5`}>
               <div className='commnHeading '>
@@ -61,7 +52,6 @@ export default function Custom404() {
                 <div className='title-60 font-secondary mb-md-4 mb-2 text-primary font-weight-600'>This page seems to have gotten caught up in an exciting discussion.</div>
                 <p className='errorPage-commnHeadingDescrip title-22 font-weight-500 text-black mt-2 '>But fret not! Feel free to browse our Home page, visit our Blog, or message us about your specific needs.<span className='d-block'></span>We are all ears and eager to help you!</p>
               </div>
-
               {/*<form className='errorForm'>
 			  <div className="form-group errorForm-search">
                   <div className="input-group border-primary border2" style={{ height: "50px" }}>
@@ -115,19 +105,13 @@ export default function Custom404() {
                     </div>
                     <div className=' title-18 font-weight-500 mt-3'>Contact Our Experts about anything related to our Products</div>
                   </div>
-
                 </div>
               </form>*/}
             </div>
           </div>
         </div>
-
-
-
-
       </div>
       <Footer />
-
       <style jsx scope>
         {`
             .errorPage{
@@ -139,14 +123,10 @@ export default function Custom404() {
             .errorForm-result{
               margin-top: 70px;
             }
-            .errorForm-resultCard{
-
-            }
             .title-60 {
                 font-size: 60px;
                 line-height: 68px;
             }
-
             @media (min-width:1600px) {
               .container {
                 max-width: 1400px;
@@ -185,15 +165,10 @@ export default function Custom404() {
                 font-size: 12px;
                 line-height: 16px;
               }
-
               .errorPage .commnHeading p{
                 margin-bottom: 25px;
               }
-              
-
-              
             }
-            
         `}
       </style>
     </>
